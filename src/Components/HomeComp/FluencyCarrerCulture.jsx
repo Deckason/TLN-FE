@@ -25,7 +25,7 @@ const FluencyCarrerCulture = () => {
           {" "}
           Here are the steps
         </h1>
-        <div className="flex flex-wrap justify-center gap-x-[18px] items-center mt-[48px]">
+        <div className="flex flex-wrap justify-center gap-[18px] items-center mt-[48px]">
           <div className="flex flex-col p-6 text-center bg-white rounded-2xl min-h-[548px] max-w-[548px] max-md:px-5">
             <Image alt="step1" src={step1} />
             <div className="flex flex-col pb-9 mt-4 rounded-lg border border-teal-600 min-h-[288px] border-solid max-md:max-w-full">

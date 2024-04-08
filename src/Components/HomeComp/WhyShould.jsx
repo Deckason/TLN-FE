@@ -9,7 +9,7 @@ import flexible from "../../Assets/Homepage/whyShouldYouLearn/flexible timings.p
 import batch from "../../Assets/Homepage/whyShouldYouLearn/batch.png";
 const WhyShould = () => {
   return (
-    <div className="mt-[108px] min-h-[658px] xl:w-[1264px] mx-auto">
+    <div className="mt-[108px] w-full min-h-[658px] max-w-[1194px] mx-auto">
       <h1 className="text-center mb-[48px] text-stone-900 text-xl xl:text-2xl font-bold ">
         Why you should learn with The Language Network?
       </h1>

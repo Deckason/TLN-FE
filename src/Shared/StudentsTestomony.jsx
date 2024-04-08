@@ -41,8 +41,8 @@ const StudentsTestomony = () => {
             }}
             // slidesPerView={4}
             breakpoints={{
-              1440: {
-                slidesPerView: 4,
+              1680: {
+                slidesPerView: 5,
               },
               1024: {
                 slidesPerView: 3,
@@ -55,7 +55,7 @@ const StudentsTestomony = () => {
               },
             }}
             // modules={[Pagination]}
-            className="mySwiper mx-auto flex justify-center  items-center max-w-[305px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1681px]"
+            className="mySwiper mx-auto flex justify-center  items-center max-w-[305px] md:max-w-[700px]  lg:max-w-[1000px] xl:max-w-[1200px]"
           >
             <SwiperSlide className="flex justify-center items-center">
               <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
