@@ -14,7 +14,7 @@ const ProficiencyExams = () => {
       <section>
         {" "}
         <div>
-          <h1 className="text-stone-900 text-2xl font-bold text-center mb-[88.9px]">
+          <h1 className="text-stone-900 text-xl  lg:text-2xl font-bold text-center mb-[88.9px]">
             We prepare you for International Proficiency Exams
           </h1>
         </div>

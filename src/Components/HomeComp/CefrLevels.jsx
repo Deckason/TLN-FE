@@ -4,9 +4,9 @@ import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
 import rightIcon from "@/Assets/Homepage/Cefr/rightIcon.png";
 const CefrLevels = () => {
   return (
-    <div className="bg-[#F5F5F5] pt-[150px] min-h-[1350px]">
-      <div className="max-w-[1681px]  mx-auto flex justify-center items-center ">
-        <section className="min-h-[463px] mx-10 gap-[42px] w-full grid lg:grid-cols-2 ">
+    <div className="bg-[#F5F5F5] pb-[90px] pt-[150px] min-h-[1350px]">
+      <div className="max-w-[1681px]  mx-auto flex justify-center items-center p-5">
+        <section className="min-h-[463px] lg:mx-10 gap-[42px] w-full grid lg:grid-cols-2 ">
           <div className=" rounded-xl">
             <Image
               alt="girl"
@@ -16,12 +16,12 @@ const CefrLevels = () => {
           </div>
           <div className="">
             <h1
-              className=" text-stone-900 text-5xl font-bold 
+              className=" text-stone-900 text-4xl lg:text-5xl font-bold 
             "
             >
               Our courses are aligned with The CEFR Levels
             </h1>
-            <p className=" min-h-[250px] text-neutral-500 text-xl font-normal  mt-[23px] leading-7 xl:text-justify mb-[16px]">
+            <p className=" min-h-[250px] text-neutral-500 lg:text-xl font-normal  mt-[23px] leading-7 text-justify mb-[16px]">
               Common European Framework of Reference for Languages (CEFR) is an
               internationally recognized standard that describes your learning
               progress in more detail. The framework helps you to explain your

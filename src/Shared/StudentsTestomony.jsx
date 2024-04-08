@@ -55,10 +55,10 @@ const StudentsTestomony = () => {
               },
             }}
             // modules={[Pagination]}
-            className="mySwiper mx-auto flex justify-center  items-center max-w-[375px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1681px]"
+            className="mySwiper mx-auto flex justify-center  items-center max-w-[305px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1681px]"
           >
             <SwiperSlide className="flex justify-center items-center">
-              <div className="flex flex-col p-8 bg-white rounded-2xl max-w-[404px]">
+              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
                   “French I have done my French A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -93,7 +93,7 @@ const StudentsTestomony = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex justify-center items-center">
-              <div className="flex flex-col p-8 bg-white rounded-2xl max-w-[404px]">
+              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
                   “French I have done my French A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -128,7 +128,7 @@ const StudentsTestomony = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex justify-center items-center">
-              <div className="flex flex-col p-8 bg-white rounded-2xl max-w-[404px]">
+              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
                   “French I have done my French A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -163,7 +163,7 @@ const StudentsTestomony = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex justify-center items-center">
-              <div className="flex flex-col p-8 bg-white rounded-2xl max-w-[404px]">
+              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
                   “French I have done my French A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -198,7 +198,7 @@ const StudentsTestomony = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex justify-center items-center">
-              <div className="flex flex-col p-8 bg-white rounded-2xl max-w-[404px]">
+              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
                   “French I have done my French A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They

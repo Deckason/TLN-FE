@@ -13,7 +13,7 @@ const WhyShould = () => {
       <h1 className="text-center mb-[48px] text-stone-900 text-xl xl:text-2xl font-bold ">
         Why you should learn with The Language Network?
       </h1>
-      <div className="grid lg:grid-cols-4 gap-y-6  gap-x-[32px] mx-10 xl:mx-0">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-y-6  gap-x-[32px] mx-10 xl:mx-0">
         <div
           style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
           className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "

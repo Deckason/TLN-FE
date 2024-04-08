@@ -4,11 +4,11 @@ import States from "@/Shared/States";
 import Image from "next/image";
 const HomeBanner = () => {
   return (
-    <div className="mt-[84px]">
-      <div className="max-w-[1681px] h-[542px] justify-between items-center flex mx-auto">
-        <div className="xl:w-[525px] h-[542px] flex-col justify-center  items-center gap-4 inline-flex">
+    <div className="md:mt-[84px]">
+      <div className="max-w-[1681px] min-h-[542px] md:justify-between  items-center flex flex-col md:flex-row mx-5 md:mx-10 xl:-mb-[25px] xl:mx-auto">
+        <div className="xl:w-[525px] h-[542px] flex-col z-10 justify-center  lg:items-center gap-4 inline-flex">
           <div className="self-stretch h-[261px] flex-col justify-center items-start gap-4 flex">
-            <div className="self-stretch text-stone-900 xl:text-5xl font-bold ">
+            <div className="self-stretch text-stone-900 xl:text-5xl text-4xl font-bold ">
               Your Gateway to <br />
               Language Excellence
             </div>
@@ -16,14 +16,16 @@ const HomeBanner = () => {
               Learn more than just a language!
             </div>
           </div>
-          <BookAFreeDemoButton></BookAFreeDemoButton>
+          <div className=" -ml-7 md:ml-1 lg:-ml-56">
+            <BookAFreeDemoButton></BookAFreeDemoButton>
+          </div>
         </div>
         <Image
           alt="homePageBannerGirl"
-          className="w-[769px] mt-[90px]"
+          className="md:w-[769px]  mt-[90px] absolute opacity-20 top-[200px] md:top-[45px] -z-0 xl:static xl:opacity-100 xl:block"
           src={homePageBannerGirl}
         ></Image>
-        <div className="w-[416px] h-[542px] px-10 py-8 bg-white rounded-2xl border border-stone-300 justify-center items-center gap-2.5 flex">
+        <div className="max-w-[416px] h-[542px] xl:px-10 py-8 xl:mx-auto px-6  rounded-2xl z-10 border bg-white md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
           <div className="grow shrink basis-0 self-stretch flex-col justify-start items-center gap-8 inline-flex">
             <div className="self-stretch h-[89px] flex-col justify-center items-center gap-1 flex">
               <div className="self-stretch text-center text-stone-900 text-2xl font-medium ">

@@ -20,7 +20,7 @@ const UpcomingBatches = () => {
         className="max-w-[1681px] flex-wrap mx-auto gap-[17px] flex xl:justify-center justify-center lg:justify-start mb-[40px]"
       >
         {/* this part will by dynamic based on the data and the cards will be mapped */}
-        <div className="max-w-[550px]  scale-75 lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
+        <div className="max-w-[550px]  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
           <div className="h-[240px] bg-[#F7DF10] rounded-t-xl flex items-center  w-full relative">
             <div className="bg-[#FFF00D] h-[60%] w-full absolute -z-0"></div>
             <Image
@@ -44,7 +44,7 @@ const UpcomingBatches = () => {
                   <div className="w-[122px] h-[23px] text-stone-900 text-base font-medium ">
                     Batch Starts{" "}
                   </div>
-                  <div className="text-stone-900 text-xl font-bold ">
+                  <div className="text-stone-900 md:text-xl text-[15px] font-bold ">
                     March 20th 2024
                   </div>
                 </div>
@@ -52,14 +52,14 @@ const UpcomingBatches = () => {
                   <div className="w-[159px] h-[23px] text-stone-900 text-base font-medium ">
                     Number of seats
                   </div>
-                  <div className="text-stone-900 text-xl font-bold ">7</div>
+                  <div className="text-stone-900 md:text-xl font-bold ">07</div>
                 </div>
-                <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-start inline-flex">
+                <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-center flex">
                   <div className="w-[65px] h-[23px] text-stone-900 text-base font-medium ">
                     Timing
                   </div>
-                  <div className="w-[335px] flex-col justify-center items-end gap-[13px] inline-flex">
-                    <div className="self-stretch text-right text-stone-900 text-xl font-bold ">
+                  <div className="md:w-[335px] w-[195px] flex-col justify-center items-end gap-[13px] inline-flex">
+                    <div className="self-stretch text-right text-stone-900 text-nowrap md:text-xl text-sm font-bold ">
                       SAT 8:00 pm - 10:00 pm | 2 hrs
                     </div>
                   </div>
@@ -68,7 +68,7 @@ const UpcomingBatches = () => {
                   <div className="w-[120px] h-[23px] text-stone-900 text-base font-medium ">
                     Certification{" "}
                   </div>
-                  <div className="text-stone-900 text-xl font-bold ">
+                  <div className="text-stone-900 md:text-xl text-xs font-bold ">
                     Beginners French | A1
                   </div>
                 </div>
@@ -83,7 +83,7 @@ const UpcomingBatches = () => {
             </button>
           </div>
         </div>
-        <div className="max-w-[550px]  scale-75 lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
+        <div className="max-w-[550px]  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
           <div className="h-[240px] bg-[#F7DF10] rounded-t-xl flex items-center  w-full relative">
             <div className="bg-[#FFF00D] h-[60%] w-full absolute -z-0"></div>
             <Image
@@ -107,7 +107,7 @@ const UpcomingBatches = () => {
                   <div className="w-[122px] h-[23px] text-stone-900 text-base font-medium ">
                     Batch Starts{" "}
                   </div>
-                  <div className="text-stone-900 text-xl font-bold ">
+                  <div className="text-stone-900 md:text-xl text-[15px] font-bold ">
                     March 20th 2024
                   </div>
                 </div>
@@ -115,14 +115,14 @@ const UpcomingBatches = () => {
                   <div className="w-[159px] h-[23px] text-stone-900 text-base font-medium ">
                     Number of seats
                   </div>
-                  <div className="text-stone-900 text-xl font-bold ">7</div>
+                  <div className="text-stone-900 md:text-xl font-bold ">07</div>
                 </div>
-                <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-start inline-flex">
+                <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-center flex">
                   <div className="w-[65px] h-[23px] text-stone-900 text-base font-medium ">
                     Timing
                   </div>
-                  <div className="w-[335px] flex-col justify-center items-end gap-[13px] inline-flex">
-                    <div className="self-stretch text-right text-stone-900 text-xl font-bold ">
+                  <div className="md:w-[335px] w-[195px] flex-col justify-center items-end gap-[13px] inline-flex">
+                    <div className="self-stretch text-right text-stone-900 text-nowrap md:text-xl text-sm font-bold ">
                       SAT 8:00 pm - 10:00 pm | 2 hrs
                     </div>
                   </div>
@@ -131,7 +131,7 @@ const UpcomingBatches = () => {
                   <div className="w-[120px] h-[23px] text-stone-900 text-base font-medium ">
                     Certification{" "}
                   </div>
-                  <div className="text-stone-900 text-xl font-bold ">
+                  <div className="text-stone-900 md:text-xl text-xs font-bold ">
                     Beginners French | A1
                   </div>
                 </div>
@@ -146,7 +146,7 @@ const UpcomingBatches = () => {
             </button>
           </div>
         </div>
-        <div className="max-w-[550px]  scale-75 lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
+        <div className="max-w-[550px]  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
           <div className="h-[240px] bg-[#F7DF10] rounded-t-xl flex items-center  w-full relative">
             <div className="bg-[#FFF00D] h-[60%] w-full absolute -z-0"></div>
             <Image
@@ -170,7 +170,7 @@ const UpcomingBatches = () => {
                   <div className="w-[122px] h-[23px] text-stone-900 text-base font-medium ">
                     Batch Starts{" "}
                   </div>
-                  <div className="text-stone-900 text-xl font-bold ">
+                  <div className="text-stone-900 md:text-xl text-[15px] font-bold ">
                     March 20th 2024
                   </div>
                 </div>
@@ -178,14 +178,14 @@ const UpcomingBatches = () => {
                   <div className="w-[159px] h-[23px] text-stone-900 text-base font-medium ">
                     Number of seats
                   </div>
-                  <div className="text-stone-900 text-xl font-bold ">7</div>
+                  <div className="text-stone-900 md:text-xl font-bold ">07</div>
                 </div>
-                <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-start inline-flex">
+                <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-center flex">
                   <div className="w-[65px] h-[23px] text-stone-900 text-base font-medium ">
                     Timing
                   </div>
-                  <div className="w-[335px] flex-col justify-center items-end gap-[13px] inline-flex">
-                    <div className="self-stretch text-right text-stone-900 text-xl font-bold ">
+                  <div className="md:w-[335px] w-[195px] flex-col justify-center items-end gap-[13px] inline-flex">
+                    <div className="self-stretch text-right text-stone-900 text-nowrap md:text-xl text-sm font-bold ">
                       SAT 8:00 pm - 10:00 pm | 2 hrs
                     </div>
                   </div>
@@ -194,7 +194,7 @@ const UpcomingBatches = () => {
                   <div className="w-[120px] h-[23px] text-stone-900 text-base font-medium ">
                     Certification{" "}
                   </div>
-                  <div className="text-stone-900 text-xl font-bold ">
+                  <div className="text-stone-900 md:text-xl text-xs font-bold ">
                     Beginners French | A1
                   </div>
                 </div>

@@ -6,7 +6,7 @@ const SubscribeToOur = () => {
           <div className="text-center text-white text-5xl font-bold ">
             Subscribe to our newsletter
           </div>
-          <div className="justify-start items-end gap-8 flex-wrap flex">
+          <div className="justify-center items-end gap-8 flex-wrap flex ">
             <div className="h-14 px-4 py-[11px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center gap-2.5 flex">
               <input
                 placeholder="Email ID"
