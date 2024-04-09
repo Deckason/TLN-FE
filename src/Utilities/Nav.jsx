@@ -17,7 +17,7 @@ const Nav = () => {
     },
     {
       name: "French",
-      path: "/Languages/french",
+      path: "/Languages/French",
     },
     {
       name: "Spanish",
@@ -80,7 +80,7 @@ const Nav = () => {
     </>
   );
   return (
-    <header className="">
+    <header className="z-40">
       <nav>
         {/* Batches Starting Now  */}
         <section>
@@ -107,7 +107,7 @@ const Nav = () => {
                   <div
                     onMouseLeave={() => setShowLanguageOptions(false)}
                     onMouseOver={() => setShowLanguageOptions(true)}
-                    className="text-stone-900  font-normal xl:text-xl  relative  leading-7"
+                    className="text-stone-900  font-normal z-40 xl:text-xl  relative  leading-7"
                   >
                     Languages
                     {showLanguageOptions && (
