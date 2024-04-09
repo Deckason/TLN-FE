@@ -5,8 +5,8 @@ import Image from "next/image";
 const HomeBanner = () => {
   return (
     <div className="md:mt-[84px] md:mx-10">
-      <div className="max-w-[1681px] min-h-[542px] md:justify-between  items-center flex flex-col md:flex-row mx-5   xl:mx-auto">
-        <div className="xl:w-[525px] h-[542px] flex-col z-10 justify-center  lg:items-center gap-4 inline-flex">
+      <div className="max-w-[1681px] md:min-h-[542px] md:justify-between  items-center flex flex-col md:flex-row mx-5   xl:mx-auto">
+        <div className="xl:w-[525px] md:min-h-[542px] min-h-[420px] flex-col z-10 justify-center  lg:items-center gap-4 inline-flex">
           <div className="self-stretch h-[261px] flex-col justify-center items-start gap-4 flex">
             <div className="self-stretch text-stone-900 xl:text-5xl text-4xl font-bold ">
               Your Gateway to <br />
@@ -17,12 +17,12 @@ const HomeBanner = () => {
             </div>
           </div>
           <div className=" -ml-7 md:ml-1 lg:-ml-56 xl:-ml-28 mt-5">
-            <BookAFreeDemoButton></BookAFreeDemoButton>
+            <BookAFreeDemoButton />
           </div>
         </div>
         <Image
           alt="homePageBannerGirl"
-          className="md:w-[700px] lg:w-[769px]  mt-[90px] absolute opacity-20 lg:top-[100px] top-[200px] md:top-[220px] xl:relative  -z-0 xl:top-[70px] xl:opacity-100 xl:block"
+          className="md:w-[700px] lg:w-[769px]  mt-[90px] absolute opacity-20 lg:top-[100px] top-[180px] md:top-[220px] xl:relative  -z-0 xl:top-[70px] xl:opacity-100 xl:block"
           src={homePageBannerGirl}
         ></Image>
         <div className="max-w-[416px] h-[542px] xl:px-10 py-8 xl:mx-auto px-6  rounded-2xl z-10 border bg-white md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">

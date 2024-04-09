@@ -3,7 +3,7 @@ import Nav from "@/Utilities/Nav";
 const Homelayout = ({ children }) => {
   return (
     <div className="">
-      {/* <Nav /> */}
+      <Nav />
       {children}
     </div>
   );

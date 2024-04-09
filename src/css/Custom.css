@@ -4,3 +4,15 @@
 .upcomingCourseDeActive {
   @apply w-28 h-10 px-4 py-2 bg-white rounded-lg justify-center items-center gap-2.5 inline-flex text-neutral-color text-xl font-bold;
 }
+/* side scroll bar custom */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background: #75757592;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#1f9f90, #d9f1ee);
+  border-radius: 2px;
+}
