@@ -226,9 +226,7 @@ const Nav = () => {
               <button className="text-primary-color font-medium">Login</button>
               <div className="h-[1px] w-full bg-secondary-color rounded-full"></div>
               <button
-                className={`${
-                  !showLanguageOptions ? "h-fit" : "h-full"
-                } w-full border-secondary-color text-sm   text-start duration-500 transform    border rounded-lg`}
+                className={` w-full border-secondary-color text-sm   text-start duration-500 transform    border rounded-lg`}
               >
                 <div
                   onClick={() => {
