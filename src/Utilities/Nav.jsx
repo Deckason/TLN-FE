@@ -92,17 +92,17 @@ const Nav = () => {
           </div>
         </section>
         {/* nav options section */}
-        <section className="hidden   px-2.5 py-2.5 bg-white shadow xl:flex justify-start w-full items-center gap-2.5 ">
+        <section className="hidden   px-2.5 py-2.5 bg-white shadow lg:flex justify-start w-full items-center gap-2.5 ">
           <div className=" h-[58px] justify-between items-center inline-flex">
             <div className="w-full self-stretch justify-between items-center flex">
               <Image
                 width={500}
-                className="w-[203px] h-[82px] object-contain"
+                className="w-[180px] h-[82px] object-contain"
                 height={500}
                 src={logo}
                 alt="logo"
               ></Image>
-              <div className="px-2.5 py-[29px] flex-col justify-start items-start cursor-pointer  gap-2.5 hidden xl:flex">
+              <div className="px-2.5 py-[29px] flex-col justify-start items-start cursor-pointer  gap-2.5 hidden lg:flex">
                 <div className="justify-start items-start gap-5 xl:gap-12 inline-flex">
                   <div
                     onMouseLeave={() => setShowLanguageOptions(false)}
@@ -188,12 +188,12 @@ const Nav = () => {
               </div>
             </div>
           </div>
-          <div className=" hidden flex-grow  xl:flex justify-end me-5">
+          <div className=" hidden flex-grow  lg:flex justify-end me-5">
             {loginOption}
           </div>
         </section>
         {/* side bar */}
-        <section className="xl:hidden">
+        <section className="lg:hidden">
           <div className="flex justify-between items-center mx-5">
             <Image
               width={500}
