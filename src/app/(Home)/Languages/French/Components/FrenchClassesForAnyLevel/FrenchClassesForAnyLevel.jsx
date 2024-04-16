@@ -1,0 +1,37 @@
+import ClassLevelCard from "./ClassLevelCard";
+
+const FrenchClassesForAnyLevel = () => {
+  const levelDatas = [
+    {
+      title: "A1-A2",
+      title2: "Beginner Classes",
+      description:
+        "Start your French language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
+      link: "",
+    },
+    {
+      title: "B1-B2",
+      title2: "Intermediate Classes",
+      description:
+        "Elevate your French proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
+      link: "",
+    },
+    {
+      title: "C1-C2",
+      title2: "Advanced Classes",
+      description:
+        "Advance your French skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+      link: "",
+    },
+  ];
+  return (
+    <div className="xl:max-w-[1684px] bg-yellow-300 w-full mx-auto">
+      <div className="text-black text-2xl mb-12 text-center font-bold font-['Inter']">
+        French Classes for Any Level
+      </div>
+      <ClassLevelCard />
+    </div>
+  );
+};
+
+export default FrenchClassesForAnyLevel;

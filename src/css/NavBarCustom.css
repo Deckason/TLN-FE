@@ -1,0 +1,11 @@
+.example::-webkit-scrollbar {
+  width: 2px;
+  background-color: transparent;
+}
+.example::-webkit-scrollbar-track {
+  background: transparent;
+}
+.example::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#1f9f90, #d9f1ee);
+  border-radius: 10px;
+}
