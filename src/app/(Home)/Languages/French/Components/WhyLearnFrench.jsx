@@ -48,7 +48,8 @@ const WhyLearnFrench = () => {
                       <div className="self-stretch text-center text-neutral-500 text-xl font-normal font-['Inter'] leading-7">
                         French proficiency is essential in global careers like
                         business, diplomacy, tourism, and hospitality, given the
-                        significance of multilingual skills in today's world.
+                        significance of multilingual skills in today&apos;s
+                        world.
                       </div>
                     </div>
                   </div>
