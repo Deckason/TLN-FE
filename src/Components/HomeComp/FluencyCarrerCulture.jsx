@@ -2,7 +2,31 @@ import Image from "next/image";
 import step1 from "@/Assets/Homepage/FluencyCarrerCulture/step1.png";
 import step2 from "@/Assets/Homepage/FluencyCarrerCulture/step2.png";
 import step3 from "@/Assets/Homepage/FluencyCarrerCulture/step3.png";
+import FluencyCultureCard from "./FluencyCultureCard";
 const FluencyCarrerCulture = () => {
+  const datas = [
+    {
+      id: 1,
+      title: "Register with us",
+      description:
+        "Complete our form with your details and language preference to register. Our team will then assist you with online classes, study materials, and more!",
+      img: step1,
+    },
+    {
+      id: 2,
+      title: "Experience a free demo class",
+      description:
+        "Discover the power of learning with our complimentary demo class at your convenient time!",
+      img: step2,
+    },
+    {
+      id: 3,
+      title: "Get started",
+      description:
+        "Love our demo- now pick and choose batches according to your flexibility and get started on your learning adventure!",
+      img: step3,
+    },
+  ];
   return (
     <div className="bg-[#F6F3F3]">
       <section className="mb-[112px]">
@@ -25,59 +49,15 @@ const FluencyCarrerCulture = () => {
           {" "}
           Here are the steps
         </h1>
-        <div className="flex flex-wrap justify-center gap-[18px] items-center mt-[48px]">
-          <div className="flex flex-col p-6 text-center bg-white rounded-2xl min-h-[548px] max-w-[548px] max-md:px-5">
-            <Image alt="step1" src={step1} />
-            <div className="flex flex-col pb-9 mt-4 rounded-lg border border-teal-600 min-h-[288px] border-solid max-md:max-w-full">
-              <div className="justify-center py-4 text-3xl bg-teal-600 rounded-lg text-neutral-50 max-md:max-w-full">
-                Step 1
-              </div>
-              <div className="flex flex-col px-4 mt-8 max-md:max-w-full">
-                <div className="text-2xl font-medium text-neutral-800 max-md:max-w-full">
-                  Register with us
-                </div>
-                <div className="mt-2 text-xl leading-7 text-neutral-500 max-md:max-w-full">
-                  Complete our form with your details and language preference to
-                  register. Our team will then assist you with online classes,
-                  study materials, and more!
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col p-6 text-center bg-white rounded-2xl min-h-[548px] max-w-[548px] max-md:px-5">
-            <Image alt="step1" src={step2} />
-            <div className="flex flex-col pb-9 mt-4 rounded-lg border border-teal-600 min-h-[288px] border-solid max-md:max-w-full">
-              <div className="justify-center py-4 text-3xl bg-teal-600 rounded-lg text-neutral-50 max-md:max-w-full">
-                Step 2
-              </div>
-              <div className="flex flex-col px-4 mt-8 max-md:max-w-full">
-                <div className="text-2xl font-medium text-neutral-800 max-md:max-w-full">
-                  Experience a free demo class{" "}
-                </div>
-                <div className="mt-2 text-xl leading-7 text-neutral-500 max-md:max-w-full">
-                  Discover the power of learning with our complimentary demo
-                  class at your convenient time!
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col p-6 text-center bg-white rounded-2xl min-h-[548px] max-w-[548px] max-md:px-5">
-            <Image alt="step1" src={step3} />
-            <div className="flex flex-col pb-9 mt-4 rounded-lg border border-teal-600 min-h-[288px] border-solid max-md:max-w-full">
-              <div className="justify-center py-4 text-3xl bg-teal-600 rounded-lg text-neutral-50 max-md:max-w-full">
-                Step 2
-              </div>
-              <div className="flex flex-col px-4 mt-8 max-md:max-w-full">
-                <div className="text-2xl font-medium text-neutral-800 max-md:max-w-full">
-                  Get started{" "}
-                </div>
-                <div className="mt-2 text-xl leading-7 text-neutral-500 max-md:max-w-full">
-                  Love our demo- now pick and choose batches according to your
-                  flexibility and get started on your learning adventure!
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="xl:grid-cols-3 2xl:max-w-[1440px] max-w-8xl  flex-wrap justify-center gap-1 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
+          {datas.map((data) => {
+            return (
+              <FluencyCultureCard
+                key={data.id}
+                datas={data}
+              ></FluencyCultureCard>
+            );
+          })}
         </div>
       </section>
     </div>

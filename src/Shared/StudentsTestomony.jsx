@@ -55,7 +55,7 @@ const StudentsTestomony = () => {
               },
             }}
             // modules={[Pagination]}
-            className="mySwiper mx-auto flex justify-center  items-center max-w-[305px] md:max-w-[700px]  lg:max-w-[1000px] xl:max-w-[1200px]"
+            className="mySwiper mx-auto flex justify-center  items-center max-w-[305px] md:max-w-[700px]  lg:max-w-[1000px] 2xl:max-w-[1200px] 3xl:max-w-[1440px]"
           >
             <SwiperSlide className="flex justify-center items-center">
               <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">

@@ -1,7 +1,7 @@
 const SubscribeToOur = () => {
   return (
-    <div>
-      <div className="max-w-[1920px] bg-teal-600 min-h-[380px] relative flex justify-center items-center">
+    <div className="w-full">
+      <div className="w-full bg-teal-600 min-h-[380px] relative flex justify-center items-center">
         <div className=" bg-teal-600 absolute flex-col justify-center items-center gap-8 inline-flex">
           <div className="text-center text-white text-5xl font-bold ">
             Subscribe to our newsletter
