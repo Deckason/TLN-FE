@@ -21,14 +21,14 @@ const FrenchPageMainBanner = () => {
                   <span className="font-bold leading-6">
                     online French classes!
                   </span>{" "}
-                  Whether you're starting from scratch or polishing your already
-                  impressive French skills, our tailored and interactive courses
-                  are crafted just for you. Bid farewell to traditional
+                  Whether you&apos;re starting from scratch or polishing your
+                  already impressive French skills, our tailored and interactive
+                  courses are crafted just for you. Bid farewell to traditional
                   classroom setups and say bonjour to personalised instruction,
                   flexible scheduling, and immersive learning experiences with
                   our top-notch online French courses. With our team of expert
-                  trainers by your side, you'll smoothly navigate the ins and
-                  outs of French grammar, expand your vocabulary, engage in
+                  trainers by your side, you&apos;ll smoothly navigate the ins
+                  and outs of French grammar, expand your vocabulary, engage in
                   lively conversations, and dive deep into the rich culture of
                   the Francophone world. Prepare to dive headfirst into the
                   elegance of the French language and experience the thrill of
