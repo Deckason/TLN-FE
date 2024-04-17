@@ -95,13 +95,15 @@ const Nav = () => {
         <section className="hidden   px-2.5 py-2.5 bg-white shadow lg:flex justify-start w-full items-center gap-2.5 ">
           <div className=" h-[58px] justify-between items-center inline-flex">
             <div className="w-full self-stretch justify-between items-center flex">
-              <Image
-                width={500}
-                className="w-[180px] h-[82px] object-contain"
-                height={500}
-                src={logo}
-                alt="logo"
-              ></Image>
+              <Link href="/">
+                <Image
+                  width={500}
+                  className="w-[180px] h-[82px] object-contain"
+                  height={500}
+                  src={logo}
+                  alt="logo"
+                ></Image>
+              </Link>
               <div className="px-2.5 py-[29px] flex-col justify-start items-start cursor-pointer  gap-2.5 hidden lg:flex">
                 <div className="justify-start items-start gap-5 xl:gap-12 inline-flex">
                   <div
