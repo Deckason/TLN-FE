@@ -1,5 +1,6 @@
 import CefrLevels from "@/Components/HomeComp/CefrLevels";
 import CoursesWeOffer from "@/Components/HomeComp/CoursesWeOffer";
+import EducationPartners from "@/Components/HomeComp/EducationPaterners";
 import FluencyCarrerCulture from "@/Components/HomeComp/FluencyCarrerCulture";
 import HomeBanner from "@/Components/HomeComp/HomeBanner";
 import Newsletter from "@/Components/HomeComp/Newsletter";
@@ -28,6 +29,7 @@ export default function Home() {
       <StudentsTestomony />
       <TechersInfo />
       <OurAlumni />
+      <EducationPartners />
       <SubscribeToOur />
       {/* here used shared components are : studentsTestomony, subscribeToOur, upcomingBatches */}
     </section>
