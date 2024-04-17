@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const WhyLearnFrench = () => {
   return (
-    <div className=" mt-[112px] flex items-center flex-col justify-center">
+    <div className=" my-[112px] flex items-center flex-col justify-center">
       <div className="text-black text-2xl font-bold mb-[48px]">
         Why learn French?
       </div>
