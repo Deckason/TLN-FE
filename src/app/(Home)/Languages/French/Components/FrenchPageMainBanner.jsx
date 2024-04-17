@@ -44,7 +44,7 @@ const FrenchPageMainBanner = () => {
                 className="absolute -left-[200px]"
                 src={girl1}
               ></Image>
-              <div className="w-[318px] shadow-2xl bg-green-400 absolute right-36 h-[165.75px] rounded-2xl ">
+              <div className="w-[318px] shadow-2xl  absolute right-36 h-[165.75px] rounded-2xl ">
                 <Image
                   alt="boy1"
                   src={boy1}
@@ -59,7 +59,7 @@ const FrenchPageMainBanner = () => {
                   className="w-full h-full object-cover"
                 ></Image>
               </div>
-              <div className="w-[318px] shadow-2xl bg-purple-400 absolute right-0 top-32 h-[165.75px] rounded-2xl ">
+              <div className="w-[318px] shadow-2xl  absolute right-0 top-32 h-[165.75px] rounded-2xl ">
                 {" "}
                 <Image
                   alt="boy1"

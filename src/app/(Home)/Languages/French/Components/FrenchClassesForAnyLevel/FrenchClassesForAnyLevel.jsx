@@ -1,4 +1,4 @@
-import ClassLevelCard from "./ClassLevelCard";
+import ClassLevelCard from "@/Shared/ClassLevelCard";
 
 const FrenchClassesForAnyLevel = () => {
   const levelDatas = [
@@ -25,11 +25,15 @@ const FrenchClassesForAnyLevel = () => {
     },
   ];
   return (
-    <div className="xl:max-w-[1684px] bg-yellow-300 w-full mx-auto">
-      <div className="text-black text-2xl mb-12 text-center font-bold font-['Inter']">
+    <div className="xl:max-w-[1684px] mt-[112px] w-full mx-auto">
+      <div className="text-black text-2xl mb-12 text-center font-bold ">
         French Classes for Any Level
       </div>
-      <ClassLevelCard />
+      <div className="xl:grid-cols-3 2xl:max-w-[1440px] max-w-8xl  flex-wrap justify-center gap-1 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
+        {levelDatas.map((data, index) => (
+          <ClassLevelCard key={index} data={data} />
+        ))}
+      </div>
     </div>
   );
 };
