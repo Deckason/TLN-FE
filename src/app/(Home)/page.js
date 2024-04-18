@@ -1,4 +1,5 @@
 import CefrLevels from "@/Components/HomeComp/CefrLevels";
+import Contact from "@/Components/HomeComp/Contact";
 import CoursesWeOffer from "@/Components/HomeComp/CoursesWeOffer";
 import EducationPartners from "@/Components/HomeComp/EducationPaterners";
 import FluencyCarrerCulture from "@/Components/HomeComp/FluencyCarrerCulture";
@@ -20,6 +21,7 @@ export default function Home() {
   return (
     <section>
       <HomeBanner />
+      <Contact />
       <Newsletter />
       <Experiment />
       <WhyShould />

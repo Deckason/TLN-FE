@@ -12,9 +12,9 @@ import Youtube from "@/Assets/Homepage/Footer/Youtube.png";
 const HomeFooter = () => {
   return (
     <div className="pt-20 flex flex-col items-center justify-center">
-      <div className="lg:flex w-[1680px] hidden items-center  justify-around">
-        <div className="flex flex-col h-[679px] items-start justify-between">
-          <div className="flex flex-col ">
+      <div className="lg:text-[20px] text-[10px] flex w-full lg:w-[1680px] lg:flex-nowrap flex-wrap lg:items-center justify-around ">
+        <div className="flex lg:flex-col flex-row lg:w-fit w-fit h-fit gap-10 lg:h-[679px] lg:items-start items-center justify-center lg:justify-between">
+          <div className="flex flex-col lg:w-full w-32 ">
             <Image src={FooterLogo1} al mb-3t="footerLogo1" className="mb-3" />
             <div className="flex gap-5 items-center justify-center">
               <Image src={FooterLogo2} alt="footerLogo2" />
@@ -22,12 +22,12 @@ const HomeFooter = () => {
             </div>
           </div>
           <div>
-            <button className="   px-8 py-3.5 bg-teal-600 rounded-lg justify-center text-neutral-50 text-2xl font-medium items-center gap-2.5 inline-flex">
+            <button className="  px-4 py-1.5 lg:px-8 lg:py-3.5 bg-teal-600 rounded-lg justify-center text-neutral-50 text-2xl font-medium items-center gap-2.5 inline-flex">
               Contact Us
             </button>{" "}
           </div>
         </div>
-        <div className="flex text-[#757575] flex-col h-[679px] items-start justify-between">
+        <div className="flex text-[#757575] flex-col w-fit my-3 h-fit  lg:h-[679px] items-start justify-around  lg:mx-0 mx-5 lg:justify-between">
           <div className="flex flex-col ">
             <h3 className="text-[#000] mb-3 font-semibold">About us</h3>
             <span>Who Are We</span>
@@ -54,7 +54,7 @@ const HomeFooter = () => {
             <span>Corporate Trainings</span>
           </div>
         </div>
-        <div className="flex text-[#757575] flex-col h-[679px] items-start justify-between">
+        <div className="flex text-[#757575] flex-col w-fit my-3 h-fit  lg:h-[679px] items-start justify-around  lg:mx-0 mx-5 lg:justify-between">
           <div className="flex flex-col ">
             <h3 className="text-[#000] mb-3 font-semibold">
               Languages for Kids
@@ -88,7 +88,7 @@ const HomeFooter = () => {
             <span>Korean Classes in Pune</span>
           </div>
         </div>
-        <div className="flex text-[#757575] flex-col h-[679px] items-start justify-between">
+        <div className="flex text-[#757575] flex-col w-fit my-3 h-fit  lg:h-[679px] items-start justify-around  lg:ml-0 ml-2 lg:justify-between">
           <div className="flex flex-col ">
             <h3 className="text-[#000] mb-3 font-semibold">
               Languages For Adults
@@ -126,7 +126,7 @@ const HomeFooter = () => {
             <span>Japanese Classes in Pune</span>
           </div>
         </div>
-        <div className="flex text-[#757575] flex-col h-[679px] items-start justify-between">
+        <div className="flex text-[#757575] flex-col w-fit my-3 h-fit  lg:h-[679px] items-start justify-around lg:justify-between">
           <div className="flex flex-col ">
             <h3 className="text-[#000] mb-3 font-semibold">
               Languages to Study Abroad
