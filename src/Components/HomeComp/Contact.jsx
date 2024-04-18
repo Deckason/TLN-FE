@@ -4,7 +4,7 @@ import Phone from "@/Assets/Phone.png";
 
 const Contact = () => {
   return (
-    <div className="fixed flex flex-col gap-5 top-[50%] right-0 bg-transparent ">
+    <div className="fixed flex z-50 flex-col gap-5 top-[50%] right-0 bg-transparent ">
       <svg
         width="80"
         height="80"
