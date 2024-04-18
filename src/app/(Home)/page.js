@@ -33,8 +33,8 @@ export default function Home() {
       <OurAlumni />
       <EducationPartners />
       <SubscribeToOur />
-      <PaymentBar/>
-      <HomeFooter/>
+      <PaymentBar />
+      {/* <HomeFooter/> */}
       {/* here used shared components are : studentsTestomony, subscribeToOur, upcomingBatches */}
     </section>
   );
