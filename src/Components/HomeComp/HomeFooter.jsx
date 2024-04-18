@@ -56,7 +56,9 @@ const HomeFooter = () => {
         </div>
         <div className="flex text-[#757575] flex-col h-[679px] items-start justify-between">
           <div className="flex flex-col ">
-            <h3 className="text-[#000] mb-3 font-semibold">Languages for Kids</h3>
+            <h3 className="text-[#000] mb-3 font-semibold">
+              Languages for Kids
+            </h3>
             <span>Online French Classes for Kids</span>
             <span>Online German Classes for Kids</span>
             <span>Online Spanish Classes for Kids</span>
@@ -66,7 +68,9 @@ const HomeFooter = () => {
             <span>Online English Classes for Kids</span>
           </div>
           <div className="flex flex-col ">
-            <h3 className="text-[#000] mb-3 font-semibold">Language We Offer</h3>
+            <h3 className="text-[#000] mb-3 font-semibold">
+              Language We Offer
+            </h3>
             <span>Online French Classes</span>
             <span>Online German Classes</span>
             <span>Online Spanish Classes</span>
@@ -86,7 +90,9 @@ const HomeFooter = () => {
         </div>
         <div className="flex text-[#757575] flex-col h-[679px] items-start justify-between">
           <div className="flex flex-col ">
-            <h3 className="text-[#000] mb-3 font-semibold">Languages For Adults</h3>
+            <h3 className="text-[#000] mb-3 font-semibold">
+              Languages For Adults
+            </h3>
             <span>Online French Classes for Adults</span>
             <span>Online German Classes for Adults</span>
             <span>Online Spanish Classes for Adults</span>
@@ -157,17 +163,21 @@ const HomeFooter = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-[1680px] p-10 items-center justify-between">
+      <div className="flex flex-col lg:flex-row w-full lg:w-[1680px] p-10 items-center justify-between">
         <div>Copyright © 2024 The Language Network - All Right Reserved</div>
-        <div className="flex items-center gap-5">
-          <span className="font-semibold">Terms & Conditions</span>
-          <span className="font-semibold">Privacy Policy</span>
-          <span className="font-semibold">Sitemap</span>
-          <Image src={FaceBook} alt="FaceBook" />
-          <Image src={Insta} alt="Insta" />
-          <Image src={Linkdin} alt="Linkdin" />
-          <Image src={Pinterest} alt="Pinterest" />
-          <Image src={Youtube} alt="Youtube" />
+        <div className="flex flex-col lg:flex-row items-center gap-5">
+          <div className="flex">
+            <span className="font-semibold">Terms & Conditions</span>
+            <span className="font-semibold">Privacy Policy</span>
+            <span className="font-semibold">Sitemap</span>
+          </div>
+          <div className="flex gap-5">
+            <Image src={FaceBook} alt="FaceBook" />
+            <Image src={Insta} alt="Insta" />
+            <Image src={Linkdin} alt="Linkdin" />
+            <Image src={Pinterest} alt="Pinterest" />
+            <Image src={Youtube} alt="Youtube" />
+          </div>
         </div>
       </div>
     </div>
