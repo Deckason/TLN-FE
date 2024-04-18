@@ -11,6 +11,8 @@ import EverythingYouNeedToKnowAboutFrench from "./Components/EverythingYouNeedTo
 import SayBonjur from "./Components/SayBonjur/SayBonjur";
 import LanguageLessons from "./Components/Languagelessons/LanguageLessons";
 import SubscribeToOur from "@/Shared/SubscribeToOur";
+import PaymentBar from "@/Components/HomeComp/PaymentBar";
+import HomeFooter from "@/Components/HomeComp/HomeFooter";
 
 const FrenchPage = () => {
   return (
@@ -28,6 +30,7 @@ const FrenchPage = () => {
       <SayBonjur />
       <LanguageLessons />
       <SubscribeToOur />
+      <PaymentBar/>
     </div>
   );
 };
