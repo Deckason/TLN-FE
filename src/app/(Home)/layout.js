@@ -1,3 +1,4 @@
+import HomeFooter from "@/Components/HomeComp/HomeFooter";
 import Nav from "@/Utilities/Nav";
 
 const Homelayout = ({ children }) => {
@@ -5,6 +6,7 @@ const Homelayout = ({ children }) => {
     <div className="">
       <Nav />
       {children}
+      <HomeFooter />
     </div>
   );
 };

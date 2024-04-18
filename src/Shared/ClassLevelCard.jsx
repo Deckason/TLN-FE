@@ -1,3 +1,6 @@
+import Image from "next/image";
+import arrowLeft from "@/Assets/Icons/arrowleft.svg";
+
 const ClassLevelCard = ({ data }) => {
   return (
     <div>
@@ -23,7 +26,9 @@ const ClassLevelCard = ({ data }) => {
               <div className="text-center text-teal-600 text-xl font-normal font-['Inter'] leading-7">
                 Learn more
               </div>
-              <div className="w-6 h-6 relative" />
+              <div className="w-6 h-6 relative">
+                <Image alt="arrowLeft" src={arrowLeft}></Image>
+              </div>
             </div>
           </div>
         </div>
