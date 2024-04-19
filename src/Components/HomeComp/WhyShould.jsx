@@ -16,7 +16,7 @@ import material from "../../Assets/Homepage/whyShouldYouLearn/material.png";
 import sessions from "../../Assets/Homepage/whyShouldYouLearn/sessions.png";
 import flexible from "../../Assets/Homepage/whyShouldYouLearn/flexible timings.png";
 import batch from "../../Assets/Homepage/whyShouldYouLearn/batch.png";
-import ReusableModal from "./ReusableModal";
+import ReusableModal from "../../Shared/ReusableModal";
 import { useState } from "react";
 const WhyShould = () => {
   const [isModalOpen, setIsModalOpen] = useState({
