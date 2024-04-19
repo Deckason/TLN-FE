@@ -7,6 +7,7 @@ const Accordian = ({ data, i }) => {
   const [id, setId] = useState(i);
   return (
     <div onClick={() => setShowDes(!showDes)} className="my-2">
+      <hr />
       <div
         className={`${
           showDes ? "h-full" : "min-h-fit"
