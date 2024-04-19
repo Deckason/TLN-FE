@@ -24,10 +24,10 @@ const EverythingYouNeedToKnowAboutFrench = () => {
   ];
   const [splicing, setsplicing] = useState(true);
   return (
-    <div className="flex justify-center bg-[#F6F3F3] pb-[112px]">
+    <div className="flex justify-center px-4 bg-[#F6F3F3] pb-[112px]">
       <div className="max-w-[1463px]  flex-col justify-start w-full mx-auto items-start gap-12 flex">
         <div className="flex-col justify-start items-center gap-12 flex">
-          <div className="text-black text-2xl font-bold font-['Inter']">
+          <div className="text-black max-md:text-xl text-2xl font-bold text-center">
             Everything you need to know about French
           </div>
           <div className="justify-center  h-full items-center gap-8 flex">
