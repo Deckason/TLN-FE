@@ -30,7 +30,7 @@ const FrenchPage = () => {
       <SayBonjur />
       <LanguageLessons />
       <SubscribeToOur />
-      <PaymentBar/>
+      <PaymentBar />
     </div>
   );
 };
