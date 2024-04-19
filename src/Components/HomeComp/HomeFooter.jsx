@@ -10,7 +10,7 @@ import Linkdin from "@/Assets/Homepage/Footer/Linkdin.png";
 import Pinterest from "@/Assets/Homepage/Footer/Pinterest.png";
 import Youtube from "@/Assets/Homepage/Footer/Youtube.png";
 import FaqsCard from "@/Shared/FaqsCard";
-import Accordian from "./Accordian";
+import Accordian from "../../Shared/Accordian";
 
 const HomeFooter = () => {
   const datas = [
