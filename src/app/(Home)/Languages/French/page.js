@@ -17,20 +17,20 @@ import HomeFooter from "@/Components/HomeComp/HomeFooter";
 const FrenchPage = () => {
   return (
     <div>
-      <FrenchPageMainBanner />
+      {/* <FrenchPageMainBanner />
       <OnlineFrenchClass />
       <FrenchClassesForAnyGoal />
       <PreapareForFrenchExam />
-      <FrenchClassesForAnyLevel />
+      <FrenchClassesForAnyLevel /> */}
       <WhyLearnFrench />
-      <UpcomingBatches />
+      {/* <UpcomingBatches />
       <StudentsTestomony />
       <FaqsFrench />
       <EverythingYouNeedToKnowAboutFrench />
       <SayBonjur />
       <LanguageLessons />
       <SubscribeToOur />
-      <PaymentBar/>
+      <PaymentBar/> */}
     </div>
   );
 };

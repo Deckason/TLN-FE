@@ -6,7 +6,7 @@ const Homelayout = ({ children }) => {
     <div className="">
       <Nav />
       {children}
-      <HomeFooter />
+      {/* <HomeFooter /> */}
     </div>
   );
 };
