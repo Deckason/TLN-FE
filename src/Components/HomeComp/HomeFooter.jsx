@@ -131,8 +131,8 @@ const HomeFooter = () => {
           </div>
         </div>
         <div className="flex flex-col w-full">
-          <div className="lg:flex block text-[#757575]  w-fit my-3 h-fit  items-start justify-around  lg:ml-0 ml-5 lg:justify-between">
-            <div className="flex gap-5 w-full lg:justify-normal justify-between">
+          <div className="lg:flex block text-[#757575]  w-fit lg:w-full my-3 h-fit  items-start justify-around  lg:ml-0 ml-5 lg:justify-between">
+            <div className="flex lg:gap-10 gap-5 lg:justify-normal justify-between">
               <div className="flex flex-col  ">
                 <h3 className="text-[#000] mb-3 font-medium text-[10px] lg:text-[20px]">
                   About us
