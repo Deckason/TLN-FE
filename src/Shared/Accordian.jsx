@@ -13,7 +13,7 @@ const Accordian = ({ data, i }) => {
           showDes ? "h-full" : "min-h-fit"
         }  bg-white rounded-2xl transform duration-300 justify-start items-start  flex-col flex`}
       >
-        <div className="grow shrink basis-0 self-stretch justify-start w-full items-center inline-flex">
+        <div className="grow shrink basis-0 self-stretch justify-between gap-10 w-full items-center inline-flex">
           <div className="grow shrink basis-0 h-[27px] text-black text-xl font-normal font-['Inter'] ">
             {data?.title}
           </div>

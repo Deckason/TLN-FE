@@ -32,7 +32,7 @@ const TechersInfo = () => {
             <BookAFreeDemoButton />
           </div>
         </div>
-        <div className="w-full opacity-100 gap-x-2.5 flex-grow h-[634px]    flex">
+        <div className="w-full opacity-100 gap-x-2.5 flex-grow h-[634px]  hidden md:flex lg:flex">
           <div className="w-[50%]  h-full   rounded-2xl">
             <Image
               alt="Prachi"

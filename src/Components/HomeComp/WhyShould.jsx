@@ -117,8 +117,8 @@ const WhyShould = () => {
           isOpen={modal.modal}
           onClose={() => closeModal(modal.modalClose)}
         >
-          <div className="flex">
-            <div className="lg:flex hidden w-full h-full ">
+          <div className="flex items-center">
+            <div className="lg:flex hidden w-fit h-fit ">
               <Image src={modal.imgAvatar} alt="em" />
             </div>
             <div className="flex justify-center gap-5 flex-col">
@@ -132,7 +132,7 @@ const WhyShould = () => {
                   {modal.modalTitle}
                 </span>
               </div>
-              <p>{modal.modalDesc}</p>
+              <p className="h-full w-fit">{modal.modalDesc}</p>
             </div>
           </div>
         </ReusableModal>

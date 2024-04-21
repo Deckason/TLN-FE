@@ -26,7 +26,7 @@ const ReusableModal = ({ isOpen, onClose, children }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="shadow-xl bg-white max-w-[630px] p-5 rounded-[16px]"
+        className="shadow-xl bg-white w-[350px] lg:w-[630px]  p-5 rounded-[16px]"
       >
         {children}
       </div>
