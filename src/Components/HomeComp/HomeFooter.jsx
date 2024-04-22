@@ -96,11 +96,7 @@ const HomeFooter = () => {
     },
     {
       title: "Mandarin Classes Near Me",
-      content: [
-        "Mandarin Classes in Mumbai",
-        "Mandarin Classes in Delhi",
-        "Mandarin Classes in Pune",
-      ],
+      content: ["Mandarin Classes in Delhi"],
     },
     {
       title: "English Classes Near Me",
@@ -169,14 +165,12 @@ const HomeFooter = () => {
             </div>
             <div className="flex lg:hidden h-full flex-col w-fit  gap-x-2">
               {splicing &&
-                datas
-                  .splice(0, 12)
-                  .map((data, index) => (
-                    <>
+                datas.splice(0, 12).map((data, index) => (
+                  <>
                     <Accordian key={index} data={data} i={index} />
-                    </>
-                  ))}
-                  <hr />
+                  </>
+                ))}
+              <hr />
             </div>
             <div className="lg:flex hidden flex-col ">
               <h3 className="text-[#000] mb-3 font-medium text-[20px]">
