@@ -25,7 +25,7 @@ const HomeBanner = () => {
           className="md:w-[700px] xl:w-full lg:w-[769px]  mt-[90px] absolute opacity-20 lg:top-[100px]  top-[180px] md:top-[220px] xl:relative  -z-0 xl:top-[72px] xl:opacity-100 xl:block"
           src={homePageBannerGirl}
         ></Image>
-        <div className="max-w-[416px] h-[542px] xl:px-10 py-8 xl:mx-auto px-6  rounded-2xl z-10 border bg-white md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
+        <div className="max-w-[400px] h-[542px] xl:px-10 py-8 xl:mx-auto px-3  rounded-2xl z-10 border bg-white md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
           <div className="grow shrink basis-0 self-stretch flex-col justify-start items-center gap-8 inline-flex">
             <div className="self-stretch h-[89px] flex-col justify-center items-center gap-1 flex">
               <div className="self-stretch text-center text-stone-900 text-2xl font-medium ">

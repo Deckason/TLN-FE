@@ -1,5 +1,5 @@
 import CefrLevels from "@/Components/HomeComp/CefrLevels";
-import Contact from "@/Components/HomeComp/Contact";
+import Contact from "@/Shared/Contact";
 import CoursesWeOffer from "@/Components/HomeComp/CoursesWeOffer";
 import EducationPartners from "@/Components/HomeComp/EducationPaterners";
 import FluencyCarrerCulture from "@/Components/HomeComp/FluencyCarrerCulture";

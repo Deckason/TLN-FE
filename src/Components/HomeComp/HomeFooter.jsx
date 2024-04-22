@@ -96,11 +96,7 @@ const HomeFooter = () => {
     },
     {
       title: "Mandarin Classes Near Me",
-      content: [
-        "Mandarin Classes in Mumbai",
-        "Mandarin Classes in Delhi",
-        "Mandarin Classes in Pune",
-      ],
+      content: ["Mandarin Classes in Delhi"],
     },
     {
       title: "English Classes Near Me",
@@ -131,8 +127,8 @@ const HomeFooter = () => {
           </div>
         </div>
         <div className="flex flex-col w-full">
-          <div className="lg:flex block text-[#757575]  w-full my-3 h-fit  items-start justify-around  lg:mx-0 mx-5 lg:justify-between">
-            <div className="flex gap-10 lg:justify-normal justify-around">
+          <div className="lg:flex block text-[#757575]  w-fit lg:w-full my-3 h-fit  items-start justify-around  lg:ml-0 ml-5 lg:justify-between">
+            <div className="flex lg:gap-10 gap-5 lg:justify-normal justify-between">
               <div className="flex flex-col  ">
                 <h3 className="text-[#000] mb-3 font-medium text-[10px] lg:text-[20px]">
                   About us
@@ -167,16 +163,14 @@ const HomeFooter = () => {
                 <span>Online English Classes</span>
               </div>
             </div>
-            <div className="flex lg:hidden h-full flex-col w-full  gap-x-2">
+            <div className="flex lg:hidden h-full flex-col w-fit  gap-x-2">
               {splicing &&
-                datas
-                  .splice(0, 12)
-                  .map((data, index) => (
-                    <>
+                datas.splice(0, 12).map((data, index) => (
+                  <>
                     <Accordian key={index} data={data} i={index} />
-                    </>
-                  ))}
-                  <hr />
+                  </>
+                ))}
+              <hr />
             </div>
             <div className="lg:flex hidden flex-col ">
               <h3 className="text-[#000] mb-3 font-medium text-[20px]">
