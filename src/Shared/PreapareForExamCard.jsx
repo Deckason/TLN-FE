@@ -4,8 +4,8 @@ import arrowLeft from "@/Assets/Icons/arrowleft.svg";
 const PreapareForExamCard = ({ data }) => {
   return (
     <div>
-      <div className="w-full shadow-xl shadow-neutral-color/15 rounded-xl min-h-[509px] flex-col justify-start items-center gap-8 inline-flex p-4">
-        <div className="self-stretch h-[212px]  rounded-xl flex-col justify-start  items-center gap-2.5 flex">
+      <div className="w-fit shadow-xl shadow-neutral-color/15 rounded-xl  min-h-[509px] flex-col justify-center items-center gap-8 inline-flex p-4">
+        <div className="self-stretch h-[200px]  rounded-xl flex-col justify-start  items-center gap-2.5 flex">
           <Image
             alt="levelImages"
             className="w-full h-full rounded-xl object-cover"
@@ -17,7 +17,7 @@ const PreapareForExamCard = ({ data }) => {
           <div className="self-stretch text-center text-neutral-800 max-lg:text-lg lg:text-xl 2xl:text-2xl font-medium ">
             {data?.title}
           </div>
-          <div className="self-stretch max-h-[170px] h-full max-lg:max-h-[240px] min-h-[170px]  flex-col mb-3 justify-start items-center gap-2 flex">
+          <div className="self-stretch max-h-[170px] h-full max-lg:max-h-[240px] min-h-[170px]  flex-col justify-start items-center gap-2 flex">
             <div className="self-stretch text-center text-neutral-500 lg:text-lg 2xl:text-xl font-normal leading-7">
               {data?.description}
             </div>

@@ -60,11 +60,11 @@ const StudentsTestomony = () => {
             <SwiperSlide className="flex justify-center items-center">
               <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-4 max-w-[404px]">
                 <div className="text-base text-stone-900">
-                  “French I have done my French A1 & A2 from The Language
+                  “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
                   teach from the deep down of their soul. Anytime they are ready
                   to help. Specially Amrita Iyer is very very helpful to learn
-                  French. Thank you The Language Network!!!”
+                  Spanish. Thank you The Language Network!!!”
                 </div>
                 <div className="flex gap-2.5 mt-10">
                   <Image
@@ -95,11 +95,11 @@ const StudentsTestomony = () => {
             <SwiperSlide className="flex justify-center items-center">
               <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
-                  “French I have done my French A1 & A2 from The Language
+                  “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
                   teach from the deep down of their soul. Anytime they are ready
                   to help. Specially Amrita Iyer is very very helpful to learn
-                  French. Thank you The Language Network!!!”
+                  Spanish. Thank you The Language Network!!!”
                 </div>
                 <div className="flex gap-2.5 mt-10">
                   <Image
@@ -130,11 +130,11 @@ const StudentsTestomony = () => {
             <SwiperSlide className="flex justify-center items-center">
               <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
-                  “French I have done my French A1 & A2 from The Language
+                  “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
                   teach from the deep down of their soul. Anytime they are ready
                   to help. Specially Amrita Iyer is very very helpful to learn
-                  French. Thank you The Language Network!!!”
+                  Spanish. Thank you The Language Network!!!”
                 </div>
                 <div className="flex gap-2.5 mt-10">
                   <Image
@@ -165,11 +165,11 @@ const StudentsTestomony = () => {
             <SwiperSlide className="flex justify-center items-center">
               <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
-                  “French I have done my French A1 & A2 from The Language
+                  “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
                   teach from the deep down of their soul. Anytime they are ready
                   to help. Specially Amrita Iyer is very very helpful to learn
-                  French. Thank you The Language Network!!!”
+                  Spanish. Thank you The Language Network!!!”
                 </div>
                 <div className="flex gap-2.5 mt-10">
                   <Image
@@ -200,11 +200,11 @@ const StudentsTestomony = () => {
             <SwiperSlide className="flex justify-center items-center">
               <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
-                  “French I have done my French A1 & A2 from The Language
+                  “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
                   teach from the deep down of their soul. Anytime they are ready
                   to help. Specially Amrita Iyer is very very helpful to learn
-                  French. Thank you The Language Network!!!”
+                  Spanish. Thank you The Language Network!!!”
                 </div>
                 <div className="flex gap-2.5 mt-10">
                   <Image

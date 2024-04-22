@@ -1,5 +1,7 @@
 import "@/css/Custom.css";
 import girlRashi from "@/Assets/Homepage/UpComingCourseCard/girlRashi.png";
+import girlIshwari from "@/Assets/Spanish/Ishwari-1 1.png";
+import girlPrachi from "@/Assets/Spanish/Prachi-1.png";
 import Image from "next/image";
 const UpcomingBatches = () => {
   return (
@@ -88,11 +90,12 @@ const UpcomingBatches = () => {
             </div>
           </div>
           <div className="max-w-[540px]  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
-            <div className="h-[240px] bg-[#F7DF10] rounded-t-xl flex items-center  w-full relative">
-              <div className="bg-[#FFF00D] h-[60%] w-full absolute -z-0"></div>
+            <div className="h-[240px] bg-[#9127a3] rounded-t-xl overflow-hidden flex items-center  w-full relative">
+              <div className="bg-[#771192] w-[33%] h-full  absolute -z-0"></div>
+              <div className="bg-[#8c0f8d] w-[33%] h-full right-0 absolute -z-0"></div>
               <Image
                 alt="girlRashi"
-                src={girlRashi}
+                src={girlPrachi}
                 className="object-contain w-full h-full z-10"
               ></Image>
             </div>
@@ -100,10 +103,10 @@ const UpcomingBatches = () => {
               <div className="self-stretch min-h-[344px] flex-col justify-start items-start gap-8 flex">
                 <div className="self-stretch h-[60px] px-4 flex-col justify-start items-start gap-3 flex">
                   <div className="self-stretch h-[23px] text-stone-900 text-2xl font-bold ">
-                    Abhinav Kaushal
+                    T. Vijayan Joseph Scott
                   </div>
                   <div className="self-stretch h-[25px] text-neutral-500 text-xl font-normal  leading-7">
-                    Spanish Trainer
+                    French Trainer
                   </div>
                 </div>
                 <div className="h-[252px] flex-col justify-start items-start flex">
@@ -112,7 +115,7 @@ const UpcomingBatches = () => {
                       Batch Starts{" "}
                     </div>
                     <div className="text-stone-900 lg:text-xl text-[15px] font-bold ">
-                      March 20th 2024
+                      March 15th 2024
                     </div>
                   </div>
                   <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-center inline-flex">
@@ -129,7 +132,7 @@ const UpcomingBatches = () => {
                     </div>
                     <div className="lg:w-[335px] w-[195px] flex-col justify-center items-end gap-[13px] inline-flex">
                       <div className="self-stretch text-right text-stone-900 text-nowrap lg:text-xl text-sm font-bold ">
-                        SAT 8:00 pm - 10:00 pm | 2 hrs
+                        SAT 10:00 pm - 11:00 pm | 1 hrs
                       </div>
                     </div>
                   </div>
@@ -138,7 +141,7 @@ const UpcomingBatches = () => {
                       Certification{" "}
                     </div>
                     <div className="text-stone-900 lg:text-xl text-xs font-bold ">
-                      Beginners French | A1
+                      Intermediate French | A1
                     </div>
                   </div>
                 </div>
@@ -153,11 +156,12 @@ const UpcomingBatches = () => {
             </div>
           </div>
           <div className="max-w-[540px]  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
-            <div className="h-[240px] bg-[#F7DF10] rounded-t-xl flex items-center  w-full relative">
-              <div className="bg-[#FFF00D] h-[60%] w-full absolute -z-0"></div>
+            <div className="h-[240px] bg-[#e76c10] overflow-hidden rounded-t-xl flex items-center  w-full relative">
+              <div className="bg-[#d06c10] h-[33%] w-full top-0  absolute -z-0"></div>
+              <div className="bg-[#ea8110] h-[33%] w-full bottom-0 absolute -z-0"></div>{" "}
               <Image
                 alt="girlRashi"
-                src={girlRashi}
+                src={girlIshwari}
                 className="object-contain w-full h-full z-10"
               ></Image>
             </div>
@@ -165,10 +169,10 @@ const UpcomingBatches = () => {
               <div className="self-stretch min-h-[344px] flex-col justify-start items-start gap-8 flex">
                 <div className="self-stretch h-[60px] px-4 flex-col justify-start items-start gap-3 flex">
                   <div className="self-stretch h-[23px] text-stone-900 text-2xl font-bold ">
-                    Abhinav Kaushal
+                    Anchal Gupta
                   </div>
                   <div className="self-stretch h-[25px] text-neutral-500 text-xl font-normal  leading-7">
-                    Spanish Trainer
+                    German Trainer
                   </div>
                 </div>
                 <div className="h-[252px] flex-col justify-start items-start flex">
@@ -194,7 +198,7 @@ const UpcomingBatches = () => {
                     </div>
                     <div className="lg:w-[335px] w-[195px] flex-col justify-center items-end gap-[13px] inline-flex">
                       <div className="self-stretch text-right text-stone-900 text-nowrap lg:text-xl text-sm font-bold ">
-                        SAT 8:00 pm - 10:00 pm | 2 hrs
+                        SAT 9:00 pm - 11:00 pm | 3 hrs
                       </div>
                     </div>
                   </div>
@@ -203,7 +207,7 @@ const UpcomingBatches = () => {
                       Certification{" "}
                     </div>
                     <div className="text-stone-900 lg:text-xl text-xs font-bold ">
-                      Beginners French | A1
+                      Advanced French | A1
                     </div>
                   </div>
                 </div>
