@@ -1,38 +1,21 @@
-import dalf from "@/Assets/FrenchPage/FrenchMain/dalf.png";
-import delf from "@/Assets/FrenchPage/FrenchMain/delf.png";
-import telf from "@/Assets/FrenchPage/FrenchMain/telf.png";
 import PreapareForExamCard from "@/Shared/PreapareForExamCard";
-
+import Goethe from "@/Assets/GermanMainPage/Gothe.svg";
 const PreapareForGermanExam = () => {
   const levelDatas = [
     {
-      title: "DALF preparation classes",
-      img: dalf,
+      title: "GOETHE preparation classes",
+      img: Goethe,
       description:
-        "DALF is an advanced-level German language proficiency exam, suitable for individuals aiming to demonstrate high-level competency in German. It is recognized globally by academic institutions, employers, and immigration authorities.",
-      link: "",
-    },
-    {
-      title: "DELF preparation classes",
-      img: delf,
-      description:
-        "The DELF exam assesses German language proficiency for non-native speakers. It is designed for individuals seeking certification for academic or professional purposes, and for those planning to immigrate to German-speaking countries.",
-      link: "",
-    },
-    {
-      title: "TEL preparation classes",
-      img: telf,
-      description:
-        "The TEF exam is an internationally recognized German language proficiency test for individuals seeking to assess their German language abilities. It is widely accepted by academic institutions, employers, and immigration authorities worldwide.",
+        "The GOETHE exam assesses German language proficiency globally. Success demonstrates effective communication in German for various purposes. Our tailored course helps you master skills and confidently tackle each section of the exam.",
       link: "",
     },
   ];
   return (
-    <div>
+    <div className="flex justify-center flex-col items-center">
       <div className="text-black text-2xl mb-12 text-center font-bold ">
         Prepare for German Exams
       </div>
-      <div className="xl:grid-cols-3 2xl:max-w-[1440px] max-w-8xl  flex-wrap justify-center gap-1 max-md:gap-5 md:gap-2 px-5 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
+      <div className=" max-w-[548px]  flex-wrap justify-center gap-1 max-md:gap-5 md:gap-2 px-5 mx-auto  lg:gap-[18px] grid items-center mt-[48px] ">
         {levelDatas.map((data, index) => (
           <PreapareForExamCard data={data} key={index} />
         ))}
