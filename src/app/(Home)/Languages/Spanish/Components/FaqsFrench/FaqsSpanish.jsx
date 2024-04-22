@@ -66,11 +66,18 @@ const FaqsSpanish = () => {
   const [splicing, setsplicing] = useState(true);
   return (
     <div className="flex justify-center bg-[#F6F3F3] pb-[112px]">
-      <div className="max-w-[1463px] flex-col justify-center w-full mx-auto items-center gap-12 flex">
+      <div className="max-w-[1463px] flex-col justify-center w-full mx-auto items-center  gap-12 flex">
         <div className="flex-col justify-start items-center gap-12 flex">
           <div className="text-black text-2xl font-bold ">FAQs</div>
-          <div className="justify-center mx-4 h-full items-center max-xl:gap-4 gap-8 flex max-xl:flex-col-reverse">
-            <div className="flex-col mx-auto max-w-[869px] gap-y-2 gap-x-2">
+          <div className="justify-center mx-4 h-full items-center max-xl:gap-4 order-2  grid lg:grid-cols-2 max-xl:flex-col-reverse">
+            <div className="w-full lg:order-2 order-1 flex justify-center">
+              <Image
+                alt="frenchFlag"
+                className="max-w-[562px] w-full object-contain  max-h-[508px] rounded-2xl"
+                src={frenchFlag}
+              />
+            </div>
+            <div className="flex-col  md:w-full mx-auto lg:order-1 order-2 gap-y-2 gap-x-2">
               {splicing &&
                 datas
                   .splice(0, 6)
@@ -81,13 +88,6 @@ const FaqsSpanish = () => {
                 datas.map((data, index) => (
                   <FaqsCard key={index} data={data} i={index} />
                 ))}
-            </div>
-            <div className="">
-              <Image
-                alt="SpanishFlag"
-                className="max-w-[562px] w-full object-contain  max-h-[508px] rounded-2xl"
-                src={frenchFlag}
-              />
             </div>
           </div>
         </div>

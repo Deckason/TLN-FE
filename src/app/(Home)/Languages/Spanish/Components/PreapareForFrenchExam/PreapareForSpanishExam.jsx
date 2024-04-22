@@ -22,9 +22,9 @@ const PreapareForSpanishExam = () => {
   return (
     <div>
       <div className="text-black text-2xl mb-12 text-center font-bold ">
-        Prepare for French Exams
+        Prepare for Spanish Exams
       </div>
-      <div className="xl:grid-cols-2 2xl:max-w-[1440px] max-w-8xl h-fit flex-wrap justify-center gap-1 max-md:gap-5 md:gap-2 px-5 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
+      <div className="xl:grid-cols-2  max-w-8xl h-fit flex-wrap justify-center gap-1 max-md:gap-5 md:gap-2 px-5 mx-auto w-full max-w-5xl lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
         {levelDatas.map((data, index) => (
           <PreapareForExamCard data={data} key={index} />
         ))}

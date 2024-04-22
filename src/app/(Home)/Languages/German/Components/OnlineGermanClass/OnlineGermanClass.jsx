@@ -1,6 +1,6 @@
-import adults from "@/Assets/FrenchPage/FrenchMain/classesForAdults.png";
-import kids from "@/Assets/FrenchPage/FrenchMain/classesForKids.png";
-import studyAbroad from "@/Assets/FrenchPage/FrenchMain/StudyAbroad.png";
+import adults from "@/Assets/Spanish/SpanishForAdults.png";
+import kids from "@/Assets/Spanish/SpanishForKids.png";
+import studyAbroad from "@/Assets/Spanish/SpanishForStudyAbroad.png";
 import OnlineClassCard from "@/Shared/OnlineClassCard";
 
 const OnlineGermanClass = () => {
