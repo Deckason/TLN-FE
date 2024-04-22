@@ -11,9 +11,9 @@ const Accordian = ({ data, i }) => {
       <div
         className={`${
           showDes ? "h-full" : "min-h-fit"
-        }  bg-white rounded-2xl transform duration-300 justify-start items-start  flex-col flex`}
+        }  bg-white rounded-2xl transform duration-300 justify-start w-full items-start  flex-col flex`}
       >
-        <div className="grow shrink basis-0 self-stretch justify-between gap-10 w-full items-center inline-flex">
+        <div className="grow shrink basis-0 self-stretch justify-between w-full items-center inline-flex">
           <div className="grow shrink basis-0 h-[27px] text-black text-xl font-normal font-['Inter'] ">
             {data?.title}
           </div>
@@ -26,7 +26,7 @@ const Accordian = ({ data, i }) => {
             showDes ? "h-full opacity-100 mt-3 " : "h-0 opacity-0"
           } transform  duration-300 `}
         >
-          <div className="flex justify-start items-start flex-col w-full">
+          <div className="flex md:text-lg text-sm justify-start items-start flex-col w-full">
             <ul>
               {data.content.map((item, index) => (
                 <li key={index}>{item}</li>

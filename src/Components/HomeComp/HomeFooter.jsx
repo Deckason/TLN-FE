@@ -111,59 +111,59 @@ const HomeFooter = () => {
 
   return (
     <div className="pt-20 flex flex-col items-center justify-center">
-      <div className="lg:text-[15px] text-[10px] gap-10 flex flex-col lg:flex-row w-full lg:w-[1680px]  lg:items-center justify-around ">
-        <div className="flex lg:flex-col  w-fit  gap-10 lg:items-start items-center justify-center lg:justify-between">
-          <div className="flex flex-col lg:w-full w-32 ">
+      <div className="lg:text-[15px] text-[10px] gap-10 flex flex-col lg:flex-row w-full lg:w-fit lg:items-center justify-around ">
+        <div className="flex lg:flex-col lg:w-fit w-full gap-10 h-full lg:h-[490px] lg:items-start items-center justify-between">
+          <div className="flex ml-5  flex-row gap-10 lg:flex-col  lg:w-full w-fit  ">
             <Image src={FooterLogo1} al mb-3t="footerLogo1" className="mb-3" />
             <div className="flex gap-5 items-center justify-center">
               <Image src={FooterLogo2} alt="footerLogo2" />
               <Image src={FooterLogo3} alt="footerLogo3" />
             </div>
           </div>
-          <div>
-            <button className="  px-4 py-1.5 lg:px-8 lg:py-3.5 bg-teal-600 rounded-lg justify-center text-neutral-50 text-2xl font-medium items-center gap-2.5 inline-flex">
+          <div className="flex items-center justify-end lg:justify-center w-full">
+            <button className="mr-5  px-4 py-1.5 lg:px-5 lg:py-3.5 bg-teal-600 rounded-lg justify-center text-neutral-50 text-base md:text-lg lg:text-2xl font-medium items-center gap-2.5 inline-flex">
               Contact Us
             </button>{" "}
           </div>
         </div>
         <div className="flex flex-col w-full">
-          <div className="lg:flex block text-[#757575]  w-fit lg:w-full my-3 h-fit  items-start justify-around  lg:ml-0 ml-5 lg:justify-between">
-            <div className="flex lg:gap-10 gap-5 lg:justify-normal justify-between">
+          <div className="lg:flex block text-[#757575]  lg:flex-wrap w-auto lg:w-full my-3 h-fit  items-start justify-around  lg:ml-0 mx-5 lg:justify-between">
+            <div className="flex lg:gap- gap-5 lg:justify-normal md:justify-start justify-between">
               <div className="flex flex-col  ">
-                <h3 className="text-[#000] mb-3 font-medium text-[10px] lg:text-[20px]">
+                <h3 className="text-[#000] mb-3 font-medium md:text-lg text-[10px] lg:text-[20px]">
                   About us
                 </h3>
-                <span>Who Are We</span>
-                <span>How It Works</span>
-                <span>Blogs</span>
-                <span>Press</span>
-                <span>FAQ</span>
-                <span>Contact Us</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Who Are We</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">How It Works</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Blogs</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Press</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">FAQ</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Contact Us</span>
               </div>
               <div className="flex flex-col ">
-                <h3 className="text-[#000] mb-3 font-medium text-[10px] lg:text-[20px]">
+                <h3 className="text-[#000] mb-3 font-medium md:text-lg text-[10px] lg:text-[20px]">
                   Work With us
                 </h3>
-                <span>Career</span>
-                <span>Teach With Us</span>
-                <span>Collaborate With Us</span>
-                <span>Content Creators</span>
-                <span>Refer & Earn</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Career</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Teach With Us</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Collaborate With Us</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Content Creators</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Refer & Earn</span>
               </div>
               <div className="flex flex-col ">
-                <h3 className="text-[#000] mb-3 font-medium text-[10px] lg:text-[20px]">
+                <h3 className="text-[#000] mb-3 font-medium md:text-lg text-[10px] lg:text-[20px]">
                   Language We Offer
                 </h3>
-                <span>Online French Classes</span>
-                <span>Online German Classes</span>
-                <span>Online Spanish Classes</span>
-                <span>Online Korean Classes</span>
-                <span>Online Japanese Classes</span>
-                <span>Online Mandarin Classes</span>
-                <span>Online English Classes</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Online French Classes</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Online German Classes</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Online Spanish Classes</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Online Korean Classes</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Online Japanese Classes</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Online Mandarin Classes</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">Online English Classes</span>
               </div>
             </div>
-            <div className="flex lg:hidden h-full flex-col w-fit  gap-x-2">
+            <div className="flex lg:hidden h-full flex-col w-full  gap-x-2">
               {splicing &&
                 datas.splice(0, 12).map((data, index) => (
                   <>
@@ -277,7 +277,7 @@ const HomeFooter = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row w-full lg:w-[1680px] p-10 items-center justify-between">
+      <div className="flex flex-col lg:flex-row w-full lg:w-full p-10 items-center justify-between">
         <div>Copyright © 2024 The Language Network - All Right Reserved</div>
         <div className="flex flex-col lg:flex-row items-center gap-5">
           <div className="flex">
