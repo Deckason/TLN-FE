@@ -13,7 +13,7 @@ const ClassLevelCard = ({ data }) => {
             {data?.title2}
           </div>
         </div>
-        <div className="w-full  h-full min-h-[100px] lg:min-h-[310px] flex-col justify-between items-center gap-8 flex">
+        <div className="w-full  h-full min-h-[100px] lg:min-h-[330px] flex-col justify-between items-center gap-8 flex">
           <div className="self-stretch max-h-[150px] md:max-h-[170px] min-h-[170px] mx-5 flex-col justify-start items-center gap-2 flex">
             <div className="self-stretch text-center text-neutral-500 lg:text-lg 2xl:text-xl font-normal leading-7">
               {data?.description}

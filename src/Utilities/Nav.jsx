@@ -12,8 +12,12 @@ import "@/css/NavBarCustom.css";
 const Nav = () => {
   const languageOptions = [
     {
-      name: "English",
+      name: "Home",
       path: "/",
+    },
+    {
+      name: "English",
+      path: "/Languages/English",
     },
     {
       name: "French",
