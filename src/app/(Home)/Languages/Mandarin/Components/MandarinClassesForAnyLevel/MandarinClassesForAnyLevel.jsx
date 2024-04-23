@@ -3,21 +3,21 @@ import ClassLevelCard from "@/Shared/ClassLevelCard";
 const MandarinClassesForAnyLevel = () => {
   const levelDatas = [
     {
-      title: "A1-A2",
+      title: "HSK1-HSK2",
       title2: "Beginner Classes",
       description:
         "Begin your Mandarin language journey with our beginner courses, specially designed to introduce you to the basics of Mandarin grammar, vocabulary, and pronunciation. Perfect for those with little to no prior experience in Mandarin.        ",
       link: "",
     },
     {
-      title: "B1-B2",
+      title: "HSK3-HSK4",
       title2: "Intermediate Classes",
       description:
         "Our intermediate courses will help you build upon your existing knowledge and enhance your fluency. Dive deeper into complex grammar structures, expand your vocabulary, and engage in meaningful conversations to strengthen your Mandarin proficiency.        ",
       link: "",
     },
     {
-      title: "C1-C2",
+      title: "HSK5-HSK6",
       title2: "Advanced Classes",
       description:
         "Elevate your Mandarin proficiency with our advanced courses. Tailored for learners with a solid grasp of the language, these courses refine nuanced language skills, tackle advanced grammar, and foster professional-level communication. Perfect for those aiming for fluency in academic or professional contexts.        ",

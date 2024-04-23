@@ -4,7 +4,7 @@ import arrowLeft from "@/Assets/Icons/arrowleft.svg";
 const ClassLevelCard = ({ data }) => {
   return (
     <div>
-      <div className="w-full shadow-xl shadow-neutral-color/15 rounded-xl min-h-[509px] flex-col justify-start items-center gap-8 inline-flex">
+      <div className="w-full shadow-xl shadow-neutral-color/15 rounded-xl min-h-[559px] flex-col justify-start items-center gap-8 inline-flex">
         <div className="self-stretch h-[212px] py-[72px] bg-secondary-color rounded-xl flex-col justify-start items-center gap-2.5 flex">
           <div className="self-stretch text-center text-neutral-800 text-2xl font-bold ">
             {data?.title}
@@ -13,7 +13,7 @@ const ClassLevelCard = ({ data }) => {
             {data?.title2}
           </div>
         </div>
-        <div className="w-full  h-full min-h-[100px] lg:min-h-[255px] flex-col justify-start items-center gap-8 flex">
+        <div className="w-full  h-full min-h-[100px] lg:min-h-[310px] flex-col justify-between items-center gap-8 flex">
           <div className="self-stretch max-h-[150px] md:max-h-[170px] min-h-[170px] mx-5 flex-col justify-start items-center gap-2 flex">
             <div className="self-stretch text-center text-neutral-500 lg:text-lg 2xl:text-xl font-normal leading-7">
               {data?.description}
