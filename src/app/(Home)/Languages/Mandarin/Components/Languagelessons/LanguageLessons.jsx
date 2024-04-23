@@ -9,25 +9,25 @@ const LanguageLessons = () => {
           <div className="max-sm:w-[330px] mx-auto w-[270px] 2xl:w-[380px] rounded-lg border flex-col justify-start items-center inline-flex">
             <div className="self-stretch px-4 py-2 rounded-tl-lg rounded-tr-lg justify-start items-center gap-2.5 inline-flex">
               <div className="grow shrink basis-0 text-stone-900 2xl:text-xl text-lg font-bold ">
-                Spanish classes Near Me
+                Mandarin classes Near Me
               </div>
             </div>
             <div className="self-stretch  min-h-[200px] px-4 py-2 flex-col justify-start items-center gap-2 flex">
               <div className="list-none self-stretch text-neutral-500 2xl:text-xl font-normal  underline leading-7">
                 <li>
-                  <a className="">Spanish class Near Me</a>
+                  <a className="">Mandarin class Near Me</a>
                 </li>
                 <li>
-                  <a className="">Spanish classes Near Me</a>
+                  <a className="">Mandarin classes Near Me</a>
                 </li>
                 <li>
-                  <a className="">Spanish courses Near Me</a>
+                  <a className="">Mandarin courses Near Me</a>
                 </li>
                 <li>
-                  <a className="">Spanish language courses in Delhi</a>
+                  <a className="">Mandarin language courses in Delhi</a>
                 </li>
                 <li>
-                  <a className="">Spanish classes in Mumbai</a>
+                  <a className="">Mandarin classes in Mumbai</a>
                 </li>
               </div>
             </div>
@@ -41,16 +41,16 @@ const LanguageLessons = () => {
             <div className="self-stretch min-h-[200px] px-4 py-2 flex-col justify-start items-center gap-2 flex">
               <div className="list-none self-stretch grow shrink basis-0 text-neutral-500 2xl:text-xl font-normal  underline leading-7">
                 <li>
-                  <a className="">Spanish Speaking Course</a>
+                  <a className="">Mandarin Speaking Course</a>
                 </li>
                 <li>
-                  <a className="">Spanish classes online</a>
+                  <a className="">Mandarin classes online</a>
                 </li>
                 <li>
-                  <a className="">Spanish Speaking classes</a>
+                  <a className="">Mandarin Speaking classes</a>
                 </li>
                 <li>
-                  <a className="">Spanish Speaking Course online</a>
+                  <a className="">Mandarin Speaking Course online</a>
                 </li>
               </div>
             </div>
@@ -64,13 +64,13 @@ const LanguageLessons = () => {
             <div className="self-stretch grow shrink basis-0 px-4 py-2 flex-col min-h-[200px]  justify-start items-center gap-2 flex">
               <div className="list-none self-stretch grow shrink basis-0 text-neutral-500 2xl:text-xl  font-normal  underline leading-7">
                 <li>
-                  <a className="">Online Spanish Course</a>
+                  <a className="">Online Mandarin Course</a>
                 </li>
                 <li>
-                  <a className="">Spanish classes online</a>
+                  <a className="">Mandarin classes online</a>
                 </li>
                 <li>
-                  <a className="">Spanish Speaking Course</a>
+                  <a className="">Mandarin Speaking Course</a>
                 </li>
               </div>
             </div>
@@ -78,28 +78,28 @@ const LanguageLessons = () => {
           <div className="w-[330px] 2xl:w-[420px] truncate mx-auto max-sm:w-[330px] rounded-lg border flex-col justify-start items-center inline-flex">
             <div className="self-stretch px-4 py-2 rounded-tl-lg rounded-tr-lg justify-start items-center gap-2.5 inline-flex">
               <div className="grow shrink basis-0 text-stone-900 2xl:text-xl text-lg font-bold ">
-                Spanish Classes for Focused Learning{" "}
+                Mandarin Classes for Focused Learning{" "}
               </div>
             </div>
             <div className="self-stretch  grow shrink basis-0 px-4 py-2 flex-col min-h-[200px] justify-center items-start gap-2 flex">
               <div className="self-stretch grow shrink basis-0 text-neutral-500 text-nowrap  2xl:text-xl font-normal  underline leading-7">
                 <li>
-                  <a className="">Online Spanish classes for Beginner</a>
+                  <a className="">Online Mandarin classes for Beginner</a>
                 </li>
                 <li>
-                  <a className="">Online Spanish classes for Intermediate</a>
+                  <a className="">Online Mandarin classes for Intermediate</a>
                 </li>
                 <li>
-                  <a className="">Online Spanish classes for Advanced</a>
+                  <a className="">Online Mandarin classes for Advanced</a>
                 </li>
                 <li>
-                  <a className="">Online Spanish classes for kids</a>
+                  <a className="">Online Mandarin classes for kids</a>
                 </li>
                 <li>
-                  <a className="">Online Spanish classes for adults</a>
+                  <a className="">Online Mandarin classes for adults</a>
                 </li>
                 <li>
-                  <a className="">Online Spanish classes to study abroad</a>
+                  <a className="">Online Mandarin classes to study abroad</a>
                 </li>
               </div>
             </div>
