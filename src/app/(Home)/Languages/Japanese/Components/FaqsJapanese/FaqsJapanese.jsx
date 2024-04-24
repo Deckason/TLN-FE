@@ -4,7 +4,7 @@ import frenchFlag from "@/Assets/FrenchPage/FrenchMain/FaqImg.svg";
 import Image from "next/image";
 import { useState } from "react";
 
-const FaqsMandarin = () => {
+const FaqsJapanese = () => {
   const datas = [
     {
       question: "Why learn with The Language Network?",
@@ -18,24 +18,24 @@ const FaqsMandarin = () => {
     },
     {
       question:
-        "What job opportunities will I get after completing my Mandarin course?",
+        "What job opportunities will I get after completing my Japanese course?",
       answer:
-        "Upon completing your Mandarin course, you'll gain access to job opportunities in fields like translation, tourism, international relations, and teaching.",
+        "Upon completing your Japanese course, you'll gain access to job opportunities in fields like translation, tourism, international relations, and teaching.",
     },
     {
-      question: "Is Mandarin an easy language to learn?",
+      question: "Is Japanese an easy language to learn?",
       answer:
-        "According to the Foreign Service Institute, Mandarin is considered one of the easiest languages for native English speakers to learn because it's more similar to English compared to other languages that are rated as harder to learn.",
+        "According to the Foreign Service Institute, Japanese is considered one of the easiest languages for native English speakers to learn because it's more similar to English compared to other languages that are rated as harder to learn.",
     },
     {
-      question: "Is Mandarin useful in India?",
+      question: "Is Japanese useful in India?",
       answer:
-        "Learning Mandarin opens doors to diverse job opportunities in India and abroad, given its status as the second most learned and sixth most spoken language globally. Mandarin is particularly valuable in sectors such as hospitality, tourism, diplomacy, and multinational corporations, making it a highly sought-after skill in the Indian job market.",
+        "Learning Japanese opens doors to diverse job opportunities in India and abroad, given its status as the second most learned and sixth most spoken language globally. Japanese is particularly valuable in sectors such as hospitality, tourism, diplomacy, and multinational corporations, making it a highly sought-after skill in the Indian job market.",
     },
     {
-      question: "How much time will it take to learn Mandarin?",
+      question: "How much time will it take to learn Japanese?",
       answer:
-        "The time it takes to learn Mandarin depends on the level you aim to achieve. It typically takes around 3 months to clear HSK 1 & 2, about 4 months to complete HSK 3 & 4 and approximately 6 months to clear HSK 5 & 6 . Completing all levels up to HSK 6 proficiency usually spans around 11 months.        ",
+        "The time it takes to learn Japanese depends on the level you aim to achieve. It typically takes around 8 months to clear N5-N4 level, about 8 months to complete N3-N2 level and approximately 4 months to clear N1 level. Completing all levels up to N1 proficiency usually spans around 20 months.         ",
     },
     {
       question: "What if I miss a class?",
@@ -50,7 +50,7 @@ const FaqsMandarin = () => {
     {
       question: "Who will be teaching me?",
       answer:
-        "Your learning journey is guided by internationally certified trainers who are experienced and proficient in both Mandarin language and teaching methodologies.",
+        "Your learning journey is guided by internationally certified trainers who are experienced and proficient in both Japanese language and teaching methodologies.",
     },
     {
       question: "How many students are accommodated in one batch?",
@@ -104,4 +104,4 @@ const FaqsMandarin = () => {
   );
 };
 
-export default FaqsMandarin;
+export default FaqsJapanese;
