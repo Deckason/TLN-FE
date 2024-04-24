@@ -10,7 +10,7 @@ const OnlineKoreanClass = () => {
       img: kids,
       description:
         "Dive into Korean fun with interactive online classes designed to spark excitement and curiosity in young learners!",
-      link: "",
+      link: "/Languages/Korean/ForKids",
     },
     {
       title: "Korean Classes for Adults",

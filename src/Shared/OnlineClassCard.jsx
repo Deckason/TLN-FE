@@ -1,5 +1,6 @@
 import Image from "next/image";
 import arrowLeft from "@/Assets/Icons/arrowleft.svg";
+import Link from "next/link";
 const OnlineClassCard = ({ data }) => {
   return (
     <div>
@@ -22,14 +23,17 @@ const OnlineClassCard = ({ data }) => {
             </div>
           </div>
           <div className="self-stretch mx-4 mb-4 h-14 flex-col justify-center items-center gap-2.5 flex">
-            <div className="self-stretch h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex">
+            <Link
+              href={data?.link}
+              className="self-stretch h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
+            >
               <div className="text-center text-teal-600 text-xl font-normal leading-7">
                 Learn more
               </div>
               <div className="w-6 h-6 relative">
                 <Image alt="arrowLeft" src={arrowLeft}></Image>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

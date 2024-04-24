@@ -10,7 +10,7 @@ const OnlineMandarinClass = () => {
       img: kids,
       description:
         "Dive into Mandarin fun with interactive online classes designed to spark excitement and curiosity in young learners!",
-      link: "",
+      link: "/Languages/Mandarin/ForKids",
     },
     {
       title: "Mandarin Classes for Adults",

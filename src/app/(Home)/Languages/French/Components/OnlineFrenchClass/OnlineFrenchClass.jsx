@@ -10,7 +10,7 @@ const OnlineFrenchClass = () => {
       img: kids,
       description:
         "Dive into French fun with interactive online classes designed to spark excitement and curiosity in young learners!",
-      link: "",
+      link: "/Languages/French/ForKids",
     },
     {
       title: "French Classes for Adults",
