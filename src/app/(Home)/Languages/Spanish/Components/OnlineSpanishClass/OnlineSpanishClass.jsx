@@ -10,7 +10,7 @@ const OnlineSpanishClass = () => {
       img: kids,
       description:
         "Dive into Spanish fun with interactive online classes designed to spark excitement and curiosity in young learners!",
-      link: "",
+      link: "/Languages/Spanish/ForKids",
     },
     {
       title: "Spanish Classes for Adults",
