@@ -3,7 +3,7 @@ import kids from "@/Assets/Spanish/SpanishForKids.png";
 import studyAbroad from "@/Assets/Spanish/SpanishForStudyAbroad.png";
 import OnlineClassCard from "@/Shared/OnlineClassCard";
 
-const OnlineFrenchClass = () => {
+const OnlineClass = () => {
   const levelDatas = [
     {
       title: "French Classes for Kids",
@@ -41,4 +41,4 @@ const OnlineFrenchClass = () => {
   );
 };
 
-export default OnlineFrenchClass;
+export default OnlineClass;
