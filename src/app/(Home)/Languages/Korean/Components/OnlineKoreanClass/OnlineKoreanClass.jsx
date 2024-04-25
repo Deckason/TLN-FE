@@ -17,7 +17,7 @@ const OnlineKoreanClass = () => {
       img: adults,
       description:
         "Embark on a journey to Korean fluency with dynamic online classes tailored to fit your busy lifestyle and ignite your passion for language learning!",
-      link: "",
+      link: "/Languages/Korean/adults",
     },
     {
       title: "Korean Classes to Study Abroad",

@@ -56,11 +56,11 @@ const StudentsTestomony = (data) => {
               },
             }}
             // modules={[Pagination]}
-            className="mySwiper mx-auto flex justify-center  items-center max-w-[505px] md:max-w-[700px]  lg:max-w-[1400px] xl:max-w-[1500px]  2xl:max-w-[1600px] 3xl:max-w-[1700px]"
+            className="mySwiper lg:mx-auto mx-0 flex justify-start  items-center max-w-[375px] md:max-w-[700px]  lg:max-w-[1400px] xl:max-w-[1500px]  2xl:max-w-[1600px] 3xl:max-w-[1700px]"
           >
             {data.data.map((card) => (
-              <SwiperSlide className="flex justify-center items-center">
-                <div className="flex flex-col justify-between  bg-white rounded-2xl lg:p-8 p-4 h-full w-[404px]">
+              <SwiperSlide className="flex justify-start items-center">
+                <div className="flex flex-col justify-between  bg-white rounded-2xl lg:pl-8 p-0 h-full w-[375px]">
                   <div className="text-base text-stone-900">{card.para}</div>
                   <div className="flex gap-3 mt-10">
                     <Image

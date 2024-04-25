@@ -20,8 +20,8 @@ const PageMainBanner = ({ bannerData }) => {
                 </div>
               </div>
             </div>
-            <div className=" relative hidden lg:flex xl:flex items-center justify-center flex-grow">
-              <div className="3xl:w-[399px] shadow-2xl  absolute left-0 top-0 hidden xl:block xl:w-[399px] 2xl:right-3 h-[207px] rounded-lg ">
+            <div className=" relative hidden lg:flex xl:flex gap-10 flex-wrap items-center justify-center">
+              <div className="3xl:w-[399px] shadow-2xl  left-0 top-0 hidden xl:block xl:w-[399px] 2xl:right-3 h-[207px] rounded-lg ">
                 {" "}
                 <Image
                   alt="boy1"
@@ -30,18 +30,18 @@ const PageMainBanner = ({ bannerData }) => {
                 ></Image>
               </div>
 
-              <div className="3xl:w-[399px] shadow-2xl  absolute  bottom-0 xl:w-[399px] hidden xl:block h-[207px] rounded-lg ">
-                <Image
-                  alt="boy1"
-                  src={bannerData.images[1]}
-                  className="w-full object-fill rounded-lg h-full "
-                ></Image>
-              </div>
-              <div className="3xl:w-[399px] shadow-2xl  absolute right-0 top-0 hidden xl:block xl:w-[399px] 2xl:right-3 h-[207px] rounded-lg ">
+              <div className="3xl:w-[399px] shadow-2xl  right-0 top-0 hidden xl:block xl:w-[399px] 2xl:right-3 h-[207px] rounded-lg ">
                 {" "}
                 <Image
                   alt="boy1"
                   src={bannerData.images[2]}
+                  className="w-full object-fill rounded-lg h-full "
+                ></Image>
+              </div>
+              <div className="3xl:w-[399px] shadow-2xl xl:w-[399px] hidden xl:block h-[207px] rounded-lg ">
+                <Image
+                  alt="boy1"
+                  src={bannerData.images[1]}
                   className="w-full object-fill rounded-lg h-full "
                 ></Image>
               </div>

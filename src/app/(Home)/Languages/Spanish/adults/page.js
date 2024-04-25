@@ -21,6 +21,7 @@ import PreapareForExam from "@/Shared/FrenchAdultReusableComponents/PreapareForE
 import StudentsTestomony from "@/Shared/FrenchAdultReusableComponents/StudentsTestomony";
 import Faqs from "@/Shared/FrenchAdultReusableComponents/Faqs/Faqs";
 import LanguageLessons from "@/Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
+import { list } from "postcss";
 import HowItWorks from "@/Shared/FrenchAdultReusableComponents/HowItWorks/HowItWorks";
 
 const page = () => {
@@ -242,9 +243,9 @@ const page = () => {
       img: step3,
     },
     {
-      step: "Step 1",
+      step: "Step 4",
       title: "Get Started With us",
-      para: "Fill out our form with your details and your preferred language to learn with us.",
+      para: "Love our demo- now pick and choose batches according to your flexibility and get started on your learning adventure with us.",
       img: step4,
     },
   ];

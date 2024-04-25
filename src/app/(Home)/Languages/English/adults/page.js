@@ -21,12 +21,13 @@ import PreapareForExam from "@/Shared/FrenchAdultReusableComponents/PreapareForE
 import StudentsTestomony from "@/Shared/FrenchAdultReusableComponents/StudentsTestomony";
 import Faqs from "@/Shared/FrenchAdultReusableComponents/Faqs/Faqs";
 import LanguageLessons from "@/Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
+import { list } from "postcss";
 import HowItWorks from "@/Shared/FrenchAdultReusableComponents/HowItWorks/HowItWorks";
 
 const page = () => {
   const bannerData = {
-    title: "Online French Classes for Adults",
-    para: "Learning a new language has no age limit! If you're ready to dive into the world of French, you're in luck! Our online French classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of French grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking French from day one! Our top-notch French trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online French classes for adults.",
+    title: "Online English Classes for Adults",
+    para: "Learning a new language has no age limit! If you're ready to dive into the world of English, you're in luck! Our online English classes and courses for adults offer an engaging and hassle-free way to learn one of the most widely spoken languages globally. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of English grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking English from day one! Our top-notch English trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online English classes for adults.",
     images: [img1, img2, img3],
   };
   const levelData = [
@@ -34,45 +35,38 @@ const page = () => {
       title: "A1-A2",
       title2: "Beginner Classes",
       description:
-        "Start your French language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
+        "Start your English language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
       link: "",
     },
     {
       title: "B1-B2",
       title2: "Intermediate Classes",
       description:
-        "Elevate your French proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
+        "Elevate your English proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
       link: "",
     },
     {
       title: "C1-C2",
       title2: "Advanced Classes",
       description:
-        "Advance your French skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+        "Advance your English skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
       link: "",
     },
   ];
   const LearnData = `Learn from the finest!`;
   const PrepareData = [
     {
-      title: "DALF preparation classes",
+      title: "IELTS preparation classes",
       img: dalf,
       description:
-        "DALF is an advanced-level French language proficiency exam, suitable for individuals aiming to demonstrate high-level competency in French. It is recognized globally by academic institutions, employers, and immigration authorities.",
+        "IELTS: Take your English skills to new heights with our IELTS preparation course. Designed to help you excel in all four components - reading, writing, listening, and speaking - our expert instructors will guide you towards success in this globally recognized English proficiency exam.",
       link: "",
     },
     {
-      title: "DELF preparation classes",
+      title: "TOEFL preparation classes",
       img: delf,
       description:
-        "The DELF exam assesses French language proficiency for non-native speakers. It is designed for individuals seeking certification for academic or professional purposes, and for those planning to immigrate to French-speaking countries.",
-      link: "",
-    },
-    {
-      title: "TEL preparation classes",
-      img: telf,
-      description:
-        "The TEF exam is an internationally recognized French language proficiency test for individuals seeking to assess their French language abilities. It is widely accepted by academic institutions, employers, and immigration authorities worldwide.",
+        "TOEFL: Open doors to international opportunities with our TOEFL preparation course. From mastering academic English to excelling in listening, speaking, reading, and writing, our comprehensive training ensures you're fully prepared to ace this crucial exam.",
       link: "",
     },
   ];
@@ -242,9 +236,9 @@ const page = () => {
       img: step3,
     },
     {
-      step: "Step 1",
+      step: "Step 4",
       title: "Get Started With us",
-      para: "Fill out our form with your details and your preferred language to learn with us.",
+      para: "Love our demo- now pick and choose batches according to your flexibility and get started on your learning adventure with us.",
       img: step4,
     },
   ];

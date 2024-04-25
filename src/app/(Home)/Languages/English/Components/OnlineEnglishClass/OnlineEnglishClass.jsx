@@ -17,7 +17,7 @@ const OnlineEnglishClass = () => {
       img: adults,
       description:
         "Embark on a journey to English fluency with dynamic online classes tailored to fit your busy lifestyle and ignite your passion for language learning!",
-      link: "",
+      link: "/Languages/English/adults",
     },
     {
       title: "English Classes to Study Abroad",

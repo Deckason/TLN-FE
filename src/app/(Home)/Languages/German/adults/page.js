@@ -21,12 +21,13 @@ import PreapareForExam from "@/Shared/FrenchAdultReusableComponents/PreapareForE
 import StudentsTestomony from "@/Shared/FrenchAdultReusableComponents/StudentsTestomony";
 import Faqs from "@/Shared/FrenchAdultReusableComponents/Faqs/Faqs";
 import LanguageLessons from "@/Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
+import { list } from "postcss";
 import HowItWorks from "@/Shared/FrenchAdultReusableComponents/HowItWorks/HowItWorks";
 
 const page = () => {
   const bannerData = {
-    title: "Online French Classes for Adults",
-    para: "Learning a new language has no age limit! If you're ready to dive into the world of French, you're in luck! Our online French classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of French grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking French from day one! Our top-notch French trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online French classes for adults.",
+    title: "Online German Classes for Adults",
+    para: "Learning a new language has no age limit! If you're ready to dive into the world of German, you're in luck! Our online German classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of German grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking German from day one! Our top-notch German trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online German classes for adults.",
     images: [img1, img2, img3],
   };
   const levelData = [
@@ -34,45 +35,31 @@ const page = () => {
       title: "A1-A2",
       title2: "Beginner Classes",
       description:
-        "Start your French language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
+        "Start your German language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
       link: "",
     },
     {
       title: "B1-B2",
       title2: "Intermediate Classes",
       description:
-        "Elevate your French proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
+        "Elevate your German proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
       link: "",
     },
     {
       title: "C1-C2",
       title2: "Advanced Classes",
       description:
-        "Advance your French skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+        "Advance your German skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
       link: "",
     },
   ];
   const LearnData = `Learn from the finest!`;
   const PrepareData = [
     {
-      title: "DALF preparation classes",
+      title: "GOETHE preparation classes",
       img: dalf,
       description:
-        "DALF is an advanced-level French language proficiency exam, suitable for individuals aiming to demonstrate high-level competency in French. It is recognized globally by academic institutions, employers, and immigration authorities.",
-      link: "",
-    },
-    {
-      title: "DELF preparation classes",
-      img: delf,
-      description:
-        "The DELF exam assesses French language proficiency for non-native speakers. It is designed for individuals seeking certification for academic or professional purposes, and for those planning to immigrate to French-speaking countries.",
-      link: "",
-    },
-    {
-      title: "TEL preparation classes",
-      img: telf,
-      description:
-        "The TEF exam is an internationally recognized French language proficiency test for individuals seeking to assess their French language abilities. It is widely accepted by academic institutions, employers, and immigration authorities worldwide.",
+        "The GOETHE exam assesses German language proficiency globally. Success demonstrates effective communication in German for various purposes. Our tailored courses help you master skills and confidently tackle each section.",
       link: "",
     },
   ];
@@ -128,27 +115,27 @@ const page = () => {
     },
     {
       question:
-        "What job opportunities will I get after completing my French course?",
+        "What job opportunities will I get after completing my German course?",
       answer:
-        "Upon completing your French course, you'll gain access to job opportunities in fields like translation, tourism, international relations, and teaching.",
+        "After completing your German course, you'll gain access to job opportunities in various sectors such as international business, tourism, translation and interpretation, diplomacy, teaching, and multinational corporations with German operations. You may also find employment as a language specialist, cultural liaison, or customer service representative for German-speaking clients. Additionally, proficiency in German can enhance your prospects for roles in research, academia, and cultural exchange programs.",
     },
 
     {
-      question: "Is French an easy language to learn?",
+      question: "Is German an easy language to learn?",
       answer:
-        "According to the Foreign Service Institute, French is considered one of the easiest languages for native English speakers to learn because it's more similar to English compared to other languages that are rated as harder to learn.",
+        "About 40% of German and English vocabulary are very similar to each other, which makes German one of the easiest languages to learn for native English speakers. So, basically, if you already know English, it should be a piece of cake for you to learn German.",
     },
 
     {
-      question: "Is French useful in India?",
+      question: "Is German useful in India?",
       answer:
-        "Learning French opens doors to diverse job opportunities in India and abroad, given its status as the second most learned and sixth most spoken language globally. French is particularly valuable in sectors such as hospitality, tourism, diplomacy, and multinational corporations, making it a highly sought-after skill in the Indian job market.",
+        "Learning German opens up numerous career opportunities in India, particularly in sectors such as engineering, power, education, IT, healthcare, and pharmaceuticals. Proficiency in German can lead to new professional avenues and enhance prospects for employment and advancement in these industries.",
     },
 
     {
-      question: "How much time will it take to learn French?",
+      question: "How much time will it take to learn German?",
       answer:
-        "The time it takes to learn French depends on the level you aim to achieve. It typically takes around 5 months to clear A1-A2 level, about 8 months to complete B1-B2 level and approximately 11 months to clear C1-C2 level. Completing all levels up to C2 proficiency usually spans around 24 months. ",
+        "The time it takes to learn German depends on the level you aim to achieve. It typically takes around 5 months to clear A1-A2 level, about 5 months to complete B1-B2 level and approximately 12 months to clear C1-C2 level. Completing all levels up to C2 proficiency usually spans around 24 months.",
     },
 
     {
@@ -166,13 +153,18 @@ const page = () => {
     {
       question: "Who will be teaching me?",
       answer:
-        "Your learning journey is guided by internationally certified trainers who are experienced and proficient in both French language and teaching methodologies.",
+        "Your learning journey is guided by internationally certified trainers who are experienced and proficient in both German language and teaching methodologies.",
     },
 
     {
       question: "How many students are accommodated in one batch?",
       answer:
         "Our batches are usually small in size, typically accommodating 5 students to ensure personalised attention.",
+    },
+    {
+      question: "What is included in the curriculum?",
+      answer:
+        "The curriculum includes grammar, vocabulary, listening, speaking, reading, and writing exercises tailored to each proficiency level, along with cultural insights and practical applications.,",
     },
   ];
   const lessonData = [
@@ -242,9 +234,9 @@ const page = () => {
       img: step3,
     },
     {
-      step: "Step 1",
+      step: "Step 4",
       title: "Get Started With us",
-      para: "Fill out our form with your details and your preferred language to learn with us.",
+      para: "Love our demo- now pick and choose batches according to your flexibility and get started on your learning adventure with us.",
       img: step4,
     },
   ];
@@ -253,11 +245,11 @@ const page = () => {
       <PageMainBanner bannerData={bannerData} />
       <HowItWorks data={howData} />
       <WhyShould />
-      <UpcomingBatches />
-      <ClassesForAnyLevel levelData={levelData} />
       <PreapareForExam data={PrepareData} />
-      <StudentsTestomony data={TestimonialData} />
+      <ClassesForAnyLevel levelData={levelData} />
+      <UpcomingBatches />
       <Faqs data={Faq} />
+      <StudentsTestomony data={TestimonialData} />
       <Learn data={LearnData} />
       <LanguageLessons data={lessonData} />
       <SubscribeToOur />
