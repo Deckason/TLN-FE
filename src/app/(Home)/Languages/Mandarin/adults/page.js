@@ -26,74 +26,60 @@ import HowItWorks from "@/Shared/FrenchAdultReusableComponents/HowItWorks/HowItW
 
 const page = () => {
   const bannerData = {
-    title: "Online French Classes for Adults",
-    para: "Learning a new language has no age limit! If you're ready to dive into the world of French, you're in luck! Our online French classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of French grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking French from day one! Our top-notch French trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online French classes for adults.",
+    title: "Online Mandarin Classes for Adults",
+    para: "Learning a new language has no age limit! If you're ready to dive into the world of Mandarin, you're in luck! Our online Mandarin classes and courses for adults offer an engaging and hassle-free way to learn the world's most spoken language. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Mandarin grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Mandarin from day one! Our top-notch Mandarin trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 Online Mandarin classes for adults.",
     images: [img1, img2, img3],
   };
   const levelData = [
     {
-      title: "A1-A2",
+      title: "HSK 1 & 2",
       title2: "Beginner Classes",
       description:
-        "Start your French language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
+        "Begin your Mandarin language journey with our beginner courses, specially designed to introduce you to the basics of Mandarin grammar, vocabulary, and pronunciation. Perfect for those with little to no prior experience in Mandarin.",
       link: "",
     },
     {
-      title: "B1-B2",
+      title: "HSK 3 & 4",
       title2: "Intermediate Classes",
       description:
-        "Elevate your French proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
+        "Our intermediate courses will help you build upon your existing knowledge and enhance your fluency. Dive deeper into complex grammar structures, expand your vocabulary, and engage in meaningful conversations to strengthen your Mandarin proficiency.",
       link: "",
     },
     {
-      title: "C1-C2",
+      title: "HSK 5 & 6",
       title2: "Advanced Classes",
       description:
-        "Advance your French skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+        "Elevate your Mandarin proficiency with our advanced courses. Tailored for learners with a solid grasp of the language, these courses refine nuanced language skills, tackle advanced grammar, and foster professional-level communication. Perfect for those aiming for fluency in academic or professional contexts.",
       link: "",
     },
   ];
   const LearnData = `Learn from the finest!`;
   const PrepareData = [
     {
-      title: "DALF preparation classes",
+      title: "HSK preparation classes",
       img: dalf,
       description:
-        "DALF is an advanced-level French language proficiency exam, suitable for individuals aiming to demonstrate high-level competency in French. It is recognized globally by academic institutions, employers, and immigration authorities.",
-      link: "",
-    },
-    {
-      title: "DELF preparation classes",
-      img: delf,
-      description:
-        "The DELF exam assesses French language proficiency for non-native speakers. It is designed for individuals seeking certification for academic or professional purposes, and for those planning to immigrate to French-speaking countries.",
-      link: "",
-    },
-    {
-      title: "TEL preparation classes",
-      img: telf,
-      description:
-        "The TEF exam is an internationally recognized French language proficiency test for individuals seeking to assess their French language abilities. It is widely accepted by academic institutions, employers, and immigration authorities worldwide.",
+        "Master the HSK exam, the gold standard in Mandarin proficiency. Our expert-led courses comprehensively cover vocabulary, grammar, reading, and listening, ensuring your success in this globally recognized assessment.",
       link: "",
     },
   ];
   const TestimonialData = [
     {
-      para: "“French I have done my French A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn French. Thank you The Language Network!!!“",
+      para: "“Mandarin I have done my Mandarin A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Mandarin. Thank you The Language Network!!!“",
       img: "",
       name: "Komal Patil",
       Dept: "MBA in Marketing",
       Rating: "2",
     },
     {
-      para: "“French whenever it comes to language learning, TLN is the best place I must say. Earlier I was too skeptical to join online classes. But TLN  makes it a cakewalk   for you to learn  a foreign language. I'm looking forward for enthusiastic and communicative classes as it was before.”",
+      para: "“Mandarin whenever it comes to language learning, TLN is the best place I must say. Earlier I was too skeptical to join online classes. But TLN  makes it a cakewalk   for you to learn  a foreign language. I'm looking forward for enthusiastic and communicative classes as it was before.”",
       img: "",
       name: "Pranjal Shinde",
       Dept: "Post Graduate Sudent",
       Rating: "3",
     },
     {
-      para: "“Up to now, my experience with The Language Network has been exceptional. Prajakta, my French instructor, created a friendly and comfortable atmosphere in the classes, which made the learning process enjoyable and engaging for me.”",
+      para: "“Up to now, my experience with The Language Network has been exceptional. Prajakta, my Mandarin instructor, created a friendly and comfortable atmosphere in the classes, which made the learning process enjoyable and engaging for me.”",
       img: "",
       name: "Rithika Kumari",
       Dept: "Student",
@@ -129,27 +115,27 @@ const page = () => {
     },
     {
       question:
-        "What job opportunities will I get after completing my French course?",
+        "What job opportunities will I get after completing my Mandarin course?",
       answer:
-        "Upon completing your French course, you'll gain access to job opportunities in fields like translation, tourism, international relations, and teaching.",
+        "Upon completion of your Mandarin course, you will gain access to job opportunities in international business, diplomacy, education, translation, tourism, and customer service. You could work as a language instructor, translator, interpreter, or in marketing, sales, or management for companies in Mandarin-speaking regions, enhancing career prospects and global networking.",
     },
 
     {
-      question: "Is French an easy language to learn?",
+      question: "Is Mandarin an easy language to learn?",
       answer:
-        "According to the Foreign Service Institute, French is considered one of the easiest languages for native English speakers to learn because it's more similar to English compared to other languages that are rated as harder to learn.",
+        "Yes, Mandarin is an accessible language to learn, especially with consistent practice and the right resources. Its grammar is relatively straightforward, and its writing system, while complex, can be mastered with patience. With dedication, many learners find Mandarin to be a rewarding and manageable language to study.",
     },
 
     {
-      question: "Is French useful in India?",
+      question: "Is Mandarin useful in India?",
       answer:
-        "Learning French opens doors to diverse job opportunities in India and abroad, given its status as the second most learned and sixth most spoken language globally. French is particularly valuable in sectors such as hospitality, tourism, diplomacy, and multinational corporations, making it a highly sought-after skill in the Indian job market.",
+        "Completing a Mandarin course can lead to job opportunities in international business, diplomacy, education, translation, tourism, and more. Roles may include language instructor, translator, customer service, or marketing in Mandarin-speaking regions, offering potential for career advancement and global networking.",
     },
 
     {
-      question: "How much time will it take to learn French?",
+      question: "How much time will it take to learn Mandarin?",
       answer:
-        "The time it takes to learn French depends on the level you aim to achieve. It typically takes around 5 months to clear A1-A2 level, about 8 months to complete B1-B2 level and approximately 11 months to clear C1-C2 level. Completing all levels up to C2 proficiency usually spans around 24 months. ",
+        "The time it takes to learn Mandarin depends on the level you aim to achieve. It typically takes around 3 months to clear HSK 1 & 2, about 4 months to complete HSK 3 & 4 and approximately 3 months to clear HSK 5 . Completing all levels up to HSK 5 proficiency usually spans around 10 months.",
     },
 
     {
@@ -167,7 +153,7 @@ const page = () => {
     {
       question: "Who will be teaching me?",
       answer:
-        "Your learning journey is guided by internationally certified trainers who are experienced and proficient in both French language and teaching methodologies.",
+        "Your learning journey is guided by internationally certified trainers who are experienced and proficient in both Mandarin language and teaching methodologies.",
     },
 
     {

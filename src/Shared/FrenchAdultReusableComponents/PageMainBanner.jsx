@@ -7,7 +7,7 @@ const PageMainBanner = ({ bannerData }) => {
       <div className="mt-[67px] max-w-[1681px]  mx-auto mb-[26px] w-full">
         <div className="flex-auto max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-            <div className="flex flex-col  w-6/12 max-md:ml-0 max-lg:w-full">
+            <div className="flex flex-col  w-8/12 max-md:ml-0 max-lg:w-full">
               <div className="flex z-10 flex-col px-5 text-black max-md:max-w-full">
                 <div className="text-5xl font-bold max-md:max-w-full max-md:text-4xl">
                   {bannerData.title}
@@ -20,7 +20,7 @@ const PageMainBanner = ({ bannerData }) => {
                 </div>
               </div>
             </div>
-            <div className=" relative hidden lg:flex xl:flex gap-10 flex-wrap items-center justify-center">
+            <div className=" relative hidden h-fit gap-5 lg:flex xl:flex  flex-wrap items-center justify-center">
               <div className="3xl:w-[399px] shadow-2xl  left-0 top-0 hidden xl:block xl:w-[399px] 2xl:right-3 h-[207px] rounded-lg ">
                 {" "}
                 <Image

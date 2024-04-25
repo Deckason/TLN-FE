@@ -26,67 +26,53 @@ import HowItWorks from "@/Shared/FrenchAdultReusableComponents/HowItWorks/HowItW
 
 const page = () => {
   const bannerData = {
-    title: "Online French Classes for Adults",
-    para: "Learning a new language has no age limit! If you're ready to dive into the world of French, you're in luck! Our online French classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of French grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking French from day one! Our top-notch French trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online French classes for adults.",
+    title: "Online Korean Classes for Adults",
+    para: "Learning a new language has no age limit! If you're ready to dive into the world of Korean, you're in luck! Our online Korean classes and courses for adults offer an engaging and hassle-free way to learn the most loved language by our Gen Z’s. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Korean grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Korean from day one! Our top-notch Korean trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online Korean classes for adults.",
     images: [img1, img2, img3],
   };
   const levelData = [
     {
-      title: "A1-A2",
+      title: "TOPIK I Level 1 & 2",
       title2: "Beginner Classes",
       description:
-        "Start your French language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
+        "Begin your Korean language journey with our beginner courses, specially designed to introduce you to the basics of Korean grammar, vocabulary, and pronunciation. Perfect for those with little to no prior experience in Korean",
       link: "",
     },
     {
-      title: "B1-B2",
+      title: "TOPIK II Level 3 & 4",
       title2: "Intermediate Classes",
       description:
-        "Elevate your French proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
+        "Our intermediate courses will help you build upon your existing knowledge and enhance your fluency. Dive deeper into complex grammar structures, expand your vocabulary, and engage in meaningful conversations to strengthen your Korean proficiency.",
       link: "",
     },
     {
-      title: "C1-C2",
+      title: "TOPIK III Level 5 & 6",
       title2: "Advanced Classes",
       description:
-        "Advance your French skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+        "Elevate your Korean proficiency with our advanced courses. Tailored for learners with a solid grasp of the language, these courses refine nuanced language skills, tackle advanced grammar, and foster professional-level communication. Perfect for those aiming for fluency in academic or professional contexts.",
       link: "",
     },
   ];
   const LearnData = `Learn from the finest!`;
   const PrepareData = [
     {
-      title: "DALF preparation classes",
+      title: "TOPIK preparation classes",
       img: dalf,
       description:
-        "DALF is an advanced-level French language proficiency exam, suitable for individuals aiming to demonstrate high-level competency in French. It is recognized globally by academic institutions, employers, and immigration authorities.",
-      link: "",
-    },
-    {
-      title: "DELF preparation classes",
-      img: delf,
-      description:
-        "The DELF exam assesses French language proficiency for non-native speakers. It is designed for individuals seeking certification for academic or professional purposes, and for those planning to immigrate to French-speaking countries.",
-      link: "",
-    },
-    {
-      title: "TEL preparation classes",
-      img: telf,
-      description:
-        "The TEF exam is an internationally recognized French language proficiency test for individuals seeking to assess their French language abilities. It is widely accepted by academic institutions, employers, and immigration authorities worldwide.",
+        "Get ready for the TOPIK proficiency exam with our expert courses. Our comprehensive curriculum covers all aspects of the exam, helping you excel in vocabulary, grammar, listening, and speaking. Join us and achieve your Korean language goals!",
       link: "",
     },
   ];
   const TestimonialData = [
     {
-      para: "“French I have done my French A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn French. Thank you The Language Network!!!“",
+      para: "Korean I have done my French A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn French. Thank you The Language Network!!!“",
       img: "",
       name: "Komal Patil",
       Dept: "MBA in Marketing",
       Rating: "2",
     },
     {
-      para: "“French whenever it comes to language learning, TLN is the best place I must say. Earlier I was too skeptical to join online classes. But TLN  makes it a cakewalk   for you to learn  a foreign language. I'm looking forward for enthusiastic and communicative classes as it was before.”",
+      para: "Korean whenever it comes to language learning, TLN is the best place I must say. Earlier I was too skeptical to join online classes. But TLN  makes it a cakewalk   for you to learn  a foreign language. I'm looking forward for enthusiastic and communicative classes as it was before.”",
       img: "",
       name: "Pranjal Shinde",
       Dept: "Post Graduate Sudent",
@@ -129,27 +115,27 @@ const page = () => {
     },
     {
       question:
-        "What job opportunities will I get after completing my French course?",
+        "What job opportunities will I get after completing my Korean course?",
       answer:
-        "Upon completing your French course, you'll gain access to job opportunities in fields like translation, tourism, international relations, and teaching.",
+        "Upon completing your Korean course, you'll have opportunities in translation, international business, tourism, education, and cultural exchange programs, particularly with ties to South Korea. Proficiency in Korean can lead to roles in multinational corporations and as a language specialist or cultural liaison.",
     },
 
     {
-      question: "Is French an easy language to learn?",
+      question: "Is Korean an easy language to learn?",
       answer:
-        "According to the Foreign Service Institute, French is considered one of the easiest languages for native English speakers to learn because it's more similar to English compared to other languages that are rated as harder to learn.",
+        "Korean is much easier to learn than other East Asian languages. Unlike tonal languages, Korean does not rely on tone variations to convey meaning. This means that regardless of your accent or pronunciation, one tone equals one meaning in Korean.",
     },
 
     {
-      question: "Is French useful in India?",
+      question: "Is Korean useful in India?",
       answer:
-        "Learning French opens doors to diverse job opportunities in India and abroad, given its status as the second most learned and sixth most spoken language globally. French is particularly valuable in sectors such as hospitality, tourism, diplomacy, and multinational corporations, making it a highly sought-after skill in the Indian job market.",
+        "Yes, Korean can be quite useful in India, especially in sectors like technology, manufacturing, entertainment, and tourism, where there are increasing business and cultural ties with South Korea. Proficiency in Korean can open up job opportunities in multinational corporations with Korean operations, as well as in translation, interpretation, and language teaching roles. Additionally, knowledge of Korean can facilitate cultural exchange programs and collaborations between Indian and South Korean organisations.",
     },
 
     {
-      question: "How much time will it take to learn French?",
+      question: "How much time will it take to learn Korean?",
       answer:
-        "The time it takes to learn French depends on the level you aim to achieve. It typically takes around 5 months to clear A1-A2 level, about 8 months to complete B1-B2 level and approximately 11 months to clear C1-C2 level. Completing all levels up to C2 proficiency usually spans around 24 months. ",
+        "The time it takes to learn Korean depends on the level you aim to achieve. It typically takes around 4 months to clear TOPIK I - Level 1 & 2, about 5 months to complete  TOPIK II - Level 3 & 4  and approximately 6 months to clear  TOPIK II - Level 5 & 6.  Completing all levels up to TOPIK II Level 6 proficiency usually spans around 15 months.",
     },
 
     {
@@ -167,7 +153,7 @@ const page = () => {
     {
       question: "Who will be teaching me?",
       answer:
-        "Your learning journey is guided by internationally certified trainers who are experienced and proficient in both French language and teaching methodologies.",
+        "Your learning journey is guided by internationally certified trainers who are experienced and proficient in both Korean language and teaching methodologies.",
     },
 
     {

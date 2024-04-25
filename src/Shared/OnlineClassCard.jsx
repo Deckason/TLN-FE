@@ -12,7 +12,6 @@ const OnlineClassCard = ({ data }) => {
             src={data?.img}
           ></Image>
         </div>
-
         <div className="w-full  h-full   max-lg:max-h-[350px] lg:min-h-[295px] flex-col justify-start items-center gap-8 flex">
           <div className="self-stretch text-center text-neutral-800 max-lg:text-lg text-xl 2xl:text-2xl font-medium ">
             {data?.title}

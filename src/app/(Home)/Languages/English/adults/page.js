@@ -124,25 +124,25 @@ const page = () => {
       question:
         "What job opportunities will I get after completing my French course?",
       answer:
-        "Upon completing your French course, you'll gain access to job opportunities in fields like translation, tourism, international relations, and teaching.",
+        "Upon completing your English course you’ll gain access to job opportunities in teaching, translation, content creation, communication, international business, tourism, education, media, technical writing, human resources, and more.",
     },
 
     {
-      question: "Is French an easy language to learn?",
+      question: "Is English an easy language to learn?",
       answer:
-        "According to the Foreign Service Institute, French is considered one of the easiest languages for native English speakers to learn because it's more similar to English compared to other languages that are rated as harder to learn.",
+        "According to the Foreign Service Institute (FSI), English is classified as a Category I language, meaning it is relatively easy for speakers of other languages to learn. It has a straightforward alphabet, simple grammar rules , and a wealth of resources available for learners.",
     },
 
     {
-      question: "Is French useful in India?",
+      question: "Is English useful in India?",
       answer:
-        "Learning French opens doors to diverse job opportunities in India and abroad, given its status as the second most learned and sixth most spoken language globally. French is particularly valuable in sectors such as hospitality, tourism, diplomacy, and multinational corporations, making it a highly sought-after skill in the Indian job market.",
+        "Yes, English is highly useful in India. It is widely spoken and serves as an official language alongside Hindi in many states and territories. English proficiency is essential for communication in business, education, government, media, and various other sectors. It also provides access to a vast array of global resources, opportunities, and networks.",
     },
 
     {
-      question: "How much time will it take to learn French?",
+      question: "How much time will it take to learn English?",
       answer:
-        "The time it takes to learn French depends on the level you aim to achieve. It typically takes around 5 months to clear A1-A2 level, about 8 months to complete B1-B2 level and approximately 11 months to clear C1-C2 level. Completing all levels up to C2 proficiency usually spans around 24 months. ",
+        "The time it takes to learn English varies depending on your specific goal, such as achieving proficiency in exams like IELTS or TOEFL. It requires dedicated study and practice to reach your desired level.",
     },
 
     {

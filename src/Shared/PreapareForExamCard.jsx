@@ -4,7 +4,7 @@ import arrowLeft from "@/Assets/Icons/arrowleft.svg";
 const PreapareForExamCard = ({ data }) => {
   return (
     <div className="">
-      <div className="w-fit shadow-xl shadow-neutral-color/15 rounded-xl  min-h-[509px] flex-col justify-center items-center gap-8 inline-flex p-4">
+      <div className="w-auto shadow-xl shadow-neutral-color/15 rounded-xl  min-h-[509px] flex-col justify-center items-center gap-8 inline-flex p-4">
         <div className="self-stretch h-[200px]  rounded-xl flex-col justify-start  items-center gap-2.5 flex">
           <Image
             alt="levelImages"
