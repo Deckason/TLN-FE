@@ -26,8 +26,8 @@ import HowItWorks from "@/Shared/FrenchAdultReusableComponents/HowItWorks/HowItW
 
 const page = () => {
   const bannerData = {
-    title: "Online French Classes for Adults",
-    para: "Learning a new language has no age limit! If you're ready to dive into the world of French, you're in luck! Our online French classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of French grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking French from day one! Our top-notch French trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online French classes for adults.",
+    title: "Online Spanish Classes for Adults",
+    para: "Learning a new language has no age limit! If you're ready to dive into the world of Spanish, you're in luck! Our online Spanish classes and courses for adults offer an engaging and hassle-free way to learn the 2nd most spoken language in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Spanish grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Spanish from day one! Our top-notch Spanish trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online Spanish classes for adults.",
     images: [img1, img2, img3],
   };
   const levelData = [
@@ -35,65 +35,58 @@ const page = () => {
       title: "A1-A2",
       title2: "Beginner Classes",
       description:
-        "Start your French language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
+        "Start your Spanish language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
       link: "",
     },
     {
       title: "B1-B2",
       title2: "Intermediate Classes",
       description:
-        "Elevate your French proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
+        "Elevate your Spanish proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
       link: "",
     },
     {
       title: "C1-C2",
       title2: "Advanced Classes",
       description:
-        "Advance your French skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+        "Advance your Spanish skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in Spanish.",
       link: "",
     },
   ];
   const LearnData = `Learn from the finest!`;
   const PrepareData = [
     {
-      title: "DALF preparation classes",
-      img: dalf,
-      description:
-        "DALF is an advanced-level French language proficiency exam, suitable for individuals aiming to demonstrate high-level competency in French. It is recognized globally by academic institutions, employers, and immigration authorities.",
-      link: "",
-    },
-    {
-      title: "DELF preparation classes",
+      title: "DELE preparation classes",
       img: delf,
       description:
-        "The DELF exam assesses French language proficiency for non-native speakers. It is designed for individuals seeking certification for academic or professional purposes, and for those planning to immigrate to French-speaking countries.",
+        " Achieve Spanish language proficiency with our DELE exam preparation courses. These diplomas are internationally recognized and validate your Spanish skills for academic, professional, or personal purposes.",
       link: "",
     },
     {
-      title: "TEL preparation classes",
-      img: telf,
+      title: "SIELE preparation classes",
+      img: dalf,
       description:
-        "The TEF exam is an internationally recognized French language proficiency test for individuals seeking to assess their French language abilities. It is widely accepted by academic institutions, employers, and immigration authorities worldwide.",
+        "Prepare for the SIELE exam, a globally recognized certification of Spanish language proficiency. Whether for academic or professional advancement, our courses are tailored to help you succeed.",
       link: "",
     },
   ];
   const TestimonialData = [
     {
-      para: "“French I have done my French A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn French. Thank you The Language Network!!!“",
+      para: "“Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!“",
       img: "",
       name: "Komal Patil",
       Dept: "MBA in Marketing",
       Rating: "2",
     },
     {
-      para: "“French whenever it comes to language learning, TLN is the best place I must say. Earlier I was too skeptical to join online classes. But TLN  makes it a cakewalk   for you to learn  a foreign language. I'm looking forward for enthusiastic and communicative classes as it was before.”",
+      para: "“Spanish whenever it comes to language learning, TLN is the best place I must say. Earlier I was too skeptical to join online classes. But TLN  makes it a cakewalk   for you to learn  a foreign language. I'm looking forward for enthusiastic and communicative classes as it was before.”",
       img: "",
       name: "Pranjal Shinde",
       Dept: "Post Graduate Sudent",
       Rating: "3",
     },
     {
-      para: "“Up to now, my experience with The Language Network has been exceptional. Prajakta, my French instructor, created a friendly and comfortable atmosphere in the classes, which made the learning process enjoyable and engaging for me.”",
+      para: "“Up to now, my experience with The Language Network has been exceptional. Prajakta, my Spanish instructor, created a friendly and comfortable atmosphere in the classes, which made the learning process enjoyable and engaging for me.”",
       img: "",
       name: "Rithika Kumari",
       Dept: "Student",
@@ -129,27 +122,27 @@ const page = () => {
     },
     {
       question:
-        "What job opportunities will I get after completing my French course?",
+        "What job opportunities will I get after completing my Spanish course?",
       answer:
-        "Upon completing your French course, you'll gain access to job opportunities in fields like translation, tourism, international relations, and teaching.",
+        "Upon completing your Spanish course, you'll gain access to job opportunities in fields like translation, tourism, international relations, and teaching.",
     },
 
     {
-      question: "Is French an easy language to learn?",
+      question: "Is Spanish an easy language to learn?",
       answer:
-        "According to the Foreign Service Institute, French is considered one of the easiest languages for native English speakers to learn because it's more similar to English compared to other languages that are rated as harder to learn.",
+        "Spanish is considered one of the easiest languages to learn due to its phonetic pronunciation, cognates with other languages, consistent verb conjugation patterns, abundant resources, and welcoming language community.",
     },
 
     {
-      question: "Is French useful in India?",
+      question: "Is Spanish useful in India?",
       answer:
-        "Learning French opens doors to diverse job opportunities in India and abroad, given its status as the second most learned and sixth most spoken language globally. French is particularly valuable in sectors such as hospitality, tourism, diplomacy, and multinational corporations, making it a highly sought-after skill in the Indian job market.",
+        "Learning Spanish can be highly useful in India, especially in sectors like tourism, hospitality, international business, and cultural exchange programs. Additionally, proficiency in Spanish can open up opportunities for collaborations with Spanish-speaking countries and enhance one's global competitiveness.",
     },
 
     {
-      question: "How much time will it take to learn French?",
+      question: "How much time will it take to learn Spanish?",
       answer:
-        "The time it takes to learn French depends on the level you aim to achieve. It typically takes around 5 months to clear A1-A2 level, about 8 months to complete B1-B2 level and approximately 11 months to clear C1-C2 level. Completing all levels up to C2 proficiency usually spans around 24 months. ",
+        "The time it takes to learn Spanish depends on the level you aim to achieve. It typically takes around 5 months to clear A1-A2 level, about 8 months to complete B1-B2 level and approximately 10-12 months to clear C1-C2 level. Completing all levels up to C2 proficiency usually spans around 24 months.",
     },
 
     {
@@ -167,7 +160,7 @@ const page = () => {
     {
       question: "Who will be teaching me?",
       answer:
-        "Your learning journey is guided by internationally certified trainers who are experienced and proficient in both French language and teaching methodologies.",
+        "Your learning journey is guided by internationally certified trainers who are experienced and proficient in both Spanish language and teaching methodologies.",
     },
 
     {

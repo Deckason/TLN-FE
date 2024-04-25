@@ -26,30 +26,31 @@ import HowItWorks from "@/Shared/FrenchAdultReusableComponents/HowItWorks/HowItW
 
 const page = () => {
   const bannerData = {
-    title: "Online French Classes for Adults",
-    para: "Learning a new language has no age limit! If you're ready to dive into the world of French, you're in luck! Our online French classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of French grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking French from day one! Our top-notch French trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online French classes for adults.",
+    title: "Online Japanese Classes for Adults",
+    para:
+      "Learning a new language has no age limit! If you're ready to dive into the world of Japanese, you're in luck! Our online Japanese classes and courses for adults offer an engaging and hassle-free way to learn 5th most popular languages worldwide. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Japanese grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Japanese from day one! Our top-notch Japanese trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online Japanese classes for adults.",
     images: [img1, img2, img3],
   };
   const levelData = [
     {
-      title: "A1-A2",
+      title: "N5",
       title2: "Beginner Classes",
       description:
-        "Start your French language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
+        "Begin your Japanese language journey with our beginner courses, specially designed to introduce you to the basics of Japanese grammar, vocabulary, and pronunciation. Perfect for those with little to no prior experience in Japanese",
       link: "",
     },
     {
-      title: "B1-B2",
+      title: "N4-N3",
       title2: "Intermediate Classes",
       description:
-        "Elevate your French proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
+        "Our intermediate courses will help you build upon your existing knowledge and enhance your fluency. Dive deeper into complex grammar structures, expand your vocabulary, and engage in meaningful conversations to strengthen your Japanese proficiency.",
       link: "",
     },
     {
-      title: "C1-C2",
+      title: "N2-N1",
       title2: "Advanced Classes",
       description:
-        "Advance your French skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+        "Elevate your Japanese proficiency with our advanced courses. Tailored for learners with a solid grasp of the language, these courses refine nuanced language skills, tackle advanced grammar, and foster professional-level communication. Perfect for those aiming for fluency in academic or professional contexts.",
       link: "",
     },
   ];
@@ -129,27 +130,27 @@ const page = () => {
     },
     {
       question:
-        "What job opportunities will I get after completing my French course?",
+        "What job opportunities will I get after completing my Japanese course?",
       answer:
-        "Upon completing your French course, you'll gain access to job opportunities in fields like translation, tourism, international relations, and teaching.",
+        "Upon completing your Japanese course, you'll gain access to job opportunities in fields such as technology, finance, hospitality, international trade, tourism, interpretation, translation, and diplomacy.",
     },
 
     {
-      question: "Is French an easy language to learn?",
+      question: "Is Japanese an easy language to learn?",
       answer:
-        "According to the Foreign Service Institute, French is considered one of the easiest languages for native English speakers to learn because it's more similar to English compared to other languages that are rated as harder to learn.",
+        "Japanese can be challenging due to its unique writing systems and grammar structure, but with dedication and practice, it can be mastered effectively with The Language Network.",
     },
 
     {
-      question: "Is French useful in India?",
+      question: "Is Japanese useful in India?",
       answer:
-        "Learning French opens doors to diverse job opportunities in India and abroad, given its status as the second most learned and sixth most spoken language globally. French is particularly valuable in sectors such as hospitality, tourism, diplomacy, and multinational corporations, making it a highly sought-after skill in the Indian job market.",
+        "Learning Japanese can be highly beneficial in India, especially in industries like technology, manufacturing, automotive, and trade, where communication and collaboration with Japanese counterparts are crucial for career advancement and business opportunities.",
     },
 
     {
-      question: "How much time will it take to learn French?",
+      question: "How much time will it take to learn Japanese?",
       answer:
-        "The time it takes to learn French depends on the level you aim to achieve. It typically takes around 5 months to clear A1-A2 level, about 8 months to complete B1-B2 level and approximately 11 months to clear C1-C2 level. Completing all levels up to C2 proficiency usually spans around 24 months. ",
+        "The time it takes to learn Japanese depends on the level you aim to achieve. It typically takes around 8 months to clear N5-N4 level, about 8 months to complete N3-N2 level and approximately 4 months to clear N1 level. Completing all levels up to N1 proficiency usually spans around 20 months.",
     },
 
     {
