@@ -17,7 +17,7 @@ const OnlineJapaneseClass = () => {
       img: adults,
       description:
         "Embark on a journey to Japanese fluency with dynamic online classes tailored to fit your busy lifestyle and ignite your passion for language learning!",
-      link: "",
+      link: "/Languages/Japanese/adults",
     },
     {
       title: "Japanese Classes to Study Abroad",

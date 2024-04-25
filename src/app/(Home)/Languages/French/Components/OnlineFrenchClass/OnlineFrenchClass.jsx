@@ -17,7 +17,7 @@ const OnlineFrenchClass = () => {
       img: adults,
       description:
         "Embark on a journey to French fluency with dynamic online classes tailored to fit your busy lifestyle and ignite your passion for language learning!",
-      link: "",
+      link: "/Languages/French/adults",
     },
     {
       title: "French Classes to Study Abroad",

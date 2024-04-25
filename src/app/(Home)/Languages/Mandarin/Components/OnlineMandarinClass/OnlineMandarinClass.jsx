@@ -17,7 +17,7 @@ const OnlineMandarinClass = () => {
       img: adults,
       description:
         "Embark on a journey to Mandarin fluency with dynamic online classes tailored to fit your busy lifestyle and ignite your passion for language learning!",
-      link: "",
+      link: "/Languages/Mandarin/adults",
     },
     {
       title: "Mandarin Classes to Study Abroad",
