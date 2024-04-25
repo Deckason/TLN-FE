@@ -10,7 +10,7 @@ const OnlineGermanClass = () => {
       img: kids,
       description:
         "Dive into German fun with interactive online classes designed to spark excitement and curiosity in young learners!",
-      link: "",
+      link: "/Languages/German/ForKids",
     },
     {
       title: "German Classes for Adults",

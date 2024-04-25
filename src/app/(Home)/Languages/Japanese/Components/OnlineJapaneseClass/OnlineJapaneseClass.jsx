@@ -10,7 +10,7 @@ const OnlineJapaneseClass = () => {
       img: kids,
       description:
         "Dive into Japanese fun with interactive online classes designed to spark excitement and curiosity in young learners!",
-      link: "",
+      link: "/Languages/Japanese/ForKids",
     },
     {
       title: "Japanese Classes for Adults",
