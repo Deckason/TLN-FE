@@ -23,19 +23,20 @@ const MandarinPageMainBanner = () => {
                       online Mandarin classes!
                     </span>{" "}
                     Step into the world of our online Mandarin classes! Whether
-                    you're starting from scratch or polishing your already
+                    you&napos;re starting from scratch or polishing your already
                     impressive Mandarin skills, our tailored and interactive
                     courses are crafted just for you. Bid farewell to
                     traditional classroom setups and say nǐ hǎo to personalised
                     instruction, flexible scheduling, and immersive learning
                     experiences with our top-notch online Mandarin courses. With
-                    our team of expert trainers by your side, you'll smoothly
-                    navigate the ins and outs of Mandarin grammar, expand your
-                    vocabulary, engage in lively conversations, and dive deep
-                    into the rich culture of the Mandarin-speaking world.
-                    Prepare to dive headfirst into the elegance of the Mandarin
-                    language and experience the thrill of mastering Mandarin at
-                    your own pace with our 1:1 Online Mandarin Classes.
+                    our team of expert trainers by your side, you&napos;ll
+                    smoothly navigate the ins and outs of Mandarin grammar,
+                    expand your vocabulary, engage in lively conversations, and
+                    dive deep into the rich culture of the Mandarin-speaking
+                    world. Prepare to dive headfirst into the elegance of the
+                    Mandarin language and experience the thrill of mastering
+                    Mandarin at your own pace with our 1:1 Online Mandarin
+                    Classes.
                   </div>{" "}
                   <div className="max-sm:absoluteflex justify-star max-md:-ml-8 ">
                     <BookAFreeDemoButton />
