@@ -1,7 +1,7 @@
 import Image from "next/image";
 const HowItWorksCard = ({ datas }) => {
   return (
-    <div className="flex flex-col p-6 text-center bg-white rounded-2xl min-h-full h-[548px] mx-2 md:mx-0 md:max-w-sm max-md:w-[375px] max-xl:w-[408px] xl:max-w-[408px] max-md:px-5">
+    <div className="flex flex-col p-6 text-center  rounded-2xl min-h-full h-[548px] mx-2 md:mx-0 md:max-w-sm max-md:w-[355px] justify-center max-xl:w-[408px] xl:max-w-[408px] ">
       <div className="h-[196px]">
         <Image
           className="object-cover h-full w-full"
