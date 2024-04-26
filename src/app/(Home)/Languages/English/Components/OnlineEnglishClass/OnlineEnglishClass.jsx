@@ -24,7 +24,7 @@ const OnlineEnglishClass = () => {
       img: studyAbroad,
       description:
         "Prepare for your English adventure with immersive online classes that will equip you with the language skills and cultural insights needed to thrive abroad!",
-      link: "",
+      link: "/Languages/English/StudyAbroad",
     },
   ];
   return (
