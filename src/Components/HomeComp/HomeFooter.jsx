@@ -114,7 +114,7 @@ const HomeFooter = () => {
       <div className="lg:text-[15px] text-[10px] gap-10 flex flex-col lg:flex-row w-full lg:w-fit lg:items-center justify-around ">
         <div className="flex lg:flex-col lg:w-fit w-full gap-10 h-full lg:h-[490px] lg:items-start items-center justify-between">
           <div className="flex ml-5  flex-row gap-10 lg:flex-col  lg:w-full w-fit  ">
-            <Image src={FooterLogo1} al mb-3t="footerLogo1" className="mb-3" />
+            <Image src={FooterLogo1} alt="footerImg" mb-3t="footerLogo1" className="mb-3" />
             <div className="flex gap-5 items-center justify-center">
               <Image src={FooterLogo2} alt="footerLogo2" />
               <Image src={FooterLogo3} alt="footerLogo3" />

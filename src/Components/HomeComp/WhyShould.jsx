@@ -114,6 +114,7 @@ const WhyShould = () => {
       {/*  Modal */}
       {modalData.map((modal) => (
         <ReusableModal
+          key={modal.modalClose}
           isOpen={modal.modal}
           onClose={() => closeModal(modal.modalClose)}
         >

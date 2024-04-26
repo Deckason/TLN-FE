@@ -33,7 +33,7 @@ const WhyLearnJapanese = () => {
                     <div className="self-stretch min-h-[148px] max-h-[180px] flex-col justify-start items-center gap-2 flex">
                       <div className="self-stretch text-center text-neutral-500 2xl:text-xl font-normal  leading-7">
                         {" "}
-                        Japanese is one of the world's top ten most commonly
+                        Japanese is one of the world&apos;s top ten most commonly
                         spoken languages, making it a valuable asset for
                         international communication and cultural exchange.
                       </div>
