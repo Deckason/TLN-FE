@@ -77,7 +77,7 @@ const WhyLearnMandarin = () => {
                   <div className="self-stretch min-h-[140px] max-h-[170px] rounded-lg flex-col justify-start items-center gap-8 flex">
                     <div className="self-stretch min-h-[140px] max-h-[170px] flex-col justify-start items-center gap-2 flex">
                       <div className="self-stretch text-center text-neutral-500 2xl:text-xl font-normal  leading-7">
-                        Learning Mandarin opens a gateway to one of the world's
+                        Learning Mandarin opens a gateway to one of the world&apos;s
                         oldest and richest cultures by providing access to
                         Chinese literature, history, philosophy, art, and
                         traditions.

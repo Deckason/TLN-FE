@@ -75,7 +75,7 @@ const WhyLearnKorean = () => {
                   <div className="self-stretch min-h-[140px] max-h-[170px] rounded-lg flex-col justify-start items-center gap-8 flex">
                     <div className="self-stretch min-h-[140px] max-h-[170px] flex-col justify-start items-center gap-2 flex">
                       <div className="self-stretch text-center text-neutral-500 2xl:text-xl font-normal  leading-7">
-                        Korea's rich cultural heritage, including traditions,
+                        Korea&apos;s rich cultural heritage, including traditions,
                         music, art, cuisine, and literature, is amplified by the
                         global surge in popularity of Korean culture, known as
                         the Korean Wave or Hallyu.

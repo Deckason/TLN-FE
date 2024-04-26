@@ -59,7 +59,10 @@ const StudentsTestomony = (data) => {
             className="mySwiper lg:mx-auto mx-0 flex justify-start  items-center max-w-[375px] md:max-w-[700px]  lg:max-w-[1400px] xl:max-w-[1500px]  2xl:max-w-[1600px] 3xl:max-w-[1700px]"
           >
             {data.data.map((card) => (
-              <SwiperSlide className="flex justify-start items-center">
+              <SwiperSlide
+                key={card.name}
+                className="flex justify-start items-center"
+              >
                 <div className="flex flex-col justify-between  bg-white rounded-2xl lg:pl-8 p-0 h-full w-[375px]">
                   <div className="text-base text-stone-900">{card.para}</div>
                   <div className="flex gap-3 mt-10">
@@ -70,10 +73,10 @@ const StudentsTestomony = (data) => {
                     />
                     <div className="flex flex-col flex-1 self-start">
                       <div className="text-xl font-bold text-stone-900">
-                        Komal Patil
+                        {card.name}
                       </div>
                       <div className="mt-1 text-base font-medium text-neutral-500">
-                        MBA in Marketing
+                        {card.dept}
                       </div>
                       <div className="flex gap-1.5 pr-20 mt-1">
                         <Rating

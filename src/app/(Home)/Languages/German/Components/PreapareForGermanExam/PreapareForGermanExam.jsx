@@ -15,9 +15,11 @@ const PreapareForGermanExam = () => {
       <div className="text-black text-2xl mb-12 text-center font-bold ">
         Prepare for German Exams
       </div>
-      <div className=" max-w-[548px]  flex-wrap justify-center gap-1 max-md:gap-5 md:gap-2 px-5 mx-auto  lg:gap-[18px] grid items-center mt-[48px] ">
+      <div className="flex flex-wrap justify-center gap-1 max-md:gap-5 md:gap-2 px-5 mx-auto w-fit lg:gap-[18px] items-center mt-[48px]">
         {levelDatas.map((data, index) => (
-          <PreapareForExamCard data={data} key={index} />
+          <div className="max-w-[548px]">
+            <PreapareForExamCard data={data} key={index} />
+          </div>
         ))}
       </div>
     </div>
