@@ -23,20 +23,20 @@ const EnglishPageMainBanner = () => {
                       online English classes!
                     </span>{" "}
                     Step into the world of our online English classes! Whether
-                    you're starting from scratch or polishing your already
+                    you&napos;re starting from scratch or polishing your already
                     impressive English skills, our tailored and interactive
                     courses are crafted just for you. Bid farewell to
                     traditional classroom setups and say hello to personalised
                     instruction, flexible scheduling, and immersive learning
                     experiences with our top-notch online English courses. With
-                    our team of expert trainers by your side, you'll seamlessly
-                    navigate the intricacies of English grammar, enhance your
-                    vocabulary, participate in dynamic conversations, and
-                    immerse yourself in the diverse culture of the
-                    English-speaking world. Prepare to dive headfirst into the
-                    elegance of the English language and experience the thrill
-                    of mastering English at your own pace with our 1:1 or Group
-                    Online English Classes.
+                    our team of expert trainers by your side, you&napos;ll
+                    seamlessly navigate the intricacies of English grammar,
+                    enhance your vocabulary, participate in dynamic
+                    conversations, and immerse yourself in the diverse culture
+                    of the English-speaking world. Prepare to dive headfirst
+                    into the elegance of the English language and experience the
+                    thrill of mastering English at your own pace with our 1:1 or
+                    Group Online English Classes.
                   </div>{" "}
                   <div className="max-sm:absoluteflex justify-star max-md:-ml-8 ">
                     <BookAFreeDemoButton />
