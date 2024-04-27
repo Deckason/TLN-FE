@@ -8,8 +8,11 @@ const HowItWorks = (data) => {
       <div className="h-auto  my-10 flex items-center justify-center gap-10 flex-col  ">
         <div className="font-semibold text-[40px]">How It Works ?</div>
         <div className="flex gap-5 items-center justify-center flex-wrap  ">
-          {data.data.map((card) => (
-            <div className="bg-white flex flex-col p-6 text-center  rounded-2xl min-h-full h-[548px] mx-2 md:mx-0 md:max-w-sm max-md:w-[355px] justify-center max-xl:w-[408px] xl:max-w-[408px] ">
+          {data.data.map((index, card) => (
+            <div
+              key={index}
+              className="bg-white flex flex-col p-6 text-center  rounded-2xl min-h-full h-[548px] mx-2 md:mx-0 md:max-w-sm max-md:w-[355px] justify-center max-xl:w-[408px] xl:max-w-[408px] "
+            >
               <div className="h-[196px]">
                 <Image
                   className="object-cover h-full w-full"
