@@ -12,7 +12,9 @@ import PaymentBar from "@/Components/HomeComp/PaymentBar";
 
 import FaqsSudyAbroad from "./Components/FaqsSudyAbroad";
 import StudyAbroad from "./Components/StudyAbroad";
+
 import EverythingYouNeedToKnowAboutMandarin from "../Components/EverythingYouNeedToKnowAboutMandarin/EverythingYouNeedToKnowAboutMandarin";
+
 
 const FrenchForStudyAbroadPage = () => {
   return (
