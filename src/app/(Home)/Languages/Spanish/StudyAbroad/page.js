@@ -4,7 +4,7 @@ import UpcomingBathches from "./Components/UpcomingBathches";
 
 import StudentsTestomony from "@/Shared/StudentsTestomony";
 import ClassesForAnyLevel from "./Components/ClassesForAnyLevel";
-import PreapareForGermanExam from "./Components/PreapareForGermanExam";
+import PreapareForSpanishExam from "./Components/PreapareForSpanishExam";
 
 import LanguageLessons from "../Components/Languagelessons/LanguageLessons";
 import SubscribeToOur from "@/Shared/SubscribeToOur";
@@ -13,7 +13,7 @@ import PaymentBar from "@/Components/HomeComp/PaymentBar";
 import FaqsSudyAbroad from "./Components/FaqsSudyAbroad";
 import StudyAbroad from "./Components/StudyAbroad";
 
-import EverythingYouNeedToKnowAboutGerman from "../Components/EverythingYouNeedToKnowAboutGerman/EverythingYouNeedToKnowAboutGerman.jsx";
+import EverythingYouNeedToKnowAboutGerman from "../Components/EverythingYouNeedToKnowAboutSpanish/EverythingYouNeedToKnowAboutSpanish.jsx";
 
 const FrenchForStudyAbroadPage = () => {
   return (
@@ -23,7 +23,7 @@ const FrenchForStudyAbroadPage = () => {
       <HowItWorks />
       <WhyShould />
       <UpcomingBathches />
-      <PreapareForGermanExam />
+      <PreapareForSpanishExam />
       <ClassesForAnyLevel />
       <StudentsTestomony />
       <FaqsSudyAbroad />

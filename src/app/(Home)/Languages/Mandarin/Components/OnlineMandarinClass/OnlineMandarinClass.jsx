@@ -24,7 +24,7 @@ const OnlineMandarinClass = () => {
       img: studyAbroad,
       description:
         "Prepare for your Mandarin adventure with immersive online classes that will equip you with the language skills and cultural insights needed to thrive abroad!",
-      link: "",
+      link: "/Languages/Mandarin/StudyAbroad",
     },
   ];
   return (

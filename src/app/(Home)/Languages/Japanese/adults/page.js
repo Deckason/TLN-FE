@@ -27,8 +27,7 @@ import HowItWorks from "@/Shared/FrenchAdultReusableComponents/HowItWorks/HowItW
 const page = () => {
   const bannerData = {
     title: "Online Japanese Classes for Adults",
-    para:
-      "Learning a new language has no age limit! If you're ready to dive into the world of Japanese, you're in luck! Our online Japanese classes and courses for adults offer an engaging and hassle-free way to learn 5th most popular languages worldwide. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Japanese grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Japanese from day one! Our top-notch Japanese trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online Japanese classes for adults.",
+    para: "Learning a new language has no age limit! If you're ready to dive into the world of Japanese, you're in luck! Our online Japanese classes and courses for adults offer an engaging and hassle-free way to learn 5th most popular languages worldwide. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Japanese grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Japanese from day one! Our top-notch Japanese trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online Japanese classes for adults.",
     images: [img1, img2, img3],
   };
   const levelData = [
@@ -226,24 +225,30 @@ const page = () => {
   ];
   const howData = [
     {
+      index: 1,
       step: "Step 1",
       title: "Register with us",
       para: "Fill out our form with your details and your preferred language to learn with us.",
       img: step1,
     },
     {
+      index: 2,
+
       step: "Step 2",
       title: "Talk to our experts",
       para: "Connect with our Academic Counsellors for personalized guidance.",
       img: step2,
     },
     {
+      index: 3,
+
       step: "Step 3",
       title: "Get a free Demo",
       para: "Experience our platform firsthand with a complimentary demo.",
       img: step3,
     },
     {
+      index: 4,
       step: "Step 4",
       title: "Get Started With us",
       para: "Love our demo- now pick and choose batches according to your flexibility and get started on your learning adventure with us.",
