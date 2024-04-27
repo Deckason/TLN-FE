@@ -6,7 +6,7 @@ import StudentsTestomony from "@/Shared/StudentsTestomony";
 import LanguageLessons from "../Components/Languagelessons/LanguageLessons";
 import SubscribeToOur from "@/Shared/SubscribeToOur";
 import PaymentBar from "@/Components/HomeComp/PaymentBar";
-import EverythingYouNeedToKnowAboutGerman from "../Components/EverythingYouNeedToKnowAboutGerman/EverythingYouNeedToKnowAboutGerman";
+import EverythingYouNeedToKnowAboutGerman from "../Components/EverythingYouNeedToKnowAboutGerman/EverythingYouNeedToKnowAboutGerman.jsx";
 import GermanForKidsBanner from "./Components/GermanForKidsBanner";
 import WhyKidsShouldLearnGerman from "./Components/WhyKidsShouldLearnGerman";
 import PreapareForGermanExam from "./Components/PreapareForGermanExam";

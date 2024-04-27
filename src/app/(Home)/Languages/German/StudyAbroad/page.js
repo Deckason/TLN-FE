@@ -13,7 +13,7 @@ import PaymentBar from "@/Components/HomeComp/PaymentBar";
 import FaqsSudyAbroad from "./Components/FaqsSudyAbroad";
 import StudyAbroad from "./Components/StudyAbroad";
 
-import EverythingYouNeedToKnowAboutGerman from "../Components/EverythingYouNeedToKnowAboutGerman/EverythingYouNeedToKnowAboutGerman";
+import EverythingYouNeedToKnowAboutGerman from "../Components/EverythingYouNeedToKnowAboutGerman/EverythingYouNeedToKnowAboutGerman.jsx";
 
 const FrenchForStudyAbroadPage = () => {
   return (

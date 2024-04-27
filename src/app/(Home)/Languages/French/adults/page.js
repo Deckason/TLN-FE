@@ -224,24 +224,28 @@ const page = () => {
   ];
   const howData = [
     {
+      index: 1,
       step: "Step 1",
       title: "Register with us",
       para: "Fill out our form with your details and your preferred language to learn with us.",
       img: step1,
     },
     {
+      index: 2,
       step: "Step 2",
       title: "Talk to our experts",
       para: "Connect with our Academic Counsellors for personalized guidance.",
       img: step2,
     },
     {
+      index: 3,
       step: "Step 3",
       title: "Get a free Demo",
       para: "Experience our platform firsthand with a complimentary demo.",
       img: step3,
     },
     {
+      index: 4,
       step: "Step 1",
       title: "Get Started With us",
       para: "Fill out our form with your details and your preferred language to learn with us.",
