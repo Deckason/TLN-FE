@@ -56,16 +56,16 @@ const StudentsTestomony = (data) => {
               },
             }}
             // modules={[Pagination]}
-            className="mySwiper lg:mx-auto mx-0 flex justify-start  items-center max-w-[375px] md:max-w-[700px]  lg:max-w-[1400px] xl:max-w-[1500px]  2xl:max-w-[1600px] 3xl:max-w-[1700px]"
+            className="mySwiper max-h-[335px] lg:mx-auto mx-0 flex justify-start  items-center max-w-[375px] md:max-w-[700px]  lg:max-w-[1300px] xl:max-w-[1400px]  2xl:max-w-[1600px] 3xl:max-w-[1700px]"
           >
-            {data.data.map((card) => (
+            {data.data.map((index, card) => (
               <SwiperSlide
-                key={card.name}
-                className="flex justify-start items-center"
+                key={index}
+                className="flex justify-center items-center"
               >
-                <div className="flex flex-col justify-between  bg-white rounded-2xl lg:pl-8 p-0 h-full w-[375px]">
+                <div className="flex flex-col h-[335px] bg-white rounded-2xl lg:p-8 p-4 max-w-[404px]">
                   <div className="text-base text-stone-900">{card.para}</div>
-                  <div className="flex gap-3 mt-10">
+                  <div className="flex gap-2.5 mt-10">
                     <Image
                       className="w-20 h-20 rounded-full"
                       alt="studenPIc"
@@ -76,7 +76,7 @@ const StudentsTestomony = (data) => {
                         {card.name}
                       </div>
                       <div className="mt-1 text-base font-medium text-neutral-500">
-                        {card.dept}
+                        {card.Dept}
                       </div>
                       <div className="flex gap-1.5 pr-20 mt-1">
                         <Rating

@@ -8,19 +8,29 @@ const HowItWorks = (data) => {
       <div className="h-auto  my-10 flex items-center justify-center gap-10 flex-col  ">
         <div className="font-semibold text-[40px]">How It Works ?</div>
         <div className="flex gap-5 items-center justify-center flex-wrap  ">
-          {data.data.map((card) => (
+          {data.data.map((index, card) => (
             <div
-              key={card.step}
-              className="lg:w-[408px] w-[300px] 2xl:w-[408px] xl:w-[408px] rounded-xl overflow-hidden flex justify-around items-center flex-col bg-white h-[548px]"
+              key={index}
+              className="bg-white flex flex-col p-6 text-center  rounded-2xl min-h-full h-[548px] mx-2 md:mx-0 md:max-w-sm max-md:w-[355px] justify-center max-xl:w-[408px] xl:max-w-[408px] "
             >
-              <Image src={card.img} alt="step1" />
-              <div className=" lg:text-[24px] text-[18px] xl:text-[24px] 2xl:text-[24px] h-[288px] lg:w-[386px] 2xl:w-[386px] xl:w-[386px] w-[300px] border-[#1F9F90] border rounded-lg overflow-hidden">
-                <div className="bg-[#1F9F90] text-white font-semibold text-[32px] text-center p-2">
-                  {card.step}
+              <div className="h-[196px]">
+                <Image
+                  className="object-cover h-full w-full"
+                  alt="step1"
+                  src={card?.img}
+                />
+              </div>
+              <div className="flex flex-col pb-9 mt-4 rounded-lg border border-teal-600 flex-grow lg:min-h-[298px] xl:min-h-[288px] border-solid max-md:max-w-full">
+                <div className="justify-center py-4 text-3xl bg-teal-600 rounded-t-lg text-neutral-50 max-md:max-w-full">
+                  Step {card?.id}
                 </div>
-                <div className="flex text-center items-center justify-center flex-col">
-                  <div className="font-semibold">{card.title}</div>
-                  <div>{card.para}</div>
+                <div className="flex flex-col px-4 mt-8 max-md:max-w-full">
+                  <div className="text-2xl font-medium text-neutral-800 max-md:max-w-full">
+                    {card?.title}
+                  </div>
+                  <div className="mt-2 text-xl leading-7 text-neutral-500 max-md:max-w-full">
+                    {card?.para}
+                  </div>
                 </div>
               </div>
             </div>
