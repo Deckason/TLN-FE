@@ -5,7 +5,7 @@ const ClassLevelCard = ({ data }) => {
   return (
     <div>
       <div className="w-full shadow-xl shadow-neutral-color/15 rounded-xl min-h-[559px] flex-col justify-start items-center gap-8 inline-flex">
-        <div className="self-stretch h-[212px] py-[72px] bg-secondary-color rounded-xl flex-col justify-start items-center gap-2.5 flex">
+        <div className="self-stretch h-fit py-[72px] bg-secondary-color rounded-t-xl flex-col justify-start items-center gap-2.5 flex">
           <div className="self-stretch text-center text-neutral-800 text-2xl font-bold ">
             {data?.title}
           </div>

@@ -23,13 +23,13 @@ const EnglishPageMainBanner = () => {
                       online English classes!
                     </span>{" "}
                     Step into the world of our online English classes! Whether
-                    you&napos;re starting from scratch or polishing your already
+                    you&apos;re starting from scratch or polishing your already
                     impressive English skills, our tailored and interactive
                     courses are crafted just for you. Bid farewell to
                     traditional classroom setups and say hello to personalised
                     instruction, flexible scheduling, and immersive learning
                     experiences with our top-notch online English courses. With
-                    our team of expert trainers by your side, you&napos;ll
+                    our team of expert trainers by your side, you&apos;ll
                     seamlessly navigate the intricacies of English grammar,
                     enhance your vocabulary, participate in dynamic
                     conversations, and immerse yourself in the diverse culture

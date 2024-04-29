@@ -49,7 +49,7 @@ const FluencyCarrerCulture = () => {
           {" "}
           Here are the steps
         </h1>
-        <div className="xl:grid-cols-3 2xl:max-w-[1440px] max-w-8xl  flex-wrap justify-center gap-1 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
+        <div className="xl:grid-cols-3 2xl:max-w-[1640px] max-w-8xl  flex-wrap justify-center gap-1 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
           {datas.map((data) => {
             return (
               <FluencyCultureCard

@@ -23,14 +23,14 @@ const KoreanPageMainBanner = () => {
                       online Korean classes!
                     </span>{" "}
                     Step into the world of our online Korean classes! Whether
-                    you&napos;re starting from scratch or polishing your already
+                    you&apos;re starting from scratch or polishing your already
                     impressive Korean skills, our tailored and interactive
                     courses are crafted just for you. Bid farewell to
                     traditional classroom setups and say annyeonghaseyo to
                     personalised instruction, flexible scheduling, and immersive
                     learning experiences with our top-notch online Korean
                     courses. With our team of expert trainers by your side,
-                    you&napos;ll smoothly navigate the ins and outs of Korean
+                    you&apos;ll smoothly navigate the ins and outs of Korean
                     grammar, expand your vocabulary, engage in lively
                     conversations, and dive deep into the rich culture of the
                     Korean world. Prepare to dive headfirst into the elegance of

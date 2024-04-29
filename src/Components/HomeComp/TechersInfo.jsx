@@ -5,22 +5,22 @@ import Rashi from "@/Assets/Homepage/TeachersInfo/Rashi.svg";
 import Image from "next/image";
 const TechersInfo = () => {
   return (
-    <div className="py-[112px]">
+    <div className="py-[112px] lg:flex block flex-col justify-center items-center">
       <div className="max-w-[1681px] md:ms-10 md:me-2.5 h-[634px] justify-start items-center gap-[72px] flex ">
         <div className="w-[495px] h-[495px] flex-col justify-start items-start gap-12 inline-flex">
           <div className="self-stretch h-[389px] flex-col justify-start items-start gap-8 flex">
             <div className="self-stretch h-[190px] flex-col justify-start items-start gap-2 flex">
-              <div className="text-stone-900 text-5xl font-bold font-['Inter']">
+              <div className="text-stone-900 text-5xl font-bold ">
                 Inspiring.
               </div>
-              <div className="text-stone-900 text-5xl font-bold font-['Inter']">
+              <div className="text-stone-900 text-5xl font-bold ">
                 Dedicated.
               </div>
-              <div className="text-stone-900 text-5xl font-bold font-['Inter']">
+              <div className="text-stone-900 text-5xl font-bold ">
                 Knowledgeable.
               </div>
             </div>
-            <div className="self-stretch h-[167px] text-stone-900 text-xl font-normal font-['Inter'] leading-7">
+            <div className="self-stretch h-[167px] text-stone-900 text-lg font-normal  leading-7">
               Meet our team of over 200+ internationally certified trainer who
               bring learning to life! With their expertise, they transform every
               lesson into a fun and engaging experience, creating a warm and

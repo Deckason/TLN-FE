@@ -1,6 +1,5 @@
-import dalf from "@/Assets/FrenchPage/FrenchMain/dalf.png";
-import delf from "@/Assets/FrenchPage/FrenchMain/delf.png";
-import telf from "@/Assets/FrenchPage/FrenchMain/telf.png";
+import dalf from "@/Assets/Homepage/ProficiencyExam/logo6.png";
+import telf from "@/Assets/English/toefl.webp";
 import PreapareForExamCard from "@/Shared/PreapareForExamCard";
 
 const PreapareForEnglishExam = () => {
@@ -14,7 +13,7 @@ const PreapareForEnglishExam = () => {
     },
     {
       title: "TOEFL",
-      img: dalf,
+      img: telf,
       description:
         "Open doors to international opportunities with our TOEFL preparation courses. From mastering academic English to excelling in listening, speaking, reading, and writing, our comprehensive training ensures you're fully prepared to ace this crucial exam.",
       link: "",

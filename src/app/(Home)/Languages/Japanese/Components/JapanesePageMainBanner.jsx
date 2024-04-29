@@ -23,14 +23,14 @@ const JapanesePageMainBanner = () => {
                       online Japanese classes!
                     </span>{" "}
                     Step into the captivating realm of our online Japanese
-                    classes! Whether you&napos;re embarking on your journey from
+                    classes! Whether you&apos;re embarking on your journey from
                     scratch or honing your already impressive Japanese skills,
                     our bespoke and interactive courses are meticulously
                     tailored just for you. Say farewell to conventional
                     classroom setups and konnichiwa to personalised instruction,
                     flexible scheduling, and immersive learning experiences with
                     our top-tier online Japanese courses. With our team of
-                    seasoned instructors at your side, you&napos;ll effortlessly
+                    seasoned instructors at your side, you&apos;ll effortlessly
                     navigate the intricacies of Japanese grammar, expand your
                     vocabulary, participate in dynamic conversations, and delve
                     into the vibrant culture of Japan. Get ready to plunge into

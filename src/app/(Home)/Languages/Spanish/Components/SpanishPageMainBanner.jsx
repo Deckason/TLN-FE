@@ -23,13 +23,13 @@ const SpanishPageMainBanner = () => {
                       online Spanish classes!
                     </span>{" "}
                     Step into the world of our online Spanish classes! Whether
-                    you&napos;re starting from scratch or refining your existing
+                    you&apos;re starting from scratch or refining your existing
                     Spanish skills, our customised and interactive courses are
                     designed specifically for you. Say adiós to traditional
                     classroom setups and hola to personalised instruction,
                     flexible scheduling, and immersive learning experiences with
                     our top-quality online Spanish courses. With our team of
-                    expert instructors guiding you, you&napos;ll effortlessly
+                    expert instructors guiding you, you&apos;ll effortlessly
                     navigate Spanish grammar, expand your vocabulary, engage in
                     dynamic conversations, and immerse yourself in the vibrant
                     culture of the Spanish-speaking world. Get ready to plunge

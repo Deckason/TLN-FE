@@ -39,7 +39,7 @@ const CefrLevels = () => {
         </section>
       </div>
       {/* cefr levels card section is below */}
-      <section className="mt-[102px] max-w-[1681px]  xl:mx-auto flex justify-center items-center gap-[20px] flex-wrap">
+      <section className="mt-[102px] max-w-[1700px]  xl:mx-auto flex justify-center items-center gap-[20px] flex-wrap">
         <div
           id="A1"
           className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex"
