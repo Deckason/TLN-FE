@@ -10,7 +10,7 @@ const HowItWorksCard = ({ datas }) => {
         />
       </div>
       <div className="flex flex-col pb-9 mt-4 rounded-lg border border-teal-600 flex-grow lg:min-h-[298px] xl:min-h-[288px] border-solid max-md:max-w-full">
-        <div className="justify-center py-4 text-3xl bg-teal-600 rounded-lg text-neutral-50 max-md:max-w-full">
+        <div className="justify-center py-4 text-3xl bg-teal-600 rounded-t-lg text-neutral-50 max-md:max-w-full">
           Step {datas?.id}
         </div>
         <div className="flex flex-col px-4 mt-8 max-md:max-w-full">

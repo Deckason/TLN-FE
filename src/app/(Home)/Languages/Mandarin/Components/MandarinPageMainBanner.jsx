@@ -23,13 +23,13 @@ const MandarinPageMainBanner = () => {
                       online Mandarin classes!
                     </span>{" "}
                     Step into the world of our online Mandarin classes! Whether
-                    you&napos;re starting from scratch or polishing your already
+                    you&apos;re starting from scratch or polishing your already
                     impressive Mandarin skills, our tailored and interactive
                     courses are crafted just for you. Bid farewell to
                     traditional classroom setups and say nǐ hǎo to personalised
                     instruction, flexible scheduling, and immersive learning
                     experiences with our top-notch online Mandarin courses. With
-                    our team of expert trainers by your side, you&napos;ll
+                    our team of expert trainers by your side, you&apos;ll
                     smoothly navigate the ins and outs of Mandarin grammar,
                     expand your vocabulary, engage in lively conversations, and
                     dive deep into the rich culture of the Mandarin-speaking

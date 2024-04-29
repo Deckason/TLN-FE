@@ -22,14 +22,14 @@ const GermanPageMainBanner = () => {
                     <span className="font-bold leading-6">
                       online German classes!
                     </span>{" "}
-                    Whether you&napos;re starting from scratch or polishing your
+                    Whether you&apos;re starting from scratch or polishing your
                     already impressive German skills, our tailored and
                     interactive courses are crafted just for you. Bid farewell
                     to traditional classroom setups and say hallo to
                     personalised instruction, flexible scheduling, and immersive
                     learning experiences with our top-notch online German
                     courses. With our team of expert trainers by your side,
-                    you&napos;ll smoothly navigate the ins and outs of German
+                    you&apos;ll smoothly navigate the ins and outs of German
                     grammar, expand your vocabulary, engage in lively
                     conversations, and dive deep into the rich culture of the
                     German-speaking world. Prepare to dive headfirst into the

@@ -15,7 +15,7 @@ const StudyAbroad = () => {
                 </div>
                 <div className="mt-2 max-sm:text-sm text-xl leading-7 max-md:max-w-full relative mb-[32px]">
                   <div className="mb-8">
-                    French proficiency isn&napos;t just for admission—it&napos;s
+                    French proficiency isn&apos;t just for admission—it&apos;s
                     your key to maximising your study abroad adventure! With
                     fluency in French, you’ll seamlessly blend into your
                     surroundings like a local, savouring the cultural flavours
@@ -23,7 +23,7 @@ const StudyAbroad = () => {
                     The benefits don’t just end there. Being savvy in French
                     will open the floodgates to exciting internships during your
                     studies and lucrative job opportunities post-graduation or
-                    masters. Also, don&napos;t overlook the visa and PR
+                    masters. Also, don&apos;t overlook the visa and PR
                     perks—mastering French might just fast-track your way to
                     official residency status! Gear up for the ultimate academic
                     adventure with French as your ally! Start today!

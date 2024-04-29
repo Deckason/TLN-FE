@@ -82,7 +82,7 @@ const LanguageLessons = () => {
               </div>
             </div>
             <div className="self-stretch  grow shrink basis-0 px-4 py-2 flex-col min-h-[200px] justify-center items-start gap-2 flex">
-              <div className="self-stretch grow shrink basis-0 text-neutral-500 text-nowrap  2xl:text-xl font-normal  underline leading-7">
+              <div className="list-none self-stretch grow shrink basis-0 text-neutral-500 text-nowrap  2xl:text-xl font-normal  underline leading-7">
                 <li>
                   <a className="">Online English classes for Beginner</a>
                 </li>

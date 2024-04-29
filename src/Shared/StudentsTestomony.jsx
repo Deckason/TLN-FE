@@ -17,7 +17,7 @@ const StudentsTestomony = () => {
   const navigationNextRef = React.useRef(currentPage);
   return (
     <div className="py-[112px] bg-[#F6F3F3]">
-      <div className="min-h-[518px] max-w-[1681px]  mx-auto flex justify-center flex-col items-center">
+      <div className="min-h-[518px] max-w-[1700px]  mx-auto flex justify-center flex-col items-center">
         <h1 className="text-stone-900 text-2xl mb-[48px] font-bold">
           Hear it from the Learners
         </h1>
