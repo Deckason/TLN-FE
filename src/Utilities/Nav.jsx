@@ -9,41 +9,53 @@ import { BsCaretRight, BsCaretRightFill } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
 import { usePathname } from "next/navigation";
 import "@/css/NavBarCustom.css";
+import Dropdown from "@/Components/DropDown";
 const Nav = () => {
-  const languageOptions = [
-    {
-      name: "Home",
-      path: "/",
-    },
-    {
-      name: "English",
-      path: "/Languages/English",
-    },
-    {
-      name: "French",
-      path: "/Languages/French",
-    },
-    {
-      name: "Spanish",
-      path: "/Languages/Spanish",
-    },
-    {
-      name: "German",
-      path: "/Languages/German",
-    },
-    {
-      name: "Mandarin",
-      path: "/Languages/Mandarin",
-    },
-    {
-      name: "Japanese",
-      path: "/Languages/Japanese",
-    },
-    {
-      name: "Korean",
-      path: "/Languages/Korean",
-    },
-  ];
+  const languageOptions = {
+    title: "Languages",
+    data: [
+      {
+        key: "1",
+        name: "Home",
+        path: "/",
+      },
+      {
+        key: "2",
+        name: "English",
+        path: "/Languages/English",
+      },
+      {
+        key: "3",
+        name: "French",
+        path: "/Languages/French",
+      },
+      {
+        key: "4",
+        name: "Spanish",
+        path: "/Languages/Spanish",
+      },
+      {
+        key: "5",
+        name: "German",
+        path: "/Languages/German",
+      },
+      {
+        key: "6",
+        name: "Mandarin",
+        path: "/Languages/Mandarin",
+      },
+      {
+        key: "7",
+        name: "Japanese",
+        path: "/Languages/Japanese",
+      },
+      {
+        key: "8",
+        name: "Korean",
+        path: "/Languages/Korean",
+      },
+    ],
+  };
   const NavOptions = [
     // {
     //   name: "Home",
@@ -58,18 +70,26 @@ const Nav = () => {
       path: "/Navigation/College",
     },
     {
-      name: "Study Abroad",
-      path: "/Navigation/StudyAbroad",
-    },
-    {
       name: "Corporate Training",
       path: "/Navigation/CorporateTraining",
     },
-    {
-      name: "Work with us",
-      path: "/Navigation/WorkWithUs",
-    },
   ];
+
+  const studyAbroad = {
+    title: "Study Abroad",
+    data: [
+      { key: "1", name: "TOPIK 2- Level 5", path: "/Navigation/StudyAbroad" },
+      { key: "2", name: "TOPIK 2- Level 6", path: "/Navigation/StudyAbroad" },
+    ],
+  };
+  const WorkWithUsData = {
+    title: "Work With Us",
+    data: [
+      { key: "1", name: "Careers", path: "/Navigation/WorkWithUs" },
+      { key: "2", name: "Teach with us", path: "/Navigation/WorkWithUs" },
+      { key: "3", name: "Collaborate with us", path: "/Navigation/WorkWithUs" },
+    ],
+  };
   // all use states:-
   const pathname = usePathname();
   const [showLanguageOptions, setShowLanguageOptions] = useState(false);
@@ -109,36 +129,9 @@ const Nav = () => {
                     alt="logo"
                   ></Image>
                 </Link>
+                <Dropdown data={languageOptions} />
                 <div className="px-2.5 py-[29px] flex-col justify-start items-start cursor-pointer  gap-2.5 hidden lg:flex">
                   <div className="justify-start items-start gap-5 xl:gap-12 inline-flex">
-                    <div
-                      onMouseLeave={() => setShowLanguageOptions(false)}
-                      onMouseOver={() => setShowLanguageOptions(true)}
-                      className="text-stone-900  font-normal z-40 xl:text-xl  relative  leading-7"
-                    >
-                      Languages
-                      {showLanguageOptions && (
-                        <div
-                          style={{
-                            boxShadow:
-                              "-4px -2px 100px 0px rgba(69, 222, 233, 0.18)",
-                          }}
-                          className="absolute  flex flex-col  w-[130px]  ps-5 py-2 bg-white border "
-                        >
-                          <div className="" />
-                          {languageOptions.map((language) => (
-                            <Link
-                              className=""
-                              href={language.path}
-                              key={language.name}
-                            >
-                              {language.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-
                     {
                       NavOptions.map((Nav) => (
                         <Link
@@ -163,36 +156,13 @@ const Nav = () => {
                           key={Nav.name}
                         >
                           {Nav.name}
-                          {Nav.name === "Study Abroad" && showStudyAbroad && (
-                            <div
-                              style={{
-                                boxShadow:
-                                  "-4px -2px 100px 0px rgba(69, 222, 233, 0.18)",
-                              }}
-                              className="absolute  flex flex-col    ps-[15px] pe-[9px] w-[170px] py-[16px] bg-white border "
-                            >
-                              TOPIK 2- Level 5 <br />
-                              TOPIK 2- Level 6 <br />
-                            </div>
-                          )}
-                          {Nav.name === "Work with us" && showWorkWithUs && (
-                            <div
-                              style={{
-                                boxShadow:
-                                  "-4px -2px 100px 0px rgba(69, 222, 233, 0.18)",
-                              }}
-                              className="absolute  flex flex-col    ps-[15px] pe-[9px] w-[190px] py-[16px] bg-white border "
-                            >
-                              Careers <br />
-                              Teach with us <br />
-                              Collaborate with us <br />
-                            </div>
-                          )}
                         </Link>
                       )) //Nav
                     }
                   </div>
                 </div>
+                <Dropdown data={studyAbroad} />
+                <Dropdown data={WorkWithUsData} />
               </div>
             </div>
             <div className=" hidden flex-grow  lg:flex justify-end me-5">
