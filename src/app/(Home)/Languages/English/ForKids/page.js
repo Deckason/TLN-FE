@@ -14,6 +14,7 @@ import WhyKidsShouldLearnEnglish from "./Components/WhyKidsShouldLearnEnglish";
 import FaqsForEnglishKids from "./Components/FaqsForEnglishKids";
 
 const EnglishForKidsPage = () => {
+ 
   return (
     <div>
       <EnglishForKidsBanner />

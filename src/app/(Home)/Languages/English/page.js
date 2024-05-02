@@ -14,6 +14,7 @@ import PaymentBar from "@/Components/HomeComp/PaymentBar";
 import SubscribeToOur from "@/Shared/SubscribeToOur";
 
 const EnglishPage = () => {
+ 
   return (
     <div>
       <EnglishPageMainBanner />

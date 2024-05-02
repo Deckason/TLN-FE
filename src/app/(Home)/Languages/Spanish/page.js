@@ -14,6 +14,7 @@ import StudentsTestomony from "@/Shared/StudentsTestomony";
 import PaymentBar from "@/Components/HomeComp/PaymentBar";
 
 const SpanishPage = () => {
+ 
   return (
     <div>
       <SpanishPageMainBanner />

@@ -96,13 +96,6 @@ const Nav = () => {
   const [showStudyAbroad, setShowStudyAbroad] = useState(false);
   const [showWorkWithUs, setShowWorkWithUs] = useState(false);
   const [showNav, setShowNav] = useState(false);
-  const loginOption = (
-    <>
-      <div className="xl:w-40 w-[120px] h-[53px] px-8 py-3.5 bg-primary-color rounded-lg justify-center text-white font-bold xl:text-xl items-center gap-2.5 inline-flex">
-        Login
-      </div>
-    </>
-  );
   return (
     <header className="z-40">
       <nav>
@@ -165,8 +158,13 @@ const Nav = () => {
                 <Dropdown data={WorkWithUsData} />
               </div>
             </div>
-            <div className=" hidden flex-grow  lg:flex justify-end me-5">
-              {loginOption}
+            <div className=" hidden flex-grow gap-10 lg:flex justify-end me-5">
+              <div className="  h-[53px] px-8 py-3.5 bg-primary-color rounded-lg justify-center text-white font-bold xl:text-xl items-center gap-2.5 inline-flex">
+                Get Started
+              </div>
+              <div className=" h-[53px] px-8 py-3.5 bg-primary-color rounded-lg justify-center text-white font-bold xl:text-xl items-center gap-2.5 inline-flex">
+                Login
+              </div>
             </div>
           </div>
           {/* side bar */}

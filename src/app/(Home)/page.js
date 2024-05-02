@@ -18,6 +18,7 @@ import UpcomingBatches from "@/Shared/UpcomingBatches";
 import Experiment from "@/Utilities/Experiment";
 
 export default function Home() {
+
   return (
     <section>
       <HomeBanner />
