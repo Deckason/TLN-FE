@@ -6,7 +6,7 @@ import Image from "next/image";
 const UpcomingBatches = () => {
   return (
     <div className="mb-[112px]  flex justify-center flex-col items-center">
-      <h1 className="text-stone-900 text-2xl text-center mb-[60px] font-bold ">
+      <h1 className="text-stone-900 text-[60px] text-center mb-[60px] font-bold ">
         Upcoming Batches
       </h1>
       <section
