@@ -217,7 +217,7 @@ const page = () => {
       <UpcomingBatches />
       <ClassesForAnyLevel levelData={levelData} />
       <PreapareForExam data={PrepareData} />
-      <StudentsTestomony data={TestimonialData} />
+      {/* <StudentsTestomony data={TestimonialData} /> */}
       <Faqs data={Faq} />
       <Learn data={LearnData} />
       <LanguageLessons data={lessonData} />
