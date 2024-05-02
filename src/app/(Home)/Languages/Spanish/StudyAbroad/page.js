@@ -21,7 +21,7 @@ import ielts from "@/Assets/GermanMainPage/Gothe.svg";
 import PreapareForExam from "@/Shared/StudyAbroadComponents/PreapareForExam";
 import EverythingYouNeedToKnowAbout from "@/Shared/FrenchAdultReusableComponents/EverythingYouNeedToKnowAbout/EverythingYouNeedToKnowAbout";
 
-const FrenchForStudyAbroadPage = () => {
+const page = () => {
   const bannerData = {
     title: "Online Spanish Classes for Study Abroad",
     para: "Learning a new language has no age limit! If you're ready to dive into the world of Spanish, you're in luck! Our online Spanish classes and courses for Study Abroad offer an engaging and hassle-free way to learn the 2nd most spoken language in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Spanish grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Spanish from day one! Our top-notch Spanish trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online Spanish classes for Study Abroad.",
@@ -253,7 +253,7 @@ const FrenchForStudyAbroadPage = () => {
       <UpcomingBathches />
       <PreapareForExam data={PrepareData} />
       <ClassesForAnyLevel data={levelData} />
-      <StudentsTestomony data={TestimonialData} />
+      <StudentsTestomony />
       <FaqsSudyAbroad data={Faq} />
       <EverythingYouNeedToKnowAbout data={needToKnow} />
       <div>
@@ -270,4 +270,4 @@ const FrenchForStudyAbroadPage = () => {
   );
 };
 
-export default FrenchForStudyAbroadPage;
+export default page;

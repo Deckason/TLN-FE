@@ -11,7 +11,7 @@ import Rating from "react-rating";
 import { FaArrowRight, FaRegStar, FaStar } from "react-icons/fa";
 import Image from "next/image";
 import React, { useState } from "react";
-const StudentsTestomony = (data) => {
+const StudentsTestomony = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
@@ -57,37 +57,181 @@ const StudentsTestomony = (data) => {
             // modules={[Pagination]}
             className="mySwiper mx-auto flex justify-center  items-center max-w-[305px] md:max-w-[700px]  lg:max-w-[1000px] xl:max-w-[1200px]  2xl:max-w-[1200px] 3xl:max-w-[1440px]"
           >
-            {data.data.map((card) => (
-              <SwiperSlide className="flex justify-center items-center">
-                <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-4 max-w-[404px]">
-                  <div className="text-base text-stone-900">{card.para}</div>
-                  <div className="flex gap-2.5 mt-10">
-                    <Image
-                      className="w-20 h-20 rounded-full"
-                      alt="studenPIc"
-                      src={card.img}
-                    />
-                    <div className="flex flex-col flex-1 self-start">
-                      <div className="text-xl font-bold text-stone-900">
-                        {card.name}
-                      </div>
-                      <div className="mt-1 text-base font-medium text-neutral-500">
-                        {card.Dept}
-                      </div>
-                      <div className="flex gap-1.5 pr-20 mt-1">
-                        <Rating
-                          className=" text-[#FFC107] text-nowrap text-[18px]"
-                          initialRating={card.Rating}
-                          readonly
-                          emptySymbol={<FaRegStar />}
-                          fullSymbol={<FaStar />}
-                        />
-                      </div>
+            <SwiperSlide className="flex justify-center items-center">
+              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-4 max-w-[404px]">
+                <div className="text-base text-stone-900">
+                  “Spanish I have done my Spanish A1 & A2 from The Language
+                  Network. I have an amazing experience with the teachers. They
+                  teach from the deep down of their soul. Anytime they are ready
+                  to help. Specially Amrita Iyer is very very helpful to learn
+                  Spanish. Thank you The Language Network!!!”
+                </div>
+                <div className="flex gap-2.5 mt-10">
+                  <Image
+                    className="w-20 h-20 rounded-full"
+                    alt="studenPIc"
+                    src={studentPic}
+                  />
+                  <div className="flex flex-col flex-1 self-start">
+                    <div className="text-xl font-bold text-stone-900">
+                      Komal Patil
+                    </div>
+                    <div className="mt-1 text-base font-medium text-neutral-500">
+                      MBA in Marketing
+                    </div>
+                    <div className="flex gap-1.5 pr-20 mt-1">
+                      <Rating
+                        className=" text-[#FFC107] text-nowrap text-[18px]"
+                        initialRating={4.5}
+                        readonly
+                        emptySymbol={<FaRegStar />}
+                        fullSymbol={<FaStar />}
+                      />
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
-            ))}
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="flex justify-center items-center">
+              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
+                <div className="text-base text-stone-900">
+                  “Spanish I have done my Spanish A1 & A2 from The Language
+                  Network. I have an amazing experience with the teachers. They
+                  teach from the deep down of their soul. Anytime they are ready
+                  to help. Specially Amrita Iyer is very very helpful to learn
+                  Spanish. Thank you The Language Network!!!”
+                </div>
+                <div className="flex gap-2.5 mt-10">
+                  <Image
+                    className="w-20 h-20 rounded-full"
+                    alt="studenPIc"
+                    src={studentPic}
+                  />
+                  <div className="flex flex-col flex-1 self-start">
+                    <div className="text-xl font-bold text-stone-900">
+                      Komal Patil
+                    </div>
+                    <div className="mt-1 text-base font-medium text-neutral-500">
+                      MBA in Marketing
+                    </div>
+                    <div className="flex gap-1.5 pr-20 mt-1">
+                      <Rating
+                        className=" text-[#FFC107] text-nowrap text-[18px]"
+                        initialRating={4.5}
+                        readonly
+                        emptySymbol={<FaRegStar />}
+                        fullSymbol={<FaStar />}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="flex justify-center items-center">
+              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
+                <div className="text-base text-stone-900">
+                  “Spanish I have done my Spanish A1 & A2 from The Language
+                  Network. I have an amazing experience with the teachers. They
+                  teach from the deep down of their soul. Anytime they are ready
+                  to help. Specially Amrita Iyer is very very helpful to learn
+                  Spanish. Thank you The Language Network!!!”
+                </div>
+                <div className="flex gap-2.5 mt-10">
+                  <Image
+                    className="w-20 h-20 rounded-full"
+                    alt="studenPIc"
+                    src={studentPic}
+                  />
+                  <div className="flex flex-col flex-1 self-start">
+                    <div className="text-xl font-bold text-stone-900">
+                      Komal Patil
+                    </div>
+                    <div className="mt-1 text-base font-medium text-neutral-500">
+                      MBA in Marketing
+                    </div>
+                    <div className="flex gap-1.5 pr-20 mt-1">
+                      <Rating
+                        className=" text-[#FFC107] text-nowrap text-[18px]"
+                        initialRating={4.5}
+                        readonly
+                        emptySymbol={<FaRegStar />}
+                        fullSymbol={<FaStar />}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="flex justify-center items-center">
+              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
+                <div className="text-base text-stone-900">
+                  “Spanish I have done my Spanish A1 & A2 from The Language
+                  Network. I have an amazing experience with the teachers. They
+                  teach from the deep down of their soul. Anytime they are ready
+                  to help. Specially Amrita Iyer is very very helpful to learn
+                  Spanish. Thank you The Language Network!!!”
+                </div>
+                <div className="flex gap-2.5 mt-10">
+                  <Image
+                    className="w-20 h-20 rounded-full"
+                    alt="studenPIc"
+                    src={studentPic}
+                  />
+                  <div className="flex flex-col flex-1 self-start">
+                    <div className="text-xl font-bold text-stone-900">
+                      Komal Patil
+                    </div>
+                    <div className="mt-1 text-base font-medium text-neutral-500">
+                      MBA in Marketing
+                    </div>
+                    <div className="flex gap-1.5 pr-20 mt-1">
+                      <Rating
+                        className=" text-[#FFC107] text-nowrap text-[18px]"
+                        initialRating={4.5}
+                        readonly
+                        emptySymbol={<FaRegStar />}
+                        fullSymbol={<FaStar />}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="flex justify-center items-center">
+              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
+                <div className="text-base text-stone-900">
+                  “Spanish I have done my Spanish A1 & A2 from The Language
+                  Network. I have an amazing experience with the teachers. They
+                  teach from the deep down of their soul. Anytime they are ready
+                  to help. Specially Amrita Iyer is very very helpful to learn
+                  Spanish. Thank you The Language Network!!!”
+                </div>
+                <div className="flex gap-2.5 mt-10">
+                  <Image
+                    className="w-20 h-20 rounded-full"
+                    alt="studenPIc"
+                    src={studentPic}
+                  />
+                  <div className="flex flex-col flex-1 self-start">
+                    <div className="text-xl font-bold text-stone-900">
+                      Komal Patil
+                    </div>
+                    <div className="mt-1 text-base font-medium text-neutral-500">
+                      MBA in Marketing
+                    </div>
+                    <div className="flex gap-1.5 pr-20 mt-1">
+                      <Rating
+                        className=" text-[#FFC107] text-nowrap text-[18px]"
+                        initialRating={4.5}
+                        readonly
+                        emptySymbol={<FaRegStar />}
+                        fullSymbol={<FaStar />}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
 
