@@ -5,7 +5,7 @@ import Image from "next/image";
 const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
   return (
     <div className=" my-[112px] w-full flex items-center flex-col justify-center">
-      <div className="text-black text-2xl font-bold lg:mb-[48px]">
+      <div className="text-black text-[60px] font-bold lg:mb-[48px]">
         Why learn {WhyLearnLanguage?.Language}?
       </div>
       <div className="2xl:max-w-[1440px] mx-auto min-h-[1016px] flex-col justify-start items-center  h-full w-full gap-14 inline-flex">
@@ -106,9 +106,9 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
                     {WhyLearnLanguage?.CardData5?.title}
                   </div>
                 </div>
-                <div className="self-stretch h-28 px-4 flex-col justify-start items-center gap-8 flex">
-                  <div className="self-stretch h-28 rounded-lg flex-col justify-start items-center gap-8 flex">
-                    <div className="self-stretch h-28 flex-col justify-start items-center gap-2 flex">
+                <div className="self-stretch min-h-28 px-4 flex-col justify-start items-center gap-8 flex">
+                  <div className="self-stretch min-h-28 rounded-lg flex-col justify-start items-center gap-8 flex">
+                    <div className="self-stretch min-h-28 flex-col justify-start items-center gap-2 flex">
                       <div className="self-stretch text-center text-neutral-500 2xl:text-xl font-normal  leading-7">
                         {WhyLearnLanguage?.CardData5?.info}
                       </div>

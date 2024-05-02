@@ -16,11 +16,11 @@ const ClassesForAnyGoalCard = ({ data }) => {
         </div>
 
         <div className="w-full  h-full   max-lg:max-h-[350px] lg:min-h-[295px] flex-col justify-start items-center gap-8 flex">
-          <div className="self-stretch text-center text-neutral-800 lg:text-xl max-lg:text-lg 2xl:text-2xl font-medium ">
+          <div className="self-stretch text-center text-neutral-800 lg:text-lg max-lg:text-lg 2xl:text-2xl font-medium ">
             {data?.title}
           </div>
           <div className="self-stretch max-h-[170px] h-full max-lg:max-h-[240px] min-h-[140px]  flex-col mb-3 justify-start items-center gap-2 flex">
-            <div className="self-stretch text-center text-neutral-500 lg:text-lg 2xl:text-xl font-normal leading-7">
+            <div className="self-stretch text-center text-neutral-500  2xl:text-xl font-normal leading-7">
               {data?.description}
             </div>
           </div>

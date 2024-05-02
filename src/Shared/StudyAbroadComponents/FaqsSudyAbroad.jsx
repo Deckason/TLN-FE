@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const FaqsSudyAbroad = (data) => {
   const faq = [...data.data];
-  console.log(faq);
+  // console.log(faq);
 
   const [splicing, setsplicing] = useState(true);
   return (

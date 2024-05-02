@@ -14,13 +14,13 @@ const ClassLevelCard = ({ data }) => {
             {data?.level}
           </div>
         </div>
-        <div className="w-full  h-full min-h-[100px] lg:min-h-[330px] flex-col justify-between items-center gap-8 flex">
-          <div className="self-stretch max-h-[150px] md:max-h-[170px] min-h-[170px] mx-5 flex-col justify-start items-center gap-2 flex">
-            <div className="self-stretch text-center text-neutral-500 lg:text-lg 2xl:text-xl font-normal leading-7">
+        <div className="w-full h-full min-h-[100px] lg:min-h-[330px] flex-col justify-between items-center gap-8 flex">
+          <div className="self-stretch max-h-[200px] md:max-h-[255px] min-h-[170px] mx-5 flex-col justify-start items-center gap-2 flex">
+            <div className="self-stretch text-center text-neutral-500  2xl:text-xl xl:text-base font-normal leading-7">
               {data?.description}
             </div>
           </div>
-          <div className="self-stretch mx-4 mb-4 h-14 flex-col justify-center items-center gap-2.5 flex">
+          <div className="self-stretch mx-4 mb-4  h-14 flex-col justify-center items-center gap-2.5 flex">
             <Link
               href={data?.link}
               className="self-stretch h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"

@@ -1,5 +1,5 @@
 import LanguageLessons from "../FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
-import StudentsTestomony from "../StudentsTestomony";
+
 import SubscribeToOur from "../SubscribeToOur";
 import UpcomingBatches from "../UpcomingBatches";
 import Banner from "./Components/Banner/Banner";
@@ -12,13 +12,14 @@ import OnlineLanguageClass from "./Components/OnlineLanguageClass/OnlineLanguage
 import PaymentBar from "./Components/Payment/Payment";
 import PrepareForLanguageExam from "./Components/PrepareForLanguageExam/PrepareForLanguageExam";
 import SayBonjur from "./Components/SayBonjur/SayBonjur";
+import StudentsTestomony from "./Components/StudentTestomony/StudentsTestomony";
 import WhyLearnLanguage from "./Components/WhyLearnLanguage/WhyLearnLanguage";
 
 const SharedMainLanuagePage = ({ Data }) => {
-  console.log(Data);
+  // console.log(Data);
   return (
     <div className="">
-      <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative   flex justify-center items-center flex-col mb-[112px]">
+      <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
         <Banner BannerData={Data?.Banner} />
         <OnlineLanguageClass OnlineLanguageClass={Data?.OnlineLanguageClass} />
         <LanguageClassesForAnyGoal
@@ -32,7 +33,7 @@ const SharedMainLanuagePage = ({ Data }) => {
         <UpcomingBatches />
       </div>
 
-      {/* <StudentsTestomony /> */}
+      <StudentsTestomony />
       <FaqsLanguage FaqsData={Data?.FaqsData} />
       <EverythingYouNeedToKnowAboutLanguage
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
