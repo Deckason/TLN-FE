@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import FaqsCard from "@/Shared/FaqsCard";
 import frenchFlag from "@/Assets/FrenchPage/FrenchMain/FaqImg.svg";
 import Image from "next/image";

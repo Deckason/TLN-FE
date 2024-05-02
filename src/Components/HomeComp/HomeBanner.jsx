@@ -6,13 +6,13 @@ const HomeBanner = () => {
   return (
     <div className=" md:mx-10">
       <div className="max-w-[1681px] md:min-h-[542px] md:justify-between  items-center flex flex-col md:flex-row mx-5   xl:mx-auto">
-        <div className="lg:w-[525px] md:min-h-[542px] min-h-[420px] flex-col z-10 justify-center  lg:items-start gap-4 inline-flex">
+        <div className="lg:w-[525px] md:min-h-[542px] min-h-[400px] flex-col z-10 justify-center  lg:items-start gap-4 inline-flex">
           <div className="self-stretch h-[261px] flex-col justify-center items-start gap-4 flex">
-            <div className="self-stretch text-stone-900 xl:text-5xl text-4xl font-bold ">
+            <div className="self-stretch text-stone-900 xl:text-5xl lg:text-2xl text-xl font-bold ">
               Your Gateway to <br className="md:hidden" />
               Language Excellence
             </div>
-            <div className="self-stretch text-stone-900 text-[32px] font-normal ">
+            <div className="self-stretch text-stone-900 xl:text-4xl lg:text-2xl  text-[32px] font-normal ">
               Learn more than just a language!
             </div>
           </div>
@@ -22,12 +22,12 @@ const HomeBanner = () => {
         </div>
         <Image
           alt="homePageBannerGirl"
-          className="md:w-[500px] xl:w-[769px] lg:w-[700px]  mt-[90px] absolute opacity-20 lg:top-[100px]  top-[180px] md:top-[220px] xl:relative  -z-0 xl:top-[72px] xl:opacity-100 xl:block"
+          className="md:w-[500px] xl:w-[769px] lg:w-[500px]   absolute opacity-20 lg:top-[100px]  top-[180px] md:top-[220px] xl:relative  -z-0 xl:top-[72px] xl:opacity-100 xl:block"
           src={homePageBannerGirl}
         ></Image>
-        <div className="max-w-[400px] h-[542px] xl:px-10 py-8 xl:mx-auto px-3  rounded-2xl z-10 border bg-white md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
+        <div className="max-w-[400px] h-[522px] xl:px-10 py-8 xl:mx-auto px-3  rounded-2xl z-10 border bg-white md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
           <div className="grow shrink basis-0 self-stretch flex-col justify-start items-center gap-8 inline-flex">
-            <div className="self-stretch h-[89px] flex-col justify-center items-center gap-1 flex">
+            <div className="self-stretch h-[75px] flex-col justify-center items-center gap-1 flex">
               <div className="self-stretch text-center text-stone-900 text-2xl font-medium ">
                 Drop an Enquiry
               </div>
@@ -39,26 +39,26 @@ const HomeBanner = () => {
               <div className="self-stretch h-[272px] flex-col justify-start items-center gap-4 flex">
                 <input
                   placeholder="Text"
-                  className="self-stretch px-4 py-[11px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center grow shrink basis-0 text-neutral-400 text-xl font-normal  leading-[34px] gap-2.5 inline-flex"
+                  className="self-stretch px-4 py-[5px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center grow shrink basis-0 text-neutral-400 text-xl font-normal  leading-[34px] gap-2.5 inline-flex"
                   type="text"
                 />
                 <input
                   placeholder="Email ID"
-                  className="self-stretch px-4 py-[11px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center grow shrink basis-0 text-neutral-400 text-xl font-normal  leading-[34px] gap-2.5 inline-flex"
+                  className="self-stretch px-4 py-[5px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center grow shrink basis-0 text-neutral-400 text-xl font-normal  leading-[34px] gap-2.5 inline-flex"
                   type="email"
                 />
                 <input
                   placeholder="Mobile Number"
-                  className="self-stretch px-4 py-[11px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center grow shrink basis-0 text-neutral-400 text-xl font-normal  leading-[34px] gap-2.5 inline-flex"
+                  className="self-stretch px-4 py-[5px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center grow shrink basis-0 text-neutral-400 text-xl font-normal  leading-[34px] gap-2.5 inline-flex"
                   type="number"
                 />
                 <input
                   placeholder="Preferred Language"
-                  className="self-stretch px-4 py-[11px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center grow shrink basis-0 text-neutral-400 text-xl font-normal  leading-[34px] gap-2.5 inline-flex"
+                  className="self-stretch px-4 py-[5px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center grow shrink basis-0 text-neutral-400 text-xl font-normal  leading-[34px] gap-2.5 inline-flex"
                   type="text"
                 />
               </div>
-              <button className="self-stretch h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex">
+              <button className="self-stretch h-14 px-8 py-3 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex">
                 <div className="w-[215px] h-[30px] text-center text-teal-600 text-2xl font-medium ">
                   Send Enquiry
                 </div>
