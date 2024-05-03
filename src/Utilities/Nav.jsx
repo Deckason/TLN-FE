@@ -102,14 +102,14 @@ const Nav = () => {
         {/* Batches Starting Now  */}
         <section>
           <div className="bg-black flex items-center justify-center h-[30px] lg:h-[48px] w-full">
-            <h1 className=" text-primary-color lg:text-xl text-xs font-bold">
+            <h1 className=" text-primary-color lg:text-xl md:text-base text-xs font-bold">
               <span className="font-normal">DELF /Goethe Exam Schedule</span> |
               Batches Starting Now!
             </h1>
           </div>
         </section>
         {/* nav options section */}
-        <section className="hidden   px-2.5 py-2.5 bg-white shadow lg:flex justify-center w-full items-center gap-2.5 ">
+        <section className="lg:flex lg:px-2.5 lg:py-2.5 lg:bg-white lg:shadow lg:justify-center lg:w-full lg:items-center lg:gap-2.5 ">
           <div className="hidden lg:flex justify-center w-[1730px] items-center ">
             <div className=" h-[58px] justify-between items-center inline-flex">
               <div className="w-full self-stretch justify-between items-center flex">
@@ -128,7 +128,7 @@ const Nav = () => {
                     {
                       NavOptions.map((Nav) => (
                         <Link
-                          className="text-nowrap xl:text-xl"
+                          className="text-nowrap xl:text-[16px]"
                           onMouseLeave={() => {
                             if (Nav.name === "Work with us") {
                               setShowWorkWithUs(false);
@@ -158,13 +158,15 @@ const Nav = () => {
                 <Dropdown data={WorkWithUsData} />
               </div>
             </div>
-            <div className=" hidden flex-grow gap-10 lg:flex justify-end me-5">
-              <div className="  h-[53px] px-8 py-3.5 bg-primary-color rounded-lg justify-center text-white font-bold xl:text-xl items-center gap-2.5 inline-flex">
+            <div className=" hidden flex-grow gap-5 lg:flex justify-end me-5">
+              <div className=" lg:w-[153px]  h-14 px-8 py-3.5 bg-primary-color rounded-lg justify-center text-white  xl:text-[14px] items-center gap-2.5 inline-flex">
                 Get Started
               </div>
-              <div className=" h-[53px] px-8 py-3.5 bg-primary-color rounded-lg justify-center text-white font-bold xl:text-xl items-center gap-2.5 inline-flex">
-                Login
-              </div>
+              <button className="self-stretch px-5 h-14  py-3 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex">
+                <div className="w-fit lg:w-[200px] text-center text-teal-600 xl:text-[14px] font-medium ">
+                  Already Booked The Class
+                </div>
+              </button>
             </div>
           </div>
           {/* side bar */}
@@ -188,16 +190,16 @@ const Nav = () => {
             <div
               className={`min-h-lvh fixed bg-white w-[200px] ${
                 showNav ? "right-0" : "right-[-120%]"
-              } transform duration-500  border-2 border-secondary-color top-0  z-30`}
+              } transform duration-500 border-2 border-secondary-color top-0 z-30`}
             >
               <IoMdCloseCircle
                 onClick={() => {
-                  setShowNav(!showNav);
+                  setShowNav(false);
                 }}
                 role="button"
                 className="text-3xl text-primary-color bg-white absolute left-[-30px] rounded-l-2xl top-9 border-2 border-secondary-color border-e-0"
               />
-              <div className="flex overflow-y-scroll  example pb-10 h-screen flex-col justify-start p-2.5 items-start gap-2">
+              <div className="flex overflow-y-scroll example pb-10 h-screen flex-col justify-start p-2.5 items-start gap-2">
                 <button className="text-primary-color font-medium">
                   Login
                 </button>

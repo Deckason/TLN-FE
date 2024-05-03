@@ -4,7 +4,7 @@ import States from "@/Shared/States";
 import Image from "next/image";
 const HomeBanner = () => {
   return (
-    <div className=" md:mx-10">
+    <div className=" md:mx-10 mt-5">
       <div className="max-w-[1681px] md:min-h-[542px] md:justify-between  items-center flex flex-col md:flex-row mx-5   xl:mx-auto">
         <div className="lg:w-[525px] md:min-h-[542px] min-h-[400px] flex-col z-10 justify-center  lg:items-start gap-4 inline-flex">
           <div className="self-stretch h-[261px] flex-col justify-center items-start gap-4 flex">
@@ -22,7 +22,7 @@ const HomeBanner = () => {
         </div>
         <Image
           alt="homePageBannerGirl"
-          className="md:w-[500px] xl:w-[769px] lg:w-[500px]   absolute opacity-20 lg:top-[100px]  top-[180px] md:top-[220px] xl:relative  -z-0 xl:top-[72px] xl:opacity-100 xl:block"
+          className="md:w-[500px] xl:w-[760px] lg:w-[500px]   absolute opacity-20 lg:top-[100px]  top-[180px] md:top-[220px] xl:relative  -z-0 xl:top-[72px] xl:opacity-100 xl:block"
           src={homePageBannerGirl}
         ></Image>
         <div className="max-w-[400px] h-[522px] xl:px-10 py-8 xl:mx-auto px-3  rounded-2xl z-10 border bg-white md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
