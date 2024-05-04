@@ -75,21 +75,21 @@ const FrenchPage = () => {
           img: dalf,
           description:
             "DALF is an advanced-level French language proficiency exam, suitable for individuals aiming to demonstrate high-level competency in French. It is recognized globally by academic institutions, employers, and immigration authorities.",
-          link: "#",
+          link: "/Languages/French/exam/dalf",
         },
         {
           title: "DELF preparation classes",
           img: delf,
           description:
             "The DELF exam assesses French language proficiency for non-native speakers. It is designed for individuals seeking certification for academic or professional purposes, and for those planning to immigrate to French-speaking countries.",
-          link: "#",
+          link: "/Languages/French/exam/delf",
         },
         {
           title: "TEL preparation classes",
           img: telf,
           description:
             "The TEF exam is an internationally recognized French language proficiency test for individuals seeking to assess their French language abilities. It is widely accepted by academic institutions, employers, and immigration authorities worldwide.",
-          link: "#",
+          link: "/Languages/French/exam/telf",
         },
       ],
     },

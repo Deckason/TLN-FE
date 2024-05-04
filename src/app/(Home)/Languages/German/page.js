@@ -74,7 +74,7 @@ const GermanPage = () => {
           img: Goethe,
           description:
             "The GOETHE exam assesses German language proficiency globally. Success demonstrates effective communication in German for various purposes. Our tailored course helps you master skills and confidently tackle each section of the exam.            ",
-          link: "#",
+          link: "/Languages/German/exam/goethe",
         },
       ],
     },

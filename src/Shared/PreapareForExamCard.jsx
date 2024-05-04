@@ -1,5 +1,6 @@
 import Image from "next/image";
 import arrowLeft from "@/Assets/Icons/arrowleft.svg";
+import Link from "next/link";
 
 const PreapareForExamCard = ({ data }) => {
   return (
@@ -22,7 +23,10 @@ const PreapareForExamCard = ({ data }) => {
               {data?.description}
             </div>
           </div>
-          <div className="self-stretch mx-4 mb-4 h-14 flex-col justify-center items-center gap-2.5 flex">
+          <Link
+            href={data.link}
+            className="self-stretch mx-4 mb-4 h-14 flex-col justify-center items-center gap-2.5 flex"
+          >
             <div className="self-stretch h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex">
               <div className="text-center text-teal-600 text-xl font-normal  leading-7">
                 Learn more
@@ -31,7 +35,7 @@ const PreapareForExamCard = ({ data }) => {
                 <Image alt="arrowLeft" src={arrowLeft}></Image>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

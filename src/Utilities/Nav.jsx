@@ -109,7 +109,7 @@ const Nav = () => {
           </div>
         </section>
         {/* nav options section */}
-        <section className="lg:flex lg:px-2.5 lg:py-2.5 lg:bg-white lg:shadow lg:justify-center lg:w-full lg:items-center lg:gap-2.5 ">
+        <section className="lg:flex lg:py-2.5 lg:bg-white lg:shadow lg:justify-center lg:w-full lg:items-center lg:gap-2.5 ">
           <div className="hidden lg:flex justify-center w-[1730px] items-center ">
             <div className=" h-[58px] justify-between items-center inline-flex">
               <div className="w-full self-stretch justify-between items-center flex">
