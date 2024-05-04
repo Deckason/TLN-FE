@@ -1,5 +1,3 @@
-import LanguageLessons from "../FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
-
 import SubscribeToOur from "../SubscribeToOur";
 import UpcomingBatches from "../UpcomingBatches";
 import Banner from "./Components/Banner/Banner";
@@ -7,6 +5,7 @@ import EverythingYouNeedToKnowAboutLanguage from "./Components/EverythingYouNeed
 import FaqsLanguage from "./Components/FaqsLanguage/FaqsLanguage";
 import LanguageClassesForAnyGoal from "./Components/LanguageClassesForAnyGoal/LanguageClassesForAnyGoal";
 import LanguageClassesForAnyLevel from "./Components/LanguageClassesForAnyLevel/LanguageClassesForAnyLevel";
+import LanguageLessons from "./Components/Languagelessons/LanguageLessons";
 
 import OnlineLanguageClass from "./Components/OnlineLanguageClass/OnlineLanguageClass";
 import PaymentBar from "./Components/Payment/Payment";

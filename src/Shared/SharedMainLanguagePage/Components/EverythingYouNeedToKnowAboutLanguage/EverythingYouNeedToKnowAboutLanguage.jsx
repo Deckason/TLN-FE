@@ -1,8 +1,9 @@
 "use client";
-import FaqsCard from "@/Shared/FaqsCard";
+
 import frenchFlag from "@/Assets/FrenchPage/FrenchMain/FaqImg.svg";
 import Image from "next/image";
 import { useState } from "react";
+import FaqsCard from "../FaqsCard";
 
 const EverythingYouNeedToKnowAboutLanguage = ({
   EveryThingYouNeedToKnowAbout,

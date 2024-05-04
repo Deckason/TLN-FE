@@ -101,7 +101,7 @@ const FrenchPage = () => {
           level: "Beginner Classes",
           description:
             "Start your French language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
-          link: "#",
+          link: "/Languages/French/LevelPage/BeginnerLevel(A1-A2)",
         },
 
         {
@@ -109,7 +109,7 @@ const FrenchPage = () => {
           level: "Intermediate Classes",
           description:
             "Elevate your French proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-          link: "#",
+          link: "/Languages/French/LevelPage/IntermediateLevel(B1-B2)",
         },
 
         {
@@ -117,7 +117,7 @@ const FrenchPage = () => {
           level: "Advanced Classes",
           description:
             "Advance your French skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
-          link: "#",
+          link: "/Languages/French/LevelPage/AdvancedLevel(C1-C2)",
         },
       ],
     },
