@@ -1,0 +1,220 @@
+"use client";
+import { TopBar } from "@/Shared/ReusableExamPage/top-bar";
+import UpcomingBatches from "@/Shared/UpcomingBatches";
+import studentPic from "@/Assets/Homepage/Testomony/testomony.png";
+import React from "react";
+import StudentsTestomony from "@/Shared/ReusableExamPage/studentTestmony";
+import Say from "@/Shared/ReusableExamPage/Say";
+import Faqs from "@/Shared/ReusableExamPage/Faq";
+import LanguageLessons from "@/Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
+import SubscribeToOur from "@/Shared/SubscribeToOur";
+import PaymentBar from "@/Components/HomeComp/PaymentBar";
+import ExamHelp from "@/Shared/ReusableExamPage/Exam-Help";
+import AboutDelf from "@/Shared/ReusableExamPage/About-Delf";
+import delf from "@/Assets/FrenchPage/FrenchMain/delf.png";
+
+const page = () => {
+  const StudentTestimonialsData = {
+    title: "What our French students say",
+    testimonial: [
+      {
+        id: 1,
+        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
+        studentName: "Komal Patil",
+        studentImage: studentPic, // assuming studentPic is the URL of the image
+        course: "MBA in Marketing",
+        rating: 4.5,
+      },
+      {
+        id: 2,
+        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
+        studentName: "Komal Patil",
+        studentImage: studentPic, // assuming studentPic is the URL of the image
+        course: "MBA in Marketing",
+        rating: 4.5,
+      },
+      {
+        id: 3,
+        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
+        studentName: "Komal Patil",
+        studentImage: studentPic, // assuming studentPic is the URL of the image
+        course: "MBA in Marketing",
+        rating: 4.5,
+      },
+      {
+        id: 4,
+        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
+        studentName: "Komal Patil",
+        studentImage: studentPic, // assuming studentPic is the URL of the image
+        course: "MBA in Marketing",
+        rating: 4.5,
+      },
+      {
+        id: 1,
+        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
+        studentName: "Komal Patil",
+        studentImage: studentPic, // assuming studentPic is the URL of the image
+        course: "MBA in Marketing",
+        rating: 4.5,
+      },
+      // Add more testimonial objects as needed
+    ],
+  };
+
+  const FaqsData = [
+    {
+      question: "Why should I give the DELF exam?",
+      answer:
+        "You should give the DELF exam to obtain a recognized certification of your French-language proficiency, which can enhance your career opportunities, academic pursuits, and personal development.",
+    },
+    {
+      question: "What are the different levels of the DELF exam?",
+      answer:
+        "The DELF exam consists of four levels: A1, A2, B1, and B2, representing increasing proficiency from beginner to upper-intermediate levels.",
+    },
+    {
+      question: "What are the sections of the DELF exam?",
+      answer:
+        "The DELF exam typically includes four sections: listening, reading, writing, and speaking.",
+    },
+    {
+      question: "How can I prepare for the DELF exam?",
+      answer:
+        "You can prepare for the DELF exam through study materials, practice tests, and language courses.",
+    },
+    {
+      question: "When is the DELF exam conducted?",
+      answer:
+        "The DELF exam is conducted year-round, with multiple testing sessions available, allowing candidates to choose a convenient date based on their schedule and availability.",
+    },
+    {
+      question: "Can I retake the DELF exam if I don't pass?",
+      answer:
+        "Yes, you can retake the DELF exam if you do not pass on your first attempt.",
+    },
+    {
+      question: "Is there a difference between the DELF and DALF exams?",
+      answer:
+        "Yes, the DELF exam assesses proficiency at lower levels (A1-B2), while the DALF exam assesses proficiency at higher levels (C1-C2).",
+    },
+    {
+      question: "Are there any age restrictions for taking the DELF exam?",
+      answer: "No, there are no age restrictions for taking the DELF exam.",
+    },
+    {
+      question: "What job opportunities will I get after giving the DELF exam?",
+      answer:
+        "Upon passing the DELF exam, you can pursue careers in language teaching, translation, international business, tourism, government, media, and cultural organizations.",
+    },
+  ];
+
+  const say = "Say Bonjour to language learning with us!";
+
+  const lessonData = [
+    {
+      title: "Popular classes We Offer",
+      list: [
+        "Online French Classes",
+        "Online Spanish Classes",
+        "Online German Classes",
+        "Online Mandarin Classes",
+        "Online Japanese Classes ",
+        "Online Korean Classes",
+        "Online English Classes",
+      ],
+    },
+    {
+      title: "Popular Online classes",
+      list: [
+        "Online French Grammar Classes",
+        "Online French Speaking Classes",
+        "Online English Grammar Classes",
+        "Online English Speaking Classes",
+        "Online Spanish Grammar Classes",
+        "Online Spanish Speaking Classes",
+      ],
+    },
+    {
+      title: "Popular classes by target group",
+      list: [
+        "Online French Classes for kids",
+        "Online French Classes for adults",
+        "Online French Classes for corporates",
+        "Online English Classes for kids",
+        "Online English Classes for adults",
+        "Online English Classes for corporates",
+      ],
+    },
+    {
+      title: "Popular online classes by level",
+      list: [
+        "Online French Classes for Beginners",
+        "Online French Classes for Intermediate",
+        "Online French Classes for Advance",
+        "Online English Classes for Beginners",
+        "Online English Classes for Intermediate",
+        "Online English Classes for Advance",
+      ],
+    },
+  ];
+
+  const aboutExam = {
+    title: "Know more about DELF exam",
+    image: delf,
+    paraTitle: "DELF Exam",
+    para: "The DELF exam, or Diplôme d'Études en Langue Française, is an official certification offered by the French Ministry of Education to assess proficiency in the French language. It's important to take this exam because it provides an internationally recognized credential that demonstrates your French language skills, which can be beneficial for academic, professional, and personal pursuits. The difficulty of the exam can vary depending on the level, with higher levels requiring more advanced language skills.",
+  };
+
+  const examHelpData = {
+    title: "How we help you clear your DELF exam",
+    data: [
+      {
+        title: "Assessment and Readiness Tools",
+        description:
+          "Mock exams provide simulated tests, while audio files and textual materials aid listening and reading comprehension respectively.",
+      },
+      {
+        title: "Interactive Skill Development",
+        description:
+          "Group discussions enhance speaking skills, while situational writing activities focus on practical writing within specific contexts.",
+      },
+      {
+        title: "Exam Preparation Emphasis",
+        description:
+          "Maintaining an exam approach since day one ensures consistent readiness strategies throughout the learning process.",
+      },
+      {
+        title: "Holistic Language Instruction",
+        description:
+          "Comprehensive instruction covers listening, reading, writing, and speaking skills to provide a well-rounded language learning experience.",
+      },
+      {
+        title: "Learning Support Resources",
+        description:
+          "Class recordings serve as valuable archives for review and reinforcement of lessons.",
+      },
+    ],
+  };
+
+  const TopBarData = {
+    title: "DELF Proficiency exam",
+    para: "Master the DELF proficiency exam effortlessly with The Language Network. Our online exam preparation courses are crafted in accordance with your timing and schedule. Get study material and access to insider tips and tricks and from our expert tuto₹Whether you're beginning your journey or striving for advanced proficiency, our comprehensive approach will empower you with the skills and confidence to thrive. Join us at The Language Network and embark on your path to success in the DELF exam.",
+  };
+
+  return (
+    <div>
+      <TopBar data={TopBarData} />
+      <AboutDelf data={aboutExam} />
+      <ExamHelp data={examHelpData} />
+      <UpcomingBatches />
+      <StudentsTestomony data={StudentTestimonialsData} />
+      <Faqs data={FaqsData} />
+      <Say say={say} />
+      <LanguageLessons LanguageLesson={lessonData} />
+      <SubscribeToOur />
+      <PaymentBar />
+    </div>
+  );
+};
+
+export default page;

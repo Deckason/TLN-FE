@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const PaymentBar = () => {
   return (
-    <div className="flex-wrap bg-[#000000] gap-10 py-10 flex items-center px-3 justify-around">
+    <div className="flex-wrap bg-[#000000] gap-10 min-h-[86px]  flex items-center px-3 justify-around">
       <Image src={amazon} alt="amazon" />
       <Image src={bhim} alt="Bhim" />
       <Image src={bajaj} alt="Bajaj" />

@@ -74,14 +74,14 @@ const EnglishPage = () => {
           img: dalf,
           description:
             "Take your English skills to new heights with our IELTS preparation courses. Designed to help you excel in all four components - reading, writing, listening, and speaking - our expert instructors will guide you towards success in this globally recognized English proficiency exam.",
-          link: "#",
+          link: "/Languages/English/exam/ielts",
         },
         {
           title: "TOEFL preparation classes",
           img: telf,
           description:
             "Open doors to international opportunities with our TOEFL preparation courses. From mastering academic English to excelling in listening, speaking, reading, and writing, our comprehensive training ensures you're fully prepared to ace this crucial exam.",
-          link: "#",
+          link: "/Languages/English/exam/toelf",
         },
       ],
     },

@@ -8,8 +8,8 @@ const States = () => {
     inactiveFillColor: "#BBF7D0",
   };
   return (
-    <div className="flex justify-center items-center">
-      <div className="lg:w-[1000px] xl:w-[1684px] min-h-[199px] py-[52px] bg-white z-10 rounded-2xl border border-stone-300 flex-col max-sm:mx-4 justify-center items-center  flex">
+    <div className="flex p-5 w-full justify-center items-center">
+      <div className="w-full xl:w-[1680px]  min-h-[199px] py-[52px] bg-white z-10 rounded-2xl border border-stone-300 flex-col max-sm:mx-4 justify-center items-center flex">
         <div className="justify-around w-full 3xl:gap-[90px] items-center flex-wrap flex">
           <div className="flex-col justify-center items-center gap-2 inline-flex w-full lg:w-auto">
             <div className="text-center text-stone-900 max-sm:text-3xl text-5xl font-bold">
