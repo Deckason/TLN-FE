@@ -87,36 +87,61 @@ const EnglishPage = () => {
     },
     ClassesForAnyLevel: {
       Language: "English",
+      // CardData: [
+      //   {
+      //     title: "Reading",
+      //     level: "",
+      //     description:
+      //       "Start your English language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
+      //     link: "#",
+      //   },
+
+      //   {
+      //     title: "Writing          ",
+      //     level: "",
+      //     description:
+      //       "Elevate your English proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
+      //     link: "#",
+      //   },
+
+      //   {
+      //     title: "Listening",
+      //     level: "",
+      //     description:
+      //       "Advance your English skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in English.",
+      //     link: "#",
+      //   },
+      //   {
+      //     title: "Speaking",
+      //     level: "",
+      //     description:
+      //       "Advance your English skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in English.",
+      //     link: "#",
+      //   },
+      // ],
       CardData: [
         {
-          title: "Reading",
-          level: "",
+          title: "A1-A2",
+          level: "Beginner Classes",
           description:
             "Start your English language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
-          link: "#",
+          link: "/Languages/English/LevelPage/BeginnerLevel(A1-A2)",
         },
 
         {
-          title: "Writing          ",
-          level: "",
+          title: "B1-B2",
+          level: "Intermediate Classes",
           description:
             "Elevate your English proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-          link: "#",
+          link: "/Languages/English/LevelPage/IntermediateLevel(B1-B2)",
         },
 
         {
-          title: "Listening",
-          level: "",
+          title: "C1-C2",
+          level: "Advanced Classes",
           description:
             "Advance your English skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in English.",
-          link: "#",
-        },
-        {
-          title: "Speaking",
-          level: "",
-          description:
-            "Advance your English skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in English.",
-          link: "#",
+          link: "/Languages/English/LevelPage/AdvancedLevel(C1-C2)",
         },
       ],
     },

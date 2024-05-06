@@ -94,7 +94,7 @@ const SpanishPage = () => {
           level: "Beginner Classes          ",
           description:
             "Start your Spanish language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.            ",
-          link: "#",
+          link: "/Languages/Spanish/LevelPage/BeginnerLevel(A1-A2)",
         },
 
         {
@@ -102,7 +102,7 @@ const SpanishPage = () => {
           level: "Intermediate Classes          ",
           description:
             "Elevate your Spanish proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.            ",
-          link: "#",
+          link: "/Languages/Spanish/LevelPage/IntermediateLevel(B1-B2)",
         },
 
         {
@@ -110,7 +110,7 @@ const SpanishPage = () => {
           level: "Advanced Classes          ",
           description:
             "Advance your Spanish skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in Spanish.            ",
-          link: "#",
+          link: "/Languages/Spanish/LevelPage/AdvancedLevel(C1-C2)",
         },
       ],
     },
