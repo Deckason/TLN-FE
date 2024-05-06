@@ -3,7 +3,7 @@ import girlImg from "../../Assets/Homepage/NewsLetterImg/girl.png";
 import Image from "next/image";
 const Newsletter = () => {
   return (
-    <div className="flex justify-center items-center px-16 py-20 bg-secondary-color mt-[102px] max-md:px-5">
+    <div className="flex justify-center items-center px-16 py-20 bg-secondary-color  max-md:px-5">
       <div className="mt-7 w-full max-w-[1680px] max-md:max-w-full">
         <div className="xl:flex gap-5 lg:flex-row max-xl:flex-col max-md:gap-0">
           <div className="flex flex-col w-full xl:w-[33%] max-md:ml-0 min-h-[275px] max-md:w-full">
