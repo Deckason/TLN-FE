@@ -6,23 +6,23 @@ const HomeBanner = () => {
   return (
     <div className=" md:mx-10 mt-5">
       <div className="max-w-[1681px] md:min-h-[542px] md:justify-between  items-center flex flex-col md:flex-row mx-5   xl:mx-auto">
-        <div className="lg:w-[525px] md:min-h-[542px] min-h-[400px] flex-col z-10 justify-center  lg:items-start gap-4 inline-flex">
-          <div className="self-stretch h-[261px] flex-col justify-center items-start gap-4 flex">
-            <div className="self-stretch text-stone-900 xl:text-5xl lg:text-2xl text-xl font-bold ">
+        <div className="lg:w-[525px] md:min-h-[542px] min-h-fit flex-col z-10 justify-center w-full lg:items-start gap-4 inline-flex">
+          <div className="self-stretch lg:h-[261px] h-fit 2xl:h-[261px] xl:h-[261px] flex-col justify-center items-start gap-4 flex">
+            <div className="self-stretch text-stone-900 2xl:text-5xl xl:text-4xl lg:text-2xl text-[24px] font-bold ">
               Your Gateway to <br className="md:hidden" />
               Language Excellence
             </div>
-            <div className="self-stretch text-stone-900 xl:text-4xl lg:text-2xl  text-[32px] font-normal ">
+            <div className="self-stretch text-stone-900 2xl:text-5xl xl:text-4xl lg:text-2xl text-xl font-normal ">
               Learn more than just a language!
             </div>
           </div>
-          <div className=" mt-5">
+          <div className=" my-5">
             <BookAFreeDemoButton />
           </div>
         </div>
         <Image
           alt="homePageBannerGirl"
-          className="md:w-[500px] xl:w-[760px] lg:w-[500px]   absolute opacity-20 lg:top-[100px]  top-[180px] md:top-[220px] xl:relative  -z-0 xl:top-[72px] xl:opacity-100 xl:block"
+          className="md:w-[400px]  lg:w-[500px] hidden  absolute opacity-20 lg:top-[100px]  xl:top-[140px] top-[130px] md:top-[220px] xl:relative  -z-0  xl:opacity-100 xl:block"
           src={homePageBannerGirl}
         ></Image>
         <div className="max-w-[400px] h-[522px] xl:px-10 py-8 xl:mx-auto px-3  rounded-2xl z-10 border bg-white md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
@@ -67,6 +67,11 @@ const HomeBanner = () => {
           </div>
         </div>
       </div>
+      <Image
+        alt="homePageBannerGirl"
+        className="xl:hidden lg:hidden 2xl:hidden md:hidden flex mt-[20px] -mb-[20px]"
+        src={homePageBannerGirl}
+      ></Image>
       {/* states component is a shared component */}
       <States />
     </div>
