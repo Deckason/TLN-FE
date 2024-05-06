@@ -3,9 +3,7 @@ import Image from "next/image";
 const WhatWillYouLearnCard = ({ cardData, i }) => {
   // console.log(cardData);
   return (
-    <div
-      className={` h-[434px] mt-[52px]  w-full grid grid-cols-2 justify-between `}
-    >
+    <div className={`  my-[52px]  w-full grid grid-cols-2 justify-between `}>
       <div
         className={`${
           i % 2 !== 0 && "order-2"
@@ -18,7 +16,7 @@ const WhatWillYouLearnCard = ({ cardData, i }) => {
         <div className="  w-full flex-col flex gap-y-2 ">
           {cardData?.ListData?.map((data, i) => (
             <div key={i} className="flex gap-2 w-full">
-              <div className="min-w-9 flex justify-center items-start ">
+              <div className="min-w-9  -mt-1 flex justify-center items-start ">
                 <Image
                   alt="GreenTick"
                   src={GreenTick}

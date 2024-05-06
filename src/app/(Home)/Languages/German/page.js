@@ -86,7 +86,7 @@ const GermanPage = () => {
           level: "Beginner Classes          ",
           description:
             "Start your German language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with expert instructors' guidance.            ",
-          link: "#",
+          link: "/Languages/German/LevelPage/BeginnerLevel(A1-A2)",
         },
 
         {
@@ -94,7 +94,7 @@ const GermanPage = () => {
           level: "Intermediate Classes          ",
           description:
             "Elevate your German proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.            ",
-          link: "#",
+          link: "/Languages/German/LevelPage/IntermediateLevel(B1-B2)",
         },
 
         {
@@ -102,7 +102,7 @@ const GermanPage = () => {
           level: "Advanced Classes          ",
           description:
             "Take your German skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in German.            ",
-          link: "#",
+          link: "/Languages/German/LevelPage/AdvancedLevel(C1-C2)",
         },
       ],
     },
