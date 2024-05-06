@@ -6,18 +6,25 @@ import PreapareForExamCard from "@/Shared/PreapareForExamCard";
 const PreapareForFrenchExam = () => {
   const levelDatas = [
     {
-      title: "DELF Junior",
-      img: delf,
+      title: "DELF",
+      img: delf, // Assuming ielts is the variable holding the image URL for IELTS
       description:
-        "Prepare your child for success in the DELF Junior exam with our specialized program. Our engaging lessons and targeted practice ensure they're fully equipped to excel and achieve their language goals.",
-      link: "",
+        "The DELF exam assesses French language proficiency for non-native speakers.It is designed for individuals seeking certification for academic or professional purposes, and for those planning to immigrate to French-speaking countries. ",
+      link: "/Languages/French/exam/delf", // You can insert the link here
     },
     {
-      title: "DELF Prim",
-      img: delf,
+      title: "DALF",
+      img: dalf, // Assuming ielts is the variable holding the image URL for IELTS
       description:
-        "Prepare your child for success with the DELF Prim exam, tailored for young learners in primary school. Our specialized program ensures they're fully equipped to showcase their French language skills confidently and excel in their academic endeavors.",
-      link: "",
+        "DALF is an advanced-level French language proficiency exam, suitable for individualsaiming to demonstrate high-level competency in French. It is recognized globally by academicinstitutions, employers, and immigration authorities.",
+      link: "/Languages/French/exam/delf", // You can insert the link here
+    },
+    {
+      title: "TEF",
+      img: telf, // Assuming ielts is the variable holding the image URL for IELTS
+      description:
+        "The TEF exam is an internationally recognized French language proficiency test forindividuals seeking to assess their French language abilities. It is widely accepted by academicinstitutions, employers, and immigration authorities worldwide.",
+      link: "/Languages/French/exam/delf", // You can insert the link here
     },
   ];
   return (
@@ -25,9 +32,11 @@ const PreapareForFrenchExam = () => {
       <div className="text-black text-2xl mb-12 text-center font-bold ">
         Prepare for French Exams
       </div>
-      <div className="xl:grid-cols-2 xl:max-w-[940px] max-w-8xl  flex-wrap justify-center gap-1 max-md:gap-5 md:gap-2 px-5 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
+      <div className="flex flex-wrap justify-center gap-1 max-md:gap-5 md:gap-2 px-5 mx-auto w-fit lg:gap-[18px] items-center mt-[48px]">
         {levelDatas.map((data, index) => (
-          <PreapareForExamCard data={data} key={index} />
+          <div key={index} className="max-w-[548px]">
+            <PreapareForExamCard data={data} />
+          </div>
         ))}
       </div>
     </div>

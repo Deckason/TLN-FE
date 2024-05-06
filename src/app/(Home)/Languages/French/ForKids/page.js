@@ -5,7 +5,7 @@ import UpcomingBathches from "./Components/UpcomingBathches";
 import StudentsTestomony from "@/Shared/StudentsTestomony";
 import FrenchClassesForAnyLevel from "./Components/FrenchClassesForAnyLevel";
 import PreapareForFrenchExam from "./Components/PreapareForFrenchExam";
-import EverythingYouNeedToKnowAboutFrench from "../Components/EverythingYouNeedToKnowAboutFrench/EverythingYouNeedToKnowAboutFrench";
+import EverythingYouNeedToKnowAboutFrench from "./Components/EverythingYouNeedToKnowAboutFrench";
 import LanguageLessons from "../Components/Languagelessons/LanguageLessons";
 import SubscribeToOur from "@/Shared/SubscribeToOur";
 import PaymentBar from "@/Components/HomeComp/PaymentBar";
