@@ -12,12 +12,14 @@ import PaymentBar from "@/Components/HomeComp/PaymentBar";
 import FaqsSudyAbroad from "../../../../../Shared/StudyAbroadComponents/FaqsSudyAbroad";
 import StudyAbroad from "../../../../../Shared/StudyAbroadComponents/StudyAbroad";
 
+import dalf from "@/Assets/FrenchPage/FrenchMain/dalf.png";
+import delf from "@/Assets/FrenchPage/FrenchMain/delf.png";
+import telf from "@/Assets/FrenchPage/FrenchMain/telf.png";
 import step1 from "@/Assets/Homepage/FluencyCarrerCulture/step1.png";
 import step4 from "@/Assets/Homepage/FluencyCarrerCulture/step2.png";
 import step2 from "@/Assets/Homepage/FluencyCarrerCulture/step3.png";
 import step3 from "@/Assets/FrenchPage/FrenchMain/step3.png";
 import UpcomingBathches from "@/Shared/StudyAbroadComponents/UpcomingBathches";
-import ielts from "@/Assets/GermanMainPage/Gothe.svg";
 import PreapareForExam from "@/Shared/StudyAbroadComponents/PreapareForExam";
 import EverythingYouNeedToKnowAbout from "@/Shared/FrenchAdultReusableComponents/EverythingYouNeedToKnowAbout/EverythingYouNeedToKnowAbout";
 
@@ -51,12 +53,27 @@ const page = () => {
     },
   ];
   const LearnData = `Learn from the finest!`;
+
   const PrepareData = [
     {
-      title: "GOETHE",
-      img: ielts, // Assuming ielts is the variable holding the image URL for IELTS
+      title: "DELF",
+      img: delf, // Assuming ielts is the variable holding the image URL for IELTS
       description:
-        "The GOETHE exam assesses Spanish language proficiency globally. Success demonstrates effective communication in Spanish for various purposes. Our tailored courses help you master skills and confidently tackle each section.        ",
+        "The DELF exam assesses French language proficiency for non-native speakers.It is designed for individuals seeking certification for academic or professional purposes, and for those planning to immigrate to French-speaking countries. ",
+      link: "", // You can insert the link here
+    },
+    {
+      title: "DALF",
+      img: dalf, // Assuming ielts is the variable holding the image URL for IELTS
+      description:
+        "DALF is an advanced-level French language proficiency exam, suitable for individualsaiming to demonstrate high-level competency in French. It is recognized globally by academicinstitutions, employers, and immigration authorities.",
+      link: "", // You can insert the link here
+    },
+    {
+      title: "TEF",
+      img: telf, // Assuming ielts is the variable holding the image URL for IELTS
+      description:
+        "The TEF exam is an internationally recognized French language proficiency test forindividuals seeking to assess their French language abilities. It is widely accepted by academicinstitutions, employers, and immigration authorities worldwide.",
       link: "", // You can insert the link here
     },
   ];
