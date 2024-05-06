@@ -75,14 +75,14 @@ const SpanishPage = () => {
           img: dalf,
           description:
             "Achieve Spanish language proficiency with our DELE exam preparation courses. These diplomas are internationally recognised and validate your Spanish skills for academic, professional, or personal purposes.            ",
-          link: "#",
+          link: "/Languages/Spanish/exam/dele",
         },
         {
           title: "SIELE preparation classes          ",
           img: telf,
           description:
             "Prepare for the SIELE exam, a globally recognized certification of Spanish language proficiency. Whether for academic or professional advancement, our courses are tailored to help you succeed.            ",
-          link: "#",
+          link: "/Languages/Spanish/exam/siele",
         },
       ],
     },

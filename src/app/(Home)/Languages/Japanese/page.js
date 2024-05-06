@@ -74,7 +74,7 @@ const JapanesePage = () => {
           img: dalf,
           description:
             "Master the JLPT with our expert courses, the global benchmark for Japanese proficiency. We meticulously cover vocabulary, grammar, reading, and listening, ensuring your success in all exam sections.            ",
-          link: "#",
+          link: "/Languages/Japanese/exam/jlpt",
         },
       ],
     },

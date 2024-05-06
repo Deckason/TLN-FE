@@ -74,7 +74,7 @@ const MandarinPage = () => {
           img: dalf,
           description:
             "Master the HSK exam, the gold standard in Mandarin proficiency. Our expert-led courses comprehensively cover vocabulary, grammar, reading, and listening, ensuring your success in this globally recognized assessment.            ",
-          link: "#",
+          link: "/Languages/Mandarin/exam/hsk",
         },
       ],
     },

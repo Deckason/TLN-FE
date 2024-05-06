@@ -74,7 +74,7 @@ const KoreanPage = () => {
           img: dalf,
           description:
             "Get ready for the TOPIK proficiency exam with our expert courses. Our comprehensive curriculum covers all aspects of the exam, helping you excel in vocabulary, grammar, listening, and speaking. Join us and achieve your Korean language goals!           ",
-          link: "#",
+          link: "/Languages/Korean/exam/topik",
         },
       ],
     },
