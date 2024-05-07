@@ -21,7 +21,7 @@ const Dropdown = (NavData) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <button className="inline-flex outline-none items-center justify-center w-full px-4 py-2  text-[14px] bg-white rounded-md shadow-sm  ">
+        <button className="inline-flex outline-none items-center justify-center w-full px-4 py-2   2xl:text-[16px] xl:text-[14px] text-[10px] bg-white rounded-md shadow-sm  ">
           <span className="mr-2">{NavData.data.title}</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ const Dropdown = (NavData) => {
             <Link
               key={Nav.key}
               href={Nav.path ? Nav.path : "#"}
-              className="block px-4 py-2  hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md"
+              className="block px-4 py-2   hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md"
             >
               {Nav.name}
             </Link>

@@ -4,7 +4,7 @@ import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
 import rightIcon from "@/Assets/Homepage/Cefr/rightIcon.png";
 const CefrLevels = () => {
   return (
-    <div className="bg-[#F5F5F5] pb-[90px] pt-[150px] min-h-[1350px]">
+    <div className="bg-[#F5F5F5] pb-[90px] xl:pt-[150px] lg:pt-[150px] min-h-[1350px]">
       <div className="max-w-[1681px]  mx-auto flex justify-center items-center p-5">
         <section className="min-h-[463px] lg:mx-10 gap-[42px] w-full grid lg:grid-cols-2 ">
           <div className=" rounded-xl">

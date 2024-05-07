@@ -18,18 +18,16 @@ const ProficiencyExams = () => {
             We prepare you for International Proficiency Exams
           </h1>
         </div>
-        <div className="lg:flex hidden flex-wrap justify-center items-center w-full 2xl:gap-[30px] xl:gap-[25px] lg:gap-[20px] gap-[15px] ">
-          <div className="flex items-center">
-            <Image className="w-[160px]" alt="logo" src={logo1} />
-            <Image className="w-[160px]" alt="logo" src={logo2} />
-            <Image className="w-[160px]" alt="logo" src={logo3} />
-            <Image className="w-[160px]" alt="logo" src={logo4} />
-            <Image className="w-[160px]" alt="logo" src={logo5} />
-            <Image className="w-[160px]" alt="logo" src={logo6} />
-            <Image className="w-[160px]" alt="logo" src={logo7} />
-            <Image className="w-[160px]" alt="logo" src={logo8} />
-            <Image className="w-[160px]" alt="logo" src={logo9} />
-          </div>
+        <div className="lg:flex hidden xl:flex-wrap lg:flex-wrap md:flex-nowrap justify-center items-center w-full 2xl:gap-[30px] xl:gap-[25px] lg:gap-[20px] gap-[15px] ">
+          <Image className="w-[160px]" alt="logo" src={logo1} />
+          <Image className="w-[160px]" alt="logo" src={logo2} />
+          <Image className="w-[160px]" alt="logo" src={logo3} />
+          <Image className="w-[160px]" alt="logo" src={logo4} />
+          <Image className="w-[160px]" alt="logo" src={logo5} />
+          <Image className="w-[160px]" alt="logo" src={logo6} />
+          <Image className="w-[160px]" alt="logo" src={logo7} />
+          <Image className="w-[160px]" alt="logo" src={logo8} />
+          <Image className="w-[160px]" alt="logo" src={logo9} />
         </div>
       </section>
     </div>

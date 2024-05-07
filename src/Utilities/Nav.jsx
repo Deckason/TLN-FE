@@ -102,7 +102,7 @@ const Nav = () => {
         {/* Batches Starting Now  */}
         <section>
           <div className="bg-black flex items-center justify-center h-[30px] lg:h-[48px] w-full">
-            <h1 className=" text-primary-color lg:text-xl md:text-base text-xs font-bold">
+            <h1 className=" text-primary-color 2xl:text-[16px] xl:text-[14px] text-[10px] md:text-base text-xs font-bold">
               <span className="font-normal">DELF /Goethe Exam Schedule</span> |
               Batches Starting Now!
             </h1>
@@ -124,11 +124,11 @@ const Nav = () => {
                 </Link>
                 <Dropdown data={languageOptions} />
                 <div className="px-2.5 py-[29px] flex-col justify-start items-start cursor-pointer  gap-2.5 hidden lg:flex">
-                  <div className="justify-start items-start gap-5 xl:gap-12 inline-flex">
+                  <div className="justify-start items-start gap-5 xl:gap-6 inline-flex">
                     {
                       NavOptions.map((Nav) => (
                         <Link
-                          className="text-nowrap xl:text-[16px]"
+                          className="text-nowrap 2xl:text-[16px] xl:text-[14px] text-[10px]"
                           onMouseLeave={() => {
                             if (Nav.name === "Work with us") {
                               setShowWorkWithUs(false);
@@ -159,11 +159,11 @@ const Nav = () => {
               </div>
             </div>
             <div className=" hidden flex-grow gap-5 lg:flex justify-end me-5">
-              <div className=" lg:w-[153px]  h-14 px-8 py-3.5 bg-primary-color rounded-lg justify-center text-white  xl:text-[14px] items-center gap-2.5 inline-flex">
+              <div className=" lg:w-[120px]  h-14 px-4 py-3.5 bg-primary-color rounded-lg justify-center text-white  xl:text-[14px] items-center gap-2.5 inline-flex">
                 Get Started
               </div>
-              <button className="self-stretch px-5 h-14  py-3 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex">
-                <div className="w-fit lg:w-[200px] text-center text-teal-600 xl:text-[14px] font-medium ">
+              <button className="self-stretch px-2 h-14  py-3 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex">
+                <div className="w-fit lg:w-[180px] text-center text-teal-600 xl:text-[14px] font-medium ">
                   Already Booked The Class
                 </div>
               </button>

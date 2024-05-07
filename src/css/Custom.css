@@ -4,3 +4,52 @@
 .upcomingCourseDeActive {
   @apply w-28 h-10 px-4 py-2 bg-white rounded-lg justify-center items-center gap-2.5 inline-flex text-neutral-color text-xl font-bold;
 }
+.marquee {
+  height: 100px;
+  width: 100%;
+
+  overflow: hidden;
+  position: relative;
+  background-color: #e9e5fb;
+  padding: 8px 0 4px 0;
+}
+
+/* would need to be adjusted depending on time */
+.marquee .marqueeone {
+  animation: marquee 10s linear infinite;
+}
+
+.marquee .marqueetwo {
+  animation: marquee 10s linear 2.5s infinite;
+}
+
+.marquee .marqueethree {
+  animation: marquee 10s linear 5s infinite;
+}
+
+.marquee .marqueefour {
+  animation: marquee 10s linear 7.5s infinite;
+}
+
+/* even out the elements */
+.marquee div {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* add delay at the end of animation so you dont start while another div is going */
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: -100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
