@@ -15,12 +15,38 @@ const OurAlumni = () => {
               Our Alumni Network
             </h1>
           </div>
-          <div className="flex  flex-wrap justify-center items-center w-full gap-[30px]">
-            <Image className="w-[160px]" alt="logo" src={logo1} />
-            <Image className="w-[160px]" alt="logo" src={logo2} />
-            <Image className="w-[160px]" alt="logo" src={logo3} />
-            <Image className="w-[160px]" alt="logo" src={logo4} />
-            <Image className="w-[160px]" alt="logo" src={logo5} />
+          <div className="flex  flex-wrap justify-center items-center lg:w-[1000px] w-[350px] xl:w-[1300px] gap-[30px]">
+            <div className="slider">
+              <div className="slide-track">
+                <div className="slide w-[160px]">
+                  <Image className="" alt="logo" src={logo1} />
+                </div>
+                <div className="slide w-[160px]">
+                  <Image className="" alt="logo" src={logo2} />
+                </div>
+                <div className="slide w-[160px] ">
+                  <Image className="" alt="logo" src={logo3} />
+                </div>
+                <div className="slide w-[160px] ">
+                  <Image className="" alt="logo" src={logo4} />
+                </div>
+                <div className="slide w-[160px] ">
+                  <Image className="" alt="logo" src={logo5} />
+                </div>
+                <div className="slide w-[160px] ">
+                  <Image className="" alt="logo" src={logo1} />
+                </div>
+                <div className="slide w-[160px]">
+                  <Image className="" alt="logo" src={logo2} />
+                </div>
+                <div className="slide w-[160px] ">
+                  <Image className="" alt="logo" src={logo3} />
+                </div>
+                <div className="slide w-[160px] ">
+                  <Image className="" alt="logo" src={logo4} />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

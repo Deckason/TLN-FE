@@ -46,7 +46,7 @@ const Newsletter = () => {
                   </div>
                   <div className="flex flex-col ml-5 w-[69%] max-md:ml-0 max-md:w-full">
                     <div className="flex flex-col grow self-stretch pb-9 text-xl max-md:mt-8 max-md:max-w-full">
-                      <div className="lg:text-3xl text-stone-900 text-xl font-bold lg:font-normal  max-md:max-w-full">
+                      <div className="lg:text-3xl text-stone-900 text-xl lg:font-bold font-normal  max-md:max-w-full">
                         The Language Network Launches its PAN India Expansion
                         Campaign
                         <br />

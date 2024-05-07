@@ -13,14 +13,34 @@ import Image from "next/image";
 const PaymentBar = () => {
   return (
     <div className="flex-wrap bg-[#000000] gap-10 min-h-[86px]  flex items-center px-3 justify-around">
-      <Image src={amazon} alt="amazon" />
-      <Image src={bhim} alt="Bhim" />
-      <Image src={bajaj} alt="Bajaj" />
-      <Image src={Paytm} alt="Paytm" />
-      <Image src={Gpay} alt="Gpay" />
-      <Image src={Razor} alt="Razor" />
-      <Image src={upi} alt="Upi" />
-      <Image src={rupay} alt="Rupay" />
+      <div className="slider">
+        <div className="slide-track">
+          <div className="slide w-[160px]">
+            <Image src={amazon} alt="amazon" />
+          </div>
+          <div className="slide w-[160px]">
+            <Image className="" alt="logo" src={bhim} />
+          </div>
+          <div className="slide w-[160px] ">
+            <Image className="" alt="logo" src={bajaj} />
+          </div>
+          <div className="slide w-[160px] ">
+            <Image className="" alt="logo" src={Paytm} />
+          </div>
+          <div className="slide w-[160px] ">
+            <Image className="" alt="logo" src={Gpay} />
+          </div>
+          <div className="slide w-[160px] ">
+            <Image className="" alt="logo" src={Razor} />
+          </div>
+          <div className="slide w-[160px]">
+            <Image className="" alt="logo" src={upi} />
+          </div>
+          <div className="slide w-[160px] ">
+            <Image className="" alt="logo" src={rupay} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

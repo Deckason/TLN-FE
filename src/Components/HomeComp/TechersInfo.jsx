@@ -6,17 +6,17 @@ import Image from "next/image";
 const TechersInfo = () => {
   return (
     <div className="py-[112px] lg:flex block flex-col justify-center items-center">
-      <div className="max-w-[1681px] md:ms-10 md:me-2.5 h-[634px] justify-start items-center gap-[72px] flex ">
-        <div className="w-[495px] h-[495px] flex-col justify-start items-start gap-12 inline-flex">
+      <div className="max-w-[1681px]  h-[634px] justify-start items-center xl:gap-[72px] gap-[60px] lg:gap-[72px] flex-col 2xl:flex-row xl:flex-row lg:flex-row flex ">
+        <div className="lg:w-[490px] 2xl:w-[490px] w-[350px] xl:w-[490px] h-[495px] flex-col justify-start items-start gap-10 inline-flex">
           <div className="self-stretch h-[389px] flex-col justify-start items-start gap-8 flex">
             <div className="self-stretch h-[190px] flex-col justify-start items-start gap-2 flex">
-              <div className="text-stone-900 text-5xl font-bold ">
+              <div className="text-stone-900 text-[40px] font-bold ">
                 Inspiring.
               </div>
-              <div className="text-stone-900 text-5xl font-bold ">
+              <div className="text-stone-900 text-[40px] font-bold ">
                 Dedicated.
               </div>
-              <div className="text-stone-900 text-5xl font-bold ">
+              <div className="text-stone-900 text-[40px] font-bold ">
                 Knowledgeable.
               </div>
             </div>
@@ -32,7 +32,7 @@ const TechersInfo = () => {
             <BookAFreeDemoButton />
           </div>
         </div>
-        <div className="w-full opacity-100 gap-x-2.5 flex-grow h-[634px]  hidden md:flex lg:flex">
+        <div className="w-full opacity-100 gap-x-2 p-3 flex-grow h-[634px]  flex">
           <div className="w-[50%]  h-full   rounded-2xl">
             <Image
               alt="Prachi"
