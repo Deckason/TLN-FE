@@ -18,7 +18,7 @@ const StudentsTestomony = () => {
   return (
     <div className="2xl:max-w-[1680px] bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[112px]">
       <div className="min-h-[518px]  mx-auto flex justify-center flex-col items-center">
-        <h1 className="text-stone-900 text-[60px] mb-[48px] font-bold">
+        <h1 className="text-stone-900 text-center text-[60px] mb-[48px] font-bold max-lg:text-2xl">
           Hear it from the Learners
         </h1>
         <div className="  w-full ">
@@ -44,8 +44,11 @@ const StudentsTestomony = () => {
               1680: {
                 slidesPerView: 4,
               },
-              1024: {
+              1280: {
                 slidesPerView: 3,
+              },
+              1024: {
+                slidesPerView: 2,
               },
               768: {
                 slidesPerView: 2,
@@ -55,7 +58,7 @@ const StudentsTestomony = () => {
               },
             }}
             // modules={[Pagination]}
-            className="mySwiper mx-auto flex justify-center  items-center max-w-[305px] md:max-w-[700px]  lg:max-w-[1000px] xl:max-w-[1150px]  2xl:w-full 3xl:max-w-[1440px]"
+            className="mySwiper mx-auto flex justify-center  items-center max-w-[326px] md:max-w-[700px]  lg:max-w-[850px] xl:max-w-[1150px] w-full max-sm:max-h-[335px]  2xl:w-full 3xl:max-w-[1440px]"
           >
             <SwiperSlide className="flex justify-center items-center">
               <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-4 max-w-[404px]">

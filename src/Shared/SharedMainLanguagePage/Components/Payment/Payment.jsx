@@ -13,14 +13,14 @@ import Image from "next/image";
 const PaymentBar = () => {
   return (
     <div className="flex-wrap bg-[#000000] gap-y-10 gap-x-14 py-10 flex items-center lg:px-10 justify-center">
-      <Image src={amazon} alt="amazon" />
-      <Image src={bhim} alt="Bhim" />
-      <Image src={bajaj} alt="Bajaj" />
-      <Image src={Paytm} alt="Paytm" />
-      <Image src={Gpay} alt="Gpay" />
-      <Image src={Razor} alt="Razor" />
-      <Image src={upi} alt="Upi" />
-      <Image src={rupay} alt="Rupay" />
+      <Image className="max-sm:scale-75" src={amazon} alt="amazon" />
+      <Image className="max-sm:scale-75" src={bhim} alt="Bhim" />
+      <Image className="max-sm:scale-75" src={bajaj} alt="Bajaj" />
+      <Image className="max-sm:scale-75" src={Paytm} alt="Paytm" />
+      <Image className="max-sm:scale-75" src={Gpay} alt="Gpay" />
+      <Image className="max-sm:scale-75" src={Razor} alt="Razor" />
+      <Image className="max-sm:scale-75" src={upi} alt="Upi" />
+      <Image className="max-sm:scale-75" src={rupay} alt="Rupay" />
     </div>
   );
 };
