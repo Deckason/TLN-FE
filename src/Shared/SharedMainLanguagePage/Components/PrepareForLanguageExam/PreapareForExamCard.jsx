@@ -5,7 +5,7 @@ import Link from "next/link";
 const PreapareForExamCard = ({ data }) => {
   return (
     <div className="">
-      <div className="w-auto shadow-xl shadow-neutral-color/15 rounded-xl  min-h-[509px] flex-col justify-center items-center gap-8 inline-flex p-4">
+      <div className="w-auto shadow-xl shadow-neutral-color/15 rounded-xl  max-xl:h-[620px] min-h-[509px] flex-col justify-center items-center gap-8 inline-flex p-4">
         <div className="self-stretch h-[200px]  rounded-xl flex-col justify-start  items-center gap-2.5 flex">
           <Image
             alt="levelImages"
@@ -14,7 +14,7 @@ const PreapareForExamCard = ({ data }) => {
           ></Image>
         </div>
 
-        <div className="w-full  h-full   max-lg:max-h-[360px] lg:min-h-[295px] flex-col justify-start items-center gap-8 flex">
+        <div className="w-full  h-full   max-lg:max-h-[370px] lg:min-h-[295px] flex-col justify-start items-center gap-8 flex">
           <div className="self-stretch text-center text-neutral-800 max-lg:text-lg lg:text-xl 2xl:text-2xl font-medium ">
             {data?.title}
           </div>

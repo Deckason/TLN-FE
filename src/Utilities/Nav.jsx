@@ -223,7 +223,7 @@ const Nav = () => {
                   </div>
                   {showLanguageOptions && (
                     <div className={"p-2 flex-col flex gap-1.5"}>
-                      {languageOptions.map((language, i) => (
+                      {languageOptions.data.map((language, i) => (
                         <Link
                           onClick={() => {
                             setShowNav(false);
