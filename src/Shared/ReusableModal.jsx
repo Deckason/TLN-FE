@@ -6,12 +6,13 @@ const ReusableModal = ({ isOpen, onClose, children }) => {
       onClose();
     };
 
-    if (isOpen) {
-      window.addEventListener("scroll", handleScroll);
+    if (isOpen && typeof window !== "undefined") {
+      window?.addEventListener("scroll", handleScroll);
     }
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (typeof window !== "undefined")
+        window?.removeEventListener("scroll", handleScroll);
     };
   }, [isOpen, onClose]);
 

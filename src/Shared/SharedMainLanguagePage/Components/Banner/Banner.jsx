@@ -23,8 +23,9 @@ const Banner = ({ BannerData }) => {
                   <div className="mb-8">
                     {Splicing ? (
                       <div>
-                        {window.innerWidth > 1024
-                          ? window.innerWidth > 1440
+                        {typeof window !== "undefined" &&
+                        window?.innerWidth > 1024
+                          ? window?.innerWidth > 1440
                             ? BannerData?.description.slice(0, 370)
                             : BannerData?.description.slice(0, 300)
                           : BannerData?.description.slice(0, 200)}
