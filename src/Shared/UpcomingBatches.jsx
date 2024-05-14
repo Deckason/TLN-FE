@@ -5,6 +5,7 @@ import girlPrachi from "@/Assets/Spanish/Prachi-1.png";
 import Image from "next/image";
 const UpcomingBatches = () => {
   return (
+    <>
     <div className="my-[112px]  flex justify-center flex-col items-center">
       <h1 className="text-stone-900 text-2xl text-center mb-[60px] font-bold ">
         Upcoming Batches
@@ -12,16 +13,16 @@ const UpcomingBatches = () => {
       <section
         id="upComingCourseMonths"
         className="flex items-center justify-center flex-wrap gap-[16px]  p-[8px] w-fit mx-auto rounded-lg shadow-xl shadow-neutral-color/5 mb-[32px]"
-      >
+        >
         <button className="upcomingCourseActive">January</button>
         <button className="upcomingCourseDeActive">February</button>
         <button className="upcomingCourseDeActive">March</button>
       </section>
       <section
         className=" flex
-      justify-center items-center w-full mx-auto lg:min-w-[1000px] 2xl:max-w-[1681px] flex-col gap-4  "
+        justify-center items-center w-full mx-auto lg:min-w-[1000px] 2xl:max-w-[1681px] flex-col gap-4  "
         id="UpcomingCourseCards"
-      >
+        >
         <div className=" flex-wrap gap-[17px]  flex xl:justify-center justify-center w-full  mb-[40px]">
           {/* this part will by dynamic based on the data and the cards will be mapped */}
           <div className="lg:w-[355px] md:w-[355px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
@@ -31,7 +32,7 @@ const UpcomingBatches = () => {
                 alt="girlRashi"
                 src={girlRashi}
                 className="object-contain w-full h-full z-10"
-              ></Image>
+                ></Image>
             </div>
             <div className="  rounded-b-lg flex-col justify-start w-full items-start gap-16 flex">
               <div className="self-stretch min-h-[344px] flex-col justify-start items-start gap-8 flex">
@@ -97,7 +98,7 @@ const UpcomingBatches = () => {
                 alt="girlRashi"
                 src={girlPrachi}
                 className="object-contain w-full h-full z-10"
-              ></Image>
+                ></Image>
             </div>
             <div className="  rounded-b-lg flex-col justify-start w-full items-start gap-16 flex">
               <div className="self-stretch min-h-[344px] flex-col justify-start items-start gap-8 flex">
@@ -156,6 +157,7 @@ const UpcomingBatches = () => {
             </div>
           </div>
           <div className="lg:w-[355px] md:w-[355px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
+                </>
             <div className="h-[240px] bg-[#e76c10] overflow-hidden rounded-t-xl flex items-center  w-full relative">
               <div className="bg-[#d06c10] h-[33%] w-full top-0  absolute -z-0"></div>
               <div className="bg-[#ea8110] h-[33%] w-full bottom-0 absolute -z-0"></div>{" "}
@@ -221,14 +223,8 @@ const UpcomingBatches = () => {
               </button>
             </div>
           </div>
-        </div>
       </section>
-      {/* load more button will load more datas */}
-      <div className="w-full flex justify-center mt-4">
-        {" "}
-        <button className="px-[32px]  text-primary-color py-3.5 rounded-lg border border-primary-color font-medium text-2xl text justify-center focus:outline-none hover:bg-primary-color focus:bg-primary-color hover:text-white focus:text-white items-center gap-2.5 inline-flex">
-          Load more
-        </button>
+        </div>
       </div>
     </div>
   );

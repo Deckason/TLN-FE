@@ -3,7 +3,6 @@ import girlRashi from "@/Assets/Homepage/UpComingCourseCard/girlRashi.png";
 import girlIshwari from "@/Assets/Spanish/Ishwari-1 1.png";
 import girlPrachi from "@/Assets/Spanish/Prachi-1.png";
 import Image from "next/image";
-import UpcomingBatchCard from "@/Shared/UpcomingBatchCard";
 const UpcomingBathches = () => {
   const data = [
     {

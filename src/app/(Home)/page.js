@@ -18,7 +18,6 @@ import UpcomingBatches from "@/Shared/UpcomingBatches";
 import Experiment from "@/Utilities/Experiment";
 
 export default function Home() {
-
   return (
     <section>
       <HomeBanner />
@@ -27,7 +26,7 @@ export default function Home() {
       <Experiment />
       <WhyShould />
       <CoursesWeOffer />
-      <UpcomingBatches />
+      {/* <UpcomingBatches /> */}
       <CefrLevels />
       <ProficiencyExams />
       <FluencyCarrerCulture />
