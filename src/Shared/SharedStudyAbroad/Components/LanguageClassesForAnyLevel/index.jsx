@@ -3,7 +3,7 @@ import ClassLevelCard from "./ClassLevelCard";
 const LanguageClassesForAnyLevel = ({ ClassesForAnyLevel }) => {
   // console.log(ClassesForAnyLevel);
   return (
-    <div className=" mt-[112px] w-full mx-auto">
+    <div className=" my-[112px] w-full mx-auto">
       <div className="text-black max-md:text-2xl lg:text-4xl max-lg:text-3xl text-[60px] mb-12 text-center font-bold ">
         {ClassesForAnyLevel?.Language} Classes for Any Level
       </div>
