@@ -6,7 +6,7 @@ import Image from "next/image";
 const TechersInfo = () => {
   return (
     <div className="py-[112px] lg:flex block flex-col justify-center items-center">
-      <div className="max-w-[1681px]  h-[634px] justify-start items-center xl:gap-[72px] gap-[60px] lg:gap-[72px] flex-col 2xl:flex-row xl:flex-row lg:flex-row flex ">
+      <div className="max-w-[1681px] p-5 h-[634px] justify-start items-center xl:gap-[72px] gap-[60px] lg:gap-[72px] flex-col 2xl:flex-row xl:flex-row lg:flex-row flex ">
         <div className="lg:w-[490px] 2xl:w-[490px] w-[350px] xl:w-[490px] h-[495px] flex-col justify-start items-start gap-10 inline-flex">
           <div className="self-stretch h-[389px] flex-col justify-start items-start gap-8 flex">
             <div className="self-stretch h-[190px] flex-col justify-start items-start gap-2 flex">

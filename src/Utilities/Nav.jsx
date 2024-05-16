@@ -97,7 +97,7 @@ const Nav = () => {
   const [showWorkWithUs, setShowWorkWithUs] = useState(false);
   const [showNav, setShowNav] = useState(false);
   return (
-    <header className="z-40">
+    <header className="z-40 ">
       <nav>
         {/* Batches Starting Now  */}
         <section>
