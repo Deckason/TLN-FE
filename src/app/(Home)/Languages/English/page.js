@@ -87,38 +87,7 @@ const EnglishPage = () => {
     },
     ClassesForAnyLevel: {
       Language: "English",
-      // CardData: [
-      //   {
-      //     title: "Reading",
-      //     level: "",
-      //     description:
-      //       "Start your English language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
-      //     link: "#",
-      //   },
 
-      //   {
-      //     title: "Writing          ",
-      //     level: "",
-      //     description:
-      //       "Elevate your English proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-      //     link: "#",
-      //   },
-
-      //   {
-      //     title: "Listening",
-      //     level: "",
-      //     description:
-      //       "Advance your English skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in English.",
-      //     link: "#",
-      //   },
-      //   {
-      //     title: "Speaking",
-      //     level: "",
-      //     description:
-      //       "Advance your English skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in English.",
-      //     link: "#",
-      //   },
-      // ],
       CardData: [
         {
           title: "A1-A2",

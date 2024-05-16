@@ -1,5 +1,5 @@
 import SubscribeToOur from "../SubscribeToOur";
-import UpcomingBatches from "../UpcomingBatches";
+
 import Banner from "./Components/Banner/Banner";
 import EverythingYouNeedToKnowAboutLanguage from "./Components/EverythingYouNeedToKnowAboutLanguage/EverythingYouNeedToKnowAboutLanguage";
 import FaqsLanguage from "./Components/FaqsLanguage/FaqsLanguage";
@@ -12,6 +12,7 @@ import PaymentBar from "./Components/Payment/Payment";
 import PrepareForLanguageExam from "./Components/PrepareForLanguageExam/PrepareForLanguageExam";
 import SayBonjur from "./Components/SayBonjur/SayBonjur";
 import StudentsTestomony from "./Components/StudentTestomony/StudentsTestomony";
+import UpcomingBathches from "./Components/UpcomingBatches/UpcomingBatches";
 import WhyLearnLanguage from "./Components/WhyLearnLanguage/WhyLearnLanguage";
 
 const SharedMainLanuagePage = ({ Data }) => {
@@ -29,9 +30,8 @@ const SharedMainLanuagePage = ({ Data }) => {
           ClassesForAnyLevel={Data?.ClassesForAnyLevel}
         />
         <WhyLearnLanguage WhyLearnLanguage={Data?.WhyLearnLanguage} />
-        <UpcomingBatches />
+        <UpcomingBathches />
       </div>
-
       <StudentsTestomony />
       <FaqsLanguage FaqsData={Data?.FaqsData} />
       <EverythingYouNeedToKnowAboutLanguage
@@ -42,6 +42,7 @@ const SharedMainLanuagePage = ({ Data }) => {
         <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
       </div>
       <SubscribeToOur />
+
       <PaymentBar />
     </div>
   );
