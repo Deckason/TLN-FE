@@ -3,7 +3,7 @@ import Image from "next/image";
 const UpcomingBatchCard = ({ data }) => {
   return (
     <div>
-      <div className=" mx-4 lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
+      <div className=" shadow-md hover:shadow-2xl transition duration-300 mx-4 lg:scale-100   p-4 flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex">
         <div className="h-[160px] bg-[#F7DF10] rounded-t-xl flex items-center  w-full relative">
           <div className="bg-[#FFF00D] h-[60%] w-full absolute -z-0"></div>
           <Image
@@ -58,7 +58,7 @@ const UpcomingBatchCard = ({ data }) => {
             </div>
           </div>
           <button className="flex justify-center  w-full">
-            <div className="w-[150px] h-[50px] px-8 py-3.5 bg-teal-600 rounded-lg justify-center items-center gap-2.5 inline-flex">
+            <div className="w-[150px] h-[50px] shadow-md hover:shadow-xl transition duration-300 px-8 py-3.5 bg-teal-600 rounded-lg justify-center items-center gap-2.5 inline-flex">
               <div className="text-center text-nowrap text-neutral-50 text-xl font-medium ">
                 Enroll now
               </div>

@@ -24,7 +24,7 @@ const FaqsCard = ({ data, i, id, setId, open, setOpen }) => {
           (showDes && i === id) || (open && i === 0)
             ? "h-full"
             : " min-h-[75px]"
-        } p-4 xl:p-6 w-full bg-white rounded-2xl transform duration-300 justify-center items-center flex-col flex`}
+        } p-4 xl:p-6 w-full shadow-md hover:shadow-xl transition bg-white rounded-2xl transform duration-300 justify-center items-center flex-col flex`}
       >
         <div className="grow shrink basis-0 transform duration-300 self-stretch w-full justify-start items-center inline-flex ">
           <div className="grow shrink basis-0  text-black text-xl  max-md:text-base max-sm:text-sm transform duration-300 font-medium w-full leading-7">

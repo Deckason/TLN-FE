@@ -65,7 +65,7 @@ const UpcomingBathches = () => {
       {/* load more button will load more datas */}
       <div className="w-full flex justify-center mt-4">
         {" "}
-        <button className="px-[32px]  text-primary-color py-3.5 rounded-lg border border-primary-color font-medium text-2xl text justify-center focus:outline-none hover:bg-primary-color focus:bg-primary-color hover:text-white focus:text-white items-center gap-2.5 inline-flex">
+        <button className="px-[32px] shadow-md hover:shadow-xl transition duration-300  text-primary-color py-3.5 rounded-lg border border-primary-color font-medium text-2xl text justify-center focus:outline-none hover:bg-primary-color focus:bg-primary-color hover:text-white focus:text-white items-center gap-2.5 inline-flex">
           Load more
         </button>
       </div>

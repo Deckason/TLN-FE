@@ -11,7 +11,7 @@ const ExamHelp = (data) => {
           {/* First Line */}
           {data.data.data.slice(0, 3).map((card) => (
             <div
-              className="w-fit shadow-md rounded-lg p-5 2xl:max-w-[535px] xl:max-w-[415px] lg:max-w-[380px]"
+              className="w-fit shadow-md hover:shadow-xl transition duration-300 rounded-lg p-5 2xl:max-w-[535px] xl:max-w-[415px] lg:max-w-[380px]"
               key={card.title}
             >
               <div className="text-[24px] font-semibold">{card.title}</div>
@@ -25,7 +25,7 @@ const ExamHelp = (data) => {
           {/* Second Line */}
           {data.data.data.slice(3).map((card) => (
             <div
-              className="w-fit shadow-md rounded-lg p-5 lg:max-w-[580px] xl:max-w-[632px] 2xl:max-w-[815px]"
+              className="w-fit shadow-md hover:shadow-xl transition duration-300 rounded-lg p-5 lg:max-w-[580px] xl:max-w-[632px] 2xl:max-w-[815px]"
               key={card.title}
             >
               <div className="text-[24px] font-semibold">{card.title}</div>

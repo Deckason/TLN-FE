@@ -146,9 +146,9 @@ const WhyShould = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-y-6  gap-x-[32px] mx-10 xl:mx-0">
           <div
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow-md transition duration-300 hover:shadow-2xl flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex ">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -166,7 +166,7 @@ const WhyShould = () => {
               <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("expert")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex shadow-md transition duration-300 hover:shadow-2xl"
                 >
                   <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
                     Learn more
@@ -192,9 +192,9 @@ const WhyShould = () => {
           </div>
           <div
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow-md transition duration-300 hover:shadow-2xl flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex ">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -212,7 +212,7 @@ const WhyShould = () => {
               <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("interactive")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex shadow-md transition duration-300 hover:shadow-2xl"
                 >
                   <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
                     Learn more
@@ -238,9 +238,9 @@ const WhyShould = () => {
           </div>
           <div
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow-md transition duration-300 hover:shadow-2xl flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex ">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -258,7 +258,7 @@ const WhyShould = () => {
               <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("certificated")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex shadow-md transition duration-300 hover:shadow-2xl"
                 >
                   <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
                     Learn more
@@ -284,9 +284,9 @@ const WhyShould = () => {
           </div>
           <div
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow-md transition duration-300 hover:shadow-2xl flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex ">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -304,7 +304,7 @@ const WhyShould = () => {
               <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("freeCourse")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex shadow-md transition duration-300 hover:shadow-2xl"
                 >
                   <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
                     Learn more
@@ -330,9 +330,9 @@ const WhyShould = () => {
           </div>
           <div
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow-md transition duration-300 hover:shadow-2xl flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex ">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -350,7 +350,7 @@ const WhyShould = () => {
               <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("freeStudy")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex shadow-md transition duration-300 hover:shadow-2xl"
                 >
                   <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
                     Learn more
@@ -376,9 +376,9 @@ const WhyShould = () => {
           </div>
           <div
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow-md transition duration-300 hover:shadow-2xl flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex ">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -396,7 +396,7 @@ const WhyShould = () => {
               <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("review")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex shadow-md transition duration-300 hover:shadow-2xl"
                 >
                   <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
                     Learn more
@@ -422,9 +422,9 @@ const WhyShould = () => {
           </div>
           <div
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow-md transition duration-300 hover:shadow-2xl flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex ">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -442,7 +442,7 @@ const WhyShould = () => {
               <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("flexible")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex shadow-md transition duration-300 hover:shadow-2xl"
                 >
                   <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
                     Learn more
@@ -468,9 +468,9 @@ const WhyShould = () => {
           </div>
           <div
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow-md transition duration-300 hover:shadow-2xl flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex ">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -488,7 +488,7 @@ const WhyShould = () => {
               <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("batch")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex shadow-md transition duration-300 hover:shadow-2xl"
                 >
                   <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
                     Learn more

@@ -6,7 +6,7 @@ const ClassesForAnyGoalCard = ({ data }) => {
   return (
     <div>
       {" "}
-      <div className="w-full shadow-xl shadow-neutral-color/15 rounded-xl min-h-[509px] flex-col justify-start items-center gap-8 inline-flex p-4">
+      <div className="w-full shadow-md hover:shadow-xl transition duration-300  rounded-xl min-h-[509px] flex-col justify-start items-center gap-8 inline-flex p-4">
         <div className="self-stretch h-[212px]  rounded-xl flex-col justify-start  items-center gap-2.5 flex">
           <Image
             alt="levelImages"
@@ -27,7 +27,7 @@ const ClassesForAnyGoalCard = ({ data }) => {
           <div className="self-stretch mx-4 mb-4 h-14 flex-col justify-center items-center gap-2.5 flex">
             <Link
               href={data?.link}
-              className="self-stretch h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
+              className="self-stretch shadow-md hover:shadow-xl transition duration-300 h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
             >
               <div className="text-center text-teal-600 text-xl font-normal  leading-7">
                 Learn more

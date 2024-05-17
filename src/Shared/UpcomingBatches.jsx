@@ -25,7 +25,7 @@ const UpcomingBatches = () => {
         >
           <div className=" flex-wrap gap-[17px]  flex xl:justify-center justify-center w-full  mb-[40px]">
             {/* this part will by dynamic based on the data and the cards will be mapped */}
-            <div className="lg:w-[355px] md:w-[355px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
+            <div className="lg:w-[355px] md:w-[355px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex shadow-md hover:shadow-2xl transition duration-300">
               <div className="h-[240px] bg-[#F7DF10] rounded-t-xl flex items-center  w-full relative">
                 <div className="bg-[#FFF00D] h-[60%] w-full absolute -z-0"></div>
                 <Image
@@ -90,7 +90,7 @@ const UpcomingBatches = () => {
                 </button>
               </div>
             </div>
-            <div className="lg:w-[355px] md:w-[300px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
+            <div className="lg:w-[355px] md:w-[300px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex shadow-md hover:shadow-2xl transition duration-300">
               <div className="h-[240px] bg-[#9127a3] rounded-t-xl overflow-hidden flex items-center  w-full relative">
                 <div className="bg-[#771192] w-[33%] h-full  absolute -z-0"></div>
                 <div className="bg-[#8c0f8d] w-[33%] h-full right-0 absolute -z-0"></div>
@@ -156,8 +156,8 @@ const UpcomingBatches = () => {
                 </button>
               </div>
             </div>
-            <div className="lg:w-[355px] md:w-[355px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5 shadow-2xl rounded-xl  shadow-[#bab8b8]/40 flex">
-              ]{" "}
+            <div className="lg:w-[355px] md:w-[355px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex shadow-md hover:shadow-2xl transition duration-300">
+              {" "}
               <div className="h-[240px] bg-[#e76c10] overflow-hidden rounded-t-xl flex items-center  w-full relative">
                 <div className="bg-[#d06c10] h-[33%] w-full top-0  absolute -z-0"></div>
                 <div className="bg-[#ea8110] h-[33%] w-full bottom-0 absolute -z-0"></div>{" "}
@@ -226,7 +226,7 @@ const UpcomingBatches = () => {
           </div>
         </section>
       </div>
-      \{" "}
+      {" "}
     </>
   );
 };

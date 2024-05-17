@@ -1,10 +1,3 @@
-import adults from "@/Assets/Spanish/SpanishForAdults.png";
-import kids from "@/Assets/Spanish/SpanishForKids.png";
-import studyAbroad from "@/Assets/Spanish/SpanishForStudyAbroad.png";
-import OnlineClassCard from "@/Shared/OnlineClassCard";
-import kids1 from "@/Assets/FrenchPage/FrenchForKids/kids (1).png";
-import kids2 from "@/Assets/FrenchPage/FrenchForKids/kids (2).png";
-import kids3 from "@/Assets/FrenchPage/FrenchForKids/kids (3).png";
 import WhyKidShouldLearnCard from "./WhyKidShouldLearnCard";
 
 const WhyKidsShouldLearnEnglish = ({ WhyKidsShouldLearnEnglish }) => {
