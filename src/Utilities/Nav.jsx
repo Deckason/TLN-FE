@@ -7,9 +7,12 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import { IoMdCloseCircle } from "react-icons/io";
 import { BsCaretRight, BsCaretRightFill } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
+import ModalImg from "@/Assets/Rectangle 479.svg";
 import { usePathname } from "next/navigation";
 import "@/css/NavBarCustom.css";
 import Dropdown from "@/Components/DropDown";
+import ReusableModal from "@/Shared/ReusableModal";
+import ReusableLoginModal from "@/Shared/LoginModal";
 const Nav = () => {
   const languageOptions = {
     title: "Languages",
@@ -96,8 +99,55 @@ const Nav = () => {
   const [showStudyAbroad, setShowStudyAbroad] = useState(false);
   const [showWorkWithUs, setShowWorkWithUs] = useState(false);
   const [showNav, setShowNav] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <header className="z-40 ">
+      <>
+        <ReusableLoginModal isOpen={isModalOpen} onClose={closeModal}>
+          <div className="flex rounded-xl gap-10 items-center w-fit justify-around p-10 bg-white">
+            <div>
+              <Image className="h-[586px] w-[608px]" src={ModalImg} alt="modalImage" />
+            </div>
+            <div className="text-center w-[509px] h-[568px] flex flex-col items-center justify-around">
+              <div className="text-[40px] font-bold">
+                Welcome To The Language Network
+              </div>
+              <div className="text-start w-full justify-around h-[416px] flex flex-col gap-4">
+                <label className="text-[20px]">Login here</label>
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px]">Mobile Number</label>
+                  <input
+                    type="number"
+                    id="number"
+                    placeholder="+91 99999 99999"
+                    className="px-3 py-2 border outline-none rounded-md"
+                  />
+                </div>
+                <div className="w-full flex flex-col gap-2">
+                  <div className="flex justify-between">
+                  <label className="text-[14px]">Password</label>
+                  <label className="text-[14px] text-teal-600 font-semibold">Forget Password?</label>
+                  </div>
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="*********"
+                    className="px-3 py-2 border outline-none rounded-md"
+                  />
+                </div>
+                <button className="p-3 rounded-lg bg-teal-600 hover:bg-white transition duration-300 hover:text-teal-600 text-white border hover:border-teal-600">Login</button>
+                <div className="font-semibold text-[14px] text-teal-600 text-center">
+                  <span className="text-black">Don't have account ? </span>{" "}
+                  Create new account
+                </div>
+              </div>
+            </div>
+          </div>
+        </ReusableLoginModal>
+      </>
       <nav>
         {/* Batches Starting Now  */}
         <section>
@@ -159,9 +209,12 @@ const Nav = () => {
               </div>
             </div>
             <div className=" hidden flex-grow gap-5 lg:flex justify-end me-5">
-              <div className=" hover:shadow-md transition duration-300  lg:w-[120px] border  h-14 px-4 py-3.5 hover:bg-white hover:border-teal-600 hover:text-teal-600 bg-teal-600 rounded-lg justify-center text-white  xl:text-[14px] items-center gap-2.5 inline-flex">
+              <button
+                onClick={openModal}
+                className=" hover:shadow-md transition duration-300  lg:w-[120px] border  h-14 px-4 py-3.5 hover:bg-white hover:border-teal-600 hover:text-teal-600 bg-teal-600 rounded-lg justify-center text-white  xl:text-[14px] items-center gap-2.5 inline-flex"
+              >
                 Get Started
-              </div>
+              </button>
               <button className=" hover:shadow-md transition hover:text-white text-teal-600 duration-300 self-stretch px-2 h-14  py-3 rounded-lg border hover:bg-teal-600 bg-white border-teal-600 justify-center items-center gap-2.5 inline-flex">
                 <div className="w-fit lg:w-[180px] text-center  xl:text-[14px] font-medium ">
                   Already Booked The Class
