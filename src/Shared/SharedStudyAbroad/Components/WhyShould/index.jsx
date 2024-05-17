@@ -118,7 +118,7 @@ const WhyShould = () => {
           isOpen={modal.modal}
           onClose={() => closeModal(modal.modalClose)}
         >
-          <div className="flex justify-start items-center">
+          <div className="flex w-[350px] lg:w-[630px]  justify-start items-center">
             <div className=" lg:flex hidden w-full h-full ">
               <Image src={modal.imgAvatar} className="h-full w-fit" alt="em" />
             </div>
