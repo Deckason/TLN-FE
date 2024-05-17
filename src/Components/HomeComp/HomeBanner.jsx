@@ -25,7 +25,7 @@ const HomeBanner = () => {
           className="md:w-[400px]  lg:w-[500px] hidden  absolute opacity-20 lg:top-[100px]  xl:top-[140px] top-[130px] md:top-[220px] xl:relative  -z-0  xl:opacity-100 xl:block"
           src={homePageBannerGirl}
         ></Image>
-        <div className="max-w-[400px] h-[522px] xl:px-10 py-8 xl:mx-auto px-3  rounded-2xl z-10 border bg-white md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
+        <div className="max-w-[400px] h-[522px] xl:px-10 py-8 xl:mx-auto px-3  rounded-2xl z-10 border bg-white shadow-md hover:shadow-xl transition duration-200 md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
           <div className="grow shrink basis-0 self-stretch flex-col justify-start items-center gap-8 inline-flex">
             <div className="self-stretch h-[75px] flex-col justify-center items-center gap-1 flex">
               <div className="self-stretch text-center text-stone-900 text-2xl font-medium ">
@@ -58,8 +58,8 @@ const HomeBanner = () => {
                   type="text"
                 />
               </div>
-              <button className="self-stretch h-14 px-8 py-3 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex">
-                <div className="w-[215px] h-[30px] text-center text-teal-600 text-2xl font-medium ">
+              <button className="self-stretch h-14 px-8 py-3 rounded-lg hover:text-white text-teal-600 shadow-md hover:shadow-xl transition duration-300 bg-white hover:bg-teal-600 border hover:border-none border-teal-600 justify-center items-center gap-2.5 inline-flex">
+                <div className="w-[215px] h-[30px] text-center  text-2xl font-medium ">
                   Send Enquiry
                 </div>
               </button>

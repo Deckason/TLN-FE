@@ -12,16 +12,6 @@ import step4 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
 import dalf from "@/Assets/Homepage/ProficiencyExam/logo6.png";
 import telf from "@/Assets/English/toefl.webp";
 import React from "react";
-import WhyShould from "@/Components/HomeComp/WhyShould";
-import UpcomingBatches from "@/Shared/UpcomingBatches";
-import ClassesForAnyLevel from "@/Shared/FrenchAdultReusableComponents/ClassesForAnyLevel/ClassesForAnyLevel";
-import Learn from "@/Shared/FrenchAdultReusableComponents/Learn/Learn";
-import PreapareForExam from "@/Shared/FrenchAdultReusableComponents/PreapareForExam/PreapareForExam";
-import StudentsTestomony from "@/Shared/FrenchAdultReusableComponents/StudentsTestomony";
-import Faqs from "@/Shared/FrenchAdultReusableComponents/Faqs/Faqs";
-import LanguageLessons from "@/Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
-import { list } from "postcss";
-import HowItWorks from "@/Shared/FrenchAdultReusableComponents/HowItWorks/HowItWorks";
 import SharedAdultsPage from "@/Shared/SharedAdultsPage";
 
 const page = () => {

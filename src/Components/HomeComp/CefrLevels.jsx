@@ -42,7 +42,7 @@ const CefrLevels = () => {
       <section className="mt-[102px] max-w-[1700px]  xl:mx-auto flex justify-center items-center gap-[20px] flex-wrap">
         <div
           id="A1"
-          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex"
+          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
         >
           <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-secondary-color rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
             <div className="h-[57px] flex-col justify-start items-center flex">
@@ -92,7 +92,7 @@ const CefrLevels = () => {
         </div>
         <div
           id="A2"
-          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex"
+          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
         >
           <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#B0DCD7] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
             <div className="h-[57px] flex-col justify-start items-center flex">
@@ -143,7 +143,7 @@ const CefrLevels = () => {
         </div>
         <div
           id="B1"
-          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex"
+          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
         >
           <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#48B0A3] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
             <div className="h-[57px] flex-col justify-start items-center flex">
@@ -194,7 +194,7 @@ const CefrLevels = () => {
         </div>
         <div
           id="B2"
-          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex"
+          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
         >
           <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#1F9F90] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
             <div className="h-[57px] flex-col justify-start items-center flex">
@@ -245,7 +245,7 @@ const CefrLevels = () => {
         </div>
         <div
           id="C1"
-          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex"
+          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
         >
           <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#008171] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
             <div className="h-[57px] flex-col justify-start items-center flex">
@@ -296,7 +296,7 @@ const CefrLevels = () => {
         </div>
         <div
           id="C2"
-          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex"
+          className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
         >
           <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#006253] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
             <div className="h-[57px] flex-col justify-start items-center flex">

@@ -61,7 +61,7 @@ const StudentsTestomony = () => {
             className="mySwiper mx-auto flex justify-center  items-center max-w-[326px] md:max-w-[700px]  lg:max-w-[850px] xl:max-w-[1150px] w-full max-sm:max-h-[335px]  2xl:w-full 3xl:max-w-[1440px]"
           >
             <SwiperSlide className="flex justify-center items-center">
-              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-4 max-w-[404px]">
+              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-4 max-w-[404px]">
                 <div className="text-base text-stone-900">
                   “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -96,7 +96,7 @@ const StudentsTestomony = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex justify-center items-center">
-              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
+              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
                   “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -131,7 +131,7 @@ const StudentsTestomony = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex justify-center items-center">
-              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
+              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
                   “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -166,7 +166,7 @@ const StudentsTestomony = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex justify-center items-center">
-              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
+              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
                   “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -201,7 +201,7 @@ const StudentsTestomony = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="flex justify-center items-center">
-              <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-2 max-w-[404px]">
+              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-2 max-w-[404px]">
                 <div className="text-base text-stone-900">
                   “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They

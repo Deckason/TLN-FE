@@ -159,11 +159,11 @@ const Nav = () => {
               </div>
             </div>
             <div className=" hidden flex-grow gap-5 lg:flex justify-end me-5">
-              <div className=" lg:w-[120px]  h-14 px-4 py-3.5 bg-primary-color rounded-lg justify-center text-white  xl:text-[14px] items-center gap-2.5 inline-flex">
+              <div className=" hover:shadow-md transition duration-300  lg:w-[120px] border  h-14 px-4 py-3.5 hover:bg-white hover:border-teal-600 hover:text-teal-600 bg-teal-600 rounded-lg justify-center text-white  xl:text-[14px] items-center gap-2.5 inline-flex">
                 Get Started
               </div>
-              <button className="self-stretch px-2 h-14  py-3 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex">
-                <div className="w-fit lg:w-[180px] text-center text-teal-600 xl:text-[14px] font-medium ">
+              <button className=" hover:shadow-md transition hover:text-white text-teal-600 duration-300 self-stretch px-2 h-14  py-3 rounded-lg border hover:bg-teal-600 bg-white border-teal-600 justify-center items-center gap-2.5 inline-flex">
+                <div className="w-fit lg:w-[180px] text-center  xl:text-[14px] font-medium ">
                   Already Booked The Class
                 </div>
               </button>

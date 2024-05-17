@@ -3,17 +3,17 @@ import girlImg from "../../Assets/Homepage/NewsLetterImg/girl.png";
 import Image from "next/image";
 const Newsletter = () => {
   return (
-    <div className="flex justify-center items-center px-16 py-20 bg-secondary-color  max-md:px-5">
+    <div className="flex justify-center items-center px-16 py-20 bg-secondary-color max-md:px-5">
       <div className="mt-7 w-full max-w-[1680px] max-md:max-w-full">
         <div className="xl:flex gap-5 lg:flex-row max-xl:flex-col max-md:gap-0">
           <div className="flex flex-col w-full xl:w-[33%] max-md:ml-0 min-h-[275px] max-md:w-full">
-            <div className="flex flex-col grow justify-center p-2.5 w-full bg-white rounded-2xl shadow-2xl text-stone-900 max-md:px-5 items-center lg:max-md:mt-5 max-md:max-w-full">
+            <div className="flex flex-col grow justify-center p-2.5 w-full bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 text-stone-900 max-md:px-5 items-center lg:max-md:mt-5 max-md:max-w-full">
               <Image
                 alt="hindustaniTimes"
                 src={hindustaniTimes}
                 className="h-[40px] w-[300px]"
               ></Image>
-              <div className="flex flex-col items-center justify-center  px-12 mx-8 mt-8 max-md:px-5 max-md:mx-2.5">
+              <div className="flex flex-col items-center justify-center px-12 mx-8 mt-8 max-md:px-5 max-md:mx-2.5">
                 <div className="text-3xl flex items-center justify-center text-nowrap">
                   We have made
                 </div>
@@ -24,7 +24,7 @@ const Newsletter = () => {
             </div>
           </div>
           <div className="flex flex-col md:mt-5 xl:mt-0 xl:ml-5 w-full xl:w-[67%] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col grow justify-center md:p-8 w-full bg-white rounded-2xl shadow-2xl max-md:px-5 max-md:mt-5 max-md:max-w-full">
+            <div className="flex flex-col grow justify-center md:p-8 w-full bg-white rounded-2xl shadow-md max-md:px-5 max-md:mt-5 max-md:max-w-full hover:shadow-2xl transition duration-300">
               <div className="max-md:max-w-full">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                   <div className="flex flex-col w-[31%] max-md:ml-0 max-md:w-full">

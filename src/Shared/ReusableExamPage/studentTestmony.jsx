@@ -53,7 +53,7 @@ const StudentsTestomony = (data) => {
                 key={testimonial.id}
                 className="flex justify-center items-center"
               >
-                <div className="flex flex-col  bg-white rounded-2xl lg:p-8 p-4 max-w-[404px]">
+                <div className="flex flex-col shadow-md hover:shadow-xl transition duration-300 m-2 bg-white rounded-2xl lg:p-8 p-4 max-w-[404px]">
                   <div className="text-base text-stone-900">
                     {testimonial.text}
                   </div>

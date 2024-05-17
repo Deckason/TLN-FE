@@ -1,3 +1,4 @@
+import PaymentBar from "@/Components/HomeComp/PaymentBar";
 import SubscribeToOur from "../SubscribeToOur";
 
 import Banner from "./Components/Banner/Banner";
@@ -8,7 +9,6 @@ import LanguageClassesForAnyLevel from "./Components/LanguageClassesForAnyLevel/
 import LanguageLessons from "./Components/Languagelessons/LanguageLessons";
 
 import OnlineLanguageClass from "./Components/OnlineLanguageClass/OnlineLanguageClass";
-import PaymentBar from "./Components/Payment/Payment";
 import PrepareForLanguageExam from "./Components/PrepareForLanguageExam/PrepareForLanguageExam";
 import SayBonjur from "./Components/SayBonjur/SayBonjur";
 import StudentsTestomony from "./Components/StudentTestomony/StudentsTestomony";

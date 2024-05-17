@@ -5,7 +5,7 @@ const WhyKidShouldLearnCard = ({ data }) => {
   return (
     <div>
       <div>
-        <div className="w-full border shadow-xl shadow-neutral-color/15 rounded-xl max-h-[460px] min-h-[442px] flex-col justify-start items-center gap-8  inline-flex max-md:p-3 p-6">
+        <div className="w-full border shadow-md transition duration-300 hover:shadow-xl shadow-neutral-color/15 rounded-xl max-h-[460px] min-h-[442px] flex-col justify-start items-center gap-8  inline-flex max-md:p-3 p-6">
           <div className="self-stretch h-[212px]  rounded-xl flex-col justify-start  items-center gap-2.5 flex">
             <Image
               alt="levelImages"

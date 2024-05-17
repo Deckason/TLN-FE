@@ -5,7 +5,7 @@ import Link from "next/link";
 const PreapareForExamCard = ({ data }) => {
   return (
     <div className="">
-      <div className="w-auto shadow-xl shadow-neutral-color/15 rounded-xl  max-xl:h-[660px] min-h-[509px] max-sm:h-full flex-col justify-center items-center gap-8 inline-flex p-4">
+      <div className="w-auto shadow-md hover:shadow-2xl transition duration-300 rounded-xl  max-xl:h-[660px] min-h-[509px] max-sm:h-full flex-col justify-center items-center gap-8 inline-flex p-4">
         <div className="self-stretch h-[200px]  rounded-xl flex-col justify-start  items-center gap-2.5 flex">
           <Image
             alt="levelImages"
@@ -26,7 +26,7 @@ const PreapareForExamCard = ({ data }) => {
           <div className="self-stretch  mb-4 h-14 flex-col justify-center items-center gap-2.5 flex">
             <Link
               href={data?.link}
-              className="self-stretch h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
+              className="shadow-md hover:shadow-xl transition duration-300 self-stretch h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
             >
               <div className="text-center text-teal-600 text-xl font-normal  leading-7">
                 Learn more
