@@ -3,8 +3,6 @@ import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
 import Image from "next/image";
 import BannerImage from "@/Assets/FrenchPage/FrenchAdult/BannerTwo.svg";
 
-import girlImage from "../../../../Assets/FrenchPage/FrenchForKids/ForKids.png";
-import girlAndBoy from "../../../../Assets/FrenchPage/FrenchMain/GirlAndBoy.svg";
 import { useEffect, useState } from "react";
 import States from "../States";
 const Banner = ({ BannerData }) => {
@@ -12,9 +10,9 @@ const Banner = ({ BannerData }) => {
   const [BannerInfo, setBannerInfo] = useState();
   useEffect(() => {
     if (Splicing) {
-      setBannerInfo(BannerData?.Description?.slice(0, 200));
+      setBannerInfo(BannerData.Description.slice(0, 200));
     } else {
-      setBannerInfo(BannerData?.Description);
+      setBannerInfo(BannerData.Description);
     }
   }, [Splicing]);
   return (
