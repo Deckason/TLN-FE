@@ -1,10 +1,17 @@
+"use client";
 import "@/css/Custom.css";
 import girlRashi from "@/Assets/Homepage/UpComingCourseCard/girlRashi.png";
 import girlIshwari from "@/Assets/Spanish/Ishwari-1 1.png";
 import girlPrachi from "@/Assets/Spanish/Prachi-1.png";
 import Image from "next/image";
 import UpcomingBatchCard from "./UpcomingBatchCard";
+import { SwiperSlide, Swiper } from "swiper/react";
 
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Navigation } from "swiper/modules";
+import React, { useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
 const UpcomingBathches = () => {
   const CardData = [
     {
@@ -38,14 +45,17 @@ const UpcomingBathches = () => {
       certificate: "Advanced French | A1",
     },
   ];
+  const [currentPage, setCurrentPage] = useState(0);
+  const navigationPrevRef = React.useRef(currentPage);
+  const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className="mt-[112px]  flex justify-center flex-col items-center">
-      <h1 className="text-stone-900 text-2xl text-center mb-[60px] font-bold ">
+    <div className="mt-[112px] max-md:mt-12 flex justify-center flex-col items-center">
+      <h1 className="text-stone-900 text-2xl text-center mb-[56px] font-bold ">
         Upcoming Batches
       </h1>
       <section
         id="upComingCourseMonths"
-        className="flex items-center justify-center flex-wrap gap-[16px]  p-[8px] w-fit mx-auto rounded-lg shadow-xl shadow-neutral-color/5 mb-[32px]"
+        className="flex items-center justify-center flex-wrap lg:gap-[16px]  p-[8px] w-fit mx-auto rounded-lg shadow-xl shadow-neutral-color/5 mb-[32px]"
       >
         <button className="upcomingCourseActive">January</button>
         <button className="upcomingCourseDeActive">February</button>
@@ -56,17 +66,71 @@ const UpcomingBathches = () => {
       justify-center items-center w-full mx-auto lg:min-w-[1000px] 2xl:max-w-[1681px] flex-col gap-4  "
         id="UpcomingCourseCards"
       >
-        <div className="  gap-[17px] max-xl:grid-cols-2 max-xl:gap-x-0 grid max-sm:grid-cols-1 grid-cols-3 xl:justify-center justify-center w-full  mb-[40px]">
+        <Swiper
+          spaceBetween={20}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Navigation]}
+          navigation={{
+            prevEl: navigationPrevRef.current,
+            nextEl: navigationNextRef.current,
+          }}
+          onBeforeInit={(swiper) => {
+            swiper.params.navigation.prevEl = navigationPrevRef.current;
+            swiper.params.navigation.nextEl = navigationNextRef.current;
+          }}
+          onSlideChange={(swiper) => {
+            setCurrentPage(swiper.activeIndex);
+          }}
+          // slidesPerView={4}
+          breakpoints={{
+            1680: {
+              slidesPerView: 4,
+            },
+            1280: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            368: {
+              slidesPerView: 1,
+            },
+          }}
+          // modules={[Pagination]}
+          className="mySwiper mx-auto flex justify-center  items-center max-w-[326px] md:max-w-[700px]  lg:max-w-[850px] xl:max-w-[1150px] w-full max-sm:max-h-fit  2xl:w-full 3xl:max-w-[1440px]"
+        >
           {CardData.map((cardData, i) => (
-            <UpcomingBatchCard key={i} data={cardData} />
+            <SwiperSlide key={i} className="flex  justify-center items-center">
+              <UpcomingBatchCard data={cardData} />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </section>
       {/* load more button will load more datas */}
-      <div className="w-full flex justify-center mt-4">
+      <div className="w-full max-lg:hidden flex justify-center mt-4">
         {" "}
         <button className="px-[32px] shadow-md transition duration-300 hover:shadow-xl  text-primary-color py-3.5 rounded-lg border border-primary-color font-medium text-2xl text justify-center focus:outline-none hover:bg-primary-color focus:bg-primary-color hover:text-white focus:text-white items-center gap-2.5 inline-flex">
           Load more
+        </button>
+      </div>
+      {/* swiper buttons */}
+      <div className=" hidden max-lg:flex gap-x-[16px] mt-[55px] max-sm:scale-75">
+        <button
+          ref={navigationPrevRef}
+          className="w-16 h-[58px] px-5 py-4 rounded-lg border-2 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"
+        >
+          <FaArrowRight className="rotate-180" />
+        </button>
+        <button
+          ref={navigationNextRef}
+          className="w-16  h-[58px]  px-5 py-4 rounded-lg border-2 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"
+        >
+          <FaArrowRight className="" />
         </button>
       </div>
     </div>

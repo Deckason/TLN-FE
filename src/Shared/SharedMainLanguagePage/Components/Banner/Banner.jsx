@@ -11,16 +11,16 @@ const Banner = ({ BannerData }) => {
   // console.log(BannerData);
   return (
     <div className="w-full relative flex justify-center items-center flex-col mb-[112px]">
-      <div className="mt-[43px] max-w-[1681px]  mx-auto w-full">
+      <div className="mt-[43px] max-md:mt-8 max-w-[1681px]  mx-auto w-full">
         <div className="flex-auto max-md:max-w-full">
           <div className="flex gap-5 max-lg:flex-col max-md:gap-0">
             <div className="flex flex-col  max-w-[700px] max-md:ml-0 max-lg:w-full">
               <div className="flex z-10 flex-col px-5 text-black max-md:max-w-full">
-                <div className="text-5xl font-bold max-md:max-w-full max-md:text-4xl">
+                <div className="text-5xl font-bold max-md:max-w-full max-md:text-2xl">
                   {BannerData?.title}
                 </div>
                 <div className="mt-2 max-sm:text-sm text-xl leading-7 lg:text-base 2xl:text-xl lg:w-[450px] xl:w-[500px] 2xl:w-full max-md:max-w-full relative mb-[32px]">
-                  <div className="mb-8">
+                  <div className="mb-8 max-md:text-[#757575]">
                     {Splicing ? (
                       <div>
                         {typeof window !== "undefined" &&
@@ -28,7 +28,7 @@ const Banner = ({ BannerData }) => {
                           ? window?.innerWidth > 1440
                             ? BannerData?.description.slice(0, 370)
                             : BannerData?.description.slice(0, 300)
-                          : BannerData?.description.slice(0, 200)}
+                          : BannerData?.description.slice(0, 300)}
                         <br />
                         <span
                           className="cursor-pointer text-primary-color "
@@ -49,7 +49,7 @@ const Banner = ({ BannerData }) => {
                       </div>
                     )}
                   </div>{" "}
-                  <div className="max-sm:absoluteflex justify-star max-2xl:-ml-8 max-2xl:-mt-6 max-md:-ml-8 ">
+                  <div className="max-sm:absolute max-sm:-left-[4px] flex justify-star max-2xl:-ml-8 max-2xl:-mt-6 max-md:-ml-8 ">
                     <BookAFreeDemoButton />
                   </div>
                 </div>
@@ -69,7 +69,7 @@ const Banner = ({ BannerData }) => {
         <Image
           alt="girlAndBoy"
           src={girlAndBoy}
-          className="-mb-8 md:hidden w-full"
+          className="-mb-10 md:hidden w-full"
         />
         <Image
           alt="homePageBannerGirl"

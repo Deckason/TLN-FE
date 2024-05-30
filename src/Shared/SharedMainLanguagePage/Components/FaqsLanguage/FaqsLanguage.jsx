@@ -63,7 +63,7 @@ const FaqsLanguage = ({ FaqsData }) => {
           className="h-[58px] max-lg:justify-start px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
         >
           <div className="text-center text-teal-600 text-2xl font-medium ">
-            {!splicing ? "Read less FAQs" : "Read all FAQs"}
+            {!splicing ? "Read Less" : "Read More"}
           </div>
         </button>
       </div>
