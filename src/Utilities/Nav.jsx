@@ -13,6 +13,7 @@ import "@/css/NavBarCustom.css";
 import Dropdown from "@/Components/DropDown";
 import ReusableModal from "@/Shared/ReusableModal";
 import ReusableLoginModal from "@/Shared/LoginModal";
+import LanguageDropdown from "./LanguageDropDown";
 const Nav = () => {
   const languageOptions = {
     title: "Languages",
@@ -59,6 +60,7 @@ const Nav = () => {
       },
     ],
   };
+
   const NavOptions = [
     // {
     //   name: "Home",
@@ -85,6 +87,7 @@ const Nav = () => {
       { key: "2", name: "TOPIK 2- Level 6", path: "/Navigation/StudyAbroad" },
     ],
   };
+
   const WorkWithUsData = {
     title: "Work With Us",
     data: [
@@ -212,8 +215,10 @@ const Nav = () => {
                     }
                   </div>
                 </div>
+
                 <Dropdown data={studyAbroad} />
                 <Dropdown data={WorkWithUsData} />
+                <LanguageDropdown />
               </div>
             </div>
             <div className=" hidden flex-grow gap-5 lg:flex justify-end me-5">
@@ -240,6 +245,9 @@ const Nav = () => {
                 src={logo}
                 alt="logo"
               ></Image>
+              <div className="absolute right-14">
+                <LanguageDropdown />
+              </div>
               <HiMenuAlt1
                 role="button"
                 onClick={() => {
@@ -251,7 +259,7 @@ const Nav = () => {
             <div
               className={`min-h-lvh fixed bg-white w-[200px] ${
                 showNav ? "right-0" : "right-[-120%]"
-              } transform duration-500 border-2 border-secondary-color top-0 z-30`}
+              } transform duration-500 border-2 border-secondary-color top-0 z-50`}
             >
               <IoMdCloseCircle
                 onClick={() => {

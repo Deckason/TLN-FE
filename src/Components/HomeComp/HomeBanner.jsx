@@ -1,31 +1,32 @@
 import homePageBannerGirl from "@/Assets/Homepage/HomePageBanner/homePageBannerGirl.png";
 import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
-import States from "@/Shared/States";
+import States from "@/Shared/SharedAdultsPage/Components/States";
+
 import Image from "next/image";
 const HomeBanner = () => {
   return (
     <div className=" md:mx-10 mt-5">
-      <div className="max-w-[1681px] md:min-h-[542px] justify-between  items-center flex flex-col md:flex-row mx-5   xl:mx-auto">
-        <div className="lg:w-[525px] md:min-h-[542px] min-h-fit flex-col z-10 justify-center w-full lg:items-start gap-4 inline-flex">
+      <div className="max-w-[1681px] lg:min-h-[542px] w-full justify-between  items-center flex flex-col lg:flex-row px-5   xl:mx-auto">
+        <div className="lg:w-[525px] lg:min-h-[542px] min-h-fit flex-col z-10 max-lg:my-10 justify-center w-full lg:items-start gap-0 inline-flex">
           <div className="self-stretch lg:h-[261px] h-fit 2xl:h-[261px] xl:h-[261px] flex-col justify-center items-start gap-4 flex">
-            <div className="self-stretch text-stone-900 2xl:text-5xl xl:text-4xl lg:text-2xl text-[24px] font-bold ">
-              Your Gateway to <br className="md:hidden" />
-              Language Excellence
+            <div className="self-stretch text-stone-900 2xl:text-[40px] xl:text-4xl max-md:text-2xl max-xl:text-5xl text-[24px] font-bold ">
+              Your Gateway to <br className="" />
+              <span className="text-nowrap">Language Excellence</span>
             </div>
-            <div className="self-stretch text-stone-900 2xl:text-5xl xl:text-4xl lg:text-2xl text-xl font-normal ">
+            <div className="self-stretch text-stone-900 2xl:text-5xl xl:text-4xl lg:text-3xl text-xl font-normal ">
               Learn more than just a language!
             </div>
           </div>
-          <div className=" my-5">
+          <div className=" max-xl:mt-6 max-2xl:-ml-9">
             <BookAFreeDemoButton />
           </div>
         </div>
         <Image
           alt="homePageBannerGirl"
-          className="md:w-[400px]  lg:w-[500px] hidden  absolute opacity-20 lg:top-[100px]  xl:top-[140px] top-[130px] md:top-[220px] xl:relative  -z-0  xl:opacity-100 xl:block"
+          className="md:w-[400px]   lg:w-[500px] hidden  absolute opacity-20 lg:top-[100px] xl:top-[175px] 2xl:top-[140px] top-[130px] md:top-[220px] xl:relative  -z-0  xl:opacity-100 xl:block"
           src={homePageBannerGirl}
         ></Image>
-        <div className="max-w-[400px] h-[522px] xl:px-10 py-8 xl:mx-auto px-3  rounded-2xl z-10 border bg-white shadow-md hover:shadow-xl transition duration-200 md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
+        <div className="max-w-[400px] h-[522px]  py-8 xl:mx-auto px-3  rounded-2xl z-10 border bg-white shadow-md hover:shadow-xl max-lg:hidden transition duration-200 md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
           <div className="grow shrink basis-0 self-stretch flex-col justify-start items-center gap-8 inline-flex">
             <div className="self-stretch h-[75px] flex-col justify-center items-center gap-1 flex">
               <div className="self-stretch text-center text-stone-900 text-2xl font-medium ">
@@ -69,7 +70,7 @@ const HomeBanner = () => {
       </div>
       <Image
         alt="homePageBannerGirl"
-        className="xl:hidden lg:hidden 2xl:hidden md:hidden flex mt-[20px] -mb-[20px]"
+        className="xl:hidden lg:hidden 2xl:hidden  flex mt-[20px] -mb-[30px]"
         src={homePageBannerGirl}
       ></Image>
       {/* states component is a shared component */}

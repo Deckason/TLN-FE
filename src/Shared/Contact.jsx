@@ -16,7 +16,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="absolute flex z-50 flex-col gap-5 top-[50%] right-0 bg-transparent ">
+      <div className="fixed flex z-50 gap-y-1.5 flex-col lg:gap-5 top-[50%] right-0 bg-transparent ">
         <a
           className="flex   items-center cursor-pointer"
           href="https://api.whatsapp.com/send?phone=9137239887"
@@ -25,7 +25,7 @@ const Contact = () => {
             viewBox="0 0 80 80"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="lg:h-[60px] lg:w-[60px] md:h-[40px] md:w-[40px] h-[20px] w-[20px]"
+            className="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px] "
           >
             <path
               d="M0 8C0 3.58172 3.58172 0 8 0H80V80H8C3.58172 80 0 76.4183 0 72V8Z"
@@ -50,7 +50,7 @@ const Contact = () => {
           href="tel:8879328962"
         >
           <Image
-            className="lg:h-[60px] lg:w-[60px] md:h-[40px] md:w-[40px] h-[20px] w-[20px]"
+            className="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px]"
             src={Phone}
             alt="phone"
           />
