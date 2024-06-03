@@ -18,7 +18,7 @@ const StudentsTestomony = () => {
   return (
     <div className="2xl:max-w-[1680px] bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[112px]">
       <div className="min-h-[518px]  mx-auto flex justify-center flex-col items-center">
-        <h1 className="text-stone-900 text-center text-[60px] mb-[48px] font-bold max-lg:text-2xl">
+        <h1 className="text-stone-900 text-center text-[60px] mb-8 font-bold max-lg:text-2xl">
           Hear it from the Learners
         </h1>
         <div className="  w-full ">
@@ -58,7 +58,7 @@ const StudentsTestomony = () => {
               },
             }}
             // modules={[Pagination]}
-            className="mySwiper mx-auto flex justify-center  items-center max-w-[326px] md:max-w-[700px]  lg:max-w-[850px] xl:max-w-[1150px] w-full max-sm:max-h-full max-sm:w-[326px] max-sm:h-[350px] p-8 2xl:w-full 3xl:max-w-[1440px]"
+            className="mySwiper mx-auto flex justify-center  items-center max-w-[326px] md:max-w-[700px]  lg:max-w-[850px] xl:max-w-[1150px] w-full max-sm:max-h-full max-sm:w-[326px] max-sm:h-[350px] p-4 2xl:w-full 3xl:max-w-[1440px]"
           >
             <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] max-sm:h-[335px] ">
               <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-4 max-w-[404px]">
@@ -274,7 +274,7 @@ const StudentsTestomony = () => {
         </div>
 
         {/* swiper buttons */}
-        <div className="mt-[48px] max-sm:scale-75 flex gap-x-[16px]">
+        <div className="mt-8 max-sm:scale-75 flex gap-x-[16px]">
           <button
             ref={navigationPrevRef}
             className="w-16 h-[58px] px-5 py-4 rounded-lg border-2 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"

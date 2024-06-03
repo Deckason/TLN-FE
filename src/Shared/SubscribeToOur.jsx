@@ -7,7 +7,7 @@ const SubscribeToOur = () => {
             Subscribe to our newsletter
           </div>
           <div className="justify-center items-end gap-8 flex-wrap flex ">
-            <div className="h-14 max-sm:w-full mx-6 px-4 py-[11px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center gap-2.5 flex">
+            <div className="h-12 max-sm:w-full mx-6 px-4 py-[11px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center gap-2.5 flex">
               <input
                 placeholder="Email ID"
                 className="grow focus:outline-none  shrink basis-0 text-neutral-400 max-md:h-[39px] h-[56px] text-xl font-normal  leading-[34px]"

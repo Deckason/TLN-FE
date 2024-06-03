@@ -12,11 +12,7 @@ const EducationPartners = () => {
             </h1>
           </div>
           <div className="flex  flex-wrap justify-center items-center w-full gap-[30px]">
-            <Image
-              className="w-full lg:flex hidden lsw-[160px]"
-              alt="logo"
-              src={logo1}
-            />
+            <Image className="lg:w-full lg:flex " alt="logo" src={logo1} />
           </div>
         </section>
       </div>

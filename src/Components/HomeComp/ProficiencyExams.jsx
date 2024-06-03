@@ -10,66 +10,66 @@ import logo9 from "@/Assets/Homepage/ProficiencyExam/logo9.png";
 import Image from "next/image";
 const ProficiencyExams = () => {
   return (
-    <div className="my-[112px] max-w-[1681px]  mx-auto flex justify-center items-center ">
+    <div className="my-[112px] max-w-[1681px]  mx-auto flex justify-center w-full items-center ">
       <section>
         {" "}
         <div>
-          <h1 className="text-stone-900 text-xl  lg:text-2xl font-bold text-center mb-[88.9px]">
+          <h1 className="text-stone-900 px-4 text-2xl font-bold text-center lg:mb-[88.9px]">
             We prepare you for International Proficiency Exams
           </h1>
         </div>
-        <div className="flex   xl:flex-wrap lg:flex-wrap md:flex-nowrap justify-center mx-auto items-center lg:w-[1000px] w-[350px] xl:w-[1300px] 2xl:gap-[30px] xl:gap-[25px] lg:gap-[20px] gap-[15px] ">
+        <div className="flex   xl:flex-wrap lg:flex-wrap md:flex-nowrap justify-center mx-auto items-center lg:w-[1000px] w-[350px] xl:w-[1270px] 2xl:gap-[30px] xl:gap-[25px] lg:gap-[20px] gap-[15px] ">
           <div className="slider">
             <div className="slide-track">
-              <div className="slide w-[160px]">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo1} />
               </div>
-              <div className="slide w-[160px]">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo2} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo3} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo4} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo5} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo6} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo7} />
               </div>
-              <div className="slide w-[160px]">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo8} />
               </div>
               <div className="slide w-[160px] text-white">
                 <Image className="" alt="logo" src={logo9} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo1} />
               </div>
-              <div className="slide w-[160px]">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo2} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo3} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo4} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo5} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo6} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo7} />
               </div>
-              <div className="slide w-[160px] ">
+              <div className="slide  w-[160px]">
                 <Image className="" alt="logo" src={logo8} />
               </div>
               <div className="slide w-[160px]  text-white">
