@@ -29,12 +29,12 @@ const FluencyCarrerCulture = () => {
   ];
   return (
     <div className="bg-[#F6F3F3]">
-      <section className="mb-[112px]">
-        <div className="w-full flex justify-center items-center h-[380px] bg-primary-color flex-col">
-          <h1 className="text-center text-neutral-50 lg:text-5xl text-3xl font-bold mb-[32px]">
+      <section className="mb-[112px] ">
+        <div className="w-full flex justify-center  items-center lg:h-[380px] h-[256px] bg-primary-color flex-col">
+          <h1 className="text-center text-neutral-50 lg:text-5xl text-3xl px-8 font-bold lg:mb-[32px]">
             Fluency, Culture, Career & Beyond
           </h1>
-          <h2 className="lg:text-[32px] text-[25px] text-center  text-neutral-50">
+          <h2 className="lg:text-[32px] p-4 text-[18px] text-center  text-neutral-50">
             From learning a new language to living it!
           </h2>
         </div>

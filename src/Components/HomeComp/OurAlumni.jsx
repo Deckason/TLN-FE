@@ -7,15 +7,15 @@ import logo5 from "@/Assets/Homepage/Alumni/logo5.png";
 const OurAlumni = () => {
   return (
     <div>
-      <div className="my-[112px] max-w-[1681px]  mx-auto flex justify-center items-center ">
-        <section>
+      <div className="lg:my-[112px] w-full my-10 max-w-[1270px] 2xl:max-w-[1681px]  mx-auto flex justify-center items-center ">
+        <div>
           {" "}
           <div>
-            <h1 className="text-stone-900 text-xl  lg:text-2xl font-bold text-center mb-[20.9px]">
+            <h1 className="text-stone-900 text-2xl  lg:text-2xl font-bold text-center mb-[20.9px]">
               Our Alumni Network
             </h1>
           </div>
-          <div className="flex  flex-wrap justify-center items-center lg:w-[1000px] w-[350px] xl:w-[1300px] gap-[30px]">
+          <div className="flex  flex-wrap justify-center items-center lg:w-[1000px] w-[350px] xl:w-[1270px] gap-[30px]">
             <div className="slider">
               <div className="slide-track">
                 <div className="slide w-[160px]">
@@ -48,7 +48,7 @@ const OurAlumni = () => {
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   );
