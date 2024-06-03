@@ -8,7 +8,7 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
       <div className="text-black max-md:text-2xl lg:text-4xl max-lg:text-3xl xl:text-[60px] max-sm:-mb-10 mb-12 text-center font-bold ">
         Why learn {WhyLearnLanguage?.Language}?
       </div>
-      <div className="2xl:max-w-[1440px] mx-auto min-h-[1016px] flex-col justify-start items-center  h-full w-full gap-14 inline-flex">
+      <div className="2xl:max-w-[1440px] mx-auto min-h-[1016px] flex-col justify-start items-center  h-full w-full max-md:gap-10 gap-14 inline-flex">
         <Image
           alt="whyLearnFrench"
           className="max-lg:w-[300px] mt-[80px] xl:hidden  mx-auto "
@@ -28,10 +28,10 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
                     {WhyLearnLanguage?.CardData1?.title}
                   </div>
                 </div>
-                <div className=" self-stretch min-h-[148px] max-h-[180px] px-4 flex-col justify-start items-center gap-8 flex">
+                <div className=" self-stretch min-h-[148px] max-md:mb-4 max-h-[180px] px-4 flex-col justify-start items-center gap-8 flex">
                   <div className="self-stretch min-h-[148px] max-h-[180px] rounded-lg flex-col justify-start items-center gap-8 flex">
                     <div className="self-stretch min-h-[148px] max-h-[180px] flex-col justify-start items-center gap-2 flex">
-                      <div className="self-stretch text-center text-neutral-500 2xl:text-xl font-normal  leading-7">
+                      <div className="self-stretch text-center text-neutral-500 text-xl font-normal  leading-7">
                         {" "}
                         {WhyLearnLanguage?.CardData1?.info}
                       </div>
@@ -47,11 +47,11 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
                     {WhyLearnLanguage?.CardData2?.title}
                   </div>
                 </div>
-                <div className="self-stretch min-h-[148px] max-h-[180px] px-4 flex-col justify-start items-center gap-8 flex">
+                <div className="self-stretch max-md:mb-4 min-h-[148px] max-h-[180px] px-4 flex-col justify-start items-center gap-8 flex">
                   <div className="self-stretch min-h-[148px] max-h-[180px] rounded-lg flex-col justify-start items-center gap-8 flex">
                     <div className="self-stretch min-h-[148px] max-h-[180px] flex-col justify-start items-center gap-2 flex">
-                      <div className="self-stretch text-center text-neutral-500 2xl:text-xl font-normal  leading-7">
-                        {WhyLearnLanguage?.CardData1?.info}
+                      <div className="self-stretch text-center text-neutral-500 text-xl font-normal  leading-7">
+                        {WhyLearnLanguage?.CardData2?.info}
                       </div>
                     </div>
                   </div>
@@ -59,7 +59,7 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
               </div>
             </div>
           </div>
-          <div className=" h-full top-[394px] xl:absolute justify-between items-start flex lg:px-[80px] px-5 md:px-10 md:gap-5 lg:gap-0 md:flex-row flex-col  w-full">
+          <div className=" h-full top-[394px] xl:absolute justify-between items-start flex lg:px-[60px] px-5 md:px-10 md:gap-5 lg:gap-0 md:flex-row flex-col  w-full">
             <div className="min-h-[268px] md:w-1/2 lg:w-full max-w-[405px] lg:pb-6 pb-10 max-sm:mb-5 bg-white  rounded-2xl shadow-md hover:shadow-xl transition duration-300 justify-start items-start gap-2.5 flex">
               <div className="grow shrink basis-0 flex-col justify-start items-center gap-4 inline-flex">
                 <div className="self-stretch h-[88px] py-8 bg-secondary-color rounded-t-2xl flex-col justify-start items-center gap-2.5 flex">
@@ -67,10 +67,10 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
                     {WhyLearnLanguage?.CardData3?.title}
                   </div>
                 </div>
-                <div className="self-stretch  min-h-[140px] max-h-[170px] px-4 flex-col justify-start items-center gap-8 flex">
-                  <div className="self-stretch min-h-[140px] max-h-[170px] rounded-lg flex-col justify-start items-center gap-8 flex">
-                    <div className="self-stretch min-h-[140px] max-h-[170px] flex-col justify-start items-center gap-2 flex">
-                      <div className="self-stretch text-center text-neutral-500 2xl:text-xl font-normal  leading-7">
+                <div className="self-stretch  h-full  min-h-[140px] max-h-[170px] px-4 flex-col justify-start items-center gap-8 flex">
+                  <div className="self-stretch  min-h-[140px] max-h-[170px] rounded-lg flex-col justify-start items-center gap-8 flex">
+                    <div className="self-stretch min-h-[140px] max-h-[170px] flex-col justify-start  items-center gap-2 flex">
+                      <div className="self-stretch text-center text-neutral-500 text-xl font-normal  leading-7">
                         {WhyLearnLanguage?.CardData3?.info}
                       </div>
                     </div>
@@ -85,10 +85,10 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
                     {WhyLearnLanguage?.CardData4?.title}
                   </div>
                 </div>
-                <div className="self-stretch min-h-[140px] max-h-[170px] px-4 flex-col justify-start items-center gap-8 flex">
+                <div className="self-stretch min-h-[140px] max-h-[170px] px-4 flex-col justify-start max-md:mb-4 items-center gap-8 flex">
                   <div className="self-stretch min-h-[140px] max-h-[170px] rounded-lg flex-col justify-start items-center gap-8 flex">
                     <div className="self-stretch min-h-[140px] max-h-[170px] flex-col justify-start items-center gap-2 flex">
-                      <div className="self-stretch text-center text-neutral-500 2xl:text-xl font-normal  leading-7">
+                      <div className="self-stretch text-center text-neutral-500 text-xl font-normal  leading-7">
                         {WhyLearnLanguage?.CardData4?.info}
                       </div>
                     </div>
@@ -106,10 +106,10 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
                     {WhyLearnLanguage?.CardData5?.title}
                   </div>
                 </div>
-                <div className="self-stretch min-h-28 px-4 flex-col justify-start items-center gap-8 flex">
+                <div className="self-stretch min-h-28 px-4 flex-col justify-start items-center gap-8  flex">
                   <div className="self-stretch min-h-28 rounded-lg flex-col justify-start items-center gap-8 flex">
                     <div className="self-stretch min-h-28 flex-col justify-start items-center gap-2 flex">
-                      <div className="self-stretch text-center text-neutral-500 2xl:text-xl font-normal  leading-7">
+                      <div className="self-stretch text-center text-neutral-500 text-xl font-normal  leading-7">
                         {WhyLearnLanguage?.CardData5?.info}
                       </div>
                     </div>
@@ -119,7 +119,7 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
             </div>
           </div>
         </div>
-        <div className="px-8 py-3.5   rounded-lg justify-center items-center gap-2.5 inline-flex">
+        <div className="px-8  scale-125 w-[70%] py-3.5   rounded-lg justify-center items-center gap-2.5 inline-flex">
           <BookAFreeDemoButton />
         </div>
       </div>

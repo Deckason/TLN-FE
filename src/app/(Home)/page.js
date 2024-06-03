@@ -19,25 +19,33 @@ import Experiment from "@/Utilities/Experiment";
 
 export default function Home() {
   return (
-    <section>
-      <HomeBanner />
-      <Contact />
+    <>
+      <section className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col ">
+        <HomeBanner />
+        <Contact />
+
+        {/* 
+    
+    
+    
+    <CoursesWeOffer /> */}
+        {/* <UpcomingBatches /> */}
+        {/* <CefrLevels />
+    <ProficiencyExams />
+    <FluencyCarrerCulture />
+    <StudentsTestomony />
+    <TechersInfo />
+    <OurAlumni />
+    <EducationPartners />
+    <SubscribeToOur />
+    <PaymentBar /> */}
+        {/* <HomeFooter/> */}
+        {/* here used shared components are : studentsTestomony, subscribeToOur, upcomingBatches */}
+      </section>
       <Newsletter />
-      <Experiment />
-      <WhyShould />
-      <CoursesWeOffer />
-      {/* <UpcomingBatches /> */}
-      <CefrLevels />
-      <ProficiencyExams />
-      <FluencyCarrerCulture />
-      <StudentsTestomony />
-      <TechersInfo />
-      <OurAlumni />
-      <EducationPartners />
-      <SubscribeToOur />
-      <PaymentBar />
-      {/* <HomeFooter/> */}
-      {/* here used shared components are : studentsTestomony, subscribeToOur, upcomingBatches */}
-    </section>
+      <section className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col ">
+        <WhyShould />
+      </section>
+    </>
   );
 }
