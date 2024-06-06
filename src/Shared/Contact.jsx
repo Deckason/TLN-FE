@@ -18,7 +18,7 @@ const Contact = () => {
     <>
       <div className="fixed flex z-50 gap-y-1.5 flex-col lg:gap-5 top-[50%] right-0 bg-transparent ">
         <a
-          className="flex   items-center cursor-pointer"
+          className="flex hover:scale-110 transform duration-300 focus:scale-110 items-center cursor-pointer"
           href="https://api.whatsapp.com/send?phone=9137239887"
         >
           <svg
@@ -46,7 +46,7 @@ const Contact = () => {
           </svg>
         </a>
         <a
-          className="flex items-center bg-white cursor-pointer"
+          className="flex hover:scale-110 transform duration-300 items-center focus:scale-110 bg-white cursor-pointer"
           href="tel:8879328962"
         >
           <Image
