@@ -15,13 +15,13 @@ const Dropdown = (NavData) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center mx-2">
+    <div className="min-h-screen flex z-50 items-center justify-center mx-2">
       <div
         className="relative group"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <button className="inline-flex outline-none items-center justify-center w-full  py-2   2xl:text-[16px] xl:text-[14px] text-[10px] bg-white rounded-md   ">
+        <button className="inline-flex outline-none items-center justify-center w-full  py-2   2xl:text-[16px] font-medium xl:text-[14px] focus:text-primary-color hover:text-primary-color  text-[10px] bg-white rounded-md   ">
           <span className="mr-2">{NavData?.data?.title}</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,9 +41,9 @@ const Dropdown = (NavData) => {
           className={`absolute right-0 z-50 w-full px-3 ${
             NavData?.data?.title === "Languages" ? "h-[180px]" : "h-fit"
           }  ${
-            NavData?.data?.title === "Study Abroad" ? "w-[120%]  -left-4" : ""
+            NavData?.data?.title === "Study Abroad" ? "w-[130px]  -left-3" : ""
           } ${
-            NavData?.data?.title === "Work With Us" ? "w-[130%]  -left-4" : ""
+            NavData?.data?.title === "Work With Us" ? "w-[145px]  -left-4" : ""
           } overflow-y-auto flex items-start flex-col  overflow-x-hidden rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-1 space-y-1 ${
             isHovered ? "" : "hidden"
           }`}
@@ -54,7 +54,7 @@ const Dropdown = (NavData) => {
             <Link
               key={Nav.key}
               href={Nav.path ? Nav.path : "#"}
-              className="block text-nowrap py-2 text-sm hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md"
+              className="block text-nowrap py-2 text-sm hover:bg-gray-100  active:bg-blue-100 cursor-pointer rounded-md"
             >
               {Nav.name}
             </Link>

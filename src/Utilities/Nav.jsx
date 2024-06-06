@@ -75,7 +75,15 @@ const Nav = () => {
       path: "/Navigation/College",
     },
     {
+      name: "Study Abroad",
+      path: "/Navigation/CorporateTraining",
+    },
+    {
       name: "Corporate Training",
+      path: "/Navigation/CorporateTraining",
+    },
+    {
+      name: "Work with us",
       path: "/Navigation/CorporateTraining",
     },
   ];
@@ -162,15 +170,15 @@ const Nav = () => {
       <nav>
         {/* Batches Starting Now  */}
         <section>
-          <div className="bg-black flex items-center justify-center h-[30px] lg:h-[48px] w-full">
-            <h1 className=" text-primary-color 2xl:text-[16px] xl:text-[14px] text-[10px] md:text-base text-xs font-bold">
+          <div className="bg-black flex items-center justify-center cursor-pointer h-[30px] lg:h-[48px] w-full">
+            <h1 className=" text-primary-color 2xl:text-[16px] xl:text-[14px] text-[10px] md:text-base text-xs font-bold hover:underline focus:underline underline-offset-1">
               <span className="font-normal">DELF /Goethe Exam Schedule</span> |
               Batches Starting Now!
             </h1>
           </div>
         </section>
         {/* nav options section */}
-        <section className="lg:flex lg:py-2.5 lg:bg-white lg:shadow lg:justify-center lg:w-full lg:items-center lg:gap-2.5 ">
+        <section className="lg:flex lg:py-2.5 lg:bg-white lg:shadow lg:justify-center lg:w-full lg:items-center lg:gap-2.5 z-50">
           <div className="hidden lg:flex justify-center w-[1730px] items-center ">
             <div className=" h-[58px] justify-between items-center inline-flex">
               <div className="w-full self-stretch justify-between items-center flex">
@@ -184,12 +192,12 @@ const Nav = () => {
                   ></Image>
                 </Link>
                 <Dropdown data={languageOptions} />
-                <div className="px-2.5 py-[29px] flex-col justify-start items-start cursor-pointer  gap-2.5 hidden lg:flex">
-                  <div className="justify-start items-start gap-5 xl:gap-6 inline-flex">
+                <div className="px-2.5 py-[29px] flex-col justify-start items-start z-50 cursor-pointer  gap-2.5 hidden lg:flex">
+                  <div className="justify-start items-start gap-5 xl:gap-6 cursor-pointer  inline-flex">
                     {
                       NavOptions.map((Nav) => (
                         <Link
-                          className="text-nowrap 2xl:text-[16px] xl:text-[14px] text-[10px]"
+                          className="text-nowrap 2xl:text-[16px] xl:text-[14px] font-medium focus:text-primary-color hover:text-primary-color  text-[10px]"
                           onMouseLeave={() => {
                             if (Nav.name === "Work with us") {
                               setShowWorkWithUs(false);
@@ -216,19 +224,17 @@ const Nav = () => {
                   </div>
                 </div>
 
-                <Dropdown data={studyAbroad} />
-                <Dropdown data={WorkWithUsData} />
                 <LanguageDropdown />
               </div>
             </div>
-            <div className=" hidden flex-grow gap-5 lg:flex justify-end me-5">
+            <div className=" hidden flex-grow gap-4 lg:flex justify-end me-5">
               <button
                 onClick={openModal}
-                className=" hover:shadow-md transition duration-300  lg:w-[120px] border  h-14 px-4 py-3.5 hover:bg-white hover:border-teal-600 hover:text-teal-600 bg-teal-600 rounded-lg justify-center text-white  xl:text-[14px] items-center gap-2.5 inline-flex"
+                className=" hover:shadow-md transition duration-300  lg:w-[153px] border  h-14 px-4 py-3.5 hover:bg-white hover:border-teal-600 hover:text-teal-600 focus:bg-white focus:border-teal-600 focus:text-teal-600 bg-teal-600 rounded-lg justify-center font-medium text-white  xl:text-[14px] items-center gap-2.5 inline-flex"
               >
                 Get Started
               </button>
-              <button className=" hover:shadow-md transition hover:text-white text-teal-600 duration-300 self-stretch px-2 h-14  py-3 rounded-lg border hover:bg-teal-600 bg-white border-teal-600 justify-center items-center gap-2.5 inline-flex">
+              <button className=" hover:shadow-md transition hover:text-white text-teal-600 duration-300 self-stretch px-4 h-14 focus:bg-teal-600 focus:text-white py-3 rounded-lg border hover:bg-teal-600 font-medium bg-white border-teal-600 justify-center items-center gap-2.5 inline-flex">
                 <div className="w-fit lg:w-[180px] text-center  xl:text-[14px] font-medium ">
                   Already Booked The Class
                 </div>

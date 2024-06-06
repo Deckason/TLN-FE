@@ -5,19 +5,19 @@ import States from "@/Shared/SharedAdultsPage/Components/States";
 import Image from "next/image";
 const HomeBanner = () => {
   return (
-    <div className=" md:mx-10 mt-5 w-full">
+    <div className=" md:mx-10 mt-5 w-full ">
       <div className=" lg:h-[372px] w-full justify-between  items-center flex flex-col lg:flex-row px-5   xl:mx-auto">
         <div className="lg:w-[525px] lg:min-h-[542px] min-h-fit flex-col z-10 max-lg:my-10 justify-center w-full lg:items-start gap-0 inline-flex">
           <div className="self-stretch lg:h-[261px] h-fit 2xl:h-[261px] xl:h-[261px] flex-col justify-center items-start gap-4 flex">
-            <div className="self-stretch text-stone-900 2xl:text-[40px] xl:text-4xl max-md:text-2xl max-xl:text-5xl text-[24px] font-bold ">
+            <div className="self-stretch text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold ">
               Your Gateway to <br className="" />
               <span className="text-nowrap">Language Excellence</span>
             </div>
-            <div className="self-stretch text-stone-900 2xl:text-5xl xl:text-4xl lg:text-3xl text-xl font-normal ">
+            <div className="self-stretch text-stone-900 2xl:text-5xl xl:text-[32px] lg:text-3xl text-xl font-normal ">
               Learn more than just a language!
             </div>
           </div>
-          <div className=" max-xl:mt-6 max-2xl:-ml-9">
+          <div className=" max-xl:mt-6 max-2xl:-ml-7">
             <BookAFreeDemoButton />
           </div>
         </div>
