@@ -11,6 +11,7 @@ import Pinterest from "@/Assets/Homepage/Footer/Pinterest.png";
 import Youtube from "@/Assets/Homepage/Footer/Youtube.png";
 import FaqsCard from "@/Shared/FaqsCard";
 import Accordian from "../../Shared/Accordian";
+import Link from "next/link";
 
 const HomeFooter = () => {
   const datas = [
@@ -113,13 +114,15 @@ const HomeFooter = () => {
     <div className="pt-20 flex flex-col items-center justify-center">
       <div className="lg:text-[15px] text-[10px] gap-10 flex flex-col lg:flex-row w-full lg:w-fit lg:items-center justify-around ">
         <div className="flex lg:flex-col lg:w-fit w-full gap-10 h-full lg:h-[490px] lg:items-start items-center justify-between">
-          <div className="flex ml-5  flex-row gap-10 lg:flex-col  lg:w-full w-fit  ">
-            <Image src={FooterLogo1} alt="footerImg" mb-3t="footerLogo1" className="mb-3" />
-            <div className="flex gap-5 items-center justify-center">
-              <Image src={FooterLogo2} alt="footerLogo2" />
-              <Image src={FooterLogo3} alt="footerLogo3" />
+          <Link href="/">
+            <div className="flex ml-5  flex-row gap-10 lg:flex-col  lg:w-full w-fit  ">
+              <Image src={FooterLogo1} alt="footerImg" mb-3t="footerLogo1" className="mb-3" />
+              <div className="flex gap-5 items-center justify-center">
+                <Image src={FooterLogo2} alt="footerLogo2" />
+                <Image src={FooterLogo3} alt="footerLogo3" />
+              </div>
             </div>
-          </div>
+          </Link>
           <div className="flex items-center justify-end lg:justify-center w-full">
             <button className="mr-5  px-4 py-1.5 lg:px-5 lg:py-3.5 bg-teal-600 rounded-lg justify-center text-neutral-50 text-base md:text-lg lg:text-2xl font-medium items-center gap-2.5 inline-flex">
               Contact Us
