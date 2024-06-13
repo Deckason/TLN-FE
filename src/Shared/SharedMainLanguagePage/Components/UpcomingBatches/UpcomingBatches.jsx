@@ -49,7 +49,7 @@ const UpcomingBathches = () => {
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className="mt-[112px] max-md:mt-12 flex justify-center flex-col items-center">
+    <div className=" mt-[112px] max-md:mt-0 flex justify-center flex-col items-center">
       <h1 className="text-stone-900 text-2xl text-center mb-[56px] font-bold ">
         Upcoming Batches
       </h1>

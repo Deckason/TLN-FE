@@ -3,13 +3,13 @@ import arrowLeft from "@/Assets/Icons/arrowleft.svg";
 import Link from "next/link";
 const OnlineClassCard = ({ data }) => {
   return (
-    <div className=" h-full max-h-[600px]">
+    <div className="  h-[600px]">
       {" "}
       <div
         className="w-full shadow-md hover:shadow-xl transition duration-300  rounded-xl min-h-[509px] flex-col h-full justify-start items-center gap-8 inline-flex p-4 max-md:p-6
     "
       >
-        <div className="h-[313px]  rounded-xl flex-col justify-start  items-center gap-2.5 flex">
+        <div className="h-[313px]  rounded-xl flex-col justify-start max-md:max-h-[213px] items-center gap-2.5 flex">
           <Image
             alt="levelImages"
             className="w-full h-full rounded-xl object-cover"
