@@ -1,8 +1,17 @@
+"use client";
 import whyLearnFrench from "@/Assets/FrenchPage/FrenchMain/whyLearnFrench.svg";
 import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
 import Image from "next/image";
+import { SwiperSlide, Swiper } from "swiper/react";
 
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Navigation } from "swiper/modules";
+import React, { useState } from "react";
 const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const navigationPrevRef = React.useRef(currentPage);
+  const navigationNextRef = React.useRef(currentPage);
   return (
     <div className=" my-[112px] w-full flex items-center flex-col justify-center">
       <div className="text-black max-md:text-2xl lg:text-4xl max-lg:text-3xl xl:text-[60px] max-sm:-mb-10 mb-12 text-center font-bold ">
