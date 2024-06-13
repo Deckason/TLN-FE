@@ -16,7 +16,7 @@ const FaqsLanguage = ({ FaqsData }) => {
   const [id, setId] = useState(0);
   const [open, setOpen] = useState(false);
   return (
-    <div className="2xl:max-w-[1680px] bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col pt-[112px]">
+    <div className="2xl:max-w-[1680px] bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center max-md:pt-0 flex-col pt-[112px]">
       <div className="max-w-[1463px] flex-col justify-center w-full mx-auto items-center  gap-12 flex">
         <div className="flex-col justify-start items-center gap-12 flex">
           <div className="text-black text-[60px] font-bold max-lg:text-2xl">
@@ -51,21 +51,23 @@ const FaqsLanguage = ({ FaqsData }) => {
             </div>
           </div>
         </div>
-        <button
-          onClick={() => {
-            if (splicing) {
-              setSplicing(false);
-            }
-            if (!splicing) {
-              setSplicing(true);
-            }
-          }}
-          className="h-[58px] max-lg:justify-start px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
-        >
-          <div className="text-center text-teal-600 text-2xl font-medium ">
-            {!splicing ? "Read Less" : "Read More"}
-          </div>
-        </button>
+        <div className="w-full  px-4">
+          <button
+            onClick={() => {
+              if (splicing) {
+                setSplicing(false);
+              }
+              if (!splicing) {
+                setSplicing(true);
+              }
+            }}
+            className="h-[58px] max-lg:justify-start px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
+          >
+            <div className="text-center text-teal-600 text-2xl font-medium ">
+              {!splicing ? "Read less" : "Read all FAQs"}
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   );
