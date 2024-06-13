@@ -1,3 +1,4 @@
+"use client";
 import SharedMainLanuagePage from "@/Shared/SharedMainLanguagePage/SharedMainLanuagePage";
 import adults from "@/Assets/Spanish/SpanishForAdults.png";
 import kids from "@/Assets/Spanish/SpanishForKids.png";
@@ -8,6 +9,8 @@ import corporate from "@/Assets/FrenchPage/FrenchMain/corporate.png";
 import dalf from "@/Assets/FrenchPage/FrenchMain/dalf.png";
 import delf from "@/Assets/FrenchPage/FrenchMain/delf.png";
 import telf from "@/Assets/FrenchPage/FrenchMain/telf.png";
+import { useGetFAQsQuery } from "@/store/apiSlice";
+import { useEffect, useState } from "react";
 const FrenchPage = () => {
   const FrenchLanguageData = {
     Banner: {
@@ -268,9 +271,18 @@ const FrenchPage = () => {
       },
     ],
   };
+  const { data } = useGetFAQsQuery("");
+  const [content, setContent] = useState(FrenchLanguageData);
+  useEffect(() => {
+    if(!data) return;
+    const faqData = data.filter(
+      (item) => item.language === "French"
+    );
+    setContent((prev) => ({...prev, FaqsData: faqData}));
+}, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={FrenchLanguageData} />
+      <SharedMainLanuagePage Data={content} />
     </div>
   );
 };
