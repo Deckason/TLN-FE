@@ -1,3 +1,4 @@
+"use client";
 import SharedMainLanuagePage from "@/Shared/SharedMainLanguagePage/SharedMainLanuagePage";
 import adults from "@/Assets/Spanish/SpanishForAdults.png";
 import kids from "@/Assets/Spanish/SpanishForKids.png";
@@ -6,6 +7,8 @@ import school from "@/Assets/FrenchPage/FrenchMain/school.png";
 import college from "@/Assets/FrenchPage/FrenchMain/college.png";
 import corporate from "@/Assets/FrenchPage/FrenchMain/corporate.png";
 import dalf from "@/Assets/Japanese/jlpt.png";
+import { useGetFAQsQuery } from "@/store/apiSlice";
+import { useEffect, useState } from "react";
 
 const JapanesePage = () => {
   const JapaneseLanguageData = {
@@ -249,9 +252,18 @@ const JapanesePage = () => {
       },
     ],
   };
+  const { data } = useGetFAQsQuery("");
+  const [content, setContent] = useState(JapaneseLanguageData);
+  useEffect(() => {
+    if(!data) return;
+    const faqData = data.filter(
+      (item) => item.language === "Japanese"
+    );
+    setContent((prev) => ({...prev, FaqsData: faqData}));
+}, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={JapaneseLanguageData} />
+      <SharedMainLanuagePage Data={content} />
     </div>
   );
 };

@@ -1,3 +1,4 @@
+"use client";
 import SharedMainLanuagePage from "@/Shared/SharedMainLanguagePage/SharedMainLanuagePage";
 import adults from "@/Assets/Spanish/SpanishForAdults.png";
 import kids from "@/Assets/Spanish/SpanishForKids.png";
@@ -7,6 +8,8 @@ import college from "@/Assets/FrenchPage/FrenchMain/college.png";
 import corporate from "@/Assets/FrenchPage/FrenchMain/corporate.png";
 import dalf from "@/Assets/Spanish/DELE.png";
 import telf from "@/Assets/Spanish/Siele.png";
+import { useGetFAQsQuery } from "@/store/apiSlice";
+import { useEffect, useState } from "react";
 
 const SpanishPage = () => {
   const SpanishLanguageData = {
@@ -257,9 +260,18 @@ const SpanishPage = () => {
       },
     ],
   };
+  const { data } = useGetFAQsQuery("");
+  const [content, setContent] = useState(SpanishLanguageData);
+  useEffect(() => {
+    if(!data) return;
+    const faqData = data.filter(
+      (item) => item.language === "Spanish"
+    );
+    setContent((prev) => ({...prev, FaqsData: faqData}));
+}, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={SpanishLanguageData} />
+      <SharedMainLanuagePage Data={content} />
     </div>
   );
 };
