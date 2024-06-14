@@ -78,7 +78,7 @@ const Nav = () => {
     },
     {
       name: "Study Abroad",
-      path: "/Navigation/CorporateTraining",
+      path: "/Navigation/StudyAbroad",
     },
     {
       name: "Corporate Training",
@@ -86,7 +86,7 @@ const Nav = () => {
     },
     {
       name: "Work with us",
-      path: "/Navigation/CorporateTraining",
+      path: "/Navigation/WorkWithUs",
     },
   ];
 
