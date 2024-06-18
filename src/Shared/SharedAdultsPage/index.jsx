@@ -9,10 +9,11 @@ import LanguageLessons from "./Components/Languagelessons";
 import PaymentBar from "./Components/PaymentBar";
 import PrepareForLanguageExam from "./Components/PrepareForLanguageExam";
 import SayBonjur from "./Components/SayBonjur";
-import UpcomingBathches from "./Components/UpcomingBatches";
+// import UpcomingBathches from "./Components/UpcomingBatches";
 import WhyKidsShouldLearnEnglish from "./Components/WhyKidShouldLearn";
 import WhyLearnLanguage from "./Components/WhyLearnLanguage";
-import WhyShould from "./Components/WhyShould";
+import WhyShould from "@/Components/HomeComp/WhyShould";
+import UpcomingBathches from "../SharedMainLanguagePage/Components/UpcomingBatches/UpcomingBatches";
 
 const SharedAdultsPage = ({ Data }) => {
   // console.log(Data);
