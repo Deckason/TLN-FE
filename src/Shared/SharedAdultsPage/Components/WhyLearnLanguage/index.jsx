@@ -6,7 +6,7 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
   return (
     <div className=" my-[112px] w-full flex items-center flex-col justify-center">
       <div className="text-black max-md:text-2xl lg:text-4xl max-lg:text-3xl xl:text-[60px] max-sm:-mb-10 mb-12 text-center font-bold ">
-        Why lea {WhyLearnLanguage?.Language}?
+        Why learn {WhyLearnLanguage?.Language}?
       </div>
       <div className="2xl:max-w-[1440px] mx-auto min-h-[1016px] flex-col justify-start items-center  h-full w-full gap-14 inline-flex">
         <Image

@@ -13,7 +13,7 @@ const HowItWorks = ({ HowItWorksCardData }) => {
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className="bg-[#F6F3F3] w-full flex justify-center flex-col items-center py-[112px]">
+    <div className="bg-[#F6F3F3] w-full flex justify-center flex-col items-center py-[50px] md:py-[112px]">
       <section className="">
         <h1 className="text-stone-900 text-[40px] font-bold  text-center mb-2">
           How it works?

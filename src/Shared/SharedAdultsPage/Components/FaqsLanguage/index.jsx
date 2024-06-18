@@ -32,21 +32,21 @@ const FaqsLanguage = ({ FaqsData }) => {
             <div className="flex-col  md:w-full mx-auto lg:order-1 order-2 gap-y-2 gap-x-2">
               {splicing === true
                 ? newData
-                    ?.splice(0, 5)
-                    ?.map((data, index) => (
-                      <FaqsCard
-                        id={id}
-                        setId={setId}
-                        open={open}
-                        setOpen={setOpen}
-                        key={index}
-                        data={data}
-                        i={index}
-                      />
-                    ))
+                  ?.splice(0, 5)
+                  ?.map((data, index) => (
+                    <FaqsCard
+                      id={id}
+                      setId={setId}
+                      open={open}
+                      setOpen={setOpen}
+                      key={index}
+                      data={data}
+                      i={index}
+                    />
+                  ))
                 : newData?.map((data, index) => (
-                    <FaqsCard key={index} data={data} i={index} />
-                  ))}
+                  <FaqsCard key={index} data={data} i={index} />
+                ))}
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@ const FaqsLanguage = ({ FaqsData }) => {
                 setSplicing(true);
               }
             }}
-            className="h-[58px] px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
+            className="h-[58px] px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex mb-[20px]"
           >
             <div className="text-center text-teal-600 text-2xl font-medium ">
               {!splicing ? "Read less FAQs" : "Read all FAQs"}
