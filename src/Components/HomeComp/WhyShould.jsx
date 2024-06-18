@@ -145,7 +145,7 @@ const WhyShould = () => {
         </ReusableModal>
       ))}
 
-      <div className="mt-[108px] w-full  max-w-[1294px] mx-auto">
+      <div className="mt-[50px] md:mt-[108px] w-full  max-w-[1294px] mx-auto">
         <h1 className="md:text-center mb-[48px] text-stone-900 max-lg:px-4 text-xl xl:text-2xl font-bold ">
           Why you should learn with The Language Network?
         </h1>
