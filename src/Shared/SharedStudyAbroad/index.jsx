@@ -9,10 +9,10 @@ import LanguageLessons from "./Components/Languagelessons";
 import PaymentBar from "./Components/PaymentBar";
 import PrepareForLanguageExam from "./Components/PrepareForLanguageExam";
 import SayBonjur from "./Components/SayBonjur";
-import UpcomingBathches from "./Components/UpcomingBatches";
 import WhyKidsShouldLearnEnglish from "./Components/WhyKidShouldLearn";
 import WhyLearnLanguage from "./Components/WhyLearnLanguage";
-import WhyShould from "./Components/WhyShould";
+import WhyShould from "@/Components/HomeComp/WhyShould";
+import UpcomingBathches from "../SharedMainLanguagePage/Components/UpcomingBatches/UpcomingBatches";
 
 const SharedStudyAbroad = ({ Data }) => {
   // console.log(Data);
@@ -34,7 +34,9 @@ const SharedStudyAbroad = ({ Data }) => {
       <HowItWorks HowItWorksCardData={Data?.HowItWorksCardData} />
       <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
         <WhyShould />
-        <UpcomingBathches />
+        <div className="mt-[70px] md:mt-[112px]">
+          <UpcomingBathches />
+        </div>
         <LanguageClassesForAnyLevel
           ClassesForAnyLevel={Data?.ClassesForAnyLevel}
         />
