@@ -7,12 +7,12 @@ const SubscribeToOur = () => {
             Subscribe to our newsletter
           </div>
           <div className="justify-center items-end gap-8 flex-wrap flex ">
-            <div className="h-12 max-sm:w-full mx-6 px-4 py-[11px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center gap-2.5 flex">
+            <div className="">
               <input
                 required
                 type="email"
                 placeholder="Email ID"
-                className="grow focus:outline-none w-full shrink basis-0 text-neutral-400 max-md:h-[39px] h-[56px] text-xl font-normal  leading-[34px]"
+                className="h-12 max-sm:w-full mx-6 px-4 py-[11px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center gap-2.5 flex grow focus:outline-none  shrink basis-0 text-neutral-400 max-md:h-[39px] text-xl font-normal  leading-[34px]"
               />
             </div>
             <button className="w-[180px] max-sm:scale-90 px-8 py-3.5 bg-neutral-50 rounded-lg justify-center items-center gap-2.5 flex">
