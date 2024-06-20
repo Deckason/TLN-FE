@@ -1,20 +1,19 @@
 "use client";
 import Image from "next/image";
-import logo from "@/Assets/TLN_logo.png";
+import logo from "../Assets/TLN_logo.png";
 import Link from "next/link";
 import { useState } from "react";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { IoMdCloseCircle } from "react-icons/io";
 import { BsCaretRight, BsCaretRightFill } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
-import ModalImg from "@/Assets/Rectangle 479.svg";
+import ModalImg from "../Assets/Rectangle 479.svg";
 import { usePathname } from "next/navigation";
-import "@/css/NavBarCustom.css";
-import Dropdown from "@/Components/DropDown";
-import ReusableModal from "@/Shared/ReusableModal";
-import ReusableLoginModal from "@/Shared/LoginModal";
+import "../css/NavBarCustom.css";
+import Dropdown from "../Components/DropDown";
+import ReusableLoginModal from "../Shared/LoginModal";
 import LanguageDropdown from "./LanguageDropDown";
-import { useGetPromoQuery } from "@/store/apiSlice";
+import { useGetPromoQuery } from "../store/apiSlice";
 
 const Nav = () => {
   const languageOptions = {

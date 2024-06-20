@@ -1,6 +1,6 @@
 "use client";
-import FaqsCard from "@/Shared/FaqsCard";
-import frenchFlag from "@/Assets/FrenchPage/FrenchMain/FaqImg.svg";
+import FaqsCard from "../../Shared/FaqsCard";
+import frenchFlag from "../../Assets/FrenchPage/FrenchMain/FaqImg.svg";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -19,7 +19,7 @@ const Faqs = ({ data }) => {
       <div className="max-w-[1463px] flex-col justify-center w-full mx-auto items-center  gap-12 flex">
         <div className="flex-col w-full justify-center items-center gap-12 flex">
           <div className="text-black text-4xl font-bold ">FAQs</div>
-          <div className="lg:justify-around justify-center xl:justify-around mx-4 h-full items-center gap-5 max-xl:gap-4 flex w-full max-xl:flex-col-reverse">
+          <div className="lg:justify-around justify-center xl:justify-around mx-4 h-full items-center gap-5 max-xl:gap-4 flex w-full xl:flex-row  flex-col">
             <div className="w-fit xl:ml-0 lg:ml-0 ml-6 lg:order-2 order-1 pr-5 flex justify-center">
               <Image
                 alt="frenchFlag"

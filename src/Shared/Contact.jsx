@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import Phone from "@/Assets/Phone.png";
+import Phone from "../Assets/Phone.png";
 
 const Contact = () => {
   const [alertVisible, setAlertVisible] = useState(false);

@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import girlImage from "@/Assets/Homepage/Cefr/girlHappy.png";
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
-import rightIcon from "@/Assets/Homepage/Cefr/rightIcon.png";
+import girlImage from "../../Assets/Homepage/Cefr/girlHappy.png";
+import BookAFreeDemoButton from "../../Shared/BookAFreeDemoButton";
+import rightIcon from "../../Assets/Homepage/Cefr/rightIcon.png";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

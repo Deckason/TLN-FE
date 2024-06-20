@@ -1,10 +1,10 @@
-import english from "@/Assets/Homepage/languages/english.png";
-import french from "@/Assets/Homepage/languages/french.png";
-import spanish from "@/Assets/Homepage/languages/spanish.png";
-import german from "@/Assets/Homepage/languages/german.png";
-import mandarin from "@/Assets/Homepage/languages/mandarin.png";
-import japanese from "@/Assets/Homepage/languages/japanese.png";
-import korean from "@/Assets/Homepage/languages/korean.png";
+import english from "../../Assets/Homepage/languages/english.png";
+import french from "../../Assets/Homepage/languages/french.png";
+import spanish from "../../Assets/Homepage/languages/spanish.png";
+import german from "../../Assets/Homepage/languages/german.png";
+import mandarin from "../../Assets/Homepage/languages/mandarin.png";
+import japanese from "../../Assets/Homepage/languages/japanese.png";
+import korean from "../../Assets/Homepage/languages/korean.png";
 import Image from "next/image";
 const CoursesWeOffer = () => {
   return (

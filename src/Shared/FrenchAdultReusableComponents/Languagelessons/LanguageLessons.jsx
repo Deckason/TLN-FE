@@ -5,11 +5,11 @@ const LanguageLessons = (LanguageLesson) => {
         <div className="text-emerald-900 xl:text-[60px] 2xl:text-[60px] font-bold ">
           Online language lessons and classes
         </div>
-        <div className="justify-center items-start gap-5 xl:flex-row lg:flex-row flex-col inline-flex 2xl:flex-wrap">
+        <div className="justify-center items-start gap-5 xl:flex-row lg:flex-row flex-col inline-flex xl:text-start lg:text-start text-center  2xl:flex-wrap">
           {LanguageLesson.LanguageLesson.map((card, index) => (
             <div
               key={index}
-              className="w-full 2xl:w-[405px] max-sm:w-[330px] mx-auto  rounded-lg pb-4  flex-col justify-start items-center border inline-flex"
+              className="w-full 2xl:w-[405px] max-sm:w-[330px] mx-auto pb-4  flex-col justify-start items-center inline-flex"
             >
               <div className="self-stretch px-4 py-2 rounded-tl-lg rounded-tr-lg justify-start items-center gap-2.5 inline-flex">
                 <div className="grow shrink basis-0 text-stone-900 2xl:text-xl font-bold ">

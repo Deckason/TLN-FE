@@ -1,6 +1,6 @@
 "use client";
 
-import SharedLevelPage from "@/Shared/SharedLevelPage/SharedLevelPage";
+import SharedLevelPage from "../../../../../../Shared/SharedLevelPage/SharedLevelPage";
 import { useEffect, useState } from "react";
 import img1 from "../../../../../../Assets/SharedLevelPage/Level1.svg";
 import img2 from "../../../../../../Assets/SharedLevelPage/Level2.svg";

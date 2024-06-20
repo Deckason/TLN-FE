@@ -1,10 +1,10 @@
 "use client";
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
+import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
-import BannerImage from "@/Assets/SharedLevelPage/Banner.png";
+import BannerImage from "../../../../Assets/SharedLevelPage/Banner.png";
 
 import { useState } from "react";
-import States from "@/Shared/SharedMainLanguagePage/Components/States/States";
+import States from "../../../../Shared/SharedMainLanguagePage/Components/States/States";
 const Banner = ({ BannerData }) => {
   const [Splicing, setSplicing] = useState(true);
   // console.log(BannerData);
@@ -48,10 +48,10 @@ const Banner = ({ BannerData }) => {
                 </div>
               </div>
             </div>
-            <div className="max-2xl:w-[540px] right-0 absolute hidden w-[700px] lg:block flex-grow">
+            <div className="max-2xl:w-[500px] right-0 xl:absolute lg:absolute w-[700px] max-xl:w-[360px] max-lg:w-[360px] lg:block flex-grow">
               <Image
                 alt="homePageBannerGirl"
-                className="w-full  h-full object-contain "
+                className="lg:w-full w-[360px] xl:w-full h-full object-contain "
                 src={BannerImage}
               ></Image>
             </div>

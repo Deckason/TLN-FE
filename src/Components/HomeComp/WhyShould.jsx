@@ -183,6 +183,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -229,6 +230,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -275,6 +277,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -321,6 +324,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -367,6 +371,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -413,6 +418,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -459,6 +465,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -505,6 +512,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"

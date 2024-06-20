@@ -1,7 +1,7 @@
-import "@/css/Custom.css";
-import girlRashi from "@/Assets/Homepage/UpComingCourseCard/girlRashi.png";
-import girlIshwari from "@/Assets/Spanish/Ishwari-1 1.png";
-import girlPrachi from "@/Assets/Spanish/Prachi-1.png";
+import "../../../../css/Custom.css";
+import girlRashi from "../../../../Assets/Homepage/UpComingCourseCard/girlRashi.png";
+import girlIshwari from "../../../../Assets/Spanish/Ishwari-1 1.png";
+import girlPrachi from "../../../../Assets/Spanish/Prachi-1.png";
 import Image from "next/image";
 import UpcomingBatchCard from "./UpcomingBatchCard";
 
@@ -56,7 +56,7 @@ const UpcomingBathches = () => {
       justify-center items-center w-full mx-auto lg:min-w-[1000px] 2xl:max-w-[1681px] flex-col gap-4  "
         id="UpcomingCourseCards"
       >
-        <div className="  gap-[17px]  grid grid-cols-3 xl:justify-center justify-center w-full  mb-[40px]">
+        <div className="  gap-[17px]  grid lg:grid-cols-3 grid-cols-1 xl:grid-cols-3 xl:justify-center justify-center w-full  mb-[40px]">
           {CardData.map((cardData, i) => (
             <UpcomingBatchCard key={i} data={cardData} />
           ))}

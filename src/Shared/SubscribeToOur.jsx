@@ -1,8 +1,8 @@
 const SubscribeToOur = () => {
   return (
     <div className="w-full -mt-14">
-      <div className="w-full bg-teal-600 min-h-[380px] relative flex justify-center items-center">
-        <div className=" bg-teal-600 absolute flex-col justify-center items-center gap-8 inline-flex">
+      <div className="w-full  bg-teal-600 min-h-[380px] relative flex justify-center items-center">
+        <div className=" bg-teal-600 absolute w-full flex-col justify-center items-center gap-8 inline-flex">
           <div className="text-center text-white text-5xl font-bold max-lg:text-2xl">
             Subscribe to our newsletter
           </div>

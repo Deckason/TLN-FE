@@ -1,15 +1,14 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import FooterLogo1 from "@/Assets/Homepage/Footer/footerLogo.png";
-import FooterLogo2 from "@/Assets/Homepage/Footer/FooterLogo2.png";
-import FooterLogo3 from "@/Assets/Homepage/Footer/FooterLogo3.png";
-import FaceBook from "@/Assets/Homepage/Footer/FaceBook.png";
-import Insta from "@/Assets/Homepage/Footer/Instagram.png";
-import Linkdin from "@/Assets/Homepage/Footer/Linkdin.png";
-import Pinterest from "@/Assets/Homepage/Footer/Pinterest.png";
-import Youtube from "@/Assets/Homepage/Footer/Youtube.png";
-import FaqsCard from "@/Shared/FaqsCard";
+import FooterLogo1 from "../../Assets/Homepage/Footer/footerLogo.png";
+import FooterLogo2 from "../../Assets/Homepage/Footer/FooterLogo2.png";
+import FooterLogo3 from "../../Assets/Homepage/Footer/FooterLogo3.png";
+import FaceBook from "../../Assets/Homepage/Footer/FaceBook.png";
+import Insta from "../../Assets/Homepage/Footer/Instagram.png";
+import Linkdin from "../../Assets/Homepage/Footer/Linkdin.png";
+import Pinterest from "../../Assets/Homepage/Footer/Pinterest.png";
+import Youtube from "../../Assets/Homepage/Footer/Youtube.png";
 import Accordian from "../../Shared/Accordian";
 import Link from "next/link";
 
@@ -116,7 +115,12 @@ const HomeFooter = () => {
         <div className="flex lg:flex-col lg:w-fit w-full gap-10 h-full lg:h-[490px] lg:items-start items-center justify-between">
           <Link href="/">
             <div className="flex ml-5  flex-row gap-10 lg:flex-col  lg:w-full w-fit  ">
-              <Image src={FooterLogo1} alt="footerImg" mb-3t="footerLogo1" className="mb-3" />
+              <Image
+                src={FooterLogo1}
+                alt="footerImg"
+                mb-3t="footerLogo1"
+                className="mb-3"
+              />
               <div className="flex gap-5 items-center justify-center">
                 <Image src={FooterLogo2} alt="footerLogo2" />
                 <Image src={FooterLogo3} alt="footerLogo3" />
@@ -136,34 +140,68 @@ const HomeFooter = () => {
                 <h3 className="text-[#000] mb-3 font-medium md:text-lg text-[10px] lg:text-[20px]">
                   About us
                 </h3>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Who Are We</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">How It Works</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Blogs</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Press</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Who Are We
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  How It Works
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Blogs
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Press
+                </span>
                 <span className="lg:text-[15px] md:text-lg text-xs ">FAQ</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Contact Us</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Contact Us
+                </span>
               </div>
               <div className="flex flex-col ">
                 <h3 className="text-[#000] mb-3 font-medium md:text-lg text-[10px] lg:text-[20px]">
                   Work With us
                 </h3>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Career</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Teach With Us</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Collaborate With Us</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Content Creators</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Refer & Earn</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Career
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Teach With Us
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Collaborate With Us
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Content Creators
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Refer & Earn
+                </span>
               </div>
               <div className="flex flex-col ">
                 <h3 className="text-[#000] mb-3 font-medium md:text-lg text-[10px] lg:text-[20px]">
                   Language We Offer
                 </h3>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Online French Classes</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Online German Classes</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Online Spanish Classes</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Online Korean Classes</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Online Japanese Classes</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Online Mandarin Classes</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">Online English Classes</span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Online French Classes
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Online German Classes
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Online Spanish Classes
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Online Korean Classes
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Online Japanese Classes
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Online Mandarin Classes
+                </span>
+                <span className="lg:text-[15px] md:text-lg text-xs ">
+                  Online English Classes
+                </span>
               </div>
             </div>
             <div className="flex lg:hidden h-full flex-col w-full  gap-x-2">

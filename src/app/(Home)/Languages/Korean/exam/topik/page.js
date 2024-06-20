@@ -1,17 +1,17 @@
 "use client";
-import { TopBar } from "@/Shared/ReusableExamPage/top-bar";
-import UpcomingBatches from "@/Shared/UpcomingBatches";
-import studentPic from "@/Assets/Homepage/Testomony/testomony.png";
+import { TopBar } from "../../../../../../Shared/ReusableExamPage/top-bar";
+import UpcomingBatches from "../../../../../../Shared/UpcomingBatches";
+import studentPic from "../../../../../../Assets/Homepage/Testomony/testomony.png";
 import React from "react";
-import StudentsTestomony from "@/Shared/ReusableExamPage/studentTestmony";
-import Say from "@/Shared/ReusableExamPage/Say";
-import Faqs from "@/Shared/ReusableExamPage/Faq";
-import LanguageLessons from "@/Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
-import SubscribeToOur from "@/Shared/SubscribeToOur";
-import PaymentBar from "@/Components/HomeComp/PaymentBar";
-import ExamHelp from "@/Shared/ReusableExamPage/Exam-Help";
-import AboutDelf from "@/Shared/ReusableExamPage/About-Delf";
-import TOPIK from "@/Assets/KoreanPage/Topik.svg";
+import StudentsTestomony from "../../../../../../Shared/ReusableExamPage/studentTestmony";
+import Say from "../../../../../../Shared/ReusableExamPage/Say";
+import Faqs from "../../../../../../Shared/ReusableExamPage/Faq";
+import LanguageLessons from "../../../../../../Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
+import SubscribeToOur from "../../../../../../Shared/SubscribeToOur";
+import PaymentBar from "../../../../../../Components/HomeComp/PaymentBar";
+import ExamHelp from "../../../../../../Shared/ReusableExamPage/Exam-Help";
+import AboutDelf from "../../../../../../Shared/ReusableExamPage/About-Delf";
+import TOPIK from "../../../../../../Assets/KoreanPage/Topik.svg";
 
 const page = () => {
   const StudentTestimonialsData = {
@@ -97,12 +97,12 @@ const page = () => {
       answer: "No, there are no age restrictions for taking the TOPIK exam.",
     },
     {
-      question: "What job opportunities will I get after giving the TOPIK exam?",
+      question:
+        "What job opportunities will I get after giving the TOPIK exam?",
       answer:
         "Upon passing the TOPIK exam, you can pursue careers in advanced language teaching, translation, international relations, research, and academia, among others.",
     },
   ];
-  
 
   const say = "Say Annyeonghaseyo to language learning with us!";
 
