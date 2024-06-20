@@ -15,7 +15,7 @@ const FaqsLanguage = ({ FaqsData }) => {
   const [open, setOpen] = useState(false);
   const [id, setId] = useState(0);
   return (
-    <div className="2xl:max-w-[1680px] bg-[#F6F3F3] px-4 lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col pb-[112px]">
+    <div className="2xl:max-w-[1680px] bg-[#F6F3F3]  px-4 lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col max-md:py-0 py-[112px]">
       <div className=" flex-col justify-center w-full mx-auto items-center  gap-12 flex">
         <div className="flex-col justify-start items-center gap-y-12 w-full flex">
           <div className="text-black text-[60px] font-bold max-lg:text-2xl">
@@ -60,7 +60,7 @@ const FaqsLanguage = ({ FaqsData }) => {
                 setSplicing(true);
               }
             }}
-            className="h-[58px] px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
+            className="h-[58px] px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex mb-[20px]"
           >
             <div className="text-center text-teal-600 text-2xl font-medium ">
               {!splicing ? "Read less FAQs" : "Read all FAQs"}
