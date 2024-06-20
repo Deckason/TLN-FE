@@ -1,13 +1,13 @@
 "use client";
-import SharedMainLanuagePage from "@/Shared/SharedMainLanguagePage/SharedMainLanuagePage";
-import adults from "@/Assets/Spanish/SpanishForAdults.png";
-import kids from "@/Assets/Spanish/SpanishForKids.png";
-import studyAbroad from "@/Assets/Spanish/SpanishForStudyAbroad.png";
-import school from "@/Assets/FrenchPage/FrenchMain/school.png";
-import college from "@/Assets/FrenchPage/FrenchMain/college.png";
-import corporate from "@/Assets/FrenchPage/FrenchMain/corporate.png";
-import dalf from "@/Assets/Mandarin/HSK.jpg";
-import { useGetFAQsQuery } from "@/store/apiSlice";
+import SharedMainLanuagePage from "../../../../Shared/SharedMainLanguagePage/SharedMainLanuagePage";
+import adults from "../../../../Assets/Spanish/SpanishForAdults.png";
+import kids from "../../../../Assets/Spanish/SpanishForKids.png";
+import studyAbroad from "../../../../Assets/Spanish/SpanishForStudyAbroad.png";
+import school from "../../../../Assets/FrenchPage/FrenchMain/school.png";
+import college from "../../../../Assets/FrenchPage/FrenchMain/college.png";
+import corporate from "../../../../Assets/FrenchPage/FrenchMain/corporate.png";
+import dalf from "../../../../Assets/Mandarin/HSK.jpg";
+import { useGetFAQsQuery } from "../../../../store/apiSlice";
 import { useEffect, useState } from "react";
 
 const MandarinPage = () => {
@@ -255,12 +255,10 @@ const MandarinPage = () => {
   const { data } = useGetFAQsQuery("");
   const [content, setContent] = useState(MandarinLanguageData);
   useEffect(() => {
-    if(!data) return;
-    const faqData = data.filter(
-      (item) => item.language === "Mandarine"
-    );
-    setContent((prev) => ({...prev, FaqsData: faqData}));
-}, [data]);
+    if (!data) return;
+    const faqData = data.filter((item) => item.language === "Mandarine");
+    setContent((prev) => ({ ...prev, FaqsData: faqData }));
+  }, [data]);
   return (
     <div>
       <SharedMainLanuagePage Data={content} />

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo1 from "@/Assets/Homepage/Educationalbar/EducationalBar.png";
+import logo1 from "../../Assets/Homepage/Educationalbar/EducationalBar.png";
 const EducationPartners = () => {
   return (
     <div>

@@ -1,17 +1,17 @@
 "use client";
-import { TopBar } from "@/Shared/ReusableExamPage/top-bar";
-import UpcomingBatches from "@/Shared/UpcomingBatches";
-import studentPic from "@/Assets/Homepage/Testomony/testomony.png";
+import { TopBar } from "../../../../../../Shared/ReusableExamPage/top-bar";
+import UpcomingBatches from "../../../../../../Shared/UpcomingBatches";
+import studentPic from "../../../../../../Assets/Homepage/Testomony/testomony.png";
 import React from "react";
-import StudentsTestomony from "@/Shared/ReusableExamPage/studentTestmony";
-import Say from "@/Shared/ReusableExamPage/Say";
-import Faqs from "@/Shared/ReusableExamPage/Faq";
-import LanguageLessons from "@/Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
-import SubscribeToOur from "@/Shared/SubscribeToOur";
-import PaymentBar from "@/Components/HomeComp/PaymentBar";
-import ExamHelp from "@/Shared/ReusableExamPage/Exam-Help";
-import AboutDelf from "@/Shared/ReusableExamPage/About-Delf";
-import delf from "@/Assets/FrenchPage/FrenchMain/delf.png";
+import StudentsTestomony from "../../../../../../Shared/ReusableExamPage/studentTestmony";
+import Say from "../../../../../../Shared/ReusableExamPage/Say";
+import Faqs from "../../../../../../Shared/ReusableExamPage/Faq";
+import LanguageLessons from "../../../../../../Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
+import SubscribeToOur from "../../../../../../Shared/SubscribeToOur";
+import PaymentBar from "../../../../../../Components/HomeComp/PaymentBar";
+import ExamHelp from "../../../../../../Shared/ReusableExamPage/Exam-Help";
+import AboutDelf from "../../../../../../Shared/ReusableExamPage/About-Delf";
+import delf from "../../../../../../Assets/FrenchPage/FrenchMain/delf.png";
 
 const page = () => {
   const StudentTestimonialsData = {

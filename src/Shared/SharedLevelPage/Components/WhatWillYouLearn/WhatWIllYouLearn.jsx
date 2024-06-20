@@ -1,11 +1,11 @@
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
+import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import WhatWillYouLearnCard from "./WhatWillYouLearnCard";
 
 const WhatWIllYouLearn = ({ WhatWIllYouLearn }) => {
   // console.log(WhatWIllYouLearn);
   return (
     <div className=" h-full w-[97%]">
-      <h1 className="text-5xl text-center font-bold text-[#1E1E1E] mb-16">
+      <h1 className="xl:text-5xl lg:text-3xl text-xl text-center font-bold text-[#1E1E1E] mb-16">
         What will you learn?
       </h1>
 

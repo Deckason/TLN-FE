@@ -41,7 +41,7 @@ const UpcomingBatchCard = ({ data }) => {
                 <div className="w-[65px]  text-stone-900 text-base font-medium ">
                   Timing
                 </div>
-                <div className="lg:w-[335px] w-[195px] flex-col justify-center items-end gap-[13px] inline-flex">
+                <div className="lg:w-[335px] w-fit flex-col justify-center items-end gap-[13px] inline-flex">
                   <div className="self-stretch text-right text-stone-900 text-nowrap  text-sm font-bold ">
                     {data.timing}
                   </div>

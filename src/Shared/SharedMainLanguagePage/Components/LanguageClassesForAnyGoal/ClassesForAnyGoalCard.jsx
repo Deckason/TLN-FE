@@ -1,5 +1,5 @@
 import Image from "next/image";
-import arrowLeft from "@/Assets/Icons/arrowleft.svg";
+import arrowLeft from "../../../../Assets/Icons/arrowleft.svg";
 import Link from "next/link";
 
 const ClassesForAnyGoalCard = ({ data }) => {

@@ -1,5 +1,5 @@
 "use client";
-import pointDown from "@/Assets/Icons/pointDown.svg";
+import pointDown from "../../../Assets/Icons/pointDown.svg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 const FaqsCard = ({ data, i, id, setId, open, setOpen }) => {

@@ -1,5 +1,5 @@
 "use client";
-import pointDown from "@/Assets/Icons/pointDown.svg";
+import pointDown from "../Assets/Icons/pointDown.svg";
 import Image from "next/image";
 import { useState } from "react";
 const Accordian = ({ data, i }) => {

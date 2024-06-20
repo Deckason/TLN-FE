@@ -1,4 +1,5 @@
-import PaymentBar from "@/Components/HomeComp/PaymentBar";
+"use client";
+import PaymentBar from "../../Components/HomeComp/PaymentBar";
 import SubscribeToOur from "../SubscribeToOur";
 
 import Banner from "./Components/Banner/Banner";

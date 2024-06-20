@@ -1,12 +1,12 @@
-import logo1 from "@/Assets/Homepage/ProficiencyExam/logo1.png";
-import logo2 from "@/Assets/Homepage/ProficiencyExam/logo2.png";
-import logo3 from "@/Assets/Homepage/ProficiencyExam/logo3.png";
-import logo4 from "@/Assets/Homepage/ProficiencyExam/logo4.png";
-import logo5 from "@/Assets/Homepage/ProficiencyExam/logo5.png";
-import logo6 from "@/Assets/Homepage/ProficiencyExam/logo6.png";
-import logo7 from "@/Assets/Homepage/ProficiencyExam/logo7.png";
-import logo8 from "@/Assets/Homepage/ProficiencyExam/logo8.png";
-import logo9 from "@/Assets/Homepage/ProficiencyExam/logo9.png";
+import logo1 from "../../Assets/Homepage/ProficiencyExam/logo1.png";
+import logo2 from "../../Assets/Homepage/ProficiencyExam/logo2.png";
+import logo3 from "../../Assets/Homepage/ProficiencyExam/logo3.png";
+import logo4 from "../../Assets/Homepage/ProficiencyExam/logo4.png";
+import logo5 from "../../Assets/Homepage/ProficiencyExam/logo5.png";
+import logo6 from "../../Assets/Homepage/ProficiencyExam/logo6.png";
+import logo7 from "../../Assets/Homepage/ProficiencyExam/logo7.png";
+import logo8 from "../../Assets/Homepage/ProficiencyExam/logo8.png";
+import logo9 from "../../Assets/Homepage/ProficiencyExam/logo9.png";
 import Image from "next/image";
 const ProficiencyExams = () => {
   return (

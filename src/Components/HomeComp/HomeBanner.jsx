@@ -1,6 +1,6 @@
-import homePageBannerGirl from "@/Assets/Homepage/HomePageBanner/homePageBannerGirl.png";
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
-import States from "@/Shared/SharedAdultsPage/Components/States";
+import homePageBannerGirl from "../../Assets/Homepage/HomePageBanner/homePageBannerGirl.png";
+import BookAFreeDemoButton from "../../Shared/BookAFreeDemoButton";
+import States from "../../Shared/SharedAdultsPage/Components/States";
 
 import Image from "next/image";
 const HomeBanner = () => {

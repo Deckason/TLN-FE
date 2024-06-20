@@ -1,22 +1,19 @@
-import CefrLevels from "@/Components/HomeComp/CefrLevels";
-import Contact from "@/Shared/Contact";
-import CoursesWeOffer from "@/Components/HomeComp/CoursesWeOffer";
-import EducationPartners from "@/Components/HomeComp/EducationPaterners";
-import FluencyCarrerCulture from "@/Components/HomeComp/FluencyCarrerCulture";
-import HomeBanner from "@/Components/HomeComp/HomeBanner";
-import HomeFooter from "@/Components/HomeComp/HomeFooter";
-import Newsletter from "@/Components/HomeComp/Newsletter";
-import OurAlumni from "@/Components/HomeComp/OurAlumni";
-import PaymentBar from "@/Components/HomeComp/PaymentBar";
-import ProficiencyExams from "@/Components/HomeComp/ProficiencyExams";
-import TechersInfo from "@/Components/HomeComp/TechersInfo";
-import WhyShould from "@/Components/HomeComp/WhyShould";
-import States from "@/Shared/States";
+import CefrLevels from "../../Components/HomeComp/CefrLevels";
+import Contact from "../../Shared/Contact";
+import CoursesWeOffer from "../../Components/HomeComp/CoursesWeOffer";
+import EducationPartners from "../../Components/HomeComp/EducationPaterners";
+import FluencyCarrerCulture from "../../Components/HomeComp/FluencyCarrerCulture";
+import HomeBanner from "../../Components/HomeComp/HomeBanner";
+import Newsletter from "../../Components/HomeComp/Newsletter";
+import OurAlumni from "../../Components/HomeComp/OurAlumni";
+import PaymentBar from "../../Components/HomeComp/PaymentBar";
+import ProficiencyExams from "../../Components/HomeComp/ProficiencyExams";
+import TechersInfo from "../../Components/HomeComp/TechersInfo";
+import WhyShould from "../../Components/HomeComp/WhyShould";
 
-import UpcomingBatches from "@/Shared/UpcomingBatches";
-import Experiment from "@/Utilities/Experiment";
-import StudentsTestomony from "@/Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
-import SubscribeToOur from "@/Shared/SubscribeToOur";
+import UpcomingBatches from "../../Shared/UpcomingBatches";
+import StudentsTestomony from "../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
+import SubscribeToOur from "../../Shared/SubscribeToOur";
 
 export default function Home() {
   return (

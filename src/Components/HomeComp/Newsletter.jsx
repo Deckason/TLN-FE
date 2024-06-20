@@ -1,8 +1,6 @@
 "use client";
-import hindustaniTimes from "@/Assets/Homepage/NewsLetterImg/image.png";
-import girlImg from "../../Assets/Homepage/NewsLetterImg/girl.png";
 import Image from "next/image";
-import { useGetNewsQuery } from "@/store/apiSlice";
+import { useGetNewsQuery } from "../../store/apiSlice";
 const Newsletter = () => {
   const {data}=useGetNewsQuery("");
   console.log(data);

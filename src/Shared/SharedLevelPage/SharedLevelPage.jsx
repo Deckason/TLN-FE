@@ -3,7 +3,7 @@ import SubscribeToOur from "../SubscribeToOur";
 import Banner from "./Components/Banner/Banner";
 import FaqsLanguage from "./Components/FaqsLanguage/FaqsLanguage";
 import LanguageLessons from "./Components/Languagelessons/LanguageLessons";
-import PaymentBar from "./Components/Payment/Payment";
+import PaymentBar from "../../Components/HomeComp/PaymentBar";
 
 import SayBonjur from "./Components/SayBonjur/SayBonjur";
 import UpcomingBathches from "./Components/UpcomingBatches/UpcomingBathces";

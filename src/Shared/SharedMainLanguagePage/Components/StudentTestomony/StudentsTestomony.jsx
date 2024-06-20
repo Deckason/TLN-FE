@@ -1,5 +1,5 @@
 "use client";
-import studentPic from "@/Assets/Homepage/Testomony/testomony.png";
+import studentPic from "../../../../Assets/Homepage/Testomony/testomony.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

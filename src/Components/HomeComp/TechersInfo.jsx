@@ -1,7 +1,7 @@
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
-import PrachiImg from "@/Assets/Homepage/TeachersInfo/Prachi.svg";
-import Saiman from "@/Assets/Homepage/TeachersInfo/Saiman.svg";
-import Rashi from "@/Assets/Homepage/TeachersInfo/Rashi.svg";
+import BookAFreeDemoButton from "../../Shared/BookAFreeDemoButton";
+import PrachiImg from "../../Assets/Homepage/TeachersInfo/Prachi.svg";
+import Saiman from "../../Assets/Homepage/TeachersInfo/Saiman.svg";
+import Rashi from "../../Assets/Homepage/TeachersInfo/Rashi.svg";
 import Image from "next/image";
 const TechersInfo = () => {
   return (
