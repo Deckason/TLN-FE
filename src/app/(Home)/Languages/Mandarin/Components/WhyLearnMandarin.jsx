@@ -1,5 +1,5 @@
-import whyLearnFrench from "@/Assets/FrenchPage/FrenchMain/whyLearnFrench.svg";
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
+import whyLearnFrench from "../../../../Assets/FrenchPage/FrenchMain/whyLearnFrench.svg";
+import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
 
 const WhyLearnMandarin = () => {

@@ -1,10 +1,8 @@
 "use client";
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
+import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
-import BannerImage from "@/Assets/FrenchPage/FrenchStudyAbroad/studyAbroad.png";
+import BannerImage from "../../../../Assets/FrenchPage/FrenchStudyAbroad/studyAbroad.png";
 
-import girlImage from "../../../../Assets/FrenchPage/FrenchForKids/ForKids.png";
-import girlAndBoy from "../../../../Assets/FrenchPage/FrenchMain/GirlAndBoy.svg";
 import { useEffect, useState } from "react";
 import States from "../States";
 const Banner = ({ BannerData }) => {

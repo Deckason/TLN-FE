@@ -1,6 +1,5 @@
 import Image from "next/image";
-import arrowLeft from "@/Assets/Icons/arrowleft.svg";
-
+import arrowLeft from "../../../../Assets/Icons/arrowleft.svg";
 const ClassLevelCard = ({ data }) => {
   return (
     <div>

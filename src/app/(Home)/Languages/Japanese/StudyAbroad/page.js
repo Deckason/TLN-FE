@@ -1,11 +1,11 @@
 "use client";
-import step1 from "@/Assets/Homepage/FluencyCarrerCulture/step1.png";
-import step4 from "@/Assets/Homepage/FluencyCarrerCulture/step2.png";
-import step2 from "@/Assets/Homepage/FluencyCarrerCulture/step3.png";
-import step3 from "@/Assets/FrenchPage/FrenchMain/step3.png";
-import dalf from "@/Assets/Japanese/jlpt.png";
+import step1 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step1.png";
+import step4 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
+import step2 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
+import step3 from "../../../../../Assets/FrenchPage/FrenchMain/step3.png";
+import dalf from "../../../../../Assets/Japanese/jlpt.png";
 
-import SharedStudyAbroad from "@/Shared/SharedStudyAbroad";
+import SharedStudyAbroad from "../../../../../Shared/SharedStudyAbroad";
 
 const page = () => {
   const data = {
