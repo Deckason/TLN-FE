@@ -1,27 +1,28 @@
-import CefrLevels from "@/Components/HomeComp/CefrLevels";
-import CoursesWeOffer from "@/Components/HomeComp/CoursesWeOffer";
-import EducationPartners from "@/Components/HomeComp/EducationPaterners";
-import FluencyCarrerCulture from "@/Components/HomeComp/FluencyCarrerCulture";
-import HomeBanner from "@/Components/HomeComp/HomeBanner";
-import HomeFooter from "@/Components/HomeComp/HomeFooter";
-import Newsletter from "@/Components/HomeComp/Newsletter";
-import OurAlumni from "@/Components/HomeComp/OurAlumni";
-import PaymentBar from "@/Components/HomeComp/PaymentBar";
-import ProficiencyExams from "@/Components/HomeComp/ProficiencyExams";
-import TechersInfo from "@/Components/HomeComp/TechersInfo";
-import WhyShould from "@/Components/HomeComp/WhyShould";
-import States from "@/Shared/States";
-import StudentsTestomony from "@/Shared/StudentsTestomony";
-import SubscribeToOur from "@/Shared/SubscribeToOur";
-import UpcomingBatches from "@/Shared/UpcomingBatches";
-import Experiment from "@/Utilities/Experiment";
+import CefrLevels from "../../Components/HomeComp/CefrLevels";
+import Contact from "../../Shared/Contact";
+import CoursesWeOffer from "../../Components/HomeComp/CoursesWeOffer";
+import EducationPartners from "../../Components/HomeComp/EducationPaterners";
+import FluencyCarrerCulture from "../../Components/HomeComp/FluencyCarrerCulture";
+import HomeBanner from "../../Components/HomeComp/HomeBanner";
+import Newsletter from "../../Components/HomeComp/Newsletter";
+import OurAlumni from "../../Components/HomeComp/OurAlumni";
+import PaymentBar from "../../Components/HomeComp/PaymentBar";
+import ProficiencyExams from "../../Components/HomeComp/ProficiencyExams";
+import TechersInfo from "../../Components/HomeComp/TechersInfo";
+import WhyShould from "../../Components/HomeComp/WhyShould";
+
+import UpcomingBatches from "../../Shared/UpcomingBatches";
+import StudentsTestomony from "../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
+import SubscribeToOur from "../../Shared/SubscribeToOur";
 
 export default function Home() {
   return (
-    <section>
-      <HomeBanner />
+    <>
+      <section className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col ">
+        <HomeBanner />
+        <Contact />
+      </section>
       <Newsletter />
-      <Experiment />
       <WhyShould />
       <CoursesWeOffer />
       <UpcomingBatches />
@@ -33,9 +34,7 @@ export default function Home() {
       <OurAlumni />
       <EducationPartners />
       <SubscribeToOur />
-      <PaymentBar/>
-      <HomeFooter/>
-      {/* here used shared components are : studentsTestomony, subscribeToOur, upcomingBatches */}
-    </section>
+      <PaymentBar />
+    </>
   );
 }

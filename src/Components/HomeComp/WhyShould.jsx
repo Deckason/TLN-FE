@@ -16,8 +16,12 @@ import material from "../../Assets/Homepage/whyShouldYouLearn/material.png";
 import sessions from "../../Assets/Homepage/whyShouldYouLearn/sessions.png";
 import flexible from "../../Assets/Homepage/whyShouldYouLearn/flexible timings.png";
 import batch from "../../Assets/Homepage/whyShouldYouLearn/batch.png";
-import ReusableModal from "./ReusableModal";
-import { useState } from "react";
+import ReusableModal from "../../Shared/ReusableModal";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 const WhyShould = () => {
   const [isModalOpen, setIsModalOpen] = useState({
     expert: false,
@@ -34,7 +38,9 @@ const WhyShould = () => {
     setIsModalOpen({ ...isModalOpen, [card]: isModalOpen });
   const closeModal = (card) =>
     setIsModalOpen({ ...isModalOpen, [card]: false });
-
+  const [currentPage, setCurrentPage] = useState(0);
+  const navigationPrevRef = React.useRef(currentPage);
+  const navigationNextRef = React.useRef(currentPage);
   const modalData = [
     {
       modal: isModalOpen.expert,
@@ -68,7 +74,7 @@ const WhyShould = () => {
       modalClose: "freeCourse",
       imgAvatar: DemoModal,
       img: demo,
-      modalTitle: "Free Demo",
+      modalTitle: "Holistic learning",
       modalDesc:
         "Experience our online platform firsthand with a complimentary trial session.",
     },
@@ -114,14 +120,15 @@ const WhyShould = () => {
       {/*  Modal */}
       {modalData.map((modal) => (
         <ReusableModal
+          key={modal.modalClose}
           isOpen={modal.modal}
           onClose={() => closeModal(modal.modalClose)}
         >
-          <div className="flex">
-            <div className="lg:flex hidden w-full h-full ">
-              <Image src={modal.imgAvatar} alt="em" />
+          <div className="flex  justify-start items-center">
+            <div className=" lg:flex hidden w-full h-full ">
+              <Image src={modal.imgAvatar} className="h-full w-fit" alt="em" />
             </div>
-            <div className="flex justify-center gap-5 flex-col">
+            <div className="flex  justify-center gap-5 w-full flex-col">
               <div className="flex flex-col gap-5">
                 <Image
                   src={modal.img}
@@ -132,22 +139,22 @@ const WhyShould = () => {
                   {modal.modalTitle}
                 </span>
               </div>
-              <p>{modal.modalDesc}</p>
+              <p className="h-full w-fit">{modal.modalDesc}</p>
             </div>
           </div>
         </ReusableModal>
       ))}
 
-      <div className="mt-[108px] w-full min-h-[658px] max-w-[1194px] mx-auto">
-        <h1 className="text-center mb-[48px] text-stone-900 text-xl xl:text-2xl font-bold ">
+      <div className="mt-[50px] md:mt-[108px] w-full  max-w-[1294px] mx-auto">
+        <h1 className="md:text-center mb-[48px] text-stone-900 max-lg:px-4 text-xl xl:text-2xl font-bold ">
           Why you should learn with The Language Network?
         </h1>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-y-6  gap-x-[32px] mx-10 xl:mx-0">
+        <div className="lg:grid hidden md:grid-cols-2 lg:grid-cols-4  w-[97%] mx-auto gap-y-6  gap-x-[32px]  ">
           <div
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
             className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -162,12 +169,12 @@ const WhyShould = () => {
                   Expert trainers
                 </div>
               </div>
-              <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+              <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("expert")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border h-full border-primary-color justify-center items-center gap-2.5 inline-flex"
                 >
-                  <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
                     Learn more
                   </div>
                   <svg
@@ -176,6 +183,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -193,7 +201,7 @@ const WhyShould = () => {
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
             className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -208,12 +216,12 @@ const WhyShould = () => {
                   Interactive sessions
                 </div>
               </div>
-              <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+              <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("interactive")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
                     Learn more
                   </div>
                   <svg
@@ -222,6 +230,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -239,7 +248,7 @@ const WhyShould = () => {
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
             className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -254,12 +263,12 @@ const WhyShould = () => {
                   Certified courses
                 </div>
               </div>
-              <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+              <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("certificated")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
                     Learn more
                   </div>
                   <svg
@@ -268,6 +277,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -285,7 +295,7 @@ const WhyShould = () => {
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
             className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -297,15 +307,15 @@ const WhyShould = () => {
                   </div>
                 </div>
                 <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
-                  Free demo
+                  Holistic learning
                 </div>
               </div>
-              <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+              <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("freeCourse")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
                     Learn more
                   </div>
                   <svg
@@ -314,6 +324,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -331,7 +342,7 @@ const WhyShould = () => {
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
             className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -346,12 +357,12 @@ const WhyShould = () => {
                   Free study material
                 </div>
               </div>
-              <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+              <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("freeStudy")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
                     Learn more
                   </div>
                   <svg
@@ -360,6 +371,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -377,7 +389,7 @@ const WhyShould = () => {
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
             className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -392,12 +404,12 @@ const WhyShould = () => {
                   Review sessions
                 </div>
               </div>
-              <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+              <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("review")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
                     Learn more
                   </div>
                   <svg
@@ -406,6 +418,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -423,7 +436,7 @@ const WhyShould = () => {
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
             className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -438,12 +451,12 @@ const WhyShould = () => {
                   Flexible timings
                 </div>
               </div>
-              <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+              <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("flexible")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
                     Learn more
                   </div>
                   <svg
@@ -452,6 +465,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -469,7 +483,7 @@ const WhyShould = () => {
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
             className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
           >
-            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-start items-start gap-8 flex">
+            <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
               <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
                 <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
                   <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
@@ -484,12 +498,12 @@ const WhyShould = () => {
                   Batch flexibility
                 </div>
               </div>
-              <div className="self-stretch lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+              <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("batch")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color xl:text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
                     Learn more
                   </div>
                   <svg
@@ -498,6 +512,7 @@ const WhyShould = () => {
                     viewBox="0 0 25 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="hover:tre"
                   >
                     <path
                       d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
@@ -511,6 +526,417 @@ const WhyShould = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="lg:hidden">
+          <Swiper
+            spaceBetween={20}
+            pagination={{
+              clickable: true,
+            }}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Navigation, Autoplay]}
+            navigation={{
+              prevEl: navigationPrevRef.current,
+              nextEl: navigationNextRef.current,
+            }}
+            onBeforeInit={(swiper) => {
+              swiper.params.navigation.prevEl = navigationPrevRef.current;
+              swiper.params.navigation.nextEl = navigationNextRef.current;
+            }}
+            onSlideChange={(swiper) => {
+              setCurrentPage(swiper.activeIndex);
+            }}
+            // slidesPerView={4}
+            breakpoints={{
+              1680: {
+                slidesPerView: 4,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              368: {
+                slidesPerView: 1,
+              },
+            }}
+            // modules={[Pagination]}
+            className="mySwiper mx-auto max-lg:flex justify-center   items-center max-w-[305px] md:max-w-[700px]  lg:max-w-[1000px]  xl:max-w-[1200px]  2xl:max-w-[1200px] hidden  3xl:max-w-[1440px]"
+          >
+            <SwiperSlide
+              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
+              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            >
+              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
+                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
+                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
+                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
+                      <Image
+                        alt="experts"
+                        src={experts}
+                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
+                      ></Image>
+                    </div>
+                  </div>
+                  <div className="text-center lg:-mt-5 xl:-mt-0 text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                    Expert trainers
+                  </div>
+                </div>
+                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+                  <button
+                    onClick={() => openModal("expert")}
+                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border h-full border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  >
+                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                      Learn more
+                    </div>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
+                        stroke="#1F9F90"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
+              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            >
+              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
+                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
+                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
+                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
+                      <Image
+                        alt="experts"
+                        src={interactive}
+                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
+                      ></Image>
+                    </div>
+                  </div>
+                  <div className="text-center lg:-mt-5 xl:-mt-0 text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                    Interactive sessions
+                  </div>
+                </div>
+                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+                  <button
+                    onClick={() => openModal("interactive")}
+                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  >
+                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                      Learn more
+                    </div>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
+                        stroke="#1F9F90"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
+              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            >
+              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
+                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
+                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
+                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
+                      <Image
+                        alt="experts"
+                        src={courses}
+                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
+                      ></Image>
+                    </div>
+                  </div>
+                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                    Certified courses
+                  </div>
+                </div>
+                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+                  <button
+                    onClick={() => openModal("certificated")}
+                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  >
+                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                      Learn more
+                    </div>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
+                        stroke="#1F9F90"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
+              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            >
+              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
+                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
+                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
+                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
+                      <Image
+                        alt="experts"
+                        src={demo}
+                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
+                      ></Image>
+                    </div>
+                  </div>
+                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                    Free demo
+                  </div>
+                </div>
+                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+                  <button
+                    onClick={() => openModal("freeCourse")}
+                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  >
+                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                      Learn more
+                    </div>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
+                        stroke="#1F9F90"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
+              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            >
+              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
+                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
+                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
+                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
+                      <Image
+                        alt="experts"
+                        src={material}
+                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
+                      ></Image>
+                    </div>
+                  </div>
+                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                    Free study material
+                  </div>
+                </div>
+                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+                  <button
+                    onClick={() => openModal("freeStudy")}
+                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  >
+                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                      Learn more
+                    </div>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
+                        stroke="#1F9F90"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
+              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            >
+              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
+                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
+                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
+                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
+                      <Image
+                        alt="experts"
+                        src={sessions}
+                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
+                      ></Image>
+                    </div>
+                  </div>
+                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                    Review sessions
+                  </div>
+                </div>
+                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+                  <button
+                    onClick={() => openModal("review")}
+                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  >
+                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                      Learn more
+                    </div>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
+                        stroke="#1F9F90"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
+              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            >
+              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
+                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
+                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
+                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
+                      <Image
+                        alt="experts"
+                        src={flexible}
+                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
+                      ></Image>
+                    </div>
+                  </div>
+                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                    Flexible timings
+                  </div>
+                </div>
+                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+                  <button
+                    onClick={() => openModal("flexible")}
+                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  >
+                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                      Learn more
+                    </div>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
+                        stroke="#1F9F90"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
+              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
+            >
+              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
+                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
+                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
+                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
+                      <Image
+                        alt="experts"
+                        src={batch}
+                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
+                      ></Image>
+                    </div>
+                  </div>
+                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                    Batch flexibility
+                  </div>
+                </div>
+                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+                  <button
+                    onClick={() => openModal("batch")}
+                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  >
+                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                      Learn more
+                    </div>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
+                        stroke="#1F9F90"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </>

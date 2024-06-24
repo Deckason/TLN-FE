@@ -1,7 +1,7 @@
 import Image from "next/image";
-import step1 from "@/Assets/Homepage/FluencyCarrerCulture/step1.png";
-import step2 from "@/Assets/Homepage/FluencyCarrerCulture/step2.png";
-import step3 from "@/Assets/Homepage/FluencyCarrerCulture/step3.png";
+import step1 from "../../Assets/Homepage/FluencyCarrerCulture/step1.png";
+import step2 from "../../Assets/Homepage/FluencyCarrerCulture/step2.png";
+import step3 from "../../Assets/Homepage/FluencyCarrerCulture/step3.png";
 import FluencyCultureCard from "./FluencyCultureCard";
 const FluencyCarrerCulture = () => {
   const datas = [
@@ -29,12 +29,12 @@ const FluencyCarrerCulture = () => {
   ];
   return (
     <div className="bg-[#F6F3F3]">
-      <section className="mb-[112px]">
-        <div className="w-full flex justify-center items-center h-[380px] bg-primary-color flex-col">
-          <h1 className="text-center text-neutral-50 lg:text-5xl text-3xl font-bold mb-[32px]">
+      <section className="mb-[112px] ">
+        <div className="w-full flex justify-center  items-center lg:h-[380px] h-[256px] bg-primary-color flex-col">
+          <h1 className="text-center text-neutral-50 lg:text-5xl text-3xl px-8 font-bold lg:mb-[32px]">
             Fluency, Culture, Career & Beyond
           </h1>
-          <h2 className="lg:text-[32px] text-[25px] text-center  text-neutral-50">
+          <h2 className="lg:text-[32px] p-4 text-[18px] text-center  text-neutral-50">
             From learning a new language to living it!
           </h2>
         </div>
@@ -49,7 +49,7 @@ const FluencyCarrerCulture = () => {
           {" "}
           Here are the steps
         </h1>
-        <div className="xl:grid-cols-3 2xl:max-w-[1440px] max-w-8xl  flex-wrap justify-center gap-1 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
+        <div className="xl:grid-cols-3 2xl:max-w-[1640px] max-w-8xl  flex-wrap justify-center gap-1 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
           {datas.map((data) => {
             return (
               <FluencyCultureCard
