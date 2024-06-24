@@ -491,6 +491,10 @@ const UpcomingBatches = () => {
             <FaArrowRight className="" />
           </button>
         </div>
+
+        <button className="hidden w-[183px] h-[58px] px-8 py-3.5 text-[#1F9F90] hover:text-white border-[#1F9F90] hover:bg-[#1F9F90] border rounded-lg justify-center items-center gap-2.5 lg:inline-flex text-center text-nowrap text-2xl font-medium ">
+          Load more
+        </button>
       </div>{" "}
     </>
   );
