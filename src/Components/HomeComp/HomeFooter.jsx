@@ -327,11 +327,22 @@ const HomeFooter = () => {
             <span className="font-semibold">Sitemap</span>
           </div>
           <div className="flex gap-5">
-            <Image src={FaceBook} alt="FaceBook" />
-            <Image src={Insta} alt="Insta" />
-            <Image src={Linkdin} alt="Linkdin" />
-            <Image src={Pinterest} alt="Pinterest" />
-            <Image src={Youtube} alt="Youtube" />
+            <Link href={"https://www.facebook.com/teamlanguagenetwork/"}>
+              <Image src={FaceBook} alt="FaceBook" className="hover:scale-105 cursor-pointer" />
+            </Link>
+            <Link href={"https://www.instagram.com/thelanguagenetwork/"}>
+              <Image src={Insta} alt="Insta" className="hover:scale-105 cursor-pointer" />
+            </Link>
+            <Link href={"https://www.linkedin.com/company/the-languagenetwork/"}>
+              <Image src={Linkdin} alt="Linkdin" className="hover:scale-105 cursor-pointer" />
+            </Link>
+            <Link href={"https://in.pinterest.com/teamlanguagenetwork/"}>
+              <Image src={Pinterest} alt="Pinterest" className="hover:scale-105 cursor-pointer" />
+            </Link>
+            <Link href={"https://www.youtube.com/channel/UC2pMpIkwz5AzM-SRMX9rjLQ"}>
+              <Image src={Youtube} alt="Youtube" className="hover:scale-105 cursor-pointer" />
+            </Link>
+
           </div>
         </div>
       </div>

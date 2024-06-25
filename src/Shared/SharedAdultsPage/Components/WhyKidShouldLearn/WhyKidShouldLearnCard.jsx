@@ -1,5 +1,4 @@
 import Image from "next/image";
-import arrowLeft from "@/Assets/Icons/arrowleft.svg";
 
 const WhyKidShouldLearnCard = ({ data }) => {
   return (

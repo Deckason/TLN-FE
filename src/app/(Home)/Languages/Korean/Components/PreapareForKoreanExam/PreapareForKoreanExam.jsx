@@ -1,6 +1,6 @@
-import dalf from "@/Assets/FrenchPage/FrenchMain/dalf.png";
-import delf from "@/Assets/FrenchPage/FrenchMain/delf.png";
-import telf from "@/Assets/FrenchPage/FrenchMain/telf.png";
+import dalf from "../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
+import delf from "../../../../../Assets/FrenchPage/FrenchMain/delf.png";
+import telf from "../../../../../Assets/FrenchPage/FrenchMain/telf.png";
 import PreapareForExamCard from "@/Shared/PreapareForExamCard";
 
 const PreapareForKoreanExam = () => {

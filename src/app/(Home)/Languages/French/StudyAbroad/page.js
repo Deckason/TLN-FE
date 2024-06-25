@@ -1,14 +1,14 @@
 "use client";
 
-import dalf from "@/Assets/FrenchPage/FrenchMain/dalf.png";
-import delf from "@/Assets/FrenchPage/FrenchMain/delf.png";
-import telf from "@/Assets/FrenchPage/FrenchMain/telf.png";
-import step1 from "@/Assets/Homepage/FluencyCarrerCulture/step1.png";
-import step4 from "@/Assets/Homepage/FluencyCarrerCulture/step2.png";
-import step2 from "@/Assets/Homepage/FluencyCarrerCulture/step3.png";
-import step3 from "@/Assets/FrenchPage/FrenchMain/step3.png";
+import dalf from "../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
+import delf from "../../../../../Assets/FrenchPage/FrenchMain/delf.png";
+import telf from "../../../../../Assets/FrenchPage/FrenchMain/telf.png";
+import step1 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step1.png";
+import step4 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
+import step2 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
+import step3 from "../../../../../Assets/FrenchPage/FrenchMain/step3.png";
 
-import SharedStudyAbroad from "@/Shared/SharedStudyAbroad";
+import SharedStudyAbroad from "../../../../../Shared/SharedStudyAbroad";
 
 const page = () => {
   const data = {
