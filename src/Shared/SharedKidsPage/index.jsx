@@ -1,5 +1,4 @@
-import WhyShould from "@/Components/HomeComp/WhyShould";
-import StudentsTestomony from "../StudentsTestomony";
+import WhyShould from "../../Components/HomeComp/WhyShould";import StudentsTestomony from "../StudentsTestomony";
 import SubscribeToOur from "../SubscribeToOur";
 import Banner from "./Components/Banner";
 import EverythingYouNeedToKnowAboutLanguage from "./Components/EverythingYouNeedToKnowAboutLanguage";

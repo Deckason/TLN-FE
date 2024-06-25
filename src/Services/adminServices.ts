@@ -1,4 +1,4 @@
-import httpService from "@/Config/httpServices";
+// import httpService from "@/Config/httpServices";
 
 class AdminService {
 

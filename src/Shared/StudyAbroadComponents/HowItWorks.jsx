@@ -2,7 +2,7 @@ import Image from "next/image";
 
 
 import HowItWorksCard from "./HowItWorksCard";
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
+import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 const HowItWorks = (data) => {
   return (
     <div className="bg-[#F6F3F3] w-full flex justify-center flex-col items-center py-[112px]">

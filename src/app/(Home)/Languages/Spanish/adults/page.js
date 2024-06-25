@@ -1,14 +1,14 @@
-import step1 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 477.png";
-import step2 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
-import step3 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
-import step4 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
+import step1 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 477.png";
+import step2 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
+import step3 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
+import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
 
-import dalf from "@/Assets/FrenchPage/FrenchMain/dalf.png";
-import delf from "@/Assets/FrenchPage/FrenchMain/delf.png";
+import dalf from "../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
+import delf from "../../../../../Assets/FrenchPage/FrenchMain/delf.png";
 
 import React from "react";
 
-import SharedAdultsPage from "@/Shared/SharedAdultsPage";
+import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";
 
 const page = () => {
   const data = {
