@@ -1,12 +1,12 @@
-import SharedKidsPage from "@/Shared/SharedKidsPage";
-import kids1 from "@/Assets/FrenchPage/FrenchForKids/kids (1).png";
-import kids2 from "@/Assets/FrenchPage/FrenchForKids/kids (2).png";
-import kids3 from "@/Assets/FrenchPage/FrenchForKids/kids (3).png";
-import step1 from "@/Assets/Homepage/FluencyCarrerCulture/step1.png";
-import step4 from "@/Assets/Homepage/FluencyCarrerCulture/step2.png";
-import step2 from "@/Assets/Homepage/FluencyCarrerCulture/step3.png";
-import step3 from "@/Assets/FrenchPage/FrenchMain/step3.png";
-import Cambridge_Assessment from "@/Assets/English/Cambridge_Assessment.jpg";
+import SharedKidsPage from "../../../../../Shared/SharedKidsPage";
+import kids1 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (1).png";
+import kids2 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (2).png";
+import kids3 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (3).png";
+import step1 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step1.png";
+import step4 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
+import step2 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
+import step3 from "../../../../../Assets/FrenchPage/FrenchMain/step3.png";
+import Cambridge_Assessment from "../../../../../Assets/English/Cambridge_Assessment.jpg";
 const EnglishForKidsPage = () => {
   const data = {
     BannerData: {

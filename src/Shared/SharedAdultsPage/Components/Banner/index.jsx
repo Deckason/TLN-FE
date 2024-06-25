@@ -1,7 +1,7 @@
 "use client";
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
+import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
-import BannerImage from "@/Assets/FrenchPage/FrenchAdult/BannerTwo.svg";
+import BannerImage from "../../../../Assets/FrenchPage/FrenchAdult/BannerTwo.svg";
 
 import { useEffect, useState } from "react";
 import States from "../States";
