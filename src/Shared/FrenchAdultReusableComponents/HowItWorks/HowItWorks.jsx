@@ -1,4 +1,4 @@
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
+import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
 import React from "react";
 

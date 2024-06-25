@@ -1,6 +1,5 @@
 import Image from "next/image";
-import arrowLeft from "@/Assets/Icons/arrowleft.svg";
-import Link from "next/link";
+import arrowLeft from "../../../../Assets/Icons/arrowleft.svg";import Link from "next/link";
 
 const PreapareForExamCard = ({ data }) => {
   return (

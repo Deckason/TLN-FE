@@ -29,7 +29,7 @@ const ClassLevelCard = ({ data }) => {
                 Learn more
               </div>
               <div className="w-6 h-6 relative">
-                <Image alt="arrowLeft" src={arrowLeft}></Image>
+                <Image alt="arrowLeft" width={6} height={6} src={arrowLeft}></Image>
               </div>
             </Link>
           </div>

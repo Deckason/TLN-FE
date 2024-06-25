@@ -1,4 +1,4 @@
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
+import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import States from "@/Shared/States";
 import Image from "next/image";
 import girl1 from "@/Assets/FrenchPage/FrenchMain/girl1.png";

@@ -1,20 +1,13 @@
-import PaymentBar from "@/Components/HomeComp/PaymentBar";
-import PageMainBanner from "@/Shared/FrenchAdultReusableComponents/PageMainBanner";
-import SubscribeToOur from "@/Shared/SubscribeToOur";
-import img1 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 514.png";
-import img2 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 515.png";
-import img3 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 516.png";
-import step1 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 477.png";
-import step2 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
-import step3 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
-import step4 from "@/Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
+import step1 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 477.png";
+import step2 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
+import step3 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
+import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
 
-import dalf from "@/Assets/FrenchPage/FrenchMain/dalf.png";
-import delf from "@/Assets/FrenchPage/FrenchMain/delf.png";
-import telf from "@/Assets/FrenchPage/FrenchMain/telf.png";
+import dalf from "../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
+import delf from "../../../../../Assets/FrenchPage/FrenchMain/delf.png";
+import telf from "../../../../../Assets/FrenchPage/FrenchMain/telf.png";
 import React from "react";
-import SharedAdultsPage from "@/Shared/SharedAdultsPage";
-
+import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";
 const page = () => {
   const data = {
     BannerData: {

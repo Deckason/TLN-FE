@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import BookAFreeDemoButton from "@/Shared/BookAFreeDemoButton";
+import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import HowItWorksCard from "./HowItWorksCard";
 import { SwiperSlide, Swiper } from "swiper/react";
 
