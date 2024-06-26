@@ -235,19 +235,20 @@ const Nav = () => {
                 <LanguageDropdown />
               </div>
             </div>
-            <div className=" hidden flex-grow gap-4 lg:flex justify-end me-5">
+            <div className=" hidden flex-grow gap-4 lg:flex justify-end me-5 ">
               <button
                 onClick={openModal}
-                className=" hover:shadow-md transition duration-300  lg:w-[153px] border  h-14 px-4 py-3.5 hover:bg-white hover:border-teal-600 hover:text-teal-600 focus:bg-white focus:border-teal-600 focus:text-teal-600 bg-teal-600 rounded-lg justify-center font-medium text-white  xl:text-[14px] items-center gap-2.5 inline-flex"
+                className=" hover:shadow-md transition duration-300 text-[16px]  lg:w-[160px] border  h-[53px] px-[18px] py-[8px] hover:bg-white hover:border-teal-600 hover:text-teal-600 focus:bg-white focus:border-teal-600 focus:text-teal-600 bg-teal-600 rounded-lg justify-center text-white items-center gap-2.5 inline-flex text-nowrap"
               >
                 Get Started
               </button>
-              <Link href={"https://login.live.com/"} className="hover:shadow-md transition hover:text-white text-teal-600 duration-300 self-stretch px-4 h-14 focus:bg-teal-600 focus:text-white py-3 rounded-lg border hover:bg-teal-600 font-medium bg-white border-teal-600 justify-center items-center gap-2.5 inline-flex">
-                <div className="w-fit lg:w-[180px] text-center  xl:text-[14px] font-medium ">
+              <Link href={"https://login.live.com/"} className="hover:shadow-md transition hover:text-white text-teal-600 duration-300 self-stretch px-[18px] py-[8px] h-[53px]  focus:bg-teal-600 focus:text-white rounded-lg border hover:bg-teal-600 bg-white border-teal-600 justify-center items-center gap-2.5 inline-flex text-nowrap">
+                <div className="lg:max-w-[280px] text-center  xl:text-[16px] font-medium ">
                   Already Booked The Class
                 </div>
               </Link>
             </div>
+
           </div>
           {/* side bar */}
           <div className="lg:hidden">
