@@ -22,6 +22,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import RightArrowPrimary from "../../Assets/WhyShould/RightArrowPrimary.svg";
+import RightArrowWhite from "../../Assets/WhyShould/RightArrowWhite.svg";
 const WhyShould = () => {
   const [isModalOpen, setIsModalOpen] = useState({
     expert: false,
@@ -33,6 +35,8 @@ const WhyShould = () => {
     flexible: false,
     batch: false,
   });
+
+  const [whyShouldHovered, setWhyShouldHovered] = useState(Array(8).fill(false));
 
   const openModal = (card) =>
     setIsModalOpen({ ...isModalOpen, [card]: isModalOpen });
@@ -172,27 +176,24 @@ const WhyShould = () => {
               <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("expert")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border h-full border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  onMouseEnter={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[0] = true;
+                    setWhyShouldHovered(newHovedStates)
+                  }
+                  }
+                  onMouseLeave={()=>{
+                    const newHovedStates=[...whyShouldHovered];
+                    newHovedStates[0]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border h-full border-primary-color justify-center items-center gap-2.5 inline-flex"
                 >
-                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="hover:tre"
-                  >
-                    <path
-                      d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                      stroke="#1F9F90"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[0] ? RightArrowWhite : RightArrowPrimary}></Image>
+
                 </button>
               </div>
             </div>
@@ -219,27 +220,24 @@ const WhyShould = () => {
               <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("interactive")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  onMouseEnter={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[1] = true;
+                    setWhyShouldHovered(newHovedStates)
+                  }
+                  }
+                  onMouseLeave={()=>{
+                    const newHovedStates=[...whyShouldHovered];
+                    newHovedStates[1]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="hover:tre"
-                  >
-                    <path
-                      d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                      stroke="#1F9F90"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[1] ? RightArrowWhite : RightArrowPrimary}></Image>
+
                 </button>
               </div>
             </div>
@@ -266,27 +264,24 @@ const WhyShould = () => {
               <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("certificated")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  onMouseEnter={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[2] = true;
+                    setWhyShouldHovered(newHovedStates)
+                  }
+                  }
+                  onMouseLeave={()=>{
+                    const newHovedStates=[...whyShouldHovered];
+                    newHovedStates[2]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="hover:tre"
-                  >
-                    <path
-                      d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                      stroke="#1F9F90"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[2] ? RightArrowWhite : RightArrowPrimary}></Image>
+
                 </button>
               </div>
             </div>
@@ -313,27 +308,24 @@ const WhyShould = () => {
               <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("freeCourse")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  onMouseEnter={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[3] = true;
+                    setWhyShouldHovered(newHovedStates)
+                  }
+                  }
+                  onMouseLeave={()=>{
+                    const newHovedStates=[...whyShouldHovered];
+                    newHovedStates[3]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="hover:tre"
-                  >
-                    <path
-                      d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                      stroke="#1F9F90"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[3] ? RightArrowWhite : RightArrowPrimary}></Image>
+
                 </button>
               </div>
             </div>
@@ -360,27 +352,24 @@ const WhyShould = () => {
               <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("freeStudy")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  onMouseEnter={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[4] = true;
+                    setWhyShouldHovered(newHovedStates)
+                  }
+                  }
+                  onMouseLeave={()=>{
+                    const newHovedStates=[...whyShouldHovered];
+                    newHovedStates[4]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="hover:tre"
-                  >
-                    <path
-                      d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                      stroke="#1F9F90"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[4] ? RightArrowWhite : RightArrowPrimary}></Image>
+
                 </button>
               </div>
             </div>
@@ -407,27 +396,24 @@ const WhyShould = () => {
               <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("review")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  onMouseEnter={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[5] = true;
+                    setWhyShouldHovered(newHovedStates)
+                  }
+                  }
+                  onMouseLeave={()=>{
+                    const newHovedStates=[...whyShouldHovered];
+                    newHovedStates[5]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="hover:tre"
-                  >
-                    <path
-                      d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                      stroke="#1F9F90"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[5] ? RightArrowWhite : RightArrowPrimary}></Image>
+
                 </button>
               </div>
             </div>
@@ -454,27 +440,24 @@ const WhyShould = () => {
               <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("flexible")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  onMouseEnter={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[6] = true;
+                    setWhyShouldHovered(newHovedStates)
+                  }
+                  }
+                  onMouseLeave={()=>{
+                    const newHovedStates=[...whyShouldHovered];
+                    newHovedStates[6]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="hover:tre"
-                  >
-                    <path
-                      d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                      stroke="#1F9F90"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[6] ? RightArrowWhite : RightArrowPrimary}></Image>
+
                 </button>
               </div>
             </div>
@@ -501,27 +484,24 @@ const WhyShould = () => {
               <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                 <button
                   onClick={() => openModal("batch")}
-                  className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  onMouseEnter={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[7] = true;
+                    setWhyShouldHovered(newHovedStates)
+                  }
+                  }
+                  onMouseLeave={()=>{
+                    const newHovedStates=[...whyShouldHovered];
+                    newHovedStates[7]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="hover:tre"
-                  >
-                    <path
-                      d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                      stroke="#1F9F90"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[7] ? RightArrowWhite : RightArrowPrimary}></Image>
+
                 </button>
               </div>
             </div>
@@ -590,9 +570,9 @@ const WhyShould = () => {
                 <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                   <button
                     onClick={() => openModal("expert")}
-                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border h-full border-primary-color justify-center items-center gap-2.5 inline-flex"
+                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border h-full border-primary-color justify-center items-center gap-2.5 inline-flex"
                   >
-                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                       Learn more
                     </div>
                     <svg
@@ -636,9 +616,9 @@ const WhyShould = () => {
                 <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                   <button
                     onClick={() => openModal("interactive")}
-                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                   >
-                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                       Learn more
                     </div>
                     <svg
@@ -682,9 +662,9 @@ const WhyShould = () => {
                 <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                   <button
                     onClick={() => openModal("certificated")}
-                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                   >
-                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                       Learn more
                     </div>
                     <svg
@@ -728,9 +708,9 @@ const WhyShould = () => {
                 <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                   <button
                     onClick={() => openModal("freeCourse")}
-                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                   >
-                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                       Learn more
                     </div>
                     <svg
@@ -774,9 +754,9 @@ const WhyShould = () => {
                 <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                   <button
                     onClick={() => openModal("freeStudy")}
-                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                   >
-                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                       Learn more
                     </div>
                     <svg
@@ -820,9 +800,9 @@ const WhyShould = () => {
                 <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                   <button
                     onClick={() => openModal("review")}
-                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                   >
-                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                       Learn more
                     </div>
                     <svg
@@ -866,9 +846,9 @@ const WhyShould = () => {
                 <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                   <button
                     onClick={() => openModal("flexible")}
-                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                   >
-                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                       Learn more
                     </div>
                     <svg
@@ -912,9 +892,9 @@ const WhyShould = () => {
                 <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                   <button
                     onClick={() => openModal("batch")}
-                    className="xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                   >
-                    <div className="text-center text-primary-color text-xl font-normal  leading-7 text-nowrap">
+                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                       Learn more
                     </div>
                     <svg
