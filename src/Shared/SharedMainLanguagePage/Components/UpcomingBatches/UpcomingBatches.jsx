@@ -49,8 +49,8 @@ const UpcomingBathches = () => {
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className="mt-[112px] max-md:mt-0 flex justify-center flex-col items-center">
-      <h1 className="text-stone-900 text-2xl text-center mb-[56px] font-bold ">
+    <div className="my-[92px] max-md:mt-0 flex justify-center flex-col items-center">
+      <h1 className="my-[40px] text-center self-stretch text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold  ">
         Upcoming Batches
       </h1>
       <section

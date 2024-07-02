@@ -25,7 +25,10 @@ export default function Home() {
       <Newsletter />
       <WhyShould />
       <CoursesWeOffer />
-      <UpcomingBatches />
+      <section className="-mt-[50px]">
+        <UpcomingBatches />
+      </section>
+
       <CefrLevels />
       <ProficiencyExams />
       <FluencyCarrerCulture />
@@ -35,6 +38,7 @@ export default function Home() {
       <EducationPartners />
       <SubscribeToOur />
       <PaymentBar />
+
     </>
   );
 }

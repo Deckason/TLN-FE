@@ -9,7 +9,7 @@ import Image from "next/image";
 const CoursesWeOffer = () => {
   return (
     <div className="my-[126px] ">
-      <h1 className="text-2xl px-4 font-bold md:text-center mb-[30px] xl:mb-[48px]">
+      <h1 className="my-[40px] text-center self-stretch text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold ">
         Courses We Offer
       </h1>
       <section className="max-w-[1452px] min-h-[180px] justify-center items-center flex-wrap xl:gap-x-[22px] gap-4 mx-10 lg:mx-auto flex">
