@@ -25,12 +25,12 @@ const CefrLevels = () => {
           </div>
           <div className="">
             <h1
-              className=" text-stone-900 text-2xl lg:text-5xl font-bold 
+              className=" text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold 
             "
             >
               Our courses are aligned with The CEFR Levels
             </h1>
-            <p className=" lg:min-h-[250px] text-neutral-500 lg:text-xl font-normal text-base mt-2 lg:mt-[23px] leading-7 text-justify mb-[16px]">
+            <p className=" lg:min-h-[250px] text-neutral-500 lg:text-[18px]/[24px] font-normal text-base mt-2 lg:mt-[23px] leading-7 text-justify mb-[16px]">
               Common European Framework of Reference for Languages (CEFR) is an
               internationally recognized standard that describes your learning
               progress in more detail. The framework helps you to explain your
