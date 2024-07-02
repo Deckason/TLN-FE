@@ -16,8 +16,8 @@ const UpcomingBatches = () => {
   const navigationNextRef = React.useRef(currentPage);
   return (
     <>
-      <div className="my-[112px]  flex justify-center flex-col items-center">
-        <h1 className="text-stone-900 text-2xl text-center mb-[60px] font-bold ">
+      <div className="my-[92px]  flex justify-center flex-col items-center">
+        <h1 className="my-[40px] text-center self-stretch text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold">
           Upcoming Batches
         </h1>
         <section
