@@ -179,7 +179,7 @@ const Nav = () => {
             <h1 className=" text-primary-color 2xl:text-[16px] xl:text-[14px] text-[10px] md:text-base text-xs font-bold hover:underline focus:underline underline-offset-1">
               {/* DELF /Goethe Exam Schedule */}
               <Link href={data ? data[1].link : "/"}>
-                <span className="font-normal"> {data ? data[1].label : ""}</span> {data && "|"}
+                <span className="font-normal"> {data ? data[1].label : ""}</span> {data && "| "}
                 {data ? data[1].topic : ""}
               </Link>
             </h1>
