@@ -29,7 +29,7 @@ const FluencyCarrerCulture = () => {
   ];
   return (
     <div className="bg-[#F6F3F3]">
-      <section className="mb-[112px] ">
+      <section className="mb-[82px] ">
         <div className="w-full flex justify-center  items-center lg:h-[321px] h-[256px] bg-primary-color flex-col">
           <h1 className="text-center text-neutral-50 lg:text-[45px] text-3xl px-8 font-bold lg:mb-[25px]">
             Fluency, Culture, Career & Beyond
@@ -41,7 +41,7 @@ const FluencyCarrerCulture = () => {
       </section>
 
       <section className="pb-[12px]">
-        <h1 className="text-stone-900 text-2xl font-bold  text-center mb-2">
+        <h1 className="text-stone-900 2xl:text-[45px] xl:text-[45px] max-md:text-2xl max-xl:text-3xl text-[24px] font-bold  text-center">
           {" "}
           Let&apos;s embark on a Language Trip!
         </h1>
@@ -49,7 +49,7 @@ const FluencyCarrerCulture = () => {
           {" "}
           Here are the steps
         </h1>
-        <div className="xl:grid-cols-3 2xl:max-w-[1640px] max-w-8xl  flex-wrap justify-center gap-1 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
+        <div className="xl:grid-cols-3 2xl:max-w-[1640px] max-w-8xl  flex-wrap justify-center gap-1 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[24px] ">
           {datas.map((data) => {
             return (
               <FluencyCultureCard
