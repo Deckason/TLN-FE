@@ -16,9 +16,9 @@ const StudentsTestomony = () => {
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className="2xl:max-w-[1680px] bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[112px]">
+    <div className="2xl:max-w-[1680px] bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[82px]">
       <div className="min-h-[518px]  mx-auto flex justify-center flex-col items-center">
-        <h1 className="text-stone-900 text-center text-[60px] mb-8 font-bold max-lg:text-2xl">
+        <h1 className="text-stone-900 text-center 2xl:text-[50px] xl:text-[50px] max-md:text-2xl max-xl:text-5xl text-[24px] mb-8 font-bold max-lg:text-2xl">
           Hear it from the Learners
         </h1>
         <div className="  w-full ">
