@@ -271,7 +271,6 @@ const EnglishPage = () => {
     const everyData = data.filter(
       (item) => item.language === "English" && item.category === "Everything you need to know"
     )
-    console.log(everyData);
     setContent((prev) => ({...prev, FaqsData: faqData , EveryThingYouNeedToKnowAbout: {
         ...prev.EveryThingYouNeedToKnowAbout, // Spread the existing properties
         CardData: everyData, // Update CardData 

@@ -10,11 +10,11 @@ const Banner = ({ BannerData }) => {
   const [BannerInfo, setBannerInfo] = useState();
   useEffect(() => {
     if (Splicing) {
-      setBannerInfo(BannerData.Description.slice(0, 200));
+      setBannerInfo(BannerData?.Description.slice(0, 200));
     } else {
-      setBannerInfo(BannerData.Description);
+      setBannerInfo(BannerData?.Description);
     }
-  }, [Splicing]);
+  }, [Splicing,BannerData?.Description]);
   return (
     <div className="w-full relative flex justify-center items-center flex-col ">
       <div className="mt-[43px] max-w-[1681px]  mx-auto w-full">
