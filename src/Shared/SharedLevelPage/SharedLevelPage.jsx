@@ -10,7 +10,6 @@ import UpcomingBathches from "./Components/UpcomingBatches/UpcomingBathces";
 import WhatWIllYouLearn from "./Components/WhatWillYouLearn/WhatWIllYouLearn";
 
 const SharedLevelPage = ({ Data }) => {
-  console.log(Data.Faqs);
   let faqs = [];
 
   if (Data?.Faqs?.length > 0 && Data?.Faqs !== undefined) {
