@@ -256,8 +256,17 @@ const MandarinPage = () => {
   const [content, setContent] = useState(MandarinLanguageData);
   useEffect(() => {
     if (!data) return;
-    const faqData = data.filter((item) => item.language === "Mandarine");
-    setContent((prev) => ({ ...prev, FaqsData: faqData }));
+    const faqData = data.filter((item) => item.language === "Mandarine"  && item.category === "General"
+  );
+
+    const everyData = data.filter(
+      (item) => item.language === "Mandarine" && item.category === "Everything you need to know"
+    )
+    setContent((prev) => ({...prev, FaqsData: faqData , EveryThingYouNeedToKnowAbout: {
+        ...prev.EveryThingYouNeedToKnowAbout, // Spread the existing properties
+        CardData: everyData, // Update CardData 
+      } }))
+      
   }, [data]);
   return (
     <div>
