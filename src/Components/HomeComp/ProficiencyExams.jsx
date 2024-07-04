@@ -10,11 +10,11 @@ import logo9 from "../../Assets/Homepage/ProficiencyExam/logo9.png";
 import Image from "next/image";
 const ProficiencyExams = () => {
   return (
-    <div className="my-[112px] max-w-[1681px]  mx-auto flex justify-center w-full items-center ">
+    <div className="my-[90px] max-w-[1681px]  mx-auto flex justify-center w-full items-center ">
       <section>
         {" "}
         <div>
-          <h1 className="text-stone-900 px-4 text-2xl font-bold text-center lg:mb-[88.9px]">
+          <h1 className="mb-[40px] text-stone-900 px-4 2xl:text-[45px] xl:text-[45px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold text-center">
             We prepare you for International Proficiency Exams
           </h1>
         </div>
