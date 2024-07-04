@@ -25,7 +25,7 @@ const CefrLevels = () => {
           </div>
           <div>
             <h1
-              className=" text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold"
+              className="text-stone-900 2xl:text-[45px] xl:text-[45px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold"
             >
               Our courses are aligned with The CEFR Levels
             </h1>
@@ -42,7 +42,7 @@ const CefrLevels = () => {
               <br />
               <br />
             </p>
-            <div className=" w-fit flex justify-start -ml-7 xl:-ml-0">
+            <div className="flex -ml-[27px]">
               <BookAFreeDemoButton></BookAFreeDemoButton>
             </div>
           </div>
