@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useGetNewsQuery } from "../../store/apiSlice";
 const Newsletter = () => {
   const {data}=useGetNewsQuery("");
-  console.log(data);
   return (
     <div className="flex justify-center items-center px-16 py-20 bg-secondary-color mt-10 max-md:px-5">
       <div className="mt-7 w-full max-w-[1680px] max-md:max-w-full">

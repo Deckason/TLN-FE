@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import FaqsCard from "../Common/FaqsCard";
 
 const FaqsLanguage = ({ FaqsData }) => {
-  console.log("👉🏻 > file: index.jsx:9 > FaqsLanguage > FaqsData:", FaqsData);
   const [splicing, setSplicing] = useState(true);
   let newData = [...FaqsData];
   // useEffect(() => {

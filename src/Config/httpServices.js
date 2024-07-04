@@ -6,7 +6,6 @@ axios.defaults.baseURL = "http://localhost:8000"; // url
 // Request interceptor (without authentication token)
 axios.interceptors.request.use(
   async (request) => {
-    console.log({ request });
     return request;
   },
   (error) => {
@@ -31,10 +30,12 @@ axios.interceptors.response.use(
   }
 );
 
-export default {
+const httpServices = {
   get: axios.get,
   post: axios.post,
   put: axios.put,
   delete: axios.delete,
   patch: axios.patch,
 };
+
+export default httpServices;
