@@ -12,7 +12,6 @@ const ProficiencyExams = () => {
   return (
     <div className="my-[90px] max-w-[1681px]  mx-auto flex justify-center w-full items-center ">
       <section>
-        {" "}
         <div>
           <h1 className="mb-[40px] text-stone-900 px-4 2xl:text-[45px] xl:text-[45px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold text-center">
             We prepare you for International Proficiency Exams

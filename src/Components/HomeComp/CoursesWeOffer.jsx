@@ -8,7 +8,7 @@ import korean from "../../Assets/Homepage/languages/korean.png";
 import Image from "next/image";
 const CoursesWeOffer = () => {
   return (
-    <div className="my-[126px] ">
+    <div className="my-[126px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
       <h1 className="my-[40px] text-center self-stretch text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold ">
         Courses We Offer
       </h1>
