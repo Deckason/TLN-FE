@@ -702,7 +702,7 @@ const WhyShould = () => {
                     </div>
                   </div>
                   <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
-                    Free demo
+                    Book a free demo
                   </div>
                 </div>
                 <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
