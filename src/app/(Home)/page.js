@@ -34,6 +34,7 @@ export default function Home() {
         <ProficiencyExams />
       </section>
       <FluencyCarrerCulture />
+      
       <StudentsTestomony />
       <TechersInfo />
       <OurAlumni />

@@ -40,7 +40,7 @@ const FluencyCarrerCulture = () => {
         </div>
       </section>
 
-      <section className="pb-[12px]">
+      <section className="pb-[12px] flex flex-col justify-center items-center">
         <h1 className="text-stone-900 2xl:text-[45px] xl:text-[45px] max-md:text-2xl max-xl:text-3xl text-[24px] font-bold  text-center">
           {" "}
           Let&apos;s embark on a Language Trip!
