@@ -18,20 +18,23 @@ import SubscribeToOur from "../../Shared/SubscribeToOur";
 export default function Home() {
   return (
     <>
-      <section className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col ">
+      <section className="2xl:max-w-[1680px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px] mx-auto relative  flex justify-center items-center flex-col ">
         <HomeBanner />
         <Contact />
       </section>
       <Newsletter />
       <WhyShould />
       <CoursesWeOffer />
-      <section className="-mt-[50px]">
+      <section className="-mt-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <UpcomingBatches />
       </section>
 
       <CefrLevels />
-      <ProficiencyExams />
+      <section className="mx-4 lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
+        <ProficiencyExams />
+      </section>
       <FluencyCarrerCulture />
+      
       <StudentsTestomony />
       <TechersInfo />
       <OurAlumni />

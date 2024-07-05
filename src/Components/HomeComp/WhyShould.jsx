@@ -120,7 +120,7 @@ const WhyShould = () => {
     },
   ];
   return (
-    <>
+    <div className="lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
       {/*  Modal */}
       {modalData.map((modal) => (
         <ReusableModal
@@ -128,7 +128,7 @@ const WhyShould = () => {
           isOpen={modal.modal}
           onClose={() => closeModal(modal.modalClose)}
         >
-          <div className="flex  justify-start items-center">
+          <div className="flex justify-start items-center">
             <div className=" lg:flex hidden w-full h-full ">
               <Image src={modal.imgAvatar} className="h-full w-fit" alt="em" />
             </div>
@@ -153,7 +153,7 @@ const WhyShould = () => {
         <h1 className="self-stretch 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] md:text-center my-[48px] text-stone-900 max-lg:px-4 text-xl font-bold ">
           Why you should learn with The Language Network?
         </h1>
-        <div className="lg:grid hidden md:grid-cols-2 lg:grid-cols-4  w-[97%] mx-auto gap-y-6  gap-x-[32px]  ">
+        <div className="lg:grid hidden md:grid-cols-2 lg:grid-cols-4 mx-auto gap-y-6  gap-x-[32px]  ">
           <div
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
             className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
@@ -702,7 +702,7 @@ const WhyShould = () => {
                     </div>
                   </div>
                   <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
-                    Free demo
+                    Book a free demo
                   </div>
                 </div>
                 <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
@@ -919,7 +919,7 @@ const WhyShould = () => {
           </Swiper>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
