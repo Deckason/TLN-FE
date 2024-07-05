@@ -170,11 +170,11 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
         <div className="2xl:max-w-[1640px]  w-full min-h-[902px] relative hidden md:block">
           <Image
             alt="whyLearnFrench"
-            className="2xl:w-[470px]  2xl:h-[471px] xl:w-[376.5px] mt-[80px] lg:scale-75 2xl:scale-100 hidden xl:block xl:left-1/2 2xl:left-[579px] top-[60px] mx-auto "
+            className="4xl:w-[470px]  4xl:h-[471px] 2xl:min-w-[318px]  2xl:min-h-[px] xl:w-[376.5px] mt-[80px] lg:scale-75 2xl:scale-100 hidden xl:block xl:left-1/2 2xl:left-[579px] top-[60px] mx-auto "
             src={whyLearnFrench}
           />
 
-          <div className="left-0 top-0  xl:absolute justify-between items-start w-full p-5 flex md:flex-row flex-col gap-y-5 md:gap-5 lg:gap-0">
+          <div className="left-0 top-0 xl:absolute justify-between items-start w-full p-5 4xl:p-5 3xl:px-12 flex md:flex-row flex-col gap-y-5 md:gap-5 lg:gap-0">
             <div className="min-h-[276px] shadow-md hover:shadow-xl transition duration-300 pb-6 bg-white rounded-2xl justify-start md:w-1/2 lg:w-full max-w-[405px] items-start gap-2.5 flex">
               <div className="grow shrink basis-0 flex-col justify-start items-center gap-4 inline-flex">
                 <div className="self-stretch h-[88px] py-8 bg-secondary-color rounded-t-2xl flex-col justify-start items-center gap-2.5 flex">
@@ -213,7 +213,8 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
               </div>
             </div>
           </div>
-          <div className=" h-full top-[394px] xl:absolute justify-between items-start flex lg:px-[60px] px-5 md:px-10 md:gap-5 lg:gap-0 md:flex-row flex-col  w-full">
+
+          <div className=" h-full top-[394px] xl:absolute justify-between items-start flex  p-5  2xl:px-0 4xl:px-[60px] md:px-10 md:gap-5 lg:gap-0 md:flex-row flex-col  w-full">
             <div className="min-h-[268px] md:w-1/2 lg:w-full max-w-[405px] lg:pb-6 pb-10 max-sm:mb-5 bg-white  rounded-2xl shadow-md hover:shadow-xl transition duration-300 justify-start items-start gap-2.5 flex">
               <div className="grow shrink basis-0 flex-col justify-start items-center gap-4 inline-flex">
                 <div className="self-stretch h-[88px] py-8 bg-secondary-color rounded-t-2xl flex-col justify-start items-center gap-2.5 flex">
@@ -272,8 +273,9 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
               </div>
             </div>
           </div>
+
         </div>
-        <div className="px-8  scale-125 w-[70%] py-3.5   rounded-lg justify-center items-center gap-2.5 inline-flex">
+        <div className="px-8  scale-125 py-3.5  rounded-lg justify-center items-center gap-2.5 inline-flex">
           <BookAFreeDemoButton />
         </div>
       </div>
