@@ -1,0 +1,1693 @@
+[33mcommit ad003bbe24f60dda6ae1a504b2dd2307d79f22ec[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m
+Merge: 5c9c1d6 46faccb
+Author: Hemant Vishwakarma <152378499+hemvish11@users.noreply.github.com>
+Date:   Thu Jul 4 17:41:12 2024 +0530
+
+    Merge pull request #82 from banao-tech/hemant
+    
+    Solved 10+ bugs
+
+[33mcommit 46faccbb3a9029e8f03679160a0ce3437cae0770[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Wed Jul 3 20:06:22 2024 +0530
+
+    Hear it from the Learners fontsize , margin, padding updated
+
+[33mcommit cb319a1872348f106a1be663b352f7fe016b27f6[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Wed Jul 3 19:57:00 2024 +0530
+
+    Let's embark on a Language Trip! margin and padding fixed
+
+[33mcommit ed55d91b0ec67a49f9182368c0c5b4b9d1a6dc05[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Wed Jul 3 19:36:06 2024 +0530
+
+    Fluency, Culture, Career & Beyond margin and font-size fixed
+
+[33mcommit 5c9c1d604dff1a30f6977071ec4ba4fdb70388e6[m[33m ([m[1;31morigin/shub-dev[m[33m)[m
+Merge: 1529a6e 38d5d08
+Author: Shubhanshu Nayak <154456084+DevAlchamist@users.noreply.github.com>
+Date:   Wed Jul 3 14:39:36 2024 +0530
+
+    Merge pull request #81 from banao-tech/shub-dev
+    
+    Deployment bug
+
+[33mcommit 38d5d082f89fe5d6e43caff6a144a2d8954124d2[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Wed Jul 3 14:38:52 2024 +0530
+
+    Deployment bug
+
+[33mcommit c5a4aad155f48af3d973b686b0b4179c1f95f4a8[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Wed Jul 3 12:16:05 2024 +0530
+
+    we prepare for internation section margin padding size updated
+
+[33mcommit 1529a6e8e84e213b9e31c987120fef34b6b564e3[m
+Merge: 69f1be8 45dc018
+Author: Hemant Vishwakarma <152378499+hemvish11@users.noreply.github.com>
+Date:   Tue Jul 2 15:58:25 2024 +0530
+
+    Merge pull request #80 from banao-tech/hemant
+    
+    7+ bugs solved
+
+[33mcommit 45dc018c6dfcc5aab4070a51be8bfc22ea49808c[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jul 2 13:30:43 2024 +0530
+
+    Upcoming batches margin fixed in homepage
+
+[33mcommit c77e77a636bf4bc58b7f1968fcfe09f8d283c9b0[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jul 2 13:13:52 2024 +0530
+
+    cefr levels margin and padding fixed
+
+[33mcommit 87af22e468faf6464f4aff47dce9b4e81ea22b7b[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jul 2 12:53:28 2024 +0530
+
+    CEFR levels ui updated
+
+[33mcommit 30ea7df426ad3943bbd4f4a62b19501dd5fa691a[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jul 2 12:49:04 2024 +0530
+
+    upcoming batches margin fixed of all pages
+
+[33mcommit 9f35f04397c8a16a2b573d3b03da10f95a7e61e0[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jul 2 12:31:45 2024 +0530
+
+    courses we offer homepage ui fixed
+
+[33mcommit 8ad19cfe1281c5c321911ca448fc29bd04d6ce69[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jul 2 12:29:03 2024 +0530
+
+    Why should I learn homepage ui fiexed
+
+[33mcommit 7cd152c65ecc32f0787de386617ef9b277818346[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jul 2 12:16:48 2024 +0530
+
+    Delf goeth ui fixed
+
+[33mcommit e4711fbbf1000e7899e1aaaad9a104e72bee8e4d[m
+Merge: e0caafe dbe2c32
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jul 2 12:13:01 2024 +0530
+
+    Merge branch 'main' of https://github.com/banao-tech/TLN-FE into hemant
+
+[33mcommit 69f1be8c50eae0571b60b796aa2b1e163ce54935[m
+Merge: 609b6c6 e0caafe
+Author: Hemant Vishwakarma <152378499+hemvish11@users.noreply.github.com>
+Date:   Wed Jun 26 18:37:03 2024 +0530
+
+    Merge pull request #79 from banao-tech/hemant
+    
+    5+ bugs solved
+
+[33mcommit e0caafef0fafd49b94d8783aa71669fb26cb82be[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Wed Jun 26 18:33:35 2024 +0530
+
+    Whyshould learn more button ui state fixed
+
+[33mcommit cae741d98017f2b8793d3928a8195426ccc9d90c[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Wed Jun 26 17:08:31 2024 +0530
+
+    Already booked class button ui fixed
+
+[33mcommit dbe2c32e63e654a9a48b2dcccd2ea2c541298c48[m
+Merge: f356c6f 609b6c6
+Author: Dhaval Rupapara <101641877+dhaval079@users.noreply.github.com>
+Date:   Tue Jun 25 18:15:54 2024 +0530
+
+    Merge pull request #78 from banao-tech/dev
+    
+    Dev
+
+[33mcommit 609b6c6c461dea92183e213b743b28bfdfb19b2a[m
+Author: dhaval079 <rupaparadhaval1234@gmail.com>
+Date:   Tue Jun 25 18:15:17 2024 +0530
+
+    English EverythingYouNeed made Dynamic
+
+[33mcommit a4b9dfa03bca1ef504df773fb155c35fb8b50bfe[m
+Author: dhaval079 <rupaparadhaval1234@gmail.com>
+Date:   Tue Jun 25 17:09:46 2024 +0530
+
+    All Pages Stats Bar Intergration
+
+[33mcommit f356c6f7de766136e04dff9707681ee56b559577[m
+Merge: 3c7d295 3b2beed
+Author: Dhaval Rupapara <101641877+dhaval079@users.noreply.github.com>
+Date:   Tue Jun 25 16:57:46 2024 +0530
+
+    Merge pull request #77 from banao-tech/dev
+    
+    Dev
+
+[33mcommit 3b2beed40948ce7635cf9a18f809dfb13a6b3be1[m
+Merge: 3c7d295 6e070a7
+Author: dhaval079 <rupaparadhaval1234@gmail.com>
+Date:   Tue Jun 25 16:55:41 2024 +0530
+
+    Merge branch 'dev' of https://github.com/banao-tech/TLN-FE into dev
+
+[33mcommit 6e070a7fa055fdf969c736e388fa50d61e6fd963[m
+Merge: eb3c871 e187522
+Author: Hemant Vishwakarma <152378499+hemvish11@users.noreply.github.com>
+Date:   Tue Jun 25 13:32:19 2024 +0530
+
+    Merge pull request #76 from banao-tech/hemant
+    
+    10 bugs solved
+
+[33mcommit e1875226e9bb5d0e0cd98344f6a225756f548196[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jun 25 13:23:03 2024 +0530
+
+    fb,insta,linkedin,pinterest,yt links added
+
+[33mcommit da7b27029eb4427cfa402331f2446fef33c0d630[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jun 25 12:43:09 2024 +0530
+
+    already booked class and free demo links added
+
+[33mcommit 27e932b09ee51edeb44de831422f2514f07251f7[m
+Merge: 24c9a8c aefcaf5
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jun 25 12:23:35 2024 +0530
+
+    Merge branch 'hemant' of https://github.com/banao-tech/TLN-FE into hemant
+
+[33mcommit 24c9a8ccf8163cf404fa4655cadd5b90babdb91d[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jun 25 12:23:14 2024 +0530
+
+    whatsapp and phone icons added to all pages
+
+[33mcommit ca4df255264e392442ec47249d12ad6c001003ae[m
+Merge: e24d36f eb3c871
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jun 25 12:06:29 2024 +0530
+
+    Merge branch 'dev' of https://github.com/banao-tech/TLN-FE into hemant
+
+[33mcommit eb3c871a63f876afbde8814820c80daf8cffd3ff[m
+Merge: 3b7b3b9 c4658b1
+Author: Shubhanshu Nayak <154456084+DevAlchamist@users.noreply.github.com>
+Date:   Tue Jun 25 11:28:25 2024 +0530
+
+    Merge pull request #75 from banao-tech/shub-dev
+    
+    Fixes
+
+[33mcommit c4658b1f10072214a3b02532a163a710934003c1[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Tue Jun 25 11:22:50 2024 +0530
+
+    Error Fixes
+
+[33mcommit 3c7d295f38e7141ef9de12ab1f9522e9c5bc3472[m[33m ([m[1;31morigin/dhaval[m[33m, [m[1;32mdhaval[m[33m)[m
+Merge: a5e25a9 aefcaf5
+Author: Dhaval Rupapara <101641877+dhaval079@users.noreply.github.com>
+Date:   Mon Jun 24 19:26:57 2024 +0530
+
+    Merge pull request #74 from banao-tech/hemant
+    
+    Stats Bar Dynamic Intergration
+
+[33mcommit a5e25a93b110395b3329b39e7b97a4ff8877d63d[m
+Merge: 1ebac4c 198a281
+Author: Dhaval Rupapara <101641877+dhaval079@users.noreply.github.com>
+Date:   Mon Jun 24 19:26:28 2024 +0530
+
+    Merge pull request #73 from banao-tech/dhaval
+    
+    Dhaval
+
+[33mcommit 198a28126176880cd468a4f8ffe930c63fb0b7f6[m
+Author: dhaval079 <rupaparadhaval1234@gmail.com>
+Date:   Mon Jun 24 19:25:05 2024 +0530
+
+    Stats Bar Dynamic intergration
+
+[33mcommit aefcaf5be0fcbccab7f585590bb819b612d9f55c[m[33m ([m[1;32mhemant[m[33m)[m
+Author: dhaval079 <rupaparadhaval1234@gmail.com>
+Date:   Mon Jun 24 19:23:52 2024 +0530
+
+    Stats Bar Dynamic Intergration
+
+[33mcommit e24d36fa9036b0402dae036e2d02d12d24fe5a2f[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Mon Jun 24 18:18:56 2024 +0530
+
+    Load more button added in upcoming section of homepage
+
+[33mcommit aa528546ec9e652f086f3eec0672959584019bbb[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Mon Jun 24 17:57:36 2024 +0530
+
+    Import alias Update
+
+[33mcommit 3b7b3b9e2e347abf9016a07438c77f096b50396a[m
+Merge: 2750a1f aea49eb
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Jun 20 20:40:14 2024 +0600
+
+    Merge pull request #72 from banao-tech/Arafath_ui
+    
+    fix issue trial one
+
+[33mcommit aea49eb7d8ed3f89fc1bc225ae2db91632e0bc8a[m[33m ([m[1;31morigin/Arafath_ui[m[33m)[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu Jun 20 20:39:05 2024 +0600
+
+    fix issue trial one
+
+[33mcommit 2750a1f1fc726c93a59142c0a609e394b3837a2e[m
+Merge: caa8541 8ef887a
+Author: Shubhanshu Nayak <154456084+DevAlchamist@users.noreply.github.com>
+Date:   Thu Jun 20 18:18:05 2024 +0530
+
+    Merge pull request #70 from banao-tech/shub-dev
+    
+    Shub dev
+
+[33mcommit 8ef887a8c2b3b8d8523a8dc0173ace8c76614ccc[m
+Merge: bd69179 caa8541
+Author: Shubhanshu Nayak <154456084+DevAlchamist@users.noreply.github.com>
+Date:   Thu Jun 20 18:17:55 2024 +0530
+
+    Merge branch 'dev' into shub-dev
+
+[33mcommit caa8541246152c885ee75fbef373c16e5189b375[m
+Merge: b36eba4 2057897
+Author: Hemant Vishwakarma <152378499+hemvish11@users.noreply.github.com>
+Date:   Thu Jun 20 17:19:05 2024 +0530
+
+    Merge pull request #71 from banao-tech/hemant
+    
+    Enroll now button and subscribe input field bugs are solved
+
+[33mcommit 2057897d71c2cad43abaf033f5cfb50b24967d68[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Thu Jun 20 17:12:45 2024 +0530
+
+    enroll now button bug solved
+
+[33mcommit a46dd6ce768ca514e66fe7662958623508c95d18[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Thu Jun 20 17:07:53 2024 +0530
+
+    Subscribe input box bug solved
+
+[33mcommit bd6917989bcdb361a1f3b197cefd680c3ecd197b[m
+Merge: a02dec0 b36eba4
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Jun 20 15:35:55 2024 +0530
+
+    Merge branch 'dev' of https://github.com/banao-tech/TLN-FE into shub-dev
+
+[33mcommit a02dec0f36d1c69be6bcd1a22ae5260e0474cf6c[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Jun 20 15:34:49 2024 +0530
+
+    Responsive
+
+[33mcommit b36eba496798d66c00c5d9fd815b2c7bd4f59a94[m
+Merge: 9ad376a 962eec4
+Author: Hemant Vishwakarma <152378499+hemvish11@users.noreply.github.com>
+Date:   Wed Jun 19 16:34:47 2024 +0530
+
+    Merge pull request #69 from banao-tech/hemant
+    
+    study abroad pages made responsive
+
+[33mcommit 962eec4bd7cae81c32308987e9395e2c8fd579bd[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Wed Jun 19 16:32:23 2024 +0530
+
+    study abroad pages made responsive
+
+[33mcommit 2777d8e10fa5730b2d60cf5d9b058874fddf5a82[m
+Merge: 3409f63 9ad376a
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Wed Jun 19 15:52:34 2024 +0530
+
+    Merge branch 'dev' of https://github.com/banao-tech/TLN-FE into shub-dev
+
+[33mcommit 9ad376a135333a26aa869758e63810ebbc6c43e9[m
+Merge: 7e51c73 510e7dc
+Author: Hemant Vishwakarma <152378499+hemvish11@users.noreply.github.com>
+Date:   Tue Jun 18 19:53:16 2024 +0530
+
+    Merge pull request #68 from banao-tech/hemant
+    
+    Adult pages made responsive
+
+[33mcommit 510e7dc3b03fb8a832a687cdeb5fff8fd5060311[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jun 18 17:03:49 2024 +0530
+
+    adult page margin done
+
+[33mcommit 1fd2c8e20ae0d975d2b16795d38f19309f9f951f[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Tue Jun 18 16:42:07 2024 +0530
+
+    Adult page made responsive
+
+[33mcommit 7e51c73f3f880086e046b641c8e03d6883e503ec[m[33m ([m[1;31morigin/hemant2[m[33m)[m
+Merge: 886b4a1 a6f4844
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Sat Jun 15 19:51:46 2024 +0600
+
+    Merge pull request #67 from banao-tech/Arafath_ui
+    
+    main kids page responsive for mobile view done
+
+[33mcommit a6f484462bfe7089b0b05781352fb067ab1aa3ca[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Sat Jun 15 19:49:14 2024 +0600
+
+    main kids page responsive for mobile view done
+
+[33mcommit 886b4a136ebb07f7a15042972fb8969f23c8b66f[m
+Merge: e670230 e83acf1
+Author: Hemant Vishwakarma <152378499+hemvish11@users.noreply.github.com>
+Date:   Fri Jun 14 18:11:44 2024 +0530
+
+    Merge pull request #65 from banao-tech/hemant
+    
+    5 bugs solved
+
+[33mcommit e83acf16ed84af22e9946297ff1cdf062b7685cc[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Fri Jun 14 17:51:59 2024 +0530
+
+    preferred language button 3 more bugs solved
+
+[33mcommit 1c35a6fa1e06fbd07c8ddc8fc187f50676284499[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Fri Jun 14 17:04:09 2024 +0530
+
+    work with us ,study abroad 2 bugs resolved
+
+[33mcommit e6702307f757a78a0b969c3632bc0de522223d26[m
+Merge: 5875b1e e140cbc
+Author: Hemant Vishwakarma <152378499+hemvish11@users.noreply.github.com>
+Date:   Thu Jun 13 20:34:28 2024 +0530
+
+    Merge pull request #64 from banao-tech/hemant2
+    
+    Made 3 section dynamic
+
+[33mcommit e140cbcfd77d84b6fd59f5cfe49382f9b1afe266[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Thu Jun 13 20:31:12 2024 +0530
+
+    All languages FAQs made dynamic
+
+[33mcommit 5875b1ed04d7f59b62026630dfc92d08ef3e384b[m
+Merge: 44612a3 cc54753
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Jun 13 20:24:08 2024 +0600
+
+    Merge pull request #63 from banao-tech/Arafath_ui
+    
+    Responsive
+
+[33mcommit cc54753e1c59c95207417e1c7c2a3e0094562f16[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu Jun 13 20:18:38 2024 +0600
+
+    main language page responsive done
+
+[33mcommit 37e9baca88cd90568b08c2be8448f63c8fbe8708[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Thu Jun 13 19:25:02 2024 +0530
+
+    newsletter dynamic done
+
+[33mcommit 43e3fe1a68a735919c3acecf5480d2686907b225[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Thu Jun 13 19:11:20 2024 +0530
+
+    Nav link made dynamic
+
+[33mcommit 796af067bf8197c8e2eea245661b69da9c3be587[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu Jun 13 19:36:59 2024 +0600
+
+    j
+
+[33mcommit 0b544acff5597f6ddfb9a5bf939ad7486ac57935[m
+Merge: 83618a8 44612a3
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu Jun 13 19:35:54 2024 +0600
+
+    Merge branch 'dev' of https://github.com/banao-tech/TLN-FE into Arafath_ui
+
+[33mcommit 83618a85cd311ffbe639ff1c01c1413cb27f6e4b[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu Jun 13 19:35:09 2024 +0600
+
+    main language page is half developed
+
+[33mcommit 44612a3f73cff130099187e1083a3345198572f6[m
+Merge: 0677acc dd1bcc5
+Author: Hemant Vishwakarma <152378499+hemvish11@users.noreply.github.com>
+Date:   Thu Jun 13 15:46:58 2024 +0530
+
+    Merge pull request #62 from banao-tech/hemant2
+    
+    Solved 4 bugs
+
+[33mcommit 3409f639361cfbd303359c4eb010f078a1dc21e9[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Jun 13 13:30:52 2024 +0530
+
+    dev
+
+[33mcommit dd1bcc5b2d2522153e2974a6d9ce84233b32af9b[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Wed Jun 12 16:55:42 2024 +0530
+
+    bug 4 solved redirect to root on clicking footer logo
+
+[33mcommit 573fee2f2591cd21214966515d7d3a607a97579a[m
+Author: hemant <hemvish11@gmail.com>
+Date:   Wed Jun 12 16:47:48 2024 +0530
+
+    3 bugs solved: email validity of subscription at footer
+
+[33mcommit 0677acca83e38f95f5f8e6b057a85ad5d18c6bb2[m
+Merge: 20bf2ab 5593e5c
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Jun 6 22:03:21 2024 +0600
+
+    Merge pull request #61 from banao-tech/Arafath_ui
+    
+    fixed 28+ ui bugs
+
+[33mcommit 5593e5c2d165556e04645ba8eecd91260b76f40b[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu Jun 6 21:59:10 2024 +0600
+
+    fixed 28+ ui bugs
+
+[33mcommit 20bf2aba45dfe34482e7e3b656361b8e65ddbcc5[m
+Merge: 57637b9 2aec02c
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Mon Jun 3 17:15:42 2024 +0600
+
+    Merge pull request #60 from banao-tech/Arafath_ui
+    
+    home responsive done
+
+[33mcommit 2aec02c3bb0552e9d76f9c1ad649ef330b7d49d2[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Jun 3 17:14:00 2024 +0600
+
+    home responsive done
+
+[33mcommit 57637b9acee4d4b4b7619540b4b675acd616af79[m
+Merge: 018c5e1 2a6d052
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Mon Jun 3 13:11:08 2024 +0600
+
+    Merge pull request #59 from banao-tech/Arafath_ui
+    
+    Language DropDown is added
+
+[33mcommit 2a6d052ce011b8abd9b0c65d60e23af775b153ea[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Jun 3 13:07:51 2024 +0600
+
+    drop down for language is added
+
+[33mcommit bdd0f9f46a4de8a89d1a521817ccf8df0809e842[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu May 30 20:01:38 2024 +0600
+
+    main language page responsive work done
+
+[33mcommit 018c5e11ca4280b42f1d4ca9443d2d4453c2a082[m
+Merge: 6614225 123247a
+Author: Shubhanshu Nayak <154456084+DevAlchamist@users.noreply.github.com>
+Date:   Tue May 21 11:07:58 2024 +0530
+
+    Merge pull request #58 from banao-tech/shub-dev
+    
+    conflict Fixes
+
+[33mcommit 123247ab9d028b502210229e666adf393e2e20e4[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Tue May 21 11:05:37 2024 +0530
+
+    conflict Fixes
+
+[33mcommit 6614225398347ab6f8099a766824b411dc7fa69e[m
+Merge: 6fceaa3 955fd9b
+Author: Shubhanshu Nayak <154456084+DevAlchamist@users.noreply.github.com>
+Date:   Fri May 17 11:08:05 2024 +0530
+
+    Merge pull request #57 from banao-tech/shub-dev
+    
+    ReusableModal & Some Animation Fixes
+
+[33mcommit 955fd9bd88af9296aea802d2948f07ca28df652c[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Fri May 17 11:06:46 2024 +0530
+
+    ReusableModal & Some Animation Fixes
+
+[33mcommit 6fceaa3ff6c801f6152f5ac430b497f898e9b99b[m
+Merge: e16e4ac a851e6f
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri May 17 10:55:06 2024 +0600
+
+    Merge pull request #56 from banao-tech/shub-dev
+    
+    Animations
+
+[33mcommit a851e6ff15f79f77c03d37f17b22689d11c84f5a[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Fri May 17 10:22:34 2024 +0530
+
+    Animations
+
+[33mcommit e16e4acfd21c4dc74e23ea14e58b0af03ad36bfb[m
+Merge: 7d05e17 38aa4b9
+Author: Shubhanshu Nayak <154456084+DevAlchamist@users.noreply.github.com>
+Date:   Thu May 16 14:25:15 2024 +0530
+
+    Merge pull request #55 from banao-tech/shub-dev
+    
+    Shub dev
+
+[33mcommit 38aa4b93fef7e666bd3b060c5d89b8fd8e4a09bd[m
+Merge: c3cc1cc 7d05e17
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu May 16 14:21:22 2024 +0530
+
+    'dev'
+
+[33mcommit c3cc1cc03febb06dc9ecdaf282500b701361e74d[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu May 16 13:29:21 2024 +0530
+
+    sm
+
+[33mcommit 7d05e17f019bdfd5d8218d009bcd401b48a95660[m
+Merge: dd78a30 0241818
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Wed May 15 11:44:17 2024 +0600
+
+    Merge pull request #53 from banao-tech/Arafath_ui
+    
+    all study abroad page responsive done
+
+[33mcommit 02418185a7b2cc564806139dce6ba30425d6b42a[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Wed May 15 11:32:32 2024 +0600
+
+    all study abroad page responsive done
+
+[33mcommit 1abd5d3a7b4c540da71e4b11878b23ab6e2a4a67[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Tue May 14 10:27:17 2024 +0530
+
+    Updates
+
+[33mcommit dd78a3060c55eed97531ed46f6dfceca2cbb52f2[m
+Merge: 5c5c427 58d2f2e
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Mon May 13 20:54:19 2024 +0600
+
+    Merge pull request #52 from banao-tech/Arafath_ui
+    
+    responsiveness of adult page is done fully
+
+[33mcommit 58d2f2e2f814b7ccdc59e4cb53a7d0abc541efc6[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon May 13 20:53:31 2024 +0600
+
+    responsiveness of adult page is done fully
+
+[33mcommit 5c5c427c895da1f96719a3a11a4ebfbf48ab03b2[m
+Merge: 0c31040 9dc89d9
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri May 10 22:47:12 2024 +0600
+
+    Merge pull request #50 from banao-tech/Arafath_ui
+    
+    all kids page responsive done and fixed card sizing
+
+[33mcommit 9dc89d973916e34f2a73d0539b9ff356b59ae2cf[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Fri May 10 22:46:05 2024 +0600
+
+    all kids page responsive done and fixed card sizing
+
+[33mcommit 0c310407fb1d11990fe1c7d87d491f983a3f64e2[m
+Merge: 47e53ed e6810d2
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu May 9 20:40:51 2024 +0600
+
+    Merge pull request #49 from banao-tech/Arafath_ui
+    
+    fixed issues with window unefined
+
+[33mcommit e6810d28710e83b582a71633860d7a4754075617[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu May 9 20:39:20 2024 +0600
+
+    fixed issues with window unefined
+
+[33mcommit 47e53ed2cca7bed640cb6202e404d7c3dddf4a50[m
+Merge: 271f8d5 7c09d38
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu May 9 20:24:09 2024 +0600
+
+    Merge pull request #48 from banao-tech/Arafath_ui
+    
+    Arafath UI
+
+[33mcommit 7c09d38304480ffb3098efc155ff2fa376bbd409[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu May 9 20:23:16 2024 +0600
+
+    fixed card sizings
+
+[33mcommit 56844ff620d0a08eba9faeb84ccf555f6963cfca[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu May 9 20:05:59 2024 +0600
+
+    all main language page responsive done
+
+[33mcommit 271f8d5216bcd390795226284460f536298303ee[m
+Merge: e060efd dfe7ffb
+Author: Shubhanshu Nayak <154456084+DevAlchamist@users.noreply.github.com>
+Date:   Wed May 8 10:56:09 2024 +0530
+
+    Merge pull request #47 from banao-tech/shub-dev
+    
+     NEW-NAV-CHANGES
+
+[33mcommit dfe7ffbb1296d87dcd1201d46101ecb576b70957[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Tue May 7 17:01:14 2024 +0530
+
+    HomePage Changes SCROLLING
+
+[33mcommit 86e040f1e8329e048a8d021e812705ed7521f6e5[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Tue May 7 13:15:29 2024 +0530
+
+    NEW-Changes
+
+[33mcommit e060efd8cf8a839997d6e00105ff4d8f2dcc0ce2[m
+Merge: e9586b6 9c0af36
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Mon May 6 21:17:35 2024 +0600
+
+    Merge pull request #45 from banao-tech/shub-dev
+    
+    Fixing Issuse
+
+[33mcommit 9c0af36c407b1fca8f42aafbf63c2e9b35a0ed73[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Mon May 6 20:38:27 2024 +0530
+
+    Fixing Issuse
+
+[33mcommit e9586b6cb720f1d8f6bb880c1585de15572c0d1a[m
+Merge: 480b306 3e304da
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Mon May 6 19:43:19 2024 +0600
+
+    Merge pull request #44 from banao-tech/shub-dev
+    
+    French Changes And Some Remaining Pages
+
+[33mcommit 3e304da43726451e80950d6ee2e32a951b4733e9[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Mon May 6 13:36:03 2024 +0530
+
+    Remaining French pages
+
+[33mcommit 480b30693e6b8a65524d17e7dabfe3f7f856ed98[m
+Merge: 08953d4 c7dc9f0
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Mon May 6 13:26:00 2024 +0600
+
+    Merge pull request #43 from banao-tech/Arafath_ui
+    
+    level page for all language is done
+
+[33mcommit c7dc9f0073b6e3a80fb45c6c93ee5c5fc49f61fb[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon May 6 13:24:07 2024 +0600
+
+    level page for all language is done
+
+[33mcommit 5a9f1cfd2d06c213180a48f94db2c5b4536cbe9f[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Mon May 6 11:58:38 2024 +0530
+
+    Remaining-Exam-Pages
+
+[33mcommit 08953d476f0595300d4ecb52bdccaf5f8433aa79[m
+Merge: dd1392f 9dbbda9
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Sat May 4 18:16:13 2024 +0600
+
+    Merge pull request #42 from banao-tech/shub-dev
+    
+    EXAM_pages
+
+[33mcommit 9dbbda9ee54e4d513f7baa6b220a4e59dfd35594[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Sat May 4 17:42:27 2024 +0530
+
+    EXAM_PAGES
+
+[33mcommit dd1392fd47491b76d13a1bef4827d59ef186cecb[m
+Merge: e2e463c db40d38
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Sat May 4 17:05:38 2024 +0600
+
+    Merge pull request #41 from banao-tech/Arafath_ui
+    
+    Arafath UI
+
+[33mcommit db40d38facb43052a4f05d6efbda7b464e34bf74[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Sat May 4 17:04:39 2024 +0600
+
+    now the level page is ready for french page and shared level page is created
+
+[33mcommit 0a9b70816fa036a3ed58166ff2c03f9df5636e37[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Sat May 4 12:45:22 2024 +0600
+
+    level page work started
+
+[33mcommit e2e463c44b985e8d6ad5e437113745f72a7457e3[m
+Merge: c38f676 f39961e
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri May 3 17:53:02 2024 +0600
+
+    Merge pull request #40 from banao-tech/shub-dev
+    
+    Nav-Fixes
+
+[33mcommit f39961e1a8fe8b16bb3c2749303dc07747f3b77a[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Fri May 3 15:32:12 2024 +0530
+
+    Nav-Fixes
+
+[33mcommit c38f67665f23c68cb0f397c560ed3ebafc8150c4[m
+Merge: 01e7b72 adb84fc
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri May 3 01:03:18 2024 +0600
+
+    Merge pull request #39 from banao-tech/Arafath_ui
+    
+    ommited the testomonial data missing in spanish adults page
+
+[33mcommit adb84fc0b5c77e5fb05179f0ac1e947609d767ae[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Fri May 3 01:02:51 2024 +0600
+
+    ommited the testomonial data missing in spanish adults page
+
+[33mcommit 01e7b7243222cc73ef094036f7d0883722e7bed4[m
+Merge: 99848fe 3527e3b
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri May 3 00:54:13 2024 +0600
+
+    Merge pull request #38 from banao-tech/Arafath_ui
+    
+    all the language main pages designs are changed accoroding to clients…
+
+[33mcommit 3527e3b6fbf9b6c2068a587dc4beeef9bc2eed73[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Fri May 3 00:52:24 2024 +0600
+
+    all the language main pages designs are changed accoroding to clients request
+
+[33mcommit 99848fea1872e2ea3aaf2f56f0a26ceda3b679ed[m
+Merge: f57d78a fdce797
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu May 2 20:17:43 2024 +0600
+
+    Merge pull request #37 from banao-tech/shub-dev
+    
+    Shub dev
+
+[33mcommit fdce79714a37834ca4d7026f927e3104ce367309[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu May 2 12:10:50 2024 +0530
+
+    Study_abroad-Reusable
+
+[33mcommit 7773ba199fba8f044424eac63035b9d27ab28f99[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu May 2 10:08:14 2024 +0530
+
+    Spanish-Study-Abroad-Resuable
+
+[33mcommit f57d78af225b02afed93bc3b7e5fb741102832e5[m
+Merge: 8c1e56b 421af4b
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Wed May 1 23:21:58 2024 +0600
+
+    Merge pull request #36 from banao-tech/Arafath_ui
+    
+    added the deleted folder
+
+[33mcommit 421af4bb6904bf0502226154bfe23cc67918044a[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Wed May 1 23:20:31 2024 +0600
+
+    added the deleted folder
+
+[33mcommit 8c1e56b92e3e2b93f4aa0780098ddf48f391cb41[m
+Merge: 6df2a9f c987763
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Wed May 1 23:07:22 2024 +0600
+
+    Merge pull request #35 from banao-tech/Arafath_ui
+    
+    sharable main page is ready
+
+[33mcommit c9877638c8085a6c47c63b56bd02382e943c8afb[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Wed May 1 23:06:31 2024 +0600
+
+    sharable main page is ready
+
+[33mcommit 6df2a9fdcc4edc33d01f59a9370ebad9c7234fe1[m
+Merge: 1083125 5f081b4
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Tue Apr 30 08:29:26 2024 +0600
+
+    Merge pull request #34 from banao-tech/shub-dev
+    
+    DropDown Fixes
+
+[33mcommit 5f081b417cf477fd816be8b97e67efc3c49e7b51[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Mon Apr 29 23:12:04 2024 +0530
+
+    DropDown-Fixes-Done-1
+
+[33mcommit 1f912be44d94ea121f998f5821e77f8a4ba287e8[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Mon Apr 29 23:10:38 2024 +0530
+
+    DropDown-Fixes-Done
+
+[33mcommit 1083125b24dac2ff66ea039dc197d6b23e1d3c52[m
+Merge: 50bd535 b6cf824
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 29 15:04:59 2024 +0600
+
+    Merge pull request #33 from banao-tech/shub-dev
+    
+    HomePage-Frontend-Fixes
+
+[33mcommit b6cf82412b660980f66f06856603bca6fa05bd0a[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Mon Apr 29 14:22:30 2024 +0530
+
+    HomePage-Frontend-Fixes
+
+[33mcommit 50bd53517f1c9dfd0084fea88b6202d853aeb572[m
+Merge: b043d1a b3000e2
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Sat Apr 27 16:52:21 2024 +0600
+
+    Merge pull request #32 from banao-tech/shub-dev
+    
+    Remaining-Fixes & Contact-alert-feature-added
+
+[33mcommit b3000e250e225d8364b16171ce96671207db911e[m
+Merge: e028ed1 b043d1a
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Sat Apr 27 16:51:48 2024 +0600
+
+    Merge branch 'dev' into shub-dev
+
+[33mcommit e028ed121c87ec487433afc084adeb3cc2c637af[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Sat Apr 27 15:40:09 2024 +0530
+
+    Remaining-Fixes & Contact-alert-feature-added
+
+[33mcommit b043d1a8162defccdde842c28166358e989b3fde[m
+Merge: e099955 8eefbaf
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Sat Apr 27 14:03:31 2024 +0600
+
+    Merge pull request #31 from banao-tech/Arafath_ui
+    
+    fixed component issue
+
+[33mcommit 8eefbafa06cd22abffc5f5059ee87d05d543bb38[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Sat Apr 27 14:02:37 2024 +0600
+
+    fixed component issue
+
+[33mcommit e099955781b93aa40d14b9aac087d1f18cb7538a[m
+Merge: 0b155c4 ec0a5a7
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Sat Apr 27 13:53:45 2024 +0600
+
+    Merge pull request #30 from banao-tech/shub-dev
+    
+    Shub dev
+
+[33mcommit ec0a5a7d91164b4cc3615483547ba5987d234f44[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Sat Apr 27 13:20:32 2024 +0530
+
+    Study-Abroad-Pages-Done
+
+[33mcommit 984e6137cb2ec55bdbe5a908e29e6f30d8827352[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Sat Apr 27 13:19:10 2024 +0530
+
+    Study-Abroad-Pages-Done
+
+[33mcommit 0b155c4622f03e62967b12fc2b566d79a06f0627[m
+Merge: f37a725 4a65716
+Author: Shubhanshu Nayak <154456084+DevAlchamist@users.noreply.github.com>
+Date:   Sat Apr 27 10:58:26 2024 +0530
+
+    Merge pull request #29 from banao-tech/shub-dev
+    
+    Responsive-Fixes-3
+
+[33mcommit 4a65716aac946ed3d8b35d02025086398ba610fa[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Sat Apr 27 09:31:12 2024 +0530
+
+    Responsive-Fixes-3
+
+[33mcommit df138a75ebde97772f03da97bd795cc27e0d457e[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Sat Apr 27 09:25:57 2024 +0530
+
+    Responsive-Fixes-3
+
+[33mcommit f37a725db624c23c5e776dc4d4b7d336c8637519[m
+Merge: 592b44a 0816cda
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 26 20:23:15 2024 +0600
+
+    Merge pull request #28 from banao-tech/Arafath_ui
+    
+    three language page study abroad is added
+
+[33mcommit 0816cda8ea9008ea36197e716062a6c99535c7e4[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 26 20:22:15 2024 +0600
+
+    three language page study abroad is added
+
+[33mcommit 592b44a9d81c6550c6197a65b04d1fdaff260376[m
+Merge: 684cdf2 5839b3f
+Author: Shubhanshu Nayak <154456084+DevAlchamist@users.noreply.github.com>
+Date:   Fri Apr 26 16:46:38 2024 +0530
+
+    Merge pull request #27 from banao-tech/shub-dev
+    
+    Fixes-related-Keys
+
+[33mcommit 5839b3fa5326b4baeed4e378a49a45b8e08853bb[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Fri Apr 26 16:45:47 2024 +0530
+
+    Fixes-related-Keys
+
+[33mcommit 684cdf23618015021a58b7c3b7be343ee8934418[m
+Merge: 466f3b9 265d9a4
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 26 17:04:41 2024 +0600
+
+    Merge pull request #26 from banao-tech/shub-dev
+    
+    Remaining-Frontend-Fixes
+
+[33mcommit 265d9a49aee0bf80d8b6d06ab25d0363cb36d532[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Fri Apr 26 16:31:12 2024 +0530
+
+    Remaining-Frontend-Fixes
+
+[33mcommit 466f3b9467b236fd583f18560cfa8df3f30d4465[m
+Merge: a864c32 e589f5a
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 26 16:08:59 2024 +0600
+
+    Merge pull request #25 from banao-tech/Arafath_ui
+    
+    fixed footer duplicate issue
+
+[33mcommit e589f5a9c00ed8687ab6fc03190b6e07806951d4[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 26 16:06:42 2024 +0600
+
+    fixed footer duplicate issue
+
+[33mcommit a864c32499a8cee09d46ce3df9daa1f648c56dd5[m
+Merge: 1e07d45 79c2ff5
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 26 16:03:18 2024 +0600
+
+    Merge pull request #24 from banao-tech/Arafath_ui
+    
+    Arafath UI
+
+[33mcommit 1e07d459f8c56f6e2825b0a6e26a69e5870e662d[m
+Merge: 3a8f29a ea52fa8
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 26 16:02:42 2024 +0600
+
+    Merge pull request #23 from banao-tech/Rahman_ui
+    
+    Rahman UI
+
+[33mcommit 79c2ff5c59e20ed9548ad910dd591c6ad72d5b05[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 26 16:00:49 2024 +0600
+
+    &napos; fixed issue
+
+[33mcommit 35fb181dbfa2e250ba05e4a36f7325c33da1d342[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 26 15:55:22 2024 +0600
+
+    fixed issues
+
+[33mcommit 3a8f29ad1c52a612c3155027548dda4f4c3a446f[m
+Merge: 6ca5ea9 845df17
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 26 15:09:35 2024 +0600
+
+    Merge pull request #22 from banao-tech/Arafath_ui
+    
+    fixed the issue with card sizing
+
+[33mcommit 845df172696be916c515886166036c72b6f83b48[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 26 14:51:28 2024 +0600
+
+    fixed the issue with card sizing
+
+[33mcommit 6ca5ea9e1a078dfbab8551d204cb3a1c4f8cee63[m
+Merge: d084742 976c3f9
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 25 23:14:39 2024 +0600
+
+    Merge pull request #21 from banao-tech/shub-dev
+    
+    Shub dev
+
+[33mcommit 976c3f9fd9d960690dd7d19cdb647d9253c4fc8f[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Apr 25 18:28:59 2024 +0530
+
+    All-Adult-Pages-Done
+
+[33mcommit ddb6a2b1e6e745c456c048e036f3ec4e1b3c2716[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Apr 25 10:19:21 2024 +0530
+
+    Adult-page-for-only-3-pages-done
+
+[33mcommit d08474250e88634382e8a65ad6b61b68f8443a27[m
+Merge: 735b267 84e7e36
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 25 10:42:18 2024 +0600
+
+    Merge pull request #20 from banao-tech/shub-dev
+    
+    Adult-Page
+
+[33mcommit 84e7e36c4850d19cee0626cecce570cae8be7dd1[m
+Merge: c0db7c1 735b267
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 25 10:42:06 2024 +0600
+
+    Merge branch 'dev' into shub-dev
+
+[33mcommit c0db7c10bf95fb39afa08312b3ab74cde72ed7d2[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Apr 25 10:06:41 2024 +0530
+
+    Adult-language-pages-1
+
+[33mcommit 735b2674933b6965735b309dbacbc24c71c0bd9d[m
+Merge: 568d9d2 6495450
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Wed Apr 24 19:51:06 2024 +0600
+
+    Merge pull request #19 from banao-tech/Arafath_ui
+    
+    kids page for english language is done
+
+[33mcommit 64954500a40e699fde6cb29601ec354a7d657a2b[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Wed Apr 24 19:44:03 2024 +0600
+
+    kids page for english language is done
+
+[33mcommit 568d9d2e71e7bcac58d62b65755217cfb9126886[m
+Merge: 9873808 2877c1b
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Wed Apr 24 18:23:14 2024 +0600
+
+    Merge pull request #18 from banao-tech/Arafath_ui
+    
+    language for kids section is done for all page
+
+[33mcommit 2877c1bf0f4299dfc26a5501ac55460e3a0173ae[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Wed Apr 24 18:20:45 2024 +0600
+
+    language for kids section is done for all page
+
+[33mcommit 4f02763b1426a231f0e2590ac2c510c2a22bdcc1[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Wed Apr 24 12:24:20 2024 +0530
+
+    Adult-Page
+
+[33mcommit 9873808976c32128a544e09126d3ec14ba0d2846[m
+Merge: 8d5dcee 703a592
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Wed Apr 24 11:13:56 2024 +0600
+
+    Merge pull request #17 from banao-tech/shub-dev
+    
+    Shub dev
+
+[33mcommit 703a592928a1ae67303dea9ca4f0dd0646c6e086[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Tue Apr 23 17:08:57 2024 +0530
+
+    English-Page done
+
+[33mcommit 825caa2ac2e872ba95e7e4df8f30c8302dd6ad1d[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Tue Apr 23 16:16:48 2024 +0530
+
+    Korean-Page Done
+
+[33mcommit 6d6ec8a9dd8cedd8e947f9a965598b7519e7833c[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Tue Apr 23 12:53:25 2024 +0530
+
+    Japanese-page Done
+
+[33mcommit 8d5dcee883f7972071a557eab8f5e706e7bcc0f4[m
+Merge: 8cbb36c b8b46d7
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Tue Apr 23 12:25:52 2024 +0600
+
+    Merge pull request #16 from banao-tech/shub-dev
+    
+    Mandarin-Page nd Folder Names
+
+[33mcommit b8b46d711c0a019accfab1699de258fb90590889[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Tue Apr 23 09:38:25 2024 +0530
+
+    Mandarin-Page nd Folder Names
+
+[33mcommit 8cbb36cb7a1c387ce50c9a87f79c48dad451e08f[m
+Merge: 81f8638 327f883
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 22 20:19:01 2024 +0600
+
+    Merge pull request #15 from banao-tech/Arafath_ui
+    
+    solved some issues with the pages
+
+[33mcommit 327f883343a3f9010b5cff20d8580a0780edf1d1[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 22 20:18:00 2024 +0600
+
+    solved some issues with the pages
+
+[33mcommit 81f8638c99d198ac01e1c280ca15127b6740e7ed[m
+Merge: 6216aa9 a6e7517
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 22 19:54:51 2024 +0600
+
+    Merge pull request #14 from banao-tech/Arafath_ui
+    
+    german main page is done
+
+[33mcommit 6216aa920d8440dd69b148ddb5238b3f1429f8b8[m
+Merge: 6b35502 b2d97c6
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 22 19:54:16 2024 +0600
+
+    Merge pull request #13 from banao-tech/shub-dev
+    
+    Shub dev
+
+[33mcommit a6e75179e075d3e60543fc65458daf8ef7e46811[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 22 19:53:21 2024 +0600
+
+    german main page is done
+
+[33mcommit b2d97c68360124edc4a9f5774a97f1f5c3c1255b[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Mon Apr 22 17:25:05 2024 +0530
+
+    Spanish
+
+[33mcommit 4710bf0cbc1ad0ee83ebad00db1abc56e7e35846[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Mon Apr 22 13:15:07 2024 +0530
+
+    Footer-Repo
+
+[33mcommit 6b355023616d53e4e1d24bc29276aff44ec762a4[m
+Merge: d24b2f2 7f0c764
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 22 12:14:24 2024 +0600
+
+    Merge pull request #12 from banao-tech/shub-dev
+    
+    Shub dev
+
+[33mcommit 7f0c764e9da2c45871aace068d55fc8ce2ec3763[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Mon Apr 22 08:40:22 2024 +0530
+
+    sm-Change
+
+[33mcommit 5fc994ce8244c12b97136ffcbbff9603b83b6e93[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Sun Apr 21 08:53:55 2024 +0530
+
+    contact-fixes
+
+[33mcommit 4a728dbca77a9ab55ddf8f6428e8b905ad813411[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Sun Apr 21 08:22:07 2024 +0530
+
+    sm-fixes
+
+[33mcommit 18aa5d86d0dff56ccee6708cc7267d2654e9c634[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Sun Apr 21 08:14:39 2024 +0530
+
+    Footer-3
+
+[33mcommit d24b2f2b84e5f7a9782d35b75d07ad5fd8ec26fb[m
+Merge: 4c40dea 198391e
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 19 21:15:00 2024 +0600
+
+    Merge pull request #11 from banao-tech/shub-dev
+    
+    Shub dev
+
+[33mcommit 198391e40dbb7da353e95d24451b28e933509fbc[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Fri Apr 19 20:11:48 2024 +0530
+
+    Modal-Fixes
+
+[33mcommit 9878579d330eff0c173d84d6851dfe89909e72e0[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Fri Apr 19 20:08:56 2024 +0530
+
+    Some-CHange
+
+[33mcommit 5cf04ef1995ba332ef1e175f7937dea9180f1cb2[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Fri Apr 19 19:17:53 2024 +0530
+
+    Design-chan
+
+[33mcommit 55cc5981c8c97437bd1597946f52d77bdedc7bb0[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Fri Apr 19 18:27:06 2024 +0530
+
+    Footer-Repo-Fixes
+
+[33mcommit 4c40dead010f3127435cf61844a3277719f11b9d[m
+Merge: 7c6d54e c42e521
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 19 18:14:31 2024 +0600
+
+    Merge pull request #10 from banao-tech/Arafath_ui
+    
+    now the main page of french language is responsive fully
+
+[33mcommit c42e521a20cce00e9f1048aa73a0d59fb11ee36e[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 19 18:13:04 2024 +0600
+
+    now the main page of french language is responsive fully
+
+[33mcommit d32a25f8dcf99ba7d32f2ff4dba04bbb705f4019[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Fri Apr 19 15:15:43 2024 +0530
+
+    Footer-2
+
+[33mcommit 06335e388600e92d7670faac0b3aa34233c07fbe[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 19 12:36:38 2024 +0600
+
+    why learn french section of french main page responsive is done
+
+[33mcommit 7c6d54e5b715087e39164b467bfb47542b797337[m
+Merge: 777a3b6 b0b959a
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 18 20:48:52 2024 +0600
+
+    Merge pull request #9 from banao-tech/shub-dev
+    
+    Shub dev
+
+[33mcommit b0b959a48e27563dcd1805edf7f613a02877729c[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Apr 18 16:04:30 2024 +0530
+
+    Changes-sm
+
+[33mcommit 02e8758501db3a7ba542dcb7e53113453cb1b805[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Apr 18 16:01:07 2024 +0530
+
+    Responsive-2,FloatingIcons
+
+[33mcommit 777a3b685dd155eac1214c247228687dc0e1ab17[m
+Merge: aa923f3 9dbef02
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 18 14:49:07 2024 +0600
+
+    Merge pull request #8 from banao-tech/Arafath_ui
+    
+    fixed the card sizing issue in french main page
+
+[33mcommit 9dbef0274e925df87e2cc2fc325e325ead43ac40[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 18 13:40:15 2024 +0600
+
+    fixed the card sizing issue in french main page
+
+[33mcommit 1ebac4c160b922afb7aaf31888af36033bd340b6[m[33m ([m[1;32mmain[m[33m, [m[1;32mArafath_ui[m[33m)[m
+Merge: 5b193d0 aa923f3
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 18 12:41:48 2024 +0600
+
+    Merge pull request #7 from banao-tech/dev
+    
+    Dev
+
+[33mcommit aa923f3618b36c8a378b783849bd61bd9cae322d[m
+Merge: 55cfef4 e8d75e9
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 18 11:59:53 2024 +0600
+
+    Merge pull request #6 from banao-tech/shub-dev
+    
+    Shub dev changes
+
+[33mcommit e8d75e9a9055ae6866c4f983b3e92494466af2c5[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Apr 18 11:17:55 2024 +0530
+
+    Responsive
+
+[33mcommit 9bb4749233f198e2ba2eb5d7d81b9c2844ead9ff[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Apr 18 11:11:20 2024 +0530
+
+    New Branch
+
+[33mcommit 5b193d00b0d19e23b83d53c5c34d5393d98a19c6[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Apr 18 02:53:36 2024 +0530
+
+    Commit-sm
+
+[33mcommit a7656e9b8085e9b9071c12fd5b32ea2d23cff9fb[m
+Author: DevAlchamist <nayakshubhanshu060705@gmail.com>
+Date:   Thu Apr 18 02:51:27 2024 +0530
+
+    WhyShouldModal
+
+[33mcommit 55cfef43e70f0fb6339f5c93021968060b580dfb[m
+Merge: 5f39811 87d4ae3
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 18 00:19:30 2024 +0600
+
+    Merge pull request #5 from banao-tech/Arafath_ui
+    
+    navbar logo is a link to home now
+
+[33mcommit 87d4ae36c44817fa0d470b8e473af76eb6955c41[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 18 00:18:42 2024 +0600
+
+    navbar logo is a link to home now
+
+[33mcommit 5f3981181e23e9b517b1902c6afd3f1ef5eb7a1e[m
+Merge: 9ffa397 245667f
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 18 00:16:40 2024 +0600
+
+    Merge pull request #4 from banao-tech/Arafath_ui
+    
+    french main page is fully done
+
+[33mcommit 245667f43e1dbf4196ab7c960b5e2582edc54ae6[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Thu Apr 18 00:15:17 2024 +0600
+
+    french main page is fully done
+
+[33mcommit 395817024e2d89959004c9d6f66fe28b08979405[m
+Merge: e0f394b 9ffa397
+Author: ArafathRahat94 <arafatrahat94@gmail.com>
+Date:   Tue Apr 16 19:50:15 2024 +0600
+
+    Merge pull request #3 from banao-tech/dev
+    
+    merging with main branch
+
+[33mcommit 9ffa397b9272ffb87ae34759bf71d67278192beb[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Tue Apr 16 14:26:44 2024 +0600
+
+    fixed issue with &apos;
+
+[33mcommit b00a748e6696ed579b587d8050c86f6b940bc4d7[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Tue Apr 16 14:24:42 2024 +0600
+
+    fixed issue with &apos;
+
+[33mcommit ab96dabe12d687434f8ddf710be298ebfb42c37a[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Tue Apr 16 14:16:27 2024 +0600
+
+    fixed the problem with width, and some responsiveness bugs,added teachers info part but its now reponsive
+
+[33mcommit 7edba10f0003261355b258280a35b357c64a056e[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Tue Apr 9 22:17:34 2024 +0600
+
+    done : *french main page banner,*why learn french
+
+[33mcommit d296a1cf81fbd1addd5f0581280969b03836ac7e[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Tue Apr 9 19:31:46 2024 +0600
+
+    nav bar size fix
+
+[33mcommit bd2b518705cdfc7d82f4ce7e5d0fd02c11d30bac[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Tue Apr 9 19:23:49 2024 +0600
+
+    now the full nav will show in lg screen and mobile nav will show below tlg size
+
+[33mcommit 26890806b5cec7d097b797a5027d994df4d2e357[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Tue Apr 9 19:20:16 2024 +0600
+
+    mobile nav bar is added
+
+[33mcommit c6ba4bf7940a18c8387fb85feb9388dbc52ce6eb[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Tue Apr 9 00:06:48 2024 +0600
+
+    banner responsive ness fixed
+
+[33mcommit 11f413a47ab86336b380a58a317df273e1404004[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 8 23:32:09 2024 +0600
+
+    all components are responsive desgin implemented,and home page banner is also responsive now
+
+[33mcommit ea52fa8d466d40ae74c507953c36e7adb279d785[m
+Merge: 1f57edb 80d87a2
+Author: mahmudur987 <safemahmud987@agmail.com>
+Date:   Mon Apr 8 22:52:54 2024 +0600
+
+    Merge branch 'Arafath_ui' of https://github.com/banao-tech/TLN-FE into dev
+
+[33mcommit 1f57edb6ec702da3a4d2aae691ad2c35bc1cdf78[m
+Merge: c30082e 6ea2827
+Author: mahmudur987 <safemahmud987@agmail.com>
+Date:   Mon Apr 8 22:50:49 2024 +0600
+
+    merge with Rahman_ui
+
+[33mcommit 80d87a27912005c331da3de5a018956ef5b8aef1[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 8 21:04:51 2024 +0600
+
+    sub to our news letter part positioning issue is fixed
+
+[33mcommit 7ceef24dfcfd5fd02d8f3034c07bd05fef17f5cf[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 8 20:44:01 2024 +0600
+
+    the section two left Fluency, Culture is done, students testomony part is also done,sub to our news letter part is also added
+
+[33mcommit c30082e813337ee433fbc2e304a3f72b3386d306[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 8 18:55:40 2024 +0600
+
+    some part resize fix
+
+[33mcommit 7a519a914f238fc2fc42d59cdf622a49d07fc412[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 8 17:27:30 2024 +0600
+
+    cefr part is fully done,proficiency exams part is fully done, fluency career culture part section one is done section two is going on
+
+[33mcommit 4c69a1784e20dc37bbc31197e6fa3f97b5e7ff97[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 8 15:23:29 2024 +0600
+
+    home page banner girl picture location is fixed
+
+[33mcommit b7fb9e4890ccf75e77d0746501dbc3747c4199e9[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 8 15:21:47 2024 +0600
+
+    cefr section 1st part is done
+
+[33mcommit 9a14ce3dd8a043fdc9761ff8897215a8e9d3fbfa[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Mon Apr 8 14:33:17 2024 +0600
+
+    upcoming course section design is fully done
+
+[33mcommit 2acd5b406f0471149beae221a19b93d8791ff8d9[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Sun Apr 7 17:51:56 2024 +0600
+
+    news letter part is turned to responsive mode ,course we offer padding issue is fixed,now working on banner part to make it responsive
+
+[33mcommit e08a6c229da37ef3956f88e613b8b400e6029c1a[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Sat Apr 6 17:41:45 2024 +0600
+
+    home page banner part is done with the states part too, and states is maded as shared component cause it will show in all pages
+
+[33mcommit 467aa9931b95a1f74cc43e34795a857e51591ae7[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Sat Apr 6 16:19:57 2024 +0600
+
+    courses we offer section is done
+
+[33mcommit c4f02404349c8ca2db9f3a8730410d178cd7d0be[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Sat Apr 6 15:33:45 2024 +0600
+
+    why you should learn part is added now
+
+[33mcommit 6ea2827e9c95ae7303b6e03d1d272ebaa2e1ce0d[m
+Author: mahmudur987 <safemahmud987@agmail.com>
+Date:   Sat Apr 6 01:19:57 2024 +0600
+
+    update
+
+[33mcommit 399e866efd6171b27e94ad5abc7a4e3fb25746e4[m
+Author: mahmudur987 <safemahmud987@agmail.com>
+Date:   Sat Apr 6 01:04:35 2024 +0600
+
+    add footer
+
+[33mcommit f0849931c9f2b838fd1ca476ca1ec8ae19611270[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Sat Apr 6 00:43:55 2024 +0600
+
+    project structure is done, navbar is done
+
+[33mcommit 13a7662043846eb32966653d052feb540e46a820[m
+Author: mahmudur987 <safemahmud987@agmail.com>
+Date:   Fri Apr 5 17:49:10 2024 +0600
+
+    Update .gitignore
+
+[33mcommit a3ce5975ea4b65acd982a0be4a27499ddcbbd1ce[m
+Author: arafatrahat94 <arafatrahat94@gmail.com>
+Date:   Fri Apr 5 17:35:18 2024 +0600
+
+    checking
+
+[33mcommit e0f394b023361298928bc577461a129dcfe5aa52[m
+Merge: 94ed04e a35d814
+Author: mahmudur987 <safemahmud987@agmail.com>
+Date:   Fri Apr 5 16:08:02 2024 +0600
+
+    setup next js
+
+[33mcommit a35d8142c72fde522fc24ea834ccc2d279991b45[m
+Author: mahmudur987 <safemahmud987@agmail.com>
+Date:   Fri Apr 5 15:51:06 2024 +0600
+
+    first commit
+
+[33mcommit 80ac85999f10fc7873e1f9158d74296bdc5b128c[m
+Author: mahmudur987 <safemahmud987@agmail.com>
+Date:   Fri Apr 5 15:33:44 2024 +0600
+
+    Initial commit from Create Next App
+
+[33mcommit 94ed04e406f11237fd4cf6e30f04cce63b077dd8[m
+Author: SulaimanQuadri <91796559+Syed-Sulaiman@users.noreply.github.com>
+Date:   Thu Apr 4 23:28:34 2024 +0530
+
+    Initial commit

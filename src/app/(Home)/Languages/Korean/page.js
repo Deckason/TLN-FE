@@ -256,9 +256,16 @@ const KoreanPage = () => {
   const [content, setContent] = useState(KoreanLanguageData);
   useEffect(() => {
     if (!data) return;
-    const faqData = data.filter((item) => item.language === "Korean");
-    setContent((prev) => ({ ...prev, FaqsData: faqData }));
-  }, [data]);
+    const faqData = data.filter((item) => item.language === "Korean"  && item.category === "General"
+  );
+    const everyData = data.filter(
+      (item) => item.language === "Korean" && item.category === "Everything you need to know"
+    )
+    setContent((prev) => ({...prev, FaqsData: faqData , EveryThingYouNeedToKnowAbout: {
+        ...prev.EveryThingYouNeedToKnowAbout, // Spread the existing properties
+        CardData: everyData, // Update CardData 
+      } }))
+    }, [data]);
   return (
     <div>
       <SharedMainLanuagePage Data={content} />

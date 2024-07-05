@@ -278,9 +278,15 @@ const GermanPage = () => {
   useEffect(() => {
     if(!data) return;
     const faqData = data.filter(
-      (item) => item.language === "German"
+      (item) => item.language === "German"  && item.category === "General"
     );
-    setContent((prev) => ({...prev, FaqsData: faqData}));
+    const everyData = data.filter(
+      (item) => item.language === "German" && item.category === "Everything you need to know"
+    )
+    setContent((prev) => ({...prev, FaqsData: faqData , EveryThingYouNeedToKnowAbout: {
+        ...prev.EveryThingYouNeedToKnowAbout, // Spread the existing properties
+        CardData: everyData, // Update CardData 
+      } }))
 }, [data]);
   return (
     <div>
