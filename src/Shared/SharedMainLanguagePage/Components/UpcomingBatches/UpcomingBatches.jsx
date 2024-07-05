@@ -49,8 +49,8 @@ const UpcomingBathches = () => {
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className="my-[92px] max-md:mt-0 flex justify-center flex-col items-center">
-      <h1 className="my-[40px] text-center self-stretch text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold  ">
+    <div className="my-[12px] -mt-[94px] flex justify-center flex-col items-center">
+      <h1 className="my-[40px] text-center self-stretch text-stone-900 2xl:text-[60px]/[72.6px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold  ">
         Upcoming Batches
       </h1>
       <section
@@ -127,7 +127,7 @@ const UpcomingBathches = () => {
         </div>
       </section>
       {/* load more button will load more datas */}
-      <div className="w-full max-lg:hidden flex justify-center mt-4">
+      <div className="w-full max-lg:hidden flex justify-center mt-6">
         {" "}
         <button className="px-[32px] shadow-md transition duration-300 hover:shadow-xl  text-primary-color py-3.5 rounded-lg border border-primary-color font-medium text-2xl text justify-center focus:outline-none hover:bg-primary-color focus:bg-primary-color hover:text-white focus:text-white items-center gap-2.5 inline-flex">
           Load more
