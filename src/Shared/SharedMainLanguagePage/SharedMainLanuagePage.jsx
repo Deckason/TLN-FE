@@ -19,8 +19,8 @@ import WhyLearnLanguage from "./Components/WhyLearnLanguage/WhyLearnLanguage";
 const SharedMainLanuagePage = ({ Data }) => {
   // console.log(Data);
   return (
-    <div className="">
-      <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
+    <div className="mx-4 lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
+      <div className=" mx-auto  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
         <Banner BannerData={Data?.Banner} />
         <OnlineLanguageClass OnlineLanguageClass={Data?.OnlineLanguageClass} />
         <LanguageClassesForAnyGoal
@@ -39,7 +39,7 @@ const SharedMainLanuagePage = ({ Data }) => {
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
       />
       <SayBonjur SayBonjur={Data?.SayBonjur} />
-      <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
+      <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
         <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
       </div>
       <SubscribeToOur />

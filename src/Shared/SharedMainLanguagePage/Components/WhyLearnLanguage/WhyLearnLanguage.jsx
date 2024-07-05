@@ -273,7 +273,7 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
             </div>
           </div>
         </div>
-        <div className="px-8  scale-125 w-[70%] py-3.5   rounded-lg justify-center items-center gap-2.5 inline-flex">
+        <div className="px-8  scale-125 py-3.5  rounded-lg justify-center items-center gap-2.5 inline-flex">
           <BookAFreeDemoButton />
         </div>
       </div>
