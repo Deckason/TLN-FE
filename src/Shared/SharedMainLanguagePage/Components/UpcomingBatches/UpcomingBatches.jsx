@@ -62,7 +62,7 @@ const UpcomingBathches = () => {
         <button className="upcomingCourseDeActive">March</button>
       </section>
       <section
-        className=" flex
+        className="2xl:hidden flex
       justify-center items-center w-full mx-auto lg:min-w-[1000px] 2xl:max-w-[1681px] flex-col gap-4  "
         id="UpcomingCourseCards"
       >
@@ -102,14 +102,29 @@ const UpcomingBathches = () => {
             },
           }}
           // modules={[Pagination]}
-          className="mySwiper mx-auto flex justify-center  items-center max-w-[326px] md:max-w-[700px]  lg:max-w-[850px] xl:max-w-[1150px] w-full max-sm:max-h-fit  2xl:w-full 3xl:max-w-[1440px]"
+          className=" mySwiper mx-auto flex justify-center  items-center max-w-[326px] md:max-w-[700px]  lg:max-w-[850px] xl:max-w-[1150px] w-full max-sm:max-h-fit  2xl:w-full 4xl:max-w-[1440px]"
         >
           {CardData.map((cardData, i) => (
-            <SwiperSlide key={i} className="flex  justify-center items-center">
+            <SwiperSlide key={i} className="flex justify-center items-center">
               <UpcomingBatchCard data={cardData} />
             </SwiperSlide>
           ))}
         </Swiper>
+
+      </section>
+
+      <section
+        className="hidden 2xl:flex
+      justify-center items-center w-full mx-auto lg:min-w-[1000px] 2xl:max-w-[1681px] flex-col gap-4  "
+        id="UpcomingCourseCards"
+      >
+        <div className="mx-auto flex justify-center items-center gap-4 max-w-[326px] md:max-w-[700px]  lg:max-w-[850px] xl:max-w-[1150px] w-full max-sm:max-h-fit  2xl:w-full 3xl:max-w-[1440px]">
+          {CardData.map((cardData, i) => (
+            <div key={i} className="flex justify-center items-center ">
+              <UpcomingBatchCard data={cardData} />
+            </div>
+          ))}
+        </div>
       </section>
       {/* load more button will load more datas */}
       <div className="w-full max-lg:hidden flex justify-center mt-4">

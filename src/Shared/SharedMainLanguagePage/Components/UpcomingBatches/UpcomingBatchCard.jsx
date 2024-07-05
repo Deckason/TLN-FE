@@ -3,8 +3,8 @@ import Image from "next/image";
 const UpcomingBatchCard = ({ data }) => {
   return (
     <div className="mb-2">
-      <div className=" shadow-md hover:shadow-2xl transition duration-300  lg:scale-100   flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex">
-        <div className="h-[160px] max-sm:h-[330px] bg-[#F7DF10] rounded-t-xl flex items-center  w-full relative">
+      <div className="2xl:w-[408px] shadow-md hover:shadow-2xl transition duration-300  lg:scale-100   flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex">
+        <div className="h-[160px] max-sm:h-[330px]  bg-[#F7DF10] rounded-t-xl flex items-center  w-full relative">
           <div className="bg-[#FFF00D] h-[60%] w-full absolute -z-0"></div>
           <Image
             alt="girlRashi"
