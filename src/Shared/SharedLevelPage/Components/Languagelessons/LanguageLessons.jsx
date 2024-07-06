@@ -5,7 +5,7 @@ const LanguageLessons = ({ LanguageLesson }) => {
         <div className="text-emerald-900 xl:text-[60px] 2xl:text-[60px] font-bold ">
           Online language lessons and classes
         </div>
-        <div className="justify-center items-center xl:text-start lg:text-start text-center gap-5 flex-wrap lg:flex-nowrap w-full inline-flex 2xl:flex-wrap">
+        <div className="justify-center items-center xl:text-start lg:text-start text-center gap-5 lg:flex-nowrap w-full inline-flex 2xl:flex-wrap">
           {LanguageLesson?.map((card, i) => (
             <div
               key={i}

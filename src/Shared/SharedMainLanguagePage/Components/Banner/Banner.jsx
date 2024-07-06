@@ -6,8 +6,11 @@ import States from "../States/States";
 import girlImage from "../../../../Assets/FrenchPage/FrenchMain/girl1.png";
 import girlAndBoy from "../../../../Assets/FrenchPage/FrenchMain/GirlAndBoy.svg";
 import { useState } from "react";
+import { useGetBannerQuery } from "../../../../store/apiSlice";
 const Banner = ({ BannerData }) => {
   const [Splicing, setSplicing] = useState(true);
+  const { data, isLoading: fetchLoading } = useGetBannerQuery("");
+  console.log(data)
   // console.log(BannerData);
   return (
     <div className="w-full relative flex justify-center items-center flex-col mb-[112px]">
