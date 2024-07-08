@@ -12,7 +12,7 @@ import Image from "next/image";
 export const TopBar = (data) => {
   return (
     <div className="w-full justify-center items-center flex-col flex">
-      <div className=" p-5 w-full 2xl:w-[1700px]  lg:w-full justify-between items-center lg:flex-row xl:flex-row flex-col gap-5 xl:gap-5 lg:gap-5  flex">
+      <div className=" p-5 w-full lg:w-[1000px] xl:w-[1275px] 2xl:w-[1400px] 3xl:w-[1500px] justify-between items-center lg:flex-row xl:flex-row flex-col gap-5 xl:gap-5 lg:gap-5  flex">
         <div className="lg:w-[832px] xl:w-[832px] w-[fit]  ">
           <div className="text-[20px] xl:text-[40px] lg:text-[30px] font-bold">{data.data.title}</div>
           <div className="text-[10px] xl:text-[20px] lg:text-[20px]">{data.data.para}</div>
