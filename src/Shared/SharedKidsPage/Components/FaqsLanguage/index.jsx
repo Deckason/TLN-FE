@@ -14,8 +14,8 @@ const FaqsLanguage = ({ FaqsData }) => {
   const [open, setOpen] = useState(false);
   const [id, setId] = useState(0);
   return (
-    <div className="2xl:max-w-[1680px] bg-[#F6F3F3]  px-4 lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col max-md:py-0 py-[112px]">
-      <div className=" flex-col justify-center w-full mx-auto items-center  gap-12 flex">
+    <div className="2xl:w-full  bg-[#F6F3F3]  px-4 lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col max-md:py-0">
+      <div className=" flex-col justify-center w-full mx-auto items-center  gap-12 flex 2xl:max-w-[1680px] ">
         <div className="flex-col justify-start items-center gap-y-12 w-full flex">
           <div className="text-black text-[60px] font-bold max-lg:text-2xl">
             FAQs

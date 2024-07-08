@@ -11,8 +11,8 @@ const EverythingYouNeedToKnowAboutLanguage = ({
   const [open, setOpen] = useState(false);
   let data = [...EveryThingYouNeedToKnowAbout?.CardData];
   return (
-    <div className="2xl:max-w-[1680px] bg-[#F6F3F3] lg:px-14 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[112px]">
-      <div className="max-w-[1463px]  flex-col justify-start w-full mx-auto items-start gap-12 flex">
+    <div className="2xl:w-full bg-[#F6F3F3] lg:px-14 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[112px]">
+      <div className="max-w-[1463px]  flex-col justify-start w-full mx-auto items-start gap-12 flex 2xl:max-w-[1680px] ">
         <div className="flex-col w-full justify-start items-center gap-12 flex">
           <div className="text-black max-md:text-xl text-[60px] font-bold text-center max-lg:text-2xl">
             Everything you need to know <br className="hidden max-md:block" />{" "}

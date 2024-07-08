@@ -18,13 +18,13 @@ const HowItWorks = ({ HowItWorksCardData }) => {
           How it works?
         </h1>
 
-        <div className=" md:flex hidden flex-wrap justify-center gap-1 mx-auto w-full lg:gap-[18px]   items-center mt-[48px] ">
+        <div className=" 3xl:flex hidden flex-wrap justify-center gap-1 mx-auto w-full lg:gap-[18px]   items-center mt-[48px] ">
           {HowItWorksCardData?.map((data) => {
             return <HowItWorksCard key={data.id} datas={data}></HowItWorksCard>;
           })}
         </div>
         
-        <div className="md:hidden">
+        <div className="3xl:hidden">
           <Swiper
             spaceBetween={20}
             pagination={{
@@ -54,14 +54,12 @@ const HowItWorks = ({ HowItWorksCardData }) => {
                 slidesPerView: 2,
               },
               768: {
-                slidesPerView: 2,
-              },
-              368: {
                 slidesPerView: 1,
               },
             }}
             // modules={[Pagination]}
-            className="mySwiper mx-auto flex justify-center  items-center max-w-[356px] md:max-w-[700px]  lg:max-w-[850px] md:hidden xl:max-w-[1150px] w-full max-sm:max-h-full   2xl:w-full 3xl:max-w-[1440px]"
+            className="mySwiper mx-auto flex justify-center  items-center max-w-[356px] md:max-w-[395px]  lg:max-w-[850px] md:hidden xl:max-w-[1150px] w-full max-sm:max-h-full   2xl:w-full 3xl:max-w-[1440px]"
+
           >
             {HowItWorksCardData?.map((data, index) => (
               <SwiperSlide key={index}>
