@@ -99,50 +99,54 @@ const DynamicPage = ({ params }) => {
         },
       ],
       SayBonjur: "Say Annyeonghaseyo to language learning with us!",
-      LanguageLesson: [
-        {
-          title: "English Classes Near Me",
-          list: [
-            "English Classes In Mumbai",
-            " English language course in delhi",
-            " English classes in pune",
-            "English language courses near me",
-            "English language classes near me",
-          ],
-        },
-        {
-          title: "Most Searched",
-          list: [
-            "Online English Speaking Course",
-            "English Language Classes Online",
-            "Learn English Online With Certificate",
-            "English course near me",
-            "English courses online",
-          ],
-        },
-        {
-          title: "Online English Classes",
-          list: [
-            "learn English online course",
-            "online English language course",
-            "English courses online",
-            "English classes near me",
-            "learn English online",
-            "online English lessons",
-          ],
-        },
-        {
-          title: "English Classes for Focused Learning",
-          list: [
-            "Online English classes for Beginner",
-            "Online English classes for Intermediate",
-            "Online English classes for Advanced",
-            "Online English classes for Kids ",
-            "Online English classes for adults",
-            "Online English classes to study abroad",
-          ],
-        },
-      ],
+        LanguageLesson: [
+      {
+        title: "Popular classes we offer",
+        list: [
+         "Online French Classes",
+         "Online Spanish Classes",
+         "Online German Classes",
+         "Online Mandarin Classes",
+         "Online Japanese Classes",
+         "Online Korean Classes",
+         "Online English Classes",
+
+        ],
+      },
+      {
+        title: "Popular online classes",
+        list: [
+          "Online French Grammar Classes",
+          "Online French Speaking Classes",
+          "Online English Grammar Classes",
+          "Online English Speaking Classes",
+          "Online Spanish Grammar Classes",
+          "Online English Speaking Classes",
+        ],
+      },
+      {
+        title: "Popular classes by target group",
+        list: [
+          "Online French Classes For Kids",
+          "Online French Classes For Adults",
+          "Online French Classes For Corporates",
+          "Online English Classes For Kids",
+          "Online English Classes For Adults",
+          "Online English Classes For Corporates",
+        ],
+      },
+      {
+        title: "Popular online classes by level",
+        list: [
+          "Online English classes for Beginner",
+          "Online English classes for Intermediate",
+          "Online English classes for Advanced",
+          "Online English classes for Kids ",
+          "Online English classes for adults",
+          "Online English classes to study abroad",
+        ],
+      },
+    ],,
     }),
     []
   );
@@ -244,50 +248,54 @@ const DynamicPage = ({ params }) => {
         },
       ],
       SayBonjur: "Say Annyeonghaseyo to language learning with us!",
-      LanguageLesson: [
-        {
-          title: "English Classes Near Me",
-          list: [
-            "English Classes In Mumbai",
-            " English language course in delhi",
-            " English classes in pune",
-            "English language courses near me",
-            "English language classes near me",
-          ],
-        },
-        {
-          title: "Most Searched",
-          list: [
-            "Online English Speaking Course",
-            "English Language Classes Online",
-            "Learn English Online With Certificate",
-            "English course near me",
-            "English courses online",
-          ],
-        },
-        {
-          title: "Online English Classes",
-          list: [
-            "learn English online course",
-            "online English language course",
-            "English courses online",
-            "English classes near me",
-            "learn English online",
-            "online English lessons",
-          ],
-        },
-        {
-          title: "English Classes for Focused Learning",
-          list: [
-            "Online English classes for Beginner",
-            "Online English classes for Intermediate",
-            "Online English classes for Advanced",
-            "Online English classes for Kids ",
-            "Online English classes for adults",
-            "Online English classes to study abroad",
-          ],
-        },
-      ],
+        LanguageLesson: [
+      {
+        title: "Popular classes we offer",
+        list: [
+         "Online French Classes",
+         "Online Spanish Classes",
+         "Online German Classes",
+         "Online Mandarin Classes",
+         "Online Japanese Classes",
+         "Online Korean Classes",
+         "Online English Classes",
+
+        ],
+      },
+      {
+        title: "Popular online classes",
+        list: [
+          "Online French Grammar Classes",
+          "Online French Speaking Classes",
+          "Online English Grammar Classes",
+          "Online English Speaking Classes",
+          "Online Spanish Grammar Classes",
+          "Online English Speaking Classes",
+        ],
+      },
+      {
+        title: "Popular classes by target group",
+        list: [
+          "Online French Classes For Kids",
+          "Online French Classes For Adults",
+          "Online French Classes For Corporates",
+          "Online English Classes For Kids",
+          "Online English Classes For Adults",
+          "Online English Classes For Corporates",
+        ],
+      },
+      {
+        title: "Popular online classes by level",
+        list: [
+          "Online English classes for Beginner",
+          "Online English classes for Intermediate",
+          "Online English classes for Advanced",
+          "Online English classes for Kids ",
+          "Online English classes for adults",
+          "Online English classes to study abroad",
+        ],
+      },
+    ],,
     }),
     []
   );
@@ -387,50 +395,54 @@ const DynamicPage = ({ params }) => {
         },
       ],
       SayBonjur: "Say Annyeonghaseyo to language learning with us!",
-      LanguageLesson: [
-        {
-          title: "English Classes Near Me",
-          list: [
-            "English Classes In Mumbai",
-            " English language course in delhi",
-            " English classes in pune",
-            "English language courses near me",
-            "English language classes near me",
-          ],
-        },
-        {
-          title: "Most Searched",
-          list: [
-            "Online English Speaking Course",
-            "English Language Classes Online",
-            "Learn English Online With Certificate",
-            "English course near me",
-            "English courses online",
-          ],
-        },
-        {
-          title: "Online English Classes",
-          list: [
-            "learn English online course",
-            "online English language course",
-            "English courses online",
-            "English classes near me",
-            "learn English online",
-            "online English lessons",
-          ],
-        },
-        {
-          title: "English Classes for Focused Learning",
-          list: [
-            "Online English classes for Beginner",
-            "Online English classes for Intermediate",
-            "Online English classes for Advanced",
-            "Online English classes for Kids ",
-            "Online English classes for adults",
-            "Online English classes to study abroad",
-          ],
-        },
-      ],
+        LanguageLesson: [
+      {
+        title: "Popular classes we offer",
+        list: [
+         "Online French Classes",
+         "Online Spanish Classes",
+         "Online German Classes",
+         "Online Mandarin Classes",
+         "Online Japanese Classes",
+         "Online Korean Classes",
+         "Online English Classes",
+
+        ],
+      },
+      {
+        title: "Popular online classes",
+        list: [
+          "Online French Grammar Classes",
+          "Online French Speaking Classes",
+          "Online English Grammar Classes",
+          "Online English Speaking Classes",
+          "Online Spanish Grammar Classes",
+          "Online English Speaking Classes",
+        ],
+      },
+      {
+        title: "Popular classes by target group",
+        list: [
+          "Online French Classes For Kids",
+          "Online French Classes For Adults",
+          "Online French Classes For Corporates",
+          "Online English Classes For Kids",
+          "Online English Classes For Adults",
+          "Online English Classes For Corporates",
+        ],
+      },
+      {
+        title: "Popular online classes by level",
+        list: [
+          "Online English classes for Beginner",
+          "Online English classes for Intermediate",
+          "Online English classes for Advanced",
+          "Online English classes for Kids ",
+          "Online English classes for adults",
+          "Online English classes to study abroad",
+        ],
+      },
+    ],
     }),
     []
   );

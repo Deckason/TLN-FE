@@ -218,7 +218,7 @@ const EnglishPage = () => {
         },
       ],
     },
-    SayBonjur: "Say Annyeonghaseyo to language learning with us!    ",
+    SayBonjur: "Say Bonjour to language learning with us!    ",
     LanguageLesson: [
       {
         title: "Popular classes we offer",
