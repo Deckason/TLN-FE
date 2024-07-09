@@ -25,7 +25,7 @@ const SharedKidsPage = ({ Data }) => {
   // console.log(bannerInfo);
   return (
     <div className="">
-      <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
+      <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[112px]">
         <Banner BannerData={Data?.BannerData} />
         <WhyKidsShouldLearnEnglish
           WhyKidsShouldLearnEnglish={Data?.WhyKidsShouldLearn}

@@ -29,13 +29,13 @@ const UpcomingBatches = () => {
           <button className="upcomingCourseDeActive">March</button>
         </section>
         <div
-          className=" lg:flex
+          className=" xl:flex
         justify-center items-center w-full mx-auto lg:min-w-[1000px] 2xl:max-w-[1681px] hidden flex-col gap-4  "
           id="UpcomingCourseCards"
         >
-          <div className=" flex-wrap gap-[17px]  flex xl:justify-center justify-center w-full  mb-[40px]">
+          <div className=" flex-wrap gap-[17px] flex xl:justify-center justify-center w-full  mb-[40px]">
             {/* this part will by dynamic based on the data and the cards will be mapped */}
-            <div className="lg:w-[355px] md:w-[355px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex shadow-md hover:shadow-2xl transition duration-300">
+            <div className="lg:w-[355px] md:w-[355px] xl:w-[354px] 2xl:w-[408px] 4xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex shadow-md hover:shadow-2xl transition duration-300">
               <div className="h-[240px] bg-[#F7DF10] rounded-t-xl flex items-center  w-full relative">
                 <div className="bg-[#FFF00D] h-[60%] w-full absolute -z-0"></div>
                 <Image
@@ -100,7 +100,7 @@ const UpcomingBatches = () => {
                 </button>
               </div>
             </div>
-            <div className="lg:w-[355px] md:w-[300px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex shadow-md hover:shadow-2xl transition duration-300">
+            <div className="lg:w-[355px] md:w-[300px] xl:w-[354px] 2xl:w-[408px] 4xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex shadow-md hover:shadow-2xl transition duration-300">
               <div className="h-[240px] bg-[#9127a3] rounded-t-xl overflow-hidden flex items-center  w-full relative">
                 <div className="bg-[#771192] w-[33%] h-full  absolute -z-0"></div>
                 <div className="bg-[#8c0f8d] w-[33%] h-full right-0 absolute -z-0"></div>
@@ -166,7 +166,7 @@ const UpcomingBatches = () => {
                 </button>
               </div>
             </div>
-            <div className="lg:w-[355px] md:w-[355px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex shadow-md hover:shadow-2xl transition duration-300">
+            <div className="lg:w-[355px] md:w-[355px] xl:w-[354px] 2xl:w-[408px] 4xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex shadow-md hover:shadow-2xl transition duration-300">
               {" "}
               <div className="h-[240px] bg-[#e76c10] overflow-hidden rounded-t-xl flex items-center  w-full relative">
                 <div className="bg-[#d06c10] h-[33%] w-full top-0  absolute -z-0"></div>
@@ -235,7 +235,7 @@ const UpcomingBatches = () => {
             </div>
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="xl:hidden">
           {" "}
           <Swiper
             spaceBetween={20}
@@ -262,10 +262,10 @@ const UpcomingBatches = () => {
             // slidesPerView={4}
             breakpoints={{
               1680: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
               1024: {
-                slidesPerView: 3,
+                slidesPerView: 2,
               },
               768: {
                 slidesPerView: 2,
@@ -477,7 +477,7 @@ const UpcomingBatches = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="mt-[48px] scale-75 lg:hidden flex gap-x-[16px]">
+        <div className="mt-[48px] scale-75 xl:hidden flex gap-x-[16px]">
           <button
             ref={navigationPrevRef}
             className="w-16 h-[58px] px-5 py-4 rounded-lg border-2 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"
@@ -492,7 +492,7 @@ const UpcomingBatches = () => {
           </button>
         </div>
 
-        <button className="hidden w-[183px] h-[58px] px-8 py-3.5 text-[#1F9F90] hover:text-white border-[#1F9F90] hover:bg-[#1F9F90] border rounded-lg justify-center items-center gap-2.5 lg:inline-flex text-center text-nowrap text-2xl font-medium ">
+        <button className="hidden w-[183px] h-[58px] px-8 py-3.5 text-[#1F9F90] hover:text-white border-[#1F9F90] hover:bg-[#1F9F90] border rounded-lg justify-center items-center gap-2.5 xl:inline-flex text-center text-nowrap text-2xl font-medium ">
           Load more
         </button>
       </div>{" "}

@@ -1,7 +1,8 @@
 import Image from "next/image";
 const HowItWorksCard = ({ datas }) => {
   return (
-    <div className="flex flex-col shadow-md hover:shadow-2xl transition duration-300 bg-white p-6 text-center  rounded-2xl min-h-full h-[548px] mx-2 md:mx-0 md:max-w-sm max-md:w-[355px] justify-center max-xl:w-[408px] xl:max-w-[388px] ">
+    <div className="flex flex-col shadow-md transition duration-300 hover:shadow-xl bg-white p-6 text-center  rounded-2xl min-h-full h-[548px] mx-2 md:mx-0 md:max-w-sm max-md:w-[355px] justify-center max-xl:w-[408px] xl:max-w-[388px]">
+
       <div className="h-[196px]">
         <Image
           className="object-cover h-full w-full"
