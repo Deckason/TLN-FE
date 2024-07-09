@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import FooterLogo1 from "../../Assets/Homepage/Footer/footerLogo.png";
 import FooterLogo2 from "../../Assets/Homepage/Footer/FooterLogo2.png";
-import FooterLogo3 from "../../Assets/Homepage/Footer/FooterLogo3.png";
+import FooterLogo3 from "../../Assets/Homepage/Footer/footerLogo3.png";
 import FaceBook from "../../Assets/Homepage/Footer/FaceBook.png";
 import Insta from "../../Assets/Homepage/Footer/Instagram.png";
 import Linkdin from "../../Assets/Homepage/Footer/Linkdin.png";
@@ -13,306 +13,187 @@ import Accordian from "../../Shared/Accordian";
 import Link from "next/link";
 
 const HomeFooter = () => {
-  const datas = [
-    {
-      title: "Languages for Kids",
-      content: [
-        "Online French Classes for Kids",
-        "Online German Classes for Kids",
-        "Online Spanish Classes for Kids",
-        "Online Korean Classes for Kids",
-        "Online Japanese Classes for Kids",
-        "Online Mandarin Classes for Kids",
-        "Online English Classes for Kids",
-      ],
-    },
-    {
-      title: "Languages for Adults",
-      content: [
-        "Online French Classes for Adults",
-        "Online German Classes for Adults",
-        "Online Spanish Classes for Adults",
-        "Online Korean Classes for Adults",
-        "Online Japanese Classes for Adults",
-        "Online Mandarin Classes for Adults",
-        "Online English Classes for Adults",
-      ],
-    },
-    {
-      title: "Languages for Study Abroad",
-      content: [
-        "Online French Classes for Study Abroad",
-        "Online German Classes for Study Abroad",
-        "Online Spanish Classes for Study Abroad",
-        "Online Korean Classes for Study Abroad",
-        "Online Japanese Classes for Study Abroad",
-        "Online Mandarin Classes for Study Abroad",
-        "Online English Classes for Study Abroad",
-      ],
-    },
-    {
-      title: "Languages for Any Goals",
-      content: ["School", "College", "Corporate Trainings"],
-    },
-    {
-      title: "French Classes Near Me",
-      content: [
-        "French Classes in Mumbai",
-        "French Classes in Delhi",
-        "French Classes in Pune",
-      ],
-    },
-    {
-      title: "German Classes Near Me",
-      content: [
-        "German Classes in Mumbai",
-        "German Classes in Delhi",
-        "German Classes in Pune",
-      ],
-    },
-    {
-      title: "Spanish Classes Near Me",
-      content: [
-        "Spanish Classes in Mumbai",
-        "Spanish Classes in Delhi",
-        "Spanish Classes in Pune",
-      ],
-    },
-    {
-      title: "Korean Classes Near Me",
-      content: [
-        "Korean Classes in Mumbai",
-        "Korean Classes in Delhi",
-        "Korean Classes in Pune",
-      ],
-    },
-    {
-      title: "Japanese Classes Near Me",
-      content: [
-        "Japanese Classes in Mumbai",
-        "Japanese Classes in Delhi",
-        "Japanese Classes in Pune",
-      ],
-    },
-    {
-      title: "Mandarin Classes Near Me",
-      content: ["Mandarin Classes in Delhi"],
-    },
-    {
-      title: "English Classes Near Me",
-      content: [
-        "English Classes in Mumbai",
-        "English Classes in Delhi",
-        "English Classes in Pune",
-      ],
-    },
-  ];
   const [splicing, setsplicing] = useState(true);
 
   return (
-    <div className="pt-20 flex flex-col items-center justify-center p-20">
-      <div className="lg:text-[15px] text-[10px] gap-10 flex flex-col lg:flex-row w-full lg:w-fit lg:items-center justify-around ">
-        <div className="flex lg:flex-col lg:w-fit w-full gap-10 h-full lg:h-[490px] lg:items-start items-center justify-between">
+    <div className="pt-20 p-2">
+      <div className="flex flex-row gap-4">
+        <div className="flex flex-col items-center mt-2 ml-10 lg:items-start">
           <Link href="/">
-            <div className="flex ml-3 mt-[-3rem] flex-row gap-10 lg:flex-col  lg:w-full w-fit  ">
-              <Image
-                src={FooterLogo1}
-                alt="footerImg"
-                mb-3t="footerLogo1"
-                className="mb-3"
-              />
-              <div className="flex gap-5 ml-[-5rem] items-center justify-center">
-                <Image src={FooterLogo2} alt="footerLogo2" />
-                <Image src={FooterLogo3} alt="footerLogo3" />
+            <div className="flex flex-col gap-10 items-center lg:items-start">
+              <Image src={FooterLogo1} alt="footerImg" className="p-1" />
+              <div className="flex gap-5 items-center">
+                <Image src={FooterLogo2} alt="footerLogo2" className="p-1"/>
+                <Image src={FooterLogo3} alt="footerLogo3" className="p-1"/>
               </div>
             </div>
           </Link>
-          <div className="flex items-center justify-end lg:justify-center w-full">
-            <button className="mr-5 px-4 py-1.5 lg:px-5 lg:py-3.5 w-40 bg-teal-600 rounded-lg justify-center text-neutral-100 text-sm md:text-base lg:text-xl font-normal items-center gap-2.5 inline-flex">
-              Contact us
-            </button>{" "}
-          </div>
+          <button className="px-4 py-1.5 lg:px-5 lg:py-3.5 mt-auto mb-[-1rem] w-40 bg-teal-600 rounded-lg text-neutral-100 text-sm md:text-base lg:text-xl font-normal items-center">
+            Contact us
+          </button>
         </div>
-        <div className="flex flex-col w-full">
-          <div className="lg:flex block text-[#666666]  lg:flex-wrap w-full lg:w-full my-3 h-fit  items-start justify-around  lg:ml-0 mx-5 lg:justify-between">
-            <div className="flex lg:gap- gap-5 lg:justify-normal md:justify-start justify-between">
-              <div className="flex flex-col ">
-                <h3 className="text-[#000] mb-2 font-medium md:text-lg text-[10px] lg:text-[20px]">
+        <div className="text-[#666666] w-full shrink">
+
+          <div className="grid lg:grid-cols-4 mt-2 w-full">
+            <div>
+              <div className="flex flex-col">
+                <h3 className="text-[#000]  font-medium text-[10px] md:text-sm lg:text-[20px]">
                   About us
                 </h3>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Who Are We
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  How It Works
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Blogs
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Press
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">FAQ</span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Contact Us
-                </span>
+                <span className="text-xs md:text-lg lg:text-[15px]">Who Are We</span>
+                <span className="text-xs md:text-lg lg:text-[15px] ">How It Works</span>
+                <span className="text-xs md:text-lg lg:text-[15px]">Blogs</span>
+                <span className="text-xs md:text-lg lg:text-[15px]">Press</span>
+                <span className="text-xs md:text-lg lg:text-[15px]">FAQ</span>
+                <span className="text-xs md:text-lg lg:text-[15px]">Contact Us</span>
               </div>
             </div>
-            <div className="lg:flex hidden flex-col ml-20">
-              <h3 className="text-[#000] mb-3 font-medium text-[20px]">
-                Languages for Kids
-              </h3>
-              <span>Online French Classes for Kids</span>
-              <span>Online German Classes for Kids</span>
-              <span>Online Spanish Classes for Kids</span>
-              <span>Online Korean Classes for Kids</span>
-              <span>Online Japanese Classes for Kids</span>
-              <span>Online Mandarin Classes for Kids</span>
-              <span>Online English Classes for Kids</span>
+            <div>
+              <div className="flex flex-col">
+                <h3 className="text-[#000]  font-medium text-[20px]">
+                  Languages for Kids
+                </h3>
+                <span className="  ">Online French Classes for Kids</span>
+                <span className=" ">Online German Classes for Kids</span>
+                <span className="">Online Spanish Classes for Kids</span>
+                <span className="">Online Korean Classes for Kids</span>
+                <span className="">Online Japanese Classes for Kids</span>
+                <span className="">Online Mandarin Classes for Kids</span>
+                <span className="">Online English Classes for Kids</span>
+              </div>
             </div>
-            <div className="lg:flex hidden flex-col ml-[-3rem]">
-              <h3 className="text-[#000] mb-3 font-medium text-[20px]">
-                Languages For Adults
-              </h3>
-              <span>Online French Classes for Adults</span>
-              <span>Online German Classes for Adults</span>
-              <span>Online Spanish Classes for Adults</span>
-              <span>Online Korean Classes for Adults</span>
-              <span>Online Japanese Classes for Adults</span>
-              <span>Online Mandarin Classes for Adults</span>
-              <span>Online English Classes for Adults</span>
+            <div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[#000]  mb-[-0.5rem] font-medium text-[20px]">
+                  Languages For Adults
+                </h3>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online French Classes for Adults</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online German Classes for Adults</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Spanish Classes for Adults</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Korean Classes for Adults</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Japanese Classes for Adults</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Mandarin Classes for Adults</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online English Classes for Adults</span>
+              </div>
             </div>
-            <div className="lg:flex hidden flex-col ml-[-3rem]">
-              <h3 className="text-[#000] mb-3 font-medium text-[20px]">
-                Languages to Study Abroad
-              </h3>
-              <span>Online French Classes to Study Abroad</span>
-              <span>Online German Classes to Study Abroad</span>
-              <span>Online Spanish Classes to Study Abroad</span>
-              <span>Online Korean Classes to Study Abroad</span>
-              <span>Online Japanese Classes to Study Abroad</span>
-              <span>Online Mandarin Classes to Study Abroad</span>
-              <span>Online English Classes to Study Abroad</span>
+            <div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[#000]  mb-[-0.5rem]  font-medium text-[20px]">
+                  Languages to Study Abroad
+                </h3>
+                <span className=" text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online French Classes to Study Abroad</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online German Classes to Study Abroad</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Spanish Classes to Study Abroad</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Korean Classes to Study Abroad</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Japanese Classes to Study Abroad</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Mandarin Classes to Study Abroad</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online English Classes to Study Abroad</span>
+              </div>
             </div>
           </div>
-          <div className="lg:flex hidden text-[#666666] gap-8 w-full my-3 h-fit  items-start justify-around  lg:mx-0 mx-5 lg:justify-between">
-          <div className="flex flex-col ">
-                <h3 className="text-[#000] mb-2 font-medium md:text-lg text-[10px] lg:text-[20px]">
+          <div className="grid lg:grid-cols-4 mt-10">
+            <div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[#000]  mb-[-0.5rem] font-medium text-[10px] md:text-lg lg:text-[20px]">
                   Work With us
                 </h3>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Career
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Teach With Us 
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Collaborate With Us
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Content Creators
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Refer & Earn
-                </span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Career</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Teach With Us</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Collaborate With Us</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Content Creators</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Refer & Earn</span>
               </div>
-              <div className="flex flex-col ml-16 px-1">
-                <h3 className="text-[#000] mb-2 font-medium md:text-lg text-[10px] lg:text-[20px]">
+            </div>
+            <div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[#000]  mb-[-0.5rem] font-medium text-[10px] md:text-lg lg:text-[20px]">
                   Language We Offer
                 </h3>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Online French Classes
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Online German Classes
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Online Spanish Classes
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Online Korean Classes
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Online Japanese Classes
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Online Mandarin Classes
-                </span>
-                <span className="lg:text-[15px] md:text-lg text-xs ">
-                  Online English Classes
-                </span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online French Classes</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online German Classes</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Spanish Classes</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Korean Classes</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Japanese Classes</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Mandarin Classes</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online English Classes</span>
               </div>
-            
-            <div className="flex flex-col ml-10">
-              <h3 className="text-[#000] font-medium text-[20px]">
-                French Classes Near Me
-              </h3>
-              <span>French Classes in Mumbai</span>
-              <span>French Classes in Delhi</span>
-              <span>French Classes in Pune</span>
-              <h3 className="text-[#000] mt-8 font-medium text-[20px]">
-                Spanish Classes Near Me
-              </h3>
-              <span>Spanish Classes in Mumbai</span>
-              <span>Spanish Classes in Delhi</span>
-              <span>Spanish Classes in Pune</span>
             </div>
-            <div className="flex flex-col ">
-              <h3 className="text-[#000] font-medium text-[20px]">
-                German Classes Near Me
-              </h3>
-              <span>German Classes in Mumbai</span>
-              <span>German Classes in Delhi</span>
-              <span>German Classes in Pune</span>
-              <h3 className="text-[#000] mt-8 font-medium text-[20px]">
-                English Classes Near Me
-              </h3>
-              <span>English Classes in Mumbai</span>
-              <span>English Classes in Delhi</span>
-              <span>English Classes in Pune</span>
+            <div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[#000]  mb-[-1rem] font-medium text-[20px]">
+                  French Classes Near Me
+                </h3>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">French Classes in Mumbai</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">French Classes in Delhi</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">French Classes in Pune</span>
+                <h3 className="text-[#000]  mt-8 mb-[-1rem] font-medium text-[20px]">
+                  Spanish Classes Near Me
+                </h3>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Spanish Classes in Mumbai</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Spanish Classes in Delhi</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Spanish Classes in Pune</span>
+              </div>
             </div>
-            <div className="flex flex-col ">
-            
+            <div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[#000]  mb-[-1rem] font-medium text-[20px]">
+                  German Classes Near Me
+                </h3>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">German Classes in Mumbai</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">German Classes in Delhi</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">German Classes in Pune</span>
+                <h3 className="text-[#000]  mb-[-1rem] mt-8 font-medium text-[20px]">
+                  English Classes Near Me
+                </h3>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">English Classes in Mumbai</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">English Classes in Delhi</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">English Classes in Pune</span>
+              </div>
             </div>
           </div>
-          <div className="lg:flex hidden text-[#666666] gap-8 w-full my-3 h-fit items-start justify-around  lg:ml-0 ml-2 lg:justify-between">
-          <div className="flex flex-col">
-              <h3 className="text-[#000] mb-3 font-medium text-[20px]">
-              Languages For Any Goals
-              </h3>
-              <span>School</span>
-              <span>College</span>
-              <span>Corporate Trainings</span>
+          <div className="grid lg:grid-cols-4 mt-10">
+            <div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[#000]  mb-[-0.5rem]  font-medium text-[20px]">
+                  Languages For Any Goals
+                </h3>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">School</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">College</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Corporate Trainings</span>
+              </div>
             </div>
-            <div className="flex flex-col ml-[-1rem]">
-              <h3 className="text-[#000] font-medium text-[20px]">
-                Korean Classes Near Me
-              </h3>
-              <span>Korean Classes in Mumbai</span>
-              <span>Korean Classes in Delhi</span>
-              <span>Korean Classes in Pune</span>
+            <div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[#000]  mb-[-1rem] font-medium text-[20px]">
+                  Korean Classes Near Me
+                </h3>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Korean Classes in Mumbai</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Korean Classes in Delhi</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Korean Classes in Pune</span>
+              </div>
             </div>
-            <div className="flex flex-col ">
-              <h3 className="text-[#000] font-medium text-[20px]">
-                Japanese Classes Near Me
-              </h3>
-              <span>Japanese Classes in Mumbai</span>
-              <span>Japanese Classes in Delhi</span>
-              <span>Japanese Classes in Pune</span>
+            <div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[#000]  mb-[-1rem] font-medium text-[20px]">
+                  Japanese Classes Near Me
+                </h3>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Japanese Classes in Mumbai</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Japanese Classes in Delhi</span>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Japanese Classes in Pune</span>
+              </div>
             </div>
-            <div className="flex flex-col ">
-              <h3 className="text-[#000] font-medium text-[20px]">
-                Mandarin Classes Near Me
-              </h3>
-              <span>Mandarin Classes in Delhi</span>
-            </div>
-            <div className="flex flex-col ">
-              
+            <div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[#000]  mb-[-1rem] font-medium text-[20px]">
+                  Mandarin Classes Near Me
+                </h3>
+                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Mandarin Classes in Delhi</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row w-full lg:w-full p-10 items-center justify-between">
+      <div className="flex flex-col lg:flex-row w-full lg:w-full mt-16 mb-6 p-4 items-center justify-between">
         <div>Copyright © 2024 The Language Network - All Right Reserved</div>
         <div className="flex flex-col lg:flex-row items-center gap-5">
           <div className="flex">
