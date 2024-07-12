@@ -3,7 +3,7 @@ import Newsletter from "../../../../Components/HomeComp/Newsletter";
 import Contact from "../../../../Shared/Contact";
 import Banner from "../components/Banner";
 import bannerImg from "../../../../Assets/college/Banner.png"
-// import collegeWhyCardInfo from "./data/collegeWhyCardInfo"
+import collegeWhyCardInfo from "./data/collegeWhyCardInfo"
 
 const CollegePage = () => {
   return (
@@ -14,7 +14,7 @@ const CollegePage = () => {
       <div className="flex flex-col items-center justify-between mx-4 lg:mx-[44px] 2xl:mx-[88px] 3xl:mx-[96px] 4xl:mx-[120px] 2xl:max-w-[1680px]">
         <Banner bannerImg={bannerImg}/>
       </div>
-      {/* <WhyNeeded institute={"college"} cardInfo={collegeWhyCardInfo}/> */}
+      <WhyNeeded institute={"Colleges"} cardInfo={collegeWhyCardInfo}/>
       <Newsletter />
     </div>
   );
