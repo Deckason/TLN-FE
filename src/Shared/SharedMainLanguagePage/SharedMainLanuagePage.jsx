@@ -13,10 +13,10 @@ import OnlineLanguageClass from "./Components/OnlineLanguageClass/OnlineLanguage
 import PrepareForLanguageExam from "./Components/PrepareForLanguageExam/PrepareForLanguageExam";
 import SayBonjur from "./Components/SayBonjur/SayBonjur";
 import StudentsTestomony from "./Components/StudentTestomony/StudentsTestomony";
-import UpcomingBathches from "./Components/UpcomingBatches/UpcomingBatches";
+import UpcomingBatches from "../UpcomingBatches";
 import WhyLearnLanguage from "./Components/WhyLearnLanguage/WhyLearnLanguage";
 
-const SharedMainLanuagePage = ({ Data }) => {
+const SharedMainLanuagePage = ({ Data, language }) => {
   // console.log(Data);
   return (
     <div>
@@ -33,8 +33,9 @@ const SharedMainLanuagePage = ({ Data }) => {
             ClassesForAnyLevel={Data?.ClassesForAnyLevel}
           />
           <WhyLearnLanguage WhyLearnLanguage={Data?.WhyLearnLanguage} />
-          <UpcomingBathches />
-        </div>
+          <div className="-my-[150px] z-10">
+            <UpcomingBatches language={language} />
+          </div>        </div>
 
       </div>
       <div>

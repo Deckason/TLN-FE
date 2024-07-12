@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-const UpcomingBathches = () => {
+const UpcomingBatches = () => {
   const CardData = [
     {
       id: 1,
@@ -152,4 +152,4 @@ const UpcomingBathches = () => {
   );
 };
 
-export default UpcomingBathches;
+export default UpcomingBatches;

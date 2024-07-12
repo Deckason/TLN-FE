@@ -255,7 +255,7 @@ const FrenchForKidsPage = () => {
   };
   return (
     <div>
-      <SharedKidsPage Data={data} />
+      <SharedKidsPage Data={data} language={"French"}/>
     </div>
   );
 };

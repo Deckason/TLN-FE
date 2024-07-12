@@ -5,7 +5,7 @@ import girlPrachi from "../../../../Assets/Spanish/Prachi-1.png";
 import Image from "next/image";
 import UpcomingBatchCard from "./UpcomingBatchCard";
 
-const UpcomingBathches = () => {
+const UpcomingBatches = () => {
   const CardData = [
     {
       id: 1,
@@ -73,4 +73,4 @@ const UpcomingBathches = () => {
   );
 };
 
-export default UpcomingBathches;
+export default UpcomingBatches;

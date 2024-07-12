@@ -6,7 +6,7 @@ import Image from "next/image";
 const HomeBanner = () => {
   return (
     <div className=" md:mx-10 mt-5 w-full ">
-      <div className=" lg:h-[372px] w-full justify-between  items-center flex flex-col lg:flex-row px-5   xl:mx-auto">
+      <div className=" lg:h-[372px] w-full justify-between  items-center flex flex-col lg:flex-row px-2   xl:mx-auto">
         <div className="lg:w-[525px] lg:min-h-[542px] min-h-fit flex-col z-10 max-lg:my-10 justify-center w-full lg:items-start gap-0 inline-flex">
           <div className="self-stretch lg:h-[261px] h-fit 2xl:h-[261px] xl:h-[261px] flex-col justify-center items-start gap-4 flex">
             <div className="self-stretch text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold ">

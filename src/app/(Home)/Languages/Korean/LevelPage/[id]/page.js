@@ -425,7 +425,7 @@ const DynamicPage = ({ params }) => {
   }, [fetchData]);
   return (
     <div>
-      <SharedLevelPage Data={LevelData} />
+      <SharedLevelPage Data={LevelData} language={"Korean"}/>
     </div>
   );
 };

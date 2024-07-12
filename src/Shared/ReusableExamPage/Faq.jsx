@@ -34,14 +34,16 @@ const Faqs = ({ data }) => {
             </div>
           </div>
         </div>
+        <div className="w-full px-8">
         <button
           onClick={toggleSplicing}
           className="h-[58px] px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
         >
           <div className="text-center text-teal-600 text-2xl font-medium">
-            {splicing ? "Read all FAQs" : "Read less FAQs"}
+            {splicing ? "Read less FAQs" : "Read all FAQs"}
           </div>
         </button>
+        </div>
       </div>
     </div>
   );

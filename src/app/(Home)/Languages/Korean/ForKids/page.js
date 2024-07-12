@@ -223,7 +223,7 @@ const KoreanForKidsPage = () => {
   };
   return (
     <div>
-      <SharedKidsPage Data={data} />
+      <SharedKidsPage Data={data} language={"Korean"}/>
     </div>
   );
 };

@@ -8,11 +8,11 @@ import LanguageLessons from "./Components/Languagelessons";
 import PaymentBar from "./Components/PaymentBar";
 import PrepareForLanguageExam from "./Components/PrepareForLanguageExam";
 import SayBonjur from "./Components/SayBonjur";
-// import UpcomingBathches from "./Components/UpcomingBatches";
+// import UpcomingBatches from "./Components/UpcomingBatches";
 import WhyShould from "../../Components/HomeComp/WhyShould";
-import UpcomingBathches from "../SharedMainLanguagePage/Components/UpcomingBatches/UpcomingBatches";
+import UpcomingBatches from "../UpcomingBatches";
 
-const SharedAdultsPage = ({ Data }) => {
+const SharedAdultsPage = ({ Data, language }) => {
   // console.log(Data);
   let faqs = [];
 
@@ -33,7 +33,7 @@ const SharedAdultsPage = ({ Data }) => {
       <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
         <WhyShould />
         <div className="mt-[70px] md:mt-[112px]">
-          <UpcomingBathches />
+          <UpcomingBatches language={language}/>
         </div>
 
         <LanguageClassesForAnyLevel
@@ -47,7 +47,7 @@ const SharedAdultsPage = ({ Data }) => {
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
       /> */}
       <SayBonjur SayBonjur={Data?.SayBonjur} />
-      <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
+      <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
         <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
       </div>
       <SubscribeToOur />
