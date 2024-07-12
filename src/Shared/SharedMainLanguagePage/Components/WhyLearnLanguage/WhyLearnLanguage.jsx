@@ -253,7 +253,7 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
             </div>
           </div>
 
-          <div className="flex md:mt-5  max-sm:p-5 justify-center 2xl:mt-[112px] xl:mt-[250px]">
+          <div className="flex md:mt-5  max-sm:p-5 justify-center 2xl:mt-[112px] xl:mt-[290px]">
             <div className="max-w-[405px]  pb-6 min-h-[270px]  bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 justify-start items-start gap-2.5 inline-flex">
               <div className="grow shrink basis-0 flex-col justify-start items-center gap-4 inline-flex">
                 <div className="self-stretch min-h-[88px] py-8 rounded-t-2xl bg-secondary-color  flex-col justify-start items-center gap-2.5 flex">

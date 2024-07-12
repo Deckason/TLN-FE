@@ -6,10 +6,10 @@ import LanguageLessons from "./Components/Languagelessons/LanguageLessons";
 import PaymentBar from "../../Components/HomeComp/PaymentBar";
 
 import SayBonjur from "./Components/SayBonjur/SayBonjur";
-import UpcomingBathches from "./Components/UpcomingBatches/UpcomingBathces";
 import WhatWIllYouLearn from "./Components/WhatWillYouLearn/WhatWIllYouLearn";
+import UpcomingBatches from "../UpcomingBatches";
 
-const SharedLevelPage = ({ Data }) => {
+const SharedLevelPage = ({ Data, language }) => {
   let faqs = [];
 
   if (Data?.Faqs?.length > 0 && Data?.Faqs !== undefined) {
@@ -23,7 +23,7 @@ const SharedLevelPage = ({ Data }) => {
       <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
         <Banner BannerData={Data?.BannerData} />
         <WhatWIllYouLearn WhatWIllYouLearn={Data?.WhatWillYouLearn} />
-        <UpcomingBathches />
+        <UpcomingBatches language={language}/>
       </div>
       <FaqsLanguage FaqsData={faqs} />
       <SayBonjur SayBonjur={Data?.SayBonjur} />

@@ -21,7 +21,7 @@ export const TopBar = (data) => {
           </div>
         </div>
         <div className="lg:w-[832px] xl:w-[832px] w-[fit]  relative flex items-end justify-center">
-          <div className="-mb-10 z-50">
+          <div className="-mb-14 z-50">
             <Image src={homePageBannerGirl} alt="home" className="w-[591px]" />
           </div>
           <div className="absolute top-0 left-0">

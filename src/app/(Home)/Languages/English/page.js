@@ -287,7 +287,7 @@ const EnglishPage = () => {
 
 return (
   <div>
-    <SharedMainLanuagePage Data={content} />
+    <SharedMainLanuagePage Data={content} language={"English"}/>
   </div>
 );
 };

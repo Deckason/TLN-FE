@@ -284,7 +284,7 @@ const SpanishPage = () => {
       } }))}, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={content} />
+      <SharedMainLanuagePage Data={content} language={"Spanish"}/>
     </div>
   );
 };

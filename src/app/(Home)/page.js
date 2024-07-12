@@ -26,7 +26,7 @@ export default function Home() {
       <WhyShould />
       <CoursesWeOffer />
       <section className="-mt-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
-        <UpcomingBatches />
+        <UpcomingBatches language={"English"}/>
       </section>
 
       <CefrLevels />

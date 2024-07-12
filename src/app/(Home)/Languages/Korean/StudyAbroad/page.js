@@ -188,7 +188,7 @@ const page = () => {
   };
   return (
     <div>
-      <SharedStudyAbroad Data={data} />
+      <SharedStudyAbroad Data={data} language={"Korean"}/>
     </div>
   );
 };

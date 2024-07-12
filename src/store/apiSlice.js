@@ -1,8 +1,11 @@
 import {createApi,fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
+const currMonth = new Date().getMonth()+1;
+console.log(currMonth)
+
 export const api = createApi({
     baseQuery: fetchBaseQuery({baseUrl:"http://3.110.121.13"}),
-    tagTypes:["Promos","News","FAQ","Stats","Banner"],
+    tagTypes:["Promos","News","FAQ","Stats","Banner","Batches1", "Batches2","Batches3"],
     endpoints:(builder) => ({
         // -----------------------------promo queries-------------------------------
 
@@ -80,7 +83,23 @@ export const api = createApi({
         }),
         invalidatesTags: ["Banner"],
         }),
+
+
+         // -----------------------------batches queries-------------------------------
+
+        getNextMonth1Batches: builder.query({
+            query: () => `/api/batch/get/upcoming?month=${currMonth+1}`,
+            providesTags: ["Batches1"]
+        }),
+        getNextMonth2Batches: builder.query({
+            query: () => `/api/batch/get/upcoming?month=${(currMonth+2)%12}`,
+            providesTags: ["Batches2"]
+        }),
+        getNextMonth3Batches: builder.query({
+            query: () => `/api/batch/get/upcoming?month=${(currMonth+3)%12}`,
+            providesTags: ["Batches3"]
+        }),
     })
 })
 
-export const {useGetPromoQuery,useUpdatePromoMutation,useGetNewsQuery,useGetFAQsQuery,useGetFilteredFAQsQuery,useAddFAQsMutation,useUpdateFAQsMutation, useGetStatsQuery, useUpdateStatsMutation, useGetBannerQuery, useUpdateBannerMutation} = api;
+export const {useGetPromoQuery,useUpdatePromoMutation,useGetNewsQuery,useGetFAQsQuery,useGetFilteredFAQsQuery,useAddFAQsMutation,useUpdateFAQsMutation, useGetStatsQuery, useUpdateStatsMutation, useGetBannerQuery, useUpdateBannerMutation, useGetNextMonth1BatchesQuery, useGetNextMonth2BatchesQuery,useGetNextMonth3BatchesQuery} = api;

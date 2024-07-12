@@ -3,7 +3,7 @@ import girlRashi from "@/Assets/Homepage/UpComingCourseCard/girlRashi.png";
 import girlIshwari from "@/Assets/Spanish/Ishwari-1 1.png";
 import girlPrachi from "@/Assets/Spanish/Prachi-1.png";
 import Image from "next/image";
-const UpcomingBathches = () => {
+const UpcomingBatches = () => {
   const data = [
     {
       id: 1,
@@ -266,4 +266,4 @@ const UpcomingBathches = () => {
   );
 };
 
-export default UpcomingBathches;
+export default UpcomingBatches;

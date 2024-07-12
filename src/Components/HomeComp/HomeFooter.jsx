@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import FooterLogo1 from "../../Assets/Homepage/Footer/footerLogo.png";
 import FooterLogo2 from "../../Assets/Homepage/Footer/FooterLogo2.png";
-import FooterLogo3 from "../../Assets/Homepage/Footer/footerLogo3.png";
+import footerLogo3 from "../../Assets/Homepage/Footer/FooterLogo3.png";
 import FaceBook from "../../Assets/Homepage/Footer/FaceBook.png";
 import Insta from "../../Assets/Homepage/Footer/Instagram.png";
 import Linkdin from "../../Assets/Homepage/Footer/Linkdin.png";
@@ -24,7 +24,7 @@ const HomeFooter = () => {
               <Image src={FooterLogo1} alt="footerImg" className="p-1" />
               <div className="flex gap-5 items-center">
                 <Image src={FooterLogo2} alt="footerLogo2" className="p-1"/>
-                <Image src={FooterLogo3} alt="footerLogo3" className="p-1"/>
+                <Image src={footerLogo3} alt="footerLogo3" className="p-1"/>
               </div>
             </div>
           </Link>
