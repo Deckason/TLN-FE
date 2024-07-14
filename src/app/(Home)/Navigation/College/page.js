@@ -4,6 +4,7 @@ import Contact from "../../../../Shared/Contact";
 import Banner from "../components/Banner";
 import bannerImg from "../../../../Assets/college/Banner.png"
 import collegeWhyCardInfo from "./data/collegeWhyCardInfo"
+import WhyChooseUs from "../components/whyChooseUs/WhyChooseUs"
 
 const CollegePage = () => {
   return (
@@ -16,6 +17,7 @@ const CollegePage = () => {
       </div>
       <WhyNeeded institute={"Colleges"} cardInfo={collegeWhyCardInfo}/>
       <Newsletter />
+      <WhyChooseUs />
     </div>
   );
 };

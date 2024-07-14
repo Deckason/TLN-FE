@@ -2,7 +2,7 @@ import WhyCard from "./WhyCard";
 const WhyNeeded = ({ institute, cardInfo }) => {
   return (
     <div className="pb-[50px]">
-      <h2 className="text-[60px]/[72.61px] font-bold text-center mt-[120px] mb-[67px]">
+      <h2 className="text-[35px]/[50px] sm:text-[40px]/[55px] md:text-[45px]/[60px] lg:text-[50px]/[65px] xl:text-[55px]/[70px] 2xl:text-[60px]/[72.61px] text-[#1E1E1E] font-bold text-center mt-[50px] xl:mt-[90px] 2xl:mt-[120px] mb-[67px]">
         Why {institute} need foreign languages?
       </h2>
       <div className="flex justify-center items-center flex-wrap gap-4">

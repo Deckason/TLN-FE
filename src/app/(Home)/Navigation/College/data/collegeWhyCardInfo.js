@@ -1,6 +1,6 @@
 const collegeWhyCardInfo = [
   {
-    icon: "/college/networking.svg",
+    icon: "/college/networking.png",
     title: "Networking",
     description:
       "Language classes bring together diverse individuals, fostering connections and exposing you to new perspectives beyond your field of study.",
