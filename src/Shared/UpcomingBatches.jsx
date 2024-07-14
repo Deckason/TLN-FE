@@ -195,7 +195,7 @@ const UpcomingBatches = ({ language }) => {
               },
             }}
             // modules={[Pagination]}
-            className="mySwiper mx-auto flex justify-center   items-center max-w-[370px] md:max-w-[700px]  lg:max-w-[1000px]  xl:max-w-[1200px]  2xl:max-w-[1200px] lg:hidden 3xl:max-w-[1440px]"
+            className="mySwiper mx-auto flex justify-center  items-center w-[320px] md:max-w-[700px]  lg:max-w-[1000px]  xl:max-w-[1200px]  2xl:max-w-[1200px] lg:hidden 3xl:max-w-[1440px]"
           >
             {month1Data && dataMobile ? dataMobile.map((currBatch, index) => {
               return (<SwiperSlide key={index} className=" md:w-[355px] lg:w-[300px] xl:w-[354px] 2xl:w-[540px] w-full  lg:scale-100   p-4 flex-col justify-start items-start gap-2.5  rounded-xl  shadow-[#bab8b8]/40 flex shadow-md hover:shadow-2xl transition duration-300">

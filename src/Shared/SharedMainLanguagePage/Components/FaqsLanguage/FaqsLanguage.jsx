@@ -51,7 +51,7 @@ const FaqsLanguage = ({ FaqsData }) => {
             </div>
           </div>
         </div>
-        <div className="w-full  px-16">
+        <div className="w-full  px-4">
           <button
             onClick={() => {
               if (splicing) {

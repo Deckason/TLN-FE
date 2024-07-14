@@ -34,7 +34,7 @@ const Faqs = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="w-full px-8">
+        <div className="w-full px-5">
         <button
           onClick={toggleSplicing}
           className="h-[58px] px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
