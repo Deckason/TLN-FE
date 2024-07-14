@@ -9,7 +9,7 @@ const CustomImage = ({ icon, title, width }) => {
         alt={`${title} icon`}
         width={width}
         height={133}
-        className={`mt-[20px] mb-[40px] mx-[40px]`}
+        className={`mt-[20px] mb-[30px] mx-[40px]`}
       />
     </>
   );

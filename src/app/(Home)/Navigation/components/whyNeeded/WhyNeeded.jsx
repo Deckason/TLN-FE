@@ -9,7 +9,7 @@ const WhyNeeded = ({ institute, cardInfo }) => {
         {cardInfo.map((card) => {
           return (
             <WhyCard
-              id={card.title}
+              key={card.title}
               icon={card.icon}
               title={card.title}
               description={card.description}

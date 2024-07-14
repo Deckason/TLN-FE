@@ -18,6 +18,8 @@ const CollegePage = () => {
       <WhyNeeded institute={"Colleges"} cardInfo={collegeWhyCardInfo}/>
       <Newsletter />
       <WhyChooseUs />
+      {/* How it works */}
+      {/* 3 plans */}
     </div>
   );
 };
