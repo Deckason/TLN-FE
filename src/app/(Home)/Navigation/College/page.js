@@ -7,6 +7,8 @@ import collegeWhyCardInfo from "./data/collegeWhyCardInfo"
 import WhyChooseUs from "../components/whyChooseUs/WhyChooseUs"
 import HowItWorks from "../components/HowItWorks";
 import howItWorksData from "../College/data/howItWorksData"
+import Plans from "../components/plans/Plans";
+import plansData from "../components/plans/plansData"
 
 const CollegePage = () => {
   return (
@@ -20,9 +22,9 @@ const CollegePage = () => {
       <WhyNeeded institute={"Colleges"} cardInfo={collegeWhyCardInfo}/>
       <Newsletter />
       <WhyChooseUs />
-      {/* How it works */}
       <HowItWorks data={howItWorksData}/>
       {/* 3 plans */}
+      <Plans data={plansData}/>
     </div>
   );
 };
