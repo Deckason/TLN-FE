@@ -5,6 +5,8 @@ import Banner from "../components/Banner";
 import bannerImg from "../../../../Assets/college/Banner.png"
 import collegeWhyCardInfo from "./data/collegeWhyCardInfo"
 import WhyChooseUs from "../components/whyChooseUs/WhyChooseUs"
+import HowItWorks from "../components/HowItWorks";
+import howItWorksData from "../College/data/howItWorksData"
 
 const CollegePage = () => {
   return (
@@ -19,6 +21,7 @@ const CollegePage = () => {
       <Newsletter />
       <WhyChooseUs />
       {/* How it works */}
+      <HowItWorks data={howItWorksData}/>
       {/* 3 plans */}
     </div>
   );
