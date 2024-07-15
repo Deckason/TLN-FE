@@ -16,12 +16,12 @@ const StudentsTestomony = () => {
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className="w-full bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[82px] ">
+    <div className="w-full bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[82px]">
       <div className="-mt-[20px] min-h-[518px]  mx-auto flex justify-center flex-col items-center lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <h1 className="text-stone-900 text-center 2xl:text-[50px] xl:text-[50px] max-md:text-2xl max-xl:text-5xl text-[24px] mb-4 font-bold max-lg:text-2xl">
           Hear it from the Learners
         </h1>
-        <div className="  w-full ">
+        <div className="w-full">
           <Swiper
             spaceBetween={20}
             pagination={{
