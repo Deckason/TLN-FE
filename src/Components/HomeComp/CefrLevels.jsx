@@ -402,11 +402,11 @@ const CefrLevels = () => {
             },
           }}
           // modules={[Pagination]}
-          className="mySwiper mx-auto flex justify-center   items-center  max-w-[350px] md:max-w-[700px]  lg:max-w-[1000px] pb-5 xl:max-w-[1200px]  2xl:max-w-[1200px] lg:hidden 3xl:max-w-[1440px]"
+          className=" mySwiper mx-auto flex justify-center  items-center  max-w-[350px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px]  2xl:max-w-[1200px] lg:hidden 3xl:max-w-[1440px]"
         >
           <SwiperSlide
             id="A1"
-            className="w-[263px] h-[430px]  rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px]  rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-secondary-color rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
@@ -456,7 +456,7 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="A2"
-            className="w-[263px] h-[430px] bg-white rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#B0DCD7] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
@@ -507,7 +507,7 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="B1"
-            className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#48B0A3] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
@@ -558,7 +558,7 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="B2"
-            className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#1F9F90] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
@@ -609,7 +609,7 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="C1"
-            className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#008171] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
@@ -660,7 +660,7 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="C2"
-            className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#006253] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
