@@ -41,7 +41,7 @@ const StudentsTestomony = () => {
             }}
             // slidesPerView={4}
             breakpoints={{
-              1680: {
+              1920: {
                 slidesPerView: 4,
               },
               1280: {
@@ -50,18 +50,15 @@ const StudentsTestomony = () => {
               1024: {
                 slidesPerView: 2,
               },
-              768: {
-                slidesPerView: 2,
-              },
               368: {
                 slidesPerView: 1,
               },
             }}
             // modules={[Pagination]}
-            className="mySwiper mx-auto flex justify-center  items-center max-w-[326px] md:max-w-[700px]  lg:max-w-[850px] xl:max-w-[1150px] w-full max-sm:max-h-full max-sm:w-[326px] max-sm:h-[350px] p-4 2xl:w-full 3xl:max-w-[1440px]"
+            className="mySwiper mx-auto flex justify-center items-center max-sm:max-h-full w-[326px] sm:w-[404px] lg:w-[808px] xl:w-[1264px] 2xl:w-[1264px] 4xl:w-[1680px] h-[350px] p-4 "
           >
-            <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] max-sm:h-[335px] ">
-              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-4 max-w-[404px]">
+            <SwiperSlide className="flex justify-center items-center w-[404px] h-[335px] ">
+              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 p-[20px] transition duration-300 hover:shadow-xl lg:p-8 max-w-[404px]">
                 <div className="text-sm text-stone-900">
                   “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -95,8 +92,8 @@ const StudentsTestomony = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] max-sm:h-[335px] ">
-              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-4 max-w-[404px]">
+            <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] w-[404px] h-[335px] ">
+              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 p-[20px] transition duration-300 hover:shadow-xl lg:p-8 max-w-[404px]">
                 <div className="text-sm text-stone-900">
                   “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -130,8 +127,8 @@ const StudentsTestomony = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] max-sm:h-[335px] ">
-              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-4 max-w-[404px]">
+            <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] w-[404px] h-[335px] ">
+              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 p-[20px] transition duration-300 hover:shadow-xl lg:p-8 max-w-[404px]">
                 <div className="text-sm text-stone-900">
                   “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -165,8 +162,8 @@ const StudentsTestomony = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] max-sm:h-[335px] ">
-              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-4 max-w-[404px]">
+            <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] w-[404px] h-[335px] ">
+              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 p-[20px] transition duration-300 hover:shadow-xl lg:p-8 max-w-[404px]">
                 <div className="text-sm text-stone-900">
                   “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -200,8 +197,8 @@ const StudentsTestomony = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] max-sm:h-[335px] ">
-              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-4 max-w-[404px]">
+            <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] w-[404px] h-[335px] ">
+              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 p-[20px] transition duration-300 hover:shadow-xl lg:p-8 max-w-[404px]">
                 <div className="text-sm text-stone-900">
                   “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
@@ -235,8 +232,8 @@ const StudentsTestomony = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] max-sm:h-[335px] ">
-              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 transition duration-300 hover:shadow-xl lg:p-8 p-4 max-w-[404px]">
+            <SwiperSlide className="flex justify-center items-center max-sm:w-[326px] w-[404px] h-[335px] ">
+              <div className="flex flex-col  bg-white rounded-2xl shadow-md m-2 p-[20px] transition duration-300 hover:shadow-xl lg:p-8 max-w-[404px]">
                 <div className="text-sm text-stone-900">
                   “Spanish I have done my Spanish A1 & A2 from The Language
                   Network. I have an amazing experience with the teachers. They
