@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:px-16">
           <div className=" sm:p-4 order-2 md:order-1 text-black">
-            <div className="flex flex-col py-6 justify-around items-center md:items-start  h-full">
+            <div className="flex flex-col py-6 justify-around items-center md:items-start gap-3  h-full">
               <h4 className="text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl sm:font-medium py-4 md:py-1">
                 Create With Us
               </h4>
