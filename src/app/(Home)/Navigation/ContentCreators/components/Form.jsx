@@ -97,7 +97,7 @@ const Form = () => {
 												name="name"
 												value={formState.name}
 												onChange={handleChange}
-												className="w-full   pl-10 pr-3 py-1.5 rounded-lg border-2 border-gray-400   bg-gray-50 outline-none focus:border-indigo-500"
+												className="w-full   pl-3 pr-3 py-1.5 rounded-lg border-2 border-gray-400   bg-gray-50 outline-none focus:border-indigo-500"
 												placeholder="Full Name "
 											/>
 											{errors.name && (
@@ -113,7 +113,7 @@ const Form = () => {
 												name="phone"
 												value={formState.phone}
 												onChange={handleChange}
-												className="w-full  pl-10 pr-3 py-1.5 rounded-lg border-2 border-gray-400  bg-gray-50 outline-none focus:border-indigo-500"
+												className="w-full  pl-3 pr-3 py-1.5 rounded-lg border-2 border-gray-400  bg-gray-50 outline-none focus:border-indigo-500"
 												placeholder="Contact No."
 											/>
 											{errors.phone && (
@@ -131,7 +131,7 @@ const Form = () => {
 											name="email"
 											value={formState.email}
 											onChange={handleChange}
-											className="w-full  pl-10 pr-3 py-1.5 rounded-lg border-2 border-gray-400  bg-gray-50 outline-none focus:border-indigo-500"
+											className="w-full  pl-3 pr-3 py-1.5 rounded-lg border-2 border-gray-400  bg-gray-50 outline-none focus:border-indigo-500"
 											placeholder="Email Address "
 										/>
 										{errors.email && (
@@ -148,7 +148,7 @@ const Form = () => {
 											name="instagramUsername"
 											value={formState.instagramUsername}
 											onChange={handleChange}
-											className="w-full  pl-10 pr-3 py-1.5 rounded-lg border-2 border-gray-400  bg-gray-50 outline-none focus:border-indigo-500"
+											className="w-full  pl-3 pr-3 py-1.5 rounded-lg border-2 border-gray-400  bg-gray-50 outline-none focus:border-indigo-500"
 											placeholder="Instagram Username"
 										/>
 										{errors.instagramUsername && (
