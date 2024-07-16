@@ -12,10 +12,10 @@ const SubscribeToOur = () => {
                 required
                 type="email"
                 placeholder="Email ID"
-                className="h-12 max-sm:w-full mx-6 px-4 py-[11px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-center gap-2.5 flex grow focus:outline-none  shrink basis-0 text-neutral-400 max-md:h-[39px] text-xl font-normal  leading-[34px]"
+                className="h-12 mx-2 w-82 px-16 py-[24px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-end gap-2.5 flex grow focus:outline-none  shrink text-neutral-400 max-md:h-[39px] text-xl font-normal  leading-[34px]"
               />
             </div>
-            <button className="w-[180px] max-sm:scale-90 px-8 py-3.5 bg-neutral-50 rounded-lg justify-center items-center gap-2.5 flex">
+            <button className="w-[180px] max-sm:scale-90 px-8 py-2.5 bg-neutral-50 rounded-lg justify-center items-center gap-2.5 flex">
               <div className="text-center text-teal-600 text-2xl font-medium ">
                 Subscribe
               </div>

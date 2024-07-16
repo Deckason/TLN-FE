@@ -6,9 +6,9 @@ import Image from "next/image";
 const TechersInfo = () => {
   return (
     <div className="lg:py-[112px] lg:flex block flex-col justify-center items-center p-20">
-      <div className="max-w-[1681px] p-5 lg:h-[634px] justify-start items-center xl:gap-[72px] gap-[16px] lg:gap-[72px] flex-col 2xl:flex-row xl:flex-row lg:flex-row flex ">
+      <div className="max-w-[1681px] p-5  justify-start items-center xl:gap-[72px] gap-[16px] lg:gap-[72px] flex-col 2xl:flex-row xl:flex-row lg:flex-row flex ">
         <div className="lg:w-[490px] 2xl:w-[490px] w-[350px] xl:w-[490px] lg:h-[495px] flex-col justify-start items-start gap-10 inline-flex">
-          <div className="self-stretch lg:h-[389px] flex-col justify-start items-start gap-4 lg:gap-8 flex">
+          <div className="self-stretch lg:h-[389px] flex-col justify-start items-start gap-4 lg:gap-8 flex xl:z-30">
             <div className="self-stretch lg:h-[190px] flex-col justify-start items-start gap-2 flex">
               <div className="text-stone-900 mb-6 text-2xl lg:text-[50px] font-bold ">
                 Inspiring.
@@ -20,7 +20,7 @@ const TechersInfo = () => {
                 Knowledgeable.
               </div>
             </div>
-            <div className="self-stretch lg:h-[167px] text-stone-900 text-sm font-medium lg:text-lg lg:font-normal  leading-7">
+            <div className="self-stretch lg:h-[167px] text-stone-900 text-sm font-medium lg:text-lg lg:font-normal leading-7">
               Meet our team of over 200+ internationally certified trainer who
               bring learning to life! With their expertise, they transform every
               lesson into a fun and engaging experience, creating a warm and
@@ -28,12 +28,12 @@ const TechersInfo = () => {
               <br />
             </div>
           </div>
-          <div className="self-stretch max-lg:hidden h-[58px] flex-col justify-start items-start gap-2.5 flex">
-            <BookAFreeDemoButton />
+          <div className="self-stretch max-lg:hidden h-[58px] flex-col inset-x-0 bottom-0 justify-start items-start gap-2.5 flex"> 
+            <BookAFreeDemoButton /> 
           </div>
         </div>
-        <div className="w-full opacity-100 gap-x-4 flex-grow lg:h-[560px] h-fit  flex">
-          <div className="w-[50%] relative h-full  rounded lg:rounded-2xl">
+        <div className="w-full opacity-100 gap-x-4 flex-grow lg:h-[560px] h-full flex xl:z-20">
+          <div className="w-[50%] relative h-full rounded lg:rounded-2xl">
             <Image
               alt="Prachi"
               src={PrachiImg}

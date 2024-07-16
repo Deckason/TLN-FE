@@ -16,10 +16,10 @@ const CefrLevels = () => {
     <div className="bg-[#F5F5F5] pb-[90px] xl:pt-[90px] lg:pt-[150px] min-h-[1250px] ">
       <div className="max-w-[1681px]  mx-auto flex justify-center items-center p-5 lg:p-0 mb-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <section className="min-h-[463px] lg:mx-10 gap-5 lg:gap-[42px] w-full grid lg:grid-cols-2 ">
-          <div className=" rounded-xl">
+          <div className="rounded-3xl">
             <Image
               alt="girl"
-              className="object-cover h-full rounded-xl w-full"
+              className="object-cover h-[90%] rounded-3xl w-[110%]"
               src={girlImage}
             />
           </div>
@@ -29,7 +29,7 @@ const CefrLevels = () => {
             >
               Our courses are aligned with The CEFR Levels
             </h1>
-            <p className=" lg:min-h-[250px] text-neutral-500 lg:text-[18px]/[24px] font-normal text-base mt-2 lg:mt-[23px] leading-7 text-justify mb-[16px]">
+            <p className=" lg:min-h-[250px] text-neutral-500 lg:text-[16px]/[22px] font-normal text-base mt-2 lg:mt-[23px] leading-7 text-justify mb-[16px]">
               Common European Framework of Reference for Languages (CEFR) is an
               internationally recognized standard that describes your learning
               progress in more detail. The framework helps you to explain your
@@ -42,7 +42,7 @@ const CefrLevels = () => {
               <br />
               <br />
             </p>
-            <div className="flex -ml-[27px]">
+            <div className="flex mt-[-4rem]">
               <BookAFreeDemoButton></BookAFreeDemoButton>
             </div>
           </div>
