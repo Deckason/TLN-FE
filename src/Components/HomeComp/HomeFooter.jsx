@@ -28,11 +28,11 @@ const HomeFooter = () => {
               </div>
             </div>
           </Link>
-          <button className="px-4 py-1.5 lg:px-5 lg:py-3.5 mt-auto mb-[-1rem] w-40 bg-teal-600 rounded-lg text-neutral-100 text-sm md:text-base lg:text-xl font-normal items-center">
+          <button className="px-4 py-1.5 lg:px-5 lg:py-3.5 mt-auto mb-[-1rem] w-40 bg-teal-600 rounded-lg text-neutral-100 text-sm md:text-[12px] lg:text-xl font-normal items-center">
             Contact us
           </button>
         </div>
-        <div className="text-[#666666] w-full shrink">
+        <div className="text-[#666666] w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl">
 
           <div className="grid lg:grid-cols-4 mt-2 w-full">
             <div>
@@ -40,12 +40,12 @@ const HomeFooter = () => {
                 <h3 className="text-[#000]  font-medium text-[10px] md:text-sm lg:text-[20px]">
                   About us
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px]">Who Are We</span>
-                <span className="text-xs md:text-lg lg:text-[15px] ">How It Works</span>
-                <span className="text-xs md:text-lg lg:text-[15px]">Blogs</span>
-                <span className="text-xs md:text-lg lg:text-[15px]">Press</span>
-                <span className="text-xs md:text-lg lg:text-[15px]">FAQ</span>
-                <span className="text-xs md:text-lg lg:text-[15px]">Contact Us</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base">Who Are We</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base ">How It Works</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base">Blogs</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base">Press</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base">FAQ</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base">Contact Us</span>
               </div>
             </div>
             <div>
@@ -53,13 +53,13 @@ const HomeFooter = () => {
                 <h3 className="text-[#000]  font-medium text-[20px]">
                   Languages for Kids
                 </h3>
-                <span className="  ">Online French Classes for Kids</span>
-                <span className=" ">Online German Classes for Kids</span>
-                <span className="">Online Spanish Classes for Kids</span>
-                <span className="">Online Korean Classes for Kids</span>
-                <span className="">Online Japanese Classes for Kids</span>
-                <span className="">Online Mandarin Classes for Kids</span>
-                <span className="">Online English Classes for Kids</span>
+                <span className="md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-0.25rem]">Online French Classes for Kids</span>
+                <span className="md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-0.25rem]">Online German Classes for Kids</span>
+                <span className="md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-0.25rem]">Online Spanish Classes for Kids</span>
+                <span className="md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-0.25rem]">Online Korean Classes for Kids</span>
+                <span className="md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-0.25rem]">Online Japanese Classes for Kids</span>
+                <span className="md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-0.25rem]">Online Mandarin Classes for Kids</span>
+                <span className="md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-0.25rem]">Online English Classes for Kids</span>
               </div>
             </div>
             <div>
@@ -67,13 +67,13 @@ const HomeFooter = () => {
                 <h3 className="text-[#000]  mb-[-0.5rem] font-medium text-[20px]">
                   Languages For Adults
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online French Classes for Adults</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online German Classes for Adults</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Spanish Classes for Adults</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Korean Classes for Adults</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Japanese Classes for Adults</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Mandarin Classes for Adults</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online English Classes for Adults</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online French Classes for Adults</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online German Classes for Adults</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Spanish Classes for Adults</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Korean Classes for Adults</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Japanese Classes for Adults</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Mandarin Classes for Adults</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online English Classes for Adults</span>
               </div>
             </div>
             <div>
@@ -81,41 +81,41 @@ const HomeFooter = () => {
                 <h3 className="text-[#000]  mb-[-0.5rem]  font-medium text-[20px]">
                   Languages to Study Abroad
                 </h3>
-                <span className=" text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online French Classes to Study Abroad</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online German Classes to Study Abroad</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Spanish Classes to Study Abroad</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Korean Classes to Study Abroad</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Japanese Classes to Study Abroad</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Mandarin Classes to Study Abroad</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online English Classes to Study Abroad</span>
+                <span className="  md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online French Classes to Study Abroad</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online German Classes to Study Abroad</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Spanish Classes to Study Abroad</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Korean Classes to Study Abroad</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Japanese Classes to Study Abroad</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Mandarin Classes to Study Abroad</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online English Classes to Study Abroad</span>
               </div>
             </div>
           </div>
           <div className="grid lg:grid-cols-4 mt-10">
             <div>
               <div className="flex flex-col gap-3">
-                <h3 className="text-[#000]  mb-[-0.5rem] font-medium text-[10px] md:text-lg lg:text-[20px]">
+                <h3 className="text-[#000]  mb-[-0.5rem] font-medium text-[10px] md:text-[12px] lg:text-[20px]">
                   Work With us
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Career</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Teach With Us</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Collaborate With Us</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Content Creators</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Refer & Earn</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Career</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Teach With Us</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Collaborate With Us</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Content Creators</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Refer & Earn</span>
               </div>
             </div>
             <div>
               <div className="flex flex-col gap-3">
-                <h3 className="text-[#000]  mb-[-0.5rem] font-medium text-[10px] md:text-lg lg:text-[20px]">
+                <h3 className="text-[#000]  mb-[-0.5rem] font-medium text-[10px] md:text-[12px] lg:text-[20px]">
                   Language We Offer
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online French Classes</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online German Classes</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Spanish Classes</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Korean Classes</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Japanese Classes</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online Mandarin Classes</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Online English Classes</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online French Classes</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online German Classes</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Spanish Classes</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Korean Classes</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Japanese Classes</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online Mandarin Classes</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Online English Classes</span>
               </div>
             </div>
             <div>
@@ -123,15 +123,15 @@ const HomeFooter = () => {
                 <h3 className="text-[#000]  mb-[-1rem] font-medium text-[20px]">
                   French Classes Near Me
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">French Classes in Mumbai</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">French Classes in Delhi</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">French Classes in Pune</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">French Classes in Mumbai</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">French Classes in Delhi</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">French Classes in Pune</span>
                 <h3 className="text-[#000]  mt-8 mb-[-1rem] font-medium text-[20px]">
                   Spanish Classes Near Me
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Spanish Classes in Mumbai</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Spanish Classes in Delhi</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Spanish Classes in Pune</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Spanish Classes in Mumbai</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Spanish Classes in Delhi</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Spanish Classes in Pune</span>
               </div>
             </div>
             <div>
@@ -139,15 +139,15 @@ const HomeFooter = () => {
                 <h3 className="text-[#000]  mb-[-1rem] font-medium text-[20px]">
                   German Classes Near Me
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">German Classes in Mumbai</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">German Classes in Delhi</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">German Classes in Pune</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">German Classes in Mumbai</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">German Classes in Delhi</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">German Classes in Pune</span>
                 <h3 className="text-[#000]  mb-[-1rem] mt-8 font-medium text-[20px]">
                   English Classes Near Me
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">English Classes in Mumbai</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">English Classes in Delhi</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">English Classes in Pune</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">English Classes in Mumbai</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">English Classes in Delhi</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">English Classes in Pune</span>
               </div>
             </div>
           </div>
@@ -157,9 +157,9 @@ const HomeFooter = () => {
                 <h3 className="text-[#000]  mb-[-0.5rem]  font-medium text-[20px]">
                   Languages For Any Goals
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">School</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">College</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Corporate Trainings</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">School</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">College</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Corporate Trainings</span>
               </div>
             </div>
             <div>
@@ -167,9 +167,9 @@ const HomeFooter = () => {
                 <h3 className="text-[#000]  mb-[-1rem] font-medium text-[20px]">
                   Korean Classes Near Me
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Korean Classes in Mumbai</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Korean Classes in Delhi</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Korean Classes in Pune</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Korean Classes in Mumbai</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Korean Classes in Delhi</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Korean Classes in Pune</span>
               </div>
             </div>
             <div>
@@ -177,9 +177,9 @@ const HomeFooter = () => {
                 <h3 className="text-[#000]  mb-[-1rem] font-medium text-[20px]">
                   Japanese Classes Near Me
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Japanese Classes in Mumbai</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Japanese Classes in Delhi</span>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Japanese Classes in Pune</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Japanese Classes in Mumbai</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Japanese Classes in Delhi</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Japanese Classes in Pune</span>
               </div>
             </div>
             <div>
@@ -187,7 +187,7 @@ const HomeFooter = () => {
                 <h3 className="text-[#000]  mb-[-1rem] font-medium text-[20px]">
                   Mandarin Classes Near Me
                 </h3>
-                <span className="text-xs md:text-lg lg:text-[15px] mb-[-1rem]">Mandarin Classes in Delhi</span>
+                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base mb-[-1rem]">Mandarin Classes in Delhi</span>
               </div>
             </div>
           </div>

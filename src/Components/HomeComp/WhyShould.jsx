@@ -149,9 +149,9 @@ const WhyShould = () => {
         </ReusableModal>
       ))}
 
-      <div className="mt-[50px] md:mt-[98px] w-full  max-w-[1294px] mx-auto">
-        <h1 className="self-stretch 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] md:text-center my-[48px] text-stone-900 max-lg:px-4 text-xl font-bold ">
-          Why you should learn with The Language Network?
+      <div className="mt-[50px] md:mt-[98px] w-full  max-w-[1200px] mx-auto">
+        <h1 className="self-stretch 2xl:text-[50px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] md:text-center my-[48px] text-stone-900 max-lg:px-4 text-xl font-bold ">
+          Why you should learn with The Language <br className=" " /> <br /> Network?
         </h1>
         <div className="lg:grid hidden md:grid-cols-2 lg:grid-cols-4 mx-auto gap-y-6  gap-x-[32px]  ">
           <div

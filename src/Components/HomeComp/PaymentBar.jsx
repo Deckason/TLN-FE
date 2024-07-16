@@ -12,32 +12,34 @@ import Image from "next/image";
 
 const PaymentBar = () => {
   return (
-    <div className="flex-wrap bg-[#000000] gap-10 min-h-[86px]  flex items-center px-3 justify-around">
-      <div className="slider">
-        <div className="slide-track">
-          <div className="slide w-[160px]">
-            <Image src={amazon} alt="amazon" />
+    <div className="bg-[#000000] min-h-[66px] justify-center">
+      <div className="slider ">
+        <div className="slide-track flex"> 
+          {/* Add flex to slide-track */}
+          <div className="slide ">
+            <Image className="mr-[-10px]" src={amazon} alt="amazon" /> 
+            {/* Adjust negative margin as needed */}
           </div>
-          <div className="slide w-[160px]">
-            <Image className="" alt="logo" src={bhim} />
+          <div className="slide">
+            <Image className="mr-[-10px]" alt="logo" src={bhim} />
           </div>
-          <div className="slide w-[160px] ">
-            <Image className="" alt="logo" src={bajaj} />
+          <div className="slide ">
+            <Image className="mr-[-10px]" alt="logo" src={bajaj} />
           </div>
-          <div className="slide w-[160px] ">
-            <Image className="" alt="logo" src={Paytm} />
+          <div className="slide ">
+            <Image className="mr-[-10px]" alt="logo" src={Paytm} />
           </div>
-          <div className="slide w-[160px] ">
-            <Image className="" alt="logo" src={Gpay} />
+          <div className="slide ">
+            <Image className="mr-[-10px]" alt="logo" src={Gpay} />
           </div>
-          <div className="slide w-[160px] ">
-            <Image className="" alt="logo" src={Razor} />
+          <div className="slide ">
+            <Image className="mr-[-10px]" alt="logo" src={Razor} />
           </div>
-          <div className="slide w-[160px]">
-            <Image className="" alt="logo" src={upi} />
+          <div className="slide">
+            <Image className="mr-[-10px]" alt="logo" src={upi} />
           </div>
-          <div className="slide w-[160px] ">
-            <Image className="" alt="logo" src={rupay} />
+          <div className="slide ">
+            <Image className="mr-[-10px]" alt="logo" src={rupay} />
           </div>
         </div>
       </div>

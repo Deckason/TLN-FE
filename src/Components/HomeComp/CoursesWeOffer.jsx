@@ -15,40 +15,40 @@ const CoursesWeOffer = () => {
       <h1 className="my-[40px] text-center self-stretch text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold">
         Courses We Offer
       </h1>
-      <section className="max-w-[1452px] min-h-[165px] justify-center shrink items-center flex-wrap xl:gap-x-[28px] gap-10 mx-10 lg:mx-auto flex">
-        <div className="flex items-center xl:gap-x-[32px] gap-10 flex-wrap justify-center">
+      <section className="max-w-[1452px] min-h-[150px] justify-center items-center xl:gap-x-[28px] gap-10 lg:mx-2 mx-10 flex">
+        <div className="flex items-center xl:gap-x-[32px] gap-10 shrink justify-center">
           <Link href="/Languages/English">
-            <div className="xl:w-[165px] w-[135px] h-[135px] xl:h-[165px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
+            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
               <Image alt="english" className="xl:p-1 p-3.5" src={english} />
             </div>
           </Link>
           <Link href="/Languages/French">
-            <div className="xl:w-[165px] w-[135px] h-[135px] xl:h-[165px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
+            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
               <Image alt="french" className="xl:p-1 p-3.5" src={french} />
             </div>
           </Link>
           <Link href="/Languages/Spanish">
-            <div className="xl:w-[165px] w-[135px] h-[135px] xl:h-[165px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
+            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
               <Image alt="spanish" className="xl:p-1 p-3.5" src={spanish} />
             </div>
           </Link>
           <Link href="/Languages/German">
-            <div className="xl:w-[165px] w-[135px] h-[135px] xl:h-[165px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
+            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
               <Image alt="german" className="xl:p-1 p-3.5" src={german} />
             </div>
           </Link>
           <Link href="/Languages/Mandarin">
-            <div className="xl:w-[165px] w-[135px] h-[135px] xl:h-[165px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
+            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
               <Image alt="mandarin" className="xl:p-1 p-3.5" src={mandarin} />
             </div>
           </Link>
           <Link href="/Languages/Japanese">
-            <div className="xl:w-[165px] w-[135px] h-[135px] xl:h-[165px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
+            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
               <Image alt="japanese" className="xl:p-1 p-3.5" src={japanese} />
             </div>
           </Link>
           <Link href="/Languages/Korean">
-            <div className="xl:w-[165px] w-[135px] h-[135px] xl:h-[165px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
+            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
               <Image alt="korean" className="xl:p-1 p-3.5" src={korean} />
             </div>
           </Link>
