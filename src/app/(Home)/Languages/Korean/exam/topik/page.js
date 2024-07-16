@@ -202,11 +202,13 @@ const page = () => {
       <TopBar data={TopBarData} />
       <AboutDelf data={aboutExam} />
       <ExamHelp data={examHelpData} />
-      <UpcomingBatches />
+      <UpcomingBatches language={"Korean"}/>
       <StudentsTestomony data={StudentTestimonialsData} />
       <Faqs data={FaqsData} />
       <Say say={say} />
+      <div className="mb-10">
       <LanguageLessons LanguageLesson={lessonData} />
+      </div>
       <SubscribeToOur />
       <PaymentBar />
     </div>

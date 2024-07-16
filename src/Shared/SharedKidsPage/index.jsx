@@ -12,9 +12,9 @@ import SayBonjur from "./Components/SayBonjur";
 
 import WhyKidsShouldLearnEnglish from "./Components/WhyKidShouldLearn";
 import WhyLearnLanguage from "./Components/WhyLearnLanguage";
-import UpcomingBathches from "../SharedMainLanguagePage/Components/UpcomingBatches/UpcomingBatches";
+import UpcomingBatches from "../UpcomingBatches";
 
-const SharedKidsPage = ({ Data }) => {
+const SharedKidsPage = ({ Data, language }) => {
   // console.log(Data);
   let faqs = [];
 
@@ -39,7 +39,7 @@ const SharedKidsPage = ({ Data }) => {
           ClassesForAnyLevel={Data?.ClassesForAnyLevel}
         />
         <div className="mt-[100px]">
-          <UpcomingBathches />
+          <UpcomingBatches language={language}/>
         </div>
 
       </div>
@@ -49,7 +49,7 @@ const SharedKidsPage = ({ Data }) => {
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
       />
       <SayBonjur SayBonjur={Data?.SayBonjur} />
-      <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
+      <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
         <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
       </div>
       <SubscribeToOur />

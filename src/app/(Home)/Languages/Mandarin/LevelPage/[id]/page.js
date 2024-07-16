@@ -428,7 +428,7 @@ const DynamicPage = ({ params }) => {
   // console.log(params.id);
   return (
     <div>
-      <SharedLevelPage Data={LevelData} />
+      <SharedLevelPage Data={LevelData} language={"Mandarin"}/>
     </div>
   );
 };

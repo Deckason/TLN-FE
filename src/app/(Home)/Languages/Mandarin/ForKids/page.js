@@ -231,7 +231,7 @@ const MandarinForKidsPage = () => {
   };
   return (
     <div>
-      <SharedKidsPage Data={data} />
+      <SharedKidsPage Data={data} language={"Mandarin"}/>
     </div>
   );
 };

@@ -1,8 +1,8 @@
 .upcomingCourseActive {
-  @apply w-28 h-10 px-4 py-2 bg-secondary-color rounded-lg justify-center items-center gap-2.5 inline-flex text-primary-color max-sm:text-base text-xl font-bold;
+  @apply w-32 h-10 px-4 py-2 bg-secondary-color rounded-lg justify-center items-center gap-2.5 inline-flex text-primary-color max-sm:text-base text-xl font-bold;
 }
 .upcomingCourseDeActive {
-  @apply w-28 h-10 px-4 py-2 bg-white rounded-lg max-sm:text-base justify-center items-center gap-2.5 inline-flex text-neutral-color text-xl font-bold;
+  @apply w-32 h-10 px-4 py-2 bg-white rounded-lg max-sm:text-base justify-center items-center gap-2.5 inline-flex text-neutral-color text-xl font-bold;
 }
 
 .slider {
@@ -17,7 +17,7 @@
   position: absolute;
   content: "";
   height: 100%;
-  width: 25%;
+  width: 20%;
   z-index: 2;
   pointer-events: none;
 }
@@ -34,7 +34,7 @@
 /*  IMPORTANT CODE BELOW */
 
 .slide-track {
-  width: calc(150px * 20);
+  width: calc(150px * 18);
   display: flex;
   animation: scroll 20s linear infinite;
   justify-content: space-between;

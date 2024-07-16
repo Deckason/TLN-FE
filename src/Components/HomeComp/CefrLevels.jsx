@@ -16,10 +16,10 @@ const CefrLevels = () => {
     <div className="bg-[#F5F5F5] pb-[90px] xl:pt-[90px] lg:pt-[150px] min-h-[1250px] ">
       <div className="max-w-[1681px]  mx-auto flex justify-center items-center p-5 lg:p-0 mb-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <section className="min-h-[463px] lg:mx-10 gap-5 lg:gap-[42px] w-full grid lg:grid-cols-2 ">
-          <div className=" rounded-xl">
+          <div className="rounded-3xl">
             <Image
               alt="girl"
-              className="object-cover h-full rounded-xl w-full"
+              className="object-cover h-[90%] rounded-3xl w-[110%]"
               src={girlImage}
             />
           </div>
@@ -29,7 +29,7 @@ const CefrLevels = () => {
             >
               Our courses are aligned with The CEFR Levels
             </h1>
-            <p className=" lg:min-h-[250px] text-neutral-500 lg:text-[18px]/[24px] font-normal text-base mt-2 lg:mt-[23px] leading-7 text-justify mb-[16px]">
+            <p className=" lg:min-h-[250px] text-neutral-500 lg:text-[16px]/[22px] font-normal text-base mt-2 lg:mt-[23px] leading-7 text-justify mb-[16px]">
               Common European Framework of Reference for Languages (CEFR) is an
               internationally recognized standard that describes your learning
               progress in more detail. The framework helps you to explain your
@@ -42,7 +42,7 @@ const CefrLevels = () => {
               <br />
               <br />
             </p>
-            <div className="flex -ml-[27px]">
+            <div className="flex mt-[-4rem]">
               <BookAFreeDemoButton></BookAFreeDemoButton>
             </div>
           </div>
@@ -402,11 +402,11 @@ const CefrLevels = () => {
             },
           }}
           // modules={[Pagination]}
-          className="mySwiper mx-auto flex justify-center   items-center  max-w-[350px] md:max-w-[700px]  lg:max-w-[1000px] pb-5 xl:max-w-[1200px]  2xl:max-w-[1200px] lg:hidden 3xl:max-w-[1440px]"
+          className=" mySwiper mx-auto flex justify-center  items-center  max-w-[350px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px]  2xl:max-w-[1200px] lg:hidden 3xl:max-w-[1440px]"
         >
           <SwiperSlide
             id="A1"
-            className="w-[263px] h-[430px]  rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px]  rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-secondary-color rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
@@ -456,7 +456,7 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="A2"
-            className="w-[263px] h-[430px] bg-white rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#B0DCD7] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
@@ -507,7 +507,7 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="B1"
-            className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#48B0A3] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
@@ -558,7 +558,7 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="B2"
-            className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#1F9F90] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
@@ -609,7 +609,7 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="C1"
-            className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#008171] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
@@ -660,7 +660,7 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="C2"
-            className="w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#006253] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">

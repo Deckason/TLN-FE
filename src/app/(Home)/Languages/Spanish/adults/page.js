@@ -206,7 +206,7 @@ const page = () => {
   };
   return (
     <div className="">
-      <SharedAdultsPage Data={data} />
+     <SharedAdultsPage Data={data} language={"Spanish"}/>
     </div>
   );
 };

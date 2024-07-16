@@ -7,11 +7,10 @@ import logo5 from "../../Assets/Homepage/Alumni/logo5.png";
 const OurAlumni = () => {
   return (
     <div>
-      <div className="lg:my-[112px] w-full my-10 max-w-[1270px] 2xl:max-w-[1681px]  mx-auto flex justify-center items-center ">
+      <div className="w-full  max-w-[1270px] 2xl:max-w-[1681px]  mx-auto flex justify-center items-center ">
         <div>
-          {" "}
           <div>
-            <h1 className="text-stone-900 text-2xl  lg:text-2xl font-bold text-center mb-[20.9px]">
+            <h1 className="text-stone-900 text-[30px]/[45px] sm:text-[40px]/[55px] md:text-[45px]/[60px] lg:text-[50px]/[65px] xl:text-[55px]/[70px] 2xl:text-[60px]/[72px] font-bold text-center mb-[20.9px]">
               Our Alumni Network
             </h1>
           </div>

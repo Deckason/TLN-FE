@@ -229,7 +229,7 @@ const JapaneseForKidsPage = () => {
   };
   return (
     <div>
-      <SharedKidsPage Data={data} />
+      <SharedKidsPage Data={data} language={"Japanese"}/>
     </div>
   );
 };

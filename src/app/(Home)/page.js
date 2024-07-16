@@ -10,7 +10,6 @@ import PaymentBar from "../../Components/HomeComp/PaymentBar";
 import ProficiencyExams from "../../Components/HomeComp/ProficiencyExams";
 import TechersInfo from "../../Components/HomeComp/TechersInfo";
 import WhyShould from "../../Components/HomeComp/WhyShould";
-
 import UpcomingBatches from "../../Shared/UpcomingBatches";
 import StudentsTestomony from "../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
 import SubscribeToOur from "../../Shared/SubscribeToOur";
@@ -26,22 +25,24 @@ export default function Home() {
       <WhyShould />
       <CoursesWeOffer />
       <section className="-mt-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
-        <UpcomingBatches />
+        <UpcomingBatches language={"English"} />
       </section>
-
       <CefrLevels />
       <section className="mx-4 lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <ProficiencyExams />
       </section>
       <FluencyCarrerCulture />
-      
       <StudentsTestomony />
       <TechersInfo />
-      <OurAlumni />
-      <EducationPartners />
+      <div className="-mt-[40px]">
+        <OurAlumni />
+      </div>
+      <div className="pb-[25px]">
+        <EducationPartners />
+      </div>
+
       <SubscribeToOur />
       <PaymentBar />
-
     </>
   );
 }

@@ -146,7 +146,7 @@ const DynamicPage = ({ params }) => {
           "Online English classes to study abroad",
         ],
       },
-    ],,
+    ],
     }),
     []
   );
@@ -295,7 +295,7 @@ const DynamicPage = ({ params }) => {
           "Online English classes to study abroad",
         ],
       },
-    ],,
+    ],
     }),
     []
   );
