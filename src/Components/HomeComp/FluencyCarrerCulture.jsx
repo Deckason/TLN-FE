@@ -28,7 +28,7 @@ const FluencyCarrerCulture = () => {
     },
   ];
   return (
-    <div className="bg-[#F6F3F3]">
+    <div className="4xl:bg-[#F6F3F3]">
       <section className="mb-[82px] ">
         <div className="w-full flex justify-center  items-center lg:h-[321px] h-[256px] bg-primary-color flex-col">
           <h1 className="text-center text-neutral-50 lg:text-[45px] text-3xl px-8 font-bold lg:mb-[25px]">
