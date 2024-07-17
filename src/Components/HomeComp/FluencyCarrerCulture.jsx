@@ -1,7 +1,9 @@
 import Image from "next/image";
-import step1 from "../../Assets/Homepage/FluencyCarrerCulture/step1.png";
-import step2 from "../../Assets/Homepage/FluencyCarrerCulture/step2.png";
-import step3 from "../../Assets/Homepage/FluencyCarrerCulture/step3.png";
+
+import step1 from "../../../public/homepage/steps/step1.png";
+import step2 from "../../../public/homepage/steps/step2.png";
+import step3 from "../../../public/homepage/steps/step3.png";
+
 import FluencyCultureCard from "./FluencyCultureCard";
 const FluencyCarrerCulture = () => {
   const datas = [
@@ -28,8 +30,8 @@ const FluencyCarrerCulture = () => {
     },
   ];
   return (
-    <div className="4xl:bg-[#F6F3F3]">
-      <section className="mb-[82px] ">
+    <div className="4xl:bg-[#F6F3F3] mb-[10px]">
+      <section className="">
         <div className="w-full flex justify-center  items-center lg:h-[321px] h-[256px] bg-primary-color flex-col">
           <h1 className="text-center text-neutral-50 lg:text-[45px] text-3xl px-8 font-bold lg:mb-[25px]">
             Fluency, Culture, Career & Beyond
@@ -40,16 +42,16 @@ const FluencyCarrerCulture = () => {
         </div>
       </section>
 
-      <section className="pb-[12px] flex flex-col justify-center items-center">
-        <h1 className="text-stone-900 2xl:text-[45px] xl:text-[45px] max-md:text-2xl max-xl:text-3xl text-[24px] font-bold  text-center">
-          {" "}
-          Let&apos;s embark on a Language Trip!
-        </h1>
-        <h1 className="text-neutral-500 text-2xl font-medium  text-center mb-2">
-          {" "}
-          Here are the steps
-        </h1>
-        <div className="2xl:max-w-[1640px] flex flex-wrap justify-center gap-1 mx-4 lg:gap-[18px] items-center mt-[24px] ">
+      <section className="2xl:pt-[56px] flex flex-col justify-center items-center 2xl:gap-[48px]">
+        <div className="flex flex-col justify-center items-center 2xl:gap-[8px]">
+          <h1 className="text-stone-900 2xl:text-[60px]/[72.61px] xl:text-[45px] max-md:text-2xl max-xl:text-3xl text-[24px] font-bold  text-center ">
+            Let&apos;s embark on a Language Trip!
+          </h1>
+          <h1 className="text-neutral-500 2xl:text-[32px]/[38.73px] font-medium  text-center mb-2">
+            Here are the steps
+          </h1>
+        </div>
+        <div className="2xl:w-[1264px] flex flex-wrap justify-center 2xl:gap-[16px] items-center">
           {datas.map((data) => {
             return (
               <FluencyCultureCard

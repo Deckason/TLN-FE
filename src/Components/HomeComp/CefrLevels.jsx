@@ -53,7 +53,7 @@ const CefrLevels = () => {
           <div className="flex gap-[40px] 4xl:gap-[20px]">
             <div
               id="A1"
-              className="4xl:w-[263px] w-[296px] xl:w-1/3 h-[309px] 2xl:h-[287px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+              className="4xl:w-[263px] w-[394px] xl:w-1/3 h-[309px] 2xl:h-[287px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
             >
               <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-secondary-color rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
                 <div className="h-[57px] flex-col justify-start items-center flex">
@@ -103,7 +103,7 @@ const CefrLevels = () => {
             </div>
             <div
               id="A2"
-              className="4xl:w-[263px] w-[296px] xl:w-1/3 h-[309px] 2xl:h-[287px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+              className="4xl:w-[263px] w-[394px] xl:w-1/3 h-[309px] 2xl:h-[287px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
             >
               <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#B0DCD7] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
                 <div className="h-[57px] flex-col justify-start items-center flex">
@@ -154,7 +154,7 @@ const CefrLevels = () => {
             </div>
             <div
               id="B1"
-              className="4xl:w-[263px] w-[296px] xl:w-1/3 h-[309px] 2xl:h-[287px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+              className="4xl:w-[263px] w-[394px] xl:w-1/3 h-[309px] 2xl:h-[287px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
             >
               <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#48B0A3] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
                 <div className="h-[57px] flex-col justify-start items-center flex">
