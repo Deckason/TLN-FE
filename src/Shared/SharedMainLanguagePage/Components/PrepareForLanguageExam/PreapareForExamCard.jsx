@@ -6,10 +6,10 @@ const PreapareForExamCard = ({ data }) => {
   return (
     <div className="h-full">
       <div className="w-auto shadow-md hover:shadow-xl transition duration-300 rounded-xl  h-full max-xl:h-[620px] min-h-[509px]  xl:min-h-[580px] flex-col justify-center items-center gap-2 inline-flex p-4 max-md:p-6">
-        <div className="self-stretch h-[200px]  rounded-xl flex-col justify-start  items-center gap-2.5 flex">
+        <div className="rounded-xl h-[200px] flex-col justify-start  items-center gap-2.5 flex">
           <Image
             alt="levelImages"
-            className="w-full h-full rounded-xl object-contain"
+            className="w-full h-full rounded-xl"
             src={data?.img}
           ></Image>
         </div>

@@ -17,7 +17,7 @@ const HomeFooter = () => {
 
   return (
     <div className="pt-20 p-2">
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row gap-6">
         <div className="flex flex-col items-center mt-2 ml-10 lg:items-start">
           <Link href="/">
             <div className="flex flex-col gap-10 items-center lg:items-start">
@@ -41,7 +41,6 @@ const HomeFooter = () => {
                   About us
                 </h3>
                 <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base">Who Are We</span>
-                <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base ">How It Works</span>
                 <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base">Blogs</span>
                 <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base">Press</span>
                 <span className=" md:text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] text-base">FAQ</span>
@@ -193,10 +192,10 @@ const HomeFooter = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row w-full lg:w-full mt-16 mb-6 p-4 items-center justify-between">
+      <div className="flex flex-col lg:flex-row w-full lg:w-full mt-16 mb-8 p-4 px-10 items-center justify-between">
         <div>Copyright © 2024 The Language Network - All Right Reserved</div>
         <div className="flex flex-col lg:flex-row items-center gap-5">
-          <div className="flex">
+          <div className="flex gap-10">
             <span className="font-semibold">Terms & Conditions</span>
             <span className="font-semibold">Privacy Policy</span>
             <span className="font-semibold">Sitemap</span>
