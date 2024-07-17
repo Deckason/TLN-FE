@@ -14,7 +14,7 @@ const CefrLevels = () => {
   const navigationNextRef = React.useRef(currentPage);
   return (
     <div className="bg-[#F5F5F5] pb-[90px] xl:pt-[90px] lg:pt-[150px] min-h-[1250px] ">
-      <div className="max-w-[1681px]  mx-auto flex justify-center items-center p-5 lg:p-0 mb-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
+      <div className="max-w-[1680px]  mx-auto flex justify-center items-center p-5 lg:p-0 mb-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <section className="min-h-[463px] lg:mx-10 gap-5 lg:gap-[42px] w-full grid lg:grid-cols-2 ">
           <div className="rounded-3xl">
             <Image
@@ -24,9 +24,7 @@ const CefrLevels = () => {
             />
           </div>
           <div>
-            <h1
-              className="text-stone-900 2xl:text-[45px] xl:text-[45px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold"
-            >
+            <h1 className="text-stone-900 2xl:text-[45px] xl:text-[45px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold">
               Our courses are aligned with The CEFR Levels
             </h1>
             <p className=" lg:min-h-[250px] text-neutral-500 lg:text-[16px]/[22px] font-normal text-base mt-2 lg:mt-[23px] leading-7 text-justify mb-[16px]">
@@ -51,31 +49,31 @@ const CefrLevels = () => {
       {/* cefr levels card section is below */}
 
       <section className="flex items-center justify-center">
-        <div className="mt-[102px] max-w-[1700px] hidden 2xl:flex justify-center items-center gap-[20px] flex-wrap xl:mx-[120px]">
-          <div className="flex gap-[40px] 4xl:gap-[18px]">
+        <div className="mt-[102px] max-w-[1680px] hidden 2xl:flex justify-center items-center gap-[20px] flex-wrap xl:mx-[120px]">
+          <div className="flex gap-[40px] 4xl:gap-[20px]">
             <div
               id="A1"
-              className="4xl:w-[263px] w-1/3 h-[306px] 4xl:h-[390px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+              className="4xl:w-[263px] w-[296px] xl:w-1/3 h-[309px] 2xl:h-[287px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
             >
               <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-secondary-color rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
                 <div className="h-[57px] flex-col justify-start items-center flex">
-                  <div className="self-stretch h-[29px] text-center text-neutral-800 text-2xl font-bold ">
+                  <div className="self-stretch h-[29px] text-center text-neutral-800 text-[24px]/[29px] font-bold ">
                     A1
                   </div>
-                  <div className="self-stretch text-center text-neutral-800 text-xl font-normal  leading-7">
-                    Absolute Beginner
+                  <div className="self-stretch text-center text-neutral-800 text-[20px]/[28px] font-normal  leading-7">
+                    Beginner
                   </div>
                 </div>
               </div>
-              <div className="self-stretch px-4 py-5 bg-white justify-start items-start gap-2.5 inline-flex">
-                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+              <div className="self-stretch px-4 py-5 bg-white justify-start items-start rounded-2xl gap-2.5 h-[208px] 2xl:h-[186px] 4xl:h-[281px] inline-flex">
+                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                   <div className="justify-center items-start gap-2 inline-flex">
                     <Image
                       alt="rightIcon"
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Understands everyday expressions and basic phrases
                     </div>
                   </div>
@@ -85,7 +83,7 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Can introduce oneself and ask simple questions
                     </div>
                   </div>
@@ -95,7 +93,7 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Participates in basic conversations about hobbies or
                       preferences
                     </div>
@@ -105,27 +103,27 @@ const CefrLevels = () => {
             </div>
             <div
               id="A2"
-              className="4xl:w-[263px] w-1/3 h-[306px] 4xl:h-[390px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+              className="4xl:w-[263px] w-[296px] xl:w-1/3 h-[309px] 2xl:h-[287px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
             >
               <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#B0DCD7] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
                 <div className="h-[57px] flex-col justify-start items-center flex">
-                  <div className="self-stretch h-[29px] text-center text-neutral-800 text-2xl font-bold ">
+                  <div className="self-stretch h-[29px] text-center text-neutral-800 text-[24px]/[29px] font-bold ">
                     A2
                   </div>
-                  <div className="self-stretch text-center text-neutral-800 text-xl font-normal  leading-7">
+                  <div className="self-stretch text-center text-neutral-800 text-[20px]/[28px] font-normal  leading-7">
                     Elementary
                   </div>
                 </div>
               </div>
-              <div className="self-stretch px-4 py-5  justify-start items-start gap-2.5 inline-flex">
-                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+              <div className="self-stretch px-4 py-5 justify-start items-start rounded-2xl gap-2.5 h-[208px] 2xl:h-[186px] 4xl:h-[281px] inline-flex">
+                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                   <div className="justify-center items-start gap-2 inline-flex">
                     <Image
                       alt="rightIcon"
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Understands common expressions in relevant areas
                     </div>
                   </div>
@@ -135,9 +133,9 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
-                      Communicates in routine tasks like ordering food or asking for
-                      directions
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
+                      Communicates in routine tasks like ordering food or asking
+                      for directions
                     </div>
                   </div>
                   <div className="self-stretch justify-center items-start gap-2 inline-flex">
@@ -146,7 +144,7 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Engages in everyday activities such as shopping or making
                       reservations
                     </div>
@@ -156,27 +154,27 @@ const CefrLevels = () => {
             </div>
             <div
               id="B1"
-              className="4xl:w-[263px] w-1/3 h-[306px] 4xl:h-[390px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+              className="4xl:w-[263px] w-[296px] xl:w-1/3 h-[309px] 2xl:h-[287px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
             >
               <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#48B0A3] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
                 <div className="h-[57px] flex-col justify-start items-center flex">
-                  <div className="self-stretch h-[29px] text-center text-neutral-800 text-2xl font-bold ">
+                  <div className="self-stretch h-[29px] text-center text-neutral-800 text-[24px]/[29px] font-bold ">
                     B1
                   </div>
-                  <div className="self-stretch text-center text-neutral-800 text-xl font-normal  leading-7">
+                  <div className="self-stretch text-center text-neutral-800 text-[20px]/[28px] font-normal  leading-7">
                     Intermediate
                   </div>
                 </div>
               </div>
-              <div className="self-stretch px-4 py-5 bg-white justify-start items-start gap-2.5 inline-flex">
-                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+              <div className="self-stretch px-4 py-5 bg-white justify-start items-start rounded-2xl gap-2.5 h-[208px] 2xl:h-[186px] 4xl:h-[281px] inline-flex">
+                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                   <div className="justify-center items-start gap-2 inline-flex">
                     <Image
                       alt="rightIcon"
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Grasps main points of clear, familiar topics
                     </div>
                   </div>
@@ -186,9 +184,9 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
-                      Handles most situations while traveling or living in a foreign
-                      country
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
+                      Handles most situations while traveling or living in a
+                      foreign country
                     </div>
                   </div>
                   <div className="self-stretch justify-center items-start gap-2 inline-flex">
@@ -198,8 +196,8 @@ const CefrLevels = () => {
                       className="w-6 h-6"
                     ></Image>
                     <div className=" text-neutral-500 text-base  font-normal ">
-                      Participates in discussions, expresses opinions, and follows
-                      basic news articles
+                      Participates in discussions, expresses opinions, and
+                      follows basic news articles
                     </div>
                   </div>
                 </div>
@@ -207,30 +205,30 @@ const CefrLevels = () => {
             </div>
           </div>
 
-          <div className="mt-[20px] 4xl:mt-0 flex gap-[40px] 4xl:gap-[18px]"> 
+          <div className="mt-[20px] 4xl:mt-0 flex gap-[40px] 4xl:gap-[18px]">
             <div
               id="B2"
-              className="4xl:w-[263px] w-1/3 h-[306px] 4xl:h-[390px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+              className="4xl:w-[263px] w-[296px] xl:w-1/3 h-[309px] 2xl:h-[310px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
             >
               <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#1F9F90] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
                 <div className="h-[57px] flex-col justify-start items-center flex">
-                  <div className="self-stretch h-[29px] text-center text-white text-2xl font-bold ">
+                  <div className="self-stretch h-[29px] text-center text-white text-[24px]/[29px] font-bold ">
                     B2
                   </div>
-                  <div className="self-stretch text-center text-white text-xl font-normal  leading-7">
+                  <div className="self-stretch text-center text-white text-[20px]/[28px] font-normal  leading-7">
                     Upper intermediate
                   </div>
                 </div>
               </div>
-              <div className="self-stretch px-4 py-5  justify-start items-start gap-2.5 inline-flex">
-                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+              <div className="self-stretch px-4 py-5  justify-start items-start rounded-2xl gap-2.5 h-[208px] 2xl:h-[205px] 4xl:h-[281px] inline-flex">
+                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                   <div className="justify-center items-start gap-2 inline-flex">
                     <Image
                       alt="rightIcon"
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Understands complex texts on concrete and abstract topics
                     </div>
                   </div>
@@ -240,9 +238,9 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
-                      Interacts fluently with native speakers, engaging in debates
-                      and discussing world events
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
+                      Interacts fluently with native speakers, engaging in
+                      debates and discussing world events
                     </div>
                   </div>
                   <div className="self-stretch justify-center items-start gap-2 inline-flex">
@@ -252,8 +250,8 @@ const CefrLevels = () => {
                       className="w-6 h-6"
                     ></Image>
                     <div className=" text-neutral-500 text-base  font-normal ">
-                      Reads articles, expresses opinions, and engages in debates on
-                      various subjects
+                      Reads articles, expresses opinions, and engages in debates
+                      on various subjects
                     </div>
                   </div>
                 </div>
@@ -261,27 +259,27 @@ const CefrLevels = () => {
             </div>
             <div
               id="C1"
-              className="4xl:w-[263px] w-1/3 h-[306px] 4xl:h-[390px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+              className="4xl:w-[263px] w-[296px] xl:w-1/3 h-[309px] 2xl:h-[310px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
             >
               <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#008171] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
                 <div className="h-[57px] flex-col justify-start items-center flex">
-                  <div className="self-stretch h-[29px] text-center text-white text-2xl font-bold ">
+                  <div className="self-stretch h-[29px] text-center text-white text-[24px]/[29px] font-bold ">
                     C1
                   </div>
-                  <div className="self-stretch text-center text-white text-xl font-normal  leading-7">
+                  <div className="self-stretch text-center text-white text-[20px]/[28px] font-normal  leading-7">
                     Advanced
                   </div>
                 </div>
               </div>
-              <div className="self-stretch px-4 py-5  justify-start items-start gap-2.5 inline-flex">
-                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+              <div className="self-stretch px-4 py-5  justify-start items-start rounded-2xl gap-2.5 h-[208px] 2xl:h-[205px] 4xl:h-[281px] inline-flex">
+                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                   <div className="justify-center items-start gap-2 inline-flex">
                     <Image
                       alt="rightIcon"
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Understands a wide range of demanding texts and implicit
                       meanings
                     </div>
@@ -292,7 +290,7 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Expresses ideas fluently and participates in complex
                       discussions
                     </div>
@@ -304,7 +302,8 @@ const CefrLevels = () => {
                       className="w-6 h-6"
                     ></Image>
                     <div className=" text-neutral-500 text-base  font-normal ">
-                      Analyzes and critiques articles, understands nuanced arguments
+                      Analyzes and critiques articles, understands nuanced
+                      arguments
                     </div>
                   </div>
                 </div>
@@ -312,27 +311,27 @@ const CefrLevels = () => {
             </div>
             <div
               id="C2"
-              className="4xl:w-[263px] w-1/3 h-[306px] 4xl:h-[390px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+              className="4xl:w-[263px] w-[296px] xl:w-1/3 h-[309px] 2xl:h-[310px] 4xl:h-[382px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
             >
               <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#006253] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
                 <div className="h-[57px] flex-col justify-start items-center flex">
-                  <div className="self-stretch h-[29px] text-center text-white text-2xl font-bold ">
+                  <div className="self-stretch h-[29px] text-center text-white text-[24px]/[29px] font-bold ">
                     C2
                   </div>
-                  <div className="self-stretch text-center text-white text-xl font-normal  leading-7">
+                  <div className="self-stretch text-center text-white text-[20px]/[28px] font-normal  leading-7">
                     Master level
                   </div>
                 </div>
               </div>
-              <div className="self-stretch px-4 py-5  justify-start items-start gap-2.5 inline-flex">
-                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+              <div className="self-stretch px-4 py-5  justify-start items-start rounded-2xl gap-2.5 h-[208px] 2xl:h-[205px] 4xl:h-[281px] inline-flex">
+                <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                   <div className="justify-center items-start gap-2 inline-flex">
                     <Image
                       alt="rightIcon"
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Understands virtually everything heard or read{" "}
                     </div>
                   </div>
@@ -342,7 +341,7 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Summarizes information and presents coherent arguments
                     </div>
                   </div>
@@ -353,8 +352,8 @@ const CefrLevels = () => {
                       className="w-6 h-6"
                     ></Image>
                     <div className=" text-neutral-500 text-base  font-normal ">
-                      Engages in high-level discussions, delivers presentations, and
-                      comprehends complex materials
+                      Engages in high-level discussions, delivers presentations,
+                      and comprehends complex materials
                     </div>
                   </div>
                 </div>
@@ -391,7 +390,7 @@ const CefrLevels = () => {
             1680: {
               slidesPerView: 4,
             },
-            1024: {
+            1280: {
               slidesPerView: 3,
             },
             768: {
@@ -402,31 +401,31 @@ const CefrLevels = () => {
             },
           }}
           // modules={[Pagination]}
-          className=" mySwiper mx-auto flex justify-center  items-center  max-w-[350px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px]  2xl:max-w-[1200px] lg:hidden 3xl:max-w-[1440px]"
+          className=" mySwiper mx-auto flex justify-center  items-center  max-w-[350px] md:max-w-[700px] lg:max-w-[700px] xl:max-w-[1200px]  2xl:max-w-[1200px] 2xl:hidden 3xl:max-w-[1440px]"
         >
           <SwiperSlide
             id="A1"
-            className="mb-[10px] w-[263px] h-[430px]  rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[296px] h-[309px]  rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-secondary-color rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
-                <div className="self-stretch h-[29px] text-center text-neutral-800 text-2xl font-bold ">
+                <div className="self-stretch h-[29px] text-center text-neutral-800 text-[24px]/[29px] font-bold ">
                   A1
                 </div>
-                <div className="self-stretch text-center text-neutral-800 text-xl font-normal  leading-7">
-                  Absolute Beginner
+                <div className="self-stretch text-center text-neutral-800 text-[20px]/[28px] font-normal  leading-7">
+                  Beginner
                 </div>
               </div>
             </div>
-            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[264px] items-start gap-2.5 inline-flex">
-              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[208px] items-start gap-2.5 inline-flex">
+              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                 <div className="justify-center items-start gap-2 inline-flex">
                   <Image
                     alt="rightIcon"
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Understands everyday expressions and basic phrases
                   </div>
                 </div>
@@ -436,7 +435,7 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Can introduce oneself and ask simple questions
                   </div>
                 </div>
@@ -446,7 +445,7 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Participates in basic conversations about hobbies or
                     preferences
                   </div>
@@ -456,27 +455,27 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="A2"
-            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[296px] h-[309px] bg-white rounded-2xl  flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#B0DCD7] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
-                <div className="self-stretch h-[29px] text-center text-neutral-800 text-2xl font-bold ">
+                <div className="self-stretch h-[29px] text-center text-neutral-800 text-[24px]/[29px] font-bold ">
                   A2
                 </div>
-                <div className="self-stretch text-center text-neutral-800 text-xl font-normal  leading-7">
+                <div className="self-stretch text-center text-neutral-800 text-[20px]/[28px] font-normal  leading-7">
                   Elementary
                 </div>
               </div>
             </div>
-            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[264px] items-start gap-2.5 inline-flex">
-              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[208px] items-start gap-2.5 inline-flex">
+              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                 <div className="justify-center items-start gap-2 inline-flex">
                   <Image
                     alt="rightIcon"
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Understands common expressions in relevant areas
                   </div>
                 </div>
@@ -486,9 +485,9 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
-                    Communicates in routine tasks like ordering food or asking for
-                    directions
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
+                    Communicates in routine tasks like ordering food or asking
+                    for directions
                   </div>
                 </div>
                 <div className="self-stretch justify-center items-start gap-2 inline-flex">
@@ -497,7 +496,7 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Engages in everyday activities such as shopping or making
                     reservations
                   </div>
@@ -507,27 +506,27 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="B1"
-            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[296px] h-[309px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#48B0A3] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
-                <div className="self-stretch h-[29px] text-center text-neutral-800 text-2xl font-bold ">
+                <div className="self-stretch h-[29px] text-center text-neutral-800 text-[24px]/[29px] font-bold ">
                   B1
                 </div>
-                <div className="self-stretch text-center text-neutral-800 text-xl font-normal  leading-7">
+                <div className="self-stretch text-center text-neutral-800 text-[20px]/[28px] font-normal  leading-7">
                   Intermediate
                 </div>
               </div>
             </div>
-            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[264px] items-start gap-2.5 inline-flex">
-              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[208px] items-start gap-2.5 inline-flex">
+              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                 <div className="justify-center items-start gap-2 inline-flex">
                   <Image
                     alt="rightIcon"
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Grasps main points of clear, familiar topics
                   </div>
                 </div>
@@ -537,9 +536,9 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
-                    Handles most situations while traveling or living in a foreign
-                    country
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
+                    Handles most situations while traveling or living in a
+                    foreign country
                   </div>
                 </div>
                 <div className="self-stretch justify-center items-start gap-2 inline-flex">
@@ -558,27 +557,27 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="B2"
-            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[296px] h-[309px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#1F9F90] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
-                <div className="self-stretch h-[29px] text-center text-white text-2xl font-bold ">
+                <div className="self-stretch h-[29px] text-center text-white text-[24px]/[29px] font-bold ">
                   B2
                 </div>
-                <div className="self-stretch text-center text-white text-xl font-normal  leading-7">
+                <div className="self-stretch text-center text-white text-[20px]/[28px] font-normal  leading-7">
                   Upper intermediate
                 </div>
               </div>
             </div>
-            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[264px] items-start gap-2.5 inline-flex">
-              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[208px] items-start gap-2.5 inline-flex">
+              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                 <div className="justify-center items-start gap-2 inline-flex">
                   <Image
                     alt="rightIcon"
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Understands complex texts on concrete and abstract topics
                   </div>
                 </div>
@@ -588,7 +587,7 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Interacts fluently with native speakers, engaging in debates
                     and discussing world events
                   </div>
@@ -600,8 +599,8 @@ const CefrLevels = () => {
                     className="w-6 h-6"
                   ></Image>
                   <div className=" text-neutral-500 text-base  font-normal ">
-                    Reads articles, expresses opinions, and engages in debates on
-                    various subjects
+                    Reads articles, expresses opinions, and engages in debates
+                    on various subjects
                   </div>
                 </div>
               </div>
@@ -609,27 +608,27 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="C1"
-            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[296px] h-[309px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#008171] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
-                <div className="self-stretch h-[29px] text-center text-white text-2xl font-bold ">
+                <div className="self-stretch h-[29px] text-center text-white text-[24px]/[29px] font-bold ">
                   C1
                 </div>
-                <div className="self-stretch text-center text-white text-xl font-normal  leading-7">
+                <div className="self-stretch text-center text-white text-[20px]/[28px] font-normal  leading-7">
                   Advanced
                 </div>
               </div>
             </div>
-            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[264px] items-start gap-2.5 inline-flex">
-              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[208px] items-start gap-2.5 inline-flex">
+              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                 <div className="justify-center items-start gap-2 inline-flex">
                   <Image
                     alt="rightIcon"
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Understands a wide range of demanding texts and implicit
                     meanings
                   </div>
@@ -640,7 +639,7 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Expresses ideas fluently and participates in complex
                     discussions
                   </div>
@@ -652,7 +651,8 @@ const CefrLevels = () => {
                     className="w-6 h-6"
                   ></Image>
                   <div className=" text-neutral-500 text-base  font-normal ">
-                    Analyzes and critiques articles, understands nuanced arguments
+                    Analyzes and critiques articles, understands nuanced
+                    arguments
                   </div>
                 </div>
               </div>
@@ -660,27 +660,27 @@ const CefrLevels = () => {
           </SwiperSlide>
           <SwiperSlide
             id="C2"
-            className="mb-[10px] w-[263px] h-[430px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
+            className="mb-[10px] w-[296px] h-[309px] bg-white rounded-2xl flex-col justify-start items-start inline-flex shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="self-stretch h-[101px] px-[11px] py-[22px] bg-[#006253] rounded-t-2xl flex-col justify-center items-center gap-2.5 flex">
               <div className="h-[57px] flex-col justify-start items-center flex">
-                <div className="self-stretch h-[29px] text-center text-white text-2xl font-bold ">
+                <div className="self-stretch h-[29px] text-center text-white text-[24px]/[29px] font-bold ">
                   C2
                 </div>
-                <div className="self-stretch text-center text-white text-xl font-normal  leading-7">
+                <div className="self-stretch text-center text-white text-[20px]/[28px] font-normal  leading-7">
                   Master level
                 </div>
               </div>
             </div>
-            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[264px] items-start gap-2.5 inline-flex">
-              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex">
+            <div className="self-stretch px-4 py-5  justify-start flex-grow w-full h-[208px] items-start gap-2.5 inline-flex">
+              <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start 4xl:gap-[8px] gap-[10px] 2xl:gap-[16px] inline-flex">
                 <div className="justify-center items-start gap-2 inline-flex">
                   <Image
                     alt="rightIcon"
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Understands virtually everything heard or read{" "}
                   </div>
                 </div>
@@ -690,7 +690,7 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className="grow shrink basis-0 text-neutral-500 text-[16px]/[19.36px] font-normal ">
+                  <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                     Summarizes information and presents coherent arguments
                   </div>
                 </div>
@@ -701,8 +701,8 @@ const CefrLevels = () => {
                     className="w-6 h-6"
                   ></Image>
                   <div className=" text-neutral-500 text-base  font-normal ">
-                    Engages in high-level discussions, delivers presentations, and
-                    comprehends complex materials
+                    Engages in high-level discussions, delivers presentations,
+                    and comprehends complex materials
                   </div>
                 </div>
               </div>
