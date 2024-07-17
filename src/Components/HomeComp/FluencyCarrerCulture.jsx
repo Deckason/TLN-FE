@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+"use client";
 import step1 from "../../../public/homepage/steps/step1.png";
 import step2 from "../../../public/homepage/steps/step2.png";
 import step3 from "../../../public/homepage/steps/step3.png";
@@ -30,7 +29,7 @@ const FluencyCarrerCulture = () => {
     },
   ];
   return (
-    <div className="4xl:bg-[#F6F3F3] mb-[10px]">
+    <div className="4xl:bg-[#F6F3F3] pb-[10px]">
       <section className="">
         <div className="w-full flex justify-center  items-center lg:h-[321px] h-[256px] bg-primary-color flex-col">
           <h1 className="text-center text-neutral-50 lg:text-[45px] text-3xl px-8 font-bold lg:mb-[25px]">
@@ -42,7 +41,7 @@ const FluencyCarrerCulture = () => {
         </div>
       </section>
 
-      <section className="2xl:pt-[56px] flex flex-col justify-center items-center 2xl:gap-[48px]">
+      <section className="2xl:pt-[56px] 4xl:pt-[112px] flex flex-col justify-center items-center 2xl:gap-[48px]">
         <div className="flex flex-col justify-center items-center 2xl:gap-[8px]">
           <h1 className="text-stone-900 2xl:text-[60px]/[72.61px] xl:text-[45px] max-md:text-2xl max-xl:text-3xl text-[24px] font-bold  text-center ">
             Let&apos;s embark on a Language Trip!
@@ -51,7 +50,7 @@ const FluencyCarrerCulture = () => {
             Here are the steps
           </h1>
         </div>
-        <div className="2xl:w-[1264px] flex flex-wrap justify-center 2xl:gap-[16px] items-center">
+        <div className="2xl:w-[1264px] 4xl:w-[1680px] hidden 2xl:flex flex-wrap justify-center 2xl:gap-[16px] 4xl:gap-[18px] items-center">
           {datas.map((data) => {
             return (
               <FluencyCultureCard
