@@ -8,7 +8,8 @@ import WhyChooseUs from "../components/whyChooseUs/WhyChooseUs"
 import HowItWorks from "../components/HowItWorks";
 import howItWorksData from "../College/data/howItWorksData"
 import Plans from "../components/plans/Plans";
-import plansData from "../components/plans/plansData"
+import plansData from "../components/plans/plansData";
+import SchoolForm from "../components/forms/SchoolForm"
 
 const CollegePage = () => {
   return (
@@ -25,6 +26,7 @@ const CollegePage = () => {
       <HowItWorks data={howItWorksData}/>
       {/* 3 plans */}
       <Plans data={plansData}/>
+      <SchoolForm />
     </div>
   );
 };
