@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import formImage from "../../../../../../public/startYourJourney/school.png";
+// import formImage from "../../../../../../public/startYourJourney/school.png";
+import formImage from "../../../../../../public/startYourJourney/college.png";
 
 const SchoolForm = () => {
   const [formState, setFormState] = useState({
@@ -114,7 +115,7 @@ const SchoolForm = () => {
                       value={formState.email}
                       onChange={handleChange}
                       className="w-full  pl-3 pr-3 py-2 rounded-lg border-2 border-gray-400  bg-gray-50 outline-none focus:border-indigo-500"
-                      placeholder="School’s Name  "
+                      placeholder="College's Name "
                     />
                     {errors.email && (
                       <p className="text-red-500 text-xs italic">
@@ -131,7 +132,7 @@ const SchoolForm = () => {
                       value={formState.instagramUsername}
                       onChange={handleChange}
                       className="w-full  pl-3 pr-3 py-2 rounded-lg border-2 border-gray-400  bg-gray-50 outline-none focus:border-indigo-500"
-                      placeholder="School Address"
+                      placeholder="College Address"
                     />
                     {errors.instagramUsername && (
                       <p className="text-red-500 text-xs italic">
