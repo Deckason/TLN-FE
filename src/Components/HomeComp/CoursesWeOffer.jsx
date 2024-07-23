@@ -16,7 +16,7 @@ const CoursesWeOffer = () => {
         Courses We Offer
       </h1>
       <section className="max-w-[1452px] min-h-[150px] justify-center items-center xl:gap-x-[28px] gap-10 lg:mx-2 mx-10 flex">
-        <div className="flex items-center xl:gap-x-[32px] gap-10 shrink justify-center">
+        <div className="flex items-center xl:gap-x-[32px] gap-10 shrink sm:justify-center flex-wrap">
           <Link href="/Languages/English">
             <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
               <Image alt="english" className="xl:p-1 p-3.5" src={english} />

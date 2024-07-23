@@ -27,7 +27,7 @@ const States = () => {
   }, [isLoading, statsData]); 
 
   return (
-    <div className="flex justify-center  w-full items-center mt-5">
+    <div className="flex justify-center  w-full items-center lg:mt-5">
       <div className="lg:w-[1000px] 2xl:w-[1684px] max-lg:min-h-[199px] max-sm:pt-0 py-[25px] 2xl:py-[52px] xl:w-full bg-white z-10 shadow-md duration-300 transition hover:shadow-2xl rounded-2xl border border-stone-300 flex-col max-sm:mx-4 max-sm:w-[190px] max-lg:w-[350px] justify-center items-center mt-[25.5px] flex">
         <div className="justify-around w-full 3xl:gap-[90px] items-center  flex-wrap scale-90 flex">
           <div className="flex-col max-lg:mb-10 justify-center cursor-default items-center gap-2 inline-flex w-full lg:w-auto">
