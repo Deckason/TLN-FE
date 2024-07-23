@@ -4,53 +4,53 @@ import React from "react";
 import cicleSvg from "../Assets/Icons/circleTick.svg";
 const PlansCard = ({ data }) => {
 	// SAmple Data
-	const CardsData = [
-		{
-			title: "Starter",
-			BoxText: "Learn More",
-			Description:
-				"Dive into the essentials in just 10 days with our intensive workshop, covering everything from basics to practical communication.",
-			listData: [
-				"Learn greetings, self-introductions, and polite expressions.",
-				"Build vocabulary on colours, numbers, days, and months.",
-				"Engaging role-plays, games, and discussions for experiential learning.",
-				"Improve spoken communication through guided exercises and audio files.",
+	// const CardsData = [
+	// 	{
+	// 		title: "Starter",
+	// 		BoxText: "Learn More",
+	// 		Description:
+	// 			"Dive into the essentials in just 10 days with our intensive workshop, covering everything from basics to practical communication.",
+	// 		listData: [
+	// 			"Learn greetings, self-introductions, and polite expressions.",
+	// 			"Build vocabulary on colours, numbers, days, and months.",
+	// 			"Engaging role-plays, games, and discussions for experiential learning.",
+	// 			"Improve spoken communication through guided exercises and audio files.",
 				
-				"Explore cultural aspects for better understanding and communication.",
-				" Assess participant progress and offer feedback for improvement.",
+	// 			"Explore cultural aspects for better understanding and communication.",
+	// 			" Assess participant progress and offer feedback for improvement.",
 				
-			],
-		},
-		{
-			title: "Scholar",
-			BoxText: "Learn More",
-			Description:
-				"In just 36 classes, acquire essential A1 level language skills with our comprehensive course, covering vocabulary, grammar, and communication.",
-			listData: [
-			"Scholar's 36-class program ensures adept handling of daily tasks at A1 level.",
-				"Students proficiently express needs and engage in simple interactions.",
-				"A1 learners grasp common expressions and essential phrases.",
-				" Students confidently engage in basic conversations.",
-				"Engaging sessions and games enhance learning and curiosity.",
-				"Includes tracking and free study materials for improvement.",
-			],
-		},
-		{
-			title: "Stellar",
-			BoxText: "Learn More",
-			Description:
-				"3-year program covering A1 to B1 levels, integrating seamlessly into your curriculum.",
-			listData: [
-				"Stellar's 3-year program, spanning A1 to B1 levels, offers interactive learning with games, activities, and presentations.",
-				"Students understand and create text, handle travel scenarios, and articulate experiences and aspirations.",
-				"Students will deliver clear directives, grasp instructions, and communicate effectively.",
-				"Progressing to B1 level opens career prospects and equips learners for advancement.",
-				" Stellar instills confidence in verbal expression and proficiency in communication.",
-				"The program tracks progress, provides study materials, ensuring continual enhancement",
+	// 		],
+	// 	},
+	// 	{
+	// 		title: "Scholar",
+	// 		BoxText: "Learn More",
+	// 		Description:
+	// 			"In just 36 classes, acquire essential A1 level language skills with our comprehensive course, covering vocabulary, grammar, and communication.",
+	// 		listData: [
+	// 		"Scholar's 36-class program ensures adept handling of daily tasks at A1 level.",
+	// 			"Students proficiently express needs and engage in simple interactions.",
+	// 			"A1 learners grasp common expressions and essential phrases.",
+	// 			" Students confidently engage in basic conversations.",
+	// 			"Engaging sessions and games enhance learning and curiosity.",
+	// 			"Includes tracking and free study materials for improvement.",
+	// 		],
+	// 	},
+	// 	{
+	// 		title: "Stellar",
+	// 		BoxText: "Learn More",
+	// 		Description:
+	// 			"3-year program covering A1 to B1 levels, integrating seamlessly into your curriculum.",
+	// 		listData: [
+	// 			"Stellar's 3-year program, spanning A1 to B1 levels, offers interactive learning with games, activities, and presentations.",
+	// 			"Students understand and create text, handle travel scenarios, and articulate experiences and aspirations.",
+	// 			"Students will deliver clear directives, grasp instructions, and communicate effectively.",
+	// 			"Progressing to B1 level opens career prospects and equips learners for advancement.",
+	// 			" Stellar instills confidence in verbal expression and proficiency in communication.",
+	// 			"The program tracks progress, provides study materials, ensuring continual enhancement",
 			
-			],
-		},
-	];
+	// 		],
+	// 	},
+	// ];
 
 	const Card = ({ cardData }) => {
 		return (
