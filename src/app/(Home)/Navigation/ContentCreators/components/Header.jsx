@@ -2,14 +2,15 @@ import React from "react";
 import Image from "next/image";
 import header_image from "../../../../../Assets/ContentCreators/header_image.png";
 
+import {InterFont} from "../../../../../Utilities/Font"
 const Header = () => {
   return (
     <>
       <div className="container mx-auto p-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:px-16">
-          <div className=" sm:p-4 order-2 md:order-1 text-black">
-            <div className="flex flex-col py-6 justify-around items-center md:items-start gap-3  h-full">
-              <h4 className="text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl sm:font-medium py-4 md:py-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0.5 sm:px-6">
+          <div className=" sm:p-1 py-4  text-black">
+            <div className="flex flex-col py-10  justify-around items-start gap-3  h-full">
+              <h4 className="text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl  font-semibold   py-4 md:py-1">
                 Create With Us
               </h4>
               <p className="text-lg">
@@ -25,7 +26,7 @@ const Header = () => {
               </button>
             </div>
           </div>
-          <div className=" p-4 order-1 md:order-2 text-white">
+          <div className="    text-white">
             <div className="flex items-center justify-center h-full">
               <Image src={header_image} className="w-full " alt="Form Image" />
             </div>

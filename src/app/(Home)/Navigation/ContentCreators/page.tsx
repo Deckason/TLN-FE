@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import PaymentBar from "../../../../Components/HomeComp/PaymentBar";
-import Faqs from "../../../../Shared/ReusableExamPage/Faq";
+import Faqs from "./components/Faq";
 import Header from './components/Header'
 import Form from './components/Form'
 import Section1 from './components/Section1'
@@ -43,8 +43,7 @@ const page = () => {
 		<>
 		<Header/>
 		<Section1/>
-		<div className="pt-20 bg-[#F6F3F3]"><Faqs data={FaqsData} /> </div>
-			
+		<div className="pt-20 bg-[#F6F3F3]"><Faqs data={FaqsData} /> </div>			
 <Form/>
 <Section2/>
 			<PaymentBar />
