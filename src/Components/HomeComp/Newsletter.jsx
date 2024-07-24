@@ -5,8 +5,8 @@ const Newsletter = () => {
   const {data}=useGetNewsQuery("");
   return (
     <div className="flex justify-center items-center py-20 bg-secondary-color mt-10 ">
-      <div className="mt-7 w-full max-md:max-w-full lg:mx-[34px] 2xl:mx-[50px] 4xl:mx-[10px]">
-        <div className="xl:flex gap-5 ld:gap-1 xl:gap-1 3xl:gap-5 lg:flex-row max-xl:flex-col max-md:gap-0 max-h-[380px]">
+      <div className="mt-7 w-full max-md:max-w-full mx-[16px] lg:mx-[34px] 2xl:mx-[50px] 4xl:mx-[10px]">
+        <div className="xl:flex gap-5 ld:gap-1 xl:gap-1 3xl:gap-5 lg:flex-row max-xl:flex-col max-md:gap-0 min-h-[380px]">
           <div className="flex flex-col w-full xl:w-[26%] 2xl:w-[35%] 3xl:w-[35%] max-md:ml-0 max-md:min-h-[205px] min-h-[275px] max-md:w-full">
             <div className="flex flex-col grow justify-center p-2.5 w-full bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 text-stone-900 max-md:px-5 items-center lg:max-md:mt-5 max-md:max-w-full">
               <Image

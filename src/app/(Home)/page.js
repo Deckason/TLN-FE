@@ -40,7 +40,6 @@ export default function Home() {
       <div className="pb-[25px]">
         <EducationPartners />
       </div>
-
       <SubscribeToOur />
       <PaymentBar />
     </>
