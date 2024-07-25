@@ -216,8 +216,11 @@ const HomeFooter = () => {
             {sections.map((section, index) => {
               if (index === 6) {
                 return (
-                  <div className="flex flex-col w-full sm:w-1/2 lg:w-1/4 lg:mb-[16px]">
-                    <div key={index} className="flex flex-col w-full">
+                  <div
+                    key={index}
+                    className="flex flex-col w-full sm:w-1/2 lg:w-1/4 lg:mb-[16px]"
+                  >
+                    <div className="flex flex-col w-full">
                       <h3 className="text-[#000] font-bold text-[15px]/[18px]  4xl:text-[20px]/[24.2px] mb-[12px] 4xl:mb-[16px]">
                         {section.title}
                       </h3>
@@ -261,8 +264,11 @@ const HomeFooter = () => {
               }
               if (index === 7) {
                 return (
-                  <div className="flex flex-col w-full sm:w-1/2 lg:w-1/4 lg:mb-[16px] ">
-                    <div key={index} className="flex flex-col w-full">
+                  <div
+                    key={index}
+                    className="flex flex-col w-full sm:w-1/2 lg:w-1/4 lg:mb-[16px] "
+                  >
+                    <div className="flex flex-col w-full">
                       <h3 className="text-[#000] font-bold text-[15px]/[18px]  4xl:text-[20px]/[24.2px]  mb-[12px] 4xl:mb-[16px]">
                         {section.title}
                       </h3>

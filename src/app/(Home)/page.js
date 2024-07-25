@@ -17,7 +17,7 @@ import SubscribeToOur from "../../Shared/SubscribeToOur";
 export default function Home() {
   return (
     <>
-      <section className="2xl:max-w-[1680px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px] mx-auto relative  flex justify-center items-center flex-col ">
+      <section className="2xl:max-w-[1680px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px] mx-auto relative flex justify-center items-center flex-col ">
         <HomeBanner />
         <Contact />
       </section>
@@ -34,7 +34,7 @@ export default function Home() {
       <FluencyCarrerCulture />
       <StudentsTestomony />
       <TechersInfo />
-      <div className="-mt-[40px]">
+      <div className="mt-[40px] lg:-mt-[40px]">
         <OurAlumni />
       </div>
       <div className="pb-[25px]">
