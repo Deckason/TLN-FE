@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useGetNewsQuery } from "../../store/apiSlice";
+import Link from "next/link";
 const Newsletter = () => {
   const {data}=useGetNewsQuery("");
   return (
@@ -61,9 +62,9 @@ const Newsletter = () => {
                         <span className="text-neutral-500">
                           Reads our full story
                         </span>{" "}
-                        <span className="font-bold leading-6 text-teal-600">
-                          Here
-                        </span>
+                        <Link href={"/"} className="font-bold text-xl leading-6 text-teal-600">
+                          here
+                        </Link>
                       </div>
                     </div>
                   </div>
