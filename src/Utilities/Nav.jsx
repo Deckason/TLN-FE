@@ -175,8 +175,8 @@ const Nav = () => {
       <nav className="shadow-custom">
         {/* Batches Starting Now  */}
         <section>
-          <div className="bg-black flex items-center justify-center cursor-pointer lg:h-[48px] w-full">
-            <h1 className=" text-primary-color py-2 text-[14px]/[17px] 2xl:text-[16px] xl:text-[14px] text-[10px] md:text-base font-bold hover:underline focus:underline underline-offset-1">
+          <div className="bg-black flex items-center justify-center  lg:h-[48px] w-full">
+            <h1 className=" text-primary-color py-2 text-[14px]/[17px] 2xl:text-[16px] xl:text-[14px] text-[10px] md:text-base font-bold ">
               {/* DELF /Goethe Exam Schedule */}
               <Link href={data ? data[1].link : "/"} className="flex flex-col sm:flex-row ">
                 <span className="font-[500]"> {data ? data[1].label : ""}</span><span className="font-normal hidden sm:inline"> {data && "| "}</span>
