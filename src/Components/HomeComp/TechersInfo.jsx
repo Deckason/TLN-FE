@@ -53,7 +53,7 @@ const TechersInfo = () => {
               className="w-full object-cover h-full rounded lg:rounded-2xl"
             ></Image>
             <div className="w-full h-[50.62px] absolute bottom-0 flex-col flex justify-center items-center bg-gradient-to-b from-black/10 to-black/10 rounded-bl rounded-br">
-              <div className="text-white text-[14px]/[17px] sm:text-[14px]/[17px] md:text-[24px]/[26px] lg:text-[34px]/[36px] xl:text-[44px]/[46px] 2xl:text-[54px]/[66px] font-bold ">
+              <div className="text-white text-[14px]/[17px] sm:text-[14px]/[17px] md:text-[24px]/[26px] lg:text-[34px]/[36px] xl:text-[44px]/[46px] 2xl:text-[54px]/[66px] font-bold -mb-[20px] sm:mb-0 lg:mb-[20px] xl:mb-[30px] 2xl:mb-[40px]">
                 Samihan
               </div>
               {/* <div className="text-white text-[9.36px] font-normal ">
@@ -69,8 +69,8 @@ const TechersInfo = () => {
               height={500}
               className="w-full object-cover h-full rounded lg:rounded-2xl"
             ></Image>
-            <div className="w-full h-[50.62px]   absolute bottom-0 flex-col flex justify-center items-center bg-gradient-to-b from-black/10 to-black/10 rounded-bl rounded-br">
-              <div className="text-white text-[14px]/[17px] sm:text-[14px]/[17px] md:text-[24px]/[26px] lg:text-[34px]/[36px] xl:text-[44px]/[46px] 2xl:text-[54px]/[66px] font-bold ">
+            <div className="w-full h-[50.62px] absolute bottom-0 sm:bo flex-col flex justify-center items-center bg-gradient-to-b from-black/10 to-black/10 rounded-bl rounded-br">
+              <div className="text-white text-[14px]/[17px] sm:text-[14px]/[17px] md:text-[24px]/[26px] lg:text-[34px]/[36px] xl:text-[44px]/[46px] 2xl:text-[54px]/[66px] font-bold -mb-[20px] sm:mb-0 lg:mb-[20px] xl:mb-[30px] 2xl:mb-[40px]">
                 Rashi
               </div>
             </div>

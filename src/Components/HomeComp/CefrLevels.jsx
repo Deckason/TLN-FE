@@ -8,10 +8,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { useDispatch } from "react-redux";
+import { toggleOpen } from "../../Store/features/GetStartedSlice";
 const CefrLevels = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
+
+  const dispatch = useDispatch();
+  const toggleModal = () => {
+    dispatch(toggleOpen());
+  };
+
   return (
     <div className="bg-[#F5F5F5] pb-[90px] xl:pt-[90px] lg:pt-[150px] min-h-[1250px] ">
       <div className="max-w-[1680px]  mx-auto flex justify-center items-center p-5 lg:p-0 mb-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
@@ -39,13 +47,20 @@ const CefrLevels = () => {
               progress going immediately.
               <br />
               <br />
+              <button
+                onClick={toggleModal}
+                className="w-[91%] sm:w-[279px] h-[43px] sm:h-[58px] py-[12px] px-[32px] text-[16px]/[19.26px] sm:text-2xl font-medium shadow-md hover:shadow-xl transition focus:bg-white 
+                cursor-pointer duration-300  hover:bg-white text-white focus:text-teal-600
+                focus:border-teal-600 border  hover:text-teal-600 hover:border-teal-600
+                  bg-teal-600 rounded-lg z-30 text-center"
+              >
+                Enquiry now
+              </button>
             </p>
-            <div className="flex mt-[-4rem]">
-              <BookAFreeDemoButton></BookAFreeDemoButton>
-            </div>
           </div>
         </section>
       </div>
+
       {/* cefr levels card section is below */}
 
       <section className="flex items-center justify-center">

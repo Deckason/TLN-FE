@@ -4,7 +4,7 @@ import { useGetNewsQuery } from "../../store/apiSlice";
 const Newsletter = () => {
   const {data}=useGetNewsQuery("");
   return (
-    <div className="flex justify-center items-center py-20 bg-secondary-color mt-10 ">
+    <div className="flex justify-center items-center py-[60px] sm:py-20 bg-secondary-color mt-10 ">
       <div className="mt-7 w-full max-md:max-w-full mx-[16px] lg:mx-[34px] 2xl:mx-[50px] 4xl:mx-[10px]">
         <div className="xl:flex gap-5 ld:gap-1 xl:gap-1 3xl:gap-5 lg:flex-row max-xl:flex-col max-md:gap-0 min-h-[380px]">
           <div className="flex flex-col w-full xl:w-[26%] 2xl:w-[35%] 3xl:w-[35%] max-md:ml-0 max-md:min-h-[205px] min-h-[275px] max-md:w-full">

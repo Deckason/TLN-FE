@@ -1,7 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const currMonth = new Date().getMonth() + 1;
-console.log(currMonth);
 
 export const api = createApi({
   baseQuery: fetchBaseQuery({
