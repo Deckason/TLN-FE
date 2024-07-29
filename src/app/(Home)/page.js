@@ -21,7 +21,9 @@ export default function Home() {
         <HomeBanner />
         <Contact />
       </section>
-      <Newsletter />
+      <div>
+        <Newsletter />
+      </div>
       <WhyShould />
       <CoursesWeOffer />
       <section className="-mt-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
