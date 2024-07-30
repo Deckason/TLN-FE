@@ -4,7 +4,7 @@ import HomeFooter from "../../Components/HomeComp/HomeFooter";
 import Nav from "../../Utilities/Nav";
 import "../../css/Custom.css";
 import { createContext, useEffect, useState } from "react";
-import { store } from "../../Store/store";
+import { store } from "../../store/store";
 
 export const LanguageOptionContext = createContext("");
 const Homelayout = ({ children }) => {
@@ -19,7 +19,7 @@ const Homelayout = ({ children }) => {
   return (
     <Provider store={store}>
       <LanguageOptionContext.Provider value={data} className="">
-        <Provider store={store} >
+        <Provider store={store}>
           <Nav />
           {children}
           <HomeFooter />

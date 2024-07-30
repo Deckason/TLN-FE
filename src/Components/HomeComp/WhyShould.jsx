@@ -36,7 +36,9 @@ const WhyShould = () => {
     batch: false,
   });
 
-  const [whyShouldHovered, setWhyShouldHovered] = useState(Array(8).fill(false));
+  const [whyShouldHovered, setWhyShouldHovered] = useState(
+    Array(8).fill(false)
+  );
 
   const openModal = (card) =>
     setIsModalOpen({ ...isModalOpen, [card]: isModalOpen });
@@ -120,7 +122,7 @@ const WhyShould = () => {
     },
   ];
   return (
-    <div className="lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
+    <div className="lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px] bg-[#]">
       {/*  Modal */}
       {modalData.map((modal) => (
         <ReusableModal
@@ -149,9 +151,9 @@ const WhyShould = () => {
         </ReusableModal>
       ))}
 
-      <div className="mt-[50px] md:mt-[98px] w-full  max-w-[1200px] mx-auto">
-        <h1 className="self-stretch 2xl:text-[50px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] md:text-center my-[48px] text-stone-900 max-lg:px-4 text-xl font-bold ">
-          Why you should learn with The Language <br className=" " /> <br /> Network?
+      <div className="mt-[50px] md:mt-[98px] w-full  max-w-[1267px] mx-auto">
+        <h1 className="self-stretch font-bold  text-[24px]/[29px] lg:text-[40px]/[48.01px] md:text-3xl xl:text-[50px]/[40px]  2xl:text-[60px]/[72px]  md:text-center my-[48px] text-stone-900 max-lg:px-4">
+          Why you should learn with The Language Network?
         </h1>
         <div className="lg:grid hidden md:grid-cols-2 lg:grid-cols-4 mx-auto gap-y-6  gap-x-[32px]  ">
           <div
@@ -179,12 +181,11 @@ const WhyShould = () => {
                   onMouseEnter={() => {
                     const newHovedStates = [...whyShouldHovered];
                     newHovedStates[0] = true;
-                    setWhyShouldHovered(newHovedStates)
-                  }
-                  }
-                  onMouseLeave={()=>{
-                    const newHovedStates=[...whyShouldHovered];
-                    newHovedStates[0]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  onMouseLeave={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[0] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
                   className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border h-full border-primary-color justify-center items-center gap-2.5 inline-flex"
@@ -192,8 +193,14 @@ const WhyShould = () => {
                   <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[0] ? RightArrowWhite : RightArrowPrimary}></Image>
-
+                  <Image
+                    width={25}
+                    height={25}
+                    alt="RightArrowPrimary"
+                    src={
+                      whyShouldHovered[0] ? RightArrowWhite : RightArrowPrimary
+                    }
+                  ></Image>
                 </button>
               </div>
             </div>
@@ -223,12 +230,11 @@ const WhyShould = () => {
                   onMouseEnter={() => {
                     const newHovedStates = [...whyShouldHovered];
                     newHovedStates[1] = true;
-                    setWhyShouldHovered(newHovedStates)
-                  }
-                  }
-                  onMouseLeave={()=>{
-                    const newHovedStates=[...whyShouldHovered];
-                    newHovedStates[1]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  onMouseLeave={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[1] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
                   className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
@@ -236,8 +242,14 @@ const WhyShould = () => {
                   <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[1] ? RightArrowWhite : RightArrowPrimary}></Image>
-
+                  <Image
+                    width={25}
+                    height={25}
+                    alt="RightArrowPrimary"
+                    src={
+                      whyShouldHovered[1] ? RightArrowWhite : RightArrowPrimary
+                    }
+                  ></Image>
                 </button>
               </div>
             </div>
@@ -267,12 +279,11 @@ const WhyShould = () => {
                   onMouseEnter={() => {
                     const newHovedStates = [...whyShouldHovered];
                     newHovedStates[2] = true;
-                    setWhyShouldHovered(newHovedStates)
-                  }
-                  }
-                  onMouseLeave={()=>{
-                    const newHovedStates=[...whyShouldHovered];
-                    newHovedStates[2]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  onMouseLeave={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[2] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
                   className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
@@ -280,8 +291,14 @@ const WhyShould = () => {
                   <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[2] ? RightArrowWhite : RightArrowPrimary}></Image>
-
+                  <Image
+                    width={25}
+                    height={25}
+                    alt="RightArrowPrimary"
+                    src={
+                      whyShouldHovered[2] ? RightArrowWhite : RightArrowPrimary
+                    }
+                  ></Image>
                 </button>
               </div>
             </div>
@@ -311,12 +328,11 @@ const WhyShould = () => {
                   onMouseEnter={() => {
                     const newHovedStates = [...whyShouldHovered];
                     newHovedStates[3] = true;
-                    setWhyShouldHovered(newHovedStates)
-                  }
-                  }
-                  onMouseLeave={()=>{
-                    const newHovedStates=[...whyShouldHovered];
-                    newHovedStates[3]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  onMouseLeave={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[3] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
                   className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
@@ -324,8 +340,14 @@ const WhyShould = () => {
                   <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[3] ? RightArrowWhite : RightArrowPrimary}></Image>
-
+                  <Image
+                    width={25}
+                    height={25}
+                    alt="RightArrowPrimary"
+                    src={
+                      whyShouldHovered[3] ? RightArrowWhite : RightArrowPrimary
+                    }
+                  ></Image>
                 </button>
               </div>
             </div>
@@ -355,12 +377,11 @@ const WhyShould = () => {
                   onMouseEnter={() => {
                     const newHovedStates = [...whyShouldHovered];
                     newHovedStates[4] = true;
-                    setWhyShouldHovered(newHovedStates)
-                  }
-                  }
-                  onMouseLeave={()=>{
-                    const newHovedStates=[...whyShouldHovered];
-                    newHovedStates[4]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  onMouseLeave={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[4] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
                   className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
@@ -368,8 +389,14 @@ const WhyShould = () => {
                   <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[4] ? RightArrowWhite : RightArrowPrimary}></Image>
-
+                  <Image
+                    width={25}
+                    height={25}
+                    alt="RightArrowPrimary"
+                    src={
+                      whyShouldHovered[4] ? RightArrowWhite : RightArrowPrimary
+                    }
+                  ></Image>
                 </button>
               </div>
             </div>
@@ -399,12 +426,11 @@ const WhyShould = () => {
                   onMouseEnter={() => {
                     const newHovedStates = [...whyShouldHovered];
                     newHovedStates[5] = true;
-                    setWhyShouldHovered(newHovedStates)
-                  }
-                  }
-                  onMouseLeave={()=>{
-                    const newHovedStates=[...whyShouldHovered];
-                    newHovedStates[5]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  onMouseLeave={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[5] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
                   className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
@@ -412,8 +438,14 @@ const WhyShould = () => {
                   <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[5] ? RightArrowWhite : RightArrowPrimary}></Image>
-
+                  <Image
+                    width={25}
+                    height={25}
+                    alt="RightArrowPrimary"
+                    src={
+                      whyShouldHovered[5] ? RightArrowWhite : RightArrowPrimary
+                    }
+                  ></Image>
                 </button>
               </div>
             </div>
@@ -443,12 +475,11 @@ const WhyShould = () => {
                   onMouseEnter={() => {
                     const newHovedStates = [...whyShouldHovered];
                     newHovedStates[6] = true;
-                    setWhyShouldHovered(newHovedStates)
-                  }
-                  }
-                  onMouseLeave={()=>{
-                    const newHovedStates=[...whyShouldHovered];
-                    newHovedStates[6]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  onMouseLeave={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[6] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
                   className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
@@ -456,8 +487,14 @@ const WhyShould = () => {
                   <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[6] ? RightArrowWhite : RightArrowPrimary}></Image>
-
+                  <Image
+                    width={25}
+                    height={25}
+                    alt="RightArrowPrimary"
+                    src={
+                      whyShouldHovered[6] ? RightArrowWhite : RightArrowPrimary
+                    }
+                  ></Image>
                 </button>
               </div>
             </div>
@@ -487,12 +524,11 @@ const WhyShould = () => {
                   onMouseEnter={() => {
                     const newHovedStates = [...whyShouldHovered];
                     newHovedStates[7] = true;
-                    setWhyShouldHovered(newHovedStates)
-                  }
-                  }
-                  onMouseLeave={()=>{
-                    const newHovedStates=[...whyShouldHovered];
-                    newHovedStates[7]=false;
+                    setWhyShouldHovered(newHovedStates);
+                  }}
+                  onMouseLeave={() => {
+                    const newHovedStates = [...whyShouldHovered];
+                    newHovedStates[7] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
                   className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
@@ -500,8 +536,14 @@ const WhyShould = () => {
                   <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
-                  <Image width={25} height={25} alt="RightArrowPrimary" src={whyShouldHovered[7] ? RightArrowWhite : RightArrowPrimary}></Image>
-
+                  <Image
+                    width={25}
+                    height={25}
+                    alt="RightArrowPrimary"
+                    src={
+                      whyShouldHovered[7] ? RightArrowWhite : RightArrowPrimary
+                    }
+                  ></Image>
                 </button>
               </div>
             </div>
@@ -510,9 +552,7 @@ const WhyShould = () => {
         <div className="lg:hidden">
           <Swiper
             spaceBetween={20}
-            pagination={{
-              clickable: true,
-            }}
+            pagination={{ clickable: true }}
             loop={true}
             autoplay={{
               delay: 2500,
@@ -530,7 +570,6 @@ const WhyShould = () => {
             onSlideChange={(swiper) => {
               setCurrentPage(swiper.activeIndex);
             }}
-            // slidesPerView={4}
             breakpoints={{
               1680: {
                 slidesPerView: 4,
@@ -545,377 +584,78 @@ const WhyShould = () => {
                 slidesPerView: 1,
               },
             }}
-            // modules={[Pagination]}
-            className="mySwiper mx-auto max-lg:flex justify-center   items-center max-w-[305px] md:max-w-[700px]  lg:max-w-[1000px]  xl:max-w-[1200px]  2xl:max-w-[1200px] hidden  3xl:max-w-[1440px]"
+            className="max-lg:shadow-custom mySwiper mx-auto max-lg:flex justify-center items-center max-w-[305px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1200px] hidden 3xl:max-w-[1440px]"
           >
-            <SwiperSlide
-              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
-            >
-              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
-                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
-                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
-                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
-                      <Image
-                        alt="experts"
-                        src={experts}
-                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
-                      ></Image>
+            {[
+              { img: experts, text: "Expert trainers", modal: "expert" },
+              {
+                img: interactive,
+                text: "Interactive sessions",
+                modal: "interactive",
+              },
+              {
+                img: courses,
+                text: "Certified courses",
+                modal: "certificated",
+              },
+              { img: demo, text: "Book a free demo", modal: "freeCourse" },
+              {
+                img: material,
+                text: "Free study material",
+                modal: "freeStudy",
+              },
+              { img: sessions, text: "Review sessions", modal: "review" },
+              { img: flexible, text: "Flexible timings", modal: "flexible" },
+              { img: batch, text: "Batch flexibility", modal: "batch" },
+            ].map((item, index) => (
+              <SwiperSlide
+                key={index}
+                style={{ boxShadow: "0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
+                className="lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl flex-col justify-center items-center gap-2.5"
+              >
+                <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
+                  <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
+                    <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
+                      <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
+                        <Image
+                          alt={item.text}
+                          src={item.img}
+                          className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
+                        />
+                      </div>
+                    </div>
+                    <div className="text-center lg:-mt-5 xl:-mt-0 text-emerald-900 text-[18px] xl:text-xl font-bold">
+                      {item.text}
                     </div>
                   </div>
-                  <div className="text-center lg:-mt-5 xl:-mt-0 text-emerald-900 text-[18px] xl:text-xl font-bold ">
-                    Expert trainers
-                  </div>
-                </div>
-                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
-                  <button
-                    onClick={() => openModal("expert")}
-                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border h-full border-primary-color justify-center items-center gap-2.5 inline-flex"
-                  >
-                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
-                      Learn more
-                    </div>
-                    <svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
+                  <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
+                    <button
+                      onClick={() => openModal(item.modal)}
+                      className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                     >
-                      <path
-                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                        stroke="#1F9F90"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide
-              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
-            >
-              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
-                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
-                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
-                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
-                      <Image
-                        alt="experts"
-                        src={interactive}
-                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
-                      ></Image>
-                    </div>
-                  </div>
-                  <div className="text-center lg:-mt-5 xl:-mt-0 text-emerald-900 text-[18px] xl:text-xl font-bold ">
-                    Interactive sessions
+                      <div className="text-center text-xl font-normal leading-7">
+                        Learn more
+                      </div>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
+                          stroke="#1F9F90"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </div>
-                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
-                  <button
-                    onClick={() => openModal("interactive")}
-                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
-                  >
-                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
-                      Learn more
-                    </div>
-                    <svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                        stroke="#1F9F90"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide
-              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
-            >
-              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
-                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
-                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
-                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
-                      <Image
-                        alt="experts"
-                        src={courses}
-                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
-                      ></Image>
-                    </div>
-                  </div>
-                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
-                    Certified courses
-                  </div>
-                </div>
-                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
-                  <button
-                    onClick={() => openModal("certificated")}
-                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
-                  >
-                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
-                      Learn more
-                    </div>
-                    <svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                        stroke="#1F9F90"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide
-              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
-            >
-              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
-                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
-                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
-                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
-                      <Image
-                        alt="experts"
-                        src={demo}
-                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
-                      ></Image>
-                    </div>
-                  </div>
-                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
-                    Book a free demo
-                  </div>
-                </div>
-                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
-                  <button
-                    onClick={() => openModal("freeCourse")}
-                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
-                  >
-                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
-                      Learn more
-                    </div>
-                    <svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                        stroke="#1F9F90"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide
-              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
-            >
-              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
-                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
-                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
-                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
-                      <Image
-                        alt="experts"
-                        src={material}
-                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
-                      ></Image>
-                    </div>
-                  </div>
-                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
-                    Free study material
-                  </div>
-                </div>
-                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
-                  <button
-                    onClick={() => openModal("freeStudy")}
-                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
-                  >
-                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
-                      Learn more
-                    </div>
-                    <svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                        stroke="#1F9F90"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide
-              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
-            >
-              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
-                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
-                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
-                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
-                      <Image
-                        alt="experts"
-                        src={sessions}
-                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
-                      ></Image>
-                    </div>
-                  </div>
-                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
-                    Review sessions
-                  </div>
-                </div>
-                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
-                  <button
-                    onClick={() => openModal("review")}
-                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
-                  >
-                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
-                      Learn more
-                    </div>
-                    <svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                        stroke="#1F9F90"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide
-              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
-            >
-              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
-                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
-                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
-                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
-                      <Image
-                        alt="experts"
-                        src={flexible}
-                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
-                      ></Image>
-                    </div>
-                  </div>
-                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
-                    Flexible timings
-                  </div>
-                </div>
-                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
-                  <button
-                    onClick={() => openModal("flexible")}
-                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
-                  >
-                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
-                      Learn more
-                    </div>
-                    <svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                        stroke="#1F9F90"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide
-              style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
-              className=" lg:w-[219px] lg:h-[195px] xl:w-[292px] xl:h-[260px] p-5 bg-white rounded-2xl shadow flex-col justify-center items-center gap-2.5 "
-            >
-              <div className="xl:h-[220px] lg:h-[165px] flex-col justify-center items-center gap-8 flex">
-                <div className="self-stretch lg:h-[99px] xl:h-[132px] flex-col justify-center items-center gap-2 flex">
-                  <div className="xl:w-[100px] xl:h-[100px] pl-[10.94px] pr-[11.06px] pt-[10.94px] lg:scale-75 xl:scale-100 pb-[11.06px] justify-center items-center inline-flex">
-                    <div className="w-[78px] h-[78px] relative flex-col justify-center items-center flex">
-                      <Image
-                        alt="experts"
-                        src={batch}
-                        className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
-                      ></Image>
-                    </div>
-                  </div>
-                  <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
-                    Batch flexibility
-                  </div>
-                </div>
-                <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
-                  <button
-                    onClick={() => openModal("batch")}
-                    className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
-                  >
-                    <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
-                      Learn more
-                    </div>
-                    <svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.5 12H19.5M19.5 12L13.5 18M19.5 12L13.5 6"
-                        stroke="#1F9F90"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

@@ -10,48 +10,34 @@ import Image from "next/image";
 import Link from "next/link";
 
 const CoursesWeOffer = () => {
+  const languages = [
+    { href: "/Languages/English", alt: "english", src: english },
+    { href: "/Languages/French", alt: "french", src: french },
+    { href: "/Languages/Spanish", alt: "spanish", src: spanish },
+    { href: "/Languages/German", alt: "german", src: german },
+    { href: "/Languages/Mandarin", alt: "mandarin", src: mandarin },
+    { href: "/Languages/Japanese", alt: "japanese", src: japanese },
+    { href: "/Languages/Korean", alt: "korean", src: korean },
+  ];
+
   return (
-    <div className="my-[126px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
-      <h1 className="my-[40px] text-center self-stretch text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold">
+    <div className="my-[126px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-auto">
+      <h1 className="max-lg:px-4 my-[40px] sm:text-center self-stretch text-stone-900 text-[24px]/[29px] lg:text-[40px]/[48.01px] md:text-3xl xl:text-[50px]/[60px]  2xl:text-[60px]/[72px]  font-bold">
         Courses We Offer
       </h1>
       <section className="max-w-[1452px] min-h-[150px] justify-center items-center xl:gap-x-[28px] gap-10 lg:mx-2 mx-10 flex">
-        <div className="flex items-center xl:gap-x-[32px] gap-10 shrink sm:justify-center flex-wrap">
-          <Link href="/Languages/English">
-            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
-              <Image alt="english" className="xl:p-1 p-3.5" src={english} />
-            </div>
-          </Link>
-          <Link href="/Languages/French">
-            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
-              <Image alt="french" className="xl:p-1 p-3.5" src={french} />
-            </div>
-          </Link>
-          <Link href="/Languages/Spanish">
-            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
-              <Image alt="spanish" className="xl:p-1 p-3.5" src={spanish} />
-            </div>
-          </Link>
-          <Link href="/Languages/German">
-            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
-              <Image alt="german" className="xl:p-1 p-3.5" src={german} />
-            </div>
-          </Link>
-          <Link href="/Languages/Mandarin">
-            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
-              <Image alt="mandarin" className="xl:p-1 p-3.5" src={mandarin} />
-            </div>
-          </Link>
-          <Link href="/Languages/Japanese">
-            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
-              <Image alt="japanese" className="xl:p-1 p-3.5" src={japanese} />
-            </div>
-          </Link>
-          <Link href="/Languages/Korean">
-            <div className="xl:w-[150px] w-[115px] h-[115px] xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
-              <Image alt="korean" className="xl:p-1 p-3.5" src={korean} />
-            </div>
-          </Link>
+        <div className="flex items-center justify-center xl:gap-x-[32px] gap-10 shrink sm:justify-center flex-wrap">
+          {languages.map((language) => (
+            <Link href={language.href} key={language.alt}>
+              <div className="xl:w-[140px] 2xl:w-[150px] w-[115px] h-[115px]  xl:h-[140px] 2xl:h-[150px] rounded-full border border-neutral-200 flex items-center justify-center p-3 lg:shadow-md hover:shadow-xl transition duration-300">
+                <Image
+                  alt={language.alt}
+                  className="xl:p-1 p-3.5"
+                  src={language.src}
+                />
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
     </div>

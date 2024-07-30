@@ -1,6 +1,6 @@
 "use client";
 import { useDispatch } from "react-redux";
-import { toggleOpen } from "../Store/features/GetStartedSlice";
+import { toggleOpen } from "../store/features/GetStartedSlice";
 
 const BookAFreeDemoButton = () => {
   const dispatch = useDispatch();

@@ -14,7 +14,7 @@ import ReusableLoginModal from "../Shared/LoginModal";
 import LanguageDropdown from "./LanguageDropDown";
 import { useGetPromoQuery } from "../store/apiSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleOpen } from "../Store/features/GetStartedSlice";
+import { toggleOpen } from "../store/features/GetStartedSlice";
 
 const Nav = () => {
   const languageOptions = {
