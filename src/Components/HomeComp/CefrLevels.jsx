@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { useDispatch } from "react-redux";
-import { toggleOpen } from "../../Store/features/GetStartedSlice";
+import { toggleOpen } from "../../store/features/GetStartedSlice";
 const CefrLevels = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const navigationPrevRef = React.useRef(currentPage);

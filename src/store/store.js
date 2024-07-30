@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import GetStartedSlice from "./features/GetStartedSlice";
+import GetStartedSlice from "../store/features/GetStartedSlice";
 import { api } from "../store/apiSlice";
 
 export const store = configureStore({
