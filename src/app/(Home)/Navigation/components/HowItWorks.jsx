@@ -19,15 +19,15 @@ const HowItWorks = () => {
         How it works?
       </p>
       <div className="sm:pb-20 pt-8 pb-8">
-        <div className="container mx-auto sm:px-8 px-5">
+        <div className="container mx-auto sm:px-8 px-5 ">
           <div className="md:grid hidden grid-cols-3 gap-8 h-auto">
             {howItWorksData.map((val, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="flex items-center justify-center h-fit w-full px-8">
+              <div key={index} className="flex flex-col items-center ">
+                <div className="flex items-center justify-center h-fit w-full px-8 ">
                   <Image src={val.icon} width={359} height={140} className="w-full" alt="Form Image" />
                 </div>
-                <div className="bg-white min-h-60 rounded-lg border border-primary-color text-xl mt-5 text-center">
-                  <h5 className="bg-primary-color py-3 mb-5 text-white">
+                <div className="bg-white min-h-60 w-full rounded-lg border border-primary-color text-xl mt-5 text-center">
+                  <h5 className="bg-primary-color py-3 mb-5 text-white rounded-t-lg">
                     {val.heading}
                   </h5>
                   <p className="text-gray-600 px-4 lg:text-xl text-lg my-4 text-center h-fit sm:min-h-32">
