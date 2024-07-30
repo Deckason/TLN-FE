@@ -17,7 +17,7 @@ import SubscribeToOur from "../../Shared/SubscribeToOur";
 export default function Home() {
   return (
     <>
-      <section className="2xl:max-w-[1680px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px] mx-auto relative flex justify-center items-center flex-col ">
+      <section className="4xl:mx-auto 2xl:max-w-[1680px] lg:mx-[44px] 2xl:mx-[88px] mx-auto relative flex justify-center items-center flex-col ">
         <HomeBanner />
         <Contact />
       </section>
@@ -25,7 +25,10 @@ export default function Home() {
         <Newsletter />
       </div>
       <WhyShould />
-      <CoursesWeOffer />
+      <div className="flex items-center justify-center">
+        <CoursesWeOffer />
+      </div>
+
       <section className="-mt-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <UpcomingBatches language={"English"} />
       </section>

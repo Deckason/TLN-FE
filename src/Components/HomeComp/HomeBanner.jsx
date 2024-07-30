@@ -5,11 +5,11 @@ import States from "../../Shared/SharedAdultsPage/Components/States";
 import Image from "next/image";
 const HomeBanner = () => {
   return (
-    <div className=" md:mx-10 mt-[16px] sm:mt-5 w-full ">
-      <div className=" lg:h-[372px] w-full justify-between  items-center flex flex-col lg:flex-row px-2 lg:mb-20 xl:mx-auto">
+    <div className=" md:mx-10 mt-[16px] sm:mt-5 lg:mt-[30px] xl::mt-[40px] 2xl:mt-[90px] w-full ">
+      <div className=" lg:h-[372px] w-full justify-between  items-center flex flex-col lg:flex-row px-2 lg:mb-[80px] 2xl:mb-[120px] xl:mx-auto">
         <div className="lg:w-[525px] lg:min-h-[542px] min-h-fit flex-col z-10 max-lg:my-10 justify-center w-full lg:items-start gap-0 inline-flex">
           <div className="mx-[16px] self-stretch lg:h-[261px] h-fit 2xl:h-[261px] xl:h-[261px] flex-col justify-center items-start gap-[8px] sm:gap-4 flex">
-            <div className="self-stretch text-stone-900 4xl:text-[60px]/[72px] xl:text-[40px]/[48.01px] md:text-3xl text-[24px]/[29px] font-[700] ">
+            <div className="self-stretch text-stone-900 text-[24px]/[29px] xl:text-[50px]/[60px]  2xl:text-[60px]/[72px] lg:text-[40px]/[48.01px] md:text-3xl font-[700] ">
               Your Gateway to <br className="" />
               <span className="text-nowrap">Language Excellence</span>
             </div>
@@ -21,7 +21,7 @@ const HomeBanner = () => {
         </div>
         <Image
           alt="homePageBannerGirl"
-          className="w-[90%] lg:w-[50%] relative top-[27px] lg:block"
+          className="w-[90%] 2xl:max-w-[769px] max-h-[515px] lg:w-[50%] relative top-[27px] lg:block"
           src={homePageBannerGirl}
         ></Image>
         {/* <div className="max-w-[400px] h-[522px]  py-8 xl:mx-auto px-3  rounded-2xl z-10 border bg-white shadow-md hover:shadow-xl max-lg:hidden transition duration-200 md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
@@ -67,7 +67,7 @@ const HomeBanner = () => {
         </div> */}
       </div>
       {/* states component is a shared component */}
-      <div className="mb-10">
+      <div className="mb-10 2xl:mt-[50px]">
         <States />
       </div>
     </div>

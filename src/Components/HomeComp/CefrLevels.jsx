@@ -21,8 +21,8 @@ const CefrLevels = () => {
   };
 
   return (
-    <div className="bg-[#F5F5F5] pb-[90px] xl:pt-[90px] lg:pt-[150px] min-h-[1250px] ">
-      <div className="max-w-[1680px]  mx-auto flex justify-center items-center p-5 lg:p-0 mb-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
+    <div className="bg-[#F5F5F5] pb-[90px] xl:pt-[90px] lg:pt-[150px] min-h-[1250px]">
+      <div className="max-w-[1680px]  mx-auto flex justify-center items-center p-5 lg:p-0 mb-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-auto">
         <section className="min-h-[463px] lg:mx-10 gap-5 lg:gap-[42px] w-full grid lg:grid-cols-2 ">
           <div className="rounded-3xl">
             <Image
