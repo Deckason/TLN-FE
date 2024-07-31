@@ -29,7 +29,7 @@ export default function Home() {
         <CoursesWeOffer />
       </div>
 
-      <section className="-mt-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
+      <section className="-mt-[150px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <UpcomingBatches language={"English"} />
       </section>
       <CefrLevels />
@@ -42,7 +42,7 @@ export default function Home() {
       <div className="mt-[40px] lg:-mt-[40px]">
         <OurAlumni />
       </div>
-      <div className="pb-[25px]">
+      <div className="pb-[60px]">
         <EducationPartners />
       </div>
       <SubscribeToOur />

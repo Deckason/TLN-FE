@@ -21,9 +21,9 @@ const CefrLevels = () => {
   };
 
   return (
-    <div className="bg-[#F5F5F5] pb-[90px] xl:pt-[90px] lg:pt-[150px] min-h-[1250px]">
-      <div className="max-w-[1680px]  mx-auto flex justify-center items-center p-5 lg:p-0 mb-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-auto">
-        <section className="min-h-[463px] lg:mx-10 gap-5 lg:gap-[42px] w-full grid lg:grid-cols-2 ">
+    <div className="bg-[#F5F5F5] pb-[90px]  lg:pt-[60px] xl:pt-[80px] 2xl:pt-[100px] min-h-[1250px] lg:min-h-[1100px] 2xl:min-h-[1250px]">
+      <div className="max-w-[1680px] mx-auto flex justify-center items-center p-5 lg:p-0 mb-[50px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-auto">
+        <section className="min-h-[463px] gap-5 3xl:gap-[42px] w-full grid lg:grid-cols-2 mt-[20px]">
           <div className="rounded-3xl">
             <Image
               alt="girl"
@@ -31,11 +31,11 @@ const CefrLevels = () => {
               src={girlImage}
             />
           </div>
-          <div>
-            <h1 className="text-stone-900 2xl:text-[45px] xl:text-[45px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold">
+          <div className="relative">
+            <h1 className="text-stone-900 text-[24px]/[29px] lg:text-3xl xl:text-[45px]/[50px] 2xl:text-[48px]/[58px]  4xl:text-[60px]/[72px]  font-bold">
               Our courses are aligned with The CEFR Levels
             </h1>
-            <p className=" lg:min-h-[250px] text-neutral-500 lg:text-[16px]/[22px] font-normal text-base mt-2 lg:mt-[23px] leading-7 text-justify mb-[16px]">
+            <p className="flex flex-col justify-between lg:min-h-[250px] text-neutral-500 lg:text-[16px]/[22px] font-normal text-base mt-2 lg:mt-[23px] leading-7 text-justify mb-[16px]">
               Common European Framework of Reference for Languages (CEFR) is an
               internationally recognized standard that describes your learning
               progress in more detail. The framework helps you to explain your
@@ -49,7 +49,7 @@ const CefrLevels = () => {
               <br />
               <button
                 onClick={toggleModal}
-                className="w-[91%] sm:w-[279px] h-[43px] sm:h-[58px] py-[12px] px-[32px] text-[16px]/[19.26px] sm:text-2xl font-medium shadow-md hover:shadow-xl transition focus:bg-white 
+                className="lg:absolute lg:top-[77%] w-[160px] sm:w-[279px] h-[43px] sm:h-[58px] py-[12px] sm:px-[32px] text-[16px]/[19.26px] sm:text-2xl font-medium shadow-md hover:shadow-xl transition focus:bg-white 
                 cursor-pointer duration-300  hover:bg-white text-white focus:text-teal-600
                 focus:border-teal-600 border  hover:text-teal-600 hover:border-teal-600
                   bg-teal-600 rounded-lg z-30 text-center"
@@ -62,9 +62,8 @@ const CefrLevels = () => {
       </div>
 
       {/* cefr levels card section is below */}
-
       <section className="flex items-center justify-center">
-        <div className="mt-[102px] max-w-[1680px] hidden 2xl:flex justify-center items-center gap-[20px] flex-wrap xl:mx-[120px]">
+        <div className="max-w-[1680px] hidden 2xl:flex justify-center items-center gap-[20px] flex-wrap xl:mx-[80px] ">
           <div className="flex gap-[40px] 4xl:gap-[20px]">
             <div
               id="A1"
@@ -726,11 +725,7 @@ const CefrLevels = () => {
         </Swiper>
       </div>
 
-      <div className="flex mt-[48px] items-center justify-center">
-        <button className="   px-8 py-3.5 bg-teal-600 rounded-lg justify-center text-neutral-50 lg:text-2xl font-medium items-center gap-2.5 inline-flex">
-          Get started
-        </button>
-      </div>
+      <BookAFreeDemoButton />
     </div>
   );
 };
