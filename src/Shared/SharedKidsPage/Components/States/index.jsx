@@ -29,12 +29,12 @@ const States = () => {
   return (
     <div className="flex justify-center  w-full items-center mt-5">
       <div className="lg:w-[1000px] 2xl:w-[1684px] max-lg:min-h-[199px] max-sm:pt-0 py-[25px] 2xl:py-[52px] xl:w-full xl:mx-4 bg-white z-10 shadow-md duration-300 transition hover:shadow-2xl rounded-2xl border border-stone-300 flex-col max-sm:mx-4 max-sm:w-[190px] max-lg:w-[350px] justify-center items-center mt-[25.5px] flex">
-        <div className="justify-around w-full 3xl:gap-[90px] items-center  flex-wrap scale-90 flex">
+        <div className=" w-full 3xl:gap-[90px] items-baseline justify-around flex-wrap scale-90 flex">
           <div className="flex-col max-lg:mb-10 justify-center cursor-default items-center gap-2 inline-flex w-full lg:w-auto">
             <div className="text-center text-stone-900 max-sm:text-[32px] text-4xl 2xl:text-5xl  font-bold">
               {stats.totalLanguages || "Loading..."} 
             </div>
-            <div className="w-[125px] text-center text-black text-opacity-60 mx-auto max-sm:text-sm text-2xl font-normal">
+            <div className="w-[125px] text-center text-black text-opacity-60 mx-auto max-sm:text-sm text-xl font-normal">
               Languages
             </div>
           </div>
@@ -42,7 +42,7 @@ const States = () => {
             <div className="text-center max-sm:text-[32px] text-stone-900 text-4xl 2xl:text-5xl font-bold">
               {stats.totalLeaners || "Loading..."}+
             </div>
-            <div className="w-[180px] text-center text-black text-opacity-60 mx-auto max-sm:text-sm text-2xl font-normal">
+            <div className="w-[180px] text-center text-black text-opacity-60 mx-auto max-sm:text-sm text-xl font-normal">
               Happy Learners
             </div>
           </div>
@@ -50,7 +50,7 @@ const States = () => {
             <div className="text-center max-sm:text-[32px] text-stone-900 text-4xl 2xl:text-5xl font-bold">
               {stats.totalMentors || "Loading..."}+
             </div>
-            <div className="w-[165px] text-center text-black text-opacity-60 text-2xl mx-auto max-sm:text-sm font-normal">
+            <div className="w-[165px] text-center text-black text-opacity-60 text-xl mx-auto max-sm:text-sm font-normal">
               Alpha Mentors
             </div>
           </div>
@@ -58,7 +58,7 @@ const States = () => {
             <div className="text-center text-stone-900 text-4xl 2xl:text-5xl font-bold max-sm:text-3xl">
               {stats.totalHours || "Loading..."}+
             </div>
-            <div className=" mx-auto max-sm:text-sm text-center text-black text-opacity-60 text-2xl font-normal">
+            <div className=" mx-auto max-sm:text-sm text-center text-black text-opacity-60 text-xl font-normal">
               Hours of Enlightenment
             </div>
           </div>
@@ -75,7 +75,7 @@ const States = () => {
                 />
               </div>
             </div>
-            <div className="w-[182px] max-sm:text-sm text-center text-black text-opacity-60 text-2xl font-normal">
+            <div className="w-[182px] max-sm:text-sm text-center text-black text-opacity-60 text-xl font-normal">
               Google Reviews
             </div>
           </div>
