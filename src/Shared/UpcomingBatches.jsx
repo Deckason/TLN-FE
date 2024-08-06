@@ -147,7 +147,7 @@ const UpcomingBatches = ({ language }) => {
   return (
     <>
       <div className=" my-[112px]  flex justify-center flex-col items-center">
-        <h1 className="my-[40px] text-center self-stretch text-stone-900 2xl:text-[40px] xl:text-[40px] max-md:text-2xl max-xl:text-5xl text-[24px] font-bold">
+        <h1 className="my-[40px] text-center self-stretch text-stone-900 text-[24px]/[29px] lg:text-[40px]/[48.01px] md:text-3xl xl:text-[50px]/[60px]  2xl:text-[60px]/[72px]  font-bold">
           Upcoming Batches
         </h1>
         <section

@@ -7,13 +7,14 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import { IoMdCloseCircle } from "react-icons/io";
 import { BsCaretRight, BsCaretRightFill } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
-import ModalImg from "../Assets/Rectangle 479.svg";
 import { usePathname } from "next/navigation";
 import "../css/NavBarCustom.css";
 import Dropdown from "../Components/DropDown";
 import ReusableLoginModal from "../Shared/LoginModal";
 import LanguageDropdown from "./LanguageDropDown";
 import { useGetPromoQuery } from "../store/apiSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleOpen } from "../store/features/GetStartedSlice";
 
 const Nav = () => {
   const languageOptions = {
@@ -111,10 +112,12 @@ const Nav = () => {
   const [showStudyAbroad, setShowStudyAbroad] = useState(false);
   const [showWorkWithUs, setShowWorkWithUs] = useState(false);
   const [showNav, setShowNav] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const isOpen = useSelector((state)=>state.getStartedForm.isOpen);
+  const dispatch = useDispatch();
+  const toggleModal = () =>{
+    dispatch(toggleOpen());
+  }
 
   const { data, isLoading, isError, error, refetch } = useGetPromoQuery("");
 
@@ -122,55 +125,7 @@ const Nav = () => {
     <header className="z-40 ">
 
       <>
-        <ReusableLoginModal isOpen={isModalOpen} onClose={closeModal}>
-          <div className="flex rounded-xl gap-10 items-center w-fit justify-around p-10 bg-white">
-            <div>
-              <Image
-                className="h-[586px] w-[608px]"
-                src={ModalImg}
-                alt="modalImage"
-              />
-            </div>
-            <div className="text-center w-[509px] h-[568px] flex flex-col items-center justify-around">
-              <div className="text-[40px] font-bold">
-                Welcome To The Language Network
-              </div>
-              <div className="text-start w-full justify-around h-[416px] flex flex-col gap-4">
-                <label className="text-[20px]">Login here</label>
-                <div className="flex flex-col gap-2">
-                  <label className="text-[14px]">Mobile Number</label>
-                  <input
-                    type="number"
-                    id="number"
-                    placeholder="+91 99999 99999"
-                    className="px-3 py-2 border outline-none rounded-md"
-                  />
-                </div>
-                <div className="w-full flex flex-col gap-2">
-                  <div className="flex justify-between">
-                    <label className="text-[14px]">Password</label>
-                    <label className="text-[14px] text-teal-600 font-semibold">
-                      Forget Password?
-                    </label>
-                  </div>
-                  <input
-                    type="password"
-                    id="password"
-                    placeholder="*********"
-                    className="px-3 py-2 border outline-none rounded-md"
-                  />
-                </div>
-                <button className="p-3 rounded-lg bg-teal-600 hover:bg-white transition duration-300 hover:text-teal-600 text-white border hover:border-teal-600">
-                  Login
-                </button>
-                <div className="font-semibold text-[14px] text-teal-600 text-center">
-                  <span className="text-black">Don&apos;t have account ? </span>{" "}
-                  Create new account
-                </div>
-              </div>
-            </div>
-          </div>
-        </ReusableLoginModal>
+        <ReusableLoginModal isOpen={isOpen} onClose={toggleModal} />
       </>
       <nav className="shadow-custom">
         {/* Batches Starting Now  */}
@@ -237,7 +192,7 @@ const Nav = () => {
             </div>
             <div className=" hidden flex-grow gap-4 lg:flex justify-end me-5 ">
               <button
-                onClick={openModal}
+                onClick={toggleModal}
                 className=" hover:shadow-md transition duration-300 text-[16px]  lg:w-[160px] border  h-[53px] px-[18px] py-[8px] hover:bg-white hover:border-teal-600 hover:text-teal-600 focus:bg-white focus:border-teal-600 focus:text-teal-600 bg-teal-600 rounded-lg justify-center text-white items-center gap-2.5 inline-flex text-nowrap"
               >
                 Get Started
