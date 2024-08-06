@@ -83,10 +83,10 @@ const FluencyCarrerCulture = () => {
     <div className="4xl:bg-[#F6F3F3] pb-[10px]">
       <section className="">
         <div className="w-full flex justify-center  items-center lg:h-[321px] h-[256px] bg-primary-color flex-col">
-          <h1 className="text-center text-neutral-50 lg:text-[45px] text-3xl px-8 font-bold lg:mb-[25px]">
+          <h1 className="text-center text-neutral-50 text-[32px]/[39px] lg:text-[40px]/[48.01px] md:text-3xl xl:text-[50px]/[60px]  2xl:text-[60px]/[72px] font-bold lg:mb-[25px]">
             Fluency, Culture, Career & Beyond
           </h1>
-          <h2 className="lg:text-[28px] p-4 text-[18px] text-center  text-neutral-50">
+          <h2 className="lg:text-[28px] p-4 text-[20px]/[28px] xl:text-[32px]/[39px] font-[400] text-center  text-neutral-50">
             From learning a new language to living it!
           </h2>
         </div>
