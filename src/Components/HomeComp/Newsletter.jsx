@@ -5,6 +5,7 @@ import formatDateTime from "./formatDateTime";
 import Link from "next/link";
 const Newsletter = () => {
   const { data } = useGetNewsQuery("");
+  console.log(data);
   return (
     <div className="flex justify-center items-center py-[60px] sm:py-20 bg-secondary-color mt-10 ">
       <div className="mt-7 w-full max-md:max-w-full mx-[16px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-auto 4xl:max-w-[1680px]">
