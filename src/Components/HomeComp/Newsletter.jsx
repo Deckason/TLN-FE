@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useGetNewsQuery } from "../../store/apiSlice";
 import formatDateTime from "./formatDateTime";
+import Link from "next/link";
 const Newsletter = () => {
   const { data } = useGetNewsQuery("");
   return (
