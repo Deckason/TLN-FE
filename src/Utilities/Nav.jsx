@@ -120,7 +120,7 @@ const Nav = () => {
   }
 
   const { data, isLoading, isError, error, refetch } = useGetPromoQuery("");
-  console.log(data);
+  
   return (
     <header className="z-40 ">
 
