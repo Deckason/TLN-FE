@@ -20,7 +20,7 @@ const Banner = ({ BannerData }) => {
       <div className="mt-[43px] max-w-[1681px]  mx-auto w-full">
         <div className="flex-auto max-md:max-w-full">
           <div className="grid  relative lg:grid-cols-2 gap-5 max-lg:flex-col max-md:gap-0">
-            <div className="flex flex-col  max-w-[700px] max-md:ml-0 max-lg:w-full">
+            <div className="flex flex-col   max-md:ml-0 max-lg:w-full">
               <div className="flex z-10 flex-col px-5 text-black max-md:max-w-full">
                 <div className="text-5xl font-bold max-md:max-w-full max-md:text-4xl">
                   Online {BannerData?.Language} Classes for Adults
@@ -37,7 +37,7 @@ const Banner = ({ BannerData }) => {
                       </span>
                     </div>
                   </div>{" "}
-                  <div className="max-sm:absoluteflex justify-star max-2xl:-ml-8 max-2xl:-mt-6 max-md:-ml-8 ">
+                  <div className="flex justify-start  max-2xl:-ml-8 max-2xl:-mt-6 max-md:-ml-8 max-lg:ml-1 max-sm:ml-1 ">
                     <BookAFreeDemoButton />
                   </div>
                 </div>
@@ -46,14 +46,14 @@ const Banner = ({ BannerData }) => {
             <div className="  mx-auto max-md:-mb-[26px] max-lg:-mb-[42px] lg:-mb-0 lg:block px-4 lg:absolute  right-5 -top-10">
               <Image
                 alt="homePageBannerGirl"
-                className="w-[500px]  h-full object-contain "
+                className="w-[600px]  h-full object-contain "
                 src={BannerImage}
               ></Image>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full -my-10">
+      <div className="w-full -my-10 2xl:mt-5 max-sm:mt-5">
         <States />
       </div>
     </div>
