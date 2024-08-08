@@ -32,7 +32,7 @@ const PreapareForExamCard = ({ data }) => {
                 Learn more
               </div>
               <div className="w-6 h-6 relative">
-                <Image alt="arrowLeft" width={6} height={6} src={arrowLeft}></Image>
+              <Image src={arrowLeft} alt="arrowLeft" />
               </div>
             </Link>
           </div>
