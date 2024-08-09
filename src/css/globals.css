@@ -1,5 +1,7 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
+
 @layer components {
   /* side scroll bar custom */
   ::-webkit-scrollbar {
@@ -14,4 +16,15 @@
     border-radius: 2px;
   }
 }
-@tailwind utilities;
+
+@layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(50%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+}
+

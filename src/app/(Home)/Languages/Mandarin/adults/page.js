@@ -67,20 +67,23 @@ const page = () => {
           level: "Beginner Classes",
           description:
             "Start your Mandarin language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
-          link: "",
+          price:"₹25,902",
+          link: "https://rzp.io/l/3sIBt0a0tq",
         },
         {
           title: "B1-B2",
           level: "Intermediate Classes",
           description:
             "Elevate your Mandarin proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-          link: "",
+          price:"₹66,924",
+          link: "https://rzp.io/l/HqGnWzmPQH",
         },
         {
           title: "C1-C2",
           level: "Advanced Classes",
           description:
             "Advance your Mandarin skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+          price:"On Request",
           link: "",
         },
       ],

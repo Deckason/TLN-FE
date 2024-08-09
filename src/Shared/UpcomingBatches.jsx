@@ -256,7 +256,7 @@ const UpcomingBatches = ({ language }) => {
                           </div>
                         </div>
                       </div>
-                      <button className="flex justify-end  w-full">
+                      <button className="flex justify-center  w-full">
                         <div className="w-[183px] h-[58px] px-8 py-3.5 bg-teal-600 rounded-lg justify-center items-center gap-2.5 inline-flex">
                           <div className="text-center text-nowrap text-neutral-50 text-2xl font-medium ">
                             Enroll now

@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const PaymentBarMoving = () => {
   return (
-    <div className="bg-[#000000] min-h-[66px] justify-center mt-[20px]">
+    <div className="bg-[#000000] min-h-[66px] justify-center ">
       <div className="slider ">
         <div className="slide-track flex">
           {/* Add flex to slide-track */}

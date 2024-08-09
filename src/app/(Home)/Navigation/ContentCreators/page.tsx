@@ -9,7 +9,6 @@ import Section1 from './components/Section1'
 import Section2 from './components/Section2'
 
 
-
 const page = () => {
 	const FaqsData = [
 		{
@@ -45,7 +44,8 @@ const page = () => {
 		<Section1/>
 		<div className="pt-20 bg-[#F6F3F3]"><Faqs data={FaqsData} /> </div>			
 <Form/>
-<Section2/>
+	<Section2/>
+		
 			<PaymentBar />
 		</>
 	);

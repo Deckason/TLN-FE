@@ -2,9 +2,11 @@
 import Image from "next/image";
 import { useGetNewsQuery } from "../../store/apiSlice";
 import formatDateTime from "./formatDateTime";
+import Link from "next/link";
 const Newsletter = () => {
   const { data } = useGetNewsQuery("");
-  return (
+  // console.log(data);
+   return (
     <div className="flex justify-center items-center py-[60px] sm:py-20 bg-secondary-color mt-10 ">
       <div className="mt-7 w-full max-md:max-w-full mx-[16px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-auto 4xl:max-w-[1680px]">
         <div className="xl:flex justify-between gap-5 ld:gap-1 xl:gap-1 3xl:gap-5 lg:flex-row max-xl:flex-col max-md:gap-0 min-h-[380px]">
@@ -68,9 +70,9 @@ const Newsletter = () => {
                         <span className="text-neutral-500">
                           Reads our full story
                         </span>{" "}
-                        <span className="font-bold leading-6 text-teal-600">
-                          Here
-                        </span>
+                        <Link href={"/"} className="font-bold text-xl leading-6 text-teal-600">
+                          here
+                        </Link>
                       </div>
                     </div>
                   </div>

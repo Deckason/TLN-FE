@@ -36,20 +36,22 @@ const SharedAdultsPage = ({ Data, language }) => {
           <UpcomingBatches language={language}/>
         </div>
 
+        <PrepareForLanguageExam LanguageExams={Data?.LanguageExams} />
+
         <LanguageClassesForAnyLevel
           ClassesForAnyLevel={Data?.ClassesForAnyLevel}
         />
-        <PrepareForLanguageExam LanguageExams={Data?.LanguageExams} />
       </div>
       <StudentsTestomony />
       <FaqsLanguage FaqsData={faqs} />
       {/* <EverythingYouNeedToKnowAboutLanguage
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
       /> */}
-      <SayBonjur SayBonjur={Data?.SayBonjur} />
-      <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
+      {/* <SayBonjur SayBonjur={Data?.SayBonjur} /> */}
+      {/* <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
         <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
-      </div>
+      </div> */}
+      <div className="mt-20"></div> //added this because of commenting the above sections
       <SubscribeToOur />
 
       <PaymentBar />

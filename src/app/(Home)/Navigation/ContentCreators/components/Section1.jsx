@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import img from "../../../../../Assets/ContentCreators/img.png";
+import step1 from "../../../../../Assets/ContentCreators/step1.png";
+import step2 from "../../../../../Assets/ContentCreators/step2.png";
+import step3 from "../../../../../Assets/ContentCreators/step3.png";
 import Image from "next/image";
 
 import { SwiperSlide, Swiper } from "swiper/react";
@@ -17,16 +19,21 @@ const Section1 = () => {
       heading: "STEP 1",
       content:
         "Connect with us by filling out our simple application form on the website.",
+        img : step1
+
+
     },
     {
       heading: "STEP 2",
       content:
         "Our team will promptly reach out to you to discuss potential content ideas and partnership opportunities.",
+        img : step2
     },
     {
       heading: "STEP 3",
       content:
         "Start creating and sharing engaging content to enhance language learning with us! ",
+        img : step3
     },
   ];
   return (
@@ -44,7 +51,7 @@ const Section1 = () => {
               return (
                 <div key={index} className="flex flex-col items-center">
                   <div className="flex items-center justify-center h-fit w-full px-8">
-                    <Image src={img} className="w-full" alt="Form Image" />
+                    <Image src={val.img} className="w-full" alt="Form Image" />
                   </div>
                   <div className="bg-white  min-h-60   rounded-lg border border-primary-color text-xl   mt-5   text-center">
                     <h5 className="bg-primary-color py-3 mb-5 text-white">
@@ -101,7 +108,7 @@ const Section1 = () => {
               <SwiperSlide key={index} className="">
                  <div key={index} className="flex flex-col items-center">
                   <div className="flex items-center justify-center h-fit w-full px-3">
-                    <Image src={img} className="w-full" alt="Form Image" />
+                    <Image src={val.img} className="w-full" alt="Form Image" />
                   </div>
                   <div className="bg-white  min-h-60   rounded-lg border border-primary-color text-xl   mt-5   text-center">
                     <h5 className="bg-primary-color py-3 mb-5 text-white">

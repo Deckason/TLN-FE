@@ -2,7 +2,7 @@ import WhyNeeded from "../components/whyNeeded/WhyNeeded";
 import Newsletter from "../../../../Components/HomeComp/Newsletter";
 import Contact from "../../../../Shared/Contact";
 import Banner from "../components/Banner";
-import bannerImg from "../../../../Assets/college/Banner.png";
+import bannerImg from "../../../../Assets/college/CollegeBanner.png";
 import collegeWhyCardInfo from "./data/collegeWhyCardInfo";
 import WhyChooseUs from "../components/whyChooseUs/WhyChooseUs";
 import HowItWorks from "../components/HowItWorks";

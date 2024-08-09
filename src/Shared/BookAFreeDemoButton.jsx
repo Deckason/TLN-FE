@@ -12,7 +12,7 @@ const BookAFreeDemoButton = () => {
       onClick={toggleModal}
       className="flex mt-[48px] items-center justify-center"
     >
-      <button className="px-8 py-2 lg:py-3.5 bg-teal-600 rounded-lg justify-center text-neutral-50 lg:text-2xl font-medium items-center gap-2.5 inline-flex">
+      <button className="px-8 py-2 lg:py-3.5 bg-teal-600 rounded-lg justify-center text-neutral-50 lg:text-2xl font-medium items-center gap-2.5 inline-flex hover:bg-neutral-50 hover:text-teal-600 border-2 border-teal-600">
         Get started
       </button>
     </div>
