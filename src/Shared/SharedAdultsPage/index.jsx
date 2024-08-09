@@ -33,7 +33,7 @@ const SharedAdultsPage = ({ Data, language }) => {
       <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
         <WhyShould />
         <div className="mt-[70px] md:mt-[112px]">
-          <UpcomingBatches language={language}/>
+          <UpcomingBatches language={language} />
         </div>
 
         <PrepareForLanguageExam LanguageExams={Data?.LanguageExams} />
@@ -51,7 +51,8 @@ const SharedAdultsPage = ({ Data, language }) => {
       {/* <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
         <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
       </div> */}
-      <div className="mt-20"></div> //added this because of commenting the above sections
+      <div className="mt-20"></div>
+      {/* //added this because of commenting the above sections */}
       <SubscribeToOur />
 
       <PaymentBar />
