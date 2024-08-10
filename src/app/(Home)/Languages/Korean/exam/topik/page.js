@@ -219,7 +219,8 @@ const page = () => {
       {/* <div className="mb-10">
       <LanguageLessons LanguageLesson={lessonData} />
       </div> */} 
-      <div className="mt-9"></div> //added this because of commenting the above sections
+      <div className="mt-9"></div> 
+      {/* //added this because of commenting the above sections */}
       <SubscribeToOur />
       <PaymentBar />
     </div>

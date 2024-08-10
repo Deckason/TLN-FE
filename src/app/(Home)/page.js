@@ -8,7 +8,7 @@ import Newsletter from "../../Components/HomeComp/Newsletter";
 import OurAlumni from "../../Components/HomeComp/OurAlumni";
 import PaymentBar from "../../Components/HomeComp/PaymentBar";
 import ProficiencyExams from "../../Components/HomeComp/ProficiencyExams";
-import TechersInfo from "../../Components/HomeComp/TechersInfo";
+import TeachersInfoNew from "../../Components/HomeComp/TeachersInfoNew";
 import WhyShould from "../../Components/HomeComp/WhyShould";
 import UpcomingBatches from "../../Shared/UpcomingBatches";
 import StudentsTestomony from "../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
@@ -38,7 +38,8 @@ export default function Home() {
       </section>
       <FluencyCarrerCulture />
       <StudentsTestomony />
-      <TechersInfo />
+      {/* <TechersInfo /> */}
+      <TeachersInfoNew />
       <div className="mt-[40px] lg:-mt-[40px]">
         <OurAlumni />
       </div>
