@@ -13,6 +13,10 @@ import ExamHelp from "../../../../../../Shared/ReusableExamPage/Exam-Help";
 import AboutDelf from "../../../../../../Shared/ReusableExamPage/About-Delf";
 import telf from "../../../../../../Assets/English/toefl.webp";
 
+//components
+import Banner from "../../../../../../Shared/ReusableExamPage/Banner";
+import FaqsExam from "../../../../../../Shared/ReusableExamPage/FaqsExam";
+
 const page = () => {
   const StudentTestimonialsData = {
     title: "What our French students say",
@@ -204,16 +208,23 @@ const page = () => {
 
   return (
     <div>
-      <TopBar data={TopBarData} />
+      <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[112px]">
+      
+      <Banner BannerData={TopBarData} />       
+            </div>
+      {/* <TopBar data={TopBarData} /> */}
       <AboutDelf data={aboutExam} />
       <ExamHelp data={examHelpData} />
       <UpcomingBatches language={"English"}/>
       <StudentsTestomony data={StudentTestimonialsData} />
-      <Faqs data={FaqsData} />
-      <Say say={say} />
-      <div className="mb-10">
+     
+      <FaqsExam FaqsData={FaqsData} />
+      {/* <Faqs data={FaqsData} /> */}
+      {/* <Say say={say} /> */}
+      {/* <div className="mb-10">
       <LanguageLessons LanguageLesson={lessonData} />
-      </div>
+      </div> */} 
+      <div className="mt-20"></div> //added this because of commenting the above sections
       <SubscribeToOur />
       <PaymentBar />
     </div>
