@@ -1,6 +1,7 @@
 import homePageBannerGirl from "../../Assets/Homepage/HomePageBanner/homePageBannerGirl.png";
 import BannerDemoButton from "./BannerDemoButton/BannerDemoButton";
 import States from "../../Shared/SharedAdultsPage/Components/States";
+import GetStartedHomeBannerButton from "../../Shared/buttons/GetStartedHomeBannerButton";
 
 import Image from "next/image";
 const HomeBanner = () => {
@@ -17,7 +18,7 @@ const HomeBanner = () => {
               Learn more than just a language!
             </div>
           </div>
-          <BannerDemoButton />
+          <GetStartedHomeBannerButton />
         </div>
         <Image
           alt="homePageBannerGirl"

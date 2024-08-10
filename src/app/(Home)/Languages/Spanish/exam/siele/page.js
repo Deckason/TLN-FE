@@ -202,23 +202,23 @@ const page = () => {
 
   return (
     <div>
-       <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[112px]">
-      
-      <Banner BannerData={TopBarData} />       
-            </div>
+      <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[112px]">
+        <Banner BannerData={TopBarData} />
+      </div>
       {/* <TopBar data={TopBarData} /> */}
       <AboutDelf data={aboutExam} />
       <ExamHelp data={examHelpData} />
-      <UpcomingBatches language={"Spanish"}/>
+      <UpcomingBatches language={"Spanish"} />
       <StudentsTestomony data={StudentTestimonialsData} />
-     
+
       <FaqsExam FaqsData={FaqsData} />
       {/* <Faqs data={FaqsData} /> */}
       {/* <Say say={say} /> */}
       {/* <div className="mb-10">
       <LanguageLessons LanguageLesson={lessonData} />
-      </div> */} 
-      <div className="mt-9"></div> //added this because of commenting the above sections
+      </div> */}
+      <div className="mt-9"></div>
+      {/* //added this because of commenting the above sections */}
       <SubscribeToOur />
       <PaymentBar />
     </div>

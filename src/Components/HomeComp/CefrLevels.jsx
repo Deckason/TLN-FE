@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { useDispatch } from "react-redux";
 import { toggleOpen } from "../../store/features/GetStartedSlice";
+import GetStartedHomeButton from "../../Shared/buttons/GetStartedHomeButton";
 const CefrLevels = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const navigationPrevRef = React.useRef(currentPage);
@@ -724,8 +725,9 @@ const CefrLevels = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-
-      <BookAFreeDemoButton />
+      <div className="flex justify-center items-center">
+        <GetStartedHomeButton />
+      </div>
     </div>
   );
 };

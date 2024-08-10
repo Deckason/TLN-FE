@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Phone from "../Assets/Phone.png";
+import Instagram from "../Assets/instagram.png";
 
 const Contact = () => {
   const [alertVisible, setAlertVisible] = useState(false);
@@ -16,7 +17,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="fixed flex z-50 gap-y-1.5 flex-col lg:gap-5 top-[50%] right-0 bg-transparent ">
+      <div className="fixed flex z-50 gap-y-1.5 flex-col lg:gap-5 top-[40%] right-0 bg-transparent ">
         <a
           className="flex hover:scale-110 transform duration-300 focus:scale-110 items-center cursor-pointer"
           href="https://api.whatsapp.com/send?phone=9137239887"
@@ -52,6 +53,16 @@ const Contact = () => {
           <Image
             className="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px]"
             src={Phone}
+            alt="phone"
+          />
+        </a>
+        <a
+          className="flex hover:scale-110 transform duration-300 items-center focus:scale-110 bg-white cursor-pointer"
+          href="https://www.instagram.com/thelanguagenetwork/"
+        >
+          <Image
+            className="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px]"
+            src={Instagram}
             alt="phone"
           />
         </a>
