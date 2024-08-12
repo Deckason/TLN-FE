@@ -7,10 +7,11 @@ import girlImage from "../../../../Assets/FrenchPage/FrenchMain/girl1.png";
 import girlAndBoy from "../../../../Assets/FrenchPage/FrenchMain/GirlAndBoy.svg";
 import { useState } from "react";
 import { useGetBannerQuery } from "../../../../store/apiSlice";
+import GetStartedHomeBannerButton from "../../../buttons/GetStartedHomeBannerButton";
 const Banner = ({ BannerData }) => {
   const [Splicing, setSplicing] = useState(true);
   const { data, isLoading: fetchLoading } = useGetBannerQuery("");
-  console.log(data)
+  console.log(data);
   // console.log(BannerData);
   return (
     <div className="w-full relative flex justify-center items-center flex-col mb-[112px]">
@@ -51,9 +52,9 @@ const Banner = ({ BannerData }) => {
                         </span>
                       </div>
                     )}
-                  </div>{" "}
-                  <div className="max-sm:absolute max-sm:-left-[4px] flex justify-star max-2xl:-ml-8 max-2xl:-mt-6 max-md:-ml-8 ">
-                    <BookAFreeDemoButton />
+                  </div>
+                  <div className="-mt-[30px] lg:-mt-[80px] xl:-mt-[60px] 2xl:-mt-[50px] -ml-[50px] lg:-ml-[43px] xl:-ml-[17px]">
+                    <GetStartedHomeBannerButton />
                   </div>
                 </div>
               </div>

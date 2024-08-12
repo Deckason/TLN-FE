@@ -20,11 +20,12 @@ const SharedMainLanuagePage = ({ Data, language }) => {
   // console.log(Data);
   return (
     <div>
-
       <div className="mx-4 lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <div className=" mx-auto  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
           <Banner BannerData={Data?.Banner} />
-          <OnlineLanguageClass OnlineLanguageClass={Data?.OnlineLanguageClass} />
+          <OnlineLanguageClass
+            OnlineLanguageClass={Data?.OnlineLanguageClass}
+          />
           <LanguageClassesForAnyGoal
             ClassesForAnyGoal={Data?.ClassesForAnyGoal}
           />
@@ -35,25 +36,26 @@ const SharedMainLanuagePage = ({ Data, language }) => {
           <WhyLearnLanguage WhyLearnLanguage={Data?.WhyLearnLanguage} />
           <div className="-my-[150px] z-10">
             <UpcomingBatches language={language} />
-          </div>        </div>
-
+          </div>{" "}
+        </div>
       </div>
       <div>
         <StudentsTestomony />
         <FaqsLanguage FaqsData={Data?.FaqsData} />
-        <EverythingYouNeedToKnowAboutLanguage
-          EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
-        />
-        <SayBonjur SayBonjur={Data?.SayBonjur} />
-        <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
-          <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
+        <div className="mb-[50px]">
+          <EverythingYouNeedToKnowAboutLanguage
+            EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
+          />
         </div>
+        {/* <SayBonjur SayBonjur={Data?.SayBonjur} /> */}
+        {/* <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
+          <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
+        </div> */}
         <SubscribeToOur />
 
         <PaymentBar />
       </div>
     </div>
-
   );
 };
 

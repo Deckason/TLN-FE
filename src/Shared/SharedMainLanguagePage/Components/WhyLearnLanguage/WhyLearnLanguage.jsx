@@ -8,13 +8,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
 import React, { useState } from "react";
+import GetStartedHomeButton from "../../../buttons/GetStartedHomeButton";
 const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
     <div className="max-md:my-14 my-[112px] w-full flex items-center flex-col justify-center">
-      <div className="text-black max-md:text-2xl lg:text-4xl max-lg:text-3xl xl:text-[60px] max-sm:-mb-10 mb-12 text-center font-bold ">
+      <div className="text-black text-[24px]/[29px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[72px] mb-12 text-center font-bold ">
         Why learn {WhyLearnLanguage?.Language}?
       </div>
       <div className="2xl:max-w-[1440px] mx-auto min-h-[1016px] flex-col justify-start items-center  h-full w-full max-md:gap-10 gap-14 inline-flex">
@@ -273,10 +274,20 @@ const WhyLearnLanguage = ({ WhyLearnLanguage }) => {
               </div>
             </div>
           </div>
-
         </div>
-        <div className="px-8  scale-125 py-3.5  rounded-lg justify-center items-center gap-2.5 inline-flex">
-          <BookAFreeDemoButton />
+        <div className="z-50 px-8  rounded-lg justify-center items-center gap-2.5 inline-flex">
+          {/* <BookAFreeDemoButton /> */}
+          <div className="z-50 flex mt-8 md:mt-12 justify-center items-center ml-8 lg:ml-6 xl:ml-0">
+            <button
+              data-tally-open="3qORRk"
+              data-tally-layout="modal"
+              data-tally-width="676"
+              data-tally-hide-title="1"
+              className="px-6 py-2 sm:px-8 sm:py-3 md:px-10 md:py-3.5 bg-teal-600 rounded-lg text-sm sm:text-base lg:text-xl xl:text-2xl font-medium text-neutral-50 flex items-center gap-2.5 hover:bg-neutral-50 hover:text-teal-600 border-2 border-teal-600 transition-colors duration-200"
+            >
+              Get started
+            </button>
+          </div>
         </div>
       </div>
     </div>

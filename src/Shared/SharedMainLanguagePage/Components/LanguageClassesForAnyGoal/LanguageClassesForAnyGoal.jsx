@@ -12,7 +12,7 @@ const LanguageClassesForAnyGoal = ({ ClassesForAnyGoal }) => {
   const navigationNextRef = React.useRef(currentPage);
   return (
     <div className="mb-[112px]">
-      <div className="text-black max-md:text-2xl lg:text-4xl max-lg:text-3xl xl:text-[60px] mb-12 text-center font-bold ">
+      <div className="text-black text-[24px]/[29px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[72px] font-bold mb-12 text-center ">
         Online {ClassesForAnyGoal?.Language} Classes for{" "}
         <br className="md:hidden" /> any goal
       </div>
