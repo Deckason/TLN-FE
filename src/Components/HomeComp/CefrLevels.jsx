@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import girlImage from "../../Assets/Homepage/Cefr/girlHappy.png";
-import BookAFreeDemoButton from "../../Shared/BookAFreeDemoButton";
 import rightIcon from "../../Assets/Homepage/Cefr/rightIcon.png";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -53,7 +52,7 @@ const CefrLevels = () => {
                 className="lg:absolute lg:top-[77%] w-[160px] sm:w-[279px] h-[43px] sm:h-[58px] py-[12px] sm:px-[32px] text-[16px]/[19.26px] sm:text-2xl font-medium shadow-md hover:shadow-xl transition focus:bg-white 
                 cursor-pointer duration-300  hover:bg-white text-white focus:text-teal-600
                 focus:border-teal-600 border  hover:text-teal-600 hover:border-teal-600
-                  bg-teal-600 rounded-lg z-30 text-center"
+                  bg-teal-600 rounded-lg z-30 text-center mx-auto"
               >
                 Enquiry now
               </button>

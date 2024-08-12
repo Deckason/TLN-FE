@@ -9,6 +9,7 @@ const TechersInfo = () => {
     <div className="pt-[40px] lg:pb-[112px] flex flex-col justify-center items-center px-[18px] sm:px-[72px] lg:px-10 2xl:px-[100px] 3xl:mx-auto">
       <div className="max-w-[1681px] lg:p-[16px] justify-center items-center 4xl:gap-[72px] gap-[16px] lg:gap-[40px] flex-col 4xl:flex-row flex ">
         <div className="w-full 4xl:w-[490px] flex-col justify-center items-center gap-10 max-4xl:self-start  inline-flex">
+          
           <div className="self-start 4xl:h-full flex-col justify-start items-start gap-4 4xl:gap-8 flex xl:z-30 w-full">
             <div className="self-start flex-col justify-start items-start gap-[8px] flex text-[#1E1E1E] text-[24px]/[29px] sm:text-[30px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[72px] font-bold">
               <p>Inspiring.</p>
@@ -23,6 +24,7 @@ const TechersInfo = () => {
               <br />
             </div>
           </div>
+
           <div className="self-stretch max-4xl:hidden h-[58px] flex-col inset-x-0 bottom-0 justify-start items-start gap-2.5 flex">
             <GetStartedHomeButton />
           </div>
