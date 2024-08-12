@@ -14,7 +14,7 @@ const EverythingYouNeedToKnowAboutLanguage = ({
     <div className=" bg-[#F6F3F3] lg:px-14 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[42px]">
       <div className="max-w-[1463px]  flex-col justify-start w-full mx-auto items-start gap-12 flex">
         <div className="flex-col w-full justify-start items-center gap-12 flex">
-          <div className="text-black max-md:text-xl text-[60px] font-bold text-center max-lg:text-2xl">
+          <div className="text-black text-[24px]/[29px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[72px] font-bold text-center">
             Everything you need to know <br className="hidden max-md:block" />{" "}
             about {EveryThingYouNeedToKnowAbout?.Language}
           </div>

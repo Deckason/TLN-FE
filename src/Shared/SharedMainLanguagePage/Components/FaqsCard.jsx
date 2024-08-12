@@ -27,7 +27,7 @@ const FaqsCard = ({ data, i, id, setId, open, setOpen }) => {
         } p-6 w-full bg-white shadow-md hover:shadow-xl rounded-2xl transform duration-300 justify-center items-center flex-col flex`}
       >
         <div className="grow shrink basis-0 transform duration-300 self-stretch w-full justify-start items-center inline-flex ">
-          <div className="grow shrink basis-0  text-black text-xl   transform duration-300 font-medium w-full leading-7">
+          <div className="grow shrink basis-0  text-black text-xl transform duration-300 font-medium w-full leading-7">
             {data?.question}
           </div>
           <div className="max-md:w-4 ms-2  w-[18px]  relative">
