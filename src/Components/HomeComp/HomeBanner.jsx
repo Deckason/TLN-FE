@@ -6,19 +6,23 @@ import GetStartedHomeBannerButton from "../../Shared/buttons/GetStartedHomeBanne
 import Image from "next/image";
 const HomeBanner = () => {
   return (
-    <div className=" md:mx-10 mt-[16px] sm:mt-5 lg:mt-[30px] xl::mt-[40px] 2xl:mt-[90px] w-full ">
+    <div className=" md:mx-10 -mt-[32px] sm:mt-5 lg:mt-[30px] xl::mt-[40px] 2xl:mt-[90px] w-full ">
       <div className=" lg:h-[372px] w-full justify-between  items-center flex flex-col lg:flex-row px-2 lg:mb-[80px] 2xl:mb-[120px] xl:mx-auto">
         <div className="lg:w-[525px] lg:min-h-[542px] min-h-fit flex-col z-10 max-lg:my-10 justify-center w-full lg:items-start gap-0 inline-flex">
-          <div className="mx-[16px] self-stretch lg:h-[261px] h-fit 2xl:h-[261px] xl:h-[261px] flex-col justify-center items-start gap-[8px] sm:gap-4 flex">
+          <div className=" mt-[50px] mx-[16px] self-stretch lg:h-[261px] h-fit 2xl:h-[261px] xl:h-[261px] flex-col justify-center items-start gap-[8px] sm:gap-4 flex">
             <div className="self-stretch text-stone-900 text-[24px]/[29px] xl:text-[50px]/[60px]  2xl:text-[60px]/[72px] lg:text-[40px]/[48.01px] md:text-3xl font-[700] ">
               Your Gateway to <br className="" />
-              <span className="text-nowrap">Language Excellence</span>
+              <span className="">Language </span>
+              <span className="lg:hidden">Excellence </span>
+              <p className="hidden lg:flex">Excellence</p>
             </div>
-            <div className="self-stretch text-stone-900 2xl:text-5xl xl:text-[32px] lg:text-3xl text-xl font-normal ">
+            <div className="self-stretch text-stone-900 2xl:text-[32px]/[39px] xl:text-[24px]/[29px] text-[20px]/[28px] font-normal text-nowrap">
               Learn more than just a language!
             </div>
           </div>
-          <GetStartedHomeBannerButton />
+          <div className="-mt-[30px] lg:-mt-[90px] xl:-mt-[90px] 2xl:-mt-[50px] -ml-[30px] xl:ml-0">
+            <GetStartedHomeBannerButton />
+          </div>
         </div>
         <Image
           alt="homePageBannerGirl"

@@ -176,7 +176,7 @@ const HomeFooter = () => {
                       : "hidden"
                   } flex-col w-full sm:w-1/2 lg:w-1/4 lg:mb-[16px]`}
                 >
-                  <h3 className="text-[#000] font-bold text-[15px]/[18px]  4xl:text-[20px]/[24.2px] mb-[12px] 4xl:mb-[16px]">
+                  <h3 className="text-[#000] font-bold text-[15px]/[18px] lg:text-[13px]/[16px] xl:text-[15px]/[18px]   4xl:text-[20px]/[24.2px] mb-[12px] 4xl:mb-[16px]">
                     {section.title}
                   </h3>
                   <div
@@ -191,7 +191,7 @@ const HomeFooter = () => {
                           index !== 8
                             ? "underline text-nowrap lg:text-wrap"
                             : "hidden"
-                        } text-[14px]/[18px] lg:text-[10px]/[18px] xl:text-[12px]/[18px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[20px]/[28px] mb-2`}
+                        } text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2`}
                       >
                         {link}
                       </span>
@@ -205,7 +205,7 @@ const HomeFooter = () => {
                           index !== 8
                             ? "underline text-nowrap lg:text-wrap"
                             : ""
-                        } text-[14px]/[18px] lg:text-[10px]/[18px] xl:text-[12px]/[18px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[20px]/[28px] mb-2`}
+                        } text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2`}
                       >
                         {link}
                       </span>
@@ -221,13 +221,13 @@ const HomeFooter = () => {
                     className="flex flex-col w-full sm:w-1/2 lg:w-1/4 lg:mb-[16px]"
                   >
                     <div className="flex flex-col w-full">
-                      <h3 className="text-[#000] font-bold text-[15px]/[18px]  4xl:text-[20px]/[24.2px] mb-[12px] 4xl:mb-[16px]">
+                      <h3 className="text-[#000] font-bold text-[15px]/[18px] lg:text-[13px]/[16px] xl:text-[15px]/[18px]   4xl:text-[20px]/[24.2px] mb-[12px] 4xl:mb-[16px]">
                         {section.title}
                       </h3>
                       {section.links.map((link, idx) => (
                         <span
                           key={idx}
-                          className="text-[14px]/[18px] lg:text-[10px]/[18px] xl:text-[12px]/[18px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[20px]/[28px] mb-2"
+                          className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                         >
                           {link}
                         </span>
@@ -237,24 +237,24 @@ const HomeFooter = () => {
                       key={index}
                       className="flex flex-col w-full mt-[28px] lg:mt-0"
                     >
-                      <h3 className="text-[#000] font-bold text-[15px]/[18px]  4xl:text-[20px]/[24.2px] mb-[12px] 4xl:mb-[16px]">
+                      <h3 className="text-[#000] font-bold text-[15px]/[18px] lg:text-[13px]/[16px] xl:text-[15px]/[18px]   4xl:text-[20px]/[24.2px] mb-[12px] 4xl:mb-[16px]">
                         Spanish Classes Near Me
                       </h3>
                       <span
                         key={"Spanish Classes in Mumbai"}
-                        className="text-[14px]/[18px] lg:text-[10px]/[18px] xl:text-[12px]/[18px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[20px]/[28px] mb-2"
+                        className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                       >
                         Spanish Classes in Mumbai
                       </span>
                       <span
                         key={"Spanish Classes in Delhi"}
-                        className="text-[14px]/[18px] lg:text-[10px]/[18px] xl:text-[12px]/[18px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[20px]/[28px] mb-2"
+                        className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                       >
                         Spanish Classes in Delhi
                       </span>
                       <span
                         key={"Spanish Classes in Pune"}
-                        className="text-[14px]/[18px] lg:text-[10px]/[18px] xl:text-[12px]/[18px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[20px]/[28px] mb-2"
+                        className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                       >
                         Spanish Classes in Pune
                       </span>
@@ -269,13 +269,13 @@ const HomeFooter = () => {
                     className="flex flex-col w-full sm:w-1/2 lg:w-1/4 lg:mb-[16px] "
                   >
                     <div className="flex flex-col w-full">
-                      <h3 className="text-[#000] font-bold text-[15px]/[18px]  4xl:text-[20px]/[24.2px]  mb-[12px] 4xl:mb-[16px]">
+                      <h3 className="text-[#000] font-bold text-[15px]/[18px] lg:text-[13px]/[16px] xl:text-[15px]/[18px]   4xl:text-[20px]/[24.2px]  mb-[12px] 4xl:mb-[16px]">
                         {section.title}
                       </h3>
                       {section.links.map((link, idx) => (
                         <span
                           key={idx}
-                          className="text-[14px]/[18px] lg:text-[10px]/[18px] xl:text-[12px]/[18px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[20px]/[28px] mb-2"
+                          className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                         >
                           {link}
                         </span>
@@ -285,24 +285,24 @@ const HomeFooter = () => {
                       key={index}
                       className="flex flex-col w-full mt-[28px] lg:mt-0"
                     >
-                      <h3 className="text-[#000] font-bold text-[15px]/[18px]  4xl:text-[20px]/[24.2px]  mb-[12px] 4xl:mb-[16px]">
+                      <h3 className="text-[#000] font-bold text-[15px]/[18px] lg:text-[13px]/[16px] xl:text-[15px]/[18px]   4xl:text-[20px]/[24.2px]  mb-[12px] 4xl:mb-[16px]">
                         English Classes Near Me
                       </h3>
                       <span
                         key={"English Classes in Mumbai"}
-                        className="text-[14px]/[18px] lg:text-[10px]/[18px] xl:text-[12px]/[18px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[20px]/[28px] mb-2"
+                        className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                       >
                         English Classes in Mumbai
                       </span>
                       <span
                         key={"Spanish Classes in Delhi"}
-                        className="text-[14px]/[18px] lg:text-[10px]/[18px] xl:text-[12px]/[18px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[20px]/[28px] mb-2"
+                        className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                       >
                         Spanish Classes in Delhi
                       </span>
                       <span
                         key={"English Classes in Pune"}
-                        className="text-[14px]/[18px] lg:text-[10px]/[18px] xl:text-[12px]/[18px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[20px]/[28px] mb-2"
+                        className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                       >
                         English Classes in Pune
                       </span>
@@ -319,13 +319,13 @@ const HomeFooter = () => {
                       : "flex"
                   } flex-col w-full sm:w-1/2 lg:w-1/4 lg:mb-[16px]`}
                 >
-                  <h3 className="text-[#000] font-bold text-[15px]/[18px]  4xl:text-[20px]/[24.2px] mb-[12px] 4xl:mb-[16px]">
+                  <h3 className="text-[#000] font-bold text-[15px]/[18px] lg:text-[13px]/[16px] xl:text-[15px]/[18px]   4xl:text-[20px]/[24.2px] mb-[12px] 4xl:mb-[16px]">
                     {section.title}
                   </h3>
                   {section.links.map((link, idx) => (
                     <span
                       key={idx}
-                      className="text-[14px]/[18px] lg:text-[10px]/[18px] xl:text-[12px]/[18px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[20px]/[28px] mb-2"
+                      className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                     >
                       {link}
                     </span>

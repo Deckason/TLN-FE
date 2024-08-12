@@ -15,7 +15,7 @@ import RightArrow from "../../../public/homepage/steps/RightArrow.png";
 
 const RegisterCard = ({ id, title, description, img,currentPage }) => {
   return (
-    <div className="relative mx-auto bg-white border border-[#1F9F90] rounded-[8px] shadow-md h-[400px] w-[287px] gap-[6px]">
+    <div className="relative mx-auto bg-white border border-[#1F9F90] rounded-[8px] shadow-md h-[400px] w-[287px] md:w-[357px] gap-[6px]">
       <p className="mb-4 mt-6 mx-[20px] w-[28px] h-[28px] flex items-center justify-center bg-[#1F9F90] text-white rounded-[4px]">
         {id}
       </p>

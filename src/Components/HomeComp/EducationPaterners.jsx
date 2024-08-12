@@ -6,7 +6,7 @@ const EducationPartners = () => {
       <div className="my-[20px] lg:my-[50px] 2xl:my-[112px] max-w-[1681px]  mx-auto flex justify-center items-center ">
         <section>
           <div>
-            <h1 className="text-stone-900 text-[24px]/[29px] sm:text-[40px]/[55px] md:text-[45px]/[60px] lg:text-[50px]/[65px] xl:text-[55px]/[70px] 2xl:text-[60px]/[72px] font-bold text-center mb-[20.9px]">
+            <h1 className="text-stone-900 text-[24px]/[29px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[72px] font-bold text-center mb-[20.9px]">
               Our Educational Partners
             </h1>
           </div>
