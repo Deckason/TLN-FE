@@ -22,37 +22,100 @@ const HomeFooter = () => {
     {
       title: "Languages for Kids",
       links: [
-        "Online French Classes for Kids",
-        "Online German Classes for Kids",
-        "Online Spanish Classes for Kids",
-        "Online Korean Classes for Kids",
-        "Online Japanese Classes for Kids",
-        "Online Mandarin Classes for Kids",
-        "Online English Classes for Kids",
+        {
+          name: "Online French Classes for Kids",
+          url: "/Languages/French/ForKids",
+        },
+        {
+          name: "Online German Classes for Kids",
+          url: "/Languages/German/ForKids",
+        },
+        {
+          name: "Online Spanish Classes for Kids",
+          url: "/Languages/Spanish/ForKids",
+        },
+        {
+          name: "Online Korean Classes for Kids",
+          url: "/Languages/Korean/ForKids",
+        },
+        {
+          name: "Online Japanese Classes for Kids",
+          url: "/Languages/Japanese/ForKids",
+        },
+        {
+          name: "Online Mandarin Classes for Kids",
+          url: "/Languages/Mandarin/ForKids",
+        },
+        {
+          name: "Online English Classes for Kids",
+          url: "/Languages/English/ForKids",
+        },
       ],
     },
     {
       title: "Languages For Adults",
       links: [
-        "Online French Classes for Adults",
-        "Online German Classes for Adults",
-        "Online Spanish Classes for Adults",
-        "Online Korean Classes for Adults",
-        "Online Japanese Classes for Adults",
-        "Online Mandarin Classes for Adults",
-        "Online English Classes for Adults",
+        {
+          name: "Online French Classes for Adults",
+          url: "/Languages/French/adults",
+        },
+        {
+          name: "Online German Classes for Adults",
+          url: "/Languages/German/adults",
+        },
+        {
+          name: "Online Spanish Classes for Adults",
+          url: "/Languages/Spanish/adults",
+        },
+        {
+          name: "Online Korean Classes for Adults",
+          url: "/Languages/Korean/adults",
+        },
+        {
+          name: "Online Japanese Classes for Adults",
+          url: "/Languages/Japanese/adults",
+        },
+        {
+          name: "Online Mandarin Classes for Adults",
+          url: "/Languages/Mandarin/adults",
+        },
+        {
+          name: "Online English Classes for Adults",
+          url: "/Languages/English/adults",
+        },
       ],
     },
     {
       title: "Languages to Study Abroad",
       links: [
-        "Online French Classes to Study Abroad",
-        "Online German Classes to Study Abroad",
-        "Online Spanish Classes to Study Abroad",
-        "Online Korean Classes to Study Abroad",
-        "Online Japanese Classes to Study Abroad",
-        "Online Mandarin Classes to Study Abroad",
-        "Online English Classes to Study Abroad",
+        {
+          name: "Online French Classes to Study Abroad",
+          url: "/Languages/French/StudyAbroad",
+        },
+        {
+          name: "Online German Classes to Study Abroad",
+          url: "/Languages/German/StudyAbroad",
+        },
+        {
+          name: "Online Spanish Classes to Study Abroad",
+          url: "/Languages/Spanish/StudyAbroad",
+        },
+        {
+          name: "Online Korean Classes to Study Abroad",
+          url: "/Languages/Korean/StudyAbroad",
+        },
+        {
+          name: "Online Japanese Classes to Study Abroad",
+          url: "/Languages/Japanese/StudyAbroad",
+        },
+        {
+          name: "Online Mandarin Classes to Study Abroad",
+          url: "/Languages/Mandarin/StudyAbroad",
+        },
+        {
+          name: "Online English Classes to Study Abroad",
+          url: "/Languages/English/StudyAbroad",
+        },
       ],
     },
     // {
@@ -68,13 +131,13 @@ const HomeFooter = () => {
     {
       title: "Language We Offer",
       links: [
-        "Online French Classes",
-        "Online German Classes",
-        "Online Spanish Classes",
-        "Online Korean Classes",
-        "Online Japanese Classes",
-        "Online Mandarin Classes",
-        "Online English Classes",
+        { name: "Online French Classes", url: "/Languages/French" },
+        { name: "Online German Classes", url: "/Languages/German" },
+        { name: "Online Spanish Classes", url: "/Languages/Spanish" },
+        { name: "Online Korean Classes", url: "/Languages/Korean" },
+        { name: "Online Japanese Classes", url: "/Languages/Japanese" },
+        { name: "Online Mandarin Classes", url: "/Languages/Mandarin" },
+        { name: "Online English Classes", url: "/Languages/English" },
       ],
     },
     // {
@@ -185,7 +248,8 @@ const HomeFooter = () => {
                     }`}
                   >
                     {section.links.map((link, idx) => (
-                      <span
+                      <Link
+                        href={link.url}
                         key={idx}
                         className={`${
                           index !== 8
@@ -193,22 +257,23 @@ const HomeFooter = () => {
                             : "hidden"
                         } text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2`}
                       >
-                        {link}
-                      </span>
+                        {link.name}
+                      </Link>
                     ))}
                   </div>
                   {index === 8 &&
                     section.links.map((link, idx) => (
-                      <span
+                      <Link
                         key={idx}
+                        href={link.url}
                         className={`${
                           index !== 8
                             ? "underline text-nowrap lg:text-wrap"
                             : ""
                         } text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2`}
                       >
-                        {link}
-                      </span>
+                        {link.name}
+                      </Link>
                     ))}
                 </div>
               );
@@ -225,12 +290,13 @@ const HomeFooter = () => {
                         {section.title}
                       </h3>
                       {section.links.map((link, idx) => (
-                        <span
+                        <Link
+                          href={link.url}
                           key={idx}
-                          className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
+                          className="hover:scale-105 hover:font-bold text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                         >
-                          {link}
-                        </span>
+                          {link.name}
+                        </Link>
                       ))}
                     </div>
                     <div
@@ -273,12 +339,13 @@ const HomeFooter = () => {
                         {section.title}
                       </h3>
                       {section.links.map((link, idx) => (
-                        <span
+                        <Link
+                          href={link.url}
                           key={idx}
-                          className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
+                          className="hover:scale-105 hover:font-bold text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                         >
-                          {link}
-                        </span>
+                          {link.name}
+                        </Link>
                       ))}
                     </div>
                     <div
@@ -323,12 +390,13 @@ const HomeFooter = () => {
                     {section.title}
                   </h3>
                   {section.links.map((link, idx) => (
-                    <span
+                    <Link
+                      href={link.url}
                       key={idx}
-                      className="text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
+                      className="hover:scale-105 hover:font-bold text-[14px]/[18px] lg:text-[9px]/[16px] xl:text-[11px]/[17px] 2xl:text-[13px]/[21px] 3xl:text-[15px]/[21px] 4xl:text-[18px]/[26px] mb-2"
                     >
-                      {link}
-                    </span>
+                      {link.name}
+                    </Link>
                   ))}
                 </div>
               );
