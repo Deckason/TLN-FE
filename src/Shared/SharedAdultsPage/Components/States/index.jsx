@@ -34,7 +34,7 @@ const States = () => {
             <div className="text-center text-stone-900 max-sm:text-[32px] text-4xl 2xl:text-5xl  font-bold">
               {stats.totalLanguages || "Loading..."} 
             </div>
-            <div className="w-[125px] text-center text-black text-opacity-60 mx-auto max-sm:text-sm text-2xl font-normal">
+            <div className="w-[125px] text-center text-black text-opacity-60 mx-auto text-sm lg:text-lg md:text-xl xl:text-2xl font-normal">
               Languages
             </div>
           </div>
@@ -42,7 +42,7 @@ const States = () => {
             <div className="text-center max-sm:text-[32px] text-stone-900 text-4xl 2xl:text-5xl font-bold">
               {stats.totalLeaners || "Loading..."}+
             </div>
-            <div className="w-[180px] text-center text-black text-opacity-60 mx-auto max-sm:text-sm text-2xl font-normal">
+            <div className="w-[180px] text-center text-black text-opacity-60 mx-auto text-sm lg:text-lg md:text-xl xl:text-2xl font-normal  text-nowrap">
               Happy Learners
             </div>
           </div>
@@ -50,7 +50,7 @@ const States = () => {
             <div className="text-center max-sm:text-[32px] text-stone-900 text-4xl 2xl:text-5xl font-bold">
               {stats.totalMentors || "Loading..."}+
             </div>
-            <div className="w-[165px] text-center text-black text-opacity-60 text-2xl mx-auto max-sm:text-sm font-normal">
+            <div className="w-[165px] text-center text-black text-opacity-60 mx-auto text-sm lg:text-lg md:text-xl xl:text-2xl xl:font-normal text-nowrap">
               Alpha Mentors
             </div>
           </div>
@@ -58,7 +58,7 @@ const States = () => {
             <div className="text-center text-stone-900 text-4xl 2xl:text-5xl font-bold max-sm:text-3xl">
               {stats.totalHours || "Loading..."}+
             </div>
-            <div className=" mx-auto max-sm:text-sm text-center text-black text-opacity-60 text-2xl font-normal">
+            <div className=" mx-auto text-sm lg:text-lg md:text-xl xl:text-2xl xl:text-center text-black text-opacity-60 font-normal">
               Hours of Enlightenment
             </div>
           </div>
@@ -75,7 +75,7 @@ const States = () => {
                 />
               </div>
             </div>
-            <div className="w-[182px] max-sm:text-sm text-center text-black text-opacity-60 text-2xl font-normal">
+            <div className="w-[182px] text-sm lg:text-lg md:text-xl xl:text-2xl xl:text-center text-black text-opacity-60 font-normal">
               Google Reviews
             </div>
           </div>

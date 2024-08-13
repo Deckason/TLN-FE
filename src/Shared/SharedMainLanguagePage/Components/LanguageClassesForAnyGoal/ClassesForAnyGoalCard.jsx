@@ -1,8 +1,14 @@
+"use client";
 import Image from "next/image";
 import arrowLeft from "../../../../Assets/Icons/arrowleft.svg";
 import Link from "next/link";
+import RightArrowPrimary from "../../../../Assets/WhyShould/RightArrowPrimary.svg";
+import RightArrowWhite from "../../../../Assets/WhyShould/RightArrowWhite.svg";
+import { useState } from "react";
 
 const ClassesForAnyGoalCard = ({ data }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className=" my-4 h-[600px]">
       {" "}
@@ -28,16 +34,25 @@ const ClassesForAnyGoalCard = ({ data }) => {
             </div>
           </div>
           <div className="self-stretch mb-2  h-14 flex-col justify-center items-center gap-2.5 flex">
-            <Link
+             <Link
               href={data?.link}
-              className="self-stretch shadow-md hover:shadow-xl transition duration-300 h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
+              onMouseEnter={() => {
+                setIsHovered(true);
+              }}
+              onMouseLeave={() => {
+                setIsHovered(false);
+              }}
+              className="self-stretch shadow-md hover:shadow-xl transition duration-300 h-14 px-8 py-3.5 rounded-lg border text-teal-600 hover:bg-teal-600 hover:text-white border-teal-600 justify-center items-center gap-2.5 inline-flex"
             >
-              <div className="text-center text-teal-600 text-xl font-normal  leading-7">
-                Learn more
-              </div>
-              <div className="w-6 h-6 relative">
-                <Image alt="arrowLeft" width={6} height={6} src={arrowLeft}></Image>
-              </div>
+              <button className="text-center text-xl font-normal  leading-7 flex justify-center items-center w-full gap-[10px]">
+                <span>Learn more </span>
+                <Image
+                  width={25}
+                  height={25}
+                  alt="RightArrowPrimary"
+                  src={isHovered ? RightArrowWhite : RightArrowPrimary}
+                ></Image>
+              </button>
             </Link>
           </div>
         </div>

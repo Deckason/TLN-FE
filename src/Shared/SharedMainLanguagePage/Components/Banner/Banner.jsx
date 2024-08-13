@@ -2,7 +2,8 @@
 import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
 import BannerImage from "../../../../Assets/FrenchPage/FrenchMain/BannerImage.png";
-import States from "../States/States";
+// import States from "../States/States";
+import States from "../../../../Shared/SharedAdultsPage/Components/States";
 import girlImage from "../../../../Assets/FrenchPage/FrenchMain/girl1.png";
 import girlAndBoy from "../../../../Assets/FrenchPage/FrenchMain/GirlAndBoy.svg";
 import { useState } from "react";
