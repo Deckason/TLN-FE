@@ -16,6 +16,7 @@ const MandarinPage = () => {
       title: "Online Mandarin Classes",
       description:
         "Step into the world of our online Mandarin classes! Step into the world of our online Mandarin classes! Whether you're starting from scratch or polishing your already impressive Mandarin skills, our tailored and interactive courses are crafted just for you. Bid farewell to traditional classroom setups and say hello to personalised instruction, flexible scheduling, and immersive learning experiences with our top-notch online Mandarin courses. With our team of expert trainers by your side, you'll seamlessly navigate the intricacies of Mandarin grammar, enhance your vocabulary, participate in dynamic conversations, and immerse yourself in the diverse culture of the Mandarin-speaking world. Prepare to dive headfirst into the elegance of the Mandarin language and experience the thrill of mastering Mandarin at your own pace with our 1:1 or Group Online Mandarin Classes.",
+      BannerImage: "/mainLanguagePage/MandarinBanner.png",
     },
     OnlineLanguageClass: {
       Language: "Mandarin",
@@ -48,7 +49,8 @@ const MandarinPage = () => {
       CardData: [
         {
           title: "Mandarin Classes for School",
-          img: school,
+          img: "/anyGoal/school.png",
+
           description:
             "Boost cognitive development and cultural awareness among students with our engaging Mandarin language program tailored for schools.",
           link: "#",
@@ -211,18 +213,17 @@ const MandarinPage = () => {
       ],
     },
     SayBonjur: "Say Nǐ hǎo to language learning with us!    ",
-      LanguageLesson: [
+    LanguageLesson: [
       {
         title: "Popular classes we offer",
         list: [
-         "Online French Classes",
-         "Online Spanish Classes",
-         "Online German Classes",
-         "Online Mandarin Classes",
-         "Online Japanese Classes",
-         "Online Korean Classes",
-         "Online English Classes",
-
+          "Online French Classes",
+          "Online Spanish Classes",
+          "Online German Classes",
+          "Online Mandarin Classes",
+          "Online Japanese Classes",
+          "Online Korean Classes",
+          "Online English Classes",
         ],
       },
       {
@@ -264,21 +265,27 @@ const MandarinPage = () => {
   const [content, setContent] = useState(MandarinLanguageData);
   useEffect(() => {
     if (!data) return;
-    const faqData = data.filter((item) => item.language === "Mandarine"  && item.category === "General"
-  );
+    const faqData = data.filter(
+      (item) => item.language === "Mandarine" && item.category === "General"
+    );
 
     const everyData = data.filter(
-      (item) => item.language === "Mandarine" && item.category === "Everything you need to know"
-    )
-    setContent((prev) => ({...prev, FaqsData: faqData , EveryThingYouNeedToKnowAbout: {
+      (item) =>
+        item.language === "Mandarine" &&
+        item.category === "Everything you need to know"
+    );
+    setContent((prev) => ({
+      ...prev,
+      FaqsData: faqData,
+      EveryThingYouNeedToKnowAbout: {
         ...prev.EveryThingYouNeedToKnowAbout, // Spread the existing properties
-        CardData: everyData, // Update CardData 
-      } }))
-      
+        CardData: everyData, // Update CardData
+      },
+    }));
   }, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={content} language={"Mandarin"}/>
+      <SharedMainLanuagePage Data={content} language={"Mandarin"} />
     </div>
   );
 };

@@ -51,7 +51,7 @@ const EverythingYouNeedToKnowAboutLanguage = ({
           }}
           className="h-[58px] px-8 py-3.5 rounded-lg border border-teal-600 mx-auto w-[190px] justify-center items-center gap-2.5 inline-flex"
         >
-          <div className="text-center text-teal-600 text-2xl font-medium">
+          <div className="text-center text-teal-600 text-2xl font-medium text-nowrap">
             {!splicing ? "Read less" : "Read more"}
           </div>
         </button>
