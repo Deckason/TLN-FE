@@ -17,6 +17,7 @@ const SpanishPage = () => {
       title: "Online Spanish Classes",
       description:
         "Step into the world of our online Spanish classes! Step into the world of our online Spanish classes! Whether you're starting from scratch or refining your existing Spanish skills, our customised and interactive courses are designed specifically for you. Say adiós to traditional classroom setups and hola to personalised instruction, flexible scheduling, and immersive learning experiences with our top-quality online Spanish courses. With our team of expert instructors guiding you, you'll effortlessly navigate Spanish grammar, expand your vocabulary, engage in dynamic conversations, and immerse yourself in the vibrant culture of the Spanish-speaking world. Get ready to plunge into the beauty of the Spanish language and enjoy the excitement of mastering Spanish at your own pace with our 1:1 or Group Online Classes.",
+      BannerImage: "/mainLanguagePage/SpanishBanner.png",
     },
     OnlineLanguageClass: {
       Language: "Spanish",
@@ -49,7 +50,8 @@ const SpanishPage = () => {
       CardData: [
         {
           title: "Spanish Classes for School",
-          img: school,
+          img: "/anyGoal/school.png",
+
           description:
             "Spark excitement with our online Spanish classes for kids! Whether it's curriculum-based or as a hobby, we make learning engaging and enjoyable            .",
           link: "#",
@@ -219,18 +221,17 @@ const SpanishPage = () => {
       ],
     },
     SayBonjur: "Say Hola to language learning with us!    ",
-   LanguageLesson: [
+    LanguageLesson: [
       {
         title: "Popular classes we offer",
         list: [
-         "Online French Classes",
-         "Online Spanish Classes",
-         "Online German Classes",
-         "Online Mandarin Classes",
-         "Online Japanese Classes",
-         "Online Korean Classes",
-         "Online English Classes",
-
+          "Online French Classes",
+          "Online Spanish Classes",
+          "Online German Classes",
+          "Online Mandarin Classes",
+          "Online Japanese Classes",
+          "Online Korean Classes",
+          "Online English Classes",
         ],
       },
       {
@@ -271,20 +272,27 @@ const SpanishPage = () => {
   const { data } = useGetFAQsQuery("");
   const [content, setContent] = useState(SpanishLanguageData);
   useEffect(() => {
-    if(!data) return;
+    if (!data) return;
     const faqData = data.filter(
-      (item) => item.language === "Spanish"  && item.category === "General"
+      (item) => item.language === "Spanish" && item.category === "General"
     );
     const everyData = data.filter(
-      (item) => item.language === "Spanish" && item.category === "Everything you need to know"
-    )
-    setContent((prev) => ({...prev, FaqsData: faqData , EveryThingYouNeedToKnowAbout: {
+      (item) =>
+        item.language === "Spanish" &&
+        item.category === "Everything you need to know"
+    );
+    setContent((prev) => ({
+      ...prev,
+      FaqsData: faqData,
+      EveryThingYouNeedToKnowAbout: {
         ...prev.EveryThingYouNeedToKnowAbout, // Spread the existing properties
-        CardData: everyData, // Update CardData 
-      } }))}, [data]);
+        CardData: everyData, // Update CardData
+      },
+    }));
+  }, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={content} language={"Spanish"}/>
+      <SharedMainLanuagePage Data={content} language={"Spanish"} />
     </div>
   );
 };

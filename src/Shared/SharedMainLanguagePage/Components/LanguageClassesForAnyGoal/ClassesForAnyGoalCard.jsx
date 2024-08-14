@@ -18,6 +18,8 @@ const ClassesForAnyGoalCard = ({ data }) => {
       >
         <div className="h-[313px]  rounded-xl flex-col justify-start max-md:h-[213px] items-center gap-2.5 flex">
           <Image
+            width={700}
+            height={700}
             alt="levelImages"
             className="w-full h-full rounded-xl object-cover"
             src={data?.img}
@@ -34,7 +36,7 @@ const ClassesForAnyGoalCard = ({ data }) => {
             </div>
           </div>
           <div className="self-stretch mb-2  h-14 flex-col justify-center items-center gap-2.5 flex">
-             <Link
+            <Link
               href={data?.link}
               onMouseEnter={() => {
                 setIsHovered(true);

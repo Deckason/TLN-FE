@@ -17,6 +17,7 @@ const FrenchPage = () => {
       title: "Online French Classes",
       description:
         "Step into the world of our online French classes! Whether you're starting from scratch or polishing your already impressive French skills, our tailored and interactive courses are crafted just for you. Bid farewell to traditional classroom setups and say bonjour to personalised instruction, flexible scheduling, and immersive learning experiences with our top-notch online French courses. With our team of expert trainers by your side, you'll smoothly navigate the ins and outs of French grammar, expand your vocabulary, engage in lively conversations, and dive deep into the rich culture of the Francophone world. Prepare to dive headfirst into the elegance of the French language and experience the thrill of mastering French at your own pace with our 1:1 or Group Online French Classes.",
+      BannerImage: "/mainLanguagePage/FrenchBanner.png",
     },
     OnlineLanguageClass: {
       Language: "French",
@@ -49,7 +50,7 @@ const FrenchPage = () => {
       CardData: [
         {
           title: "French Classes for School",
-          img: school,
+          img: "/anyGoal/school.png",
           description:
             "Spark excitement with our online French classes for kids! Whether it's curriculum-based or as a hobby, we make learning engaging and enjoyable.",
           link: "#",
@@ -230,14 +231,13 @@ const FrenchPage = () => {
       {
         title: "Popular classes we offer",
         list: [
-         "Online French Classes",
-         "Online Spanish Classes",
-         "Online German Classes",
-         "Online Mandarin Classes",
-         "Online Japanese Classes",
-         "Online Korean Classes",
-         "Online English Classes",
-
+          "Online French Classes",
+          "Online Spanish Classes",
+          "Online German Classes",
+          "Online Mandarin Classes",
+          "Online Japanese Classes",
+          "Online Korean Classes",
+          "Online English Classes",
         ],
       },
       {
@@ -278,20 +278,27 @@ const FrenchPage = () => {
   const { data } = useGetFAQsQuery("");
   const [content, setContent] = useState(FrenchLanguageData);
   useEffect(() => {
-    if(!data) return;
+    if (!data) return;
     const faqData = data.filter(
-      (item) => item.language === "French"  && item.category === "General"
+      (item) => item.language === "French" && item.category === "General"
     );
     const everyData = data.filter(
-      (item) => item.language === "French" && item.category === "Everything you need to know"
-    )
-    setContent((prev) => ({...prev, FaqsData: faqData , EveryThingYouNeedToKnowAbout: {
+      (item) =>
+        item.language === "French" &&
+        item.category === "Everything you need to know"
+    );
+    setContent((prev) => ({
+      ...prev,
+      FaqsData: faqData,
+      EveryThingYouNeedToKnowAbout: {
         ...prev.EveryThingYouNeedToKnowAbout, // Spread the existing properties
-        CardData: everyData, // Update CardData 
-      } }))}, [data]);
+        CardData: everyData, // Update CardData
+      },
+    }));
+  }, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={content} language={"French"}/>
+      <SharedMainLanuagePage Data={content} language={"French"} />
     </div>
   );
 };

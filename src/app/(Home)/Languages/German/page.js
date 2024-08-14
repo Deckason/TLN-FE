@@ -16,6 +16,7 @@ const GermanPage = () => {
       title: "Online German Classes",
       description:
         "Step into the world of our online German classes! Whether you're starting from scratch or polishing your already impressive German skills, our tailored and interactive courses are crafted just for you. Bid farewell to traditional classroom setups and say hallo to personalised instruction, flexible scheduling, and immersive learning experiences with our top-notch online German courses. With our team of expert trainers by your side, you'll smoothly navigate the ins and outs of German grammar, expand your vocabulary, engage in lively conversations, and dive deep into the rich culture of the German-speaking world. Prepare to dive headfirst into the elegance of the German language and experience the thrill of mastering German at your own pace with our 1:1 or Group Online German Classes.",
+      BannerImage: "/mainLanguagePage/GermanBanner.png",
     },
     OnlineLanguageClass: {
       Language: "German",
@@ -48,7 +49,8 @@ const GermanPage = () => {
       CardData: [
         {
           title: "German Classes for School",
-          img: school,
+          img: "/anyGoal/school.png",
+
           description:
             "Boost cognitive development and cultural awareness among students with our engaging German language program tailored for schools.            .",
           link: "#",
@@ -232,18 +234,17 @@ const GermanPage = () => {
       ],
     },
     SayBonjur: "Say Hallo to language learning with us!    ",
-     LanguageLesson: [
+    LanguageLesson: [
       {
         title: "Popular classes we offer",
         list: [
-         "Online French Classes",
-         "Online Spanish Classes",
-         "Online German Classes",
-         "Online Mandarin Classes",
-         "Online Japanese Classes",
-         "Online Korean Classes",
-         "Online English Classes",
-
+          "Online French Classes",
+          "Online Spanish Classes",
+          "Online German Classes",
+          "Online Mandarin Classes",
+          "Online Japanese Classes",
+          "Online Korean Classes",
+          "Online English Classes",
         ],
       },
       {
@@ -284,21 +285,27 @@ const GermanPage = () => {
   const { data } = useGetFAQsQuery("");
   const [content, setContent] = useState(GermanLanguageData);
   useEffect(() => {
-    if(!data) return;
+    if (!data) return;
     const faqData = data.filter(
-      (item) => item.language === "German"  && item.category === "General"
+      (item) => item.language === "German" && item.category === "General"
     );
     const everyData = data.filter(
-      (item) => item.language === "German" && item.category === "Everything you need to know"
-    )
-    setContent((prev) => ({...prev, FaqsData: faqData , EveryThingYouNeedToKnowAbout: {
+      (item) =>
+        item.language === "German" &&
+        item.category === "Everything you need to know"
+    );
+    setContent((prev) => ({
+      ...prev,
+      FaqsData: faqData,
+      EveryThingYouNeedToKnowAbout: {
         ...prev.EveryThingYouNeedToKnowAbout, // Spread the existing properties
-        CardData: everyData, // Update CardData 
-      } }))
-}, [data]);
+        CardData: everyData, // Update CardData
+      },
+    }));
+  }, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={content} language={"German"}/>
+      <SharedMainLanuagePage Data={content} language={"German"} />
     </div>
   );
 };

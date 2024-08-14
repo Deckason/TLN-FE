@@ -16,6 +16,7 @@ const KoreanPage = () => {
       title: "Online Korean Classes",
       description:
         "Step into the world of our online Korean classes! Step into the world of our online Korean classes! Whether you're starting from scratch or polishing your already impressive Korean skills, our tailored and interactive courses are crafted just for you. Bid farewell to traditional classroom setups and say hello to personalised instruction, flexible scheduling, and immersive learning experiences with our top-notch online Korean courses. With our team of expert trainers by your side, you'll seamlessly navigate the intricacies of Korean grammar, enhance your vocabulary, participate in dynamic conversations, and immerse yourself in the diverse culture of the Korean-speaking world. Prepare to dive headfirst into the elegance of the Korean language and experience the thrill of mastering Korean at your own pace with our 1:1 or Group Online Korean Classes.",
+      BannerImage: "/mainLanguagePage/KoreanBanner.png",
     },
     OnlineLanguageClass: {
       Language: "Korean",
@@ -48,7 +49,8 @@ const KoreanPage = () => {
       CardData: [
         {
           title: "Korean Classes for School",
-          img: school,
+          img: "/anyGoal/school.png",
+
           description:
             "Boost cognitive development and cultural awareness among students with our engaging Korean language program tailored for schools.",
           link: "#",
@@ -211,18 +213,17 @@ const KoreanPage = () => {
       ],
     },
     SayBonjur: "Say Annyeonghaseyo to language learning with us!    ",
-     LanguageLesson: [
+    LanguageLesson: [
       {
         title: "Popular classes we offer",
         list: [
-         "Online French Classes",
-         "Online Spanish Classes",
-         "Online German Classes",
-         "Online Mandarin Classes",
-         "Online Japanese Classes",
-         "Online Korean Classes",
-         "Online English Classes",
-
+          "Online French Classes",
+          "Online Spanish Classes",
+          "Online German Classes",
+          "Online Mandarin Classes",
+          "Online Japanese Classes",
+          "Online Korean Classes",
+          "Online English Classes",
         ],
       },
       {
@@ -264,19 +265,26 @@ const KoreanPage = () => {
   const [content, setContent] = useState(KoreanLanguageData);
   useEffect(() => {
     if (!data) return;
-    const faqData = data.filter((item) => item.language === "Korean"  && item.category === "General"
-  );
+    const faqData = data.filter(
+      (item) => item.language === "Korean" && item.category === "General"
+    );
     const everyData = data.filter(
-      (item) => item.language === "Korean" && item.category === "Everything you need to know"
-    )
-    setContent((prev) => ({...prev, FaqsData: faqData , EveryThingYouNeedToKnowAbout: {
+      (item) =>
+        item.language === "Korean" &&
+        item.category === "Everything you need to know"
+    );
+    setContent((prev) => ({
+      ...prev,
+      FaqsData: faqData,
+      EveryThingYouNeedToKnowAbout: {
         ...prev.EveryThingYouNeedToKnowAbout, // Spread the existing properties
-        CardData: everyData, // Update CardData 
-      } }))
-    }, [data]);
+        CardData: everyData, // Update CardData
+      },
+    }));
+  }, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={content} language={"Korean"}/>
+      <SharedMainLanuagePage Data={content} language={"Korean"} />
     </div>
   );
 };
