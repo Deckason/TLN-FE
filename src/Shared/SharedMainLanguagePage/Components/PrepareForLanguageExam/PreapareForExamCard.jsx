@@ -11,7 +11,7 @@ const PreapareForExamCard = ({ data }) => {
 
   return (
     <div className="h-full">
-      <div className="w-auto shadow-md hover:shadow-xl transition duration-300 rounded-xl  h-full max-xl:h-[620px] min-h-[509px]  xl:min-h-[580px] flex-col justify-center items-center gap-2 inline-flex p-4 max-md:p-6">
+      <div className="w-auto shadow-md hover:shadow-xl transition duration-300 rounded-xl  h-full min-h-[509px]  xl:min-h-[580px] flex-col justify-center items-center gap-2 inline-flex p-4 max-md:p-6">
         <div className="rounded-xl h-[200px] flex-col justify-start  items-center gap-2.5 flex">
           <Image
             alt="levelImages"
@@ -25,7 +25,7 @@ const PreapareForExamCard = ({ data }) => {
             {data?.title}
           </div>
           <div className="self-stretch max-sm:max-h-full max-h-[250px] h-full max-lg:max-h-[240px] min-h-[240px]  flex-col justify-start items-center gap-2 flex">
-            <div className="self-stretch text-center text-neutral-500 text-xl font-normal leading-7">
+            <div className="self-stretch text-center text-neutral-500 text-[16px]/[20px] lg:text-xl font-normal leading-7">
               {data?.description}
             </div>
           </div>

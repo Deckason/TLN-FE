@@ -19,7 +19,7 @@ const FaqsLanguage = ({ FaqsData }) => {
     <div className="bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center max-md:pt-0 flex-col">
       <div className="max-w-[1463px] flex-col justify-start w-full mx-auto items-center lg:items-start gap-12 flex">
         <div className="flex flex-col justify-start items-center gap-12 lg:w-full">
-          <div className="text-black text-[24px]/[29px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[72px] font-bold pt-[40px]">
+          <div className="text-black text-[32px]/[39px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[80px] font-bold sm:pt-[40px]">
             FAQs
           </div>
           <div className="justify-center mx-4 lg:mx-0 lg:w-full h-full items-center max-xl:gap-4 order-2  grid lg:grid-cols-2 max-xl:flex-col-reverse">

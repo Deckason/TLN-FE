@@ -12,7 +12,7 @@ const PrepareForLanguageExam = ({ LanguageExams }) => {
   const navigationNextRef = React.useRef(currentPage);
   return (
     <div>
-      <div className="text-black text-[24px]/[29px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[72px] mb-12 text-center font-bold ">
+      <div className="text-black text-[32px]/[39px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[80px] mb-4 sm:mb-12 text-center font-bold ">
         Prepare for {LanguageExams?.Language} Exams
       </div>
       <div

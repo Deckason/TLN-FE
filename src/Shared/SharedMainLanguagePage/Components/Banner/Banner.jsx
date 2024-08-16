@@ -1,27 +1,24 @@
 "use client";
-import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
 // import BannerImage from "../../../../Assets/FrenchPage/FrenchMain/BannerImage.png";
 // import States from "../States/States";
 import States from "../../../../Shared/SharedAdultsPage/Components/States";
-import girlImage from "../../../../Assets/FrenchPage/FrenchMain/girl1.png";
-import girlAndBoy from "../../../../Assets/FrenchPage/FrenchMain/GirlAndBoy.svg";
 import { useState } from "react";
 import { useGetBannerQuery } from "../../../../store/apiSlice";
-import GetStartedHomeBannerButton from "../../../buttons/GetStartedHomeBannerButton";
+import GetMainLangBannerBtn from "../../../buttons/languages/GetMainLangBannerBtn";
 const Banner = ({ BannerData }) => {
   const [Splicing, setSplicing] = useState(true);
   const { data, isLoading: fetchLoading } = useGetBannerQuery("");
   console.log(data);
   // console.log(BannerData);
   return (
-    <div className="w-full max-w-[1681px] relative flex justify-center items-center flex-col mb-[112px]">
-      <div className="mt-[43px] max-md:mt-8 max-w-[1681px]  mx-auto w-full">
+    <div className="w-full max-w-[1681px] relative flex justify-center items-center flex-col mb-[50px] sm:mb-[112px]">
+      <div className="mt-[43px] max-md:mt-8 max-w-[1681px] mx-auto w-full">
         <div className="flex-auto max-md:max-w-full">
           <div className="flex gap-5 max-lg:flex-col max-md:gap-0">
             <div className="flex flex-col  max-w-[700px] 2xl:max-w-[700px] 3xl:max-w-[800px] 4xl:max-w-[1000px] max-md:ml-0 max-lg:w-full">
               <div className="flex z-10 flex-col text-black max-md:max-w-full gap-[32px]">
-                <div className="text-5xl font-bold max-md:max-w-full max-md:text-2xl">
+                <div className="text-[26px]/[36px] lg:text-[39px]/[45px]  2xl:text-[48px]/[59px] font-bold max-md:max-w-full">
                   {BannerData?.title}
                 </div>
                 <div className="mt-2 max-sm:text-sm text-xl leading-7 lg:text-base 2xl:text-xl lg:w-[450px] xl:w-[500px] 2xl:w-full max-md:max-w-full relative mb-[32px]">
@@ -55,7 +52,7 @@ const Banner = ({ BannerData }) => {
                     )}
                   </div>
                   <div className="-mt-[30px] lg:-mt-[80px] xl:-mt-[60px] 2xl:-mt-[50px] -ml-[50px] lg:-ml-[43px] xl:-ml-[17px]">
-                    <GetStartedHomeBannerButton />
+                    <GetMainLangBannerBtn />
                   </div>
                 </div>
               </div>
@@ -72,7 +69,7 @@ const Banner = ({ BannerData }) => {
           </div>
         </div>
       </div>
-      <div className="w-full -my-10">
+      <div className="w-full">
         {/* <Image
           alt="girlAndBoy"
           src={girlAndBoy}
@@ -82,7 +79,7 @@ const Banner = ({ BannerData }) => {
           width={700}
           height={700}
           alt="homePageBannerGirl"
-          className="w-full  -ml-8 h-full object-contain -mb-10 md:hidden"
+          className="w-full mx-auto h-full object-contain -mb-[20px] md:hidden"
           src={BannerData.BannerImage}
         ></Image>
         <div className="mt-[30px]">

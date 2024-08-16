@@ -16,10 +16,10 @@ const StudentsTestomony = () => {
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className="w-full bg-[#F6F3F3] sm:bg-white 4xl:bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[80px]">
-      <div className="-mt-[20px] min-h-[518px]  mx-auto flex justify-center flex-col items-center lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
-        <h1 className="text-stone-900 text-center text-[24px]/[29px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[72px]  sm:font-bold mb-4 font-semibold max-lg:text-2xl">
-          Hear it from the Learners
+    <div className="w-full bg-[#F6F3F3] sm:bg-white 4xl:bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col pt-[60px] sm:pt-[80px] pb-[40px]">
+      <div className="-mt-[20px]  mx-auto flex justify-center flex-col items-center lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
+        <h1 className="text-stone-900 mx-16 text-center text-[32px]/[39px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[80px] sm:font-bold mb-4 font-semibold max-lg:text-2xl">
+          Hear It From The Learners
         </h1>
         <div className="w-full">
           <Swiper
