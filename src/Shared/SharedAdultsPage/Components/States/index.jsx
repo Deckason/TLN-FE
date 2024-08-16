@@ -75,7 +75,7 @@ const States = () => {
                 />
               </div>
             </div>
-            <div className="w-[182px] text-sm lg:text-lg md:text-xl xl:text-2xl xl:text-center text-black text-opacity-60 font-normal text-nowrap">
+            <div className="text-center w-[182px] text-sm lg:text-lg md:text-xl xl:text-2xl xl:text-center text-black text-opacity-60 font-normal text-nowrap">
               Google Reviews
             </div>
           </div>

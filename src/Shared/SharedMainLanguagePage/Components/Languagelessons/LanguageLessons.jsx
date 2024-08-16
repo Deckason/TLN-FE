@@ -2,7 +2,7 @@ const LanguageLessons = ({ LanguageLesson }) => {
   return (
     <div className="mt-[112px]  flex justify-center">
       <div className="w-full h-full min-h-[380px] flex-col justify-start mx-auto items-center gap-12 inline-flex">
-        <div className="text-black max-sm:text-center xl:text-[60px] 2xl:text-[60px] font-bold max-lg:text-2xl">
+        <div className="text-black max-sm:text-center text-[32px]/[39px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[80px] font-bold">
           Online language lessons and classes
         </div>
         <div className="flex flex-col gap-8 md:w-fit text-xs lg:grid lg:grid-cols-4 sm:flex sm:flex-col sm:text-xs md:text-lg lg-text-2xl">
