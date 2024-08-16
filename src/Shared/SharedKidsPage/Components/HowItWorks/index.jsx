@@ -13,11 +13,11 @@ const HowItWorks = ({ HowItWorksCardData }) => {
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className="bg-[#F6F3F3] w-full flex justify-center flex-col items-center py-[112px]">
+    <div className="bg-[#F6F3F3] w-full flex justify-center flex-col items-center py-[52px]">
       <section className="">
-        <h1 className="text-stone-900 text-[40px] font-bold  text-center mb-2">
-          How it works?
-        </h1>
+      <h1 className="py-[52px] text-center self-stretch text-stone-900 text-[24px]/[29px] lg:text-[40px]/[48.01px] md:text-3xl xl:text-[50px]/[60px] 2xl:text-[60px]/[72px] font-bold mb-2">
+        How it works?
+      </h1>    
 
         <div className="3xl:flex hidden flex-wrap justify-center gap-[16px] mx-auto w-full lg:gap-[18px  items-center mt-[48px] ">
           {HowItWorksCardData?.map((data) => {

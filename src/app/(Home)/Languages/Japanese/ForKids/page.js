@@ -1,7 +1,8 @@
 import SharedKidsPage from "../../../../../Shared/SharedKidsPage";
-import kids1 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (1).png";
-import kids2 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (2).png";
-import kids3 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (3).png";
+import kids3 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (1).png";
+import kids1 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (2).png";
+import kids2 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (3).png";
+import bannerImage from "../../../../../Assets/Japanese/JapaneseForKids/banner.webp";
 import step1 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step1.png";
 import step4 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
 import step2 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
@@ -11,6 +12,7 @@ const JapaneseForKidsPage = () => {
   const data = {
     BannerData: {
       Language: "Japanese",
+      BannerImage: bannerImage,
       Description:
         "Welcome aboard our online Japanese adventure for kids! Our classes are bursting with fun and excitement, specially designed to help children of all ages and levels learn how to speak, read, and write in Japanese. Our personalised 1:1 classes cater to your child's unique learning pace.  With our team of experienced and enthusiastic tutors, your little ones will dive into the language in a lively and interactive way, with games, songs, and stories to keep them engaged. Whether your child is taking their first steps or already knows a bit of Japanese, our online classes are the ultimate ticket to kick-start their language journey. Enroll today and get ready to witness your child's language skills take flight! ",
     },

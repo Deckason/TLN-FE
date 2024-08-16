@@ -48,10 +48,10 @@ const SharedKidsPage = ({ Data, language }) => {
       <EverythingYouNeedToKnowAboutLanguage
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
       />
-      <SayBonjur SayBonjur={Data?.SayBonjur} />
+      {/* <SayBonjur SayBonjur={Data?.SayBonjur} />
       <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
         <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
-      </div>
+      </div> */}
       <SubscribeToOur />
 
       <PaymentBar />

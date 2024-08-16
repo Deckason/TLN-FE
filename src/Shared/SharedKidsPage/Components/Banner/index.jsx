@@ -1,7 +1,6 @@
 "use client";
 import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
-import girlImage from "../../../../Assets/FrenchPage/FrenchForKids/ForKids.png";
 import { useEffect, useState } from "react";
 import States from "../States";
 
@@ -45,11 +44,13 @@ const Banner = ({ BannerData }) => {
                 </div>
               </div>
             </div>
-            <div className="mx-auto right-0 max-lg:left-0 lg:block px-4">
+            <div className="w-[540px] 2xl:w-[591px] 4xl:w-[708px] h-[375px] 2xl:h-[400px] 4xl:h-[417px] max-md:hidden mx-auto right-0 max-lg:left-0 lg:absolute  lg:block flex-grow pb-[50px]">
               <Image
+                width={700}
+                height={700}
                 alt="homePageBannerGirl"
-                className="w-full h-full object-contain"
-                src={girlImage}
+                className="w-full h-full object-contain "
+                src={BannerData?.BannerImage}
               ></Image>
             </div>
           </div>
