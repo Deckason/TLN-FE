@@ -1,7 +1,8 @@
 import SharedKidsPage from "../../../../../Shared/SharedKidsPage";
-import kids1 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (1).png";
-import kids2 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (2).png";
-import kids3 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (3).png";
+import kids3 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (1).png";
+import kids1 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (2).png";
+import kids2 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (3).png";
+import bannerImage from "../../../../../Assets/English/EnglishForKids/banner.webp";
 import step1 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step1.png";
 import step4 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
 import step2 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
@@ -11,6 +12,7 @@ const EnglishForKidsPage = () => {
   const data = {
     BannerData: {
       Language: "English",
+      BannerImage: bannerImage,
       Description:
         "Welcome aboard our online English adventure for kids! Our classes are bursting with fun and excitement, specially designed to help children of all ages and levels learn how to speak, read, and write in English. Our personalised 1:1 classes cater to your child's unique learning pace.  With our team of experienced and enthusiastic tutors, your little ones will dive into the language in a lively and interactive way, with games, songs, and stories to keep them engaged. Whether your child is taking their first steps or already knows a bit of English, our online classes are the ultimate ticket to kick-start their language journey. Enroll today and get ready to witness your child's language skills take flight! ",
     },
@@ -30,29 +32,29 @@ const EnglishForKidsPage = () => {
           img: kids2,
         },
         {
-          title: "Academic Advantages          ",
+          title: "Educational Advantages          ",
           description:
             "Mastery of English enhances access to educational resources, research, and opportunities for higher education.          ",
           img: kids3,
         },
-        {
-          title: "Career Opportunities  ",
-          description:
-            "Proficiency in English opens doors in various industries, including business, technology, and tourism, offering competitive advantages in the global job market.          ",
-          img: kids1,
-        },
-        {
-          title: "Travel and Exploration        ",
-          description:
-            "English proficiency enhances travel experiences and fosters deeper engagement with English-speaking regions, such as the United States, United Kingdom, Canada, Australia, and more.          ",
-          img: kids2,
-        },
-        {
-          title: "Personal Growth         ",
-          description:
-            "Mastery of English promotes cognitive development, critical thinking, and communication skills, preparing children for success in an increasingly interconnected world.          ",
-          img: kids3,
-        },
+        // {
+        //   title: "Career Opportunities  ",
+        //   description:
+        //     "Proficiency in English opens doors in various industries, including business, technology, and tourism, offering competitive advantages in the global job market.          ",
+        //   img: kids1,
+        // },
+        // {
+        //   title: "Travel and Exploration        ",
+        //   description:
+        //     "English proficiency enhances travel experiences and fosters deeper engagement with English-speaking regions, such as the United States, United Kingdom, Canada, Australia, and more.          ",
+        //   img: kids2,
+        // },
+        // {
+        //   title: "Personal Growth         ",
+        //   description:
+        //     "Mastery of English promotes cognitive development, critical thinking, and communication skills, preparing children for success in an increasingly interconnected world.          ",
+        //   img: kids3,
+        // },
       ],
     },
     HowItWorksCardData: [
@@ -102,7 +104,8 @@ const EnglishForKidsPage = () => {
 
       CardData: [
         {
-          title: "A1 ₹35,000/",
+          title: "A1",
+          price: "₹35,000/",
           level: "Beginner Classes",
           description:
             "Discover the joy of learning French with our engaging beginner program tailored for kids. Through fun activities and interactive lessons, children will build a solid foundation in French vocabulary and grammar.",
@@ -110,7 +113,8 @@ const EnglishForKidsPage = () => {
         },
 
         {
-          title: "A2 ₹42,000/",
+          title: "A2",
+          price: "₹42,000/",
           level: "Intermediate Classes",
           description:
             "Elevate your child's French skills with our elementary program, designed to deepen their understanding and fluency. Through interactive lessons and engaging activities, children will expand their vocabulary and improve their conversational abilities.",
@@ -118,7 +122,8 @@ const EnglishForKidsPage = () => {
         },
 
         {
-          title: "B2 On Request",
+          title: "B2",
+          price: "On Request",
           level: "Advanced Classes",
           description:
             "Boost your child's French skills at our intermediate program, helping them express fluently and understand complex texts confidently. Through engaging activities, they'll master familiar topics and enhance their language proficiency.",

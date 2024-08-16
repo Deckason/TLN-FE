@@ -13,7 +13,7 @@ const LanguageClassesForAnyLevel = ({ ClassesForAnyLevel }) => {
   // console.log(ClassesForAnyLevel);
   return (
     <div className=" mt-[112px] w-full mx-auto">
-      <div className="text-black max-md:text-2xl lg:text-4xl max-lg:text-3xl text-[60px] mb-12 text-center font-bold ">
+      <div className="text-black text-[24px]/[29px] lg:text-[40px]/[48.01px] md:text-3xl xl:text-[50px]/[60px] 2xl:text-[60px]/[72px] mb-12 text-center font-bold">
         {ClassesForAnyLevel?.Language} Classes for Any Level
       </div>
       <div

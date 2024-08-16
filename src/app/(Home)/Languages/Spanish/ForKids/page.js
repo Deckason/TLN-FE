@@ -1,7 +1,8 @@
 import SharedKidsPage from "../../../../../Shared/SharedKidsPage";
-import kids1 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (1).png";
-import kids2 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (2).png";
-import kids3 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (3).png";
+import kids3 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (1).png";
+import kids1 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (2).png";
+import kids2 from "../../../../../Assets/FrenchPage/FrenchForKids/kids (3).png";
+import bannerImage from "../../../../../Assets/Spanish/SpanishForKids/banner.webp";
 import step1 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step1.png";
 import step4 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
 import step2 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
@@ -11,6 +12,7 @@ const SpanishForKidsPage = () => {
   const data = {
     BannerData: {
       Language: "Spanish",
+      BannerImage: bannerImage,
       Description:
         "Welcome aboard our online Spanish adventure for kids! Our classes are bursting with fun and excitement, specially designed to help children of all ages and levels learn how to speak, read, and write in Spanish. Our personalised 1:1 classes cater to your child's unique learning pace.  With our team of experienced and enthusiastic tutors, your little ones will dive into the language in a lively and interactive way, with games, songs, and stories to keep them engaged. Whether your child is taking their first steps or already knows a bit of Spanish, our online classes are the ultimate ticket to kick-start their language journey. Enroll today and get ready to witness your child's language skills take flight! ",
     },
@@ -25,33 +27,33 @@ const SpanishForKidsPage = () => {
           link: "",
         },
         {
-          title: "Educational Advantages",
-          img: kids2,
-          description:
-            "Learning Spanish boosts cognitive skills like problem-solving, critical thinking, multitasking, and memory. Improved linguistic abilities benefit academic performance across subjects.",
-          link: "",
-        },
-        {
-          title: "Career Opportunities",
-          img: kids3,
-          description:
-            "Spanish proficiency is essential in global careers like business, diplomacy, tourism, and hospitality, given the significance of multilingual skills in today's world.",
-          link: "",
-        },
-        {
           title: "Cultural Enrichment",
-          img: kids1,
+          img: kids2,
           description:
             "Learning Spanish exposes children to diverse cultures, literature, cinema, and art. It is also the official language of global bodies like the United Nations, UNESCO, and the International Red Cross.",
           link: "",
         },
         {
-          title: "Personal Growth",
-          img: kids2,
+          title: "Educational Advantages",
+          img: kids3,
           description:
-            "Learning a new language cultivates empathy, cultural sensitivity, and self-confidence, fostering personal growth and appreciation for diversity.",
+            "Learning Spanish boosts cognitive skills like problem-solving, critical thinking, multitasking, and memory. Improved linguistic abilities benefit academic performance across subjects.",
           link: "",
         },
+        // {
+        //   title: "Career Opportunities",
+        //   img: kids3,
+        //   description:
+        //     "Spanish proficiency is essential in global careers like business, diplomacy, tourism, and hospitality, given the significance of multilingual skills in today's world.",
+        //   link: "",
+        // },
+        // {
+        //   title: "Personal Growth",
+        //   img: kids2,
+        //   description:
+        //     "Learning a new language cultivates empathy, cultural sensitivity, and self-confidence, fostering personal growth and appreciation for diversity.",
+        //   link: "",
+        // },
       ],
     },
     HowItWorksCardData: [
