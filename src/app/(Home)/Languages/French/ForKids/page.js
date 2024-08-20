@@ -115,7 +115,7 @@ const FrenchForKidsPage = () => {
         {
           title: "A2",
           price: "₹42,000/",
-          level: "Intermediate Classes",
+          level: "Elementary Classes",
           description:
             "Elevate your child's French skills with our elementary program, designed to deepen their understanding and fluency. Through interactive lessons and engaging activities, children will expand their vocabulary and improve their conversational abilities.",
           link: "",
@@ -123,7 +123,7 @@ const FrenchForKidsPage = () => {
         {
           title: "B2",
           price: "On Request",
-          level: "Advanced Classes",
+          level: "Intermediate Classes",
           description:
             "Boost your child's French skills at our intermediate program, helping them express fluently and understand complex texts confidently. Through engaging activities, they'll master familiar topics and enhance their language proficiency",
           link: "",

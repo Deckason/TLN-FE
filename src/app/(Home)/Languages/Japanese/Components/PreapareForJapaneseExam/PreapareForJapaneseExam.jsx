@@ -16,7 +16,7 @@ const PreapareForJapaneseExam = () => {
   return (
     <div>
       <div className="text-black text-2xl mb-12 text-center font-bold ">
-        Prepare for Japanese Exams
+        JLPT preparation classes
       </div>
       <div className="flex flex-wrap justify-center gap-1 max-md:gap-5 md:gap-2 px-5 mx-auto w-fit lg:gap-[18px] items-center mt-[48px]">
         {levelDatas.map((data, index) => (
