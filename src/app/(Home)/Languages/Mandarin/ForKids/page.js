@@ -111,15 +111,17 @@ const MandarinForKidsPage = () => {
 
       CardData: [
         {
-          title: "Beginner HSK 1 & 2",
+          title: "HSK 1 & 2",
           level: "Beginner Level",
+          price:"₹25,902/-*",
           description:
             "Start your child's Mandarin journey with our beginner course, designed to introduce basic grammar, vocabulary, and pronunciation. Perfect for kids with little to no prior experience in Mandarin.",
           link: "",
         },
         {
-          title: "Intermediate HSK 3",
+          title: "HSK 3",
           level: "Intermediate Level",
+          price:"₹40,000/-*",
           description:
             "Advance your child's Mandarin skills with our intermediate course! Building upon foundational knowledge, they will delve into more complex grammar, expand vocabulary, and have engaging conversations to enhance fluency.",
           link: "",

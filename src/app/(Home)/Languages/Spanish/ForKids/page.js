@@ -106,21 +106,21 @@ const SpanishForKidsPage = () => {
           title: "A1",
           description:
             "Discover the joy of learning Spanish with our engaging beginner program tailored for kids. Through fun activities and interactive lessons, children will build a solid foundation in Spanish vocabulary and grammar.",
-          level: "₹35,000/-",
+          price: "₹35,000/-*",
           link: "",
         },
         {
           title: "A2",
           description:
             "Elevate your child's Spanish skills with our elementary program, designed to deepen their understanding and fluency. Through interactive lessons and engaging activities, children will expand their vocabulary and improve their conversational abilities.",
-          level: "₹42,000/-",
+          price: "₹42,000/-*",
           link: "",
         },
         {
           title: "B1",
           description:
             "Boost your child's Spanish skills at our intermediate program, helping them express fluently and understand complex texts confidently. Through engaging activities, they'll master familiar topics and enhance their language proficiency.",
-          level: "On Request",
+          price: "On Request",
           link: "",
         },
       ],

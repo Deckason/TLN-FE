@@ -110,17 +110,19 @@ const JapaneseForKidsPage = () => {
 
       CardData: [
         {
-          title: "N5 Part I & II: ₹28,000-₹28,000",
-          level: "Beginner Level",
+          title: "N5 Part I & II",
+          price: "₹28,000-₹28,000/-*",
+          level: "Beginner classes",
           description:
             "Embark on an exciting Japanese adventure with our beginner course! Designed for kids who are new to Japanese, these courses introduce basic grammar, vocabulary, and pronunciation in a fun way and also introduce them to three different scripts in a seamless manner!",
           link: "",
         },
         {
           title: "N4",
-          level: "Intermediate ",
+          price: "On Request",
+          level: "Intermediate classes",
           description:
-            "On Request: Level up your Japanese abilities with our intermediate course designed for young learners. Delve into advanced grammar, enrich your vocabulary, and participate in interactive activities to improve fluency. ",
+            "Level up your Japanese abilities with our intermediate course designed for young learners. Delve into advanced grammar, enrich your vocabulary, and participate in interactive activities to improve fluency. ",
           link: "",
         },
       ],

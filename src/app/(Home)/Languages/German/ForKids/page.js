@@ -27,20 +27,6 @@ const GermanForKidsPage = () => {
           link: "",
         },
         {
-          title: "Educational Advantages",
-          img: kids2,
-          description:
-            "Studying German enhances cognitive abilities such as problem-solving and critical thinking, contributing to overall academic success.",
-          link: "",
-        },
-        {
-          title: "Career Opportunities",
-          img: kids3,
-          description:
-            "Proficiency in German broadens job prospects, particularly in engineering, technology, and international business sectors where German-speaking companies thrive.",
-          link: "",
-        },
-        {
           title: "Cultural Enrichment",
           img: kids1,
           description:
@@ -48,17 +34,10 @@ const GermanForKidsPage = () => {
           link: "",
         },
         {
-          title: "Travel Benefits",
+          title: "Educational Advantages",
           img: kids2,
           description:
-            "Knowing German enhances travel experiences in Germany and other German-speaking regions, enabling deeper engagement with the country's history, art, and cuisine.",
-          link: "",
-        },
-        {
-          title: "Personal Growth",
-          img: kids3,
-          description:
-            "Learning German fosters resilience and adaptability while promoting empathy and understanding of different cultures, nurturing well-rounded individuals.",
+            "Studying German enhances cognitive abilities such as problem-solving and critical thinking, contributing to overall academic success.",
           link: "",
         },
       ],
@@ -110,22 +89,25 @@ const GermanForKidsPage = () => {
 
       CardData: [
         {
-          title: "A1 ₹35,000/",
-          title2: "Beginner Classes",
+          title: "A1",
+          price: "₹35,000/-*",
+          level: "Beginner Classes",
           description:
             "Discover the joy of learning German with our engaging beginner program tailored for kids. Through fun activities and interactive lessons, children will build a solid foundation in German vocabulary and grammar.",
           link: "",
         },
         {
-          title: "A2 ₹42,000/",
-          title2: "Intermediate Classes",
+          title: "A2",
+          price: "₹42,000/-*",
+          level: "Intermediate Classes",
           description:
             "Elevate your child's German skills with our elementary program, designed to deepen their understanding and fluency. Through interactive lessons and engaging activities, children will expand their vocabulary and improve their conversational abilities.",
           link: "",
         },
         {
-          title: "B2 On Request",
-          title2: "Advanced Classes",
+          title: "B2",
+          price: "On Request",
+          level: "Advanced Classes",
           description:
             "Boost your child's German skills at our intermediate program, helping them express fluently and understand complex texts confidently. Through engaging activities, they'll master familiar topics and enhance their language proficiency",
           link: "",
