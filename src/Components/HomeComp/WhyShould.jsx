@@ -152,9 +152,9 @@ const WhyShould = () => {
       ))}
 
       <div className="mt-[50px] md:mt-[98px] w-full  max-w-[1267px] mx-auto">
-        <h1 className="self-stretch font-bold  text-[24px]/[29px] lg:text-[40px]/[48.01px] md:text-3xl xl:text-[50px]/[40px]  2xl:text-[60px]/[72px]  md:text-center my-[48px] text-stone-900 max-lg:px-4">
+      <h1 className="self-stretch font-bold text-[24px]/[29px] lg:text-[40px]/[48.01px] md:text-3xl xl:text-[50px]/[40px] 2xl:text-[60px]/[72px] text-center my-[48px] text-stone-900 max-lg:px-4">
           Why you should learn with The Language Network?
-        </h1>
+      </h1>    
         <div className="lg:grid hidden md:grid-cols-2 lg:grid-cols-4 mx-auto gap-y-6  gap-x-[32px]  ">
           <div
             style={{ boxShadow: " 0px 4px 50px 0px rgba(0, 0, 0, 0.06)" }}
