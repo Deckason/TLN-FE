@@ -151,8 +151,8 @@ const WhyShould = () => {
         </ReusableModal>
       ))}
 
-      <div className="mt-[50px] md:mt-[98px] w-full  max-w-[1267px] mx-auto">
-        <h1 className="self-stretch font-bold  text-[24px]/[29px] lg:text-[40px]/[48.01px] md:text-3xl xl:text-[50px]/[40px]  2xl:text-[60px]/[72px]  md:text-center my-[48px] text-stone-900 max-lg:px-4">
+      <div className="mt-[41px] xl:mt-[48px] 4xl:mt-[112px] w-full  max-w-[1267px] mx-auto">
+        <h1 className="self-stretch font-bold  text-[24px] xl:text-[40px] 4xl:text-[60px]  md:text-center my-[48px] text-stone-900 max-lg:px-4">
           Why you should learn with The Language Network?
         </h1>
         <div className="lg:grid hidden md:grid-cols-2 lg:grid-cols-4 mx-auto gap-y-6  gap-x-[32px]  ">
@@ -171,7 +171,7 @@ const WhyShould = () => {
                     ></Image>
                   </div>
                 </div>
-                <div className="text-center lg:-mt-5 xl:-mt-0 text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                <div className="text-center lg:-mt-5 xl:-mt-0 text-emerald-900 text-[20px] font-bold ">
                   Expert trainers
                 </div>
               </div>
@@ -188,9 +188,9 @@ const WhyShould = () => {
                     newHovedStates[0] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
-                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border h-full border-primary-color justify-center items-center gap-2.5 inline-flex"
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 py-[14px] px-[32px] xl:py-3.5 rounded-lg border h-full border-primary-color justify-center items-center gap-2.5 inline-flex"
                 >
-                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
+                  <div className="text-center text-[14px] xl:text-[20px] font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
                   <Image
@@ -220,7 +220,7 @@ const WhyShould = () => {
                     ></Image>
                   </div>
                 </div>
-                <div className="text-center lg:-mt-5 xl:-mt-0 text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                <div className="text-center lg:-mt-5 xl:-mt-0 text-emerald-900 text-[20px]  font-bold ">
                   Interactive sessions
                 </div>
               </div>
@@ -237,9 +237,9 @@ const WhyShould = () => {
                     newHovedStates[1] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
-                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-[32px] py-[14px] xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
+                  <div className="text-center text-[14px] xl:text-[20px] font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
                   <Image
@@ -269,7 +269,7 @@ const WhyShould = () => {
                     ></Image>
                   </div>
                 </div>
-                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[20px]  font-bold ">
                   Certified courses
                 </div>
               </div>
@@ -286,9 +286,9 @@ const WhyShould = () => {
                     newHovedStates[2] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
-                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-[32px] py-[14px] xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
+                  <div className="text-center text-[14px] xl:text-[20px] font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
                   <Image
@@ -318,7 +318,7 @@ const WhyShould = () => {
                     ></Image>
                   </div>
                 </div>
-                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[20px]  font-bold ">
                   Holistic learning
                 </div>
               </div>
@@ -335,9 +335,9 @@ const WhyShould = () => {
                     newHovedStates[3] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
-                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-[32px] py-[14px] xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
+                  <div className="text-center text-[14px] xl:text-[20px] font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
                   <Image
@@ -367,7 +367,7 @@ const WhyShould = () => {
                     ></Image>
                   </div>
                 </div>
-                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[20px]  font-bold ">
                   Free study material
                 </div>
               </div>
@@ -384,9 +384,9 @@ const WhyShould = () => {
                     newHovedStates[4] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
-                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-[32px] py-[14px] xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
+                  <div className="text-center text-[14px] xl:text-[20px] font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
                   <Image
@@ -416,7 +416,7 @@ const WhyShould = () => {
                     ></Image>
                   </div>
                 </div>
-                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[20px]  font-bold ">
                   Review sessions
                 </div>
               </div>
@@ -433,9 +433,9 @@ const WhyShould = () => {
                     newHovedStates[5] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
-                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-[32px] py-[14px] xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
+                  <div className="text-center text-[14px] xl:text-[20px] font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
                   <Image
@@ -465,7 +465,7 @@ const WhyShould = () => {
                     ></Image>
                   </div>
                 </div>
-                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[20px] font-bold ">
                   Flexible timings
                 </div>
               </div>
@@ -482,9 +482,9 @@ const WhyShould = () => {
                     newHovedStates[6] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
-                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-[32px] py-[14px] xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
+                  <div className="text-center text-[14px] xl:text-[20px] font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
                   <Image
@@ -514,7 +514,7 @@ const WhyShould = () => {
                     ></Image>
                   </div>
                 </div>
-                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[18px] xl:text-xl font-bold ">
+                <div className="text-center lg:-mt-5 xl:-mt-0  text-emerald-900 text-[20px]  font-bold ">
                   Batch flexibility
                 </div>
               </div>
@@ -531,9 +531,9 @@ const WhyShould = () => {
                     newHovedStates[7] = false;
                     setWhyShouldHovered(newHovedStates);
                   }}
-                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                  className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-[32px] py-[14px] xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                 >
-                  <div className="text-center text-xl font-normal  leading-7 text-nowrap ">
+                  <div className="text-center text-[14px] xl:text-[20px] font-normal  leading-7 text-nowrap ">
                     Learn more
                   </div>
                   <Image
@@ -624,16 +624,16 @@ const WhyShould = () => {
                         />
                       </div>
                     </div>
-                    <div className="text-center lg:-mt-5 xl:-mt-0 text-emerald-900 text-[18px] xl:text-xl font-bold">
+                    <div className="text-center lg:-mt-5 xl:-mt-0 text-emerald-900 text-[20px]  font-bold">
                       {item.text}
                     </div>
                   </div>
                   <div className="self-stretch h-[56px] lg:h-12 xl:h-14 -mt-3.5 flex-col justify-center items-center gap-2.5 flex">
                     <button
                       onClick={() => openModal(item.modal)}
-                      className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-8 xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
+                      className="text-primary-color hover:bg-[#1f9f90] hover:text-white xl:h-14 lg:h-12 px-[32px] py-[14px] xl:py-3.5 rounded-lg border border-primary-color justify-center items-center gap-2.5 inline-flex h-full"
                     >
-                      <div className="text-center text-xl font-normal leading-7">
+                      <div className="text-center text-[14px] xl:text-[20px] font-normal leading-7">
                         Learn more
                       </div>
                       <svg

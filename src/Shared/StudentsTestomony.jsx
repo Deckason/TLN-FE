@@ -18,7 +18,7 @@ const StudentsTestomony = () => {
   return (
     <div className="2xl:w-full bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[112px]">
       <div className="min-h-[518px]  mx-auto flex justify-center flex-col items-center">
-        <h1 className="text-stone-900 text-center text-[60px] mb-8 font-bold max-lg:text-2xl">
+        <h1 className="text-stone-900 text-center  mb-8 font-bold text-[24px] xl:text-[40px] 2xl:text-[60px]">
           Hear it from the Learners
         </h1>
         <div className="  w-full ">

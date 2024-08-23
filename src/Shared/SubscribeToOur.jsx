@@ -3,7 +3,7 @@ const SubscribeToOur = () => {
     <div className="w-full -mt-14">
       <div className="w-full  bg-teal-600 min-h-[380px] relative flex justify-center items-center">
         <div className=" bg-teal-600 absolute w-full flex-col justify-center items-center gap-8 inline-flex">
-          <div className="text-center text-white text-[24px]/[29px] sm:text-[40px]/[55px] md:text-[45px]/[60px] lg:text-[50px]/[65px] xl:text-[55px]/[70px] 2xl:text-[60px]/[72px] font-bold">
+          <div className="text-center text-white text-[24px] xl:text-[40px] 2xl:text-[60px] font-bold">
             Subscribe to our newsletter
           </div>
           <div className="justify-center items-end gap-8 flex-wrap flex ">

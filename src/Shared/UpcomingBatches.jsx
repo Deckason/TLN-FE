@@ -146,8 +146,8 @@ const UpcomingBatches = ({ language }) => {
 
   return (
     <>
-      <div className=" my-[112px]  flex justify-center flex-col items-center">
-        <h1 className="my-[40px] text-center self-stretch text-stone-900 text-[32px]/[39px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[80px]   font-bold">
+      <div className=" my-[32px]  flex justify-center flex-col items-center">
+        <h1 className="my-[40px] text-center self-stretch text-stone-900 text-[24px] xl:text-[40px] 2xl:text-[60px]  font-bold">
           Upcoming Batches
         </h1>
         <section
@@ -159,7 +159,7 @@ const UpcomingBatches = ({ language }) => {
             onClick={() => setMonthNum(1)}
             className={`${
               monthNum === 1 ? "upcomingCourseActive" : "upcomingCourseDeActive"
-            }`}
+            } text-[16px] xl:text-[15px] 4xl:text-[20px] py-[8px] xl:py-[6px] px-[16px] xl:px-[12px]`}
           >
             {monthNames[(new Date().getMonth() + 1) % 12]}
           </button>
@@ -168,7 +168,7 @@ const UpcomingBatches = ({ language }) => {
             onClick={() => setMonthNum(2)}
             className={`${
               monthNum === 2 ? "upcomingCourseActive" : "upcomingCourseDeActive"
-            }`}
+            } text-[16px] xl:text-[15px] 4xl:text-[20px] py-[8px] xl:py-[6px] px-[16px] xl:px-[12px]`}
           >
             {monthNames[(new Date().getMonth() + 2) % 12]}
           </button>
@@ -177,7 +177,7 @@ const UpcomingBatches = ({ language }) => {
             onClick={() => setMonthNum(3)}
             className={`${
               monthNum === 3 ? "upcomingCourseActive" : "upcomingCourseDeActive"
-            }`}
+            } text-[16px] xl:text-[15px] 4xl:text-[20px] py-[8px] xl:py-[6px] px-[16px] xl:px-[12px]`}
           >
             {monthNames[(new Date().getMonth() + 3) % 12]}
           </button>
@@ -202,42 +202,42 @@ const UpcomingBatches = ({ language }) => {
                         src={currBatch.trainerDetails.trainerImage}
                         width={500}
                         height={500}
-                        className="object-contain w-full h-full z-10"
+                        className=" w-full h-full z-10 object-contain"
                       ></Image>
                     </div>
                     <div className="  rounded-b-lg flex-col justify-start w-full items-start gap-16 flex">
                       <div className="self-stretch min-h-[344px] flex-col justify-start items-start gap-8 flex">
                         <div className="self-stretch h-[60px] px-4 flex-col justify-start items-start gap-3 flex">
-                          <div className="self-stretch h-[23px] text-stone-900 text-2xl font-bold ">
+                          <div className="self-stretch h-[23px] text-stone-900 text-[24px] xl:text-[18px] 4xl:text-[24px] font-bold ">
                             {currBatch.trainerDetails.trainerName}
                           </div>
-                          <div className="self-stretch h-[25px] text-neutral-500 text-xl font-normal  leading-7">
+                          <div className="self-stretch h-[25px] text-neutral-500 text-[20px] xl:text-[15px] 4xl:text-[20px] font-normal  leading-7">
                             {currBatch.trainerDetails.trainerLanguage} Trainer
                           </div>
                         </div>
                         <div className="h-[252px] w-full flex-col justify-start items-start flex">
                           <div className="self-stretch px-4 pt-5 pb-4 border-b border-neutral-200 justify-between items-center inline-flex">
-                            <div className="w-[122px] h-[23px] text-stone-900 text-base font-medium ">
+                            <div className="w-[122px] h-[23px] text-stone-900 text-[16px] 4xl:text-[20px] font-medium ">
                               Batch Starts{" "}
                             </div>
-                            <div className="text-stone-900 xl:text-[14px] lg:text-[14px] text-[10px] font-bold ">
+                            <div className="text-stone-900 text-[14px] 4xl:text-[20px]  font-bold ">
                               {formatDateToDayMonthYear(currBatch.batchStart)}
                             </div>
                           </div>
                           <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-center inline-flex">
-                            <div className="w-[159px] h-[23px] text-stone-900 text-base font-medium ">
+                            <div className="w-[159px] h-[23px] text-stone-900 text-[16px] 4xl:text-[20px] font-medium ">
                               Number of seats
                             </div>
-                            <div className="text-stone-900 xl:text-[14px] lg:text-[14px] text-[10px] font-bold ">
+                            <div className="text-stone-900 text-[14px] 4xl:text-[20px]  font-bold ">
                               {currBatch.noOfSeats}
                             </div>
                           </div>
                           <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-center flex">
-                            <div className="w-[65px] h-[23px] text-stone-900 text-base font-medium ">
+                            <div className="w-[65px] h-[23px] text-stone-900 text-[16px] 4xl:text-[20px] font-medium ">
                               Timing
                             </div>
                             <div className="lg:w-[335px] w-[195px] flex-col justify-center items-end gap-[13px] inline-flex">
-                              <div className="self-stretch text-right text-stone-900 text-nowrap xl:text-[14px] lg:text-[14px] text-[10px] text-sm font-bold ">
+                              <div className="self-stretch text-right text-stone-900 text-nowrap text-[14px] 4xl:text-[20px]  text-sm font-bold ">
                                 {formatDate(
                                   currBatch.startTime,
                                   currBatch.endTime
@@ -247,17 +247,17 @@ const UpcomingBatches = ({ language }) => {
                             </div>
                           </div>
                           <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-center inline-flex">
-                            <div className="w-[80px] h-[23px] text-stone-900 text-base font-medium ">
+                            <div className="w-[80px] h-[23px] text-stone-900 text-[16px] 4xl:text-[20px] font-medium ">
                               Certification{" "}
                             </div>
-                            <div className="text-stone-900 xl:text-[14px] lg:text-[14px] text-[10px]  font-bold ">
+                            <div className="text-stone-900 text-[14px] 4xl:text-[20px]   font-bold ">
                               {currBatch.certification}
                             </div>
                           </div>
                         </div>
                       </div>
                       <button className="flex justify-center w-full">
-                        <div className="w-[183px] h-[58px] px-8 py-3.5 bg-teal-600 rounded-lg justify-center items-center gap-2.5 inline-flex text-neutral-50 text-2xl font-medium border-2 border-teal-600 transition-colors duration-200 hover:bg-neutral-50 hover:text-teal-600">
+                        <div className="w-[183px] h-[37px] xl:h-[43px] 4xl:h-[58px] py-[10px] px-[16px] xl:py-[11px] 4xL:py-[14px] xl:px-[24px] 4xl:px-[32px] bg-teal-600 rounded-lg justify-center items-center gap-2.5 inline-flex text-neutral-50 text-2xl font-medium border-2 border-teal-600 transition-colors duration-200 hover:bg-neutral-50 hover:text-teal-600">
                           <div className="text-center text-nowrap">
                             Enroll now
                           </div>
@@ -333,36 +333,36 @@ const UpcomingBatches = ({ language }) => {
                     <div className="  rounded-b-lg flex-col justify-start w-full items-start gap-16 flex">
                       <div className="self-stretch min-h-[344px] flex-col justify-start items-start gap-8 flex">
                         <div className="self-stretch h-[60px] px-4 flex-col justify-start items-start gap-3 flex">
-                          <div className="self-stretch h-[23px] text-stone-900 text-2xl font-bold ">
+                          <div className="self-stretch h-[23px] text-stone-900 text-[24px] xl:text-[18px] 4xl:text-[24px] font-bold ">
                             {currBatch.trainerDetails.trainerName}
                           </div>
-                          <div className="self-stretch h-[25px] text-neutral-500 text-xl font-normal  leading-7">
+                          <div className="self-stretch h-[25px] text-neutral-500 text-[20px] xl:text-[15px] 4xl:text-[20px] font-normal  leading-7">
                             {currBatch.trainerDetails.trainerLanguage} Trainer
                           </div>
                         </div>
                         <div className="h-[252px] w-full flex-col justify-start items-start flex">
                           <div className="self-stretch px-4 pt-5 pb-4 border-b border-neutral-200 justify-between items-center inline-flex">
-                            <div className="w-[122px] h-[23px] text-stone-900 text-base font-medium ">
+                            <div className="w-[122px] h-[23px] text-stone-900 text-[16px] 4xl:text-[20px] font-medium ">
                               Batch Starts{" "}
                             </div>
-                            <div className="text-stone-900 xl:text-[14px] lg:text-[14px] text-[10px] font-bold ">
+                            <div className="text-stone-900 text-[14px] 4xl:text-[20px]  font-bold ">
                               {formatDateToDayMonthYear(currBatch.batchStart)}
                             </div>
                           </div>
                           <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-center inline-flex">
-                            <div className="w-[159px] h-[23px] text-stone-900 text-base font-medium ">
+                            <div className="w-[159px] h-[23px] text-stone-900 text-[16px] 4xl:text-[20px] font-medium ">
                               Number of seats
                             </div>
-                            <div className="text-stone-900 xl:text-[14px] lg:text-[14px] text-[10px] font-bold ">
+                            <div className="text-stone-900 text-[14px] 4xl:text-[20px]  font-bold ">
                               {currBatch.noOfSeats}
                             </div>
                           </div>
                           <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-center flex">
-                            <div className="w-[65px] h-[23px] text-stone-900 text-base font-medium ">
+                            <div className="w-[65px] h-[23px] text-stone-900 text-[16px] 4xl:text-[20px] font-medium self-center">
                               Timing
                             </div>
-                            <div className="lg:w-[335px] w-[195px] flex-col justify-center items-end gap-[13px] inline-flex">
-                              <div className="self-stretch text-right text-stone-900 text-nowrap xl:text-[14px] lg:text-[14px] text-[10px] text-sm font-bold ">
+                            <div className="lg:w-[335px] w-[195px] flex-col justify-center items-center gap-[13px] self-center flex">
+                              <div className="self-center text-right text-stone-900  text-[14px] 4xl:text-[20px]  text-wrap font-bold flex flex-col justify-center">
                                 {formatDate(
                                   currBatch.startTime,
                                   currBatch.endTime
@@ -372,10 +372,10 @@ const UpcomingBatches = ({ language }) => {
                             </div>
                           </div>
                           <div className="self-stretch px-4 py-5 border-b border-neutral-200 justify-between items-center inline-flex">
-                            <div className="w-[120px] h-[23px] text-stone-900 text-base font-medium ">
+                            <div className="w-[120px] h-[23px] text-stone-900 text-[16px] 4xl:text-[20px] font-medium ">
                               Certification{" "}
                             </div>
-                            <div className="text-stone-900 xl:text-[14px] lg:text-[14px] text-[10px]  font-bold ">
+                            <div className="text-stone-900 text-[14px] 4xl:text-[20px]   font-bold ">
                               {currBatch.certification}
                             </div>
                           </div>
@@ -414,7 +414,7 @@ const UpcomingBatches = ({ language }) => {
 
         <button
           onClick={handleLoadMore}
-          className="hidden w-[183px] h-[58px] px-8 py-3.5 text-[#1F9F90] hover:text-white border-[#1F9F90] hover:bg-[#1F9F90] border rounded-lg justify-center items-center gap-2.5 xl:inline-flex text-center text-nowrap text-2xl font-medium "
+          className="hidden w-[183px] h-[37px] xl:h-[43px] 4xl:h-[58px] py-[10px] px-[16px] xl:py-[11px] 4xL:py-[14px] xl:px-[24px] 4xl:px-[32px]  text-[#1F9F90] hover:text-white border-[#1F9F90] hover:bg-[#1F9F90] border rounded-lg justify-center items-center gap-2.5 xl:inline-flex text-center text-nowrap text-2xl font-medium "
         >
           Load more
         </button>

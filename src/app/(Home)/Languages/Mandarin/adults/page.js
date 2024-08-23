@@ -2,8 +2,9 @@ import step1 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 477.pn
 import step2 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
 import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
+import bannerImg from '../../../../../Assets/Japanese/JapaneseAdult/Adult Japan.jpg'
 
-import dalf from "../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
+import hsk from '../../../../../Assets/Mandarin/HSK.jpg'
 
 import React from "react";
 
@@ -15,6 +16,7 @@ const page = () => {
       Language: "Mandarin",
       Description:
         "Learning a new language has no age limit! If you're ready to dive into the world of Mandarin, you're in luck! Our online Mandarin classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Mandarin grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Mandarin from day one! Our top-notch Mandarin trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online Mandarin classes for adults.",
+      BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {
@@ -51,7 +53,7 @@ const page = () => {
       CardData: [
         {
           title: "HSK preparation classes",
-          img: dalf,
+          img: hsk,
           description:
             "Master the HSK exam, the gold standard in Mandarin proficiency. Our expert-led courses comprehensively cover vocabulary, grammar, reading, and listening, ensuring your success in this globally recognized assessment.",
           link: "",
@@ -63,26 +65,26 @@ const page = () => {
 
       CardData: [
         {
-          title: "A1-A2",
+          title: "HSK 1 & 2",
           level: "Beginner Classes",
           description:
-            "Start your Mandarin language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
-          price:"₹25,902",
+            "Begin your Mandarin language journey with our beginner courses, specially designed to introduce you to the basics of Mandarin grammar, vocabulary, and pronunciation. Perfect for those with little to no prior experience in Mandarin.",
+          price:"₹30,582",
           link: "https://rzp.io/l/3sIBt0a0tq",
         },
         {
-          title: "B1-B2",
+          title: "HSK 3 & 4",
           level: "Intermediate Classes",
           description:
-            "Elevate your Mandarin proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-          price:"₹66,924",
+            "Our intermediate courses will help you build upon your existing knowledge and enhance your fluency. Dive deeper into complex grammar structures, expand your vocabulary, and engage in meaningful conversations to strengthen your Mandarin proficiency.",
+          price:"₹43,182",
           link: "https://rzp.io/l/HqGnWzmPQH",
         },
         {
-          title: "C1-C2",
+          title: "HSK 5 & 6",
           level: "Advanced Classes",
           description:
-            "Advance your Mandarin skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+            "Elevate your Mandarin proficiency with our advanced courses. Tailored for learners with a solid grasp of the language, these courses refine nuanced language skills, tackle advanced grammar, and foster professional-level communication. Perfect for those aiming for fluency in academic or professional contexts",
           price:"On Request",
           link: "",
         },

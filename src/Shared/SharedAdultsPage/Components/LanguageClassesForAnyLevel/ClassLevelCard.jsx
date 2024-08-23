@@ -18,7 +18,7 @@ console.log(data)
 
           <div className="self-stretch text-center text-teal-600 lg:text-xl text-2xl 2xl:text-2xl font-medium">
           {data?.price}
-          {data.price == "On Request" ? "" : "(inclusive of GST)"}
+          {data.price == "On Request" ? "" : ""}
           </div>
           
         </div>

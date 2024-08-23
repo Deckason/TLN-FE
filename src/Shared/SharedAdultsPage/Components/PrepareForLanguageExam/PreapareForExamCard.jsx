@@ -15,11 +15,11 @@ const PreapareForExamCard = ({ data }) => {
         </div>
 
         <div className="w-full  h-full max-sm:max-h-full  max-lg:max-h-[490px] lg:min-h-[295px] flex-col justify-start items-center gap-8 flex">
-          <div className="self-stretch text-center text-neutral-800 max-lg:text-lg lg:text-xl 2xl:text-2xl font-medium ">
+          <div className="self-stretch text-center text-neutral-800 text-[24px] font-medium ">
             {data?.title}
           </div>
           <div className="self-stretch max-sm:max-h-full max-h-[270px] h-full max-lg:max-h-[270px]  min-h-[170px]  flex-col justify-start items-center gap-2 flex">
-            <div className="self-stretch text-center text-neutral-500 lg:text-lg 2xl:text-xl font-normal leading-7">
+            <div className="self-stretch text-center text-neutral-500 text-[16px] xl:text-[20px] font-normal leading-7">
               {data?.description}
             </div>
           </div>

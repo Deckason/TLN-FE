@@ -2,6 +2,7 @@ import step1 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 477.pn
 import step2 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
 import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
+import bannerImg from "../../../../../Assets/FrenchPage/FrenchAdult/Adult French.jpg";
 
 import dalf from "../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
 import delf from "../../../../../Assets/FrenchPage/FrenchMain/delf.png";
@@ -14,6 +15,7 @@ const page = () => {
       Language: "French",
       Description:
         "Learning a new language has no age limit! If you're ready to dive into the world of French, you're in luck! Our online French classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of French grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking French from day one! Our top-notch French trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online French classes for adults.",
+      BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {
@@ -80,7 +82,7 @@ const page = () => {
           level: "Beginner Classes",
           description:
             "Start your French language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
-            price: "₹25,902",
+            price: "₹11,990-₹16,790",
             link: "https://rzp.io/l/uVQyGBDbvt",
         },
         {
@@ -88,7 +90,7 @@ const page = () => {
           level: "Intermediate Classes",
           description:
             "Elevate your French proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-            price: "₹66,924",
+            price: "₹21,588-₹26,588",
             link: "https://rzp.io/l/ZFRkLH6P",
         },
         {

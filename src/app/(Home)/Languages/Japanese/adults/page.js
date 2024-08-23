@@ -2,10 +2,9 @@ import step1 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 477.pn
 import step2 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
 import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
+import bannerImg from '../../../../../Assets/Japanese/JapaneseAdult/Adult Japan.jpg';
 
-import dalf from "../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
-import delf from "../../../../../Assets/FrenchPage/FrenchMain/delf.png";
-import telf from "../../../../../Assets/FrenchPage/FrenchMain/telf.png";
+import jlpt from "../../../../../Assets/Japanese/jlpt.png";
 import React from "react";
 
 import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";
@@ -16,6 +15,7 @@ const page = () => {
       Language: "Japanese",
       Description:
         "Learning a new language has no age limit! If you're ready to dive into the world of Japanese, you're in luck! Our online Japanese classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Japanese grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Japanese from day one! Our top-notch Japanese trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online Japanese classes for adults.",
+      BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {
@@ -51,24 +51,10 @@ const page = () => {
       Language: "Japanese",
       CardData: [
         {
-          title: "DALF preparation classes",
-          img: dalf,
+          title: "JLPT preparation classes",
+          img: jlpt,
           description:
-            "DALF is an advanced-level French language proficiency exam, suitable for individuals aiming to demonstrate high-level competency in French. It is recognized globally by academic institutions, employers, and immigration authorities.",
-          link: "",
-        },
-        {
-          title: "DELF preparation classes",
-          img: delf,
-          description:
-            "The DELF exam assesses French language proficiency for non-native speakers. It is designed for individuals seeking certification for academic or professional purposes, and for those planning to immigrate to French-speaking countries.",
-          link: "",
-        },
-        {
-          title: "TEL preparation classes",
-          img: telf,
-          description:
-            "The TEF exam is an internationally recognized French language proficiency test for individuals seeking to assess their French language abilities. It is widely accepted by academic institutions, employers, and immigration authorities worldwide.",
+            "Master the JLPT with our expert courses, the global benchmark for Japanese proficiency. We meticulously cover vocabulary, grammar, reading, and listening, ensuring your success in all exam sections.",
           link: "",
         },
       ],
@@ -78,26 +64,26 @@ const page = () => {
 
       CardData: [
         {
-          title: "A1-A2",
+          title: "N5",
           level: "Beginner Classes",
           description:
-            "Start your Japanese language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
-            price: "₹25,902",
+            "Begin your Japanese language journey with our beginner courses, specially designed to introduce you to the basics of Japanese grammar, vocabulary, and pronunciation. Perfect for those with little to no prior experience in Japanese",
+            price: "₹9,990",
             link: "https://rzp.io/l/EGBnxv7w",
         },
         {
-          title: "B1-B2",
+          title: "N4,N3",
           level: "Intermediate Classes",
           description:
-            "Elevate your Japanese proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-            price: "₹66,924",
+            "Our intermediate courses will help you build upon your existing knowledge and enhance your fluency. Dive deeper into complex grammar structures, expand your vocabulary, and engage in meaningful conversations to strengthen your Japanese proficiency",
+            price: "₹23,990-₹29,990",
             link: "https://rzp.io/l/heYbWM89",
         },
         {
-          title: "C1-C2",
+          title: "N2,N1",
           level: "Advanced Classes",
           description:
-            "Advance your Japanese skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+            "Elevate your Japanese proficiency with our advanced courses. Tailored for learners with a solid grasp of the language, these courses refine nuanced language skills, tackle advanced grammar, and foster professional-level communication. Perfect for those aiming for fluency in academic or professional contexts",
           price: "On Request",
             link: "",
         },

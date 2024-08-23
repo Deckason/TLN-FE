@@ -2,6 +2,7 @@ import step1 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 477.pn
 import step2 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
 import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
+import bannerImg from '../../../../../Assets/English/EnglishAdult/Adult English.jpg'
 
 import dalf from "../../../../../Assets/Homepage/ProficiencyExam/logo6.png";
 import telf from "../../../../../Assets/English/toefl.webp";
@@ -14,6 +15,7 @@ const page = () => {
       Language: "English",
       Description:
         "Learning a new language has no age limit! If you're ready to dive into the world of English, you're in luck! Our online English classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of English grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking English from day one! Our top-notch English trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online English classes for adults.",
+      BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {

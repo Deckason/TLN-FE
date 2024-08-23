@@ -19,14 +19,14 @@ const Banner = ({ BannerData }) => {
     <div className="w-full relative flex justify-center items-center flex-col ">
       <div className="mt-[43px] max-w-[1681px]  mx-auto w-full">
         <div className="flex-auto max-md:max-w-full">
-          <div className="grid  relative lg:grid-cols-2 gap-5 max-lg:flex-col max-md:gap-0">
-            <div className="flex flex-col   max-md:ml-0 max-lg:w-full">
-              <div className="flex z-10 flex-col px-5 text-black max-md:max-w-full">
-                <div className="text-5xl font-bold max-md:max-w-full max-md:text-4xl">
+          <div className="grid  relative lg:grid-cols-2 gap-5 max-lg:flex-col max-md:gap-0 justify-center">
+            <div className="flex flex-col items-center   max-md:ml-0 max-lg:w-full">
+              <div className="flex z-10 flex-col items-start px-5 text-black max-md:max-w-full">
+                <div className="text-[24px] font-bold w-[323px] xl:w-[643px] 4xl:w-[1106px] xl:text-[48px]">
                   Online {BannerData?.Language} Classes for Adults
                 </div>
-                <div className="mt-2 max-sm:text-sm text-xl leading-7 lg:text-base 2xl:text-xl lg:w-[450px] xl:w-[500px] 2xl:w-full max-md:max-w-full relative mb-[32px]">
-                  <div className="mb-8">
+                <div className="mt-2  text-[16px] leading-7  2xl:text-[20px] w-[323px] xl:w-[643px] 4xl:w-[1106px] relative mb-[32px] flex flex-col items-start">
+                  <div className="mb-[24px] 2xl:mb-[32px]">
                     <div>
                       {BannerInfo}
                       <span
@@ -37,7 +37,7 @@ const Banner = ({ BannerData }) => {
                       </span>
                     </div>
                   </div>{" "}
-                  <div className="flex justify-start  max-2xl:-ml-8 max-2xl:-mt-6 max-md:-ml-8 max-lg:ml-1 max-sm:ml-1 ">
+                  <div className="flex justify-start   ">
                     <BookAFreeDemoButton />
                   </div>
                 </div>
@@ -45,15 +45,15 @@ const Banner = ({ BannerData }) => {
             </div>
             <div className="  mx-auto max-md:-mb-[26px] max-lg:-mb-[42px] lg:-mb-0 lg:block px-4 lg:absolute  right-5 -top-10">
               <Image
-                alt="homePageBannerGirl"
-                className="w-[600px]  h-full object-contain "
-                src={BannerImage}
+                alt="homePageBannerPicture"
+                className="w-[465px] h-[417px]  object-contain "
+                src={BannerData.BannerImage ?? BannerImage}
               ></Image>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full -my-10 2xl:mt-5 max-sm:mt-5">
+      <div className="w-full mt-[53px] xl:mt-[-41px] 4xl:mt-[90px]">
         <States />
       </div>
     </div>

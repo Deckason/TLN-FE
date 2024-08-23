@@ -2,9 +2,10 @@ import step1 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 477.pn
 import step2 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
 import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
+import bannerImg from '../../../../../Assets/Spanish/SpanishAdult/Adult Spanish.jpg';
 
-import dalf from "../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
-import delf from "../../../../../Assets/FrenchPage/FrenchMain/delf.png";
+import dele from "../../../../../Assets/Spanish/DELE.png";
+import Siele from "../../../../../Assets/Spanish/Siele.png";
 
 import React from "react";
 
@@ -13,9 +14,10 @@ import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";
 const page = () => {
   const data = {
     BannerData: {
-      Language: "Mandarin",
+      Language: "Spanish",
       Description:
-        "Learning a new language has no age limit! If you're ready to dive into the world of Mandarin, you're in luck! Our online Mandarin classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Mandarin grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Mandarin from day one! Our top-notch Mandarin trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online Mandarin classes for adults.",
+        "Learning a new language has no age limit! If you're ready to dive into the world of Spanish, you're in luck! Our online Spanish classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Spanish grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Spanish from day one! Our top-notch Spanish trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online Spanish classes for adults.",
+      BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {
@@ -48,18 +50,18 @@ const page = () => {
       },
     ],
     LanguageExams: {
-      Language: "Mandarin",
+      Language: "Spanish",
       CardData: [
         {
           title: "DELE preparation classes",
-          img: delf,
+          img: dele,
           description:
             " Achieve Spanish language proficiency with our DELE exam preparation courses. These diplomas are internationally recognized and validate your Spanish skills for academic, professional, or personal purposes.",
           link: "",
         },
         {
           title: "SIELE preparation classes",
-          img: dalf,
+          img: Siele,
           description:
             "Prepare for the SIELE exam, a globally recognized certification of Spanish language proficiency. Whether for academic or professional advancement, our courses are tailored to help you succeed.",
           link: "",
@@ -67,30 +69,30 @@ const page = () => {
       ],
     },
     ClassesForAnyLevel: {
-      Language: "Mandarin",
+      Language: "Spanish",
 
       CardData: [
         {
           title: "A1-A2",
           level: "Beginner Classes",
           description:
-            "Start your Mandarin language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
-          price:"₹25,902",
+            "Start your Spanish language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
+          price:"₹11,990-₹16,790",
           link: "https://rzp.io/l/A5VMWMYq",
         },
         {
           title: "B1-B2",
           level: "Intermediate Classes",
           description:
-            "Elevate your Mandarin proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-          price:"₹66,924",
+            "Elevate your Spanish proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
+          price:" ₹21,588-₹26,588",
           link: "https://rzp.io/l/TUUuDIwI9E",
         },
         {
           title: "C1-C2",
           level: "Advanced Classes",
           description:
-            "Advance your Mandarin skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+            "Take your Spanish skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in Spanish.",
           price:"On Request",
           link: "",
         },
@@ -165,7 +167,7 @@ const page = () => {
          "Online French Classes",
          "Online Spanish Classes",
          "Online German Classes",
-         "Online Mandarin Classes",
+         "Online Spanish Classes",
          "Online Japanese Classes",
          "Online Korean Classes",
          "Online English Classes",
