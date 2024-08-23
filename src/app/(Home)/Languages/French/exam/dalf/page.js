@@ -13,7 +13,6 @@ import ExamHelp from "../../../../../../Shared/ReusableExamPage/Exam-Help";
 import AboutDelf from "../../../../../../Shared/ReusableExamPage/About-Delf";
 import dalf from "../../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
 
-
 //components
 import Banner from "../../../../../../Shared/ReusableExamPage/Banner";
 import FaqsExam from "../../../../../../Shared/ReusableExamPage/FaqsExam";
@@ -208,23 +207,27 @@ const page = () => {
 
   return (
     <div>
-    <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[112px]">
-      
-      <Banner BannerData={TopBarData} />       
-            </div>
+      <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[112px]">
+        <Banner BannerData={TopBarData} />
+      </div>
       {/* <TopBar data={TopBarData} /> */}
       <AboutDelf data={aboutExam} />
       <ExamHelp data={examHelpData} />
-      <UpcomingBatches language={"French"}/>
+      <div className="-mt-[100px] -mb-[50px] lg:-mt-[50px] lg:-mb-[90px]">
+        <UpcomingBatches language={"French"} />
+      </div>
+
       <StudentsTestomony data={StudentTestimonialsData} />
-     
-      <FaqsExam FaqsData={FaqsData} />
+
+      <div className="mb-9">
+        <FaqsExam FaqsData={FaqsData} />
+      </div>
       {/* <Faqs data={FaqsData} /> */}
       {/* <Say say={say} /> */}
       {/* <div className="mb-10">
       <LanguageLessons LanguageLesson={lessonData} />
-      </div> */} 
-      <div className="mt-9"></div> 
+      </div> */}
+
       {/* //added this because of commenting the above sections */}
       <SubscribeToOur />
       <PaymentBar />

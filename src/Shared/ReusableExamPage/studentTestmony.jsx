@@ -17,9 +17,9 @@ const StudentsTestomony = (data) => {
   const navigationNextRef = React.useRef(null);
 
   return (
-    <div className="py-[112px] bg-[#F6F3F3]">
+    <div className="py-[40px] md:py-[60px] lg:py-[112px] bg-[#F6F3F3]">
       <div className="min-h-[518px] max-w-[1700px]  mx-auto flex justify-center flex-col items-center">
-        <h1 className="text-stone-900 text-2xl mb-[48px] font-bold">
+        <h1 className="text-stone-900 text-[24px]/[29px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[80px] mb-[48px] font-bold">
           {data.data.title}
         </h1>
         <div className="mx-20 ">
@@ -88,7 +88,7 @@ const StudentsTestomony = (data) => {
         </div>
 
         {/* swiper buttons */}
-        <div className="mt-[48px] flex gap-x-[16px]">
+        <div className="mt-[48px] scale-75 lg:scale-100 flex gap-x-[16px]">
           <button
             ref={navigationPrevRef}
             className="w-16 h-[58px] px-5 py-4 rounded-lg border-2 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"
@@ -98,6 +98,7 @@ const StudentsTestomony = (data) => {
           <button
             ref={navigationNextRef}
             className="w-16 h-[58px] px-5 py-4 rounded-lg border-2 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"
+
           >
             <FaArrowRight className="" />
           </button>

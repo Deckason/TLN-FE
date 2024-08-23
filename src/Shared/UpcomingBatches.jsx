@@ -152,34 +152,34 @@ const UpcomingBatches = ({ language }) => {
         </h1>
         <section
           id="upComingCourseMonths"
-          className="flex items-center justify-center flex-wrap gap-[16px]  p-[8px] w-fit mx-auto rounded-lg shadow-xl shadow-neutral-color/5 mb-[32px]"
+          className="mx-4 flex items-center justify-center flex-wrap gap-[8px] lg:gap-[16px]  p-[8px] w-fit  rounded-lg shadow-examShadowDarker shadow-neutral-color/5 mb-[32px]"
         >
           <button
             disabled={!month1Data}
             onClick={() => setMonthNum(1)}
             className={`${
               monthNum === 1 ? "upcomingCourseActive" : "upcomingCourseDeActive"
-            }`}
+            } text-[16px]/[19px] xl:text-[20px]/[24px] w-[94px] xl:w-[121px] px-4 py-2 font-bold`}
           >
-            {monthNames[(new Date().getMonth() + 1) % 12]}
+            {monthNames[(new Date().getMonth()) % 12]}
           </button>
           <button
             disabled={!month1Data}
             onClick={() => setMonthNum(2)}
             className={`${
               monthNum === 2 ? "upcomingCourseActive" : "upcomingCourseDeActive"
-            }`}
+            } text-[16px]/[19px] xl:text-[20px]/[24px] w-[94px] xl:w-[121px] px-4 py-2 font-bold`}
           >
-            {monthNames[(new Date().getMonth() + 2) % 12]}
+            {monthNames[(new Date().getMonth() + 1) % 12]}
           </button>
           <button
             disabled={!month1Data}
             onClick={() => setMonthNum(3)}
             className={`${
               monthNum === 3 ? "upcomingCourseActive" : "upcomingCourseDeActive"
-            }`}
+            } text-[16px]/[19px] xl:text-[20px]/[24px] w-[94px] xl:w-[121px] px-4 py-2 font-bold`}
           >
-            {monthNames[(new Date().getMonth() + 3) % 12]}
+            {monthNames[(new Date().getMonth() + 2) % 12]}
           </button>
         </section>
         <div
@@ -414,11 +414,11 @@ const UpcomingBatches = ({ language }) => {
 
         <button
           onClick={handleLoadMore}
-          className="hidden w-[183px] h-[58px] px-8 py-3.5 text-[#1F9F90] hover:text-white border-[#1F9F90] hover:bg-[#1F9F90] border rounded-lg justify-center items-center gap-2.5 xl:inline-flex text-center text-nowrap text-2xl font-medium "
+          className="mt-[30px] hidden w-[183px] h-[58px] px-8 py-3.5 text-[#1F9F90] hover:text-white border-[#1F9F90] hover:bg-[#1F9F90] border rounded-lg justify-center items-center gap-2.5 xl:inline-flex text-center text-nowrap text-2xl font-medium "
         >
           Load more
         </button>
-      </div>{" "}
+      </div>
     </>
   );
 };
