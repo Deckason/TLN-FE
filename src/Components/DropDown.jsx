@@ -25,7 +25,7 @@ const Dropdown = (NavData) => {
   }, []);
 
   return (
-    <div className="min-h-screen flex z-50 items-center justify-center mx-2">
+    <div className="flex z-40 items-center justify-center mx-2">
       <div className="relative group" onClick={handleClick} ref={dropdownRef}>
         <button className="inline-flex outline-none items-center justify-center w-full  py-2   2xl:text-[16px] font-medium xl:text-[14px] focus:text-primary-color hover:text-primary-color  text-[10px] bg-white rounded-md   ">
           <span className="mr-2">{NavData?.data?.title}</span>

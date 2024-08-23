@@ -6,7 +6,7 @@ import studyAbroad from "../../../../Assets/Spanish/SpanishForStudyAbroad.png";
 import school from "../../../../Assets/FrenchPage/FrenchMain/school.png";
 import college from "../../../../Assets/FrenchPage/FrenchMain/college.png";
 import corporate from "../../../../Assets/FrenchPage/FrenchMain/corporate.png";
-import dalf from "../../../../Assets/Homepage/ProficiencyExam/logo6.png";
+import ielts from "../../../../Assets/English/ielts.png";
 import telf from "../../../../Assets/English/toefl.webp";
 import { useGetFAQsQuery } from "../../../../store/apiSlice";
 import { useEffect, useState } from "react";
@@ -16,7 +16,7 @@ const EnglishPage = () => {
       title: "Online English Classes",
       description:
         "Step into the world of our online English classes! Step into the world of our online English classes! Whether you're starting from scratch or polishing your already impressive English skills, our tailored and interactive courses are crafted just for you. Bid farewell to traditional classroom setups and say hello to personalised instruction, flexible scheduling, and immersive learning experiences with our top-notch online English courses. With our team of expert trainers by your side, you'll seamlessly navigate the intricacies of English grammar, enhance your vocabulary, participate in dynamic conversations, and immerse yourself in the diverse culture of the English-speaking world. Prepare to dive headfirst into the elegance of the English language and experience the thrill of mastering English at your own pace with our 1:1 or Group Online English Classes.",
-        BannerImage:"/mainLanguagePage/EnglishBanner.png"
+      BannerImage: "/mainLanguagePage/EnglishBanner.png",
     },
     OnlineLanguageClass: {
       Language: "English",
@@ -75,7 +75,7 @@ const EnglishPage = () => {
       CardData: [
         {
           title: "IELTS preparation classes",
-          img: dalf,
+          img: ielts,
           description:
             "Take your English skills to new heights with our IELTS preparation courses. Designed to help you excel in all four components - reading, writing, listening, and speaking - our expert instructors will guide you towards success in this globally recognized English proficiency exam.",
           link: "/Languages/English/exam/ielts",
@@ -224,14 +224,13 @@ const EnglishPage = () => {
       {
         title: "Popular classes we offer",
         list: [
-         "Online French Classes",
-         "Online Spanish Classes",
-         "Online German Classes",
-         "Online Mandarin Classes",
-         "Online Japanese Classes",
-         "Online Korean Classes",
-         "Online English Classes",
-
+          "Online French Classes",
+          "Online Spanish Classes",
+          "Online German Classes",
+          "Online Mandarin Classes",
+          "Online Japanese Classes",
+          "Online Korean Classes",
+          "Online English Classes",
         ],
       },
       {
@@ -270,27 +269,33 @@ const EnglishPage = () => {
     ],
   };
   const { data } = useGetFAQsQuery("");
-  
+
   const [content, setContent] = useState(EnglishLanguageData);
   useEffect(() => {
-    if(!data) return;
+    if (!data) return;
     const faqData = data.filter(
       (item) => item.language === "English" && item.category === "General"
     );
     const everyData = data.filter(
-      (item) => item.language === "English" && item.category === "Everything you need to know"
-    )
-    setContent((prev) => ({...prev, FaqsData: faqData , EveryThingYouNeedToKnowAbout: {
+      (item) =>
+        item.language === "English" &&
+        item.category === "Everything you need to know"
+    );
+    setContent((prev) => ({
+      ...prev,
+      FaqsData: faqData,
+      EveryThingYouNeedToKnowAbout: {
         ...prev.EveryThingYouNeedToKnowAbout, // Spread the existing properties
-        CardData: everyData, // Update CardData 
-      } }));
-}, [data]);
+        CardData: everyData, // Update CardData
+      },
+    }));
+  }, [data]);
 
-return (
-  <div>
-    <SharedMainLanuagePage Data={content} language={"English"}/>
-  </div>
-);
+  return (
+    <div>
+      <SharedMainLanuagePage Data={content} language={"English"} />
+    </div>
+  );
 };
 
 export default EnglishPage;

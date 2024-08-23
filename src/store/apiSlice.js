@@ -98,15 +98,15 @@ export const api = createApi({
     // -----------------------------batches queries-------------------------------
 
     getNextMonth1Batches: builder.query({
-      query: () => `/api/batch/get/upcoming?month=${currMonth + 1}`,
+      query: () => `/api/batch/get/upcoming?month=${currMonth}`,
       providesTags: ["Batches1"],
     }),
     getNextMonth2Batches: builder.query({
-      query: () => `/api/batch/get/upcoming?month=${(currMonth + 2) % 12}`,
+      query: () => `/api/batch/get/upcoming?month=${(currMonth + 1) % 12}`,
       providesTags: ["Batches2"],
     }),
     getNextMonth3Batches: builder.query({
-      query: () => `/api/batch/get/upcoming?month=${(currMonth + 3) % 12}`,
+      query: () => `/api/batch/get/upcoming?month=${(currMonth + 2) % 12}`,
       providesTags: ["Batches3"],
     }),
   }),

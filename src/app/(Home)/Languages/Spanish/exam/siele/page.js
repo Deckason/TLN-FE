@@ -208,16 +208,21 @@ const page = () => {
       {/* <TopBar data={TopBarData} /> */}
       <AboutDelf data={aboutExam} />
       <ExamHelp data={examHelpData} />
-      <UpcomingBatches language={"Spanish"} />
+      <div className="-mt-[100px] -mb-[50px] lg:-mt-[50px] lg:-mb-[90px]">
+        <UpcomingBatches language={"Spanish"} />
+      </div>
+
       <StudentsTestomony data={StudentTestimonialsData} />
 
-      <FaqsExam FaqsData={FaqsData} />
+      <div className="mb-9">
+        <FaqsExam FaqsData={FaqsData} />
+      </div>
       {/* <Faqs data={FaqsData} /> */}
       {/* <Say say={say} /> */}
       {/* <div className="mb-10">
       <LanguageLessons LanguageLesson={lessonData} />
       </div> */}
-      <div className="mt-9"></div>
+
       {/* //added this because of commenting the above sections */}
       <SubscribeToOur />
       <PaymentBar />

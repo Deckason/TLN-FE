@@ -14,10 +14,10 @@ const FaqsLanguage = ({ FaqsData }) => {
   const [open, setOpen] = useState(false);
   const [id, setId] = useState(0);
   return (
-    <div className="2xl:w-full bg-[#F6F3F3]  px-4 lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col max-md:py-0">
-      <div className=" flex-col justify-center w-full mx-auto items-center  gap-12 flex 2xl:max-w-[1680px]">
+    <div className="2xl:w-full bg-[#F6F3F3] pb-[40px] lg:pb-[80px] px-4 lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col">
+      <div className=" flex-col justify-center w-full mx-auto items-center gap-4 lg:gap-12 flex 2xl:max-w-[1680px]">
         <div className="flex-col justify-start items-center gap-y-12 w-full flex">
-          <div className="text-black text-[60px] font-bold max-lg:text-2xl">
+          <div className="text-black text-[24px]/[29px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[80px] font-bold ">
             FAQs
           </div>
           <div className="justify-start  h-full items-center  max-xl:gap-4 order-2 w-full grid lg:grid-cols-2 max-xl:flex-col-reverse">
@@ -59,9 +59,9 @@ const FaqsLanguage = ({ FaqsData }) => {
                 setSplicing(true);
               }
             }}
-            className="h-[58px] px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex mb-[20px]"
+            className="lg:h-[58px] py-[10px] px-[16px] lg:py-[14px] lg:px-[32px]  rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex mb-[20px]"
           >
-            <div className="text-center text-teal-600 text-2xl font-medium ">
+            <div className="text-center text-teal-600 text-[14px]/[17px] lg:text-[24px]/[29px] font-medium ">
               {!splicing ? "Read less FAQs" : "Read all FAQs"}
             </div>
           </button>
