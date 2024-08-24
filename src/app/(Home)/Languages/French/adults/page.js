@@ -2,6 +2,7 @@ import step1 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 477.pn
 import step2 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
 import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
+import bannerImg from "../../../../../Assets/FrenchPage/FrenchAdult/Adult French.jpg";
 
 import dalf from "../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
 import delf from "../../../../../Assets/FrenchPage/FrenchMain/delf.png";
@@ -14,6 +15,7 @@ const page = () => {
       Language: "French",
       Description:
         "Learning a new language has no age limit! If you're ready to dive into the world of French, you're in luck! Our online French classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of French grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking French from day one! Our top-notch French trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online French classes for adults.",
+      BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {
@@ -98,6 +100,7 @@ const page = () => {
             "Advance your French skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
           price: "On Request",
             link: "",
+            enquire:true
         },
       ],
     },

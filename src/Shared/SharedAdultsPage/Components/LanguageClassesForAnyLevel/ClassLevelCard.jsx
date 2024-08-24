@@ -18,7 +18,7 @@ console.log(data)
 
           <div className="self-stretch text-center text-teal-600 lg:text-xl text-2xl 2xl:text-2xl font-medium">
           {data?.price}
-          {data.price == "On Request" ? "" : "(inclusive of GST)"}
+          {data.price == "On Request" ? "" : ""}
           </div>
           
         </div>
@@ -34,7 +34,7 @@ console.log(data)
               className="self-stretch shadow-md hover:shadow-xl transition duration-300 h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
             >
               <div className="text-center text-teal-600 text-xl font-normal leading-7">
-                Book a class
+               {data?.enquire ? "Enquire Now": "Book a class"}
                  
               </div>
               <div className="w-6 h-6 relative">

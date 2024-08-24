@@ -11,14 +11,14 @@ const HowItWorksCard = ({ datas }) => {
         />
       </div>
       <div className="flex flex-col shadow-md hover:shadow-xl transition duration-300 pb-9 mt-4 rounded-lg border border-teal-600 flex-grow lg:min-h-[298px] xl:min-h-[288px] border-solid max-md:max-w-full">
-        <div className="justify-center py-4 text-3xl bg-teal-600 rounded-t-lg text-neutral-50 max-md:max-w-full">
+        <div className="justify-center py-4 text-[16px] xl:text-[32px] bg-teal-600 rounded-t-lg text-neutral-50 max-md:max-w-full">
           Step {datas?.id}
         </div>
         <div className="flex flex-col px-4 mt-8 max-md:max-w-full">
-          <div className="text-2xl font-medium text-neutral-800 max-md:max-w-full">
+          <div className="text-[30px] xl:text-[24px] font-medium text-neutral-800 max-md:max-w-full">
             {datas?.title}
           </div>
-          <div className="mt-2 text-xl leading-7 text-neutral-500 max-md:max-w-full">
+          <div className="mt-2 text-[16px] xl:text-[20px] leading-7 text-neutral-400 max-md:max-w-full">
             {datas?.description}
           </div>
         </div>

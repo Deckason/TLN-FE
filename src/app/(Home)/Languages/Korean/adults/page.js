@@ -2,8 +2,9 @@ import step1 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 477.pn
 import step2 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
 import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
+import bannerImg from '../../../../../Assets/KoreanPage/KoreanAdult/Adult Korea.jpg';
 
-import dalf from "../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
+import topik from '../../../../../Assets/KoreanPage/Topik.svg'
 
 import React from "react";
 
@@ -15,6 +16,7 @@ const page = () => {
       Language: "Korean",
       Description:
         "Learning a new language has no age limit! If you're ready to dive into the world of Korean, you're in luck! Our online Korean classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of Korean grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking Korean from day one! Our top-notch Korean trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online Korean classes for adults.",
+      BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {
@@ -51,7 +53,7 @@ const page = () => {
       CardData: [
         {
           title: "TOPIK preparation classes",
-          img: dalf,
+          img: topik,
           description:
             "Get ready for the TOPIK proficiency exam with our expert courses. Our comprehensive curriculum covers all aspects of the exam, helping you excel in vocabulary, grammar, listening, and speaking. Join us and achieve your Korean language goals!",
           link: "",
@@ -63,28 +65,29 @@ const page = () => {
 
       CardData: [
         {
-          title: "A1-A2",
+          title: "TOPIK I-Level 1 & 2",
           level: "Beginner Classes",
           description:
-            "Start your Korean language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
-            price:"₹25,902",
+            "Begin your Korean language journey with our beginner courses, specially designed to introduce you to the basics of Korean grammar, vocabulary, and pronunciation. Perfect for those with little to no prior experience in Korean",
+            price:"₹21,582",
             link: "https://rzp.io/l/yPVC1NXHZl",
         },
         {
-          title: "B1-B2",
+          title: "TOPIK II-Level 3 & 4",
           level: "Intermediate Classes",
           description:
-            "Elevate your Korean proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-            price:"₹66,924",
+            "Our intermediate courses will help you build upon your existing knowledge and enhance your fluency. Dive deeper into complex grammar structures, expand your vocabulary, and engage in meaningful conversations to strengthen your Korean proficiency.",
+            price:"₹35,982",
             link: "https://rzp.io/l/xuDra0p0",
         },
         {
-          title: "C1-C2",
+          title: " TOPIK II- Level 5 & 6",
           level: "Advanced Classes",
           description:
-            "Advance your Korean skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+            "Elevate your Korean proficiency with our advanced courses. Tailored for learners with a solid grasp of the language, these courses refine nuanced language skills, tackle advanced grammar, and foster professional-level communication. Perfect for those aiming for fluency in academic or professional contexts.",
           price:"On Request",
           link: "",
+          enquire:true
         },
       ],
     },

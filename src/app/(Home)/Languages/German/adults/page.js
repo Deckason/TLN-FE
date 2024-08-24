@@ -2,8 +2,9 @@ import step1 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 477.pn
 import step2 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 478.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
 import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
+import bannerImg from '../../../../../Assets/GermanPage/GermanAdult/Adult German.jpg';
 
-import dalf from "../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
+import goethe from '../../../../../Assets/GermanPage/Gothe.svg'
 
 import React from "react";
 
@@ -15,6 +16,7 @@ const page = () => {
       Language: "German",
       Description:
         "Learning a new language has no age limit! If you're ready to dive into the world of German, you're in luck! Our online German classes and courses for adults offer an engaging and hassle-free way to learn one of the most popular languages in the world. Whether you're just starting out or already have a foundation, our expert instructors will be your guides through the maze of German grammar, vocabulary, and culture. With classes tailored to your schedule, you'll be speaking German from day one! Our top-notch German trainers are here to provide personalised support and lead you through an enriching learning experience, through 1:1 or group Online German classes for adults.",
+      BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {
@@ -51,7 +53,7 @@ const page = () => {
       CardData: [
         {
           title: "GOETHE preparation classes",
-          img: dalf,
+          img: goethe,
           description:
             "The GOETHE exam assesses German language proficiency globally. Success demonstrates effective communication in German for various purposes. Our tailored courses help you master skills and confidently tackle each section.",
           link: "",
@@ -67,7 +69,7 @@ const page = () => {
           level: "Beginner Classes",
           description:
             "Start your German language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
-            price: "₹25,902",
+            price: "₹23,742",
             link: "https://rzp.io/l/N8Iyr4b",
         },
         {
@@ -75,16 +77,17 @@ const page = () => {
           level: "Intermediate Classes",
           description:
             "Elevate your German proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-            price: "₹66,924",
+            price: "₹32,382",
             link: "https://rzp.io/l/fmI3ZOs",
         },
         {
           title: "C1-C2",
           level: "Advanced Classes",
           description:
-            "Advance your German skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+            "Take your German skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in German.",
           price: "On Request",
             link: "",
+            enquire:true
         },
       ],
     },
