@@ -22,17 +22,17 @@ const SharedAdultsPage = ({ Data, language }) => {
 
   // console.log(bannerInfo);
   return (
-    <div className="">
-      <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[112px]">
+    <div className="px-[16px] 2xl:px-[88px] 4xl:[120px]">
+      <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[12px] xl:mb-[31px] 4xl:mb-[112px]">
         <Banner BannerData={Data?.BannerData} />
         {/* <WhyKidsShouldLearnEnglish
           WhyKidsShouldLearnEnglish={Data?.WhyKidsShouldLearn}
         /> */}
       </div>
       <HowItWorks HowItWorksCardData={Data?.HowItWorksCardData} />
-      <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
+      <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[2px] xl:mb-[31px] 4xl:mb-[112px]">
         <WhyShould />
-        <div className="mt-[70px] md:mt-[112px]">
+        <div className="">
           <UpcomingBatches language={language} />
         </div>
 
@@ -42,7 +42,9 @@ const SharedAdultsPage = ({ Data, language }) => {
           ClassesForAnyLevel={Data?.ClassesForAnyLevel}
         />
       </div>
-      <StudentsTestomony />
+      <div>
+        <StudentsTestomony />
+      </div>
       <FaqsLanguage FaqsData={faqs} />
       {/* <EverythingYouNeedToKnowAboutLanguage
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}

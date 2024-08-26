@@ -13,7 +13,7 @@ const LanguageClassesForAnyLevel = ({ ClassesForAnyLevel }) => {
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className=" my-[112px] w-full mx-auto">
+    <div className="mt-[40px] xl:mt-[112px]  w-full mx-auto">
       <div className="text-black max-md:text-2xl lg:text-4xl max-lg:text-3xl text-[60px] mb-12 text-center font-bold ">
         {ClassesForAnyLevel?.Language} Classes for Any Level
       </div>
