@@ -22,7 +22,7 @@ const SharedAdultsPage = ({ Data, language }) => {
 
   // console.log(bannerInfo);
   return (
-    <div className="px-[16px] 2xl:px-[88px] 4xl:[120px]">
+    <div className="">
       <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[12px] xl:mb-[31px] 4xl:mb-[112px]">
         <Banner BannerData={Data?.BannerData} />
         {/* <WhyKidsShouldLearnEnglish
