@@ -4,6 +4,7 @@ import step1 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step1.png
 import step4 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
 import step2 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchMain/step3.png";
+import bannerImg from '../../../../../Assets/Mandarin/MandarianStudyAbroad/Study Abroad China.jpg'
 
 import SharedStudyAbroad from "../../../../../Shared/SharedStudyAbroad";
 import dalf from "../../../../../Assets/Mandarin/HSK.jpg";
@@ -13,6 +14,7 @@ const page = () => {
       Language: "Mandarin",
       Description:
         "Mandarin proficiency isn't just for admission—it's your key to maximising your study abroad adventure! With fluency in Mandarin, you’ll seamlessly blend into your surroundings like a local, savouring the cultural flavours and enhancing every moment of your study abroad experience. The benefits don’t just end there. Being savvy in Mandarin will open the floodgates to exciting internships during your studies and lucrative job opportunities post-graduation or masters. Also, don't overlook the visa and PR perks—mastering Mandarin might just fast-track your way to official residency status! Gear up for the ultimate academic adventure with Mandarin as your ally! Start today!",
+        BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {
@@ -63,24 +65,27 @@ const page = () => {
           title: "HSK1-HSK2",
           level: "Beginner Classes ",
           description:
-            "Begin your Mandarin language journey with our beginner courses, specially designed to introduce you to the basics of Mandarin grammar, vocabulary, and pronunciation. Perfect for those with little to no prior experience in Mandarin. ",
-          link: "/Languages/Mandarin/LevelPage/BeginnerLevel(A1-A2)",
+            "Begin your Mandarin language journey with our beginner courses, specially designed to introduce you to the basics of Mandarin grammar, vocabulary, and pronunciation. Perfect for those with little to no prior experience in Mandarin.",
+            price:"₹30,582",
+            link: "https://rzp.io/l/3sIBt0a0tq",
         },
 
         {
           title: "HSK3-HSK4          ",
           level: "Intermediate Classes          ",
           description:
-            "Our intermediate courses will help you build upon your existing knowledge and enhance your fluency. Dive deeper into complex grammar structures, expand your vocabulary, and engage in meaningful conversations to strengthen your Mandarin proficiency.            ",
-          link: "/Languages/Mandarin/LevelPage/IntermediateLevel(B1-B2)",
+            "Our intermediate courses will help you build upon your existing knowledge and enhance your fluency. Dive deeper into complex grammar structures, expand your vocabulary, and engage in meaningful conversations to strengthen your Mandarin proficiency.",
+            price:"₹43,182",
+            link: "https://rzp.io/l/HqGnWzmPQH",
         },
 
         {
           title: "HSK5-HSK6          ",
           level: "Advanced Classes          ",
           description:
-            "Elevate your Mandarin proficiency with our advanced courses. Tailored for learners with a solid grasp of the language, these courses refine nuanced language skills, tackle advanced grammar, and foster professional-level communication. Perfect for those aiming for fluency in academic or professional contexts.            ",
-          link: "/Languages/Mandarin/LevelPage/AdvancedLevel(C1-C2)",
+            "Elevate your Mandarin proficiency with our advanced courses. Tailored for learners with a solid grasp of the language, these courses refine nuanced language skills, tackle advanced grammar, and foster professional-level communication. Perfect for those aiming for fluency in academic or professional contexts.",
+            price:"On Request",
+            link: "",
         },
       ],
     },

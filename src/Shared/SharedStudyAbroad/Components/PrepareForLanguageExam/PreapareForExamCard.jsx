@@ -29,7 +29,7 @@ const PreapareForExamCard = ({ data }) => {
               className="shadow-md hover:shadow-xl transition duration-300 self-stretch h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
             >
               <div className="text-center text-teal-600 text-xl font-normal  leading-7">
-                Learn more
+                Find a class
               </div>
               <div className="w-6 h-6 relative">
                 <Image alt="arrowLeft" src={arrowLeft}></Image>

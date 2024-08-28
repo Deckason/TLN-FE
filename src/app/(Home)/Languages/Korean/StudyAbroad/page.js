@@ -3,6 +3,7 @@ import step1 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step1.png
 import step4 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
 import step2 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchMain/step3.png";
+import bannerImg from '../../../../../Assets/KoreanPage/KoreanStudyAbroad/Study Abroad Korea.jpg'
 
 import dalf from "../../../../../Assets/KoreanPage/Topik.svg";
 
@@ -14,6 +15,7 @@ const page = () => {
       Language: "Korean",
       Description:
         "Korean proficiency isn't just for admission—it's your key to maximising your study abroad adventure! With fluency in Korean, you’ll seamlessly blend into your surroundings like a local, savouring the cultural flavours and enhancing every moment of your study abroad experience. The benefits don’t just end there. Being savvy in Korean will open the floodgates to exciting internships during your studies and lucrative job opportunities post-graduation or masters. Also, don't overlook the visa and PR perks—mastering Korean might just fast-track your way to official residency status! Gear up for the ultimate academic adventure with Korean as your ally! Start today!",
+        BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {
@@ -62,25 +64,28 @@ const page = () => {
 
       CardData: [
         {
-          title: "A1 & A2 ₹11,990-₹14,390",
-          title2: "Beginner Classes (A1 & A2)",
+          title: "TOPIK I-Level 1 & 2",
+          level: "Beginner Classes",
           description:
-            "Start your Spanish language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with expert instructors' guidance.",
-          link: "", // You can insert the link here
+            "Begin your Korean language journey with our beginner courses, specially designed to introduce you to the basics of Korean grammar, vocabulary, and pronunciation. Perfect for those with little to no prior experience in Korean",
+          price:"₹21,582",
+          link: "https://rzp.io/l/yPVC1NXHZl",
         },
         {
-          title: "B1 & B2 ₹16,790-₹19,190",
-          title2: "Intermediate Classes (B1 & B2)",
+          title: "TOPIK II-Level 3 & 4",
+          level: "Intermediate Classes",
           description:
-            "Elevate your Spanish proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-          link: "", // You can insert the link here
+            "Our intermediate courses will help you build upon your existing knowledge and enhance your fluency. Dive deeper into complex grammar structures, expand your vocabulary, and engage in meaningful conversations to strengthen your Korean proficiency.",
+          price:"₹35,982",
+          link: "https://rzp.io/l/xuDra0p0",
         },
         {
-          title: "C1 & C2 On Request",
-          title2: "Advanced Classes (C1 & C2)",
+          title: "TOPIK II- Level 5 & 6",
+          level: "Advanced Classes",
           description:
-            "Take your Spanish skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in Spanish.",
-          link: "", // You can insert the link here
+            "Elevate your Korean proficiency with our advanced courses. Tailored for learners with a solid grasp of the language, these courses refine nuanced language skills, tackle advanced grammar, and foster professional-level communication. Perfect for those aiming for fluency in academic or professional contexts.",
+          link: "",
+          price:"On Request"
         },
       ],
     },

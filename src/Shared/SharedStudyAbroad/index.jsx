@@ -32,7 +32,7 @@ const SharedStudyAbroad = ({ Data, language }) => {
       <HowItWorks HowItWorksCardData={Data?.HowItWorksCardData} />
       <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
         <WhyShould />
-        <div className="mt-[70px] md:mt-[112px]">
+        <div className="">
           <UpcomingBatches language={language}/>
         </div>
         <LanguageClassesForAnyLevel
@@ -45,10 +45,10 @@ const SharedStudyAbroad = ({ Data, language }) => {
       {/* <EverythingYouNeedToKnowAboutLanguage
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
       /> */}
-      <SayBonjur SayBonjur={Data?.SayBonjur} />
-      <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
+      {/* <SayBonjur SayBonjur={Data?.SayBonjur} /> */}
+      {/* <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
         <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
-      </div>
+      </div> */}
       <SubscribeToOur />
 
       <PaymentBar />

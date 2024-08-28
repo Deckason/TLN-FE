@@ -8,6 +8,8 @@ import step4 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step2.png
 import step2 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchMain/step3.png";
 
+import StudyAbroadImage from '../../../../../Assets/FrenchPage/FrenchStudyAbroad/Study Abroad French.jpg'
+
 import SharedStudyAbroad from "../../../../../Shared/SharedStudyAbroad";
 
 const page = () => {
@@ -16,6 +18,7 @@ const page = () => {
       Language: "French",
       Description:
         "French proficiency isn't just for admission—it's your key to maximising your study abroad adventure! With fluency in French, you’ll seamlessly blend into your surroundings like a local, savouring the cultural flavours and enhancing every moment of your study abroad experience. The benefits don’t just end there. Being savvy in French will open the floodgates to exciting internships during your studies and lucrative job opportunities post-graduation or masters. Also, don't overlook the visa and PR perks—mastering French might just fast-track your way to official residency status! Gear up for the ultimate academic adventure with French as your ally! Start today!",
+      BannerImage:StudyAbroadImage
     },
     HowItWorksCardData: [
       {
@@ -78,25 +81,28 @@ const page = () => {
 
       CardData: [
         {
-          title: "A1 & A2 ₹11,990-₹14,390",
-          title2: "Beginner Classes (A1 & A2)",
+          title: "A1 & A2",
+          level: "Beginner Classes",
+          price:"₹25,902",
           description:
-            "Start your Spanish language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with expert instructors' guidance.",
-          link: "", // You can insert the link here
+            "Start your French language journey with our engaging online classes designed for beginners . Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.",
+          link: "https://rzp.io/l/uVQyGBDbvt", 
         },
         {
-          title: "B1 & B2 ₹16,790-₹19,190",
-          title2: "Intermediate Classes (B1 & B2)",
+          title: "B1 & B2",
+          level: "Intermediate Classes",
+          price:"₹66,924",
           description:
-            "Elevate your Spanish proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-          link: "", // You can insert the link here
+            "Elevate your French proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
+          link: "https://rzp.io/l/ZFRkLH6P",
         },
         {
-          title: "C1 & C2 On Request",
-          title2: "Advanced Classes (C1 & C2)",
+          title: "C1 & C2",
+          level: "Advanced Classes",
+          price:"On Request",
           description:
-            "Take your Spanish skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in Spanish.",
-          link: "", // You can insert the link here
+            "Advance your French skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in French.",
+          link: "",
         },
       ],
     },
