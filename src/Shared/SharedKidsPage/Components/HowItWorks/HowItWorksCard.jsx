@@ -1,7 +1,7 @@
 import Image from "next/image";
 const HowItWorksCard = ({ datas }) => {
   return (
-    <div className="flex flex-col shadow-md transition duration-300 hover:shadow-xl bg-white p-6 text-center rounded-2xl min-h-full h-[548px] mx-2 md:mx-0 md:max-w-sm max-md:w-[345px] max-md:border max-md:border-teal-600 justify-center max-xl:w-[408px] xl:max-w-[388px]">
+    <div className="flex flex-col shadow-md transition duration-300 hover:shadow-xl bg-white p-6 text-center  rounded-2xl min-h-full h-[548px] mx-2 md:mx-0 md:max-w-sm max-md:w-[355px] justify-center max-xl:w-[408px] xl:max-w-[388px]">
       
       <div className="order-3 md:order-1 h-[196px]">
         <Image
@@ -20,10 +20,10 @@ const HowItWorksCard = ({ datas }) => {
       </div>
       
       <div className="order-2 md:order-3 flex flex-col px-4 mt-8 max-md:text-left max-md:pl-2 max-md:pr-2 max-md:ml-2 max-md:mr-2 md:border md:border-teal-600 md:rounded-lg md:rounded-t-none md:rounded-b-lg md:mt-0">
-        <div className="text-3xl font-bold text-neutral-800">
+        <div className="text-[30px] xl:text-[24px] font-medium text-neutral-800 max-md:max-w-full">
           {datas?.title}
         </div>
-        <div className="mt-2 text-xl leading-7 text-neutral-500">
+        <div className="mt-2 text-[16px] xl:text-[20px] leading-7 text-neutral-400 max-md:max-w-full">
           {datas?.description}
         </div>
       </div>

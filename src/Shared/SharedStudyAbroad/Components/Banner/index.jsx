@@ -22,7 +22,7 @@ const Banner = ({ BannerData }) => {
           <div className="grid  relative lg:grid-cols-2 gap-5 max-lg:flex-col max-md:gap-0">
             <div className="flex flex-col  max-w-[700px] max-md:ml-0 max-lg:w-full">
               <div className="flex z-10 flex-col px-5 text-black max-md:max-w-full">
-                <div className="text-5xl font-bold max-md:max-w-full max-md:text-4xl">
+                <div className="text-5xl font-bold max-md:max-w-full max-md:text-4xl leading-normal">
                   Online {BannerData?.Language} Classes for Study Abroad!
                 </div>
                 <div className="mt-2 max-sm:text-sm text-xl leading-7 lg:text-base 2xl:text-xl lg:w-[450px] xl:w-[500px] 2xl:w-full max-md:max-w-full relative mb-[32px]">
@@ -37,23 +37,23 @@ const Banner = ({ BannerData }) => {
                       </span>
                     </div>
                   </div>{" "}
-                  <div className="max-sm:absoluteflex justify-star max-2xl:-ml-8 max-2xl:-mt-6 max-md:-ml-8 ">
+                  <div className="flex  justify-start">
                     <BookAFreeDemoButton />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="  mx-auto max-md:mb-[15px] max-lg:mb-[16px] lg:-mb-0 lg:block max-xl:-right-3 px-4 lg:absolute  right-5 -top-8">
+            <div className="  max-md:mb-[15px] max-lg:mb-[16px] lg:-mb-0 lg:block max-xl:-right-3 px-4 lg:absolute  right-5 -top-8">
               <Image
                 alt="homePageBannerGirl"
-                className="w-[500px]  h-full object-contain "
-                src={BannerImage}
+                className="w-[333px] h-[271px] xl:w-[538px] xl:h-[438px]  object-contain "
+                src={BannerData.BannerImage ?? BannerImage}
               ></Image>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full -my-10">
+      <div className="w-full mt-[53px] xl:mt-[-41px] 4xl:mt-[90px]">
         <States />
       </div>
     </div>

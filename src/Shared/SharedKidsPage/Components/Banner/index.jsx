@@ -38,7 +38,7 @@ const Banner = ({ BannerData }) => {
                       </span>
                     </div>
                   </div>
-                  <div className="max-sm:absoluteflex justify-star max-2xl:-ml-8 max-2xl:-mt-6 max-md:-ml-8">
+                  <div className="flex justify-start">
                     <BookAFreeDemoButton />
                   </div>
                 </div>

@@ -5,6 +5,7 @@ import step2 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step3.png
 import step3 from "../../../../../Assets/FrenchPage/FrenchMain/step3.png";
 import ielts from "../../../../../Assets/GermanPage/Gothe.svg";
 import SharedStudyAbroad from "../../../../../Shared/SharedStudyAbroad";
+import bannerImg from '../../../../../Assets/GermanPage/GermanStudyAbroad/Study Abroad German.jpg'
 
 const page = () => {
   const data = {
@@ -12,6 +13,7 @@ const page = () => {
       Language: "German",
       Description:
         "German proficiency isn't just for admission—it's your key to maximising your study abroad adventure! With fluency in German, you’ll seamlessly blend into your surroundings like a local, savouring the cultural flavours and enhancing every moment of your study abroad experience. The benefits don’t just end there. Being savvy in German will open the floodgates to exciting internships during your studies and lucrative job opportunities post-graduation or masters. Also, don't overlook the visa and PR perks—mastering German might just fast-track your way to official residency status! Gear up for the ultimate academic adventure with German as your ally! Start today!",
+        BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {
@@ -60,25 +62,29 @@ const page = () => {
 
       CardData: [
         {
-          title: "A1 & A2 ₹11,990-₹14,390",
-          title2: "Beginner Classes (A1 & A2)",
+          title: "A1 & A2",
+          level: "Beginner Classes",
           description:
-            "Start your Spanish language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with expert instructors' guidance.",
-          link: "", // You can insert the link here
+            "Start your German language journey with our engaging online classes designed for beginners.Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with expert instructors' guidance",
+          price: "₹23,742",
+          link: "https://rzp.io/l/N8Iyr4b",
         },
         {
-          title: "B1 & B2 ₹16,790-₹19,190",
-          title2: "Intermediate Classes (B1 & B2)",
+          title: "B1 & B2",
+          level: "Intermediate Classes",
           description:
-            "Elevate your Spanish proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
-          link: "", // You can insert the link here
+            "Elevate your German proficiency with our online intermediate classes. Refine pronunciation,expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.",
+          link: "", 
+          price: "₹32,382",
+          link: "https://rzp.io/l/fmI3ZOs",
         },
         {
-          title: "C1 & C2 On Request",
-          title2: "Advanced Classes (C1 & C2)",
+          title: "C1 & C2",
+          price:"On Request",
+          level: "Advanced Classes",
           description:
-            "Take your Spanish skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in Spanish.",
-          link: "", // You can insert the link here
+            "Take your German skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in German.",
+          link: "", 
         },
       ],
     },

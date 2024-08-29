@@ -4,6 +4,7 @@ import step1 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step1.png
 import step4 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
 import step2 from "../../../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
 import step3 from "../../../../../Assets/FrenchPage/FrenchMain/step3.png";
+import bannerImg from '../../../../../Assets/Spanish/SpanishStudyAbroad/Study Abroad Spanish.jpg'
 
 import SharedStudyAbroad from "../../../../../Shared/SharedStudyAbroad";
 import dalf from "../../../../../Assets/Spanish/DELE.png";
@@ -14,6 +15,7 @@ const page = () => {
       Language: "Spanish",
       Description:
         "Spanish proficiency isn't just for admission—it's your key to maximising your study abroad adventure! With fluency in Spanish, you’ll seamlessly blend into your surroundings like a local, savouring the cultural flavours and enhancing every moment of your study abroad experience. The benefits don’t just end there. Being savvy in Spanish will open the floodgates to exciting internships during your studies and lucrative job opportunities post-graduation or masters. Also, don't overlook the visa and PR perks—mastering Spanish might just fast-track your way to official residency status! Gear up for the ultimate academic adventure with Spanish as your ally! Start today!",
+        BannerImage:bannerImg
     },
     HowItWorksCardData: [
       {
@@ -72,7 +74,8 @@ const page = () => {
           level: "Beginner Classes          ",
           description:
             "Start your Spanish language journey with our engaging online classes designed for beginners. Learn fundamental grammar, vocabulary, and practical conversation skills at your own pace with our expert instructors' guidance.            ",
-          link: "/Languages/Spanish/LevelPage/BeginnerLevel(A1-A2)",
+          price:"₹28,782",
+          link: "https://rzp.io/l/A5VMWMYq",
         },
 
         {
@@ -80,15 +83,17 @@ const page = () => {
           level: "Intermediate Classes          ",
           description:
             "Elevate your Spanish proficiency with our online intermediate classes. Refine pronunciation, expand vocabulary, and master complex grammar structures to confidently engage in conversations and express yourself fluently.            ",
-          link: "/Languages/Spanish/LevelPage/IntermediateLevel(B1-B2)",
+          price:" ₹68,364",
+          link: "https://rzp.io/l/TUUuDIwI9E",
         },
 
         {
-          title: "C1-C2          ",
-          level: "Advanced Classes          ",
+          title: "C1-C2",
+          level: "Advanced Classes",
           description:
-            "Advance your Spanish skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in Spanish.            ",
-          link: "/Languages/Spanish/LevelPage/AdvancedLevel(C1-C2)",
+            "Advance your Spanish skills to the highest level with our online advanced classes. Enhance your conversational abilities, master complex grammar, and increase career prospects with fluent proficiency in Spanish.",
+          link: "",
+          price:"On Request"
         },
       ],
     },

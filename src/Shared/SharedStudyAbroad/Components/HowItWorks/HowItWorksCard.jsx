@@ -17,7 +17,7 @@ const HowItWorksCard = ({ datas }) => {
           <div className="text-2xl font-medium text-neutral-800 max-md:max-w-full">
             {datas?.title}
           </div>
-          <div className="mt-2 text-xl leading-7 text-neutral-500 max-md:max-w-full">
+          <div className="mt-2 text-[16px] xl:text-[20px] leading-7 text-neutral-400 max-md:max-w-full">
             {datas?.description}
           </div>
         </div>
