@@ -32,9 +32,9 @@ const SharedAdultsPage = ({ Data, language }) => {
       <HowItWorks HowItWorksCardData={Data?.HowItWorksCardData} />
       <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[2px] xl:mb-[31px] 4xl:mb-[112px]">
         <WhyShould />
-        <div className="">
+        {/* <div className="">
           <UpcomingBatches language={language} />
-        </div>
+        </div> */}
 
         <PrepareForLanguageExam LanguageExams={Data?.LanguageExams} />
 

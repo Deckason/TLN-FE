@@ -32,9 +32,9 @@ const SharedStudyAbroad = ({ Data, language }) => {
       <HowItWorks HowItWorksCardData={Data?.HowItWorksCardData} />
       <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
         <WhyShould />
-        <div className="">
+        {/* <div className="">
           <UpcomingBatches language={language}/>
-        </div>
+        </div> */}
         <LanguageClassesForAnyLevel
           ClassesForAnyLevel={Data?.ClassesForAnyLevel}
         />

@@ -209,9 +209,9 @@ const page = () => {
       {/* <TopBar data={TopBarData} /> */}
       <AboutDelf data={aboutExam} />
       <ExamHelp data={examHelpData} />
-      <div className="-mt-[100px] -mb-[50px] lg:-mt-[50px] lg:-mb-[90px]">
+      {/* <div className="-mt-[100px] -mb-[50px] lg:-mt-[50px] lg:-mb-[90px]">
         <UpcomingBatches language={"Korean"} />
-      </div>
+      </div> */}
 
       <StudentsTestomony data={StudentTestimonialsData} />
 

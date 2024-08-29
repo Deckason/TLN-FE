@@ -25,9 +25,9 @@ const SharedLevelPage = ({ Data, language }) => {
       <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[112px]">
         <WhatWIllYouLearn WhatWIllYouLearn={Data?.WhatWillYouLearn} />
       </div>
-      <div className="-mt-[70px] lg:mt-0 -mb-[70px] lg:mb-0">
+      {/* <div className="-mt-[70px] lg:mt-0 -mb-[70px] lg:mb-0">
         <UpcomingBatches language={language} />
-      </div>
+      </div> */}
 
       {/* </div> */}
       <FaqsLanguage FaqsData={faqs} />

@@ -1,5 +1,6 @@
 import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import WhatWillYouLearnCard from "./WhatWillYouLearnCard";
+import LevelsStartedBtn from "./../../../../Shared/buttons/levels/LevelsStartedBtn"
 
 const WhatWIllYouLearn = ({ WhatWIllYouLearn }) => {
   // console.log(WhatWIllYouLearn);
@@ -16,7 +17,7 @@ const WhatWIllYouLearn = ({ WhatWIllYouLearn }) => {
         ))}
       </div>
       <div className="flex justify-center mt-12 w-full">
-        <BookAFreeDemoButton />
+        <LevelsStartedBtn />
       </div>
     </div>
   );
