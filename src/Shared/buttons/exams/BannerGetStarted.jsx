@@ -3,7 +3,7 @@ const BannerGetStarted = () => {
   return (
     <div className="flex mt-8 md:mt-12 lg:mt-16 justify-start ml-8 lg:ml-6 xl:ml-0">
       <button
-        data-tally-open="3qORRk"
+        data-tally-open="nGLlZz"
         data-tally-layout="modal"
         data-tally-width="676"
         data-tally-hide-title="1"

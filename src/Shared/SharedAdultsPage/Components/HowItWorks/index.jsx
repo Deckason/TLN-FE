@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-
+import AdultsStartedBtn from "./../../../../Shared/buttons/adults/AdultsStartedBtn";
 
 const HowItWorks = ({ HowItWorksCardData }) => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -87,7 +87,7 @@ const HowItWorks = ({ HowItWorksCardData }) => {
         </div>
       </section>
       <div className="mt-8 hidden 3xl:block">
-        <BookAFreeDemoButton />
+        <AdultsStartedBtn />
       </div>
     </div>
   );

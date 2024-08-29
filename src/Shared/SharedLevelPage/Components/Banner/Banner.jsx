@@ -5,6 +5,7 @@ import BannerImage from "./../../../../../public/level/BeginnerLevelBanner.png";
 import { useEffect, useState } from "react";
 import States from "./../../../../Shared/SharedAdultsPage/Components/States/index";
 import BannerGetStarted from "../../../buttons/exams/BannerGetStarted";
+import LevelsBannerBtn from "./../../../../Shared/buttons/levels/LevelsBannerBtn";
 const Banner = ({ BannerData }) => {
   const [Splicing, setSplicing] = useState(true);
   const [BannerInfo, setBannerInfo] = useState();
@@ -44,7 +45,7 @@ const Banner = ({ BannerData }) => {
                     </div>
                   </div>
                   <div className="-mt-[30px] lg:-mt-[80px] xl:-mt-[60px] 2xl:-mt-[50px] -ml-[50px] lg:-ml-[43px] xl:-ml-[17px]">
-                    <BannerGetStarted />
+                    <LevelsBannerBtn />
                   </div>
                 </div>
               </div>

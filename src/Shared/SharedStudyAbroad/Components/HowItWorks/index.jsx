@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import AbroadStartedBtn from "./../../../../Shared/buttons/studyAbroad/AbroadStartedBtn";
 const HowItWorks = ({ HowItWorksCardData }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const navigationPrevRef = React.useRef(currentPage);
@@ -70,10 +71,9 @@ const HowItWorks = ({ HowItWorksCardData }) => {
               </SwiperSlide>
             ))}
           </Swiper>
-          </div>
-          <div
-            className="hidden lg:flex justify-center  items-center mr-10 gap-5 mt-10 ">
-            <button
+        </div>
+        <div className="hidden lg:flex 3xl:hidden justify-center  items-center mr-10 gap-5 mt-10 ">
+          <button
             ref={navigationPrevRef}
             className="w-16 h-[58px] px-5 py-4 rounded-lg border-2 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"
           >
@@ -87,6 +87,9 @@ const HowItWorks = ({ HowItWorksCardData }) => {
           </button>
         </div>
       </section>
+      <div className="mt-8 hidden 3xl:block">
+        <AbroadStartedBtn />
+      </div>
     </div>
   );
 };
