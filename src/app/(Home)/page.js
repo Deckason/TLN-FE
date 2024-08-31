@@ -29,9 +29,9 @@ export default function Home() {
         <CoursesWeOffer />
       </div>
 
-      <section className="-mt-[150px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
+      {/* <section className="-mt-[150px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <UpcomingBatches language={"English"} />
-      </section>
+      </section> */}
       <CefrLevels />
       <section className="mx-4 lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <ProficiencyExams />

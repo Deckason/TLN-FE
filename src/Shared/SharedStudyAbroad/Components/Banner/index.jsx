@@ -5,6 +5,7 @@ import BannerImage from "../../../../Assets/FrenchPage/FrenchStudyAbroad/studyAb
 
 import { useEffect, useState } from "react";
 import States from "../States";
+import AbroadBannerBtn from "./../../../../Shared/buttons/studyAbroad/AbroadBannerBtn"
 const Banner = ({ BannerData }) => {
   const [Splicing, setSplicing] = useState(true);
   const [BannerInfo, setBannerInfo] = useState();
@@ -36,9 +37,9 @@ const Banner = ({ BannerData }) => {
                         {Splicing ? "...Read more" : "Read less"}
                       </span>
                     </div>
-                  </div>{" "}
-                  <div className="flex justify-start ml-[-29px] xl:ml-[-8px]">
-                    <BookAFreeDemoButton />
+                  </div>
+                  <div className="flex justify-start">
+                    <AbroadBannerBtn />
                   </div>
                 </div>
               </div>

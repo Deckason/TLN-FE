@@ -2,6 +2,7 @@
 import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
 import BannerImage from "../../../../Assets/FrenchPage/FrenchAdult/BannerTwo.svg";
+import AdultsBannerBtn from "./../../../../Shared/buttons/adults/AdultsBannerBtn";
 
 import { useEffect, useState } from "react";
 import States from "../States";
@@ -38,7 +39,7 @@ const Banner = ({ BannerData }) => {
                     </div>
                   </div>{" "}
                   <div className="flex justify-start ml-[-29px] xl:ml-[-8px]">
-                    <BookAFreeDemoButton />
+                    <AdultsBannerBtn />
                   </div>
                 </div>
               </div>

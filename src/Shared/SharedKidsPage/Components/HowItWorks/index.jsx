@@ -3,6 +3,7 @@ import Image from "next/image";
 import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import HowItWorksCard from "./HowItWorksCard";
 import { SwiperSlide, Swiper } from "swiper/react";
+import KidsStartedBtn from "./../../../../Shared/buttons/kids/KidsStartedBtn"
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -71,7 +72,8 @@ const HowItWorks = ({ HowItWorksCardData }) => {
         </div>
       </section>
       <div className=" mt-14 max-md:hidden">
-        <BookAFreeDemoButton />
+        {/* <BookAFreeDemoButton /> */}
+        <KidsStartedBtn />
       </div>
     </div>
   );

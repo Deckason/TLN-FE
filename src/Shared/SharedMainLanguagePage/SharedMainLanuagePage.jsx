@@ -34,9 +34,11 @@ const SharedMainLanuagePage = ({ Data, language }) => {
             ClassesForAnyLevel={Data?.ClassesForAnyLevel}
           />
           <WhyLearnLanguage WhyLearnLanguage={Data?.WhyLearnLanguage} />
-          <div className="-mt-[330px] -mb-[180px] sm:-my-[150px] z-10">
+          {/* <div className="-mt-[330px] -mb-[180px] sm:-my-[150px] z-10">
             <UpcomingBatches language={language} />
-          </div>
+          </div> */}
+          <div className="-my-[100px] z-10"></div>
+
         </div>
       </div>
       <div>

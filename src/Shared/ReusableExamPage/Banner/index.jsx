@@ -24,10 +24,10 @@ const Banner = ({ BannerData }) => {
           <div className="grid  relative lg:grid-cols-2 gap-5 max-lg:flex-col max-md:gap-0">
             <div className="flex flex-col   max-md:ml-0 max-lg:w-full">
               <div className="flex z-10 flex-col px-5 lg:pl-0 text-black max-md:max-w-full">
-                <div className="text-[26px]/[36px] lg:text-[39px]/[45px]  2xl:text-[48px]/[59px] font-bold max-md:max-w-full">
+                <div className="text-[26px]/[36px] lg:text-[39px]/[45px] 2xl:text-[48px]/[59px] font-bold max-md:max-w-full">
                   {BannerData?.title}
                 </div>
-                <div className="mt-2 max-sm:text-sm text-xl leading-7 lg:text-base 2xl:text-xl lg:w-[450px] xl:w-[500px] 2xl:w-full max-md:max-w-full relative mb-[32px]">
+                <div className="mt-2 max-sm:text-sm text-xl leading-7 lg:text-base 2xl:text-xl lg:w-[450px] xl:w-[500px] 2xl:w-full 3xl:w-[120%] max-md:max-w-full relative mb-[32px]">
                   <div className="mb-8">
                     <div>
                       {BannerInfo}

@@ -3,6 +3,7 @@ import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import States from "../States";
+import KidsBannerBtn from "./../../../../Shared/buttons/kids/KidsBannerBtn";
 
 const Banner = ({ BannerData }) => {
   const [Splicing, setSplicing] = useState(true);
@@ -39,7 +40,7 @@ const Banner = ({ BannerData }) => {
                     </div>
                   </div>
                   <div className="flex justify-start">
-                    <BookAFreeDemoButton />
+                    <KidsBannerBtn />
                   </div>
                 </div>
               </div>
