@@ -57,10 +57,14 @@ const HowItWorks = ({ HowItWorksCardData }) => {
                 slidesPerView: 2,
               },
               768: {
+                slidesPerView: 2,
+              },
+              
+              368: {
                 slidesPerView: 1,
               },
             }}
-            className="mySwiper mx-auto flex justify-center items-center max-w-[356px] md:max-w-[395px] lg:max-w-[850px] md:hidden xl:max-w-[1150px] w-full max-sm:max-h-full 2xl:w-full 3xl:max-w-[1440px]"
+            className="mySwiper mx-auto flex justify-center  items-center max-w-[356px] md:max-w-[700px]  lg:max-w-[850px] md:hidden xl:max-w-[1150px] w-full max-sm:max-h-full   2xl:w-full 3xl:max-w-[1440px]"
           >
             {HowItWorksCardData?.map((data, index) => (
               <SwiperSlide key={index}>
@@ -86,7 +90,7 @@ const HowItWorks = ({ HowItWorksCardData }) => {
          
         </div>
       </section>
-      <div className="mt-8 hidden 3xl:block">
+      <div className="mt-8 hidden 4xl:block">
         <BookAFreeDemoButton />
       </div>
     </div>
