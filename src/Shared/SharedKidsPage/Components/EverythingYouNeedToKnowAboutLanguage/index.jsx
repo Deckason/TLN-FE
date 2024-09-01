@@ -49,9 +49,9 @@ const EverythingYouNeedToKnowAboutLanguage = ({
               setSplicing(true);
             }
           }}
-          className="h-[58px] px-8 py-3.5 rounded-lg border border-teal-600 mx-auto w-[190px] justify-center items-center gap-2.5 inline-flex"
+          className="h-[58px] px-[16px] py-[10px] xl:px-[32px] xl:py-[14px] rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex mb-[20px] text-[14px] xl:text-[24px] leading-tight ml-8"
         >
-          <div className="text-center text-teal-600 text-2xl font-medium">
+          <div className="text-center text-teal-600  font-medium">
             {!splicing ? "Read less" : "Read more"}
           </div>
         </button>

@@ -23,10 +23,10 @@ const Banner = ({ BannerData }) => {
           <div className="grid  relative lg:grid-cols-2 gap-5 max-lg:flex-col max-md:gap-0">
             <div className="flex flex-col  max-w-[700px] max-md:ml-0 max-lg:w-full">
               <div className="flex z-10 flex-col px-5 text-black max-md:max-w-full">
-                <div className="text-5xl font-bold max-md:max-w-full max-md:text-4xl leading-normal">
+                <div className="text-[24px] font-bold w-full xl:w-[643px] 4xl:w-[1106px] xl:text-[48px]">
                   Online {BannerData?.Language} Classes for Study Abroad!
                 </div>
-                <div className="mt-2 max-sm:text-sm text-xl leading-7 lg:text-base 2xl:text-xl lg:w-[450px] xl:w-[500px] 2xl:w-full max-md:max-w-full relative mb-[32px]">
+                <div className="mt-2  text-[16px] leading-7  2xl:text-[20px] w-full xl:w-[643px] 4xl:w-[1106px] relative mb-[32px] flex flex-col items-start">
                   <div className="mb-8">
                     <div>
                       {BannerInfo}
@@ -44,10 +44,10 @@ const Banner = ({ BannerData }) => {
                 </div>
               </div>
             </div>
-            <div className="  max-md:mb-[15px] max-lg:mb-[16px] lg:-mb-0 lg:block max-xl:-right-3 px-4 lg:absolute  right-5 -top-8">
+            <div className=" mx-auto max-md:-mb-[26px] max-lg:-mb-[42px] lg:-mb-0 lg:block px-4 lg:absolute  right-5 -top-10">
               <Image
                 alt="homePageBannerGirl"
-                className="w-[333px] h-[271px] xl:w-[538px] xl:h-[438px]  object-contain "
+                className="w-[465px] h-[417px]  object-contain "
                 src={BannerData.BannerImage ?? BannerImage}
               ></Image>
             </div>
