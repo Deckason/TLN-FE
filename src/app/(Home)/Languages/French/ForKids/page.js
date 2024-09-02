@@ -110,7 +110,7 @@ const FrenchForKidsPage = () => {
           level: "Beginner Classes",
           description:
             "Discover the joy of learning French with our engaging beginner program tailored for kids. Through fun activities and interactive lessons, children will build a solid foundation in French vocabulary and grammar.",
-          link: "",
+          link: "https://rzp.io/l/4eZEohQ",
         },
         {
           title: "A2",
@@ -118,7 +118,7 @@ const FrenchForKidsPage = () => {
           level: "Elementary Classes",
           description:
             "Elevate your child's French skills with our elementary program, designed to deepen their understanding and fluency. Through interactive lessons and engaging activities, children will expand their vocabulary and improve their conversational abilities.",
-          link: "",
+          link: "https://rzp.io/l/L5Ay2KNtN",
         },
         {
           title: "B2",

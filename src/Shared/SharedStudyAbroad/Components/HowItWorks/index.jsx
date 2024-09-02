@@ -17,7 +17,7 @@ const HowItWorks = ({ HowItWorksCardData }) => {
   return (
     <div className="bg-[#F6F3F3] w-full flex justify-center flex-col items-center py-[50px] md:py-[112px]">
       <section className="">
-        <h1 className="self-stretch font-bold text-[24px]/[29px] lg:text-[40px]/[48.01px] md:text-3xl xl:text-[50px]/[40px] 2xl:text-[60px]/[72px] text-center text-stone-900 max-lg:px-4 mb-9">
+        <h1 className="text-stone-900 text-[24px] xl:text-[60px]/[80px] font-bold text-center mb-4">
           How it works?
         </h1>
 
@@ -55,15 +55,12 @@ const HowItWorks = ({ HowItWorksCardData }) => {
               1024: {
                 slidesPerView: 2,
               },
-              768: {
-                slidesPerView: 2,
-              },
               368: {
                 slidesPerView: 1,
               },
             }}
             // modules={[Pagination]}
-            className="mySwiper mx-auto flex justify-center  items-center max-w-[356px] md:max-w-[700px]  lg:max-w-[850px] md:hidden xl:max-w-[1150px] w-full max-sm:max-h-full   2xl:w-full 3xl:max-w-[1440px]"
+            className="mySwiper mx-auto flex justify-center  items-center max-w-[356px] md:max-w-[395px]  lg:max-w-[850px] md:hidden xl:max-w-[1150px] w-full max-sm:max-h-full   2xl:w-full 3xl:max-w-[1440px]"
           >
             {HowItWorksCardData?.map((data, index) => (
               <SwiperSlide key={index}>

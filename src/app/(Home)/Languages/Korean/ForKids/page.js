@@ -115,7 +115,7 @@ const KoreanForKidsPage = () => {
           level: "Beginner Level",
           description:
             "Start your child's Korean journey with our beginner course, introducing them to Korean basics like grammar, vocabulary, and pronunciation, perfect for kids who are new to the language.",
-          link: "",
+          link: "https://rzp.io/l/V9cVKm542",
         },
       ],
     },

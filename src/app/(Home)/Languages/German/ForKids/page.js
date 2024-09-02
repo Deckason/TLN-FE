@@ -90,19 +90,19 @@ const GermanForKidsPage = () => {
       CardData: [
         {
           title: "A1",
-          price: "₹35,000/-*",
+          price: "₹35,000",
           level: "Beginner Classes",
           description:
             "Discover the joy of learning German with our engaging beginner program tailored for kids. Through fun activities and interactive lessons, children will build a solid foundation in German vocabulary and grammar.",
-          link: "",
+          link: "https://rzp.io/l/9FF233Gro4",
         },
         {
           title: "A2",
-          price: "₹42,000/-*",
+          price: "₹42,000",
           level: "Intermediate Classes",
           description:
             "Elevate your child's German skills with our elementary program, designed to deepen their understanding and fluency. Through interactive lessons and engaging activities, children will expand their vocabulary and improve their conversational abilities.",
-          link: "",
+          link: "https://rzp.io/l/Ft9oKm3g",
         },
         {
           title: "B2",

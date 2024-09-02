@@ -106,15 +106,15 @@ const SpanishForKidsPage = () => {
           title: "A1",
           description:
             "Discover the joy of learning Spanish with our engaging beginner program tailored for kids. Through fun activities and interactive lessons, children will build a solid foundation in Spanish vocabulary and grammar.",
-          price: "₹35,000/-*",
-          link: "",
+          price: "₹35,000",
+          link: "https://rzp.io/l/PawBIHQ6C",
         },
         {
           title: "A2",
           description:
             "Elevate your child's Spanish skills with our elementary program, designed to deepen their understanding and fluency. Through interactive lessons and engaging activities, children will expand their vocabulary and improve their conversational abilities.",
-          price: "₹42,000/-*",
-          link: "",
+          price: "₹42,000",
+          link: "https://rzp.io/l/T0Q4tX4OyN",
         },
         {
           title: "B1",

@@ -111,11 +111,11 @@ const JapaneseForKidsPage = () => {
       CardData: [
         {
           title: "N5 Part I & II",
-          price: "₹28,000-₹28,000/-*",
+          price: "₹28,000",
           level: "Beginner classes",
           description:
             "Embark on an exciting Japanese adventure with our beginner course! Designed for kids who are new to Japanese, these courses introduce basic grammar, vocabulary, and pronunciation in a fun way and also introduce them to three different scripts in a seamless manner!",
-          link: "",
+          link: "https://rzp.io/l/raeI2gAY",
         },
         {
           title: "N4",
