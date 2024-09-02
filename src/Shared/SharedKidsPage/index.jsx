@@ -32,7 +32,7 @@ const SharedKidsPage = ({ Data, language }) => {
         />
       </div>
       <HowItWorks HowItWorksCardData={Data?.HowItWorksCardData} />
-      <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
+      <div className=" relative flex justify-center items-center flex-col mb-[112px]">
         <WhyShould />
         <div className="mt-4">
           {/* <UpcomingBatches language={language}/> */}

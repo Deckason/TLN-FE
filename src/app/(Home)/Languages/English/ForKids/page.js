@@ -105,11 +105,11 @@ const EnglishForKidsPage = () => {
       CardData: [
         {
           title: "A1",
-          price: "₹35,000/",
+          price: "₹17,500/",
           level: "Beginner Classes",
           description:
-            "Discover the joy of learning French with our engaging beginner program tailored for kids. Through fun activities and interactive lessons, children will build a solid foundation in French vocabulary and grammar.",
-          link: "/Languages/English/LevelPage/BeginnerLevel(A1-A2)",
+            "Discover the joy of learning English with our engaging beginner program tailored for kids. Through fun activities and interactive lessons, children will build a solid foundation in English vocabulary and grammar.",
+          link: "https://rzp.io/l/UAX9BtK45j",
         },
 
         {
@@ -117,8 +117,8 @@ const EnglishForKidsPage = () => {
           price: "₹42,000/",
           level: "Intermediate Classes",
           description:
-            "Elevate your child's French skills with our elementary program, designed to deepen their understanding and fluency. Through interactive lessons and engaging activities, children will expand their vocabulary and improve their conversational abilities.",
-          link: "/Languages/English/LevelPage/BeginnerLevel(A1-A2)",
+            "Elevate your child's English skills with our elementary program, designed to deepen their understanding and fluency. Through interactive lessons and engaging activities, children will expand their vocabulary and improve their conversational abilities.",
+          link: "https://rzp.io/l/L6H9lyi78",
         },
 
         {
@@ -126,8 +126,8 @@ const EnglishForKidsPage = () => {
           price: "On Request",
           level: "Advanced Classes",
           description:
-            "Boost your child's French skills at our intermediate program, helping them express fluently and understand complex texts confidently. Through engaging activities, they'll master familiar topics and enhance their language proficiency.",
-          link: "/Languages/English/LevelPage/IntermediateLevel(B1-B2)",
+            "Boost your child's English skills at our intermediate program, helping them express fluently and understand complex texts confidently. Through engaging activities, they'll master familiar topics and enhance their language proficiency.",
+          link: "",
         },
       ],
     },
