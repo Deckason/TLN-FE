@@ -5,6 +5,8 @@ import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.
 import bannerImg from '../../../../../Assets/Japanese/JapaneseAdult/Adult Japan.jpg';
 
 import jlpt from "../../../../../Assets/Japanese/jlpt.png";
+// import data from "../../../../../Utilities/data"
+
 import React from "react";
 
 import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";

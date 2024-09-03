@@ -5,6 +5,7 @@ import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.
 import bannerImg from '../../../../../Assets/KoreanPage/KoreanAdult/Adult Korea.jpg';
 
 import topik from '../../../../../Assets/KoreanPage/Topik.svg'
+// import data from "../../../../../Utilities/data"
 
 import React from "react";
 
