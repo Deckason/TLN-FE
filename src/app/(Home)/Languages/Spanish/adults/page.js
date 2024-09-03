@@ -3,10 +3,10 @@ import step2 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 478.pn
 import step3 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479.png";
 import step4 from "../../../../../Assets/FrenchPage/FrenchAdult/Rectangle 479-1.png";
 import bannerImg from '../../../../../Assets/Spanish/SpanishAdult/Adult Spanish.jpg';
-
 import dele from "../../../../../Assets/Spanish/DELE.png";
 import Siele from "../../../../../Assets/Spanish/Siele.png";
 
+// import data from "../../../../../Utilities/data"
 import React from "react";
 
 import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";

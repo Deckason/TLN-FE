@@ -21,8 +21,8 @@ const EnglishPage = () => {
       ...prev,
       FaqsData: faqData,
       EveryThingYouNeedToKnowAbout: {
-        ...prev.EveryThingYouNeedToKnowAbout, // Spread the existing properties
-        CardData: everyData, // Update CardData
+        ...prev.EveryThingYouNeedToKnowAbout,
+        CardData: everyData,
       },
     }));
   }, [data]);

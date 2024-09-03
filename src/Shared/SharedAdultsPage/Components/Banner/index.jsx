@@ -48,7 +48,7 @@ const Banner = ({ BannerData }) => {
               <Image
                 alt="homePageBannerPicture"
                 className="w-[465px] h-[417px]  object-contain "
-                src={BannerData.BannerImage ?? BannerImage}
+                src={BannerData?.BannerImage ?? BannerImage}
               ></Image>
             </div>
           </div>
