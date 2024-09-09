@@ -55,7 +55,7 @@ const WhyShould = () => {
       img: experts,
       modalTitle: "Expert Trainers",
       modalDesc:
-        "Learn from internationally certified trainers with extensive expertise in language instruction",
+        "Learn from internationally certified trainers with extensive expertise in language instruction.",
     },
     {
       modal: isModalOpen.interactive,
@@ -118,7 +118,7 @@ const WhyShould = () => {
       img: batch,
       modalTitle: "Batch Flexibility",
       modalDesc:
-        "We provide 1:1, Duo and Group Batches for you to find the one that best suits your needs and preferences.",
+        "Choose from our 1:1, Duo, and Group Batches to find the option that best suits your needs and preferences.",
     },
   ];
   return (

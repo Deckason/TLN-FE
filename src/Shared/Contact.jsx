@@ -60,11 +60,28 @@ const Contact = () => {
           className="flex hover:scale-110 transform duration-300 items-center focus:scale-110 bg-white cursor-pointer"
           href="https://www.instagram.com/thelanguagenetwork/"
         >
-          <Image
+          {/* <Image
             className="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px]"
             src={Instagram}
             alt="phone"
-          />
+          /> */}
+          <div class="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px] rounded-tl-lg rounded-bl-lg overflow-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-full w-full">
+              <linearGradient id="instagramGradient" x1="0.5" x2="0.5" y2="1">
+                <stop offset="0%" stop-color="#f09433" />
+                <stop offset="25%" stop-color="#e6683c" />
+                <stop offset="50%" stop-color="#dc2743" />
+                <stop offset="75%" stop-color="#cc2366" />
+                <stop offset="100%" stop-color="#bc1888" />
+              </linearGradient>
+              <rect width="512" height="512" fill="url(#instagramGradient)" />
+              <path fill="#FFF" d="M349.33 69.33H162.67A93.34 93.34 0 0 0 69.33 162.67v186.66a93.34 93.34 0 0 0 93.34 93.34h186.66a93.34 93.34 0 0 0 93.34-93.34V162.67a93.34 93.34 0 0 0-93.34-93.34zm62.67 280A62.67 62.67 0 0 1 349.33 412H162.67A62.67 62.67 0 0 1 100 349.33V162.67A62.67 62.67 0 0 1 162.67 100h186.66A62.67 62.67 0 0 1 412 162.67z" />
+              <path fill="#FFF" d="M256 164.53A91.47 91.47 0 1 0 347.47 256 91.65 91.65 0 0 0 256 164.53zm0 150.94a59.47 59.47 0 1 1 59.47-59.47 59.54 59.54 0 0 1-59.47 59.47zm97.41-161.57a21.35 21.35 0 1 0 21.35-21.35 21.43 21.43 0 0 0-21.35 21.35z" />
+            </svg>
+          </div>
+
+
+
         </a>
       </div>
       {alertVisible && (
