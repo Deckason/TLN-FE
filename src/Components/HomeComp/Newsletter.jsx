@@ -6,7 +6,7 @@ import Link from "next/link";
 const Newsletter = () => {
   const { data } = useGetNewsQuery("");
   // console.log(data);
-   return (
+  return (
     <div className="flex justify-center items-center py-[60px] sm:py-20 bg-secondary-color mt-10 ">
       <div className="mt-7 w-full max-md:max-w-full mx-[16px] lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-auto 4xl:max-w-[1680px]">
         <div className="xl:flex justify-between gap-5 ld:gap-1 xl:gap-1 3xl:gap-5 lg:flex-row max-xl:flex-col max-md:gap-0 min-h-[380px]">
@@ -70,7 +70,12 @@ const Newsletter = () => {
                         <span className="text-neutral-500">
                           Reads our full story
                         </span>{" "}
-                        <Link href={"/"} className="font-bold text-xl leading-6 text-teal-600">
+                        <Link
+                          href={
+                            "https://www.hindustantimes.com/brand-stories/the-language-network-launches-its-pan-india-expansion-campaign-101659532840850.html"
+                          }
+                          className="font-bold text-xl leading-6 text-teal-600"
+                        >
                           here
                         </Link>
                       </div>
