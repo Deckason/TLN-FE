@@ -28,7 +28,7 @@ const SpanishPage = () => {
   }, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={content} language={"Spanish"} />
+      <SharedMainLanuagePage Data={content} language={"Spanish"} context={''}/>
     </div>
   );
 };

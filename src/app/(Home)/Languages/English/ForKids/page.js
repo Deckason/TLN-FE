@@ -4,7 +4,7 @@ const EnglishForKidsPage = () => {
 
   return (
     <div>
-      <SharedKidsPage Data={data} language={"English"}/>
+      <SharedKidsPage Data={data} language={"English"} context={"Kids"}/>
     </div>
   );
 };

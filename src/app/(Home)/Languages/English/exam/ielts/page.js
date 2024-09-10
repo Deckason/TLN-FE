@@ -3,7 +3,8 @@ import { TopBar } from "../../../../../../Shared/ReusableExamPage/top-bar";
 import UpcomingBatches from "../../../../../../Shared/UpcomingBatches";
 import studentPic from "../../../../../../Assets/Homepage/Testomony/testomony.png";
 import React from "react";
-import StudentsTestomony from "../../../../../../Shared/ReusableExamPage/studentTestmony";
+import StudentsTestomony from "../../../../../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
+
 import Say from "../../../../../../Shared/ReusableExamPage/Say";
 import Faqs from "../../../../../../Shared/ReusableExamPage/Faq";
 import LanguageLessons from "../../../../../../Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
@@ -218,7 +219,7 @@ const page = () => {
         <UpcomingBatches language={"English"} />
       </div> */}
 
-      <StudentsTestomony data={StudentTestimonialsData} />
+      <StudentsTestomony language={"English"} context={""} />
       <div className="mb-9">
         <FaqsExam FaqsData={FaqsData} />
       </div>

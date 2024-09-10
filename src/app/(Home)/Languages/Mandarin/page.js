@@ -29,7 +29,7 @@ const MandarinPage = () => {
   }, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={content} language={"Mandarin"} />
+      <SharedMainLanuagePage Data={content} language={"Mandarin"} context={''}/>
     </div>
   );
 };

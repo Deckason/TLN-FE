@@ -8,14 +8,16 @@ import { Navigation } from "swiper/modules";
 import { FaArrowRight, FaRegStar, FaStar } from "react-icons/fa";
 import studentPic from "../../Assets/Homepage/Testomony/testomony.png";
 import Image from "next/image";
+import { useGetAllTrainersQuery } from "../../store/apiSlice";
 // import studentPic from "../../../../Assets/Homepage/Testomony/testomony.png";
 
 const Slide = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
+  const { data: trainerDetails } = useGetAllTrainersQuery("");
 
-  const [hoveredIndex,setHoveredIndex] =useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
@@ -61,36 +63,48 @@ const Slide = () => {
           // modules={[Pagination]}
           className="mySwiper mx-auto flex justify-center items-center max-sm:max-h-full w-[326px] sm:w-[404px] lg:w-[808px] xl:w-[1300px]  4xl:w-[1680px] p-4 "
         >
-          {trainerDetails.map((trainer, index) => {
-            const isHovered = index === hoveredIndex;
-            return (
-              <SwiperSlide
-                key={index}
-                className={`flex justify-center items-center py-[20px]`}
-                // className={`flex justify-center items-center py-[20px] ${
-                //   index === 0 ? "ml-[20px]" : ""
-                // }  ${index === trainerDetails.length - 1 ? "mr-[20px]" : ""}`}
-                onMouseEnter={()=>handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}
-              >
-                <div className="flex flex-col transition duration-300 hover:scale-105 relative">
-                  <Image
-                    width={300}
-                    height={300}
-                    className={`w-full`}
-                    alt="trainerPIc"
-                    src={trainer.img}
-                  />
-                  {/* <p className="absolute bottom-[20px] right-[35%] text-white font-bold text-lg">{trainer.name}</p> */}
-                  {isHovered && <div class="cursor-pointer absolute inset-0 transition-all duration-300 gradient-bg flex flex-col justify-center items-center ">
-                    <p class="text-white text-[40px] font-bold">{trainer.name}</p>
-                    <p class="text-white text-[24px]">{trainer.language}</p>
-                    <p class="text-white text-[12px] mx-[20px] text-justify mt-[10px]">{trainer.description}</p>
-                  </div>}
-                </div>
-              </SwiperSlide>
-            );
-          })}
+          {trainerDetails &&
+            trainerDetails.map((trainer, index) => {
+              const isHovered = index === hoveredIndex;
+              return (
+                <SwiperSlide
+                  key={index}
+                  className={`flex justify-center items-center py-[20px]`}
+                  // className={`flex justify-center items-center py-[20px] ${
+                  //   index === 0 ? "ml-[20px]" : ""
+                  // }  ${index === trainerDetails.length - 1 ? "mr-[20px]" : ""}`}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <div className="flex flex-col transition duration-300 hover:scale-105 relative h-[416px]">
+                    <Image
+                      width={300}
+                      height={700}
+                      className={`h-[416px] object-fill`}
+                      alt="trainerPIc"
+                      src={trainer.image}
+                    />
+                    {!isHovered && (
+                      <p className="absolute bottom-[20px] text-white font-bold text-lg text-center left-0 right-0">
+                        {trainer.name}
+                      </p>
+                    )}
+                    {isHovered && (
+                      <div class="cursor-pointer absolute inset-0 transition-all duration-300 gradient-bg flex flex-col justify-center items-center ">
+                        <p class="text-white text-[40px] font-bold mx-4 text-center">
+                          {trainer.name}
+                        </p>
+                        <p class="text-white text-[24px]">{trainer.language}</p>
+                        <p class="text-white text-[12px] mx-[20px] text-justify mt-[10px]">
+                          {trainer.description &&
+                            trainer.description.slice(0, 400)}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                </SwiperSlide>
+              );
+            })}
         </Swiper>
 
         <div className="mt-8 max-sm:scale-75 flex gap-x-[16px] items-center justify-center ">
@@ -111,65 +125,6 @@ const Slide = () => {
     </>
   );
 };
-
-const trainerDetails = [
-  {
-    img: "/trainers/Trainer1.png",
-    name: "Isha Sejpal",
-    language: "English",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, eros sit amet condimentum ant per conubia nostra, per inceptos himenaeos. Vestibulum sed vulputate ligula. Nullam nec arcu ullamcorper, sollicitudin ante eget, cursus nisi. Phasellus nulla erat, ornare eu nulla vel, molestie lacinia mauris. Morbi sed lorem sagittis, imperdiet diam in, sagittis ex. Aenean malesuada placerat ligula sit amet elementum.",
-  },
-  {
-    img: "/trainers/Trainer2.png",
-    name: "Isha Sejpal",
-    language: "English",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, eros sit amet condimentum ant per conubia nostra, per inceptos himenaeos. Vestibulum sed vulputate ligula. Nullam nec arcu ullamcorper, sollicitudin ante eget, cursus nisi. Phasellus nulla erat, ornare eu nulla vel, molestie lacinia mauris. Morbi sed lorem sagittis, imperdiet diam in, sagittis ex. Aenean malesuada placerat ligula sit amet elementum.",
-  },
-  {
-    img: "/trainers/Trainer3.png",
-    name: "Isha Sejpal",
-    language: "English",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, eros sit amet condimentum ant per conubia nostra, per inceptos himenaeos. Vestibulum sed vulputate ligula. Nullam nec arcu ullamcorper, sollicitudin ante eget, cursus nisi. Phasellus nulla erat, ornare eu nulla vel, molestie lacinia mauris. Morbi sed lorem sagittis, imperdiet diam in, sagittis ex. Aenean malesuada placerat ligula sit amet elementum.",
-  },
-  {
-    img: "/trainers/Trainer4.png",
-    name: "Isha Sejpal",
-    language: "English",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, eros sit amet condimentum ant per conubia nostra, per inceptos himenaeos. Vestibulum sed vulputate ligula. Nullam nec arcu ullamcorper, sollicitudin ante eget, cursus nisi. Phasellus nulla erat, ornare eu nulla vel, molestie lacinia mauris. Morbi sed lorem sagittis, imperdiet diam in, sagittis ex. Aenean malesuada placerat ligula sit amet elementum.",
-  },
-  {
-    img: "/trainers/Trainer1.png",
-    name: "Isha Sejpal",
-    language: "English",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, eros sit amet condimentum ant per conubia nostra, per inceptos himenaeos. Vestibulum sed vulputate ligula. Nullam nec arcu ullamcorper, sollicitudin ante eget, cursus nisi. Phasellus nulla erat, ornare eu nulla vel, molestie lacinia mauris. Morbi sed lorem sagittis, imperdiet diam in, sagittis ex. Aenean malesuada placerat ligula sit amet elementum.",
-  },
-  {
-    img: "/trainers/Trainer2.png",
-    name: "Isha Sejpal",
-    language: "English",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, eros sit amet condimentum ant per conubia nostra, per inceptos himenaeos. Vestibulum sed vulputate ligula. Nullam nec arcu ullamcorper, sollicitudin ante eget, cursus nisi. Phasellus nulla erat, ornare eu nulla vel, molestie lacinia mauris. Morbi sed lorem sagittis, imperdiet diam in, sagittis ex. Aenean malesuada placerat ligula sit amet elementum.",
-  },
-  {
-    img: "/trainers/Trainer3.png",
-    name: "Isha Sejpal",
-    language: "English",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, eros sit amet condimentum ant per conubia nostra, per inceptos himenaeos. Vestibulum sed vulputate ligula. Nullam nec arcu ullamcorper, sollicitudin ante eget, cursus nisi. Phasellus nulla erat, ornare eu nulla vel, molestie lacinia mauris. Morbi sed lorem sagittis, imperdiet diam in, sagittis ex. Aenean malesuada placerat ligula sit amet elementum.",
-  },
-  {
-    img: "/trainers/Trainer4.png",
-    name: "Isha Sejpal",
-    language: "English",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, eros sit amet condimentum ant per conubia nostra, per inceptos himenaeos. Vestibulum sed vulputate ligula. Nullam nec arcu ullamcorper, sollicitudin ante eget, cursus nisi. Phasellus nulla erat, ornare eu nulla vel, molestie lacinia mauris. Morbi sed lorem sagittis, imperdiet diam in, sagittis ex. Aenean malesuada placerat ligula sit amet elementum.",
-  },
-];
 
 const TeachersInfoNew = () => {
   return (

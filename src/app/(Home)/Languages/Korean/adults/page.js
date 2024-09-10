@@ -5,7 +5,7 @@ import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";
 const page = () => {
   return (
     <div>
-      <SharedAdultsPage Data={data} language={"Korean"} />
+      <SharedAdultsPage Data={data} language={"Korean"} context ={"Adult"}/>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import StudentsTestomony from "../StudentsTestomony";
+import StudentsTestomony from "./../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
 import SubscribeToOur from "../SubscribeToOur";
 import Banner from "./Components/Banner";
 import FaqsLanguage from "./Components/FaqsLanguage";
@@ -12,15 +12,13 @@ import SayBonjur from "./Components/SayBonjur";
 import WhyShould from "../../Components/HomeComp/WhyShould";
 import UpcomingBatches from "../UpcomingBatches";
 
-const SharedAdultsPage = ({ Data, language }) => {
-  // console.log(Data);
+const SharedAdultsPage = ({ Data, language, context }) => {
   let faqs = [];
 
   if (Data?.Faqs?.length > 0 && Data?.Faqs !== undefined) {
     faqs = Data?.Faqs;
   }
 
-  // console.log(bannerInfo);
   return (
     <div className="">
       <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[12px] xl:mb-[31px] 4xl:mb-[112px]">
@@ -42,8 +40,8 @@ const SharedAdultsPage = ({ Data, language }) => {
           ClassesForAnyLevel={Data?.ClassesForAnyLevel}
         />
       </div>
-      <div>
-        <StudentsTestomony />
+      <div >
+        <StudentsTestomony language={language} context={context} />
       </div>
       <FaqsLanguage FaqsData={faqs} />
       {/* <EverythingYouNeedToKnowAboutLanguage

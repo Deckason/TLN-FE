@@ -5,7 +5,7 @@ const KoreanForKidsPage = () => {
 
   return (
     <div>
-      <SharedKidsPage Data={data} language={"Korean"}/>
+      <SharedKidsPage Data={data} language={"Korean"} context={"Kids"}/>
     </div>
   );
 };
