@@ -137,11 +137,11 @@ const Nav = () => {
                 href={data ? data[0].link : "/"}
                 className="flex flex-col sm:flex-row "
               >
-                <span className="font-[500]"> {data ? data[0].label : ""}</span>
-                <span className="font-normal hidden sm:inline">
+                {/* <span className="font-[500]"> {data ? data[0].label : ""}</span> */}
+                {/* <span className="font-normal hidden sm:inline">
                   {" "}
                   {data && "| "}
-                </span>
+                </span> */}
                 <span className="font-[700] text-center">
                   {data ? data[0].topic : ""}
                 </span>
@@ -207,14 +207,14 @@ const Nav = () => {
                 data-tally-hide-title="1"
                 className=" hover:shadow-md transition duration-300 text-[16px]  lg:w-[160px] border  h-[53px] px-[18px] py-[8px] hover:bg-white hover:border-teal-600 hover:text-teal-600 focus:bg-white focus:border-teal-600 focus:text-teal-600 bg-teal-600 rounded-lg justify-center text-white items-center gap-2.5 inline-flex text-nowrap"
               >
-                Get Started
+                Get started
               </button>
               <Link
                 href={"https://login.live.com/"}
                 className="hover:shadow-md transition hover:text-white text-teal-600 duration-300 self-stretch px-[18px] py-[8px] h-[53px]  focus:bg-teal-600 focus:text-white rounded-lg border hover:bg-teal-600 bg-white border-teal-600 justify-center items-center gap-2.5 inline-flex text-nowrap"
               >
                 <div className="lg:max-w-[280px] text-center  xl:text-[16px] font-medium ">
-                  Already Booked The Class
+                  Already booked the class
                 </div>
               </Link>
             </div>

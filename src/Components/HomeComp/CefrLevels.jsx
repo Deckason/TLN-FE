@@ -54,7 +54,7 @@ const CefrLevels = () => {
                 focus:border-teal-600 border  hover:text-teal-600 hover:border-teal-600
                   bg-teal-600 rounded-lg z-30 text-center mx-auto"
               >
-                Enquiry now
+                Enquire now
               </button>
             </p>
           </div>

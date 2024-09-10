@@ -47,23 +47,23 @@ const Contact = () => {
           </svg>
         </a>
         <a
-          className="flex hover:scale-110 transform duration-300 items-center focus:scale-110 bg-white cursor-pointer"
+          className="flex hover:scale-110 transform duration-300 items-center focus:scale-110  cursor-pointer"
           href="tel:8879328962"
         >
           <Image
             className="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px]"
             src={Phone}
-            alt="phone"
+            alt="phone icon"
           />
         </a>
         <a
-          className="flex hover:scale-110 transform duration-300 items-center focus:scale-110 bg-white cursor-pointer"
+          className=" flex hover:scale-110 transform duration-300 items-center focus:scale-110 cursor-pointer"
           href="https://www.instagram.com/thelanguagenetwork/"
         >
           <Image
-            className="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px]"
+            className="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px] "
             src={Instagram}
-            alt="phone"
+            alt="Instagram icon"
           />
         </a>
       </div>
