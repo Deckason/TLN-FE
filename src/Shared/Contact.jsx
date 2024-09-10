@@ -47,24 +47,19 @@ const Contact = () => {
           </svg>
         </a>
         <a
-          className="flex hover:scale-110 transform duration-300 items-center focus:scale-110 bg-white cursor-pointer"
+          className="flex hover:scale-110 transform duration-300 items-center focus:scale-110  cursor-pointer"
           href="tel:8879328962"
         >
           <Image
             className="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px]"
             src={Phone}
-            alt="phone"
+            alt="phone icon"
           />
         </a>
         <a
-          className="flex hover:scale-110 transform duration-300 items-center focus:scale-110 bg-white cursor-pointer"
+          className=" flex hover:scale-110 transform duration-300 items-center focus:scale-110 cursor-pointer"
           href="https://www.instagram.com/thelanguagenetwork/"
         >
-          {/* <Image
-            className="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px]"
-            src={Instagram}
-            alt="phone"
-          /> */}
           <div class="lg:h-[60px] lg:w-[60px] md:h-[40px] w-[40px] rounded-tl-lg rounded-bl-lg overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-full w-full">
               <linearGradient id="instagramGradient" x1="0.5" x2="0.5" y2="1">
@@ -79,9 +74,6 @@ const Contact = () => {
               <path fill="#FFF" d="M256 164.53A91.47 91.47 0 1 0 347.47 256 91.65 91.65 0 0 0 256 164.53zm0 150.94a59.47 59.47 0 1 1 59.47-59.47 59.54 59.54 0 0 1-59.47 59.47zm97.41-161.57a21.35 21.35 0 1 0 21.35-21.35 21.43 21.43 0 0 0-21.35 21.35z" />
             </svg>
           </div>
-
-
-
         </a>
       </div>
       {alertVisible && (
