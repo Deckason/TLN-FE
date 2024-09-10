@@ -28,7 +28,7 @@ const JapanesePage = () => {
   }, [data]);
   return (
     <div>
-      <SharedMainLanuagePage Data={content} language={"Japanese"} />
+      <SharedMainLanuagePage Data={content} language={"Japanese"} context={''}/>
     </div>
   );
 };

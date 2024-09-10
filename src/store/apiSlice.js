@@ -16,6 +16,8 @@ export const api = createApi({
     "Batches1",
     "Batches2",
     "Batches3",
+    "Trainers",
+    "Testimonials",
   ],
   endpoints: (builder) => ({
     // -----------------------------promo queries-------------------------------
@@ -109,6 +111,19 @@ export const api = createApi({
       query: () => `/api/batch/get/upcoming?month=${(currMonth + 2) % 12}`,
       providesTags: ["Batches3"],
     }),
+
+    // ---------------------- trainers queries -------------------------------
+
+    getAllTrainers: builder.query({
+      query: () => `/api/trainer/get-all`,
+      providesTags: ["Trainers"],
+    }),
+    // ---------------------- trainers queries -------------------------------
+
+    getAllTestimonials: builder.query({
+      query: ({language,context}) => `/api/testimonial/get-all?language=${language}&context=${context}`,
+      providesTags: ["Testimonials"],
+    }),
   }),
 });
 
@@ -127,4 +142,6 @@ export const {
   useGetNextMonth1BatchesQuery,
   useGetNextMonth2BatchesQuery,
   useGetNextMonth3BatchesQuery,
+  useGetAllTrainersQuery,
+  useGetAllTestimonialsQuery,
 } = api;

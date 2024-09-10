@@ -6,7 +6,7 @@ const page = () => {
   
   return (
     <div>
-     <SharedAdultsPage Data={data} language={"Japanese"}/>
+     <SharedAdultsPage Data={data} language={"Japanese"} context ={"Adult"}/>
     </div>
   );
 };

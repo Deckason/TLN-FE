@@ -48,7 +48,10 @@ const CefrLevels = () => {
               <br />
               <br />
               <button
-                onClick={toggleModal}
+                data-tally-open="3qORRk"
+                data-tally-layout="modal"
+                data-tally-width="676"
+                data-tally-hide-title="1"
                 className="lg:absolute lg:top-[77%] w-[160px] sm:w-[279px] h-[43px] sm:h-[58px] py-[12px] sm:px-[32px] text-[16px]/[19.26px] sm:text-2xl font-medium shadow-md hover:shadow-xl transition focus:bg-white 
                 cursor-pointer duration-300  hover:bg-white text-white focus:text-teal-600
                 focus:border-teal-600 border  hover:text-teal-600 hover:border-teal-600

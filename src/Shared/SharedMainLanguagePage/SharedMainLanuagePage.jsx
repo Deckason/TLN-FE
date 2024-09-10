@@ -16,8 +16,7 @@ import StudentsTestomony from "./Components/StudentTestomony/StudentsTestomony";
 import UpcomingBatches from "../UpcomingBatches";
 import WhyLearnLanguage from "./Components/WhyLearnLanguage/WhyLearnLanguage";
 
-const SharedMainLanuagePage = ({ Data, language }) => {
-  // console.log(Data);
+const SharedMainLanuagePage = ({ Data, language, context }) => {
   return (
     <div>
       <div className="mx-4 lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
@@ -38,11 +37,11 @@ const SharedMainLanuagePage = ({ Data, language }) => {
             <UpcomingBatches language={language} />
           </div> */}
           <div className="-my-[100px] z-10"></div>
-
         </div>
       </div>
       <div>
-        <StudentsTestomony />
+        <StudentsTestomony language={language} context={context} />
+
         <FaqsLanguage FaqsData={Data?.FaqsData} />
         <div className="mb-[50px]">
           <EverythingYouNeedToKnowAboutLanguage

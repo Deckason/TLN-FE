@@ -3,7 +3,8 @@ import { TopBar } from "../../../../../../Shared/ReusableExamPage/top-bar";
 import UpcomingBatches from "../../../../../../Shared/UpcomingBatches";
 import studentPic from "../../../../../../Assets/Homepage/Testomony/testomony.png";
 import React from "react";
-import StudentsTestomony from "../../../../../../Shared/ReusableExamPage/studentTestmony";
+import StudentsTestomony from "../../../../../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
+
 import Say from "../../../../../../Shared/ReusableExamPage/Say";
 import Faqs from "../../../../../../Shared/ReusableExamPage/Faq";
 import LanguageLessons from "../../../../../../Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
@@ -18,52 +19,6 @@ import Banner from "../../../../../../Shared/ReusableExamPage/Banner";
 import FaqsExam from "../../../../../../Shared/ReusableExamPage/FaqsExam";
 
 const page = () => {
-  const StudentTestimonialsData = {
-    title: "What our Mandarin students say",
-    testimonial: [
-      {
-        id: 1,
-        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
-        studentName: "Komal Patil",
-        studentImage: studentPic, // assuming studentPic is the URL of the image
-        course: "MBA in Marketing",
-        rating: 4.5,
-      },
-      {
-        id: 2,
-        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
-        studentName: "Komal Patil",
-        studentImage: studentPic, // assuming studentPic is the URL of the image
-        course: "MBA in Marketing",
-        rating: 4.5,
-      },
-      {
-        id: 3,
-        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
-        studentName: "Komal Patil",
-        studentImage: studentPic, // assuming studentPic is the URL of the image
-        course: "MBA in Marketing",
-        rating: 4.5,
-      },
-      {
-        id: 4,
-        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
-        studentName: "Komal Patil",
-        studentImage: studentPic, // assuming studentPic is the URL of the image
-        course: "MBA in Marketing",
-        rating: 4.5,
-      },
-      {
-        id: 1,
-        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
-        studentName: "Komal Patil",
-        studentImage: studentPic, // assuming studentPic is the URL of the image
-        course: "MBA in Marketing",
-        rating: 4.5,
-      },
-      // Add more testimonial objects as needed
-    ],
-  };
 
   const FaqsData = [
     {
@@ -212,7 +167,7 @@ const page = () => {
         <UpcomingBatches language={"Mandarin"} />
       </div> */}
 
-      <StudentsTestomony data={StudentTestimonialsData} />
+      <StudentsTestomony language={"French"} context={''} />
 
       <div className="mb-9">
         <FaqsExam FaqsData={FaqsData} />

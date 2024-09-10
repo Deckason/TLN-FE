@@ -37,7 +37,7 @@ export default function Home() {
         <ProficiencyExams />
       </section>
       <FluencyCarrerCulture />
-      <StudentsTestomony />
+      <StudentsTestomony language={'English'} context={''}/>
       {/* <TechersInfo /> */}
       <TeachersInfoNew />
       <div className="mt-[40px] lg:-mt-[40px]">

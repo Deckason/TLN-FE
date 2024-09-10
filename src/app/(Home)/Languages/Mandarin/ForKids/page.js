@@ -3,7 +3,7 @@ import {data} from  "../../../../../Utilities/data/mandarin/KidData"
 const MandarinForKidsPage = () => {
   return (
     <div>
-      <SharedKidsPage Data={data} language={"Mandarin"}/>
+      <SharedKidsPage Data={data} language={"Mandarin"} context={"Kids"}/>
     </div>
   );
 };

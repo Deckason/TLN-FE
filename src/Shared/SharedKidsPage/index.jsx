@@ -1,4 +1,5 @@
-import WhyShould from "../../Components/HomeComp/WhyShould"; import StudentsTestomony from "../StudentsTestomony";
+import WhyShould from "../../Components/HomeComp/WhyShould"; 
+import StudentsTestomony from "./../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
 import SubscribeToOur from "../SubscribeToOur";
 import Banner from "./Components/Banner";
 import EverythingYouNeedToKnowAboutLanguage from "./Components/EverythingYouNeedToKnowAboutLanguage";
@@ -14,15 +15,13 @@ import WhyKidsShouldLearnEnglish from "./Components/WhyKidShouldLearn";
 import WhyLearnLanguage from "./Components/WhyLearnLanguage";
 import UpcomingBatches from "../UpcomingBatches";
 
-const SharedKidsPage = ({ Data, language }) => {
-  // console.log(Data);
+const SharedKidsPage = ({ Data, language,context }) => {
   let faqs = [];
 
   if (Data?.Faqs?.length > 0 && Data?.Faqs !== undefined) {
     faqs = Data?.Faqs;
   }
 
-  // console.log(bannerInfo);
   return (
     <div className="">
       <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[112px]">
@@ -43,7 +42,8 @@ const SharedKidsPage = ({ Data, language }) => {
         />
 
       </div>
-      <StudentsTestomony />
+      <StudentsTestomony language={language} context={context}/>
+      
       <FaqsLanguage FaqsData={faqs} />
       <EverythingYouNeedToKnowAboutLanguage
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}

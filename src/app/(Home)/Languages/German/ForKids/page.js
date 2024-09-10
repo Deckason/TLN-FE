@@ -4,7 +4,7 @@ import {data} from  "../../../../../Utilities/data/german/KidData"
 const GermanForKidsPage = () => {
   return (
     <div>
-      <SharedKidsPage Data={data} language={"German"} />
+      <SharedKidsPage Data={data} language={"German"} context={"Kids"}/>
     </div>
   );
 };

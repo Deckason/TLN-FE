@@ -1,4 +1,4 @@
-import StudentsTestomony from "../StudentsTestomony";
+import StudentsTestomony from "./../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
 import SubscribeToOur from "../SubscribeToOur";
 import Banner from "./Components/Banner";
 import EverythingYouNeedToKnowAboutLanguage from "./Components/EverythingYouNeedToKnowAboutLanguage";
@@ -12,15 +12,13 @@ import SayBonjur from "./Components/SayBonjur";
 import WhyShould from "../../Components/HomeComp/WhyShould";
 import UpcomingBatches from "../UpcomingBatches";
 
-const SharedStudyAbroad = ({ Data, language }) => {
-  // console.log(Data);
+const SharedStudyAbroad = ({ Data, language,context }) => {
   let faqs = [];
 
   if (Data?.Faqs?.length > 0 && Data?.Faqs !== undefined) {
     faqs = Data?.Faqs;
   }
 
-  // console.log(bannerInfo);
   return (
     <div className="">
       <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
@@ -40,7 +38,7 @@ const SharedStudyAbroad = ({ Data, language }) => {
         />
         <PrepareForLanguageExam LanguageExams={Data?.LanguageExams} />
       </div>
-      <StudentsTestomony />
+      <StudentsTestomony language={language} context={context}/>
       <FaqsLanguage FaqsData={faqs} />
       {/* <EverythingYouNeedToKnowAboutLanguage
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}

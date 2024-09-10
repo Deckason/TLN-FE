@@ -5,7 +5,7 @@ import {data} from "../../../../../Utilities/data/japanese/StudyAbroadData"
 const page = () => {
   return (
     <div>
-      <SharedStudyAbroad Data={data} language={"Japanese"}/>
+      <SharedStudyAbroad Data={data} language={"Japanese"} context ={"StudyAbroad"}/>
     </div>
   );
 };

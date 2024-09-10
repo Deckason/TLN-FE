@@ -15,7 +15,7 @@ const SubscribeToOur = () => {
                 className="h-[39px] xl:h-[60px] w-[309px] sm:h-12 mx-2 w-82 px-4 py-[24px] text-[18px]/[24px] md:text-[24px]/[48px] bg-neutral-50 rounded-lg border border-stone-300 justify-start items-end gap-2.5 flex grow focus:outline-none shrink text-neutral-400 max-md:h-[39px] font-normal "
               />
             </div>
-            <button className="h-[39px] xl:h-[60px] w-[180px] px-8 py-[24px] bg-neutral-50 rounded-lg justify-center items-center gap-2.5 flex">
+            <button className="h-[39px] xl:h-[60px] w-[180px] px-8 py-[24px] bg-neutral-50 hover:scale-105 rounded-lg justify-center items-center gap-2.5 flex ">
               <div className="text-center text-teal-600 text-2xl font-medium ">
                 Subscribe
               </div>

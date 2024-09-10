@@ -6,7 +6,7 @@ const page = () => {
 
   return (
     <div>
-      <SharedStudyAbroad Data={data} language={"Mandarin"}/>
+      <SharedStudyAbroad Data={data} language={"Mandarin"} context ={"StudyAbroad"}/>
     </div>
   );
 };
