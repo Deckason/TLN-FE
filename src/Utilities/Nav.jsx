@@ -214,7 +214,7 @@ const Nav = () => {
                 className="hover:shadow-md transition hover:text-white text-teal-600 duration-300 self-stretch px-[18px] py-[8px] h-[53px]  focus:bg-teal-600 focus:text-white rounded-lg border hover:bg-teal-600 bg-white border-teal-600 justify-center items-center gap-2.5 inline-flex text-nowrap"
               >
                 <div className="lg:max-w-[280px] text-center  xl:text-[16px] font-medium ">
-                  Already booked the class
+                  Already booked the class?
                 </div>
               </Link>
             </div>

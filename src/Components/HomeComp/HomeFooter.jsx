@@ -129,7 +129,7 @@ const HomeFooter = () => {
     //   ],
     // },
     {
-      title: "Language We Offer",
+      title: "Languages We Offer",
       links: [
         { name: "Online French Classes", url: "/Languages/French" },
         { name: "Online German Classes", url: "/Languages/German" },
@@ -215,17 +215,27 @@ const HomeFooter = () => {
       <div className="md:flex md:flex-row ">
         <div className="hidden md:flex flex-col items-center mt-2 lg:items-start mr-[35px]">
           <Link href="/">
-            <div className="flex flex-col gap-10 items-center lg:items-start">
+            <div className="flex flex-col gap-6 items-center lg:items-start">
               <Image src={FooterLogo1} alt="footerImg" className="p-1" />
+              <p className="w-60 text-gray-500 text-xs">
+                The Language Network is a place to learn and immerse yourself in the world of languages. We are a dynamic institution promoting languages and celebrating cultures.
+              </p>
               <div className="flex gap-5 items-center">
                 <Image src={FooterLogo2} alt="footerLogo2" className="p-1" />
                 <Image src={FooterLogo3} alt="footerLogo3" className="p-1" />
               </div>
             </div>
           </Link>
-          <button className="mt-[30px] px-4 py-1.5 lg:px-5 lg:py-3.5 w-40 bg-teal-600 rounded-lg text-neutral-100 text-sm md:text-[12px] lg:text-xl font-normal items-center">
+          {/* <button className="mt-[30px] px-4 py-1.5 lg:px-5 lg:py-3.5 w-40 bg-teal-600 rounded-lg text-neutral-100 text-sm md:text-[12px] lg:text-xl font-normal items-center">
             Contact us
-          </button>
+          </button> */}
+          <div className="text-xs 4xl:text-sm text-gray-500 mt-5 flex flex-col gap-2 w-64 ">
+            <p>
+              Address: Signature Business Park, 1306, 13th floor, Postal Colony Rd, Chembur, Mumbai, Maharashtra 400071
+            </p>
+            <p>Contact no : 8369123184</p>
+            <p>Powered by TLN EDTECH PRIVATE LIMITED</p>
+          </div>
         </div>
         <div className="text-[#666666] gap-[28px] sm:gap-0 w-full">
           <div className="flex flex-wrap justify-between gap-[28px] lg:gap-0">
@@ -427,9 +437,16 @@ const HomeFooter = () => {
             ))}
           </div>
         </div>
-        <button className=" md:hidden px-[24px] py-[10px] w-40 bg-teal-600 rounded-lg text-neutral-100 text-[18px]/[22px] font-[500] items-center">
+        {/* <button className=" md:hidden px-[24px] py-[10px] w-40 bg-teal-600 rounded-lg text-neutral-100 text-[18px]/[22px] font-[500] items-center">
           Contact us
-        </button>
+        </button> */}
+        <div className="md:hidden text-xs 4xl:text-sm text-gray-500 mt-5 flex flex-col gap-2 w-64 ">
+            <p>
+              Address: Signature Business Park, 1306, 13th floor, Postal Colony Rd, Chembur, Mumbai, Maharashtra 400071
+            </p>
+            <p>Contact no : 8369123184</p>
+            <p>Powered by TLN EDTECH PRIVATE LIMITED</p>
+          </div>
       </div>
     </div>
   );
