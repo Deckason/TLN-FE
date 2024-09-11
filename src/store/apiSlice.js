@@ -4,9 +4,8 @@ const currMonth = new Date().getMonth() + 1;
 
 export const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://backend.thelanguagenetwork.co/",
+    baseUrl: process.env.NEXT_PUBLIC_API_URL,
   }),
-  // baseQuery: fetchBaseQuery({baseUrl:"http://3.110.121.13"}),
   tagTypes: [
     "Promos",
     "News",
@@ -121,7 +120,8 @@ export const api = createApi({
     // ---------------------- trainers queries -------------------------------
 
     getAllTestimonials: builder.query({
-      query: ({language,context}) => `/api/testimonial/get-all?language=${language}&context=${context}`,
+      query: ({ language, context }) =>
+        `/api/testimonial/get-all?language=${language}&context=${context}`,
       providesTags: ["Testimonials"],
     }),
   }),

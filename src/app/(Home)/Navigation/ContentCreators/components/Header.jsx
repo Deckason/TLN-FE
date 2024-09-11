@@ -16,7 +16,7 @@ const Header = () => {
               <p className="text-lg">
                 Calling all content creators, thought leaders, and influencers!
                 Join forces with The Language Network to spread the joy of
-                language learning far and wide. Together, let's create
+                language learning far and wide. Together, let&apos;s create
                 captivating content across YouTube, Instagram, LinkedIn,
                 podcasts, blogs, and beyond. Join our vibrant community and
                 ignite a passion for languages worldwide!
