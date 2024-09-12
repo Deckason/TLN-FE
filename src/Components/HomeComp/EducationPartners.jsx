@@ -5,10 +5,11 @@ import logo1 from "../../Assets/Homepage/Educationalbar/image_1.png";
 import logo2 from "../../Assets/Homepage/Educationalbar/image_2.png";
 import logo3 from "../../Assets/Homepage/Educationalbar/image_3.png";
 import logo4 from "../../Assets/Homepage/Educationalbar/image_4.png";
+import logo5 from "../../Assets/Homepage/Educationalbar/image_5.png";
 
 const EducationPartners = () => {
   // Array of logos
-  const logos = [logo1, logo2, logo3, logo4];
+  const logos = [logo1, logo2, logo3, logo4, logo5];
 
   return (
     <div className="w-full max-w-[1270px] 2xl:max-w-[1681px] mx-auto flex justify-center items-center mb-10">
