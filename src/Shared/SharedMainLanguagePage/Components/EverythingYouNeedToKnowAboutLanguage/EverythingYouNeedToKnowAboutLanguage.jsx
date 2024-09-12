@@ -15,8 +15,8 @@ const EverythingYouNeedToKnowAboutLanguage = ({
       <div className="max-w-[1463px]  flex-col justify-start w-full mx-auto items-start gap-12 flex">
         <div className="flex-col w-full justify-start items-center gap-12 flex">
           <div className="mx-4 lg:mx-0 text-black text-[32px]/[39px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[80px] font-bold text-center">
-            Everything you need to know
-            about {EveryThingYouNeedToKnowAbout?.Language}
+            Everything you need to know about{" "}
+            {EveryThingYouNeedToKnowAbout?.Language}
           </div>
           <div className="justify-center  w-full  h-full items-center gap-8 flex max-lg:px-4">
             <div className="flex-col w-full gap-y-2 gap-x-2">
@@ -35,7 +35,15 @@ const EverythingYouNeedToKnowAboutLanguage = ({
                       />
                     ))
                 : data?.map((data, index) => (
-                    <FaqsCard key={index} data={data} i={index} />
+                    <FaqsCard
+                      id={id}
+                      setId={setId}
+                      open={open}
+                      setOpen={setOpen}
+                      key={index}
+                      data={data}
+                      i={index}
+                    />
                   ))}
             </div>
           </div>
