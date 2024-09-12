@@ -8,12 +8,12 @@ import FaqsCard from "../Common/FaqsCard";
 const FaqsLanguage = ({ FaqsData }) => {
   console.log("👉🏻 > file: index.jsx:9 > FaqsLanguage > FaqsData:", FaqsData);
   const [splicing, setSplicing] = useState(true);
-  let newData = [...FaqsData];
   // useEffect(() => {
-  //   console.log(FaqsData);
-  // }, [splicing]);
-  const [open, setOpen] = useState(false);
-  const [id, setId] = useState(0);
+    //   console.log(FaqsData);
+    // }, [splicing]);
+    const [open, setOpen] = useState(false);
+    const [id, setId] = useState(0);
+    let newData = [...FaqsData];
   return (
     <div className="2xl:max-w-[1680px] bg-[#F6F3F3]  px-4 lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col max-md:py-0 py-[112px]">
       <div className=" flex-col justify-center w-full mx-auto items-center  gap-12 flex">
@@ -45,12 +45,15 @@ const FaqsLanguage = ({ FaqsData }) => {
                       />
                     ))
                 : newData?.map((data, index) => (
-                    <FaqsCard key={index} data={data} i={index} />
+                    <FaqsCard key={index} data={data} i={index} id={id}
+                    setId={setId}
+                    open={open}
+                    setOpen={setOpen}/>
                   ))}
             </div>
           </div>
         </div>
-        <div className="w-full ">
+        <div className="w-full mb-24 md:mb-0">
           <button
             onClick={() => {
               if (splicing) {
@@ -60,9 +63,9 @@ const FaqsLanguage = ({ FaqsData }) => {
                 setSplicing(true);
               }
             }}
-            className="h-[58px] px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex mb-[20px]"
+            className="h-[58px] px-[16px] py-[10px] xl:px-[32px] xl:py-[14px] rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex mb-[20px] text-[14px] xl:text-[24px] leading-tight"
           >
-            <div className="text-center text-teal-600 text-2xl font-medium ">
+            <div className="text-center text-teal-600  font-medium ">
               {!splicing ? "Read less FAQs" : "Read all FAQs"}
             </div>
           </button>

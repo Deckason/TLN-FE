@@ -29,42 +29,42 @@ const States = () => {
   return (
     <div className="flex justify-center  w-full items-center mt-5">
       <div className="lg:w-[1000px] 2xl:w-[1684px] max-lg:min-h-[199px] max-sm:pt-0 py-[25px] 2xl:py-[52px] xl:w-full xl:mx-4 bg-white z-10 shadow-md duration-300 transition hover:shadow-2xl rounded-2xl border border-stone-300 flex-col max-sm:mx-4 max-sm:w-[190px] max-lg:w-[350px] justify-center items-center mt-[25.5px] flex">
-        <div className="justify-around w-full 3xl:gap-[90px] items-center  flex-wrap scale-90 flex">
+        <div className=" w-full 3xl:gap-[90px] items-baseline justify-around flex-wrap scale-90 flex">
           <div className="flex-col max-lg:mb-10 justify-center cursor-default items-center gap-2 inline-flex w-full lg:w-auto">
-            <div className="text-center text-stone-900 max-sm:text-[32px] text-4xl 2xl:text-5xl  font-bold">
+            <div className="text-center text-stone-900 text-[32px] 4xl:text-[48px]  font-bold">
               {stats.totalLanguages || "Loading..."} 
             </div>
-            <div className="w-[125px] text-center text-black text-opacity-60 mx-auto max-sm:text-sm text-2xl font-normal">
+            <div className="w-[125px] text-center text-black text-opacity-60 mx-auto text-[14px] xl:text-[24px] font-normal">
               Languages
             </div>
           </div>
           <div className="flex-col max-lg:mb-10 justify-center cursor-default items-center gap-2 inline-flex w-full lg:w-auto">
-            <div className="text-center max-sm:text-[32px] text-stone-900 text-4xl 2xl:text-5xl font-bold">
+            <div className="text-center text-stone-900 text-[32px] 4xl:text-[48px]  font-bold">
               {stats.totalLeaners || "Loading..."}+
             </div>
-            <div className="w-[180px] text-center text-black text-opacity-60 mx-auto max-sm:text-sm text-2xl font-normal">
+            <div className="w-[180px] text-center text-black text-opacity-60 mx-auto text-[14px] xl:text-[24px] font-normal  text-nowrap">
               Happy Learners
             </div>
           </div>
           <div className="flex-col max-lg:mb-10 justify-center cursor-default items-center gap-[7px] inline-flex w-full lg:w-auto">
-            <div className="text-center max-sm:text-[32px] text-stone-900 text-4xl 2xl:text-5xl font-bold">
+            <div className="text-center text-stone-900 text-[32px] 4xl:text-[48px]  font-bold">
               {stats.totalMentors || "Loading..."}+
             </div>
-            <div className="w-[165px] text-center text-black text-opacity-60 text-2xl mx-auto max-sm:text-sm font-normal">
+            <div className="w-[180px] text-center text-black text-opacity-60 mx-auto text-[14px] xl:text-[24px] font-normal  text-nowrap">
               Alpha Mentors
             </div>
           </div>
           <div className="flex-col max-lg:mb-10 justify-center cursor-default items-center gap-[7px] inline-flex w-full lg:w-auto">
-            <div className="text-center text-stone-900 text-4xl 2xl:text-5xl font-bold max-sm:text-3xl">
+            <div className="text-center text-stone-900 text-[32px] 4xl:text-[48px]  font-bold">
               {stats.totalHours || "Loading..."}+
             </div>
-            <div className=" mx-auto max-sm:text-sm text-center text-black text-opacity-60 text-2xl font-normal">
+            <div className=" mx-auto text-[14px] xl:text-[24px] xl:text-center text-black text-opacity-60 font-normal">
               Hours of Enlightenment
             </div>
           </div>
           <div className="flex-col justify-start items-center gap-2 cursor-default inline-flex w-full lg:w-auto">
             <div className="justify-start items-center gap-2 flex">
-              <div className="text-center text-stone-900 text-4xl 2xl:text-5xl justify-center max-sm:flex-col items-center max-sm:text-[32px] font-bold gap-x-[8px] flex">
+              <div className="ttext-center text-stone-900  justify-center max-sm:flex-col items-center  font-bold gap-x-[8px] flex text-[32px] 4xl:text-[48px]">
                 {stats.googleReviews || "Loading..."} 
                 <Rating
                   className="text-[#FFC107] text-nowrap text-[18px]"
@@ -75,7 +75,7 @@ const States = () => {
                 />
               </div>
             </div>
-            <div className="w-[182px] max-sm:text-sm text-center text-black text-opacity-60 text-2xl font-normal">
+            <div className="text-center w-[182px] text-[14px] xl:text-[24px] xl:text-center text-black text-opacity-60 font-normal text-nowrap">
               Google Reviews
             </div>
           </div>

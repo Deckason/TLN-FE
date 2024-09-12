@@ -1,5 +1,5 @@
 import PreapareForExamCard from "@/Shared/PreapareForExamCard";
-import Goethe from "@/Assets/GermanMainPage/Gothe.svg";
+import Goethe from "@/Assets/GermanPage/Gothe.svg";
 const PreapareForGermanExam = () => {
   const levelDatas = [
     {

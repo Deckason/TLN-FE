@@ -12,6 +12,9 @@ const ClassLevelCard = ({ data }) => {
           <div className="self-stretch text-center text-neutral-800 lg:text-xl text-2xl 2xl:text-2xl font-medium ">
             {data?.level}
           </div>
+          <div className="self-stretch text-center text-teal-600 lg:text-xl text-2xl 2xl:text-2xl font-medium ">
+            {data?.price}
+          </div>
         </div>
         <div className="w-full h-full min-h-[100px]  lg:min-h-[300px] flex-col justify-between items-center gap-8 flex">
           <div className="self-stretch max-sm:max-h-full max-h-[230px] md:max-h-[255px] min-h-[280px] mx-5 md:min-h-[240px] 3xl:min-h-[200px] flex-col justify-start items-center gap-2 flex">
@@ -25,7 +28,7 @@ const ClassLevelCard = ({ data }) => {
               className="self-stretch shadow-md transition duration-300 hover:shadow-xl h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
             >
               <div className="text-center text-teal-600 text-xl font-normal leading-7">
-                Learn more
+                {data?.price != "On Request" ? "Book Now":"Enquire Now"}
               </div>
               <div className="w-6 h-6 relative">
                 <Image alt="arrowLeft" src={arrowLeft}></Image>

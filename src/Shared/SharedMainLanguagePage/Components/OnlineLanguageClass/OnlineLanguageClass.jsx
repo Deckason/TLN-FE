@@ -11,8 +11,8 @@ const OnlineLanguageClass = ({ OnlineLanguageClass }) => {
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className=" mb-[112px]">
-      <div className="text-black max-md:text-2xl lg:text-4xl max-lg:text-3xl xl:text-[60px] mb-12 text-center font-bold ">
+    <div className="mb-[30px] sm:mb-[112px]">
+      <div className="text-black text-[32px]/[39px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[80px] mb-4 lg:mb-12 text-center font-bold ">
         Online {OnlineLanguageClass?.Language} classes
       </div>
       <div className="xl:grid-cols-3 2xl:max-w-[1640px] max-w-8xl max-md:hidden flex-wrap justify-center gap-1  h-full max-md:gap-5 md:gap-2 max-md:px-4 px-5 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">

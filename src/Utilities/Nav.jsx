@@ -7,13 +7,15 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import { IoMdCloseCircle } from "react-icons/io";
 import { BsCaretRight, BsCaretRightFill } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
-import ModalImg from "../Assets/Rectangle 479.svg";
 import { usePathname } from "next/navigation";
 import "../css/NavBarCustom.css";
 import Dropdown from "../Components/DropDown";
 import ReusableLoginModal from "../Shared/LoginModal";
 import LanguageDropdown from "./LanguageDropDown";
 import { useGetPromoQuery } from "../store/apiSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleOpen } from "../store/features/GetStartedSlice";
+import GetStartedHomeButton from "../Shared/buttons/GetStartedHomeButton";
 
 const Nav = () => {
   const languageOptions = {
@@ -67,26 +69,26 @@ const Nav = () => {
     //   name: "Home",
     //   path: "/",
     // },
-    {
-      name: "School",
-      path: "/Navigation/School",
-    },
-    {
-      name: "College",
-      path: "/Navigation/College",
-    },
-    {
-      name: "Study Abroad",
-      path: "/Navigation/StudyAbroad",
-    },
-    {
-      name: "Corporate Training",
-      path: "/Navigation/CorporateTraining",
-    },
-    {
-      name: "Work with us",
-      path: "/Navigation/WorkWithUs",
-    },
+    // {
+    //   name: "School",
+    //   path: "/Navigation/School",
+    // },
+    // {
+    //   name: "College",
+    //   path: "/Navigation/College",
+    // },
+    // {
+    //   name: "Study Abroad",
+    //   path: "/Navigation/StudyAbroad",
+    // },
+    // {
+    //   name: "Corporate Training",
+    //   path: "/Navigation/CorporateTraining",
+    // },
+    // {
+    //   name: "Work with us",
+    //   path: "/Navigation/WorkWithUs",
+    // },
   ];
 
   const studyAbroad = {
@@ -111,76 +113,38 @@ const Nav = () => {
   const [showStudyAbroad, setShowStudyAbroad] = useState(false);
   const [showWorkWithUs, setShowWorkWithUs] = useState(false);
   const [showNav, setShowNav] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const isOpen = useSelector((state) => state.getStartedForm.isOpen);
+  const dispatch = useDispatch();
+  const toggleModal = () => {
+    dispatch(toggleOpen());
+  };
 
   const { data, isLoading, isError, error, refetch } = useGetPromoQuery("");
 
   return (
     <header className="z-40 ">
-
-      <>
-        <ReusableLoginModal isOpen={isModalOpen} onClose={closeModal}>
-          <div className="flex rounded-xl gap-10 items-center w-fit justify-around p-10 bg-white">
-            <div>
-              <Image
-                className="h-[586px] w-[608px]"
-                src={ModalImg}
-                alt="modalImage"
-              />
-            </div>
-            <div className="text-center w-[509px] h-[568px] flex flex-col items-center justify-around">
-              <div className="text-[40px] font-bold">
-                Welcome To The Language Network
-              </div>
-              <div className="text-start w-full justify-around h-[416px] flex flex-col gap-4">
-                <label className="text-[20px]">Login here</label>
-                <div className="flex flex-col gap-2">
-                  <label className="text-[14px]">Mobile Number</label>
-                  <input
-                    type="number"
-                    id="number"
-                    placeholder="+91 99999 99999"
-                    className="px-3 py-2 border outline-none rounded-md"
-                  />
-                </div>
-                <div className="w-full flex flex-col gap-2">
-                  <div className="flex justify-between">
-                    <label className="text-[14px]">Password</label>
-                    <label className="text-[14px] text-teal-600 font-semibold">
-                      Forget Password?
-                    </label>
-                  </div>
-                  <input
-                    type="password"
-                    id="password"
-                    placeholder="*********"
-                    className="px-3 py-2 border outline-none rounded-md"
-                  />
-                </div>
-                <button className="p-3 rounded-lg bg-teal-600 hover:bg-white transition duration-300 hover:text-teal-600 text-white border hover:border-teal-600">
-                  Login
-                </button>
-                <div className="font-semibold text-[14px] text-teal-600 text-center">
-                  <span className="text-black">Don&apos;t have account ? </span>{" "}
-                  Create new account
-                </div>
-              </div>
-            </div>
-          </div>
-        </ReusableLoginModal>
-      </>
-      <nav>
+      {/* <>
+        <ReusableLoginModal isOpen={isOpen} onClose={toggleModal} />
+      </> */}
+      <nav className="shadow-custom">
         {/* Batches Starting Now  */}
         <section>
-          <div className="bg-black flex items-center justify-center cursor-pointer h-[30px] lg:h-[48px] w-full">
-            <h1 className=" text-primary-color 2xl:text-[16px] xl:text-[14px] text-[10px] md:text-base text-xs font-bold hover:underline focus:underline underline-offset-1">
+          <div className="bg-black flex items-center justify-center  lg:h-[48px] w-full">
+            <h1 className=" text-primary-color py-2 text-[14px]/[17px] 2xl:text-[16px] xl:text-[14px] text-[10px] md:text-base font-bold ">
               {/* DELF /Goethe Exam Schedule */}
-              <Link href={data ? data[1].link : "/"}>
-                <span className="font-normal"> {data ? data[1].label : ""}</span> {data && "| "}
-                {data ? data[1].topic : ""}
+              <Link
+                href={data ? data[0].link : "/"}
+                className="flex flex-col sm:flex-row "
+              >
+                {/* <span className="font-[500]"> {data ? data[0].label : ""}</span> */}
+                {/* <span className="font-normal hidden sm:inline">
+                  {" "}
+                  {data && "| "}
+                </span> */}
+                <span className="font-[700] text-center">
+                  {data ? data[0].topic : ""}
+                </span>
               </Link>
             </h1>
           </div>
@@ -232,23 +196,28 @@ const Nav = () => {
                   </div>
                 </div>
 
-                <LanguageDropdown />
+                {/* <LanguageDropdown /> */}
               </div>
             </div>
             <div className=" hidden flex-grow gap-4 lg:flex justify-end me-5 ">
               <button
-                onClick={openModal}
+                data-tally-open="3qORRk"
+                data-tally-layout="modal"
+                data-tally-width="676"
+                data-tally-hide-title="1"
                 className=" hover:shadow-md transition duration-300 text-[16px]  lg:w-[160px] border  h-[53px] px-[18px] py-[8px] hover:bg-white hover:border-teal-600 hover:text-teal-600 focus:bg-white focus:border-teal-600 focus:text-teal-600 bg-teal-600 rounded-lg justify-center text-white items-center gap-2.5 inline-flex text-nowrap"
               >
-                Get Started
+                Get started
               </button>
-              <Link href={"https://login.live.com/"} className="hover:shadow-md transition hover:text-white text-teal-600 duration-300 self-stretch px-[18px] py-[8px] h-[53px]  focus:bg-teal-600 focus:text-white rounded-lg border hover:bg-teal-600 bg-white border-teal-600 justify-center items-center gap-2.5 inline-flex text-nowrap">
+              <Link
+                href={"https://login.live.com/"}
+                className="hover:shadow-md transition hover:text-white text-teal-600 duration-300 self-stretch px-[18px] py-[8px] h-[53px]  focus:bg-teal-600 focus:text-white rounded-lg border hover:bg-teal-600 bg-white border-teal-600 justify-center items-center gap-2.5 inline-flex text-nowrap"
+              >
                 <div className="lg:max-w-[280px] text-center  xl:text-[16px] font-medium ">
-                  Already Booked The Class
+                  Already booked the class?
                 </div>
               </Link>
             </div>
-
           </div>
           {/* side bar */}
           <div className="lg:hidden">
@@ -272,8 +241,9 @@ const Nav = () => {
               />
             </div>
             <div
-              className={`min-h-lvh fixed bg-white w-[200px] ${showNav ? "right-0" : "right-[-120%]"
-                } transform duration-500 border-2 border-secondary-color top-0 z-50`}
+              className={`min-h-lvh fixed bg-white w-[200px] ${
+                showNav ? "right-0" : "right-[-120%]"
+              } transform duration-500 border-2 border-secondary-color top-0 z-50`}
             >
               <IoMdCloseCircle
                 onClick={() => {
@@ -299,8 +269,9 @@ const Nav = () => {
                   >
                     Languages
                     <BsCaretRightFill
-                      className={`${showLanguageOptions ? "rotate-90" : "rotate-0"
-                        } transform duration-300`}
+                      className={`${
+                        showLanguageOptions ? "rotate-90" : "rotate-0"
+                      } transform duration-300`}
                     />
                   </div>
                   {showLanguageOptions && (
@@ -316,10 +287,11 @@ const Nav = () => {
                         >
                           {language.name}
                           <GoDotFill
-                            className={`${pathname === language.path
-                              ? "text-primary-color"
-                              : "text-white"
-                              }`}
+                            className={`${
+                              pathname === language.path
+                                ? "text-primary-color"
+                                : "text-white"
+                            }`}
                           />
                         </Link>
                       ))}
@@ -339,10 +311,11 @@ const Nav = () => {
                   >
                     School
                     <GoDotFill
-                      className={`${pathname === "/Navigation/School"
-                        ? "text-primary-color"
-                        : "text-white"
-                        }`}
+                      className={`${
+                        pathname === "/Navigation/School"
+                          ? "text-primary-color"
+                          : "text-white"
+                      }`}
                     />
                   </Link>
                 </button>
@@ -359,10 +332,11 @@ const Nav = () => {
                   >
                     College
                     <GoDotFill
-                      className={`${pathname === "/Navigation/College"
-                        ? "text-primary-color"
-                        : "text-white"
-                        }`}
+                      className={`${
+                        pathname === "/Navigation/College"
+                          ? "text-primary-color"
+                          : "text-white"
+                      }`}
                     />
                   </Link>
                 </button>
@@ -378,8 +352,9 @@ const Nav = () => {
                   >
                     Study Abroad
                     <BsCaretRightFill
-                      className={`${showStudyAbroad ? "rotate-90" : "rotate-0"
-                        } transform duration-300`}
+                      className={`${
+                        showStudyAbroad ? "rotate-90" : "rotate-0"
+                      } transform duration-300`}
                     />
                   </div>
                   {showStudyAbroad && (
@@ -393,10 +368,11 @@ const Nav = () => {
                       >
                         TOPIK 2- Level 5
                         <GoDotFill
-                          className={`${pathname === ""
-                            ? "text-primary-color"
-                            : "text-white"
-                            }`}
+                          className={`${
+                            pathname === ""
+                              ? "text-primary-color"
+                              : "text-white"
+                          }`}
                         />
                       </Link>
                       <Link
@@ -408,10 +384,11 @@ const Nav = () => {
                       >
                         TOPIK 2- Level 6
                         <GoDotFill
-                          className={`${pathname === ""
-                            ? "text-primary-color"
-                            : "text-white"
-                            }`}
+                          className={`${
+                            pathname === ""
+                              ? "text-primary-color"
+                              : "text-white"
+                          }`}
                         />
                       </Link>
                     </div>
@@ -430,10 +407,11 @@ const Nav = () => {
                   >
                     Corporate Training
                     <GoDotFill
-                      className={`${pathname === "/Navigation/CorporateTraining"
-                        ? "text-primary-color"
-                        : "text-white"
-                        }`}
+                      className={`${
+                        pathname === "/Navigation/CorporateTraining"
+                          ? "text-primary-color"
+                          : "text-white"
+                      }`}
                     />
                   </Link>
                 </button>
@@ -449,8 +427,9 @@ const Nav = () => {
                   >
                     Work with us
                     <BsCaretRightFill
-                      className={`${showWorkWithUs ? "rotate-90" : "rotate-0"
-                        } transform duration-300`}
+                      className={`${
+                        showWorkWithUs ? "rotate-90" : "rotate-0"
+                      } transform duration-300`}
                     />
                   </div>
                   {showWorkWithUs && (
@@ -464,10 +443,11 @@ const Nav = () => {
                       >
                         Careers
                         <GoDotFill
-                          className={`${pathname === ""
-                            ? "text-primary-color"
-                            : "text-white"
-                            }`}
+                          className={`${
+                            pathname === ""
+                              ? "text-primary-color"
+                              : "text-white"
+                          }`}
                         />
                       </Link>
                       <Link
@@ -479,10 +459,11 @@ const Nav = () => {
                       >
                         Teach with us
                         <GoDotFill
-                          className={`${pathname === ""
-                            ? "text-primary-color"
-                            : "text-white"
-                            }`}
+                          className={`${
+                            pathname === ""
+                              ? "text-primary-color"
+                              : "text-white"
+                          }`}
                         />
                       </Link>
                       <Link
@@ -494,10 +475,11 @@ const Nav = () => {
                       >
                         Collaborate with us
                         <GoDotFill
-                          className={`${pathname === ""
-                            ? "text-primary-color"
-                            : "text-white"
-                            }`}
+                          className={`${
+                            pathname === ""
+                              ? "text-primary-color"
+                              : "text-white"
+                          }`}
                         />
                       </Link>
                     </div>

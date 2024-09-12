@@ -41,6 +41,12 @@ module.exports = {
         secondary2: "#797979",
         secondary3: "#1D1D1D",
       },
+      boxShadow: {
+        'custom': '0px 4px 50px 0px rgba(0, 0, 0, 0.06)',
+        'examShadow': '0px 4px 50px 0px #0000000F',
+        'examShadowDarker': '0px 0px 20px',
+        'top-lg': '0 0px 1px 0px rgba(0, 0, 0, 0.1)',
+      }
     },
   },
   plugins: [],

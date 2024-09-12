@@ -1,8 +1,12 @@
 .upcomingCourseActive {
-  @apply w-32 h-10 px-4 py-2 bg-secondary-color rounded-lg justify-center items-center gap-2.5 inline-flex text-primary-color max-sm:text-base text-xl font-bold;
+  @apply  bg-secondary-color rounded-lg justify-center items-center inline-flex text-primary-color;
 }
 .upcomingCourseDeActive {
-  @apply w-32 h-10 px-4 py-2 bg-white rounded-lg max-sm:text-base justify-center items-center gap-2.5 inline-flex text-neutral-color text-xl font-bold;
+  @apply bg-white rounded-lg justify-center items-center inline-flex text-neutral-color font-bold;
+}
+.gradient-bg {
+  border-radius: 10px;
+  background: linear-gradient(to bottom, rgba(0, 77, 55, 0.3) 30%, rgba(119, 119, 119, 0.3) 100%);
 }
 
 .slider {

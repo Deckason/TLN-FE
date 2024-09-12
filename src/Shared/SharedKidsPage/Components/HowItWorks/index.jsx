@@ -3,6 +3,7 @@ import Image from "next/image";
 import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import HowItWorksCard from "./HowItWorksCard";
 import { SwiperSlide, Swiper } from "swiper/react";
+import KidsStartedBtn from "./../../../../Shared/buttons/kids/KidsStartedBtn"
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,13 +14,13 @@ const HowItWorks = ({ HowItWorksCardData }) => {
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
   return (
-    <div className="bg-[#F6F3F3] w-full flex justify-center flex-col items-center py-[112px]">
+    <div className="bg-[#F6F3F3] w-full flex justify-center flex-col items-center py-[52px]">
       <section className="">
-        <h1 className="text-stone-900 text-[40px] font-bold  text-center mb-2">
-          How it works?
-        </h1>
+      <h1 className="text-stone-900 text-[24px] xl:text-[60px]/[80px] font-bold text-center mb-4">
+        How it works?
+      </h1>    
 
-        <div className="3xl:flex hidden flex-wrap justify-center gap-[16px] mx-auto w-full lg:gap-[18px  items-center mt-[48px] ">
+        <div className="3xl:flex hidden flex-wrap justify-center gap-[16px] mx-auto w-full lg:gap-[18px]  items-center mt-[48px] ">
           {HowItWorksCardData?.map((data) => {
             return <HowItWorksCard key={data.id} datas={data}></HowItWorksCard>;
           })}
@@ -71,7 +72,8 @@ const HowItWorks = ({ HowItWorksCardData }) => {
         </div>
       </section>
       <div className=" mt-14 max-md:hidden">
-        <BookAFreeDemoButton />
+        {/* <BookAFreeDemoButton /> */}
+        <KidsStartedBtn />
       </div>
     </div>
   );

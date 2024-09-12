@@ -3,7 +3,7 @@ import { TopBar } from "../../../../../../Shared/ReusableExamPage/top-bar";
 import UpcomingBatches from "../../../../../../Shared/UpcomingBatches";
 import studentPic from "../../../../../../Assets/Homepage/Testomony/testomony.png";
 import React from "react";
-import StudentsTestomony from "../../../../../../Shared/ReusableExamPage/studentTestmony";
+import StudentsTestomony from "../../../../../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
 import Say from "../../../../../../Shared/ReusableExamPage/Say";
 import Faqs from "../../../../../../Shared/ReusableExamPage/Faq";
 import LanguageLessons from "../../../../../../Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
@@ -13,53 +13,11 @@ import ExamHelp from "../../../../../../Shared/ReusableExamPage/Exam-Help";
 import AboutDelf from "../../../../../../Shared/ReusableExamPage/About-Delf";
 import dalf from "../../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
 
+//components
+import Banner from "../../../../../../Shared/ReusableExamPage/Banner";
+import FaqsExam from "../../../../../../Shared/ReusableExamPage/FaqsExam";
+
 const page = () => {
-  const StudentTestimonialsData = {
-    title: "What our French students say",
-    testimonial: [
-      {
-        id: 1,
-        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
-        studentName: "Komal Patil",
-        studentImage: studentPic, // assuming studentPic is the URL of the image
-        course: "MBA in Marketing",
-        rating: 4.5,
-      },
-      {
-        id: 2,
-        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
-        studentName: "Komal Patil",
-        studentImage: studentPic, // assuming studentPic is the URL of the image
-        course: "MBA in Marketing",
-        rating: 4.5,
-      },
-      {
-        id: 3,
-        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
-        studentName: "Komal Patil",
-        studentImage: studentPic, // assuming studentPic is the URL of the image
-        course: "MBA in Marketing",
-        rating: 4.5,
-      },
-      {
-        id: 4,
-        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
-        studentName: "Komal Patil",
-        studentImage: studentPic, // assuming studentPic is the URL of the image
-        course: "MBA in Marketing",
-        rating: 4.5,
-      },
-      {
-        id: 1,
-        text: "Spanish I have done my Spanish A1 & A2 from The Language Network. I have an amazing experience with the teachers. They teach from the deep down of their soul. Anytime they are ready to help. Specially Amrita Iyer is very very helpful to learn Spanish. Thank you The Language Network!!!",
-        studentName: "Komal Patil",
-        studentImage: studentPic, // assuming studentPic is the URL of the image
-        course: "MBA in Marketing",
-        rating: 4.5,
-      },
-      // Add more testimonial objects as needed
-    ],
-  };
 
   const FaqsData = [
     {
@@ -203,16 +161,28 @@ const page = () => {
 
   return (
     <div>
-      <TopBar data={TopBarData} />
+      <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[112px]">
+        <Banner BannerData={TopBarData} />
+      </div>
+      {/* <TopBar data={TopBarData} /> */}
       <AboutDelf data={aboutExam} />
       <ExamHelp data={examHelpData} />
-      <UpcomingBatches language={"French"}/>
-      <StudentsTestomony data={StudentTestimonialsData} />
-      <Faqs data={FaqsData} />
-      <Say say={say} />
-      <div className="mb-10">
-      <LanguageLessons LanguageLesson={lessonData} />
+      {/* <div className="-mt-[100px] -mb-[50px] lg:-mt-[50px] lg:-mb-[90px]">
+        <UpcomingBatches language={"French"} />
+      </div> */}
+
+      <StudentsTestomony language={"French"} context={''} />
+
+      <div className="mb-9">
+        <FaqsExam FaqsData={FaqsData} />
       </div>
+      {/* <Faqs data={FaqsData} /> */}
+      {/* <Say say={say} /> */}
+      {/* <div className="mb-10">
+      <LanguageLessons LanguageLesson={lessonData} />
+      </div> */}
+
+      {/* //added this because of commenting the above sections */}
       <SubscribeToOur />
       <PaymentBar />
     </div>

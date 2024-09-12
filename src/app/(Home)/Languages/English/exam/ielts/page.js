@@ -3,7 +3,8 @@ import { TopBar } from "../../../../../../Shared/ReusableExamPage/top-bar";
 import UpcomingBatches from "../../../../../../Shared/UpcomingBatches";
 import studentPic from "../../../../../../Assets/Homepage/Testomony/testomony.png";
 import React from "react";
-import StudentsTestomony from "../../../../../../Shared/ReusableExamPage/studentTestmony";
+import StudentsTestomony from "../../../../../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
+
 import Say from "../../../../../../Shared/ReusableExamPage/Say";
 import Faqs from "../../../../../../Shared/ReusableExamPage/Faq";
 import LanguageLessons from "../../../../../../Shared/FrenchAdultReusableComponents/Languagelessons/LanguageLessons";
@@ -11,7 +12,11 @@ import SubscribeToOur from "../../../../../../Shared/SubscribeToOur";
 import PaymentBar from "../../../../../../Components/HomeComp/PaymentBar";
 import ExamHelp from "../../../../../../Shared/ReusableExamPage/Exam-Help";
 import AboutDelf from "../../../../../../Shared/ReusableExamPage/About-Delf";
-import ielts from "../../../../../../Assets/English/ielts.png"
+import ielts from "../../../../../../Assets/English/ielts.png";
+
+//components
+import Banner from "../../../../../../Shared/ReusableExamPage/Banner";
+import FaqsExam from "../../../../../../Shared/ReusableExamPage/FaqsExam";
 
 const page = () => {
   const StudentTestimonialsData = {
@@ -204,16 +209,27 @@ const page = () => {
 
   return (
     <div>
-      <TopBar data={TopBarData} />
+      <div className="2xl:w-[1280px] 3xl:w-[1530px] 4xl:w-[1680px] lg:mx-10 mx-auto 2xl:mx-auto  relative  flex justify-center items-center flex-col mb-[112px]">
+        <Banner BannerData={TopBarData} />
+      </div>
+      {/* <TopBar data={TopBarData} /> */}
       <AboutDelf data={aboutExam} />
       <ExamHelp data={examHelpData} />
-      <UpcomingBatches language={"English"}/>
-      <StudentsTestomony data={StudentTestimonialsData} />
-      <Faqs data={FaqsData} />
-      <Say say={say} />
-      <div className="mb-10">
-      <LanguageLessons LanguageLesson={lessonData} />
+      {/* <div className="-mt-[100px] -mb-[50px] lg:-mt-[50px] lg:-mb-[90px]">
+        <UpcomingBatches language={"English"} />
+      </div> */}
+
+      <StudentsTestomony language={"English"} context={""} />
+      <div className="mb-9">
+        <FaqsExam FaqsData={FaqsData} />
       </div>
+
+      {/* <Faqs data={FaqsData} /> */}
+      {/* <Say say={say} /> */}
+      {/* <div className="mb-10">
+      <LanguageLessons LanguageLesson={lessonData} />
+      </div> */}
+      {/* //added this because of commenting the above sections */}
       <SubscribeToOur />
       <PaymentBar />
     </div>

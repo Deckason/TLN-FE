@@ -16,15 +16,15 @@ import StudentsTestomony from "./Components/StudentTestomony/StudentsTestomony";
 import UpcomingBatches from "../UpcomingBatches";
 import WhyLearnLanguage from "./Components/WhyLearnLanguage/WhyLearnLanguage";
 
-const SharedMainLanuagePage = ({ Data, language }) => {
-  // console.log(Data);
+const SharedMainLanuagePage = ({ Data, language, context }) => {
   return (
     <div>
-
       <div className="mx-4 lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <div className=" mx-auto  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
           <Banner BannerData={Data?.Banner} />
-          <OnlineLanguageClass OnlineLanguageClass={Data?.OnlineLanguageClass} />
+          <OnlineLanguageClass
+            OnlineLanguageClass={Data?.OnlineLanguageClass}
+          />
           <LanguageClassesForAnyGoal
             ClassesForAnyGoal={Data?.ClassesForAnyGoal}
           />
@@ -33,27 +33,30 @@ const SharedMainLanuagePage = ({ Data, language }) => {
             ClassesForAnyLevel={Data?.ClassesForAnyLevel}
           />
           <WhyLearnLanguage WhyLearnLanguage={Data?.WhyLearnLanguage} />
-          <div className="-my-[150px] z-10">
+          {/* <div className="-mt-[330px] -mb-[180px] sm:-my-[150px] z-10">
             <UpcomingBatches language={language} />
-          </div>        </div>
-
+          </div> */}
+          <div className="-my-[100px] z-10"></div>
+        </div>
       </div>
       <div>
-        <StudentsTestomony />
+        <StudentsTestomony language={language} context={context} />
+
         <FaqsLanguage FaqsData={Data?.FaqsData} />
-        <EverythingYouNeedToKnowAboutLanguage
-          EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
-        />
-        <SayBonjur SayBonjur={Data?.SayBonjur} />
-        <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
-          <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
+        <div className="mb-[50px]">
+          <EverythingYouNeedToKnowAboutLanguage
+            EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
+          />
         </div>
+        {/* <SayBonjur SayBonjur={Data?.SayBonjur} /> */}
+        {/* <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
+          <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
+        </div> */}
         <SubscribeToOur />
 
         <PaymentBar />
       </div>
     </div>
-
   );
 };
 

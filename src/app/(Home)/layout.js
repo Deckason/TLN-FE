@@ -1,10 +1,11 @@
 "use client";
+import { Provider } from "react-redux";
 import HomeFooter from "../../Components/HomeComp/HomeFooter";
 import Nav from "../../Utilities/Nav";
 import "../../css/Custom.css";
-import { api } from "../../store/apiSlice";
-import { ApiProvider } from "@reduxjs/toolkit/query/react";
 import { createContext, useEffect, useState } from "react";
+import { store } from "../../store/store";
+
 export const LanguageOptionContext = createContext("");
 const Homelayout = ({ children }) => {
   const [Language, setLanguage] = useState("English");
@@ -16,13 +17,15 @@ const Homelayout = ({ children }) => {
     setLanguage(localStorage.getItem("Language") || "English");
   }, []);
   return (
-    <LanguageOptionContext.Provider value={data} className="">
-      <ApiProvider api={api}>
-        <Nav />
-        {children}
-        <HomeFooter />
-      </ApiProvider>
-    </LanguageOptionContext.Provider>
+    <Provider store={store}>
+      <LanguageOptionContext.Provider value={data} className="">
+        <Provider store={store}>
+          <Nav />
+          {children}
+          <HomeFooter />
+        </Provider>
+      </LanguageOptionContext.Provider>
+    </Provider>
   );
 };
 

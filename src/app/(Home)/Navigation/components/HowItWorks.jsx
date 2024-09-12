@@ -1,41 +1,85 @@
-import React from "react";
+"use client";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper/modules";
+import howItWorksData from "../College/data/howItWorksData"; 
 
-const HowItWorks = ({ data }) => {
+const HowItWorks = () => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
+
   return (
     <>
-      <h2 className="text-[35px]/[50px] sm:text-[40px]/[55px] md:text-[45px]/[60px] lg:text-[50px]/[65px] xl:text-[55px]/[70px] 2xl:text-[60px]/[72.61px] text-[#1E1E1E] font-bold text-center mt-[50px] xl:mt-[90px] 2xl:mt-[120px] mb-[67px]">
+      <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 text-center py-10">
         How it works?
-      </h2>
+      </p>
       <div className="sm:pb-20 pt-8 pb-8">
-        <div className="container mx-auto sm:px-16 px-5 ">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 h-auto">
-            {data.map((val, index) => {
-              return (
-                <div
-                  key={index}
-                  className="flex flex-col items-center xl:w-[340px] 2xl:w-[360px] "
-                >
-                  <div className="flex items-center justify-center h-fit w-full px-8">
-                    <Image
-                      width={359}
-                      height={140}
-                      src={val.icon}
-                      className="w-full"
-                      alt="Form Image"
-                    />
-                  </div>
-                  <div className="bg-white rounded-lg border border-primary-color text-xl mt-5 text-center w-full h-[225px] lg:h-auto">
-                    <h5 className="bg-primary-color py-3 mb-5 text-white ">
-                      {val.heading}
-                    </h5>
-                    <p className="text-gray-600 mx-[40px] my-[8px] text-center h-fit min-h-32 ">
-                      {val.content}
-                    </p>
-                  </div>
+        <div className="container mx-auto sm:px-8 px-5 ">
+          <div className="md:grid hidden grid-cols-3 gap-8 h-auto">
+            {howItWorksData.map((val, index) => (
+              <div key={index} className="flex flex-col items-center ">
+                <div className="flex items-center justify-center h-fit w-full px-8 ">
+                  <Image src={val.icon} width={359} height={140} className="w-full" alt="Form Image" />
                 </div>
-              );
-            })}
+                <div className="bg-white min-h-60 w-full rounded-lg border border-primary-color text-xl mt-5 text-center">
+                  <h5 className="bg-primary-color py-3 mb-5 text-white rounded-t-lg">
+                    {val.heading}
+                  </h5>
+                  <p className="text-gray-600 px-4 lg:text-xl text-lg my-4 text-center h-fit sm:min-h-32">
+                    {val.content}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="md:hidden">
+            <Swiper
+              spaceBetween={20}
+              pagination={{ clickable: true }}
+              navigation={{
+                prevEl: navigationPrevRef.current,
+                nextEl: navigationNextRef.current,
+              }}
+              onBeforeInit={(swiper) => {
+                swiper.params.navigation.prevEl = navigationPrevRef.current;
+                swiper.params.navigation.nextEl = navigationNextRef.current;
+              }}
+              onSlideChange={(swiper) => {
+                setCurrentPage(swiper.activeIndex);
+              }}
+              breakpoints={{
+                1680: { slidesPerView: 4 },
+                1280: { slidesPerView: 3 },
+                1024: { slidesPerView: 2 },
+                768: { slidesPerView: 1 },
+              }}
+              modules={[Pagination, Navigation]}
+              className="mySwiper mx-auto flex justify-center items-center max-w-[356px] md:max-w-[395px] lg:max-w-[850px] md:hidden xl:max-w-[1150px] w-full max-sm:max-h-full 2xl:w-full 3xl:max-w-[1440px]"
+            >
+              {howItWorksData.map((val, index) => (
+                <SwiperSlide key={index}>
+                  <div className="flex flex-col items-center">
+                    <div className="flex items-center justify-center h-fit w-full px-3">
+                      <Image src={val.icon} width={359} height={140} className="w-full" alt="Form Image" />
+                    </div>
+                    <div className="bg-white min-h-60 rounded-lg border border-primary-color text-xl mt-5 text-center">
+                      <h5 className="bg-primary-color py-3 mb-5 text-white">
+                        {val.heading}
+                      </h5>
+                      <p className="text-gray-600 px-4 lg:text-xl text-lg my-4 text-center h-fit sm:min-h-32">
+                        {val.content}
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>

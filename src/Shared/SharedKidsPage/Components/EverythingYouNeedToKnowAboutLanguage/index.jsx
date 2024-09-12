@@ -14,7 +14,7 @@ const EverythingYouNeedToKnowAboutLanguage = ({
     <div className="2xl:w-full bg-[#F6F3F3] lg:px-14 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col py-[112px]">
       <div className="max-w-[1463px]  flex-col justify-start w-full mx-auto items-start gap-12 flex 2xl:max-w-[1680px] ">
         <div className="flex-col w-full justify-start items-center gap-12 flex">
-          <div className="text-black max-md:text-xl text-[60px] font-bold text-center max-lg:text-2xl">
+          <div className="text-stone-900 text-[24px] xl:text-[60px]/[80px] font-bold text-center mb-2">
             Everything you need to know <br className="hidden max-md:block" />{" "}
             about {EveryThingYouNeedToKnowAbout?.Language}
           </div>
@@ -49,9 +49,9 @@ const EverythingYouNeedToKnowAboutLanguage = ({
               setSplicing(true);
             }
           }}
-          className="h-[58px] px-8 py-3.5 rounded-lg border border-teal-600 mx-auto w-[190px] justify-center items-center gap-2.5 inline-flex"
+          className="h-[58px] px-[16px] py-[10px] xl:px-[32px] xl:py-[14px] rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex mb-[20px] text-[14px] xl:text-[24px] leading-tight ml-8"
         >
-          <div className="text-center text-teal-600 text-2xl font-medium">
+          <div className="text-center text-teal-600  font-medium">
             {!splicing ? "Read less" : "Read more"}
           </div>
         </button>

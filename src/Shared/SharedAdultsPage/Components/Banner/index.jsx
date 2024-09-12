@@ -2,6 +2,7 @@
 import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
 import BannerImage from "../../../../Assets/FrenchPage/FrenchAdult/BannerTwo.svg";
+import AdultsBannerBtn from "./../../../../Shared/buttons/adults/AdultsBannerBtn";
 
 import { useEffect, useState } from "react";
 import States from "../States";
@@ -10,23 +11,23 @@ const Banner = ({ BannerData }) => {
   const [BannerInfo, setBannerInfo] = useState();
   useEffect(() => {
     if (Splicing) {
-      setBannerInfo(BannerData?.Description.slice(0, 200));
+      setBannerInfo(BannerData?.Description.slice(0, 250));
     } else {
       setBannerInfo(BannerData?.Description);
     }
   }, [Splicing,BannerData?.Description]);
   return (
     <div className="w-full relative flex justify-center items-center flex-col ">
-      <div className="mt-[43px] max-w-[1681px]  mx-auto w-full">
+      <div className="mt-[43px] max-w-[1681px]    w-full">
         <div className="flex-auto max-md:max-w-full">
-          <div className="grid  relative lg:grid-cols-2 gap-5 max-lg:flex-col max-md:gap-0">
-            <div className="flex flex-col  max-w-[700px] max-md:ml-0 max-lg:w-full">
-              <div className="flex z-10 flex-col px-5 text-black max-md:max-w-full">
-                <div className="text-5xl font-bold max-md:max-w-full max-md:text-4xl">
+          <div className="grid  relative lg:grid-cols-2 gap-5 max-lg:flex-col max-md:gap-0 ">
+            <div className="flex flex-col    max-md:ml-0 max-lg:w-full">
+              <div className="flex z-10 flex-col items-start px-5 text-black max-md:max-w-full">
+                <div className="text-[24px] font-bold w-full xl:w-[643px] 4xl:w-[1106px] xl:text-[48px]">
                   Online {BannerData?.Language} Classes for Adults
                 </div>
-                <div className="mt-2 max-sm:text-sm text-xl leading-7 lg:text-base 2xl:text-xl lg:w-[450px] xl:w-[500px] 2xl:w-full max-md:max-w-full relative mb-[32px]">
-                  <div className="mb-8">
+                <div className="mt-2  text-[16px] leading-7  2xl:text-[20px] w-full xl:w-[643px] 4xl:w-[1106px] relative mb-[32px] flex flex-col items-start">
+                  <div className="mb-[24px] 2xl:mb-[32px]">
                     <div>
                       {BannerInfo}
                       <span
@@ -37,23 +38,23 @@ const Banner = ({ BannerData }) => {
                       </span>
                     </div>
                   </div>{" "}
-                  <div className="max-sm:absoluteflex justify-star max-2xl:-ml-8 max-2xl:-mt-6 max-md:-ml-8 ">
-                    <BookAFreeDemoButton />
+                  <div className="flex justify-start ml-[-29px] xl:ml-[-8px]">
+                    <AdultsBannerBtn />
                   </div>
                 </div>
               </div>
             </div>
             <div className="  mx-auto max-md:-mb-[26px] max-lg:-mb-[42px] lg:-mb-0 lg:block px-4 lg:absolute  right-5 -top-10">
               <Image
-                alt="homePageBannerGirl"
-                className="w-[500px]  h-full object-contain "
-                src={BannerImage}
+                alt="homePageBannerPicture"
+                className="w-[465px] h-[417px]  object-contain "
+                src={BannerData?.BannerImage ?? BannerImage}
               ></Image>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full -my-10">
+      <div className="w-full mt-[53px] xl:mt-[-41px] 4xl:mt-[90px]">
         <States />
       </div>
     </div>

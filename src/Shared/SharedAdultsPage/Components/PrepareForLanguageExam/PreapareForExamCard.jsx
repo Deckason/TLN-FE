@@ -19,7 +19,7 @@ const PreapareForExamCard = ({ data }) => {
             {data?.title}
           </div>
           <div className="self-stretch max-sm:max-h-full max-h-[270px] h-full max-lg:max-h-[270px]  min-h-[170px]  flex-col justify-start items-center gap-2 flex">
-            <div className="self-stretch text-center text-neutral-500 lg:text-lg 2xl:text-xl font-normal leading-7">
+            <div className="self-stretch text-center text-neutral-500 text-[16px] lg:text-lg 2xl:text-xl font-normal leading-7">
               {data?.description}
             </div>
           </div>
@@ -29,10 +29,10 @@ const PreapareForExamCard = ({ data }) => {
               className="self-stretch shadow-md hover:shadow-xl transition duration-300 h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
             >
               <div className="text-center text-teal-600 text-xl font-normal  leading-7">
-                Learn more
+                Find a class
               </div>
               <div className="w-6 h-6 relative">
-                <Image alt="arrowLeft" width={6} height={6} src={arrowLeft}></Image>
+              <Image src={arrowLeft} alt="arrowLeft" />
               </div>
             </Link>
           </div>

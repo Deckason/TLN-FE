@@ -1,14 +1,25 @@
-import Link from "next/link";
+"use client";
+import { useDispatch } from "react-redux";
+import { toggleOpen } from "../store/features/GetStartedSlice";
 
 const BookAFreeDemoButton = () => {
+  const dispatch = useDispatch();
+  const toggleModal = () => {
+    dispatch(toggleOpen());
+  };
   return (
-    <Link href={"https://tallysolutions.com/"} className="self-stretch h-[53px] flex-col justify-start items-start scale-75 2xl:scale-100 gap-2.5 flex">
-      <div className="-ml-[5px] h-[58px] shadow-md hover:shadow-xl transition focus:bg-white cursor-pointer duration-300 px-8 py-3.5 hover:bg-white text-white focus:text-teal-600 focus:border-teal-600 border  hover:text-teal-600 hover:border-teal-600 bg-teal-600 rounded-lg z-30 justify-center items-center gap-2.5 inline-flex">
-        <div className="h-[30px] text-center text-2xl font-medium ">
-          Book a free demo
-        </div>
-      </div>
-    </Link>
+    <div
+      onClick={toggleModal}
+      className="flex mt-8 md:mt-12 lg:mt-16 justify-start ml-8 lg:ml-6 xl:ml-0"
+    >
+      <button
+        data-tally-open="3qORRk"
+        data-tally-layout="modal"
+        className="px-6 py-2 sm:px-8 sm:py-3 md:px-10 md:py-3.5 bg-teal-600 rounded-lg text-sm sm:text-base lg:text-xl xl:text-2xl font-medium text-neutral-50 flex items-center gap-2.5 hover:bg-neutral-50 hover:text-teal-600 border-2 border-teal-600 transition-colors duration-200"
+      >
+        Get started
+      </button>
+    </div>
   );
 };
 

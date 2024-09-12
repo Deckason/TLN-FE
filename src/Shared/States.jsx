@@ -10,7 +10,7 @@ const States = () => {
   return (
     <div className="flex p-5 w-full h-full justify-center items-center">
       <div className="w-full lg:w-[975px] xl:w-[1250px] 2xl:w-[1375px] 3xl:w-[1475px]  min-h-[199px] py-[52px] bg-white z-10 rounded-2xl border shadow-md hover:shadow-2xl transition duration-300 border-stone-300 flex-col max-sm:mx-4 justify-center items-center flex">
-        <div className="justify-around w-full 3xl:gap-[90px] gap-10 items-center flex-wrap flex">
+        <div className="justify-around w-full 3xl:gap-[90px] gap-10 items-baseline flex-wrap flex">
           <div className="flex-col justify-center items-center gap-3 inline-flex w-full lg:w-auto">
             <div className="text-center text-stone-900 max-sm:text-3xl text-5xl font-bold">
               7

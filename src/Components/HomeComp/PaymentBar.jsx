@@ -12,34 +12,32 @@ import Image from "next/image";
 
 const PaymentBar = () => {
   return (
-    <div className="bg-[#000000] min-h-[66px] justify-center">
-      <div className="slider ">
-        <div className="slide-track flex"> 
-          {/* Add flex to slide-track */}
-          <div className="slide ">
-            <Image className="mr-[-10px]" src={amazon} alt="amazon" /> 
-            {/* Adjust negative margin as needed */}
+    <div className="bg-[#000000] h-[86px] justify-center">
+      <div className="slider h-[86px]">
+        <div className="slide-track flex items-center"> 
+          <div className="slide h-[86px] flex items-center">
+            <Image className="mr-[-10px] h-[86px] object-contain  " src={amazon} alt="amazon" /> 
           </div>
-          <div className="slide">
-            <Image className="mr-[-10px]" alt="logo" src={bhim} />
+          <div className="slide h-[86px] flex items-center">
+            <Image className="mr-[-10px] h-[86px] object-contain  " alt="logo" src={bhim} />
           </div>
-          <div className="slide ">
-            <Image className="mr-[-10px]" alt="logo" src={bajaj} />
+          <div className="slide h-[86px] flex items-center ">
+            <Image className="mr-[-10px] h-[86px] object-contain  " alt="logo" src={bajaj} />
           </div>
-          <div className="slide ">
-            <Image className="mr-[-10px]" alt="logo" src={Paytm} />
+          <div className="slide h-[86px] flex items-center ">
+            <Image className="mr-[-10px] h-[86px] object-contain  " alt="logo" src={Paytm} />
           </div>
-          <div className="slide ">
-            <Image className="mr-[-10px]" alt="logo" src={Gpay} />
+          <div className="slide h-[86px] flex items-center ">
+            <Image className="mr-[-10px] h-[86px] object-contain  " alt="logo" src={Gpay} />
           </div>
-          <div className="slide ">
-            <Image className="mr-[-10px]" alt="logo" src={Razor} />
+          <div className="slide h-[86px] flex items-center ">
+            <Image className="mr-[-10px] h-[86px] object-contain  " alt="logo" src={Razor} />
           </div>
-          <div className="slide">
-            <Image className="mr-[-10px]" alt="logo" src={upi} />
+          <div className="slide h-[86px] flex items-center">
+            <Image className="mr-[-10px] h-[86px] object-contain  " alt="logo" src={upi} />
           </div>
-          <div className="slide ">
-            <Image className="mr-[-10px]" alt="logo" src={rupay} />
+          <div className="slide h-[86px] flex items-center ">
+            <Image className="mr-[-10px] h-[86px] object-contain  " alt="logo" src={rupay} />
           </div>
         </div>
       </div>
