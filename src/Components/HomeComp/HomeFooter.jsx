@@ -9,6 +9,9 @@ import Insta from "../../Assets/Homepage/Footer/Instagram.png";
 import Linkdin from "../../Assets/Homepage/Footer/Linkdin.png";
 import Pinterest from "../../Assets/Homepage/Footer/Pinterest.png";
 import Youtube from "../../Assets/Homepage/Footer/Youtube.png";
+import Medium from "../../Assets/Homepage/Footer/Medium.png";
+import Mail from "../../Assets/Homepage/Footer/Mail.png";
+import Twitter from "../../Assets/Homepage/Footer/twitter.png";
 import Link from "next/link";
 
 const HomeFooter = () => {
@@ -207,6 +210,21 @@ const HomeFooter = () => {
       href: "https://www.youtube.com/channel/UC2pMpIkwz5AzM-SRMX9rjLQ",
       src: Youtube,
       alt: "Youtube",
+    },
+    {
+      href: "https://www.youtube.com/channel/UC2pMpIkwz5AzM-SRMX9rjLQ",
+      src: Medium,
+      alt: "Medium",
+    },
+    {
+      href: "https://www.youtube.com/channel/UC2pMpIkwz5AzM-SRMX9rjLQ",
+      src: Twitter,
+      alt: "Twitter",
+    },
+    {
+      href: "https://www.youtube.com/channel/UC2pMpIkwz5AzM-SRMX9rjLQ",
+      src: Mail,
+      alt: "Email",
     },
   ];
 
