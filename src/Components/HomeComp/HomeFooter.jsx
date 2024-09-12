@@ -23,6 +23,18 @@ const HomeFooter = () => {
     //   links: ["Who Are We", "Blogs", "Press", "FAQ", "Contact Us"],
     // },
     {
+      title: "Languages We Offer",
+      links: [
+        { name: "Online French Classes", url: "/Languages/French" },
+        { name: "Online German Classes", url: "/Languages/German" },
+        { name: "Online Spanish Classes", url: "/Languages/Spanish" },
+        { name: "Online Korean Classes", url: "/Languages/Korean" },
+        { name: "Online Japanese Classes", url: "/Languages/Japanese" },
+        { name: "Online Mandarin Classes", url: "/Languages/Mandarin" },
+        { name: "Online English Classes", url: "/Languages/English" },
+      ],
+    },
+    {
       title: "Languages for Kids",
       links: [
         {
@@ -131,18 +143,7 @@ const HomeFooter = () => {
     //     "Refer & Earn",
     //   ],
     // },
-    {
-      title: "Languages We Offer",
-      links: [
-        { name: "Online French Classes", url: "/Languages/French" },
-        { name: "Online German Classes", url: "/Languages/German" },
-        { name: "Online Spanish Classes", url: "/Languages/Spanish" },
-        { name: "Online Korean Classes", url: "/Languages/Korean" },
-        { name: "Online Japanese Classes", url: "/Languages/Japanese" },
-        { name: "Online Mandarin Classes", url: "/Languages/Mandarin" },
-        { name: "Online English Classes", url: "/Languages/English" },
-      ],
-    },
+
     // {
     //   title: "French Classes Near Me",
     //   links: [
@@ -236,7 +237,9 @@ const HomeFooter = () => {
             <div className="flex flex-col gap-6 items-center lg:items-start">
               <Image src={FooterLogo1} alt="footerImg" className="p-1" />
               <p className="w-60 text-gray-500 text-xs">
-                The Language Network is a place to learn and immerse yourself in the world of languages. We are a dynamic institution promoting languages and celebrating cultures.
+                The Language Network is a place to learn and immerse yourself in
+                the world of languages. We are a dynamic institution promoting
+                languages and celebrating cultures.
               </p>
               <div className="flex gap-5 items-center">
                 <Image src={FooterLogo2} alt="footerLogo2" className="p-1" />
@@ -249,7 +252,8 @@ const HomeFooter = () => {
           </button> */}
           <div className="text-xs 4xl:text-sm text-gray-500 mt-5 flex flex-col gap-2 w-64 ">
             <p>
-              Address: Signature Business Park, 1306, 13th floor, Postal Colony Rd, Chembur, Mumbai, Maharashtra 400071
+              Address: Signature Business Park, 1306, 13th floor, Postal Colony
+              Rd, Chembur, Mumbai, Maharashtra 400071
             </p>
             <p>Contact no : 8369123184</p>
             <p>Powered by TLN EDTECH PRIVATE LIMITED</p>
@@ -459,12 +463,13 @@ const HomeFooter = () => {
           Contact us
         </button> */}
         <div className="md:hidden text-xs 4xl:text-sm text-gray-500 mt-5 flex flex-col gap-2 w-64 ">
-            <p>
-              Address: Signature Business Park, 1306, 13th floor, Postal Colony Rd, Chembur, Mumbai, Maharashtra 400071
-            </p>
-            <p>Contact no : 8369123184</p>
-            <p>Powered by TLN EDTECH PRIVATE LIMITED</p>
-          </div>
+          <p>
+            Address: Signature Business Park, 1306, 13th floor, Postal Colony
+            Rd, Chembur, Mumbai, Maharashtra 400071
+          </p>
+          <p>Contact no : 8369123184</p>
+          <p>Powered by TLN EDTECH PRIVATE LIMITED</p>
+        </div>
       </div>
     </div>
   );

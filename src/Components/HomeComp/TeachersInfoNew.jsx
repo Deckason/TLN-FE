@@ -60,7 +60,6 @@ const Slide = () => {
               slidesPerView: 1,
             },
           }}
-          // modules={[Pagination]}
           className="mySwiper mx-auto flex justify-center items-center max-sm:max-h-full w-[326px] sm:w-[404px] lg:w-[808px] xl:w-[1300px]  4xl:w-[1680px] p-4 "
         >
           {trainerDetails &&
@@ -118,7 +117,7 @@ const Slide = () => {
             ref={navigationNextRef}
             className="w-16 h-[58px] px-5 py-4 rounded-lg border-2 transition duration-30 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"
           >
-            <FaArrowRight className="" />
+            <FaArrowRight />
           </button>
         </div>
       </div>

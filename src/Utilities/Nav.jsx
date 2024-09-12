@@ -229,9 +229,9 @@ const Nav = () => {
                 src={logo}
                 alt="logo"
               ></Image>
-              <div className="absolute right-14">
+              {/* <div className="absolute right-14">
                 <LanguageDropdown />
-              </div>
+              </div> */}
               <HiMenuAlt1
                 role="button"
                 onClick={() => {
@@ -253,9 +253,9 @@ const Nav = () => {
                 className="text-3xl text-primary-color bg-white absolute left-[-30px] rounded-l-2xl top-9 border-2 border-secondary-color border-e-0"
               />
               <div className="flex overflow-y-scroll example pb-10 h-screen flex-col justify-start p-2.5 items-start gap-2">
-                <button className="text-primary-color font-medium">
+                {/* <button className="text-primary-color font-medium">
                   Login
-                </button>
+                </button> */}
                 <div className="h-[1px] w-full bg-secondary-color rounded-full"></div>
                 <button
                   className={` w-full border-secondary-color text-sm   text-start duration-500 transform    border rounded-lg`}
@@ -298,7 +298,7 @@ const Nav = () => {
                     </div>
                   )}
                 </button>
-                <button
+                {/* <button
                   onClick={() => {
                     setShowNav(false);
                   }}
@@ -318,8 +318,8 @@ const Nav = () => {
                       }`}
                     />
                   </Link>
-                </button>
-                <button
+                </button> */}
+                {/* <button
                   onClick={() => {
                     setShowNav(false);
                   }}
@@ -339,8 +339,8 @@ const Nav = () => {
                       }`}
                     />
                   </Link>
-                </button>
-                <button
+                </button> */}
+                {/* <button
                   className={` w-full border-secondary-color text-sm   text-start duration-500 transform    border rounded-lg`}
                 >
                   <div
@@ -393,8 +393,8 @@ const Nav = () => {
                       </Link>
                     </div>
                   )}
-                </button>
-                <button
+                </button> */}
+                {/* <button
                   onClick={() => {
                     setShowNav(false);
                   }}
@@ -414,8 +414,8 @@ const Nav = () => {
                       }`}
                     />
                   </Link>
-                </button>
-                <button
+                </button> */}
+                {/* <button
                   className={` w-full border-secondary-color text-sm   text-start duration-500 transform    border rounded-lg`}
                 >
                   <div
@@ -484,7 +484,7 @@ const Nav = () => {
                       </Link>
                     </div>
                   )}
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
