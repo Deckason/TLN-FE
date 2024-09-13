@@ -48,7 +48,7 @@ const StudentsTestomony = ({ language, context }) => {
             onSlideChange={(swiper) => {
               setCurrentPage(swiper.activeIndex);
             }}
-            // slidesPerView={4}
+            slidesPerView="auto"
             breakpoints={{
               1920: {
                 slidesPerView: 4,
@@ -63,7 +63,6 @@ const StudentsTestomony = ({ language, context }) => {
                 slidesPerView: 1,
               },
             }}
-            // modules={[Pagination]}
             className="mySwiper mx-auto flex justify-center items-center max-sm:max-h-full w-[326px] sm:w-[404px] lg:w-[808px] xl:w-[1264px] 2xl:w-[1264px] 4xl:w-[1680px] h-[350px] p-4 "
           >
             {data &&
@@ -84,7 +83,6 @@ const StudentsTestomony = ({ language, context }) => {
                           width={300}
                           src={student.image}
                           className="w-20 h-20 rounded-full"
-
                         />
                         <div className="flex flex-col flex-1 self-start">
                           <div className="text-xl font-bold text-stone-900">
@@ -96,7 +94,7 @@ const StudentsTestomony = ({ language, context }) => {
                           <div className="flex gap-1.5 pr-20 mt-1">
                             <Rating
                               className=" text-[#FFC107] text-nowrap text-[18px]"
-                              initialRating={4.5}
+                              initialRating={5}
                               readonly
                               emptySymbol={<FaRegStar />}
                               fullSymbol={<FaStar />}
@@ -110,25 +108,23 @@ const StudentsTestomony = ({ language, context }) => {
               })}
           </Swiper>
 
-          {data && (
-            <div className="mt-8 max-sm:scale-75 flex items-center justify-center gap-x-[16px]">
-              <button
-                ref={navigationPrevRef}
-                className="w-16 h-[58px] px-5 py-4 rounded-lg border-2 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"
-              >
-                <FaArrowRight className="rotate-180" />
-              </button>
-              <button
-                ref={navigationNextRef}
-                className="w-16 h-[58px] px-5 py-4 rounded-lg border-2 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"
-              >
-                <FaArrowRight className="" />
-              </button>
-            </div>
-          )}
+          {/* {data && ( */}
+          <div className="mt-8 max-sm:scale-75 flex items-center justify-center gap-x-[16px]">
+            <button
+              ref={navigationPrevRef}
+              className="w-16 h-[58px] px-5 py-4 rounded-lg border-2 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"
+            >
+              <FaArrowRight className="rotate-180" />
+            </button>
+            <button
+              ref={navigationNextRef}
+              className="w-16 h-[58px] px-5 py-4 rounded-lg border-2 border-primary-color text-xl text-primary-color focus:text-white hover:text-white hover:bg-primary-color focus:bg-primary-color justify-center items-center gap-2.5 inline-flex"
+            >
+              <FaArrowRight />
+            </button>
+          </div>
+          {/* )} */}
         </div>
-
-        {/* swiper buttons */}
       </div>
     </div>
   );

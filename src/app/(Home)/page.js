@@ -1,7 +1,7 @@
 import CefrLevels from "../../Components/HomeComp/CefrLevels";
 import Contact from "../../Shared/Contact";
 import CoursesWeOffer from "../../Components/HomeComp/CoursesWeOffer";
-import EducationPartners from "../../Components/HomeComp/EducationPaterners";
+import EducationPartners from "../../Components/HomeComp/EducationPartners";
 import FluencyCarrerCulture from "../../Components/HomeComp/FluencyCarrerCulture";
 import HomeBanner from "../../Components/HomeComp/HomeBanner";
 import Newsletter from "../../Components/HomeComp/Newsletter";
@@ -37,7 +37,7 @@ export default function Home() {
         <ProficiencyExams />
       </section>
       <FluencyCarrerCulture />
-      <StudentsTestomony language={'English'} context={''}/>
+      <StudentsTestomony language={'French'} context={'Adult'}/>
       {/* <TechersInfo /> */}
       <TeachersInfoNew />
       <div className="mt-[40px] lg:-mt-[40px]">
