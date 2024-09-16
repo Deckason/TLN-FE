@@ -43,7 +43,7 @@ export default function Home() {
       <div className="mt-[40px] lg:-mt-[40px]">
         <OurAlumni />
       </div>
-      <div className="pb-[60px]">
+      <div className="pb-[40px]">
         <EducationPartners />
       </div>
       <SubscribeToOur />

@@ -233,7 +233,7 @@ const HomeFooter = () => {
     <div className="pt-20 mx-[16px] lg:mx-[30px] xl:mx-[60px] 2xl:mx-[90px]">
       <div className="md:flex md:flex-row ">
         <div className="hidden md:flex flex-col items-center mt-2 lg:items-start mr-[35px]">
-          <Link href="/">
+          {/* <Link href="/"> */}
             <div className="flex flex-col gap-6 items-center lg:items-start">
               <Image src={FooterLogo1} alt="footerImg" className="p-1" />
               <p className="w-60 text-gray-500 text-xs">
@@ -246,7 +246,7 @@ const HomeFooter = () => {
                 <Image src={FooterLogo3} alt="footerLogo3" className="p-1" />
               </div>
             </div>
-          </Link>
+          {/* </Link> */}
           {/* <button className="mt-[30px] px-4 py-1.5 lg:px-5 lg:py-3.5 w-40 bg-teal-600 rounded-lg text-neutral-100 text-sm md:text-[12px] lg:text-xl font-normal items-center">
             Contact us
           </button> */}

@@ -212,9 +212,9 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className=" text-neutral-500 text-base  font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px]  font-normal ">
                       Participates in discussions, expresses opinions, and
-                      follows basic news articles
+                      follows basic news articlesn
                     </div>
                   </div>
                 </div>
@@ -266,7 +266,7 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className=" text-neutral-500 text-base  font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Reads articles, expresses opinions, and engages in debates
                       on various subjects
                     </div>
@@ -318,7 +318,7 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className=" text-neutral-500 text-base  font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal">
                       Analyzes and critiques articles, understands nuanced
                       arguments
                     </div>
@@ -368,7 +368,7 @@ const CefrLevels = () => {
                       src={rightIcon}
                       className="w-6 h-6"
                     ></Image>
-                    <div className=" text-neutral-500 text-base  font-normal ">
+                    <div className="grow shrink basis-0 text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px] font-normal ">
                       Engages in high-level discussions, delivers presentations,
                       and comprehends complex materials
                     </div>
@@ -564,7 +564,7 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className=" text-neutral-500 text-base  font-normal ">
+                  <div className=" text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px]  font-normal ">
                     Participates in discussions, expresses opinions, and follows
                     basic news articles
                   </div>
@@ -615,7 +615,7 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className=" text-neutral-500 text-base  font-normal ">
+                  <div className=" text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px]  font-normal ">
                     Reads articles, expresses opinions, and engages in debates
                     on various subjects
                   </div>
@@ -667,7 +667,7 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className=" text-neutral-500 text-base  font-normal ">
+                  <div className=" text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px]  font-normal ">
                     Analyzes and critiques articles, understands nuanced
                     arguments
                   </div>
@@ -717,7 +717,7 @@ const CefrLevels = () => {
                     src={rightIcon}
                     className="w-6 h-6"
                   ></Image>
-                  <div className=" text-neutral-500 text-base  font-normal ">
+                  <div className=" text-neutral-500 text-[14px]/[16.94px] 2xl:text-[16px]/[19.36px]  font-normal ">
                     Engages in high-level discussions, delivers presentations,
                     and comprehends complex materials
                   </div>

@@ -25,7 +25,7 @@ const StudentsTestomony = ({ language, context }) => {
     console.log(data);
   }, [data]);
   return (
-    <div className="w-full bg-[#F6F3F3] sm:bg-white 4xl:bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col pt-[60px] sm:pt-[80px] pb-[40px]">
+    <div className="w-full bg-[#F6F3F3]  4xl:bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col pt-[60px] sm:pt-[80px] pb-[40px]">
       <div className="-mt-[20px]  mx-auto flex justify-center flex-col items-center lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <h1 className="text-stone-900 mx-16 text-center text-[32px]/[39px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[80px] sm:font-bold mb-4 font-semibold max-lg:text-2xl">
           Hear It From The Learners
@@ -82,7 +82,7 @@ const StudentsTestomony = ({ language, context }) => {
                           height={300}
                           width={300}
                           src={student.image}
-                          className="w-20 h-20 rounded-full"
+                          className="w-20 h-20 object-cover rounded-full"
                         />
                         <div className="flex flex-col flex-1 self-start">
                           <div className="text-xl font-bold text-stone-900">
