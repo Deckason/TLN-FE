@@ -1,21 +1,21 @@
 "use client";
 import Image from "next/image";
-import experts from "../../Assets/Homepage/whyShouldYouLearn/Expertrainers.png";
-import expertModal from "../../Assets/Homepage/whyShouldYouLearn/ExpertModal.png";
-import interactiveModal from "../../Assets/Homepage/whyShouldYouLearn/interactiveModal.png";
-import certificatedModal from "../../Assets/Homepage/whyShouldYouLearn/CertificatedModal.png";
-import ReviewModal from "../../Assets/Homepage/whyShouldYouLearn/ReviewModal.png";
-import BatchModal from "../../Assets/Homepage/whyShouldYouLearn/BatchModal.png";
-import freeCourseModal from "../../Assets/Homepage/whyShouldYouLearn/FreeStudyModal.png";
-import flexibleModal from "../../Assets/Homepage/whyShouldYouLearn/FlexibleModal.png";
-import DemoModal from "../../Assets/Homepage/whyShouldYouLearn/FreeDemoModal.png";
-import interactive from "../../Assets/Homepage/whyShouldYouLearn/Interactivesessions.png";
-import courses from "../../Assets/Homepage/whyShouldYouLearn/courses.png";
-import demo from "../../Assets/Homepage/whyShouldYouLearn/demo.png";
-import material from "../../Assets/Homepage/whyShouldYouLearn/material.png";
-import sessions from "../../Assets/Homepage/whyShouldYouLearn/sessions.png";
-import flexible from "../../Assets/Homepage/whyShouldYouLearn/flexible timings.png";
-import batch from "../../Assets/Homepage/whyShouldYouLearn/batch.png";
+import experts from "../../Assets/Homepage/whyShouldYouLearn/Expertrainers.webp";
+import expertModal from "../../Assets/Homepage/whyShouldYouLearn/ExpertModal.webp";
+import interactiveModal from "../../Assets/Homepage/whyShouldYouLearn/interactiveModal.webp";
+import certificatedModal from "../../Assets/Homepage/whyShouldYouLearn/CertificatedModal.webp";
+import ReviewModal from "../../Assets/Homepage/whyShouldYouLearn/ReviewModal.webp";
+import BatchModal from "../../Assets/Homepage/whyShouldYouLearn/BatchModal.webp";
+import freeCourseModal from "../../Assets/Homepage/whyShouldYouLearn/FreeStudyModal.webp";
+import flexibleModal from "../../Assets/Homepage/whyShouldYouLearn/FlexibleModal.webp";
+import DemoModal from "../../Assets/Homepage/whyShouldYouLearn/FreeDemoModal.webp";
+import interactive from "../../Assets/Homepage/whyShouldYouLearn/Interactivesessions.webp";
+import courses from "../../Assets/Homepage/whyShouldYouLearn/courses.webp";
+import demo from "../../Assets/Homepage/whyShouldYouLearn/demo.webp";
+import material from "../../Assets/Homepage/whyShouldYouLearn/material.webp";
+import sessions from "../../Assets/Homepage/whyShouldYouLearn/sessions.webp";
+import flexible from "../../Assets/Homepage/whyShouldYouLearn/flexible timings.webp";
+import batch from "../../Assets/Homepage/whyShouldYouLearn/batch.webp";
 import ReusableModal from "../../Shared/ReusableModal";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -123,7 +123,6 @@ const WhyShould = () => {
   ];
   return (
     <div className="lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px] bg-[#]">
-      {/*  Modal */}
       {modalData.map((modal) => (
         <ReusableModal
           key={modal.modalClose}
@@ -132,13 +131,20 @@ const WhyShould = () => {
         >
           <div className="flex justify-start items-center">
             <div className=" lg:flex hidden w-full h-full ">
-              <Image src={modal.imgAvatar} className="h-full w-fit" alt="em" />
+              <Image
+                layout="responsive"
+                priority="true"
+                src={modal.imgAvatar}
+                className="h-full w-fit"
+                alt="em"
+              />
             </div>
             <div className="flex  justify-center gap-5 w-full flex-col">
               <div className="flex flex-col gap-5">
                 <Image
                   src={modal.img}
                   alt="experts"
+                  priority="true"
                   className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
                 />
                 <span className="font-semibold text-[#004D37]">
@@ -167,6 +173,8 @@ const WhyShould = () => {
                     <Image
                       alt="experts"
                       src={experts}
+                      layout="responsive"
+                      priority="true"
                       className="xl:w-[78px] xl:h-[78px] lg:w-[58.5px] lg:h-[58.5px]"
                     ></Image>
                   </div>
