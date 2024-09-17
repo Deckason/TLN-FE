@@ -124,6 +124,14 @@ export const api = createApi({
         `/api/testimonial/get-all?language=${language}&context=${context}`,
       providesTags: ["Testimonials"],
     }),
+    // ---------------------- subscribe button query -------------------------------
+    subscribeNewsletter : builder.mutation({
+      query: (email)=>({
+        url: `/api/newsletter`,
+        method: "POST",
+        body: email
+      })
+    })
   }),
 });
 
@@ -144,4 +152,5 @@ export const {
   useGetNextMonth3BatchesQuery,
   useGetAllTrainersQuery,
   useGetAllTestimonialsQuery,
+  useSubscribeNewsletterMutation
 } = api;
