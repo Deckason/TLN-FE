@@ -9,6 +9,7 @@ import { FaArrowRight, FaRegStar, FaStar } from "react-icons/fa";
 import studentPic from "../../Assets/Homepage/Testomony/testomony.png";
 import Image from "next/image";
 import { useGetAllTrainersQuery } from "../../store/apiSlice";
+import GetStartedHomeButton from "../../Shared/buttons/GetStartedHomeButton";
 // import studentPic from "../../../../Assets/Homepage/Testomony/testomony.png";
 
 const Slide = () => {
@@ -144,6 +145,9 @@ const TeachersInfoNew = () => {
       </div>
       <div>
         <Slide />
+      </div>
+      <div className="flex justify-center items-center">
+        <GetStartedHomeButton />
       </div>
     </div>
   );
