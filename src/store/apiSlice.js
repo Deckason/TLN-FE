@@ -47,27 +47,12 @@ export const api = createApi({
       providesTags: ["FAQ"],
     }),
     getFilteredFAQs: builder.query({
-      query: ({ data }) => `/api/faqs/filter?${data.filter}=${data.type}`,
+      query: ({ language, context, category }) =>
+        `/api/faqs/filter?language=${language}&context=${context}&category=${category}`,
       providesTags: ["FAQ"],
     }),
-    addFAQs: builder.mutation({
-      query: (FAQ) => ({
-        url: `/api/faqs/create`,
-        method: "POST",
-        body: FAQ,
-      }),
-      invalidatesTags: ["FAQ"],
-    }),
-    updateFAQs: builder.mutation({
-      query: ({ id, ...updatedPromo }) => ({
-        url: `/api/faqs/update/${id}`,
-        method: "PATCH",
-        body: updatedPromo,
-      }),
-      invalidatesTags: ["FAQ"],
-    }),
 
-    //
+    // -----------------------------Stats queries-------------------------------
     getStats: builder.query({
       query: () => "/api/stats/get-all",
       providesTags: ["Stats"],
@@ -125,13 +110,13 @@ export const api = createApi({
       providesTags: ["Testimonials"],
     }),
     // ---------------------- subscribe button query -------------------------------
-    subscribeNewsletter : builder.mutation({
-      query: (email)=>({
+    subscribeNewsletter: builder.mutation({
+      query: (email) => ({
         url: `/api/newsletter`,
         method: "POST",
-        body: email
-      })
-    })
+        body: email,
+      }),
+    }),
   }),
 });
 
@@ -141,8 +126,6 @@ export const {
   useGetNewsQuery,
   useGetFAQsQuery,
   useGetFilteredFAQsQuery,
-  useAddFAQsMutation,
-  useUpdateFAQsMutation,
   useGetStatsQuery,
   useUpdateStatsMutation,
   useGetBannerQuery,
@@ -152,5 +135,5 @@ export const {
   useGetNextMonth3BatchesQuery,
   useGetAllTrainersQuery,
   useGetAllTestimonialsQuery,
-  useSubscribeNewsletterMutation
+  useSubscribeNewsletterMutation,
 } = api;
