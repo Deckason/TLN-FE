@@ -213,17 +213,17 @@ const HomeFooter = () => {
       alt: "Youtube",
     },
     {
-      href: "https://www.youtube.com/channel/UC2pMpIkwz5AzM-SRMX9rjLQ",
+      href: "https://thelanguagenetwork.medium.com/",
       src: Medium,
       alt: "Medium",
     },
     {
-      href: "https://www.youtube.com/channel/UC2pMpIkwz5AzM-SRMX9rjLQ",
+      href: "https://x.com",
       src: Twitter,
       alt: "Twitter",
     },
     {
-      href: "https://www.youtube.com/channel/UC2pMpIkwz5AzM-SRMX9rjLQ",
+      href: "mailto:info@thelanguagenetwork.co",
       src: Mail,
       alt: "Email",
     },
