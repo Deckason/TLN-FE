@@ -1,11 +1,41 @@
 "use client";
+import { useEffect, useState } from "react";
+import { useGetFilteredFAQsQuery } from "../../../../../store/apiSlice";
 import SharedStudyAbroad from "../../../../../Shared/SharedStudyAbroad";
-import {data} from "../../../../../Utilities/data/french/StudyAbroadData"
+import { data } from "../../../../../Utilities/data/french/StudyAbroadData";
 
 const page = () => {
+  const { data: faqData } = useGetFilteredFAQsQuery({
+    language: "French",
+    context: "StudyAbroad",
+    category: "General",
+  });
+  const { data: everyData } = useGetFilteredFAQsQuery({
+    language: "French",
+    context: "StudyAbroad",
+    category: "Everything you need to know",
+  });
+
+  const [content, setContent] = useState(data);
+  useEffect(() => {
+    if (!faqData) return;
+    if (!everyData) return;
+    setContent((prev) => ({
+      ...prev,
+      Faqs: faqData,
+      EveryThingYouNeedToKnowAbout: {
+        ...prev.EveryThingYouNeedToKnowAbout,
+        CardData: everyData,
+      },
+    }));
+  }, [faqData, everyData]);
   return (
     <div>
-      <SharedStudyAbroad Data={data} language={"French"} context ={"StudyAbroad"}/>
+      <SharedStudyAbroad
+        Data={content}
+        language={"French"}
+        context={"StudyAbroad"}
+      />
     </div>
   );
 };
