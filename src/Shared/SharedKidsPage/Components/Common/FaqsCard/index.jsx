@@ -27,9 +27,12 @@ const FaqsCard = ({ data, i, id, setId, open, setOpen }) => {
         } p-4 xl:p-6 w-full shadow-md transition hover:shadow-2xl bg-white rounded-2xl transform duration-300 justify-center items-center flex-col flex`}
       >
         <div className="grow shrink basis-0 transform duration-300 self-stretch w-full justify-start items-center inline-flex ">
-          <div className="grow shrink basis-0  text-black text-[20px] transform duration-300 font-normal w-full leading-tight">
-            {data?.question}
-          </div>
+          <div
+            className="grow shrink basis-0  text-black text-[20px] transform duration-300 font-normal w-full leading-tight"
+            dangerouslySetInnerHTML={{
+              __html: data?.question,
+            }}
+          />
           <div className="max-md:w-4  w-[18px]  relative">
             <Image alt="pointDown" src={pointDown} width={18} height={11} />
           </div>
@@ -40,9 +43,8 @@ const FaqsCard = ({ data, i, id, setId, open, setOpen }) => {
               ? " opacity-100 mt-3 "
               : "hidden opacity-0"
           }  transform w-full  duration-300 text-justify lg:ps-4 lg:me-8 text-[16px] text-[#757575] leading-tight font-normal`}
-        >
-          {data?.answer}
-        </div>
+          dangerouslySetInnerHTML={{ __html: data?.answer }}
+        />
       </div>
     </div>
   );

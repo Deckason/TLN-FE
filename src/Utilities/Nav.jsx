@@ -21,11 +21,11 @@ const Nav = () => {
   const languageOptions = {
     title: "Languages",
     data: [
-      {
-        key: "1",
-        name: "Home",
-        path: "/",
-      },
+      // {
+      //   key: "1",
+      //   name: "Home",
+      //   path: "/",
+      // },
       {
         key: "2",
         name: "English",

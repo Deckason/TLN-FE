@@ -1,11 +1,39 @@
+"use client";
+import { useEffect, useState } from "react";
+import { useGetFilteredFAQsQuery } from "../../../../../store/apiSlice";
+
 import { data } from "../../../../../Utilities/data/korean/AdultData";
 import React from "react";
 import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";
 
 const page = () => {
+  const { data: faqData } = useGetFilteredFAQsQuery({
+    language: "Korean",
+    context: "Adult",
+    category: "General",
+  });
+  const { data: everyData } = useGetFilteredFAQsQuery({
+    language: "Korean",
+    context: "Adult",
+    category: "Everything you need to know",
+  });
+
+  const [content, setContent] = useState(data);
+  useEffect(() => {
+    if (!faqData) return;
+    if (!everyData) return;
+    setContent((prev) => ({
+      ...prev,
+      Faqs: faqData,
+      EveryThingYouNeedToKnowAbout: {
+        ...prev.EveryThingYouNeedToKnowAbout,
+        CardData: everyData,
+      },
+    }));
+  }, [faqData, everyData]);
   return (
     <div>
-      <SharedAdultsPage Data={data} language={"Korean"} context ={"Adult"}/>
+      <SharedAdultsPage Data={content} language={"Korean"} context={"Adult"} />
     </div>
   );
 };
