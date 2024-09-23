@@ -4,7 +4,7 @@ import { useGetFilteredFAQsQuery } from "../../../../../store/apiSlice";
 import SharedStudyAbroad from "../../../../../Shared/SharedStudyAbroad";
 import { data } from "../../../../../Utilities/data/french/StudyAbroadData";
 
-const page = () => {
+const Page = () => {
   const { data: faqData } = useGetFilteredFAQsQuery({
     language: "French",
     context: "StudyAbroad",
@@ -40,4 +40,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

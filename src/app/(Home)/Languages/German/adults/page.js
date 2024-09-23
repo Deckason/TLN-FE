@@ -6,7 +6,7 @@ import { data } from "../../../../../Utilities/data/german/AdultData";
 import React from "react";
 import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";
 
-const page = () => {
+const Page = () => {
   const { data: faqData } = useGetFilteredFAQsQuery({
     language: "German",
     context: "Adult",
@@ -37,4 +37,4 @@ const page = () => {
     </div>
   );
 };
-export default page;
+export default Page;

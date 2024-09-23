@@ -4,7 +4,7 @@ import { useGetFilteredFAQsQuery } from "../../../../../store/apiSlice";
 import { data } from "../../../../../Utilities/data/french/AdultData";
 import React from "react";
 import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";
-const page = () => {
+const Page = () => {
   const { data: faqData } = useGetFilteredFAQsQuery({
     language: "French",
     context: "Adult",
@@ -35,4 +35,4 @@ const page = () => {
     </div>
   );
 };
-export default page;
+export default Page;
