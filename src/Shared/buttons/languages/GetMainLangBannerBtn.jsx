@@ -12,7 +12,7 @@ const GetMainLangBannerBtn = () => {
        focus:border-teal-600 border  hover:text-teal-600 hover:border-teal-600
         bg-teal-600 rounded-lg z-30 text-center"
       >
-        Get started
+        Book a Free Demo
       </button>
     </div>
   );
