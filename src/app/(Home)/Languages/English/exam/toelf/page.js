@@ -17,7 +17,7 @@ import telf from "../../../../../../Assets/English/toefl.webp";
 import Banner from "../../../../../../Shared/ReusableExamPage/Banner";
 import FaqsExam from "../../../../../../Shared/ReusableExamPage/FaqsExam";
 
-const page = () => {
+const Page = () => {
   const FaqsData = [
     {
       question: "Why should I give the TOEFL exam?",
@@ -189,4 +189,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

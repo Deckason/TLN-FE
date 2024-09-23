@@ -17,7 +17,7 @@ import SIELE from "../../../../../../Assets/Spanish/Siele.png";
 import Banner from "../../../../../../Shared/ReusableExamPage/Banner";
 import FaqsExam from "../../../../../../Shared/ReusableExamPage/FaqsExam";
 
-const page = () => {
+const Page = () => {
   const FaqsData = [
     {
       question: "Why should I give the SIELE exam?",
@@ -184,4 +184,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

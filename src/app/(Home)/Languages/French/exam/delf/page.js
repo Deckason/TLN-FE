@@ -17,8 +17,7 @@ import delf from "../../../../../../Assets/FrenchPage/FrenchMain/delf.png";
 import Banner from "../../../../../../Shared/ReusableExamPage/Banner";
 import FaqsExam from "../../../../../../Shared/ReusableExamPage/FaqsExam";
 
-const page = () => {
-
+const Page = () => {
   const FaqsData = [
     {
       question: "Why should I give the DELF exam?",
@@ -171,8 +170,7 @@ const page = () => {
         <UpcomingBatches language={"French"} />
       </div> */}
 
-      <StudentsTestomony language={"French"} context={''} />
-
+      <StudentsTestomony language={"French"} context={""} />
 
       <div className="mb-9">
         <FaqsExam FaqsData={FaqsData} />
@@ -202,4 +200,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
