@@ -17,7 +17,7 @@ import dalf from "../../../../../../Assets/FrenchPage/FrenchMain/dalf.png";
 import Banner from "../../../../../../Shared/ReusableExamPage/Banner";
 import FaqsExam from "../../../../../../Shared/ReusableExamPage/FaqsExam";
 
-const page = () => {
+const Page = () => {
 
   const FaqsData = [
     {
@@ -189,4 +189,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

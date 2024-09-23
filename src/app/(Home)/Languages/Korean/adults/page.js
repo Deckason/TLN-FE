@@ -6,7 +6,7 @@ import { data } from "../../../../../Utilities/data/korean/AdultData";
 import React from "react";
 import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";
 
-const page = () => {
+const Page = () => {
   const { data: faqData } = useGetFilteredFAQsQuery({
     language: "Korean",
     context: "Adult",
@@ -38,4 +38,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

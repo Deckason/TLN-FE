@@ -18,7 +18,7 @@ import HSK from "../../../../../../Assets/Mandarin/HSK.jpg";
 import Banner from "../../../../../../Shared/ReusableExamPage/Banner";
 import FaqsExam from "../../../../../../Shared/ReusableExamPage/FaqsExam";
 
-const page = () => {
+const Page = () => {
 
   const FaqsData = [
     {
@@ -185,4 +185,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

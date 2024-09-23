@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import SharedStudyAbroad from "../../../../../Shared/SharedStudyAbroad";
 import { useGetFilteredFAQsQuery } from "../../../../../store/apiSlice";
 import { data } from "../../../../../Utilities/data/english/StudyAbroadData";
-const page = () => {
+const Page = () => {
   const { data: faqData } = useGetFilteredFAQsQuery({
     language: "English",
     context: "StudyAbroad",
@@ -39,4 +39,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

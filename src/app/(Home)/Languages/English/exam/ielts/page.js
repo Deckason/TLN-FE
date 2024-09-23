@@ -18,7 +18,7 @@ import ielts from "../../../../../../Assets/English/ielts.png";
 import Banner from "../../../../../../Shared/ReusableExamPage/Banner";
 import FaqsExam from "../../../../../../Shared/ReusableExamPage/FaqsExam";
 
-const page = () => {
+const Page = () => {
   const StudentTestimonialsData = {
     title: "What our French students say",
     testimonial: [
@@ -236,4 +236,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

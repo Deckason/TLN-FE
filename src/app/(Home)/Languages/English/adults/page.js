@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useGetFilteredFAQsQuery } from "../../../../../store/apiSlice";
 import SharedAdultsPage from "../../../../../Shared/SharedAdultsPage";
 import { AdultsData } from "../../../../../Utilities/data/english/AdultData";
-const page = () => {
+const Page = () => {
   const { data: faqData } = useGetFilteredFAQsQuery({
     language: "English",
     context: "Adult",
@@ -34,4 +34,4 @@ const page = () => {
     </div>
   );
 };
-export default page;
+export default Page;
