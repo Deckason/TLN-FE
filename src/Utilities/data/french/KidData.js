@@ -41,6 +41,13 @@ export  const data = {
             "Learning French boosts cognitive skills like problem-solving, critical thinking, multitasking, and memory. Improved linguistic abilities benefit academic performance across subjects.",
           link: "",
         },
+        {
+          title: "Personal Growth",
+          img: kids1,
+          description:
+            "Learning a new language cultivates empathy, cultural sensitivity, and self-confidence, fostering personal growth and appreciation for diversity.",
+          link: "",
+        },
       ],
     },
     HowItWorksCardData: [
