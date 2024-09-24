@@ -6,11 +6,12 @@ import States from "../../../../Shared/SharedAdultsPage/Components/States";
 import { useState } from "react";
 import { useGetBannerQuery } from "../../../../store/apiSlice";
 import GetMainLangBannerBtn from "../../../buttons/languages/GetMainLangBannerBtn";
-const Banner = ({ BannerData }) => {
+const Banner = ({ BannerData, language }) => {
   const [Splicing, setSplicing] = useState(true);
-  const { data, isLoading: fetchLoading } = useGetBannerQuery("");
-  console.log(data);
-  // console.log(BannerData);
+  const { data } = useGetBannerQuery({
+    context: "Language",
+    language: language,
+  });
   return (
     <div className="w-full max-w-[1681px] relative flex justify-center items-center flex-col mb-[50px] sm:mb-[112px]">
       <div className="mt-[43px] max-md:mt-8 max-w-[1681px] mx-auto w-full">
@@ -19,17 +20,16 @@ const Banner = ({ BannerData }) => {
             <div className="flex flex-col  max-w-[700px] 2xl:max-w-[700px] 3xl:max-w-[800px] 4xl:max-w-[1000px] max-md:ml-0 max-lg:w-full">
               <div className="flex z-10 flex-col text-black max-md:max-w-full gap-[32px]">
                 <div className="text-[26px]/[36px] lg:text-[39px]/[45px]  2xl:text-[48px]/[59px] font-bold max-md:max-w-full">
-                  {BannerData?.title}
+                  {data && data.length > 0
+                    ? data[0].bannerTitle
+                    : BannerData?.title}
                 </div>
                 <div className="mt-2 max-sm:text-sm text-xl leading-7 lg:text-base 2xl:text-xl lg:w-[450px] xl:w-[500px] 2xl:w-full max-md:max-w-full relative mb-[32px]">
                   <div className="mb-8 max-md:text-[#757575]">
                     {Splicing ? (
                       <div>
-                        {typeof window !== "undefined" &&
-                        window?.innerWidth > 1024
-                          ? window?.innerWidth > 1440
-                            ? BannerData?.description.slice(0, 370)
-                            : BannerData?.description.slice(0, 300)
+                        {data && data.length > 0
+                          ? data[0].bannerDescription.slice(0, 300)
                           : BannerData?.description.slice(0, 300)}
                         <br />
                         <span
@@ -41,7 +41,9 @@ const Banner = ({ BannerData }) => {
                       </div>
                     ) : (
                       <div>
-                        {BannerData?.description}
+                        {data && data.length > 0
+                          ? data[0].bannerDescription
+                          : BannerData?.description}
                         <span
                           className="cursor-pointer text-neutral-color"
                           onClick={() => setSplicing(!Splicing)}
@@ -63,7 +65,11 @@ const Banner = ({ BannerData }) => {
                 height={700}
                 alt="homePageBannerGirl"
                 className="w-full h-full object-contain "
-                src={BannerData.BannerImage}
+                priority={true}
+                src={
+                  (data && data.length > 0 && data[0].bannerImage) ||
+                  BannerData.BannerImage
+                }
               ></Image>
             </div>
           </div>
