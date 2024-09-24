@@ -115,7 +115,7 @@ const Page = () => {
     title: "Know more about SIELE exam",
     image: SIELE,
     paraTitle: "SIELE Exam",
-    para: "The SIELE exam is a standardized test that evaluates Mandarin language proficiency for non-native speakers. It's crucial to take this exam as it demonstrates competency in listening, reading, and writing, opening doors to educational and career opportunities in Chinese-speaking regions. Many institutions and employers in China require SIELE certification, and it's internationally recognized, facilitating communication and engagement in Mandarin-speaking communities worldwide.",
+    para: "The SIELE exam is a globally recognized test for assessing Spanish language proficiency in reading, listening, writing, and speaking. It's important for individuals seeking to certify their language skills for academic, professional, or personal reasons. Passing the exam provides a standardized certification accepted worldwide, enhancing opportunities for education, employment, and immigration. With its flexible format and accurate assessment, SIELE offers a convenient and reliable way to validate Spanish language abilities.",
   };
 
   const examHelpData = {

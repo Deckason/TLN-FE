@@ -39,20 +39,20 @@ export const data = {
             "Learning Spanish boosts cognitive skills like problem-solving, critical thinking, multitasking, and memory. Improved linguistic abilities benefit academic performance across subjects.",
           link: "",
         },
-        // {
-        //   title: "Career Opportunities",
-        //   img: kids3,
-        //   description:
-        //     "Spanish proficiency is essential in global careers like business, diplomacy, tourism, and hospitality, given the significance of multilingual skills in today's world.",
-        //   link: "",
-        // },
-        // {
-        //   title: "Personal Growth",
-        //   img: kids2,
-        //   description:
-        //     "Learning a new language cultivates empathy, cultural sensitivity, and self-confidence, fostering personal growth and appreciation for diversity.",
-        //   link: "",
-        // },
+        {
+          title: "Career Opportunities",
+          img: kids3,
+          description:
+            "Spanish proficiency is essential in global careers like business, diplomacy, tourism, and hospitality, given the significance of multilingual skills in today's world.",
+          link: "",
+        },
+        {
+          title: "Personal Growth",
+          img: kids2,
+          description:
+            "Learning a new language cultivates empathy, cultural sensitivity, and self-confidence, fostering personal growth and appreciation for diversity.",
+          link: "",
+        },
       ],
     },
     HowItWorksCardData: [
