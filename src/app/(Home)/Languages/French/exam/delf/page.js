@@ -155,7 +155,7 @@ const Page = () => {
 
   const TopBarData = {
     title: "DELF Proficiency exam",
-    para: "Master the DELF proficiency exam effortlessly with The Language Network. Our online exam preparation courses are crafted in accordance with your timing and schedule. Get study material and access to insider tips and tricks and from our expert tuto₹Whether you're beginning your journey or striving for advanced proficiency, our comprehensive approach will empower you with the skills and confidence to thrive. Join us at The Language Network and embark on your path to success in the DELF exam.",
+    para: "Achieve success in the DELF proficiency exam effortlessly with The Language Network. Our online exam preparation courses are tailored to fit your schedule, ensuring flexibility and convenience.  Led by top-notch trainers, we provide insider tips, strategies along with necessary study material to excel in the exam. Whether you're a beginner or aiming for advanced proficiency, our comprehensive approach will equip you with the skills and confidence needed to succeed. Join us at The Language Network and pave the way for your success in the DELF exam.",
   };
 
   return (

@@ -37,6 +37,27 @@ export const data = {
             "Studying German enhances cognitive abilities such as problem-solving and critical thinking, contributing to overall academic success.",
           link: "",
         },
+        {
+          title: "Career Opportunities",
+          img: kids1,
+          description:
+            "Proficiency in German broadens job prospects, particularly in engineering, technology, and international business sectors where German-speaking companies thrive.",
+          link: "",
+        },
+        {
+          title: "Travel Benefits",
+          img: kids2,
+          description:
+            "Knowing German enhances travel experiences in Germany and other German-speaking regions, enabling deeper engagement with the country's history, art, and cuisine.",
+          link: "",
+        },
+        {
+          title: "Personal Growth",
+          img: kids1,
+          description:
+            "Learning German fosters resilience and adaptability while promoting empathy and understanding of different cultures, nurturing well-rounded individuals.",
+          link: "",
+        },
       ],
     },
     HowItWorksCardData: [

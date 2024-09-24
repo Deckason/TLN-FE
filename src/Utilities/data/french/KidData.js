@@ -84,24 +84,17 @@ export  const data = {
       Language: "French",
       CardData: [
         {
-          title: "DELF",
+          title: "DELF Junior",
           img: delf, // Assuming ielts is the variable holding the image URL for IELTS
           description:
-            "The DELF exam assesses French language proficiency for non-native speakers.It is designed for individuals seeking certification for academic or professional purposes, and for those planning to immigrate to French-speaking countries. ",
+            "Prepare your child for success in the DELF Junior exam with our specialized program. Our engaging lessons and targeted practice ensure they're fully equipped to excel and achieve their language goals",
           link: "/Languages/French/exam/delf", // You can insert the link here
         },
         {
-          title: "DALF",
+          title: "DELF Prim",
           img: dalf, // Assuming ielts is the variable holding the image URL for IELTS
           description:
-            "DALF is an advanced-level French language proficiency exam, suitable for individualsaiming to demonstrate high-level competency in French. It is recognized globally by academicinstitutions, employers, and immigration authorities.",
-          link: "/Languages/French/exam/delf", // You can insert the link here
-        },
-        {
-          title: "TEF",
-          img: telf, // Assuming ielts is the variable holding the image URL for IELTS
-          description:
-            "The TEF exam is an internationally recognized French language proficiency test forindividuals seeking to assess their French language abilities. It is widely accepted by academicinstitutions, employers, and immigration authorities worldwide.",
+            "Prepare your child for success with the DELF Prim exam, tailored for young learners in primary school. Our specialized program ensures they're fully equipped to showcase their French language skills confidently and excel in their academic endeavors.",
           link: "/Languages/French/exam/delf", // You can insert the link here
         },
       ],

@@ -36,24 +36,24 @@ export const data = {
           "Mastery of English enhances access to educational resources, research, and opportunities for higher education.          ",
         img: kids3,
       },
-      // {
-      //   title: "Career Opportunities  ",
-      //   description:
-      //     "Proficiency in English opens doors in various industries, including business, technology, and tourism, offering competitive advantages in the global job market.          ",
-      //   img: kids1,
-      // },
-      // {
-      //   title: "Travel and Exploration        ",
-      //   description:
-      //     "English proficiency enhances travel experiences and fosters deeper engagement with English-speaking regions, such as the United States, United Kingdom, Canada, Australia, and more.          ",
-      //   img: kids2,
-      // },
-      // {
-      //   title: "Personal Growth         ",
-      //   description:
-      //     "Mastery of English promotes cognitive development, critical thinking, and communication skills, preparing children for success in an increasingly interconnected world.          ",
-      //   img: kids3,
-      // },
+      {
+        title: "Career Opportunities  ",
+        description:
+          "Proficiency in English opens doors in various industries, including business, technology, and tourism, offering competitive advantages in the global job market.          ",
+        img: kids1,
+      },
+      {
+        title: "Travel and Exploration        ",
+        description:
+          "English proficiency enhances travel experiences and fosters deeper engagement with English-speaking regions, such as the United States, United Kingdom, Canada, Australia, and more.          ",
+        img: kids2,
+      },
+      {
+        title: "Personal Growth         ",
+        description:
+          "Mastery of English promotes cognitive development, critical thinking, and communication skills, preparing children for success in an increasingly interconnected world.          ",
+        img: kids3,
+      },
     ],
   },
   HowItWorksCardData: [

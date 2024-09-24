@@ -41,10 +41,11 @@ const FaqsLanguage = ({ FaqsData }) => {
                         key={index}
                         data={data}
                         i={index}
+
                       />
                     ))
                 : newData?.map((data, index) => (
-                    <FaqsCard key={index} data={data} i={index} />
+                    <FaqsCard key={index} data={data} i={index} open={open} setOpen={setOpen} setId={setId}/>
                   ))}
             </div>
           </div>
