@@ -39,27 +39,27 @@ export const data = {
             "Enhances cognitive abilities, including problem-solving and spatial awareness, and provides insights into one of the world's oldest civilizations.",
           link: "",
         },
-        // {
-        //   title: "Career Opportunities",
-        //   img: kids3,
-        //   description:
-        //     "Proficiency in Mandarin is highly valued in fields like international business, diplomacy, tourism, and global trade, offering competitive advantages.",
-        //   link: "",
-        // },
-        // {
-        //   title: "Travel and Exploration",
-        //   img: kids2,
-        //   description:
-        //     "Facilitates immersive experiences while exploring China's diverse landscapes, iconic landmarks, and culinary delights.",
-        //   link: "",
-        // },
-        // {
-        //   title: "Personal Growth",
-        //   img: kids3,
-        //   description:
-        //     "Fosters appreciation for linguistic diversity, cultural empathy, and adaptability in an increasingly interconnected world.",
-        //   link: "",
-        // },
+        {
+          title: "Career Opportunities",
+          img: kids3,
+          description:
+            "Proficiency in Mandarin is highly valued in fields like international business, diplomacy, tourism, and global trade, offering competitive advantages.",
+          link: "",
+        },
+        {
+          title: "Travel and Exploration",
+          img: kids2,
+          description:
+            "Facilitates immersive experiences while exploring China's diverse landscapes, iconic landmarks, and culinary delights.",
+          link: "",
+        },
+        {
+          title: "Personal Growth",
+          img: kids3,
+          description:
+            "Fosters appreciation for linguistic diversity, cultural empathy, and adaptability in an increasingly interconnected world.",
+          link: "",
+        },
       ],
     },
     HowItWorksCardData: [

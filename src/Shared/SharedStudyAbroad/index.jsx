@@ -12,7 +12,7 @@ import SayBonjur from "./Components/SayBonjur";
 import WhyShould from "../../Components/HomeComp/WhyShould";
 import UpcomingBatches from "../UpcomingBatches";
 
-const SharedStudyAbroad = ({ Data, language,context }) => {
+const SharedStudyAbroad = ({ Data, language, context }) => {
   let faqs = [];
 
   if (Data?.Faqs?.length > 0 && Data?.Faqs !== undefined) {
@@ -22,7 +22,7 @@ const SharedStudyAbroad = ({ Data, language,context }) => {
   return (
     <div className="">
       <div className="2xl:max-w-[1680px] lg:mx-10 mx-auto 2xl:mx-[100px]  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
-        <Banner BannerData={Data?.BannerData} />
+        <Banner BannerData={Data?.BannerData} language={language} />
         {/* <WhyKidsShouldLearnEnglish
           WhyKidsShouldLearnEnglish={Data?.WhyKidsShouldLearn}
         /> */}
@@ -38,7 +38,7 @@ const SharedStudyAbroad = ({ Data, language,context }) => {
         />
         <PrepareForLanguageExam LanguageExams={Data?.LanguageExams} />
       </div>
-      <StudentsTestomony language={language} context={context}/>
+      <StudentsTestomony language={language} context={context} />
       <FaqsLanguage FaqsData={faqs} />
       {/* <EverythingYouNeedToKnowAboutLanguage
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}

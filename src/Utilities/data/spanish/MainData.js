@@ -120,7 +120,7 @@ export const SpanishLanguageData = {
         info: "Spanish is the second most spoken language in the world with over 580 million speakers, making it a valuable asset for international communication and cultural exchange.      ",
       },
       CardData2: {
-        title: "CCultural enrichment        ",
+        title: "Cultural enrichment        ",
         info: "Learning Spanish reveals rich cultures from Spain and Latin America, offering insights into literature, art, music, cuisine, and traditions.        ",
       },
       CardData3: {

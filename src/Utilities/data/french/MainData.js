@@ -47,21 +47,21 @@ export const FrenchLanguageData = {
           title: "French Classes for School",
           img: "/anyGoal/school.png",
           description:
-            "Spark excitement with our online French classes for kids! Whether it's curriculum-based or as a hobby, we make learning engaging and enjoyable.",
+            "Boost cognitive development and cultural awareness among students with our engaging French language program tailored for schools.",
           link: "#",
         },
         {
           title: "French Classes for College",
           img: college,
           description:
-            "Dive into French fluency with our flexible online classes tailored to fit your college schedule. Explore the language, culture, and opportunities that await!",
+            "Equip college students with essential language skills for academic success and international career opportunities through our specialized French course.",
           link: "#",
         },
         {
           title: "French Classes for Corporate",
           img: corporate,
           description:
-            "Elevate your French skills with our customized online classes. Whether you're an individual seeking personal growth or a company fostering a global mindset, we're here to help you thrive!",
+            "Elevate your career with French training for corporates. Whether you're an individual seeking personal growth or a company fostering a global mindset, we're here to help you thrive!",
           link: "#",
         },
       ],
@@ -124,23 +124,23 @@ export const FrenchLanguageData = {
       Language: "French",
       CardData1: {
         title: "Global communication",
-        info: "French, with 275 million speakers globally, fosters connections across French-speaking nations, enhancing global understanding and communication opportunities for children.",
+        info: "French is spoken by 300 million people worldwide, making it a valuable asset for international communication and cultural exchange.",
       },
       CardData2: {
-        title: "Cultural enrichment",
-        info: "Learning French exposes children to diverse cultures, literature, cinema, and art. It is also tthe official language of global bodies like the United Nations, UNESCO, and the International Red Cross.",
+        title: "Career Opportunities",
+        info: "French proficiency enhances job prospects, particularly in fields like diplomacy, business, tourism, and international organizations.",
       },
       CardData3: {
-        title: "Career opportunities",
-        info: "French proficiency is essential in global careers like business, diplomacy, tourism, and hospitality, given the significance of multilingual skills in today's world.",
+        title: "Cultural Enrichment",
+        info: "French language and culture are rich and diverse, offering insights into literature, art, cuisine, and cinema.",
       },
       CardData4: {
-        title: "Educational advantages",
-        info: "Learning French boosts cognitive skills like problem-solving, critical thinking, multitasking, and memory. Improved linguistic abilities benefit academic performance across subjects.",
+        title: "Academic Pursuits",
+        info: "French is a key language in academia, offering access to prestigious universities, research opportunities, and academic publications.",
       },
       CardData5: {
-        title: "Personal growth",
-        info: "French, with 275 million speakers globally, fosters connections across French-speaking nations, enhancing global understanding and communication opportunities for children.",
+        title: "Travel and Exploration",
+        info: "French is spoken on 5 continents across the globe, making it  invaluable for travel and exploration and enhancing experiences abroad.",
       },
     },
     FaqsData: [

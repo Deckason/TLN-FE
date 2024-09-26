@@ -21,7 +21,7 @@ const SharedMainLanuagePage = ({ Data, language, context }) => {
     <div>
       <div className="mx-4 lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <div className=" mx-auto  relative 3xl:mx-auto  flex justify-center items-center flex-col mb-[112px]">
-          <Banner BannerData={Data?.Banner} />
+          <Banner BannerData={Data?.Banner} language={language} />
           <OnlineLanguageClass
             OnlineLanguageClass={Data?.OnlineLanguageClass}
           />

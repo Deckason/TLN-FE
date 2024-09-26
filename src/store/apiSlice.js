@@ -67,20 +67,12 @@ export const api = createApi({
       invalidatesTags: ["Stats"],
     }),
 
-    //
+    // -----------------------------Stats queries-------------------------------
     getBanner: builder.query({
-      query: () => "/api/banner/get-all",
+      query: ({ context, language }) =>
+        `/api/banner/get-all/?language=${language}&context=${context}`,
       providesTags: ["Banner"],
     }),
-    updateBanner: builder.mutation({
-      query: ({ pageName, ...updatedBannerData }) => ({
-        url: `/api/banner/update/${pageName}`,
-        method: "PATCH",
-        body: updatedBannerData,
-      }),
-      invalidatesTags: ["Banner"],
-    }),
-
     // -----------------------------batches queries-------------------------------
 
     getNextMonth1Batches: builder.query({
@@ -129,7 +121,6 @@ export const {
   useGetStatsQuery,
   useUpdateStatsMutation,
   useGetBannerQuery,
-  useUpdateBannerMutation,
   useGetNextMonth1BatchesQuery,
   useGetNextMonth2BatchesQuery,
   useGetNextMonth3BatchesQuery,

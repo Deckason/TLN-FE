@@ -1,3 +1,4 @@
+"use client";
 import homePageBannerGirl from "../../Assets/Homepage/HomePageBanner/homePageBannerGirl.png";
 import BannerDemoButton from "./BannerDemoButton/BannerDemoButton";
 import States from "../../Shared/SharedAdultsPage/Components/States";
@@ -11,10 +12,7 @@ const HomeBanner = () => {
         <div className="lg:w-[525px] lg:min-h-[542px] min-h-fit flex-col z-10 max-lg:my-10 justify-center w-full lg:items-start gap-0 inline-flex">
           <div className=" mt-[50px] mx-[16px] self-stretch lg:h-[261px] h-fit 2xl:h-[261px] xl:h-[261px] flex-col justify-center items-start gap-[8px] sm:gap-4 flex">
             <div className="self-stretch text-stone-900 text-[24px]/[29px] xl:text-[50px]/[60px]  2xl:text-[60px]/[72px] lg:text-[40px]/[48.01px] md:text-3xl font-[700] ">
-              Your Gateway to <br className="" />
-              <span className="">Language </span>
-              <span className="lg:hidden">Excellence </span>
-              <p className="hidden lg:flex">Excellence</p>
+              Your Gateway to Language Excellence
             </div>
             <div className="self-stretch text-stone-900 2xl:text-[32px]/[39px] xl:text-[24px]/[29px] text-[20px]/[28px] font-normal text-nowrap">
               Learn more than just a language!
@@ -28,6 +26,9 @@ const HomeBanner = () => {
           alt="homePageBannerGirl"
           className="w-[90%] 2xl:max-w-[769px] max-h-[515px] lg:w-[50%] relative top-[27px] lg:block"
           src={homePageBannerGirl}
+          width={800}
+          height={520}
+          priority={true}
         ></Image>
         {/* <div className="max-w-[400px] h-[522px]  py-8 xl:mx-auto px-3  rounded-2xl z-10 border bg-white shadow-md hover:shadow-xl max-lg:hidden transition duration-200 md:bg-transparent border-stone-300 justify-center items-center gap-2.5 flex">
           <div className="grow shrink basis-0 self-stretch flex-col justify-start items-center gap-8 inline-flex">

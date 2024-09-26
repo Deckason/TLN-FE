@@ -4,18 +4,33 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import States from "../States";
 import KidsBannerBtn from "./../../../../Shared/buttons/kids/KidsBannerBtn";
+import { useGetBannerQuery } from "../../../../store/apiSlice";
 
-const Banner = ({ BannerData }) => {
+const Banner = ({ BannerData, language }) => {
   const [Splicing, setSplicing] = useState(true);
   const [BannerInfo, setBannerInfo] = useState();
-
+  const { data } = useGetBannerQuery({
+    context: "Kids",
+    language: language,
+  });
   useEffect(() => {
     if (Splicing) {
-      setBannerInfo(BannerData?.Description?.slice(0, 200));
+      const des =
+        data && data.length > 0 ? data[0].bannerDescription.slice(0, 200) : "";
+      // const des =
+      //   data && data.length > 0
+      //     ? data[0].bannerDescription.slice(0, 200)
+      //     : BannerData?.Description?.slice(0, 200);
+      setBannerInfo(des);
     } else {
-      setBannerInfo(BannerData?.Description);
+      const des = data && data.length > 0 ? data[0].bannerDescription : "";
+      // const des =
+      //   data && data.length > 0
+      //     ? data[0].bannerDescription
+      //     : BannerData?.Description;
+      setBannerInfo(des);
     }
-  }, [Splicing, BannerData?.Description]);
+  }, [Splicing, data, BannerData?.Description]);
 
   return (
     <div className="w-full relative flex justify-center items-center flex-col mb-[112px]">
@@ -25,7 +40,9 @@ const Banner = ({ BannerData }) => {
             <div className="flex flex-col max-w-[700px] max-md:ml-0 max-lg:w-full">
               <div className="flex z-10 flex-col px-5 text-black max-md:max-w-full">
                 <div className="text-[24px] font-bold w-full xl:w-[643px] 4xl:w-[1106px] xl:text-[48px]">
-                  Online {BannerData?.Language} Classes for kids!
+                  {data && data.length > 0
+                    ? data[0].bannerTitle
+                    : `Online ${BannerData?.Language} Classes for kids!`}
                 </div>
                 <div className="mt-2  text-[16px] leading-7  2xl:text-[20px] w-full xl:w-[643px] 4xl:w-[1106px] relative mb-[32px] flex flex-col items-start">
                   <div className="mb-[24px] 2xl:mb-[32px]">
@@ -51,7 +68,10 @@ const Banner = ({ BannerData }) => {
                 height={700}
                 alt="homePageBannerGirl"
                 className="w-[465px] h-[417px]  object-contain "
-                src={BannerData?.BannerImage}
+                src={
+                  (data && data.length > 0 && data[0].bannerImage) ||
+                  BannerData?.BannerImage
+                }
               ></Image>
             </div>
           </div>
