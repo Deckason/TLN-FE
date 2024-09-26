@@ -32,7 +32,7 @@ const SharedKidsPage = ({ Data, language,context }) => {
       </div>
       <HowItWorks HowItWorksCardData={Data?.HowItWorksCardData} />
       <div className=" relative flex justify-center items-center flex-col mb-[112px]">
-        <WhyShould />
+        <WhyShould data={Data.whyTLN} title="Why Kids should learn with The Language Network?"/>
         <div className="mt-4">
           {/* <UpcomingBatches language={language}/> */}
         </div>
