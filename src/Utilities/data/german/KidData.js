@@ -1,11 +1,30 @@
 import kids1 from "../../../Assets/FrenchPage/FrenchForKids/kids (2).png";
 import kids2 from "../../../Assets/FrenchPage/FrenchForKids/kids (3).png";
+import kids3 from "../../../Assets/FrenchPage/FrenchForKids/kids (1).png";
+import kids4 from "../../../Assets/FrenchPage/FrenchForKids/kids (4).jpg";
+import kids5 from "../../../Assets/FrenchPage/FrenchForKids/kids (5).jpg";
 import bannerImage from "../../../Assets/GermanPage/GermanForKids/banner.webp";
 import step1 from "../../../Assets/Homepage/FluencyCarrerCulture/step1.png";
 import step4 from "../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
 import step2 from "../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
 import step3 from "../../../Assets/FrenchPage/FrenchMain/step3.png";
 import delf from "../../../Assets/GermanPage/Gothe.svg";
+import experts from "../../../Assets/Homepage/whyShouldYouLearn/Expertrainers.webp";
+import expertModal from "../../../Assets/Homepage/whyShouldYouLearn/ExpertModal.webp";
+import interactiveModal from "../../../Assets/Homepage/whyShouldYouLearn/interactiveModal.webp";
+import certificatedModal from "../../../Assets/Homepage/whyShouldYouLearn/CertificatedModal.webp";
+import ReviewModal from "../../../Assets/Homepage/whyShouldYouLearn/ReviewModal.webp";
+import BatchModal from "../../../Assets/Homepage/whyShouldYouLearn/BatchModal.webp";
+import freeCourseModal from "../../../Assets/Homepage/whyShouldYouLearn/FreeStudyModal.webp";
+import flexibleModal from "../../../Assets/Homepage/whyShouldYouLearn/FlexibleModal.webp";
+import DemoModal from "../../../Assets/Homepage/whyShouldYouLearn/FreeDemoModal.webp";
+import interactive from "../../../Assets/Homepage/whyShouldYouLearn/Interactivesessions.webp";
+import courses from "../../../Assets/Homepage/whyShouldYouLearn/courses.webp";
+import demo from "../../../Assets/Homepage/whyShouldYouLearn/demo.webp";
+import material from "../../../Assets/Homepage/whyShouldYouLearn/material.webp";
+import sessions from "../../../Assets/Homepage/whyShouldYouLearn/sessions.webp";
+import flexible from "../../../Assets/Homepage/whyShouldYouLearn/flexible timings.webp";
+import batch from "../../../Assets/Homepage/whyShouldYouLearn/batch.webp";
 export const data = {
     BannerData: {
       Language: "German",
@@ -25,21 +44,21 @@ export const data = {
         },
         {
           title: "Cultural Enrichment",
-          img: kids1,
+          img: kids2,
           description:
             "Learning German provides a window into Germany's vibrant culture, including its influential literature, philosophy, and music, enriching children's cultural awareness.",
           link: "",
         },
         {
           title: "Educational Advantages",
-          img: kids2,
+          img: kids3,
           description:
             "Studying German enhances cognitive abilities such as problem-solving and critical thinking, contributing to overall academic success.",
           link: "",
         },
         {
           title: "Career Opportunities",
-          img: kids1,
+          img: kids5,
           description:
             "Proficiency in German broadens job prospects, particularly in engineering, technology, and international business sectors where German-speaking companies thrive.",
           link: "",
@@ -53,7 +72,7 @@ export const data = {
         },
         {
           title: "Personal Growth",
-          img: kids1,
+          img: kids4,
           description:
             "Learning German fosters resilience and adaptability while promoting empathy and understanding of different cultures, nurturing well-rounded individuals.",
           link: "",
@@ -280,4 +299,72 @@ export const data = {
         ],
       },
     ],
+    whyTLN:[
+      {
+        "modal": false,
+        "modalClose": "expert",
+        "imgAvatar": expertModal,
+        "img": experts,
+        "modalTitle": "Expert Trainers",
+        "modalDesc": "Benefit from expert instruction by industry professionals, ensuring engaging, interactive, and effective learning experiences for children.",
+      },
+      {
+        "modal": false,
+        "modalClose": "certificated",
+        "imgAvatar": certificatedModal,
+        "img": courses,
+        "modalTitle": "Certified Courses",
+        "modalDesc": "Empower your child with our ISO-certified training program, ensuring recognition and validation for their efforts, igniting a sense of achievement and motivation to excel.",
+      },
+      {
+        "modal": false,
+        "modalClose": "interactive",
+        "imgAvatar": interactiveModal,
+        "img": interactive,
+        "modalTitle": "Personalised Approach",
+        "modalDesc": "Tailoring our approach to individual strengths, weaknesses, and learning styles, we guarantee rapid progress and bolstered confidence in language acquisition.",
+      },
+      {
+        "modal": false,
+        "modalClose": "freeStudy",
+        "imgAvatar": freeCourseModal,
+        "img": material,
+        "modalTitle": "Free Study Material",
+        "modalDesc": "Access complimentary study materials worth ₹5,000+ to enrich your child's learning journey.",
+      },
+     
+      {
+        "modal": false,
+        "modalClose": "freeCourse",
+        "imgAvatar": DemoModal,
+        "img": demo,
+        "modalTitle": "Experiential Learning",
+        "modalDesc": "Immerse your child in a holistic language learning journey enriched with cultural experiences, departing from traditional textbook methods.",
+      },
+      
+      {
+        "modal": false,
+        "modalClose": "batch",
+        "imgAvatar": BatchModal,
+        "img": batch,
+        "modalTitle": "1:1 Tutoring",
+        "modalDesc": "Experience tailored learning with our dedicated one-on-one tutoring sessions, where every student receives personalized attention and guidance to excel in their language journey.",
+      },
+      {
+        "modal": false,
+        "modalClose": "review",
+        "imgAvatar": ReviewModal,
+        "img": sessions,
+        "modalTitle": "Review Sessions",
+        "modalDesc": "Access session recordings to keep parents informed and track student progress and performance effectively.",
+      },
+      {
+        "modal": false,
+        "modalClose": "flexible",
+        "imgAvatar": flexibleModal,
+        "img": flexible,
+        "modalTitle": "International Curriculum",
+        "modalDesc": "Explore our international curriculum, meticulously designed to hone your child's language skills across listening, writing, speaking, and comprehension, ensuring proficiency in real-world scenarios.",
+      },
+    ]
   };

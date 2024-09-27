@@ -29,7 +29,7 @@ const SharedStudyAbroad = ({ Data, language, context }) => {
       </div>
       <HowItWorks HowItWorksCardData={Data?.HowItWorksCardData} />
       <div className=" relative flex justify-center items-center flex-col mb-[112px]">
-        <WhyShould />
+        <WhyShould data={Data.whyTLN}/>
         {/* <div className="">
           <UpcomingBatches language={language}/>
         </div> */}

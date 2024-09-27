@@ -6,6 +6,22 @@ import step4 from "../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
 import step2 from "../../../Assets/Homepage/FluencyCarrerCulture/step3.png";
 import step3 from "../../../Assets/FrenchPage/FrenchMain/step3.png";
 import StudyAbroadImage from '../../../Assets/FrenchPage/FrenchStudyAbroad/Study Abroad French.jpg';
+import experts from "../../../Assets/Homepage/whyShouldYouLearn/Expertrainers.webp";
+import expertModal from "../../../Assets/Homepage/whyShouldYouLearn/ExpertModal.webp";
+import interactiveModal from "../../../Assets/Homepage/whyShouldYouLearn/interactiveModal.webp";
+import certificatedModal from "../../../Assets/Homepage/whyShouldYouLearn/CertificatedModal.webp";
+import ReviewModal from "../../../Assets/Homepage/whyShouldYouLearn/ReviewModal.webp";
+import BatchModal from "../../../Assets/Homepage/whyShouldYouLearn/BatchModal.webp";
+import freeCourseModal from "../../../Assets/Homepage/whyShouldYouLearn/FreeStudyModal.webp";
+import flexibleModal from "../../../Assets/Homepage/whyShouldYouLearn/FlexibleModal.webp";
+import DemoModal from "../../../Assets/Homepage/whyShouldYouLearn/FreeDemoModal.webp";
+import interactive from "../../../Assets/Homepage/whyShouldYouLearn/Interactivesessions.webp";
+import courses from "../../../Assets/Homepage/whyShouldYouLearn/courses.webp";
+import demo from "../../../Assets/Homepage/whyShouldYouLearn/demo.webp";
+import material from "../../../Assets/Homepage/whyShouldYouLearn/material.webp";
+import sessions from "../../../Assets/Homepage/whyShouldYouLearn/sessions.webp";
+import flexible from "../../../Assets/Homepage/whyShouldYouLearn/flexible timings.webp";
+import batch from "../../../Assets/Homepage/whyShouldYouLearn/batch.webp";
 
 export const data = {
     BannerData: {
@@ -201,4 +217,73 @@ export const data = {
         ],
       },
     ],
+    whyTLN :[
+      {
+        "modal": false,
+        "modalClose": "certificated",
+        "imgAvatar": certificatedModal,
+        "img": courses,
+        "modalTitle": "Certified Course",
+        "modalDesc": "Achieve recognition and validation through our language learning programs, which are both ISO-certified and accredited",
+      },
+      {
+        "modal": false,
+        "modalClose": "expert",
+        "imgAvatar": expertModal,
+        "img": experts,
+        "modalTitle": "Expert Trainers",
+        "modalDesc": "Learn from internationally certified trainers with extensive expertise in language instruction.",
+      },
+      {
+        "modal": false,
+        "modalClose": "freeStudy",
+        "imgAvatar": freeCourseModal,
+        "img": material,
+        "modalTitle": "Free Study Material",
+        "modalDesc": "Get an access to free study material worth ₹10,000+ to support your learning journey.",
+      },
+      {
+        "modal": false,
+        "modalClose": "interactive",
+        "imgAvatar": interactiveModal,
+        "img": interactive,
+        "modalTitle": "Interactive Sessions",
+        "modalDesc": "Engage in dynamic classes that enhance comprehension and retention through active participation.",
+      },
+      {
+        "modal": false,
+        "modalClose": "review",
+        "imgAvatar": ReviewModal,
+        "img": sessions,
+        "modalTitle": "Instant Review",
+        "modalDesc": "Access instant class recordings after each session for convenient revision and reinforcement of learning, ensuring optimal understanding and progress in language acquisition.",
+      },
+      
+      {
+        "modal": false,
+        "modalClose": "freeCourse",
+        "imgAvatar": DemoModal,
+        "img": demo,
+        "modalTitle": "Small Batches",
+        "modalDesc": "Benefit from focused instruction and a conducive learning environment with limited class sizes.",
+      },
+      
+      
+      {
+        "modal": false,
+        "modalClose": "flexible",
+        "imgAvatar": flexibleModal,
+        "img": flexible,
+        "modalTitle": "Exam Preparation",
+        "modalDesc": "Prepare for your exams and pave the way for your dreams of studying abroad with our comprehensive exam preparation services.",
+      },
+      {
+        "modal": false,
+        "modalClose": "batch",
+        "imgAvatar": BatchModal,
+        "img": batch,
+        "modalTitle": "Career Counselling",
+        "modalDesc": "Receive expert guidance on career prospects and opportunities, helping you make informed decisions about your professional journey.",
+      }
+    ]
   };
