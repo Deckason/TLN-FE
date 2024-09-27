@@ -53,7 +53,7 @@ export const EnglishLanguageData = {
           title: "English Classes for College",
           img: college,
           description:
-            "Equip college students with essential language skills for academic success and international career opportunities through our specialized English course.",
+            "Dive into English fluency with our flexible online classes tailored to fit your college schedule. Explore the language, culture, and opportunities that await!",
           link: "#",
         },
         {
