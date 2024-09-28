@@ -3,6 +3,7 @@ import BookAFreeDemoButton from "../../../../Shared/BookAFreeDemoButton";
 import Image from "next/image";
 import BannerImage from "../../../../Assets/FrenchPage/FrenchAdult/BannerTwo.svg";
 import AdultsBannerBtn from "./../../../../Shared/buttons/adults/AdultsBannerBtn";
+import SvgContainer from "../../../../Utilities/svgContainer/SvgContainer";
 
 import { useEffect, useState } from "react";
 import States from "../States";
@@ -65,7 +66,7 @@ const Banner = ({ BannerData, language }) => {
               </div>
             </div>
             <div className="  mx-auto max-md:-mb-[26px] max-lg:-mb-[42px] lg:-mb-0 lg:block px-4 lg:absolute  right-5 -top-10">
-              <Image
+              {/* <Image
                 width={700}
                 height={700}
                 alt="homePageBannerPicture"
@@ -73,6 +74,11 @@ const Banner = ({ BannerData, language }) => {
                 src={
                   (data && data.length > 0 && data[0].bannerImage) ||
                   BannerData?.BannerImage
+                }
+              /> */}
+              <SvgContainer
+                svgUrl={
+                  (data && data.length > 0 && data[0].bannerImage)
                 }
               />
             </div>
