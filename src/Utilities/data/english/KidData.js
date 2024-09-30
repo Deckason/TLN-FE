@@ -49,13 +49,13 @@ export const data = {
         img: kids2,
       },
       {
-        title: "Educational Advantages          ",
+        title: "Academic Advantages          ",
         description:
           "Mastery of English enhances access to educational resources, research, and opportunities for higher education.          ",
         img: kids3,
       },
       {
-        title: "Career Opportunities  ",
+        title: "Career Opportunities",
         description:
           "Proficiency in English opens doors in various industries, including business, technology, and tourism, offering competitive advantages in the global job market.          ",
         img: kids5,
