@@ -59,17 +59,16 @@ const Banner = ({ BannerData, language }) => {
                 </div>
               </div>
             </div>
-            <div className="w-[540px] 2xl:w-[591px] 4xl:w-[708px] h-[375px] 2xl:h-[400px] 4xl:h-[417px] max-md:hidden mx-auto right-0 max-lg:left-0 lg:absolute  lg:block flex-grow pb-[50px]">
+            {/* <div className=" w-[540px] 2xl:w-[591px] 4xl:w-[708px] h-[375px] 2xl:h-[500px] 4xl:h-[417px] max-md:hidden mx-auto right-0 max-lg:left-0 lg:absolute  lg:block flex-grow pb-[50px]"> */}
+            <div className="z-[-1] mt-[-225px] mr-[10px] w-[540px] 2xl:w-[591px] 4xl:w-[708px] h-[600px] 2xl:h-[500px] 4xl:h-[417px] max-md:hidden mx-auto right-0 max-lg:left-0 lg:absolute  lg:block flex-grow pb-[50px]">
               <Image
                 width={700}
                 height={700}
                 alt="homePageBannerGirl"
                 className="w-full h-full object-contain "
                 priority={true}
-                src={
-                  (data && data.length > 0 && data[0].bannerImage) ||
-                  BannerData.BannerImage
-                }
+                src={data && data.length > 0 && data[0].bannerImage }
+                // src={BannerData.BannerImage}
               ></Image>
             </div>
           </div>
