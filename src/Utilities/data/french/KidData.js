@@ -2,6 +2,7 @@ import kids3 from "../../../Assets/FrenchPage/FrenchForKids/kids (1).png";
 import kids1 from "../../../Assets/FrenchPage/FrenchForKids/kids (2).png";
 import kids2 from "../../../Assets/FrenchPage/FrenchForKids/kids (3).png";
 import kids4 from "../../../Assets/FrenchPage/FrenchForKids/kids (4).jpg";
+import kids5 from "../../../Assets/FrenchPage/FrenchForKids/kids (5).jpg";
 import bannerImage from "../../../Assets/FrenchPage/FrenchForKids/banner.webp";
 import step1 from "../../../Assets/Homepage/FluencyCarrerCulture/step1.png";
 import step4 from "../../../Assets/Homepage/FluencyCarrerCulture/step2.png";
@@ -56,6 +57,13 @@ export  const data = {
           img: kids3,
           description:
             "Learning French boosts cognitive skills like problem-solving, critical thinking, multitasking, and memory. Improved linguistic abilities benefit academic performance across subjects.",
+          link: "",
+        },
+        {
+          title: "Career Opportunities",
+          img: kids5,
+          description:
+            "French proficiency is essential in global careers like business, diplomacy, tourism, and hospitality, given the significance of multilingual skills in today's world",
           link: "",
         },
         {
