@@ -67,10 +67,9 @@ const Banner = ({ BannerData, language }) => {
                 width={700}
                 height={700}
                 alt="homePageBannerGirl"
-                className="w-[465px] h-[417px]  object-contain "
+                className="w-[465px] h-[417px] object-contain "
                 src={
-                  (data && data.length > 0 && data[0].bannerImage) ||
-                  BannerData?.BannerImage
+                  (data && data.length > 0 && data[0].bannerImage) 
                 }
               ></Image>
             </div>

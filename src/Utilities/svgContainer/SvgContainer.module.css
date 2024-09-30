@@ -1,0 +1,11 @@
+.background{
+    width: 465px;
+    height: 417px;
+    z-index: -1;
+}
+
+@media (max-width:524px){
+    .background{
+        width: 90vw;
+    }
+}

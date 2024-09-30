@@ -13,6 +13,7 @@ import WhyShould from "../../Components/HomeComp/WhyShould";
 import UpcomingBatches from "../../Shared/UpcomingBatches";
 import StudentsTestomony from "../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
 import SubscribeToOur from "../../Shared/SubscribeToOur";
+import {whyShouldData} from "../../Utilities/data/home/data.js"
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       <div>
         <Newsletter />
       </div>
-      <WhyShould />
+      <WhyShould data={whyShouldData}/>
       <div className="flex items-center justify-center">
         <CoursesWeOffer />
       </div>
