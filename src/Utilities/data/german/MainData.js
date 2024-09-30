@@ -112,20 +112,20 @@ export const GermanLanguageData = {
         info: "German is spoken by 100 million people worldwide, making it a valuable asset for international communication and cultural exchange.        ",
       },
       CardData2: {
-        title: "Cultural enrichment        ",
+        title: "Cultural enrichment",
         info: "German language and culture offer rich insights into literature, philosophy, music, and cuisine, enriching cultural experiences.        ",
       },
       CardData3: {
-        title: "Career opportunities        ",
+        title: "Career opportunities",
         info: "German proficiency enhances job prospects, particularly in fields like engineering, automotive, manufacturing, finance, and international business.        ",
       },
       CardData4: {
         title: "Academic pursuits ",
-        info: "German is spoken in numerous countries worldwide, making it invaluable for travel and exploration and enriching experiences abroad.        ",
+        info: "German is a vital language in academia, granting access to prestigious universities, research opportunities, and academic publications.",
       },
       CardData5: {
         title: "Travel and exploration",
-        info: "German is a vital language in academia, granting access to prestigious universities, research opportunities, and academic publications.        ",
+        info: "German is spoken in numerous countries worldwide, making it invaluable for travel and exploration and enriching experiences abroad.       ",
       },
     },
     FaqsData: [
