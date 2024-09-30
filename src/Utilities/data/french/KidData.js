@@ -42,14 +42,14 @@ export  const data = {
           title: "Global Communication",
           img: kids1,
           description:
-            "French, with 275 million speakers globally, fosters connections across French-speaking nations, enhancing global understanding and communication opportunities for children.",
+            "French is spoken by 300 million speakers globally and helps foster connections across French-speaking nations and enhances global understanding and communication opportunities for children.",
           link: "",
         },
         {
           title: "Cultural Enrichment",
           img: kids2,
           description:
-            "French, with 275 million speakers globally, fosters connections across French-speaking nations, enhancing global understanding and communication opportunities for children.",
+            "Learning French exposes children to diverse cultures, literature, cinema, and art. It is also the official language of global bodies like the United Nations, UNESCO, and the International Red Cross.",
           link: "",
         },
         {
@@ -63,7 +63,7 @@ export  const data = {
           title: "Career Opportunities",
           img: kids5,
           description:
-            "French proficiency is essential in global careers like business, diplomacy, tourism, and hospitality, given the significance of multilingual skills in today's world",
+            "French proficiency is essential in global careers like business, diplomacy, tourism, and hospitality, given the significance of multilingual skills in today's world.",
           link: "",
         },
         {
