@@ -34,7 +34,7 @@ const HowItWorks = ({ HowItWorksCardData }) => {
             pagination={{
               clickable: true,
             }}
-            modules={[Navigation]}
+            modules={[Navigation,Pagination]}
             navigation={{
               prevEl: navigationPrevRef.current,
               nextEl: navigationNextRef.current,

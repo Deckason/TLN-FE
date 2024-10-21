@@ -151,7 +151,7 @@ const Page = () => {
   };
 
   const TopBarData = {
-    title: "HSK Proficiency exam",
+    title: "HSK Preparation Classes",
     para: "Acing your HSK exam is one click away with The Language Network. Our online exam preparation courses are designed to accommodate your schedule, offering flexibility and convenience. Led by top-notch trainers, we provide insider tips, strategies, and essential study materials to excel in the exam. Whether you're starting from scratch or aiming for advanced proficiency, our comprehensive approach will arm you with the skills and confidence required to thrive. Join us at The Language Network and pave the way for your success in the HSK exam.",
   };
 

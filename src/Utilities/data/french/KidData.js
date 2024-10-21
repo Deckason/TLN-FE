@@ -73,6 +73,13 @@ export  const data = {
             "Learning a new language cultivates empathy, cultural sensitivity, and self-confidence, fostering personal growth and appreciation for diversity.",
           link: "",
         },
+        {
+          title: "Travel and Exploration",
+          img: kids2,
+          description:
+            "French is spoken in 29 countries, allowing children to communicate easily and fully immerse themselves in diverse cultures while travelling.",
+          link: "",
+        },
       ],
     },
     HowItWorksCardData: [
