@@ -35,7 +35,7 @@ const EverythingYouNeedToKnowAboutLanguage = ({
                       />
                     ))
                 : data?.map((data, index) => (
-                    <FaqsCard key={index} data={data} i={index} />
+                    <FaqsCard key={index} data={data} i={index} id={id} open={open} setId={setId} setOpen={setOpen}/>
                   ))}
             </div>
           </div>

@@ -157,7 +157,7 @@ const Page = () => {
   };
 
   const TopBarData = {
-    title: "GOETHE Proficiency exam",
+    title: "GOETHE Preparation Classes",
     para: "Master the GOETHE proficiency exam effortlessly with The Language Network. Our online exam preparation courses are crafted in accordance with your timing and schedule. Get study material and access to insider tips and tricks and from our expert tuto₹Whether you're beginning your journey or striving for advanced proficiency, our comprehensive approach will empower you with the skills and confidence to thrive. Join us at The Language Network and embark on your path to success in the GOETHE exam.",
   };
 

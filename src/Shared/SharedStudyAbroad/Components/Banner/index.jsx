@@ -42,7 +42,7 @@ const Banner = ({ BannerData, language }) => {
                 <div className="text-[24px] font-bold w-full xl:w-[643px] 4xl:w-[1106px] xl:text-[48px]">
                   {data && data.length > 0
                     ? data[0].bannerTitle
-                    : `Online ${BannerData?.Language} Classes for Study Abroad!`}
+                    : `Online ${BannerData?.Language} Classes to Study Abroad!`}
                 </div>
                 <div className="mt-2  text-[16px] leading-7  2xl:text-[20px] w-full xl:w-[643px] 4xl:w-[1106px] relative mb-[32px] flex flex-col items-start">
                   <div className="mb-8">

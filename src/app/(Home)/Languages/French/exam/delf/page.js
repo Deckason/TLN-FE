@@ -154,7 +154,7 @@ const Page = () => {
   };
 
   const TopBarData = {
-    title: "DELF Proficiency exam",
+    title: "DELF Preparation Classes",
     para: "Achieve success in the DELF proficiency exam effortlessly with The Language Network. Our online exam preparation courses are tailored to fit your schedule, ensuring flexibility and convenience.  Led by top-notch trainers, we provide insider tips, strategies along with necessary study material to excel in the exam. Whether you're a beginner or aiming for advanced proficiency, our comprehensive approach will equip you with the skills and confidence needed to succeed. Join us at The Language Network and pave the way for your success in the DELF exam.",
   };
 

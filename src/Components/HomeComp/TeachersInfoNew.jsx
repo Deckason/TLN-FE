@@ -135,7 +135,7 @@ const TeachersInfoNew = () => {
         </div>
         <div className="text-[#1E1E1E] text-[14px]/[17px] font-medium lg:text-lg lg:font-normal 2xl:text-[20px]/[28px] max-w-[330px] md:max-w-[540px] lg:max-w-[640px] xl:max-w-[840px] 3xl:max-w-[1120px]">
           <p className="text-justify xl:text-center">
-            Meet our team of over 200+ internationally certified trainer who
+            Meet our team of over 200+ internationally certified trainers who
             bring learning to life! With their expertise, they transform every
             lesson into a fun and engaging experience, creating a warm and
             welcoming environment where students thrive.

@@ -68,7 +68,7 @@ const Newsletter = () => {
 
                       <div className="mt-5 text-primary-color max-md:max-w-full text-xl">
                         <span className="text-neutral-500">
-                          Reads our full story
+                          Read our full story
                         </span>{" "}
                         <Link href={"https://www.hindustantimes.com/brand-stories/the-language-network-launches-its-pan-india-expansion-campaign-101659532840850.html"} className="font-bold text-xl leading-6 text-teal-600" target="_blank">
                           here

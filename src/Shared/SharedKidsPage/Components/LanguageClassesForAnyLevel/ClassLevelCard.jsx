@@ -28,7 +28,7 @@ const ClassLevelCard = ({ data }) => {
               className="self-stretch shadow-md transition duration-300 hover:shadow-xl h-14 px-8 py-3.5 rounded-lg border border-teal-600 justify-center items-center gap-2.5 inline-flex"
             >
               <div className="text-center text-teal-600 text-xl font-normal leading-7">
-                {data?.price != "On Request" ? "Book Now":"Enquire Now"}
+                {data?.price != "On Request" ? "Book a Class":"Enquire Now"}
               </div>
               <div className="w-6 h-6 relative">
                 <Image alt="arrowLeft" src={arrowLeft}></Image>
