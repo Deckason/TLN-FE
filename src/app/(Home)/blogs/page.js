@@ -6,6 +6,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { AiOutlineRight } from 'react-icons/ai';
 import Image from 'next/image';
 import BannerAd from '../../../Components/BlogComp/BannerAd'
+import Breadcrumbs from '../../../Components/BlogComp/BreadCrumbs';
 
 const languages = ['French', 'German', 'Spanish', 'Mandarin', 'English', 'Korean', 'Japanese'];
 
@@ -50,7 +51,7 @@ const Blogs = () => {
                 <div className="relative p-4 sm:p-6 md:p-8 text-start w-full md:w-[894px] h-auto md:h-[418px] md:pl-[101px] md:py-[47px]">
                     <h2 className="text-base sm:text-lg font-semibold">Featured</h2>
                     <p className="text-xs sm:text-sm pt-2 flex gap-4">
-                        {["French - Tips & Resources", "By Aisha Jain", "July 7, 2024"].map((item, i, arr) => (
+                        {[["French - Tips & Resources", "By Aisha Jain", "July 7, 2024"]].map((item, i, arr) => (
                             <span key={i} className={`relative ${i !== (arr.length - 1) && 'after:absolute after:right-[-8px] after:w-[1px] after:h-[90%] after:bg-[#ffffff]'}`}>
                                 {item}
                             </span>
@@ -102,11 +103,7 @@ const Blogs = () => {
                 {/* Main Content */}
                 <section className="w-full lg:w-3/4 flex flex-col gap-4">
                     {/* Breadcrumbs */}
-                    <div className="mt-4 py-2 text-xs sm:text-sm text-gray-500 flex items-start gap-2">
-                        <span>{activeLanguage}</span>
-                        <AiOutlineRight className="text-gray-400" />
-                        <span>{activeCategory}</span>
-                    </div>
+                    <Breadcrumbs items={[activeLanguage,activeCategory]}/>
                     {/* Articles Grid */}
                     <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {articles.map((article) => (
