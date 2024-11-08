@@ -2,9 +2,11 @@
 import BelowBanner from "../../../Components/Common/BelowBanner";
 import ProficiencyExams from "../../../Components/HomeComp/ProficiencyExams";
 import States from "../../../Shared/SharedAdultsPage/Components/States";
-import SliderComp from './components/SliderComp'
+import SliderComp from '../../../Components/Common/SliderComp'
 import FaqComp from '../../../Shared/FaqComp'
 import PaymentBar from "../../../Components/HomeComp/PaymentBar";
+import Banner from "../../../Shared/Banner";
+import DynamicForm from '../../../Components/Common/DynamicForm'
 
 
 const TeachWithUs = ()=>{
@@ -233,18 +235,7 @@ const TeachWithUs = ()=>{
     return (
         <div>
             {/* hero section */}
-            <div className="flex flex-col md:flex-row p-24 pb-0 gap-12">
-                <div className="flex flex-col items-start gap-5">
-                    <p className="text-[40px] font-bold">
-                        Teach With Us!
-                    </p>
-                    <p className="text-[15px]">Become a Teacher with The Language Network! Share your expertise and passion while reaping the rewards of spreading knowledge. Join our team of 200+ expert trainers and make a difference from the comfort of your home. Empower others, expand your horizons, and embark on a fulfilling journey with The Language Network!</p>
-                    <button className="text-white bg-primary-color py-[14px] px-[32px] rounded-md">Apply Now</button>
-                </div>
-                <div>   
-                    <div className="min-w-[300px] min-h-[300px] bg-gray-300"></div>
-                </div>
-            </div>
+            <Banner title={"Teach With Us!"} description={"Become a Teacher with The Language Network! Share your expertise and passion while reaping the rewards of spreading knowledge. Join our team of 200+ expert trainers and make a difference from the comfort of your home. Empower others, expand your horizons, and embark on a fulfilling journey with The Language Network!"}/>
             {/* stats */}
             <div className="px-12">
                 <States/>
@@ -272,9 +263,9 @@ const TeachWithUs = ()=>{
                 <div className="text-stone-900 text-[24px] leading-tight xl:text-[60px]/[80px] mb-12 text-center font-bold max-md:px-5">
                     Start Your Journey
                 </div>
-                <div className="flex flex-col md:flex-row p-10">
-                    {/* image */}
-                    <div className="flex-1">
+                {/* <div className="flex flex-col md:flex-row p-10">
+                
+                    {/* <div className="flex-1">
                         <div className="min-w-40 min-h-40 bg-gray-400"></div>
                     </div>
                     <div className="flex-1">
@@ -283,7 +274,6 @@ const TeachWithUs = ()=>{
                                     Fill out the form below to become part of our vibrant community.
                                 </h2>
                                 <form className="space-y-4">
-                                    {/* Mapping through input fields */}
                                     {inputFields.map((field) => (
                                     <input
                                         key={field.id}
@@ -293,7 +283,6 @@ const TeachWithUs = ()=>{
                                     />
                                     ))}
 
-                                    {/* Attach CV */}
                                     <div>
                                     <label className="block text-teal-600 cursor-pointer border border-gray-300 rounded-md p-2 text-center hover:bg-gray-50">
                                         Attach CV
@@ -301,14 +290,12 @@ const TeachWithUs = ()=>{
                                     </label>
                                     </div>
 
-                                    {/* Tell us something about yourself */}
                                     <textarea
                                     placeholder="Tell us something about yourself"
                                     className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
                                     rows="3"
                                     ></textarea>
 
-                                    {/* How did you hear about us */}
                                     <select
                                     className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
                                     >
@@ -320,7 +307,6 @@ const TeachWithUs = ()=>{
                                     ))}
                                     </select>
 
-                                    {/* Submit Button */}
                                     <button
                                     type="submit"
                                     className="w-full bg-teal-600 text-white rounded-md py-2 font-semibold hover:bg-teal-700 focus:outline-none"
@@ -329,8 +315,9 @@ const TeachWithUs = ()=>{
                                     </button>
                                 </form>
                         </div>
-                    </div>
-                </div>
+                    </div> 
+                </div> */}
+                <DynamicForm inputFields={inputFields} howDidYouHearAboutoptions={options}/>
             </div>
             {/* below banner section */}
             <div>
