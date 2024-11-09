@@ -75,7 +75,7 @@ const PressCentre = () => {
 
             {/* Help Section */}
             <div className="flex flex-col items-center bg-[#FAFAFA] py-8 px-4 mb-10 text-center space-y-2">
-                <p className="font-bold text-2xl sm:text-3xl md:text-4xl">We're here to help</p>
+                <p className="font-bold text-2xl sm:text-3xl md:text-4xl">We&apos;re here to help</p>
                 <p className="font-medium text-sm sm:text-base md:text-lg">Get in touch for any queries or specific needs</p>
                 <button className="py-2 px-6 bg-primary-color text-white rounded-md text-sm sm:text-base">Contact Us</button>
             </div>

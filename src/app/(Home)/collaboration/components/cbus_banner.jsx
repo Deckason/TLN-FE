@@ -1,4 +1,4 @@
-import ApplyNowbutton from "../../Shared/buttons/GetStartedHomeBannerButton";
+import ApplyNowbutton from "../../../../Shared/buttons/GetStartedHomeBannerButton";
 import Image from "next/image";
 import bannerimg from "../../../public/collboratewithUs/collaborate_banner.svg";
 
