@@ -30,7 +30,7 @@ const HowItWorks = () => {
                   <h5 className="bg-primary-color py-3 mb-5 text-white rounded-t-lg">
                     {val.heading}
                   </h5>
-                  <p className="text-gray-600 px-4 lg:text-xl text-lg my-4 text-center h-fit sm:min-h-32">
+                  <p className="text-gray-600 px-4 lg:text-xl text-lg my-4 text-center h-fit sm:min-h-32 flex justify-center items-center">
                     {val.content}
                   </p>
                 </div>

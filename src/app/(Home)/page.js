@@ -14,6 +14,7 @@ import UpcomingBatches from "../../Shared/UpcomingBatches";
 import StudentsTestomony from "../../Shared/SharedMainLanguagePage/Components/StudentTestomony/StudentsTestomony";
 import SubscribeToOur from "../../Shared/SubscribeToOur";
 import {whyShouldData} from "../../Utilities/data/home/data.js"
+// import Collaboration from "../../M2/Collaboratewithus";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
       </div>
       <SubscribeToOur />
       <PaymentBar />
+      {/* <Collaboration /> */}
     </>
   );
 }
