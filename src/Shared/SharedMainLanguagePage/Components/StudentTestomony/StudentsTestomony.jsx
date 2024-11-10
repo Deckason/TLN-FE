@@ -12,7 +12,7 @@ import { FaArrowRight, FaRegStar, FaStar } from "react-icons/fa";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { useGetAllTestimonialsQuery } from "../../../../store/apiSlice";
-const StudentsTestomony = ({ language, context }) => {
+const StudentsTestomony = ({ language, context,title }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
@@ -28,7 +28,7 @@ const StudentsTestomony = ({ language, context }) => {
     <div className="w-full bg-[#F6F3F3]  4xl:bg-[#F6F3F3] lg:px-10 mx-auto 2xl:px-[100px] 3xl:mx-auto relative flex justify-center items-center flex-col pt-[60px] sm:pt-[80px] pb-[40px]">
       <div className="-mt-[20px]  mx-auto flex justify-center flex-col items-center lg:mx-[44px] 2xl:mx-[88px] 4xl:mx-[120px]">
         <h1 className="text-stone-900 mx-16 text-center text-[32px]/[39px] sm:text-[36px]/[45px] lg:text-[40px]/[50px] xl:text-[50px]/[60px] 2xl:text-[60px]/[80px] sm:font-bold mb-4 font-semibold max-lg:text-2xl">
-          {`What our ${language} students have to say`}
+          {title || `What our ${language} students have to say`}
         </h1>
         <div className="w-full">
           <Swiper

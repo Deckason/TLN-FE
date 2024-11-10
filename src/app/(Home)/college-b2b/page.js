@@ -1,59 +1,106 @@
-'use client'
-import BelowBanner from '../../../Components/Common/BelowBanner';
-import Heading from '../../../Components/Common/Heading';
-import SliderComp from '../../../Components/Common/SliderComp';
-import PaymentBar from '../../../Components/HomeComp/PaymentBar';
 import Banner from '../../../Shared/Banner'
-import FaqComp from '../../../Shared/FaqComp';
-import { SwiperSlide, Swiper } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination, Navigation } from "swiper/modules";
-import React, { useState } from 'react';
-import { FaPlay } from 'react-icons/fa';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import DynamicForm from '../../../Components/Common/DynamicForm';
-import StyledSlider from '../../../Components/Common/StyledSlider'
+import WhyChooseComp from '../../../Components/Common/WhyChooseComp'
+import Newsletter from '../../../Components/HomeComp/Newsletter'
+import SliderComp from '../../../Components/Common/SliderComp'
+import PlansComp from '../../../Components/Common/PlansComp'
+import ProficiencyExams from '../../../Components/HomeComp/ProficiencyExams'
+import EducationPartners from '../../../Components/HomeComp/EducationPartners'
+import FaqComp from '../../../Shared/FaqComp'
+import BelowBanner from '../../../Components/Common/BelowBanner'
+import PaymentBar from '../../../Components/HomeComp/PaymentBar'
 
-
-const SlideComponent = ({slide})=>{
-    return (
-        <>
-            <img src={slide.imgSrc} alt={slide.altText} className="w-full h-92 object-cover relative z-0" />
-            <div className="absolute inset-0 bg-[#00000033] z-10"></div>
-            <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center z-20">
-                <button className="bg-white rounded-full p-2">
-                    <FaPlay className=" text-black"></FaPlay>
-                </button>
-            </div>
-        </>
-    )
-}
-
-const ContentCreatorPage = ()=>{
-    const [currentPage, setCurrentPage] = useState(0);
-    const navigationPrevRef = React.useRef(currentPage);
-     const navigationNextRef = React.useRef(currentPage);
-    const howItWorksData = {
-        Title:"How It Works?",
-        CardData:[
-            {
-                img:"",
-                title:"STEP 1",
-                description:"Connect with us by filling out our simple application form on the website. "
-            },
-            {
-                img:"",
-                title:"STEP 2",
-                description:"Our team will promptly reach out to you to discuss potential content ideas and partnership opportunities. "
-            },
-            {
-                img:"",
-                title:"STEP 3",
-                description:"Start creating and sharing engaging content to enhance language learning with us! "
-            },
-        ]
+const CollegeB2B = ()=>{
+    const whyChooseUsData = [
+        {
+            title:"Tailored Curriculum",
+            description:"Our language programs are customized to meet the specific needs and goals of working professionals, ensuring relevance and effectiveness in language acquisition."
+        },
+        {
+            title:"Experienced Educators",
+            description:"Our team of skilled language educators delivers engaging lessons tailored to corporate-level learners, catering to diverse learning styles and abilities."
+        },
+        {
+            title:"Flexible Deliveries",
+            description:"We offer flexible options, including offline and online classes, to accommodate working professionals' scheduling preferences and logistical constraints seamlessly."
+        },
+        {
+            title:"Comprehensive Support",
+            description:"From curriculum development to ongoing assistance, we provide you and your company with comprehensive support to integrate language learning into your corporate framework effortlessly."
+        },
+        {
+            title:"Enhanced Global Competency",
+            description:"Our programs equip working professionals with the linguistic skills and cultural competence needed to thrive in an interconnected world, preparing them to become global citizens and master communicators."
+        },
+        {
+            title:"Cost Effective",
+            description:"Our programs offer top-quality education at affordable rates, maximizing company resources for professional learning."
+        },
+    ]
+    const howItWorksData = 
+        {
+            Title:"How It Works?",
+            CardData:[
+                {
+                    img:"",
+                    title:"STEP 1",
+                    description:"Connect with us to share your needs and preferences"
+                },
+                {
+                    img:"",
+                    title:"STEP 2",
+                    description:"Get a tailored proposal crafted just for you. "
+                },
+                {
+                    img:"",
+                    title:"STEP 3",
+                    description:"Seal the deal! "
+                },
+            ]
     }
+    const plansData = [
+        {
+          "title": "Starter",
+          "level": "A1 Level",
+          "description": "Dive into the essentials in just 10 days with our intensive workshop, covering everything from basics to practical communication.",
+          "bulletPoints": [
+            "Learn greetings, self-introductions, and polite expressions.",
+            "Build vocabulary on colours, numbers, days, and months.",
+            "Engaging role-plays, games, and discussions for experiential learning.",
+            "Improve spoken communication through guided exercises and audio files.",
+            "Explore cultural aspects for better understanding and communication.",
+            "Assess participant progress and offer feedback for improvement."
+          ],
+          "buttonText": "Learn more"
+        },
+        {
+          "title": "Scholar",
+          "level": "A1 Level",
+          "description": "In just 36 classes, acquire essential A1 level language skills with our comprehensive course, covering vocabulary, grammar, and communication.",
+          "bulletPoints": [
+            "Scholar's 36-class program ensures adept handling of daily tasks at A1 level.",
+            "Students proficiently express needs and engage in simple interactions.",
+            "A1 learners grasp common expressions and essential phrases.",
+            "Students confidently engage in basic conversations.",
+            "Engaging sessions and games enhance learning and curiosity.",
+            "Includes tracking and free study materials for improvement."
+          ],
+          "buttonText": "Learn more"
+        },
+        {
+          "title": "Stellar",
+          "level": "A1 to B1 Level",
+          "description": "3-year program covering A1 to B1 levels, integrating seamlessly into your curriculum.",
+          "bulletPoints": [
+            "Stellar's 3-year program, spanning A1 to B1 levels, offers interactive learning with games, activities, and presentations.",
+            "Students understand and create text, handle travel scenarios, and articulate experiences and aspirations.",
+            "Students will deliver clear directives, grasp instructions, and communicate effectively.",
+            "Progressing to B1 level opens career prospects and equips learners for advancement.",
+            "Stellar instills confidence in verbal expression and proficiency in communication.",
+            "The program tracks progress and provides personalized feedback to ensure continuous improvement."
+          ],
+          "buttonText": "Learn more"
+        }
+    ]
     const faqData = [
         {
             "_id": "6662a3c2834d6cb1800b9495",
@@ -177,57 +224,35 @@ const ContentCreatorPage = ()=>{
             "__v": 0
         }
     ]
-    const slidesData = [
-        {
-            imgSrc: "https://placehold.co/200x300",
-            altText: "Person smiling in a room with bookshelves"
-        },
-        {
-            imgSrc: "https://placehold.co/200x300",
-            altText: "Person holding a sign that says 'Enhance your CV with The Language Network'"
-        },
-        {
-            imgSrc: "https://placehold.co/200x300",
-            altText: "Person smiling in a room with bookshelves"
-        },
-        {
-            imgSrc: "https://placehold.co/200x300",
-            altText: "Person with text overlay 'Here's why you should learn the local language whenever you're visiting a new country'"
-        }
-    ];
-    const inputFields = [
-        { id: 1, type: 'text', placeholder: 'Your Full Name' },
-        { id: 2, type: 'text', placeholder: 'Contact No.' },
-        { id: 3, type: 'email', placeholder: 'Email Address' },
-        { id: 4, type: 'text', placeholder: 'Instagram Username' },
-      ];
 
     return (
         <div>
             {/* hero section */}
-            <Banner title={"Create With Us"} description={"Calling all content creators, thought leaders, and influencers! Join forces with The Language Network to spread the joy of language learning far and wide. Together, let's create captivating content across YouTube, Instagram, LinkedIn, podcasts, blogs, and beyond. Join our vibrant community and ignite a passion for languages worldwide!"} buttonText='Get in touch'/>
-            {/* community section */}
-            <div>
-                <Heading title={"Our community"}/>
-                <StyledSlider slidesData={slidesData}>
-                    <SlideComponent/>
-                </StyledSlider>
-            </div>
-            {/* how it works section */}
+            <Banner title={"Foreign Languages For Colleges"} description="Elevate your college's profile with language learning programs tailored to today's global demands. By integrating languages into your curriculum, you equip students with vital skills for success in the international arena. Our courses not only enhance linguistic abilities but also promote cultural awareness and open doors to study abroad opportunities. Join us in shaping a multilingual learning environment that prepares students to thrive in a connected world." buttonText='Book a meeting'  />
+            {/* why should comp */}
+            <WhyChooseComp cards={whyChooseUsData} title='Why Schools Should Include Foreign Languages In Their Curriculum?'/>
+            {/* newsletter section */}
+            <Newsletter/>
+            {/* why choose us */}
+            <WhyChooseComp cards={whyChooseUsData}/>
+            {/* how it works */}
             <SliderComp data={howItWorksData}/>
-            {/* faq section */}
+            {/* plans section */}
+            <PlansComp cardsData={plansData}/>
+            {/* we prepare section */}
+            <ProficiencyExams/>
+            {/* our educational partners */}
+            <EducationPartners/>
+            {/* faq */}
             <FaqComp FaqsData={faqData}/>
-            {/* start your journey form */}
-            <div>
-                <Heading title={"Start Your Journey "}/>
-                <DynamicForm showAttachCV={false} showTextarea={false} inputFields={inputFields}/>
-            </div>
             {/* below banner */}
-            <BelowBanner title={"Spread the joy of learning with us!"}/>
+            <BelowBanner title={"Elevating education, effortlessly!"}/>
             {/* payment bar */}
             <PaymentBar/>
+
+
         </div>
     )
 }
 
-export default ContentCreatorPage;
+export default CollegeB2B;
