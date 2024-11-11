@@ -1,5 +1,4 @@
 
-
 const Sqcomp = ({title, content, minheight}) => {
     return(
         <div
@@ -16,7 +15,7 @@ const Sqcomp = ({title, content, minheight}) => {
 
             {/*for text */}
             <div className="w-full p-4 text-left">
-                <p className="text-lg">{content}</p>
+                {content}
             </div>
         </div>
     );

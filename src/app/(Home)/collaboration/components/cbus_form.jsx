@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import formImage from "../../../public/collboratewithUs/collaborate_formimg.svg";
+import formImage from "../../../../../public/collboratewithUs/collaborate_formimg.svg";
 
 const Formcbus = () => {
 	const [formState, setFormState] = useState({

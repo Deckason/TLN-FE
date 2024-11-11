@@ -1,6 +1,6 @@
 import ApplyNowbutton from "../../../../Shared/buttons/GetStartedHomeBannerButton";
 import Image from "next/image";
-import bannerimg from "../../../public/collboratewithUs/collaborate_banner.svg";
+import bannerimg from "../../../../../public/collboratewithUs/collaborate_banner.svg";
 
 const Collaborationbanner = () => {
   return (
