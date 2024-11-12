@@ -220,14 +220,14 @@ const TeachWithUs = ()=>{
             "__v": 0
         }
     ]
-    const inputFields = [
-        { id: 1, type: 'text', placeholder: 'Full Name' },
-        { id: 2, type: 'text', placeholder: 'Contact No.' },
-        { id: 3, type: 'email', placeholder: 'Email ID' },
-        { id: 4, type: 'text', placeholder: 'Preferred Language to teach' },
-        { id: 5, type: 'text', placeholder: 'Qualification' },
-        { id: 6, type: 'number', placeholder: 'Teaching Experience (In Years)' },
-      ];
+    // const inputFields = [
+    //     { id: 1, type: 'text', placeholder: 'Full Name' },
+    //     { id: 2, type: 'text', placeholder: 'Contact No.' },
+    //     { id: 3, type: 'email', placeholder: 'Email ID' },
+    //     { id: 4, type: 'text', placeholder: 'Preferred Language to teach' },
+    //     { id: 5, type: 'text', placeholder: 'Qualification' },
+    //     { id: 6, type: 'number', placeholder: 'Teaching Experience (In Years)' },
+    //   ];
     
       // Dynamic options for the dropdown
       const options = ['Website', 'Instagram', 'LinkedIn', 'Facebook', 'Medium'];
@@ -317,7 +317,41 @@ const TeachWithUs = ()=>{
                         </div>
                     </div> 
                 </div> */}
-                <DynamicForm inputFields={inputFields} howDidYouHearAboutoptions={options}/>
+                <DynamicForm  howDidYouHearAboutoptions={options}>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input
+                                type="text"
+                                placeholder="Full Name"
+                                className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                            />
+                            <input
+                                type="text"
+                                placeholder="Contact No."
+                                className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                            />
+                        </div>
+
+                        <input
+                            type="email"
+                            placeholder="Email ID"
+                            className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Prefered Language to teach"
+                            className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Qualification"
+                            className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                        />
+                        <input
+                            type="number"
+                            placeholder="Teaching Experience (In Years)"
+                            className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                        />
+                </DynamicForm>
             </div>
             {/* below banner section */}
             <div>

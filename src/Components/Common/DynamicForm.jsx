@@ -1,6 +1,12 @@
 import React from 'react';
 
-const DynamicForm = ({ showAttachCV=true, showTextarea=true, inputFields, howDidYouHearAboutoptions }) => {
+const DynamicForm = ({ 
+    showAttachCV = true, 
+    showTextarea = true, 
+    howDidYouHearAboutoptions, 
+    inputFields = [], 
+    children 
+}) => {
     return (
         <div className="flex flex-col md:flex-row p-10">
             {/* Image Placeholder */}
@@ -15,7 +21,7 @@ const DynamicForm = ({ showAttachCV=true, showTextarea=true, inputFields, howDid
                         Fill out the form below to become part of our vibrant community.
                     </h2>
                     <form className="space-y-4">
-                        {/* Mapping through input fields */}
+                        {/* Default Input Fields */}
                         {inputFields.map((field) => (
                             <input
                                 key={field.id}
@@ -24,6 +30,9 @@ const DynamicForm = ({ showAttachCV=true, showTextarea=true, inputFields, howDid
                                 className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
                             />
                         ))}
+
+                        {/* Custom Fields Passed as Children */}
+                        {children}
 
                         {/* Conditionally render "Attach CV" field */}
                         {showAttachCV && (
@@ -45,21 +54,23 @@ const DynamicForm = ({ showAttachCV=true, showTextarea=true, inputFields, howDid
                         )}
 
                         {/* How did you hear about us */}
-                       {howDidYouHearAboutoptions && <select
-                            className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
-                        >
-                            <option>How did you hear about us</option>
-                            {howDidYouHearAboutoptions.map((option, index) => (
-                                <option key={index} value={option.toLowerCase()}>
-                                    {option}
-                                </option>
-                            ))}
-                        </select>}
+                        {howDidYouHearAboutoptions && (
+                            <select
+                                className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                            >
+                                <option>How did you hear about us</option>
+                                {howDidYouHearAboutoptions.map((option, index) => (
+                                    <option key={index} value={option.toLowerCase()}>
+                                        {option}
+                                    </option>
+                                ))}
+                            </select>
+                        )}
 
                         {/* Submit Button */}
                         <button
                             type="submit"
-                            className="w-full bg-teal-600 text-white rounded-md py-2 font-semibold hover:bg-teal-700 focus:outline-none"
+                            className="w-fit bg-teal-600 text-white rounded-md  font-semibold hover:bg-teal-700 focus:outline-none px-12 py-2"
                         >
                             Submit
                         </button>
