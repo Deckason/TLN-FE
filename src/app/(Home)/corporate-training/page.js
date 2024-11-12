@@ -277,7 +277,36 @@ const CorporateTraining = ()=>{
             icon:<FaChartBar size={40}/>,
             description:"89% believe multilingual workers add value to companies."
         },
-    ]
+        {
+            icon: <FaChartBar size={40} />,
+            description: "89% Language learners report improved self-confidence."
+        },
+        {
+            icon: <FaChartBar size={40} />,
+            description: "Bilingual employees earn 5-20% more on average than monolinguals."
+        },
+        {
+            icon: <FaChartBar size={40} />,
+            description: "Multilingual individuals have a competitive edge in the job market."
+        },
+        {
+            icon: <FaChartBar size={40} />,
+            description: "Demand for bilingual workers more than doubled in the US between 2010 and 2015."
+        },
+        {
+            icon: <FaChartBar size={40} />,
+            description: "89% believe multilingual workers add value to companies."
+        },
+        {
+            icon: <FaChartBar size={40} />,
+            description: "88% prefer to hire multilingual individuals."
+        },
+        {
+            icon: <FaChartBar size={40} />,
+            description: "Bilinguals outperform monolinguals by 12.5% in easy math tasks."
+        },
+    ];
+    
     
 
     return(

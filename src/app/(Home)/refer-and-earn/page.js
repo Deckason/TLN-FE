@@ -175,7 +175,36 @@ const ReferAndEarn = ()=>{
 
             {/* form */}
             <Heading title={"Start Your Journey"}/>
-            <DynamicForm inputFields={inputFields} showAttachCV={false} showTextarea={false}/>
+            <DynamicForm  showAttachCV={false} showTextarea={false}>
+                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input
+                            type="text"
+                            placeholder="Name"
+                            className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Your Student ID"
+                            className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Contact No."
+                            className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                        />
+                        <input
+                            type="email"
+                            placeholder="Email ID (Optional)"
+                            className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                        />
+                    </div>
+
+                    <input
+                        type="text"
+                        placeholder="Name (To whom you are referring to)"
+                        className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
+                    />
+            </DynamicForm>
             {/* below banner */}
             <BelowBanner title={"Learn and earn in a new language!"}/>
             {/* payment bar */}
