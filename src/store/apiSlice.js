@@ -1,7 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const currMonth = new Date().getMonth() + 1;
-
 export const api = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: process.env.NEXT_PUBLIC_API_URL,
@@ -17,6 +16,7 @@ export const api = createApi({
     "Batches3",
     "Trainers",
     "Testimonials",
+    ""
   ],
   endpoints: (builder) => ({
     // -----------------------------promo queries-------------------------------
@@ -109,6 +109,16 @@ export const api = createApi({
         body: email,
       }),
     }),
+    // career screen 
+    getAllOpenPosition : builder.query({
+      query: ()=>
+        `/api/openposition/get-all`,    
+    }),
+    getSpecificPosition : builder.query({
+      query: (id)=>
+        `/api/openposition/get/${id}`
+      
+    })
   }),
 });
 
@@ -127,4 +137,6 @@ export const {
   useGetAllTrainersQuery,
   useGetAllTestimonialsQuery,
   useSubscribeNewsletterMutation,
+  useGetAllOpenPositionQuery,
+  useGetSpecificPositionQuery
 } = api;

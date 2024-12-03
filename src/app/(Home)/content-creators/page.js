@@ -5,15 +5,14 @@ import SliderComp from '../../../Components/Common/SliderComp';
 import PaymentBar from '../../../Components/HomeComp/PaymentBar';
 import Banner from '../../../Shared/Banner'
 import FaqComp from '../../../Shared/FaqComp';
-import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Navigation } from "swiper/modules";
 import React, { useState } from 'react';
 import { FaPlay } from 'react-icons/fa';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import DynamicForm from '../../../Components/Common/DynamicForm';
 import StyledSlider from '../../../Components/Common/StyledSlider'
+import BannerImg from '../../../Assets/ContentCreators/header_image.png'
+import FormImg from '../../../Assets/ContentCreators/form.png'
 
 
 const SlideComponent = ({slide})=>{
@@ -205,9 +204,9 @@ const ContentCreatorPage = ()=>{
     return (
         <div>
             {/* hero section */}
-            <Banner title={"Create With Us"} description={"Calling all content creators, thought leaders, and influencers! Join forces with The Language Network to spread the joy of language learning far and wide. Together, let's create captivating content across YouTube, Instagram, LinkedIn, podcasts, blogs, and beyond. Join our vibrant community and ignite a passion for languages worldwide!"} buttonText='Get in touch'/>
+            <Banner title={"Create With Us"} description={"Calling all content creators, thought leaders, and influencers! Join forces with The Language Network to spread the joy of language learning far and wide. Together, let's create captivating content across YouTube, Instagram, LinkedIn, podcasts, blogs, and beyond. Join our vibrant community and ignite a passion for languages worldwide!"} buttonText='Get in touch' imageSrc={BannerImg}/>
             {/* community section */}
-            <div>
+            <div className='mb-[112px]'>
                 <Heading title={"Our community"}/>
                 <StyledSlider slidesData={slidesData}>
                     <SlideComponent/>
@@ -220,7 +219,7 @@ const ContentCreatorPage = ()=>{
             {/* start your journey form */}
             <div>
                 <Heading title={"Start Your Journey "}/>
-                <DynamicForm showAttachCV={false} showTextarea={false} inputFields={inputFields}/>
+                <DynamicForm showAttachCV={false} showTextarea={false} inputFields={inputFields} imageSrc={FormImg}/>
             </div>
             {/* below banner */}
             <BelowBanner title={"Spread the joy of learning with us!"}/>

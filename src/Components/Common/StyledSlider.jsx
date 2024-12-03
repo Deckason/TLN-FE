@@ -58,8 +58,8 @@ const StyledSlider = ({children,slidesData})=>{
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <p className='hidden md:block absolute left-0 text-2xl top-[50%] rounded-full p-2 border-[2px] text-gray-400 border-gray-400 cursor-pointer' ref={navigationPrevRef}><IoIosArrowBack/></p>
-                    <p className='hidden md:block absolute right-0 text-2xl top-[50%] rounded-full p-2 border-[2px] text-gray-400 border-gray-400 cursor-pointer' ref={navigationNextRef}><IoIosArrowForward/></p>
+                    <p className='hidden md:block absolute left-0 text-2xl top-[50%] rounded-full ml-[18px] border-[2px] text-[#1F9F90] border-[#1F9F90] py-[20px] px-[20px] cursor-pointer' ref={navigationPrevRef}><IoIosArrowBack/></p>
+                    <p className='hidden md:block absolute right-0 text-2xl top-[50%] rounded-full mr-[18px] border-[2px] text-[#1F9F90] border-[#1F9F90] py-[20px] px-[20px] cursor-pointer' ref={navigationNextRef}><IoIosArrowForward/></p>
         </div>
     )
 };

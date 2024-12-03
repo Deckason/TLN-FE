@@ -1,4 +1,4 @@
-
+'use client'
 import BelowBanner from "../../../Components/Common/BelowBanner";
 import ProficiencyExams from "../../../Components/HomeComp/ProficiencyExams";
 import States from "../../../Shared/SharedAdultsPage/Components/States";
@@ -6,8 +6,36 @@ import SliderComp from '../../../Components/Common/SliderComp'
 import FaqComp from '../../../Shared/FaqComp'
 import PaymentBar from "../../../Components/HomeComp/PaymentBar";
 import Banner from "../../../Shared/Banner";
-import DynamicForm from '../../../Components/Common/DynamicForm'
+import DynamicForm from '../../../Components/Common/DynamicForm';
+import Image from "next/image";
+import { useGetAllOpenPositionQuery, useGetSpecificPositionQuery } from "../../../store/apiSlice";
 
+
+const WhyShouldSliderCard = ({data}) => {
+    console.log("Data is this.-----------------------." , data)
+    return (
+        <div className="w-full border shadow-md transition duration-300 hover:shadow-xl shadow-neutral-color/15 rounded-xl max-h-[460px] min-h-[442px] flex-col justify-start items-center gap-8  inline-flex max-md:p-3 p-6 ">
+            <div className="self-stretch h-[212px]  rounded-xl flex-col justify-start  items-center gap-2.5 flex">
+                <Image
+                    alt="levelImages"
+                    className="w-20 h-40 rounded-xl object-cover"
+                    src={data?.img || ""}
+                ></Image>
+            </div>
+
+            <div className="w-full  h-full   lg:min-h-[149px] flex-col justify-start items-center gap-2 flex">
+                <div className="self-stretch text-center text-neutral-800 max-lg:text-lg text-xl 2xl:text-2xl font-medium ">
+                    {data?.title}
+                </div>
+                <div className="self-stretch max-h-[170px] h-full max-lg:max-h-[240px] min-h-[130px]  flex-col mb-3 justify-start items-center gap-2 flex">
+                    <div className="self-stretch text-center text-neutral-500 lg:text-lg 2xl:text-xl  font-normal leading-7">
+                        {data?.description}
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 const TeachWithUs = ()=>{
     const whyShouldData = {
@@ -231,6 +259,12 @@ const TeachWithUs = ()=>{
     
       // Dynamic options for the dropdown
       const options = ['Website', 'Instagram', 'LinkedIn', 'Facebook', 'Medium'];
+    const {data} = useGetAllOpenPositionQuery(); 
+    const {data:SpecificData} = useGetSpecificPositionQuery("6722a08e584bdb64584bf027")
+    console.log(data , "-------------this is data")
+    console.log(SpecificData , "-------------this is specific data")
+
+
 
     return (
         <div>
@@ -242,7 +276,9 @@ const TeachWithUs = ()=>{
             </div>
             {/* why should  */}
             <div className="pt-20">
-                <SliderComp data={whyShouldData}/>
+                <SliderComp data={whyShouldData}>
+                    <WhyShouldSliderCard/>
+                </SliderComp>
             </div>
             {/* apply section */}
             <div>
@@ -263,60 +299,6 @@ const TeachWithUs = ()=>{
                 <div className="text-stone-900 text-[24px] leading-tight xl:text-[60px]/[80px] mb-12 text-center font-bold max-md:px-5">
                     Start Your Journey
                 </div>
-                {/* <div className="flex flex-col md:flex-row p-10">
-                
-                    {/* <div className="flex-1">
-                        <div className="min-w-40 min-h-40 bg-gray-400"></div>
-                    </div>
-                    <div className="flex-1">
-                        <div className="max-w-lg mx-auto p-6 bg-white ">
-                                <h2 className="text-xl font-semibold mb-4 text-gray-800">
-                                    Fill out the form below to become part of our vibrant community.
-                                </h2>
-                                <form className="space-y-4">
-                                    {inputFields.map((field) => (
-                                    <input
-                                        key={field.id}
-                                        type={field.type}
-                                        placeholder={field.placeholder}
-                                        className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
-                                    />
-                                    ))}
-
-                                    <div>
-                                    <label className="block text-teal-600 cursor-pointer border border-gray-300 rounded-md p-2 text-center hover:bg-gray-50">
-                                        Attach CV
-                                        <input type="file" className="hidden" />
-                                    </label>
-                                    </div>
-
-                                    <textarea
-                                    placeholder="Tell us something about yourself"
-                                    className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
-                                    rows="3"
-                                    ></textarea>
-
-                                    <select
-                                    className="w-full border border-gray-300 rounded-md p-2 text-gray-800 focus:outline-none focus:border-teal-500"
-                                    >
-                                    <option>How did you hear about us</option>
-                                    {options.map((option, index) => (
-                                        <option key={index} value={option.toLowerCase()}>
-                                        {option}
-                                        </option>
-                                    ))}
-                                    </select>
-
-                                    <button
-                                    type="submit"
-                                    className="w-full bg-teal-600 text-white rounded-md py-2 font-semibold hover:bg-teal-700 focus:outline-none"
-                                    >
-                                    Submit
-                                    </button>
-                                </form>
-                        </div>
-                    </div> 
-                </div> */}
                 <DynamicForm  howDidYouHearAboutoptions={options}>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <input
