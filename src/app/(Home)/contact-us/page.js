@@ -53,12 +53,12 @@ const ContactSection = () => {
             <div className='absolute inset-0 z-0' style={{background:`url('${bannerImg.src}')`,clipPath:"polygon(0 0, 100% 0%, 100% 57%, 0 58%)"}}></div>
             <div className="absolute  inset-0 bg-[#0000008f] z-10" style={{clipPath:"polygon(0 0, 100% 0%, 100% 57%, 0 58%)"}}></div>
             <div className="relative max-w-6xl mx-auto px-6 z-20">
-                <h1 className="text-3xl font-bold text-center mb-8 text-white">Get In Touch!</h1>
+                <h1 className="text-[32px] md:text-[60px] font-bold text-center mb-8 text-white">Get In Touch!</h1>
 
                 <div className="flex gap-2 flex-col md:flex-row overflow-hidden p-2">
                     {/* Left Section: Contact Details */}
                     <div className="flex-1 bg-white p-8 rounded-lg shadow-md">
-                        <h2 className="text-xl font-semibold mb-6">Connect with us</h2>
+                        <h2 className="text-[32px] font-semibold mb-6">Connect with us</h2>
                         <div className="space-y-4">
                             {
                                 contactDetails.map((item ,i)=>(
@@ -101,7 +101,7 @@ const ContactSection = () => {
                             })}
                             <button
                                 type="submit"
-                                className="w-full border-2 border-teal-500 text-teal-500 rounded-md py-3 font-semibold hover:bg-teal-600 hover:text-white focus:outline-none"
+                                className="w-fit border-2 border-teal-500 text-teal-500 rounded-md py-[14px] px-[32px] font-semibold hover:bg-teal-600 hover:text-white focus:outline-none"
                             >
                                 Send enquiry
                             </button>

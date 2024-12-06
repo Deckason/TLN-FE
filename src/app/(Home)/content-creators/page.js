@@ -15,6 +15,52 @@ import BannerImg from '../../../Assets/ContentCreators/header_image.png'
 import FormImg from '../../../Assets/ContentCreators/form.png'
 
 
+const FormComponent = () => {
+  return (
+    <div className="flex justify-center items-center">
+      <form className="bg-white p-6 rounded-lg shadow-md w-full  space-y-4">
+        {/* Full Name and Contact No. */}
+        <div className="flex gap-4 flex-col md:flex-row">
+          <input
+            type="text"
+            placeholder="Your Full Name"
+            className="flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+          />
+          <input
+            type="text"
+            placeholder="Contact No."
+            className="flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+          />
+        </div>
+
+        {/* Email Address */}
+        <input
+          type="email"
+          placeholder="Email Address"
+          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+        />
+
+        {/* Instagram Username */}
+        <input
+          type="text"
+          placeholder="Instagram Username"
+          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+        />
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          className="w-full p-3 text-white bg-teal-500 rounded-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+};
+
+
+
 const SlideComponent = ({slide})=>{
     return (
         <>
@@ -219,7 +265,9 @@ const ContentCreatorPage = ()=>{
             {/* start your journey form */}
             <div>
                 <Heading title={"Start Your Journey "}/>
-                <DynamicForm showAttachCV={false} showTextarea={false} inputFields={inputFields} imageSrc={FormImg}/>
+                <DynamicForm showAttachCV={false} showTextarea={false} imageSrc={FormImg} showSubmitBtn={false}>
+                    <FormComponent/>
+                </DynamicForm>
             </div>
             {/* below banner */}
             <BelowBanner title={"Spread the joy of learning with us!"}/>
