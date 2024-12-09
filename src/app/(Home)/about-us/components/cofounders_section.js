@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Pinnaccf from '../../../../Assets/about-us/cf_pinnac.svg';
 import Siddhicf from '../../../../Assets/about-us/cf_siddhi.svg';
@@ -11,7 +12,6 @@ const Cofounders = () => {
         shubham: false,
     });
 
-    // Toggle function for "Read More" on mobile screens
     const handleToggle = (cofounder) => {
         setShowMore((prev) => ({ ...prev, [cofounder]: !prev[cofounder] }));
     };
@@ -46,7 +46,7 @@ const Cofounders = () => {
                         </div>
 
                         <p className={`text-sm md:text-base leading-relaxed mt-4 ${showMore.pinnac ? 'block' : 'hidden'} md:block`}>
-                            Pinnac Yeddy, the CEO and Marketing Head of The Language Network, brings extensive marketing experience and passion to our team. He leads product development, branding, marketing, and business strategy, driving our vision for growth. Under his leadership, the company has seen consistent innovation and expansion. Pinnac is committed to making language learning accessible and enjoyable for all. With a clear focus on achieving the company's long-term goals, he believes in empowering the team, promoting a collaborative work environment, and fostering creativity. His leadership style emphasizes transparency, efficiency, and teamwork.
+                            Pinnac Yeddy, the CEO and Marketing Head of The Language Network, brings extensive marketing experience and passion to our team. He leads product development, branding, marketing, and business strategy, driving our vision for growth. Under his leadership, the company has seen consistent innovation and expansion. Pinnac is committed to making language learning accessible and enjoyable for all. With a clear focus on achieving the company&apos;s long-term goals, he believes in empowering the team, promoting a collaborative work environment, and fostering creativity. His leadership style emphasizes transparency, efficiency, and teamwork.
                         </p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Cofounders = () => {
                         </div>
 
                         <p className={`text-sm md:text-base leading-relaxed mt-4 ${showMore.siddhi ? 'block' : 'hidden'} md:block`}>
-                            Siddhi Chokani, the dynamic Chief of Staff at The Language Network. It was Siddhi's profound expertise in French that served as the catalyst for The Language Network's inception. Her background in language and education brings immense value to the team. She is passionate about fostering a love for languages among students and creating a structured, effective curriculum. Siddhi is dedicated to providing an enriching learning experience for all students, focusing on individual growth and progress. Her leadership extends beyond administration; she’s also an inspiration to her team, always encouraging innovative thinking and continuous improvement.
+                            Siddhi Chokani, the dynamic Chief of Staff at The Language Network. It was Siddhi&apos;s profound expertise in French that served as the catalyst for The Language Network&apos;s inception. Her background in language and education brings immense value to the team. She is passionate about fostering a love for languages among students and creating a structured, effective curriculum. Siddhi is dedicated to providing an enriching learning experience for all students, focusing on individual growth and progress. Her leadership extends beyond administration; she’s also an inspiration to her team, always encouraging innovative thinking and continuous improvement.
                         </p>
                     </div>
                 </div>

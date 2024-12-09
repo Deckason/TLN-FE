@@ -109,6 +109,18 @@ export const api = createApi({
         body: email,
       }),
     }),
+
+    getCofounderdata : builder.query({
+      query: (id) => ({
+        url: `/api/cofounder/get/${id}`
+      }),
+    }),
+
+    getallCofounders : builder.query({
+      query: () => ({
+        url: `/api/cofounder/get-all`
+      })
+    })
   }),
 });
 
@@ -127,4 +139,6 @@ export const {
   useGetAllTrainersQuery,
   useGetAllTestimonialsQuery,
   useSubscribeNewsletterMutation,
+  useGetCofounderdataQuery,
+  useGetallCofoundersQuery
 } = api;
