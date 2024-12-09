@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const DynamicForm = ({ 
@@ -5,18 +6,21 @@ const DynamicForm = ({
     showTextarea = true, 
     howDidYouHearAboutoptions, 
     inputFields = [], 
+    imageSrc="",
+    showSubmitBtn = true,
     children 
 }) => {
     return (
-        <div className="flex flex-col md:flex-row p-10">
+        <div className="flex flex-col md:flex-row  p-2 md:p-10">
             {/* Image Placeholder */}
             <div className="flex-1">
-                <div className="min-w-40 min-h-full bg-gray-400"></div>
+                <Image src={imageSrc}/>
+                {/* <div className="min-w-40 min-h-full bg-gray-400"></div> */}
             </div>
 
             {/* Form Section */}
             <div className="flex-1">
-                <div className="max-w-lg mx-auto p-6 bg-white">
+                <div className="max-w-lg mx-auto p-2 md:p-6 bg-white">
                     <h2 className="text-xl font-semibold mb-4 text-gray-800">
                         Fill out the form below to become part of our vibrant community.
                     </h2>
@@ -68,12 +72,12 @@ const DynamicForm = ({
                         )}
 
                         {/* Submit Button */}
-                        <button
+                        {showSubmitBtn && <button
                             type="submit"
                             className="w-fit bg-teal-600 text-white rounded-md  font-semibold hover:bg-teal-700 focus:outline-none px-12 py-2"
                         >
                             Submit
-                        </button>
+                        </button>}
                     </form>
                 </div>
             </div>

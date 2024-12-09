@@ -7,7 +7,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import React, { useState } from "react";
 import Image from "next/image";
 
-const SliderCard = ({data}) => {
+const DefaultSliderCard = ({data}) => {
 
 
     return (
@@ -38,14 +38,14 @@ const SliderCard = ({data}) => {
     )
 }
 
-const SliderComp = ({data}) => {
+const SliderComp = ({data,children}) => {
     const [currentPage, setCurrentPage] = useState(0);
   const navigationPrevRef = React.useRef(currentPage);
   const navigationNextRef = React.useRef(currentPage);
 
     return (
         <div className="md:mb-[112px] ">
-            <div className="text-stone-900 text-[24px] leading-tight xl:text-[60px]/[80px] mb-12 text-center font-bold max-md:px-5">
+            <div className="text-stone-900 text-[32px] leading-tight xl:text-[60px]/[80px] mb-12 text-center font-bold max-md:px-5">
                 {data?.Title}
             </div>
             {/* <div className="xl:grid-cols-3 2xl:max-w-full max-w-8xl max-md:hidden flex-wrap justify-center gap-1 max-md:gap-5     md:gap-2 px-5 mx-auto w-full lg:gap-[18px] md:grid-cols-2 grid items-center mt-[48px] ">
@@ -93,10 +93,15 @@ const SliderComp = ({data}) => {
                     // modules={[Pagination]}
                     className="mySwiper mx-auto flex justify-center  items-center max-w-[326px] md:max-w-[700px]  lg:max-w-[850px] md:hidden xl:max-w-[1150px] w-full max-sm:max-h-full   2xl:w-full 3xl:max-w-[1440px]"
                 >
-                    {data?.CardData?.map((data, index) => (
+                    {data?.CardData?.map((cardData, index) => (
                         <SwiperSlide key={index}>
-                            <SliderCard data={data} />
-                        </SwiperSlide>
+                          {console.log("DAta is this.........",cardData)}
+                            {React.isValidElement(children) ? (
+                                React.cloneElement(children, {"data": cardData })
+                            ) : (
+                                <DefaultSliderCard data={cardData} />
+                            )}
+                    </SwiperSlide>
                     ))}
                 </Swiper>
             </div>
