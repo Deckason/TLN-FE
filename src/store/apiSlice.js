@@ -119,18 +119,6 @@ export const api = createApi({
         `/api/openposition/get/${id}`
       
     })
-
-    getCofounderdata : builder.query({
-      query: (id) => ({
-        url: `/api/cofounder/get/${id}`
-      }),
-    }),
-
-    getallCofounders : builder.query({
-      query: () => ({
-        url: `/api/cofounder/get-all`
-      })
-    })
   }),
 });
 
@@ -151,6 +139,4 @@ export const {
   useSubscribeNewsletterMutation,
   useGetAllOpenPositionQuery,
   useGetSpecificPositionQuery
-  useGetCofounderdataQuery,
-  useGetallCofoundersQuery
 } = api;
