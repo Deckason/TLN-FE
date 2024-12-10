@@ -22,11 +22,11 @@ const Aboutus = () => {
     useEffect(() => {
         // Check if screen width is mobile size and set isMobile state
         if(typeof window!=='undefined'){
-            const handleResize = () => setIsMobile(window.innerWidth <= 768);
+            const handleResize = () => setIsMobile(window?.innerWidth <= 768);
             handleResize(); // Initial check
 
-            window.addEventListener("resize", handleResize);
-            return () => window.removeEventListener("resize", handleResize);
+            window?.addEventListener("resize", handleResize);
+            return () => window?.removeEventListener("resize", handleResize);
         }
     }, []);
 
@@ -52,7 +52,7 @@ const Aboutus = () => {
             </div>
 
             <p className="text-justify">
-                {isExpanded || window.innerWidth >= 768 ? (
+                {isExpanded || window?.innerWidth >= 768 ? (
                     <>
                         Our story originates from Siddhi&apos;s profound realization while feeling undervalued and underpaid at her job. Motivated by this experience and a vision to empower learners while creating new opportunities, Siddhi, alongside her childhood friends, Pinnac and Shubham, embarked on a transformative mission. Driven by their collective expertise and shared commitment, they recognized an untapped potential in the market and set out to fill the void. Despite lacking formal business training, their bold vision and unwavering determination propelled them forward. From humble beginnings, we&apos;ve grown into a dynamic community of over 200+ trainers and have enriched the lives of 5000+ students. What began as a single language course has evolved into a comprehensive offering encompassing seven diverse foreign languages. Today, The Language Network stands as a testament to our unwavering dedication to making language learning accessible, engaging, and impactful for all.
                     </>
