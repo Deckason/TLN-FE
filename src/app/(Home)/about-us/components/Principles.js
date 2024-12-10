@@ -10,13 +10,15 @@ const Principles = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768); // Mobile width
-        };
-
-        handleResize(); // Check on initial render
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
+        if(typeof window!=='undefined'){
+            const handleResize = () => {
+                setIsMobile(window?.innerWidth <= 768); // Mobile width
+            };
+    
+            handleResize(); // Check on initial render
+            window?.addEventListener("resize", handleResize);
+            return () => window?.removeEventListener("resize", handleResize);
+        }
     }, []);
 
     return (
