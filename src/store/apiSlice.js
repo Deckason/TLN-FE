@@ -16,7 +16,7 @@ export const api = createApi({
     "Batches3",
     "Trainers",
     "Testimonials",
-    ""
+     "Alumni"
   ],
   endpoints: (builder) => ({
     // -----------------------------promo queries-------------------------------
@@ -118,7 +118,12 @@ export const api = createApi({
       query: (id)=>
         `/api/openposition/get/${id}`
       
-    })
+    }),
+     // ---------------------- Alumni query -------------------------------
+     getAllAlumni: builder.query({
+      query: () => `/api/alumni`,
+      providesTags: ["Alumni"],
+    }),
   }),
 });
 
@@ -138,5 +143,6 @@ export const {
   useGetAllTestimonialsQuery,
   useSubscribeNewsletterMutation,
   useGetAllOpenPositionQuery,
-  useGetSpecificPositionQuery
+  useGetSpecificPositionQuery,
+  useGetAllAlumniQuery,
 } = api;
