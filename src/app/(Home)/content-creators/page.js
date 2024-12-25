@@ -12,7 +12,7 @@ import DynamicForm from '../../../Components/Common/DynamicForm';
 import StyledSlider from '../../../Components/Common/StyledSlider'
 import BannerImg from '../../../Assets/ContentCreators/header_image.png'
 import FormImg from '../../../Assets/ContentCreators/form.png'
-
+import { useGetBannerQuery} from "../../../store/apiSlice"
 
 const FormComponent = () => {
   return (
@@ -134,6 +134,13 @@ const BelowBanner = ({ title }) => {
   
 const ContentCreatorPage = ()=>{
     const [currentPage, setCurrentPage] = useState(0);
+ 
+   
+    const { data } = useGetBannerQuery({
+        context: "ContentCreator",
+        language: "Others", 
+      });
+    
     const navigationPrevRef = React.useRef(currentPage);
      const navigationNextRef = React.useRef(currentPage);
     const howItWorksData = {
@@ -303,11 +310,16 @@ const ContentCreatorPage = ()=>{
         { id: 3, type: 'email', placeholder: 'Email Address' },
         { id: 4, type: 'text', placeholder: 'Instagram Username' },
       ];
+    
 
     return (
         <div>
             {/* hero section */}
-            <Banner title={"Create With Us"} description={"Calling all content creators, thought leaders, and influencers! Join forces with The Language Network to spread the joy of language learning far and wide. Together, let's create captivating content across YouTube, Instagram, LinkedIn, podcasts, blogs, and beyond. Join our vibrant community and ignite a passion for languages worldwide!"} buttonText='Get in touch' imageSrc={BannerImg}/>
+            {
+               data && data.length > 0 &&    <Banner title={data[0]?.bannerTitle|| "title"} 
+               description={data[0]?.bannerDescription}   buttonText={data[0]?.buttonText} imageSrc={data[0]?.bannerImage}/>
+            }
+         
             {/* community section */}
             <div className='mb-[112px]'>
                 <Heading title={"Our community"}/>

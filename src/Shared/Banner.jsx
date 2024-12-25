@@ -11,7 +11,7 @@ const Banner = ({ title, description, buttonText = "Apply Now",imageSrc="" }) =>
           </button>
         </div>
         <div className="w-full md:w-auto md:shrink lg:shrink-0">
-          <Image src={imageSrc} className="w-full"/>
+          <Image src={imageSrc} className="w-full" width={500} height={500} alt="Banner Image"/>
           {/* <div className="w-full h-48 md:min-w-[300px] md:min-h-[300px] bg-gray-300"></div> */}
         </div>
       </div>
