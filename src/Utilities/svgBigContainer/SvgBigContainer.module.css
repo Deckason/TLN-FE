@@ -1,0 +1,16 @@
+.background {
+  width: 591px;
+  height: 500px;
+  z-index: -1;
+}
+
+@media (max-width: 524px) {
+  .background {
+    /* max-width: 540px;
+    width: 80vw;
+    height: 400px; */
+    width: full;
+
+    /* height: auto; */
+  }
+}
