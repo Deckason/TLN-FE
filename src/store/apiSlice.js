@@ -17,7 +17,8 @@ export const api = createApi({
     "Trainers",
     "Testimonials",
      "Alumni",
-     "EduPartners"
+     "EduPartners",
+     "CoFounders"
   ],
   endpoints: (builder) => ({
     // -----------------------------promo queries-------------------------------
@@ -130,6 +131,11 @@ export const api = createApi({
       query: () => `/api/edupartners`,
       providesTags: ["EduPartners"],
     }),
+     // ---------------------- Co-Founders query -------------------------------
+     getAllCoFounders: builder.query({
+      query: () => `/api/cofounder/get-all`,
+      providesTags: ["CoFounders"],
+    }),
   }),
 });
 
@@ -152,4 +158,5 @@ export const {
   useGetSpecificPositionQuery,
   useGetAllAlumniQuery,
   useGetAllEduPartnersQuery,
+  useGetAllCoFoundersQuery,
 } = api;
