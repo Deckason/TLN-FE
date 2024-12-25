@@ -1,5 +1,4 @@
 'use client'
-import BelowBanner from '../../../Components/Common/BelowBanner';
 import Heading from '../../../Components/Common/Heading';
 import SliderComp from '../../../Components/Common/SliderComp';
 import PaymentBar from '../../../Components/HomeComp/PaymentBar';
@@ -75,6 +74,64 @@ const SlideComponent = ({slide})=>{
     )
 }
 
+const BelowBanner = ({ title }) => {
+    return (
+      <div className="text-[20px] md:text-[40px] bg-primary-color text-white px-[100px] py-[50px] md:px-[250px] md:py-[130px] font-extrabold text-center overflow-hidden">
+        <span className="hover-animation">{title}</span>
+        <style jsx>{`
+          .hover-animation {
+            display: inline-block;
+            font-size: 40px; 
+            opacity: 1; 
+            transform: translateY(0);
+            transition: opacity 0.5s ease; 
+          }
+  
+          .hover-animation:hover {
+            animation: hoverEffectIn 0.2s ease forwards; 
+          }
+  
+          .hover-animation {
+            animation: hoverEffectOut 0.8s ease forwards;
+          }
+  
+        
+          @keyframes hoverEffectIn {
+            0% {
+              transform: translateY(0);
+              font-size: 40px;         
+              opacity: 1;          
+            }
+            100% {
+              font-size: 60px;         
+              transform: translateY(-5px); 
+              opacity: 0.9;            
+            }
+          }
+  
+        
+          @keyframes hoverEffectOut {
+            0% {
+              font-size: 60px; 
+              transform: translateY(-5px); 
+              opacity: 0.9; 
+            }
+              50% {
+              font-size: 45px;
+              transform: translateY(-5px);
+              opacity: 0.2; 
+            }
+            100% {
+              font-size: 40px;
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+        `}</style>
+      </div>
+    );
+  };
+  
 const ContentCreatorPage = ()=>{
     const [currentPage, setCurrentPage] = useState(0);
     const navigationPrevRef = React.useRef(currentPage);
