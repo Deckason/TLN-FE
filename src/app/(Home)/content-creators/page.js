@@ -1,5 +1,4 @@
 'use client'
-import BelowBanner from '../../../Components/Common/BelowBanner';
 import Heading from '../../../Components/Common/Heading';
 import SliderComp from '../../../Components/Common/SliderComp';
 import PaymentBar from '../../../Components/HomeComp/PaymentBar';
@@ -13,7 +12,7 @@ import DynamicForm from '../../../Components/Common/DynamicForm';
 import StyledSlider from '../../../Components/Common/StyledSlider'
 import BannerImg from '../../../Assets/ContentCreators/header_image.png'
 import FormImg from '../../../Assets/ContentCreators/form.png'
-
+import { useGetBannerQuery} from "../../../store/apiSlice"
 
 const FormComponent = () => {
   return (
@@ -75,8 +74,73 @@ const SlideComponent = ({slide})=>{
     )
 }
 
+const BelowBanner = ({ title }) => {
+    return (
+      <div className="text-[20px] md:text-[40px] bg-primary-color text-white px-[100px] py-[50px] md:px-[250px] md:py-[130px] font-extrabold text-center overflow-hidden">
+        <span className="hover-animation">{title}</span>
+        <style jsx>{`
+          .hover-animation {
+            display: inline-block;
+            font-size: 40px; 
+            opacity: 1; 
+            transform: translateY(0);
+            transition: opacity 0.5s ease; 
+          }
+  
+          .hover-animation:hover {
+            animation: hoverEffectIn 0.2s ease forwards; 
+          }
+  
+          .hover-animation {
+            animation: hoverEffectOut 0.8s ease forwards;
+          }
+  
+        
+          @keyframes hoverEffectIn {
+            0% {
+              transform: translateY(0);
+              font-size: 40px;         
+              opacity: 1;          
+            }
+            100% {
+              font-size: 60px;         
+              transform: translateY(-5px); 
+              opacity: 0.9;            
+            }
+          }
+  
+        
+          @keyframes hoverEffectOut {
+            0% {
+              font-size: 60px; 
+              transform: translateY(-5px); 
+              opacity: 0.9; 
+            }
+              50% {
+              font-size: 45px;
+              transform: translateY(-5px);
+              opacity: 0.2; 
+            }
+            100% {
+              font-size: 40px;
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+        `}</style>
+      </div>
+    );
+  };
+  
 const ContentCreatorPage = ()=>{
     const [currentPage, setCurrentPage] = useState(0);
+ 
+   
+    const { data } = useGetBannerQuery({
+        context: "ContentCreator",
+        language: "Others", 
+      });
+    
     const navigationPrevRef = React.useRef(currentPage);
      const navigationNextRef = React.useRef(currentPage);
     const howItWorksData = {
@@ -246,11 +310,16 @@ const ContentCreatorPage = ()=>{
         { id: 3, type: 'email', placeholder: 'Email Address' },
         { id: 4, type: 'text', placeholder: 'Instagram Username' },
       ];
+    
 
     return (
         <div>
             {/* hero section */}
-            <Banner title={"Create With Us"} description={"Calling all content creators, thought leaders, and influencers! Join forces with The Language Network to spread the joy of language learning far and wide. Together, let's create captivating content across YouTube, Instagram, LinkedIn, podcasts, blogs, and beyond. Join our vibrant community and ignite a passion for languages worldwide!"} buttonText='Get in touch' imageSrc={BannerImg}/>
+            {
+               data && data.length > 0 &&    <Banner title={data[0]?.bannerTitle|| "title"} 
+               description={data[0]?.bannerDescription}   buttonText={data[0]?.buttonText} imageSrc={data[0]?.bannerImage}/>
+            }
+         
             {/* community section */}
             <div className='mb-[112px]'>
                 <Heading title={"Our community"}/>
