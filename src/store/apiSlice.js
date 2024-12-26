@@ -18,7 +18,8 @@ export const api = createApi({
     "Testimonials",
      "Alumni",
      "EduPartners",
-     "CoFounders"
+     "CoFounders",
+     "Press"
   ],
   endpoints: (builder) => ({
     // -----------------------------promo queries-------------------------------
@@ -136,6 +137,11 @@ export const api = createApi({
       query: () => `/api/cofounder/get-all`,
       providesTags: ["CoFounders"],
     }),
+    // ---------------------- Press  query -------------------------------
+    getPress: builder.query({
+      query: ({ isFeatured, isLatest }) => `/api/press/get-all?isFeatured=${isFeatured}&isLatest=${isLatest}`,
+      providesTags: ["Press"],
+    }),
   }),
 });
 
@@ -159,4 +165,5 @@ export const {
   useGetAllAlumniQuery,
   useGetAllEduPartnersQuery,
   useGetAllCoFoundersQuery,
+  useGetPressQuery
 } = api;
