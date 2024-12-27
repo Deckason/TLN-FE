@@ -1,3 +1,4 @@
+"use client"
 import Banner from '../../../Shared/Banner'
 import WhyChooseComp from '../../../Components/Common/WhyChooseComp'
 import Newsletter from '../../../Components/HomeComp/Newsletter'
@@ -8,6 +9,7 @@ import EducationPartners from '../../../Components/HomeComp/EducationPartners'
 import FaqComp from '../../../Shared/FaqComp'
 import BelowBanner from '../../../Components/Common/BelowBanner'
 import PaymentBar from '../../../Components/HomeComp/PaymentBar'
+import { useGetBannerQuery} from "../../../store/apiSlice"
 
 const SchoolB2B = ()=>{
     const whyChooseUsData = [
@@ -224,12 +226,16 @@ const SchoolB2B = ()=>{
             "__v": 0
         }
     ]
-
+    const { data } = useGetBannerQuery({
+        context: "SchoolB2B",
+        language: "Others", 
+      });
     return (
         <div>
             {/* hero section */}
-            <Banner title={"Foreign Languages For Schools"} description="
-Transform your institution into a hub of global excellence by incorporating language learning into your school curriculum. By offering language programs, schools can equip students with the essential skills needed to excel in today's global business landscape. Multilingual education not only enhances students' linguistic abilities but also fosters cultural awareness and prepares them for international opportunities. Join us in creating a multilingual learning environment that empowers students to succeed in an interconnected world." buttonText='Book a meeting'  />
+            <Banner title={data?.length>0 &&  data[0]?.bannerTitle|| "title"} 
+            description= {data?.length>0 && data[0]?.bannerDescription}
+            buttonText={data?.length>0 && data[0]?.buttonText}  />
             {/* why should comp */}
             <WhyChooseComp cards={whyChooseUsData} title='Why Schools Should Include Foreign Languages In Their Curriculum?'/>
             {/* newsletter section */}
