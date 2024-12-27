@@ -19,7 +19,9 @@ export const api = createApi({
      "Alumni",
      "EduPartners",
      "CoFounders",
-     "Press"
+     "Press",
+     "Blogs"
+
   ],
   endpoints: (builder) => ({
     // -----------------------------promo queries-------------------------------
@@ -142,6 +144,17 @@ export const api = createApi({
       query: ({ isFeatured, isLatest }) => `/api/press/get-all?isFeatured=${isFeatured}&isLatest=${isLatest}`,
       providesTags: ["Press"],
     }),
+      // ---------------------- Blogs  query -------------------------------
+      getAllBlogs: builder.query({
+        query: ({ language}) => `/api/blog/get-all?language=${language}`,
+        providesTags: ["Blogs"],
+      }),
+  
+      getBlogById : builder.query({
+        query: (id)=>
+          `/api/blog/get/${id}`
+        
+      }),
   }),
 });
 
@@ -165,5 +178,7 @@ export const {
   useGetAllAlumniQuery,
   useGetAllEduPartnersQuery,
   useGetAllCoFoundersQuery,
-  useGetPressQuery
+  useGetPressQuery,
+  useGetAllBlogsQuery,
+  useGetBlogByIdQuery 
 } = api;

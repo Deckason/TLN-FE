@@ -1,11 +1,14 @@
 'use client'
 import React from 'react';
+import { useEffect,useState } from 'react';
 import DOMPurify from 'dompurify';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaShareAlt } from 'react-icons/fa';
 import Image from 'next/image';
 import RelatedArticles from '../../../../Components/BlogComp/RelatedArticles';
 import BreadCrumbs from '../../../../Components/BlogComp/BreadCrumbs';
 import blogImg from '../../../../Assets/Blogs/blogPlaceholder.png';
+import { useGetBlogByIdQuery,useGetAllBlogsQuery } from '../../../../store/apiSlice';
+import formatDate from "../../about-us/components/FormateDate"
 
 const blogData = {
     title: "How to learn a new language",
@@ -25,10 +28,19 @@ const sampleArticles = [
 ];
 
 const BlogPage = ({ blogContent = blogData }) => {
-    const sanitizedContent = DOMPurify.sanitize(blogContent.htmlContent);
+  
+    const [sanitizedContent, setSanitizedContent] = useState('');
+
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        // Only call sanitize on the client-side
+        const sanitized = DOMPurify.sanitize(blogContent?.htmlContent || '');
+        setSanitizedContent(sanitized);
+      }
+    }, [blogContent]);
 
     return (
-        <div className="p-4 sm:p-6 lg:px-24 lg:py-12">
+    <div className="p-4 sm:p-6 lg:px-24 lg:py-12">
             {/* Breadcrumbs */}
             <BreadCrumbs items={["French", "Travel and Exploration"]} />
 
@@ -80,7 +92,7 @@ const BlogPage = ({ blogContent = blogData }) => {
 
             {/* Related Articles Section */}
             <RelatedArticles articles={sampleArticles} />
-        </div>
+      </div>
     );
 };
 
