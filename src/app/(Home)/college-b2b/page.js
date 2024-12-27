@@ -1,3 +1,4 @@
+'use client'
 import Banner from '../../../Shared/Banner'
 import WhyChooseComp from '../../../Components/Common/WhyChooseComp'
 import Newsletter from '../../../Components/HomeComp/Newsletter'
@@ -8,6 +9,7 @@ import EducationPartners from '../../../Components/HomeComp/EducationPartners'
 import FaqComp from '../../../Shared/FaqComp'
 import BelowBanner from '../../../Components/Common/BelowBanner'
 import PaymentBar from '../../../Components/HomeComp/PaymentBar'
+import { useGetBannerQuery} from "../../../store/apiSlice"
 
 const CollegeB2B = ()=>{
     const whyChooseUsData = [
@@ -224,11 +226,17 @@ const CollegeB2B = ()=>{
             "__v": 0
         }
     ]
+     const { data } = useGetBannerQuery({
+        context: "CollegeB2B",
+        language: "Others", 
+      });
 
     return (
         <div>
             {/* hero section */}
-            <Banner title={"Foreign Languages For Colleges"} description="Elevate your college's profile with language learning programs tailored to today's global demands. By integrating languages into your curriculum, you equip students with vital skills for success in the international arena. Our courses not only enhance linguistic abilities but also promote cultural awareness and open doors to study abroad opportunities. Join us in shaping a multilingual learning environment that prepares students to thrive in a connected world." buttonText='Book a meeting'  />
+            <Banner title={data?.length>0 &&  data[0]?.bannerTitle|| "title"} 
+            description= {data?.length>0 && data[0]?.bannerDescription}
+            buttonText={data?.length>0 && data[0]?.buttonText}  />
             {/* why should comp */}
             <WhyChooseComp cards={whyChooseUsData} title='Why Schools Should Include Foreign Languages In Their Curriculum?'/>
             {/* newsletter section */}

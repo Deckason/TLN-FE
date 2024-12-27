@@ -1,6 +1,6 @@
-
+'use client'
 import Image from "next/image";
-import bannerimg from "../../../../Assets/about-us/logo22.svg";
+//import bannerimg from "../../../../Assets/about-us/logo22.svg";
 import { useGetBannerQuery} from "../../../../store/apiSlice";
 const Banner = () => {
   const { data } = useGetBannerQuery({
@@ -21,7 +21,8 @@ const Banner = () => {
                 <div className="mt-2 max-sm:text-sm text-xl leading-7 max-md:max-w-full relative mb-[32px]">
                   <div className="mb-8">
                   {data?.length>0 && data[0]?.bannerDescription}
-                  </div>{" "}
+                  </div>
+                  {" "}
                   {/* <div className="max-sm:absoluteflex justify-star max-md:-ml-8 ">
                     <ApplyNowbutton />
                   </div> */}
