@@ -4,40 +4,35 @@ import { useEffect,useState } from 'react';
 import DOMPurify from 'dompurify';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaShareAlt } from 'react-icons/fa';
 import Image from 'next/image';
-import RelatedArticles from '../../../../Components/BlogComp/RelatedArticles';
+import RelatedArticles from '../Components/RelatedArticles';
 import BreadCrumbs from '../../../../Components/BlogComp/BreadCrumbs';
 import blogImg from '../../../../Assets/Blogs/blogPlaceholder.png';
 import { useGetBlogByIdQuery,useGetAllBlogsQuery } from '../../../../store/apiSlice';
 import formatDate from "../../about-us/components/FormateDate"
+import { useParams } from 'next/navigation';
 
-const blogData = {
-    title: "How to learn a new language",
-    author: "Aisha Jain",
-    date: "July 7, 2024",
-    imageUrl: blogImg.src, 
-    htmlContent: "<p>Lorem ipsum dolor sit amet...</p>" 
-};
-const sampleArticles = [
-    {
-        image: blogImg.src,
-        title: 'How to learn a new language',
-        authorName: 'Zaira Jain',
-        authorImage: blogImg.src,
-        description: 'Lorem ipsum dolor sit amet consectetur. Leo interdum sagittis vel nunc...',
-    },
-];
 
-const BlogPage = ({ blogContent = blogData }) => {
+
+
+const BlogPage = () => {
+  
+    const {blogId} = useParams();
   
     const [sanitizedContent, setSanitizedContent] = useState('');
-
+      const { data: blogsByIdData } = useGetBlogByIdQuery(blogId);
+      
+    const { data: blogsData } = useGetAllBlogsQuery({
+        language:blogsByIdData?.language,
+        categories:blogsByIdData?.categories
+    });
+   
     useEffect(() => {
       if (typeof window !== 'undefined') {
         // Only call sanitize on the client-side
-        const sanitized = DOMPurify.sanitize(blogContent?.htmlContent || '');
+        const sanitized = DOMPurify.sanitize(blogsByIdData?.content || '');
         setSanitizedContent(sanitized);
       }
-    }, [blogContent]);
+    }, [blogsByIdData]);
 
     return (
     <div className="p-4 sm:p-6 lg:px-24 lg:py-12">
@@ -46,21 +41,21 @@ const BlogPage = ({ blogContent = blogData }) => {
 
             {/* Title and Author Section */}
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
-                {blogContent.title}
+                {blogsByIdData?.title}
             </h1>
             
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
                 <div className="flex items-center text-gray-600 text-xs sm:text-sm gap-2 mb-4">
                     <Image
-                        src={blogImg}
+                        src={blogsByIdData?.author?.profileImage}
                         alt={"blog specific"}
                         className="w-8 h-8 rounded-full mr-2"
                         width={32}
                         height={32}
                     />
-                    <span>{blogContent.author}</span>
+                    <span>{blogsByIdData?.author?.name}</span>
                     <span>|</span>
-                    <span>{blogContent.date}</span>
+                    <span>{formatDate(blogsByIdData?.publishedDate)}</span>
                 </div>
 
                 {/* Social Share Icons */}
@@ -76,10 +71,10 @@ const BlogPage = ({ blogContent = blogData }) => {
             {/* Blog Image */}
             <div className="mb-6">
                 <Image 
-                    src={blogContent.imageUrl} 
+                    src={blogsByIdData?.image} 
                     alt="Blog Image" 
-                    width={700} 
-                    height={400} 
+                    width={600} 
+                    height={100} 
                     className="rounded-md w-full object-cover" 
                 />
             </div>
@@ -91,7 +86,7 @@ const BlogPage = ({ blogContent = blogData }) => {
             />
 
             {/* Related Articles Section */}
-            <RelatedArticles articles={sampleArticles} />
+            <RelatedArticles articles={blogsData} />
       </div>
     );
 };

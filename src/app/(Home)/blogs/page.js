@@ -11,6 +11,7 @@ import BannerAd from '../../../Components/BlogComp/BannerAd'
 import Breadcrumbs from '../../../Components/BlogComp/BreadCrumbs';
 import { useGetBlogByIdQuery, useGetAllBlogsQuery } from  "../../../store/apiSlice"
 import formatDate from "../about-us/components/FormateDate";
+
 const languages = ['French', 'German', 'Spanish', 'Mandarin', 'English', 'Korean', 'Japanese'];
 
 
@@ -30,8 +31,10 @@ const Blogs = () => {
     const [activeCategory, setActiveCategory] = useState('Travel & Exploration');
 
     const { data: blogsData } = useGetAllBlogsQuery({
-        language:activeLanguage
+        language:activeLanguage,
+        categories:activeCategory
       });
+
       const FeaturedBlogsData =
       blogsData?.find((blog) => blog?.isFeatured === true) ||
       blogsData?.[0];
@@ -44,8 +47,6 @@ const Blogs = () => {
       
       const maxContentLength = 200; 
 
-      console.log("the bolgs are",blogsData)
-      console.log("the featred  bolgs are", FeaturedBlogsData)
     return (
         <div className="bg-gray-100">
             {/* Hero Section */}

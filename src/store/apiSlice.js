@@ -146,13 +146,13 @@ export const api = createApi({
     }),
       // ---------------------- Blogs  query -------------------------------
       getAllBlogs: builder.query({
-        query: ({ language}) => `/api/blog/get-all?language=${language}`,
+        query: ({ language,categories}) => `/api/blog/get-all?language=${language}&categories=${categories}`,
         providesTags: ["Blogs"],
       }),
   
       getBlogById : builder.query({
-        query: (id)=>
-          `/api/blog/get/${id}`
+        query: (blogId)=>
+          `/api/blog/get/${blogId}`
         
       }),
   }),
