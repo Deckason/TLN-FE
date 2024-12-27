@@ -8,7 +8,7 @@ import PaymentBar from "../../../Components/HomeComp/PaymentBar";
 import Banner from "../../../Shared/Banner";
 import DynamicForm from '../../../Components/Common/DynamicForm';
 import Image from "next/image";
-import { useGetAllOpenPositionQuery, useGetSpecificPositionQuery } from "../../../store/apiSlice";
+import { useGetAllOpenPositionQuery, useGetSpecificPositionQuery,useGetBannerQuery } from "../../../store/apiSlice";
 
 
 const WhyShouldSliderCard = ({data}) => {
@@ -264,13 +264,19 @@ const TeachWithUs = ()=>{
     console.log(data , "-------------this is data")
     console.log(SpecificData , "-------------this is specific data")
 
-
-
+   
+    const { data:baneerdata } = useGetBannerQuery({
+        context: "TeachWithUs",
+        language: "Others", 
+      });
     return (
         <div>
             {/* hero section */}
-            <Banner title={"Teach With Us!"} description={"Become a Teacher with The Language Network! Share your expertise and passion while reaping the rewards of spreading knowledge. Join our team of 200+ expert trainers and make a difference from the comfort of your home. Empower others, expand your horizons, and embark on a fulfilling journey with The Language Network!"}/>
-            {/* stats */}
+            <Banner title={baneerdata?.length>0 &&  baneerdata[0]?.bannerTitle|| "title"} 
+            description= {baneerdata?.length>0 && baneerdata[0]?.bannerDescription}
+            />
+            
+              {/* stats */}
             <div className="px-12">
                 <States/>
             </div>
