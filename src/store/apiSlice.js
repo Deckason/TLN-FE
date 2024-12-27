@@ -20,7 +20,8 @@ export const api = createApi({
      "EduPartners",
      "CoFounders",
      "Press",
-     "Blogs"
+     "Blogs",
+     "Community"
 
   ],
   endpoints: (builder) => ({
@@ -155,6 +156,11 @@ export const api = createApi({
           `/api/blog/get/${blogId}`
         
       }),
+      // ---------------------- Community query -------------------------------
+      getAllCommunity: builder.query({
+        query: () => `/api/community/get-all`,
+        providesTags: ["Community"],
+      }),
   }),
 });
 
@@ -180,5 +186,6 @@ export const {
   useGetAllCoFoundersQuery,
   useGetPressQuery,
   useGetAllBlogsQuery,
-  useGetBlogByIdQuery 
+  useGetBlogByIdQuery,
+  useGetAllCommunityQuery
 } = api;

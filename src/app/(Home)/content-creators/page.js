@@ -12,7 +12,7 @@ import DynamicForm from '../../../Components/Common/DynamicForm';
 import StyledSlider from '../../../Components/Common/StyledSlider'
 import BannerImg from '../../../Assets/ContentCreators/header_image.png'
 import FormImg from '../../../Assets/ContentCreators/form.png'
-import { useGetBannerQuery} from "../../../store/apiSlice"
+import { useGetBannerQuery,useGetAllCommunityQuery} from "../../../store/apiSlice"
 
 const FormComponent = () => {
   return (
@@ -61,18 +61,38 @@ const FormComponent = () => {
 
 
 const SlideComponent = ({slide})=>{
-    return (
-        <>
-            <img src={slide.imgSrc} alt={slide.altText} className="w-full h-92 object-cover relative z-0" />
-            <div className="absolute inset-0 bg-[#00000033] z-10"></div>
-            <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center z-20">
-                <button className="bg-white rounded-full p-2">
-                    <FaPlay className=" text-black"></FaPlay>
-                </button>
-            </div>
-        </>
-    )
-}
+  const [isPlaying, setIsPlaying] = useState(false);
+  
+
+  const handlePlayClick = () => {
+      setIsPlaying(true);
+  };
+    return   (
+      <div className="relative">
+          {!isPlaying ? (
+              <>
+                
+                  <img src={slide.thumbnail} alt={"video tumbnail"} className="w-full h-92 object-cover relative z-0" />
+                 
+                  <div className="absolute inset-0 bg-[#00000033] z-10"></div>
+                
+                  <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center z-20">
+                      <button onClick={handlePlayClick} className="bg-white rounded-full p-2">
+                          <FaPlay className="text-black" />
+                      </button>
+                  </div>
+              </>
+          ) : (
+              
+              <video className="w-full h-92 object-cover" controls autoPlay>
+                  <source src={slide.video} type="video/mp4" />
+                  Your browser does not support the video tag.
+              </video>
+          )}
+          </div>
+    );
+};
+
 
 const BelowBanner = ({ title }) => {
     return (
@@ -134,7 +154,9 @@ const BelowBanner = ({ title }) => {
   
 const ContentCreatorPage = ()=>{
     const [currentPage, setCurrentPage] = useState(0);
- 
+    
+    const {data:communityData}=useGetAllCommunityQuery();
+    
    
     const { data } = useGetBannerQuery({
         context: "ContentCreator",
@@ -323,7 +345,7 @@ const ContentCreatorPage = ()=>{
             {/* community section */}
             <div className='mb-[112px]'>
                 <Heading title={"Our community"}/>
-                <StyledSlider slidesData={slidesData}>
+                <StyledSlider slidesData={communityData}>
                     <SlideComponent/>
                 </StyledSlider>
             </div>
