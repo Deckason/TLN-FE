@@ -72,6 +72,13 @@ const privacyPolicyData = [
 
   return (
     <div>
+      <h1 className="text-center font-bold text-2xl sm:text-3xl md:text-5xl py-10">Privacy Policy</h1>
+      <div className="flex flex-col align-middle gap-10 px-14 py-5">
+        <p>Thank you for choosing to be part of our community at The Language Network ("Company", "we", "us", "our"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at info@thelanguagenetwork.co</p>
+        <p>When you visit our website https://thelanguagenetwork.co/ (the “Website“), and more generally, use any of our services (the “Services“, which include the Website), we appreciate that you are trusting us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Services immediately.</p>
+        <p>This privacy notice applies to all information collected through our Services (which, as described above, includes our Website), as well as, any related services, sales, marketing or events.</p>
+        <strong>Please read this privacy notice carefully as it will help you understand what we do with the information that we collect.</strong>
+      </div>
       <div className="flex flex-col justify-center items-center p-8 gap-y-10">
         {privacyPolicyData?.map((policy) => (
           <Sqcomp

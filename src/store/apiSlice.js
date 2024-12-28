@@ -17,6 +17,7 @@ export const api = createApi({
     "Trainers",
     "Testimonials",
     "Terms",
+    "Positions",
   ],
   endpoints: (builder) => ({
     // -----------------------------promo queries-------------------------------
@@ -126,6 +127,12 @@ export const api = createApi({
       // providesTags: ["Terms"],
     }),
 
+    // get Positions
+    getPositions: builder.query({
+      query: () => "/api/openposition/get-all",
+      // providesTags: ["Positions"],
+    }),
+
   }),
 });
 
@@ -147,4 +154,5 @@ export const {
   useGetAllOpenPositionQuery,
   useGetSpecificPositionQuery,
   useGetTermsQuery,
+  useGetPositionsQuery,
 } = api;

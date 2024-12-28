@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import BelowBanner from "../../../Components/Common/BelowBanner";
 import PaymentBar from "../../../Components/HomeComp/PaymentBar";
@@ -27,7 +27,11 @@ const Terms = () => {
             content={
               <ul className="list-disc pl-6 space-y-6">
                 {term.description.map((desc, index) => (
-                  <li key={index}>{desc}</li>
+                  <li key={index}>
+                    <div
+                      dangerouslySetInnerHTML={{ __html: desc }}
+                    />
+                  </li>
                 ))}
               </ul>
             }
