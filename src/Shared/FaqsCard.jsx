@@ -8,7 +8,7 @@ const FaqsCard = ({ data, i }) => {
   const [showDes, setShowDes] = useState(false);
 
   return (
-    <div onClick={() => setShowDes(!showDes)} className="my-2 w-full">
+    <div onClick={() => setShowDes(!showDes)} className="my-2 w-full cursor-pointer">
       <div
         className={`${
           showDes ? "h-full" : "min-h-[75px]"

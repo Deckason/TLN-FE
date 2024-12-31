@@ -71,6 +71,13 @@ export const data = {
             "Learning a new language cultivates empathy, cultural sensitivity, and self-confidence, fostering personal growth and appreciation for diversity.",
           link: "",
         },
+        {
+          title: "Travel and Exploration",
+          img: kids2,
+          description:
+            "Spanish allows children to connect with locals, explore vibrant cultures, and gain deeper insights into the history and traditions of Spanish-speaking regions worldwide.",
+          link: "",
+        },
       ],
     },
     HowItWorksCardData: [

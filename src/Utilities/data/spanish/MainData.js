@@ -47,21 +47,21 @@ export const SpanishLanguageData = {
           img: "/anyGoal/school.png",
 
           description:
-            "Spark excitement with our online Spanish classes for kids! Whether it's curriculum-based or as a hobby, we make learning engaging and enjoyable            .",
+            "Boost cognitive development and cultural awareness among students with our engaging Spanish language program tailored for schools..",
           link: "#",
         },
         {
           title: "Spanish Classes for College",
           img: college,
           description:
-            "Dive into Spanish fluency with our flexible online classes tailored to fit your college schedule. Explore the language, culture, and opportunities that await!            ",
+            "Equip college students with essential language skills for academic success and international career opportunities through our specialized Spanish course.",
           link: "#",
         },
         {
           title: "Spanish Classes for Corporate",
           img: corporate,
           description:
-            "Elevate your Spanish skills with our customized online classes. Whether you're an individual seeking personal growth or a company fostering a global mindset, we're here to help you thrive!            ",
+            "Elevate your career with Spanish training for corporates. Whether you're an individual seeking personal growth or a company fostering a global mindset, we're here to help you thrive!",
           link: "#",
         },
       ],

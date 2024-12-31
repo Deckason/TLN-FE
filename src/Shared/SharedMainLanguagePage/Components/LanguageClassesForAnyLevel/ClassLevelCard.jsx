@@ -38,7 +38,7 @@ const ClassLevelCard = ({ data }) => {
               className="self-stretch shadow-md hover:shadow-xl transition duration-300 h-14 px-8 py-3.5 rounded-lg border text-teal-600 hover:bg-teal-600 hover:text-white border-teal-600 justify-center items-center gap-2.5 inline-flex"
             >
               <button className="text-center text-xl font-normal  leading-7 flex justify-center items-center w-full gap-[10px]">
-                <span>Book a class </span>
+                <span>Learn More </span>
                 <Image
                   width={25}
                   height={25}

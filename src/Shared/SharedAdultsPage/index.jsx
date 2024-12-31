@@ -44,9 +44,9 @@ const SharedAdultsPage = ({ Data, language, context }) => {
         <StudentsTestomony language={language} context={context} />
       </div>
       <FaqsLanguage FaqsData={faqs} />
-      {/* <EverythingYouNeedToKnowAboutLanguage
+      {Data?.EveryThingYouNeedToKnowAbout?.length ? <EverythingYouNeedToKnowAboutLanguage
         EveryThingYouNeedToKnowAbout={Data?.EveryThingYouNeedToKnowAbout}
-      /> */}
+      />:null}
       {/* <SayBonjur SayBonjur={Data?.SayBonjur} /> */}
       {/* <div className="mx-auto 3xl:mx-auto relative flex justify-center items-center flex-col mb-[112px]">
         <LanguageLessons LanguageLesson={Data?.LanguageLesson} />
