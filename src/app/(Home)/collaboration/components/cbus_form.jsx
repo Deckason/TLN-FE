@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import formImage from "../../../../../public/collboratewithUs/collaborate_formimg.svg";
+import {useCreateCollaborationMutation} from "../../../../store/apiSlice"
 
 const Formcbus = () => {
 	const [formState, setFormState] = useState({
@@ -17,6 +18,7 @@ const Formcbus = () => {
         otherLearnedAboutUs: "",
 	});
 	const [errors, setErrors] = useState({});
+	const [createCollaboration, { isLoading}] = useCreateCollaborationMutation();
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
@@ -26,7 +28,7 @@ const Formcbus = () => {
 		}));
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async(e) => {
 		e.preventDefault();
 		const newErrors = {};
 		if (!validateEmail(formState.email)) newErrors.email = "Invalid email address";
@@ -38,8 +40,28 @@ const Formcbus = () => {
 			setTimeout(() => setErrors({}), 4000);
 		} else {
 			setErrors({});
+			try {
+
+				await createCollaboration(formState).unwrap();
+				console.log("Form submitted successfully:", formState);
+		
+				setFormState({
+					name: "",
+					phone: "",
+					email: "",
+					organisation: "",
+					collaborationType: "",
+					collaborationGoal: "",
+					specificRequirements: "",
+					learnedAboutUs: "",
+					otherCollaboration: "",
+					otherLearnedAboutUs: "",
+				});
+			  } catch (error) {
+				console.error("Error submitting form:", error);
+			  }
 			console.log("Form submitted:", formState);
-			// Add form submission logic here
+			
 		}
 	};
 

@@ -21,7 +21,8 @@ export const api = createApi({
      "CoFounders",
      "Press",
      "Blogs",
-     "Community"
+     "Community",
+     "Collaboration"
 
   ],
   endpoints: (builder) => ({
@@ -156,6 +157,15 @@ export const api = createApi({
           `/api/blog/get/${blogId}`
         
       }),
+      // ---------------------- Collaboration query -------------------------------
+      createCollaboration: builder.mutation({
+        query: (createdData) => ({
+          url: `/api/colabwithus`,
+          method: "POST",
+          body: createdData,
+        }),
+        invalidatesTags: ["Collaboration"],
+      }),
       // ---------------------- Community query -------------------------------
       getAllCommunity: builder.query({
         query: () => `/api/community/get-all`,
@@ -187,5 +197,6 @@ export const {
   useGetPressQuery,
   useGetAllBlogsQuery,
   useGetBlogByIdQuery,
-  useGetAllCommunityQuery
+  useGetAllCommunityQuery,
+  useCreateCollaborationMutation
 } = api;
