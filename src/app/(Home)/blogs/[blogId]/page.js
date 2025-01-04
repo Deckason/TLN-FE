@@ -16,20 +16,15 @@ const BlogPage = () => {
 
 
   const { data: blogsByIdData, isLoading: blogLoading } = useGetBlogByIdQuery(blogId);
-  
-  
   const { data: blogsData, isLoading: blogsLoading } = useGetAllBlogsQuery({
     language: blogsByIdData?.language,
     categories: blogsByIdData?.categories,
   });
 
-  useEffect(() => {
-    if (blogsByIdData && typeof window !== 'undefined') {
-      // Only sanitize on the client side
-      const sanitized = DOMPurify.sanitize(blogsByIdData?.content || '');
-      setSanitizedContent(sanitized);
-    }
-  }, [blogsByIdData]);
+  const sanitizeAndRender = (content) => {
+    const cleanContent = DOMPurify.sanitize(content);
+    return <div dangerouslySetInnerHTML={{ __html: cleanContent }} />;
+  };
 
   // Conditional render to avoid hydration errors
   if (blogLoading || blogsLoading) {
@@ -41,13 +36,13 @@ const BlogPage = () => {
       <head>
         {/* Title Tag */}
         <title>{blogsByIdData?.meta.title}</title>
-        
+
         {/* Meta Description */}
         <meta name="description" content={blogsByIdData?.meta?.description} />
-        
+
         {/* Meta Keywords */}
         <meta name="keywords" content={blogsByIdData?.meta?.keywords.join(", ")} />
-        
+
         {/* Open Graph Tags */}
         <meta property="og:type" content={blogsByIdData?.meta.og.type} />
         <meta property="og:title" content={blogsByIdData?.meta.title} />
@@ -61,7 +56,6 @@ const BlogPage = () => {
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
           {blogsByIdData?.title}
         </h1>
-        
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
           <div className="flex items-center text-gray-600 text-xs sm:text-sm gap-2 mb-4">
             <Image
@@ -88,21 +82,20 @@ const BlogPage = () => {
 
         {/* Blog Image */}
         <div className="mb-6">
-          <Image 
-            src={blogsByIdData?.image} 
-            alt="Blog Image" 
-            width={600} 
-            height={100} 
-            className="rounded-md w-full object-cover" 
+          <Image
+            src={blogsByIdData?.image}
+            alt="Blog Image"
+            width={600}
+            height={100}
+            className="rounded-md w-full object-cover"
           />
         </div>
 
         {/* Blog Content */}
-        <div 
-          className="prose prose-sm sm:prose lg:prose-lg max-w-full"
-          dangerouslySetInnerHTML={{ __html: sanitizedContent }} 
-        />
-
+        <div
+          className="prose prose-sm sm:prose lg:prose-lg max-w-full">
+          {sanitizeAndRender(blogsByIdData?.content)}
+        </div>
         {/* Related Articles Section */}
         <RelatedArticles articles={blogsData} />
       </div>

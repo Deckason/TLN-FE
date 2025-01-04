@@ -1,8 +1,16 @@
 import React from 'react';
 import { FaChevronRight, FaEllipsisV } from 'react-icons/fa';
 import Link from 'next/link';
+import DOMPurify from "dompurify";
+
+
 
 const RelatedArticles = ({ articles=[] }) => {
+
+  const sanitizeAndRender = (content) => {
+    const cleanContent = DOMPurify.sanitize(content);
+    return <div dangerouslySetInnerHTML={{ __html: cleanContent }} />;
+  };
     return (
         <div className="pt-6">
             <h2 className="text-xl font-semibold text-primary-color mb-6">Related Articles</h2>
@@ -35,7 +43,7 @@ const RelatedArticles = ({ articles=[] }) => {
 
                             {/* Article Description */}
                             <p className="text-gray-600 text-sm mt-2">
-                                {article?.content}
+                            {sanitizeAndRender(article?.content)}
                             </p>
 
                             {/* Read More Button */}
