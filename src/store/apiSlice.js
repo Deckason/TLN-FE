@@ -1,7 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const currMonth = new Date().getMonth() + 1;
-
 export const api = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: process.env.NEXT_PUBLIC_API_URL,
@@ -17,6 +16,9 @@ export const api = createApi({
     "Batches3",
     "Trainers",
     "Testimonials",
+     "Alumni",
+     "EduPartners",
+     "CoFounders"
   ],
   endpoints: (builder) => ({
     // -----------------------------promo queries-------------------------------
@@ -109,6 +111,31 @@ export const api = createApi({
         body: email,
       }),
     }),
+    // career screen 
+    getAllOpenPosition : builder.query({
+      query: ()=>
+        `/api/openposition/get-all`,    
+    }),
+    getSpecificPosition : builder.query({
+      query: (id)=>
+        `/api/openposition/get/${id}`
+      
+    }),
+     // ---------------------- Alumni query -------------------------------
+     getAllAlumni: builder.query({
+      query: () => `/api/alumni`,
+      providesTags: ["Alumni"],
+    }),
+    // ---------------------- Educational Partners query -------------------------------
+    getAllEduPartners: builder.query({
+      query: () => `/api/edupartners`,
+      providesTags: ["EduPartners"],
+    }),
+     // ---------------------- Co-Founders query -------------------------------
+     getAllCoFounders: builder.query({
+      query: () => `/api/cofounder/get-all`,
+      providesTags: ["CoFounders"],
+    }),
   }),
 });
 
@@ -127,4 +154,9 @@ export const {
   useGetAllTrainersQuery,
   useGetAllTestimonialsQuery,
   useSubscribeNewsletterMutation,
+  useGetAllOpenPositionQuery,
+  useGetSpecificPositionQuery,
+  useGetAllAlumniQuery,
+  useGetAllEduPartnersQuery,
+  useGetAllCoFoundersQuery,
 } = api;

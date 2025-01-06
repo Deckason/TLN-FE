@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Carousel.module.css';
-import Image from 'next/image';
 
 const Carousel = ({ slides, slidesToShow = 3 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,7 +28,7 @@ const Carousel = ({ slides, slidesToShow = 3 }) => {
         >
           {slides.map((slide, index) => (
             <div className={styles.carouselItem} key={index}>
-              <Image src={slide} alt={`Slide ${index}`} width={500} height={400}/>
+              <img src={slide} alt={`Slide ${index}`} />
               <div className={styles.overlay}>
                 <p>Slide {index + 1}</p>
               </div>

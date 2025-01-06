@@ -142,7 +142,7 @@ const UpcomingBatches = ({ language }) => {
         )
       );
     }
-  }, [month1Data, monthNum, loadBtnClicked, language, month2Data, month3Data]);
+  }, [month1Data, monthNum, loadBtnClicked]);
 
   return (
     <>

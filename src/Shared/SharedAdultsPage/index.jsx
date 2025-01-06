@@ -11,7 +11,6 @@ import SayBonjur from "./Components/SayBonjur";
 // import UpcomingBatches from "./Components/UpcomingBatches";
 import WhyShould from "../../Components/HomeComp/WhyShould";
 import UpcomingBatches from "../UpcomingBatches";
-import EverythingYouNeedToKnowAboutLanguage from "../SharedKidsPage/Components/EverythingYouNeedToKnowAboutLanguage";
 
 const SharedAdultsPage = ({ Data, language, context }) => {
   let faqs = [];
