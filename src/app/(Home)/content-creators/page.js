@@ -13,6 +13,7 @@ import StyledSlider from '../../../Components/Common/StyledSlider'
 import BannerImg from '../../../Assets/ContentCreators/header_image.png'
 import FormImg from '../../../Assets/ContentCreators/form.png'
 import { useGetBannerQuery} from "../../../store/apiSlice"
+import Image from 'next/image';
 
 const FormComponent = () => {
   return (
@@ -63,7 +64,7 @@ const FormComponent = () => {
 const SlideComponent = ({slide})=>{
     return (
         <>
-            <img src={slide.imgSrc} alt={slide.altText} className="w-full h-92 object-cover relative z-0" />
+            <Image src={slide.imgSrc} alt={slide.altText} height={300} width={500} className="w-full h-92 object-cover relative z-0" />
             <div className="absolute inset-0 bg-[#00000033] z-10"></div>
             <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center z-20">
                 <button className="bg-white rounded-full p-2">

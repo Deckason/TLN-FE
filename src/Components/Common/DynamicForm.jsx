@@ -14,7 +14,10 @@ const DynamicForm = ({
         <div className="flex flex-col md:flex-row  p-2 md:p-10">
             {/* Image Placeholder */}
             <div className="flex-1">
-                <Image src={imageSrc}/>
+                <Image 
+                    src={imageSrc}
+                    alt='img'
+                />
                 {/* <div className="min-w-40 min-h-full bg-gray-400"></div> */}
             </div>
 

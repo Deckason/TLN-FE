@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const StyledCard = ({title,description,img}) => {
@@ -5,7 +6,7 @@ const StyledCard = ({title,description,img}) => {
     <div className="max-w-sm mx-auto  bg-white shadow-md rounded-lg">
       <div className="flex justify-center mb-4">
         {/* Image section */}
-        <img
+        <Image
           src={img || "https://placeholder.co/300X300"}
           alt="Illustration"
           className="w-16 h-16"

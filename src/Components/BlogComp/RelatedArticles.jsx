@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { FaChevronRight, FaEllipsisV } from 'react-icons/fa';
 
@@ -11,7 +12,7 @@ const RelatedArticles = ({ articles }) => {
                     <div key={index} className="flex items-start bg-white shadow-md rounded-lg p-4">
                         {/* Image Section */}
                         <div className="flex-shrink-0 w-32 h-32">
-                            <img
+                            <Image
                                 src={article.image}
                                 alt={article.title}
                                 className="w-full h-full object-cover rounded-lg"
@@ -24,7 +25,7 @@ const RelatedArticles = ({ articles }) => {
                             
                             {/* Author Info */}
                             <div className="flex items-center text-gray-500 text-sm mt-2">
-                                <img
+                                <Image
                                     src={article.authorImage}
                                     alt={article.authorName}
                                     className="w-6 h-6 rounded-full mr-2"
