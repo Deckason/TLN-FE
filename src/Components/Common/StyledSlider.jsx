@@ -7,7 +7,7 @@ import { FaPlay } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 
-const StyledSlider = ({children,slidesData})=>{
+const StyledSlider = ({children,slidesData=[]})=>{
     const [currentPage, setCurrentPage] = useState(0);
     const navigationPrevRef = React.useRef(currentPage);
     const navigationNextRef = React.useRef(currentPage);
@@ -52,7 +52,7 @@ const StyledSlider = ({children,slidesData})=>{
                         }}
                         className="mySwiper mx-auto flex justify-center  items-center max-w-[326px] md:max-w-[700px]  lg:max-w-[850px] md:hidden xl:max-w-[1150px] w-full max-sm:max-h-full   2xl:w-full 3xl:max-w-[1440px]"
                     >
-                        {slidesData.map((slide, index) => (
+                        {slidesData?.map((slide, index) => (
                             <SwiperSlide key={index} className="relative">
                                 {React.cloneElement(children , {slide})}
                             </SwiperSlide>

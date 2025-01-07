@@ -18,7 +18,12 @@ export const api = createApi({
     "Testimonials",
      "Alumni",
      "EduPartners",
-     "CoFounders"
+     "CoFounders",
+     "Press",
+     "Blogs",
+     "Community",
+     "Collaboration"
+
   ],
   endpoints: (builder) => ({
     // -----------------------------promo queries-------------------------------
@@ -136,6 +141,36 @@ export const api = createApi({
       query: () => `/api/cofounder/get-all`,
       providesTags: ["CoFounders"],
     }),
+    // ---------------------- Press  query -------------------------------
+    getPress: builder.query({
+      query: ({ isFeatured, isLatest }) => `/api/press/get-all?isFeatured=${isFeatured}&isLatest=${isLatest}`,
+      providesTags: ["Press"],
+    }),
+      // ---------------------- Blogs  query -------------------------------
+      getAllBlogs: builder.query({
+        query: ({ language,categories}) => `/api/blog/get-all?language=${language}&categories=${categories}`,
+        providesTags: ["Blogs"],
+      }),
+  
+      getBlogById : builder.query({
+        query: (blogId)=>
+          `/api/blog/get/${blogId}`
+        
+      }),
+      // ---------------------- Collaboration query -------------------------------
+      createCollaboration: builder.mutation({
+        query: (createdData) => ({
+          url: `/api/colabwithus`,
+          method: "POST",
+          body: createdData,
+        }),
+        invalidatesTags: ["Collaboration"],
+      }),
+      // ---------------------- Community query -------------------------------
+      getAllCommunity: builder.query({
+        query: () => `/api/community/get-all`,
+        providesTags: ["Community"],
+      }),
   }),
 });
 
@@ -159,4 +194,9 @@ export const {
   useGetAllAlumniQuery,
   useGetAllEduPartnersQuery,
   useGetAllCoFoundersQuery,
+  useGetPressQuery,
+  useGetAllBlogsQuery,
+  useGetBlogByIdQuery,
+  useGetAllCommunityQuery,
+  useCreateCollaborationMutation
 } = api;
