@@ -1,5 +1,7 @@
 'use client'
 import React, { useState } from 'react';
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
 import bannerImg from '../../../Assets/Blogs/banner.png';
 import blogPlaceholderImg from '../../../Assets/Blogs/blogPlaceholder.png';
 import { FaArrowRight } from 'react-icons/fa';
@@ -7,25 +9,11 @@ import { AiOutlineRight } from 'react-icons/ai';
 import Image from 'next/image';
 import BannerAd from '../../../Components/BlogComp/BannerAd'
 import Breadcrumbs from '../../../Components/BlogComp/BreadCrumbs';
+import { useGetBlogByIdQuery, useGetAllBlogsQuery } from "../../../store/apiSlice"
+import formatDate from "../about-us/components/FormateDate";
+import DOMPurify from 'dompurify';
 
 const languages = ['French', 'German', 'Spanish', 'Mandarin', 'English', 'Korean', 'Japanese'];
-
-const articles = [
-    {
-        id: 1,
-        author: 'Aisha Jain',
-        date: 'July 7, 2024',
-        title: 'How to learn new language',
-        description: 'Lorem ipsum dolor sit amet consectetur...',
-    },
-    {
-        id: 2,
-        author: 'Aisha Jain',
-        date: 'July 7, 2024',
-        title: 'How to learn new language',
-        description: 'Lorem ipsum dolor sit amet consectetur...',
-    }
-];
 
 const categories = [
     "Cultural Insights",
@@ -37,40 +25,73 @@ const categories = [
     "Motivation and Mindset",
 ];
 
+
 const Blogs = () => {
     const [activeLanguage, setActiveLanguage] = useState('French');
     const [activeCategory, setActiveCategory] = useState('Travel & Exploration');
+
+    const { data: blogsData } = useGetAllBlogsQuery({
+        language: activeLanguage,
+        categories: activeCategory
+    });
+
+    const FeaturedBlogsData =
+        blogsData?.find((blog) => blog?.isFeatured === true) ||
+        blogsData?.[0];
+
+    const sanitizeAndTruncateContent = (content, maxLength) => {
+        const sanitizedContent = DOMPurify.sanitize(content || "");
+        const truncatedContent =
+            sanitizedContent.length > maxLength
+                ? sanitizedContent.slice(0, maxLength) + "..."
+                : sanitizedContent;
+
+        return (
+            <div dangerouslySetInnerHTML={{ __html: truncatedContent }} />
+        );
+    };
+
+    const maxContentLength = 200;
 
     return (
         <div className="bg-gray-100">
             {/* Hero Section */}
             <div className="relative bg-cover bg-center h-64 sm:h-80 md:h-96 flex items-center justify-start text-white"
-                 style={{ backgroundImage: `url('${bannerImg.src}')` }}>
+                style={{ backgroundImage: `url('${blogsData?.image}')` }}>
                 <div className="absolute inset-0 bg-[#373a4d7c]"></div>
                 <div className='absolute left-5 w-[200px] h-[200px] md:w-[344px] md:h-[344px] rounded-full bg-[#ffffff41]'></div>
                 <div className="relative p-4 sm:p-6 md:p-8 text-start w-full md:w-[894px] h-auto md:h-[418px] md:pl-[101px] md:py-[47px]">
                     <h2 className="text-base sm:text-lg font-semibold">Featured</h2>
-                    <p className="text-xs sm:text-sm pt-2 flex gap-4">
-                        {[["French - Tips & Resources", "By Aisha Jain", "July 7, 2024"]].map((item, i, arr) => (
-                            <span key={i} className={`relative ${i !== (arr.length - 1) && 'after:absolute after:right-[-8px] after:w-[1px] after:h-[90%] after:bg-[#ffffff]'}`}>
-                                {item}
+                    {FeaturedBlogsData ? (
+                        <p className="text-xs sm:text-sm pt-2 flex gap-4">
+                            <span className="relative">
+                                {`${FeaturedBlogsData.title} | By ${FeaturedBlogsData.author?.name} | ${formatDate(FeaturedBlogsData.publishedDate)}`}
                             </span>
-                        ))}
-                    </p>
-                    <h1 className="text-3xl sm:text-4xl md:text-[50px]/[80px] font-bold">How to learn new language</h1>
-                    <p className="mt-2 mb-4 text-sm sm:text-base md:text-[20px]/[28px] font-normal">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id animi molestias natus explicabo sint non repellat ut, reprehenderit facilis magnam...
-                    </p>
-                    <button className="bg-white text-primary-color px-4 sm:px-6 py-2 sm:py-3 rounded-[8px] w-full md:w-[313px] h-[53px] font-semibold flex gap-2 justify-center items-center">
-                        Read more
-                        <FaArrowRight />
-                    </button>
+                        </p>
+                    ) : (
+                        <p className="text-xs sm:text-sm pt-2">Loading...</p>
+                    )}
+
+                    <h1 className="text-3xl sm:text-4xl md:text-[40px]/[80px] font-bold">{FeaturedBlogsData?.title}</h1>
+                    {FeaturedBlogsData?.content && (
+                        <p className="mt-2 mb-4 text-sm sm:text-base md:text-[20px]/[28px] font-normal">
+                            {sanitizeAndTruncateContent(FeaturedBlogsData.content, maxContentLength)}
+                        </p>
+                    )}
+
+                    <Link href={`/blogs/${FeaturedBlogsData?.slug}`}>
+
+                        <button className="bg-white text-primary-color px-4 sm:px-6 py-2 sm:py-3 rounded-[8px] w-full md:w-[313px] h-[53px] font-semibold flex gap-2 justify-center items-center">
+                            Read more
+                            <FaArrowRight />
+                        </button>
+                    </Link>
                 </div>
             </div>
 
             {/* Language Tabs */}
             <div className="mt-6 flex justify-center space-x-4 overflow-x-auto  sm:space-x-4">
-                <div className='bg-primary-color w-fit rounded-none md:rounded-[48px] flex gap-4 md:gap-0 overflow-x-auto py-4 px-6 sm:px-8' style={{scrollbarWidth:"none"}}>
+                <div className='bg-primary-color w-fit rounded-none md:rounded-[48px] flex gap-4 md:gap-0 overflow-x-auto py-4 px-6 sm:px-8' style={{ scrollbarWidth: "none" }}>
                     {languages.map((language, i) => (
                         <button
                             key={language}
@@ -103,26 +124,28 @@ const Blogs = () => {
                 {/* Main Content */}
                 <section className="w-full lg:w-3/4 flex flex-col gap-4">
                     {/* Breadcrumbs */}
-                    <Breadcrumbs items={[activeLanguage,activeCategory]}/>
+                    <Breadcrumbs items={[activeLanguage, activeCategory]} />
                     {/* Articles Grid */}
                     <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        {articles.map((article) => (
+                        {blogsData?.length > 0 && blogsData.map((article) => (
                             <div key={article.id} className="bg-white shadow-md">
-                                <Image src={blogPlaceholderImg} alt="Blog" className="w-full h-[200px] object-cover" />
+                                <Image src={article?.image} alt="Blog" className="w-full h-[400px] object-cover" width={1000} height={500} />
                                 <div className="p-4">
                                     <div className="flex items-center mb-4">
-                                        <img src="https://via.placeholder.com/50" alt="Author" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full mr-4" />
+                                        <img src={article?.author?.profileImage} alt="Author" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full mr-4" />
                                         <div>
-                                            <h3 className="text-xs sm:text-sm font-semibold">{article.author}</h3>
-                                            <p className="text-xs text-gray-500">{article.date}</p>
+                                            <h3 className="text-xs sm:text-sm font-semibold">{article?.author?.name}</h3>
+                                            <p className="text-xs text-gray-500">{formatDate(article?.publishedDate)}</p>
                                         </div>
                                     </div>
-                                    <h4 className="text-base sm:text-lg font-semibold mb-2">{article.title}</h4>
-                                    <p className="text-xs sm:text-sm text-gray-700 mb-4">{article.description}</p>
-                                    <button className="text-green-500 font-semibold border-[1px] border-primary-color py-2 px-4 sm:py-[14px] sm:px-[16px] rounded-[8px] w-full sm:w-[168px] h-[53px] flex items-center gap-2 justify-center">
-                                        Read more
-                                        <FaArrowRight />
-                                    </button>
+                                    <h4 className="text-base sm:text-lg font-semibold mb-2">{article?.title}</h4>
+                                    <p className="text-xs sm:text-sm text-gray-700 mb-4">{sanitizeAndTruncateContent(article?.content, maxContentLength)}</p>
+                                    <Link href={`/blogs/${article?.slug}`}>
+                                        <button className="text-green-500 font-semibold border-[1px] border-primary-color py-2 px-4 sm:py-[14px] sm:px-[16px] rounded-[8px] w-full sm:w-[168px] h-[53px] flex items-center gap-2 justify-center">
+                                            Read more
+                                            <FaArrowRight />
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         ))}
@@ -130,7 +153,7 @@ const Blogs = () => {
                 </section>
             </div>
             <section className='w-full pt-4'>
-                <BannerAd/>
+                <BannerAd />
             </section>
         </div>
     );

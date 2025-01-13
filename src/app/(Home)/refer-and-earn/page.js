@@ -1,3 +1,4 @@
+"use client"
 import BelowBanner from '../../../Components/Common/BelowBanner';
 import DynamicForm from '../../../Components/Common/DynamicForm';
 import SliderComp from '../../../Components/Common/SliderComp';
@@ -5,8 +6,13 @@ import PaymentBar from '../../../Components/HomeComp/PaymentBar';
 import Banner from '../../../Shared/Banner'
 import FaqComp from '../../../Shared/FaqComp';
 import Heading from '../../../Components/Common/Heading'
+import { useGetBannerQuery} from "../../../store/apiSlice"
 
 const ReferAndEarn = ()=>{
+    const { data } = useGetBannerQuery({
+        context: "ReferNEarn",
+        language: "Others", 
+      });
     const howitWorksData = {
         Title:"How It Works?",
         CardData:[
@@ -165,7 +171,9 @@ const ReferAndEarn = ()=>{
     return (
         <div>
             {/* hero */}
-            <Banner title={"Refer And Earn"} description={"Refer The Language Network to your buddy and get a guaranteed cashback of  ₹1,000/-. That's not all! Your friend too gets a 10% discount on their enrollment with us!"} buttonText='Refer now'/>
+            <Banner title={data?.length>0 &&  data[0]?.bannerTitle|| "title"} 
+            description= {data?.length>0 && data[0]?.bannerDescription}
+            buttonText={data?.length>0 && data[0]?.buttonText}  />
             {/* how it works */}
             <div>
                 <SliderComp data={howitWorksData}/>

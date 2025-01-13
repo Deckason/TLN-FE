@@ -1,116 +1,118 @@
-"use client"
-import React from "react";
-import BelowBanner from "../../../Components/Common/BelowBanner";
-import PaymentBar from "../../../Components/HomeComp/PaymentBar";
-import Sqcomp from "./square_comp";
-import { useGetTermsQuery } from "../../../store/apiSlice";
+'use client'
 
-const Page = () => {
-//   const { data: privacyPolicyData, isLoading, isError } = useGetPrivacyPolicy();
+import { useState } from 'react'
 
-
-//   if (isLoading) {
-//     return <div className="text-center">Loading Privacy and Policies...</div>;
-//   }
-
-//   if (isError) {
-//     return <div className="text-center text-red-500">Failed to load privacy and policy. Please try again later.</div>;
-//   }
-
-const privacyPolicyData = [
-    {
-        "_id": "6722a1ea584bdb64584bf02f",
-        "title": "Software Engineer",
-        "description": [
-            "Your data is securely stored.",
-            "Your data is securely stored.",
-            "Your data is securely stored.",
-            "Your data is securely stored.",
-        ]
-    },
-    {
-        "_id": "9a35bf1c283da96482fa01b7",
-        "title": "Data Analyst",
-        "description": [
-            "We do not share your information with third parties.",
-            "We do not share your information with third parties.",
-            "We do not share your information with third parties.",
-            "We do not share your information with third parties.",
-        ]
-    },
-    {
-        "_id": "b47f2de8a9c4fd0236859e4d",
-        "title": "Product Manager",
-        "description": [
-            "All user data is encrypted in transit and at rest.",
-            "All user data is encrypted in transit and at rest.",
-            "All user data is encrypted in transit and at rest.",
-            "All user data is encrypted in transit and at rest.",
-        ]
-    },
-    {
-        "_id": "c58a2f6db293ca501784fb39",
-        "title": "Privacy Specialist",
-        "description": [
-            "You can opt out of data collection at any time.",
-            "You can opt out of data collection at any time.",
-            "You can opt out of data collection at any time.",
-            "You can opt out of data collection at any time.",
-        ]
-    },
-    {
-        "_id": "a18db5429cf7e36b9247a5d1",
-        "title": "UX Designer",
-        "description": [
-            "Your privacy is our priority.", "You can opt out of data collection at any time.",
-            "Your privacy is our priority.", "You can opt out of data collection at any time.",
-            "Your privacy is our priority.", "You can opt out of data collection at any time.",
-            "Your privacy is our priority.", "You can opt out of data collection at any time.",
-        ]
-    },
+const dummyPolicies = [
+  {
+    _id: "676c18cffdfb0c036744de3c",
+    title: "User Agreement",
+    description: [
+      "The user agrees to comply with all applicable laws.",
+      "The user is responsible for maintaining the confidentiality of their account."
+    ],
+    createdAt: "2024-12-25T14:38:07.116Z",
+    updatedAt: "2024-12-25T14:38:07.116Z",
+  },
+  {
+    _id: "676c18cffdfb0c036744de3d",
+    title: "Privacy Policy",
+    description: [
+      "We collect and process your personal data in accordance with this Privacy Policy.",
+      "Your data is protected using industry-standard security measures.",
+      "We do not sell your personal information to third parties."
+    ],
+    createdAt: "2024-12-25T14:38:07.116Z",
+    updatedAt: "2024-12-25T14:38:07.116Z",
+  },
+  {
+    _id: "676c18cffdfb0c036744de3e",
+    title: "Cookie Policy",
+    description: [
+      "We use cookies to enhance your browsing experience.",
+      "You can control cookie preferences through your browser settings.",
+      "Essential cookies are necessary for the website to function properly."
+    ],
+    createdAt: "2024-12-25T14:38:07.116Z",
+    updatedAt: "2024-12-25T14:38:07.116Z",
+  }
 ]
 
-  return (
-    <div>
-      <h1 className="text-center font-bold text-2xl sm:text-3xl md:text-5xl py-10">Privacy Policy</h1>
-      <div className="flex flex-col align-middle gap-10 px-14 py-5">
-        <p>Thank you for choosing to be part of our community at The Language Network ("Company", "we", "us", "our"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at info@thelanguagenetwork.co</p>
-        <p>When you visit our website https://thelanguagenetwork.co/ (the “Website“), and more generally, use any of our services (the “Services“, which include the Website), we appreciate that you are trusting us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Services immediately.</p>
-        <p>This privacy notice applies to all information collected through our Services (which, as described above, includes our Website), as well as, any related services, sales, marketing or events.</p>
-        <strong>Please read this privacy notice carefully as it will help you understand what we do with the information that we collect.</strong>
-      </div>
-      <div className="flex flex-col justify-center items-center p-8 gap-y-10">
-        {privacyPolicyData?.map((policy) => (
-          <Sqcomp
-            key={policy._id}
-            title={policy.title}
-            minheight={300}
-            content={
-              <ul className="list-disc pl-6 space-y-6">
-                {policy.description?.map((desc, index) => (
-                  <li key={index}>{desc}</li>
-                ))}
-              </ul>
-            }
-          />
-        ))}
-      </div>
-      {/* Help Section */}
-      <div className="flex flex-col items-center bg-[#FAFAFA] py-8 px-4 mb-10 text-center space-y-2">
-        <p className="font-bold text-2xl sm:text-3xl md:text-4xl">We&apos;re here to help</p>
-        <p className="font-medium text-sm sm:text-base md:text-lg">
-          Get in touch for any queries or specific needs
-        </p>
-        <button className="py-2 px-6 bg-primary-color text-white rounded-md text-sm sm:text-base">
-          Contact Us
-        </button>
-      </div>
-      {/* Below Banner */}
-      <BelowBanner title={"Learning. Simplified."} />
-      {/* Payment Bar */}
-      <PaymentBar />
-    </div>
-  );
-};
+export default function PrivacyPolicy() {
+  const [expandedPolicy, setExpandedPolicy] = useState(null)
 
-export default Page;
+  return (
+    <div className="min-h-screen bg-[#f8f9fa]">
+      {/* Hero Section */}
+      <div className="bg-[#21B6A8] text-white py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+            Privacy Policy & Terms
+          </h1>
+          <p className="text-center text-lg opacity-90">
+            Your privacy matters to us. Learn about how we protect and handle your data.
+          </p>
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+          {dummyPolicies.map((policy) => (
+            <div key={policy._id} className="border-b border-gray-200 last:border-b-0">
+              <button
+                onClick={() => setExpandedPolicy(expandedPolicy === policy._id ? null : policy._id)}
+                className="w-full text-left px-6 py-4 focus:outline-none focus:bg-gray-50 hover:bg-gray-50 transition-colors"
+              >
+                <div className="flex justify-between items-center">
+                  <h2 className="text-xl font-semibold text-gray-900">{policy.title}</h2>
+                  <svg
+                    className={`w-6 h-6 text-gray-500 transform transition-transform ${
+                      expandedPolicy === policy._id ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              {expandedPolicy === policy._id && (
+                <div className="px-6 py-4 bg-gray-50">
+                  <div className="space-y-3">
+                    {policy.description.map((item, index) => (
+                      <div key={index} className="flex items-start">
+                        <div className="flex-shrink-0 h-2 w-2 mt-2 rounded-full bg-[#21B6A8]" />
+                        <p className="ml-4 text-gray-600 leading-relaxed">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-4 text-sm text-gray-500">
+                    Last updated: {new Date(policy.updatedAt).toLocaleDateString()}
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Contact Section */}
+        {/* <div className="mt-12 bg-white shadow-md rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+            Questions About our Policies?
+          </h2>
+          <p className="text-gray-600">
+            If you have any questions about our policies, please don't hesitate to contact our support team.
+            We're here to help you understand how we protect your privacy and ensure a secure experience.
+          </p>
+          <button 
+            className="mt-6 px-6 py-3 bg-[#21B6A8] text-white rounded-lg hover:bg-[#1a8f85] transition-colors focus:outline-none focus:ring-2 focus:ring-[#21B6A8] focus:ring-opacity-50"
+            onClick={() => window.location.href = '/contact'}
+          >
+            Contact Support
+          </button>
+        </div> */}
+      </div>
+    </div>
+  )
+}

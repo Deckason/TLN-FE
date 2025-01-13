@@ -16,7 +16,7 @@ import PlansComp from '../../../Components/Common/PlansComp';
 import { FaChartBar } from 'react-icons/fa';
 import StyledSlider from '../../../Components/Common/StyledSlider';
 import GetStartedHomeBannerButton from '../../../Shared/buttons/GetStartedHomeBannerButton';
-
+import { useGetBannerQuery} from "../../../store/apiSlice"
 const SlideComponent  = ({slide})=>{
 
     return (
@@ -307,12 +307,17 @@ const CorporateTraining = ()=>{
         },
     ];
     
-    
+    const { data } = useGetBannerQuery({
+        context: "CorporateTraining",
+        language: "Others", 
+      });
 
     return(
         <div>
             {/* hero section */}
-            <Banner title={"Foreign Languages For Professionals"} description={"Elevate your college's profile with language learning programs tailored to today's global demands. By integrating languages into your curriculum, you equip students with vital skills for success in the international arena. Our courses not only enhance linguistic abilities but also promote cultural awareness and open doors to study abroad opportunities. Join us in shaping a multilingual learning environment that prepares students to thrive in a connectedworld."} buttonText='Book a meeting'/>
+            <Banner title={data?.length>0 &&  data[0]?.bannerTitle|| "title"}
+             description= {data?.length>0 && data[0]?.bannerDescription}
+             buttonText={data?.length>0 && data[0]?.buttonText}  />
             {/* our alumini */}
             <div className='mt-20'>
                 <OurAlumni/>
