@@ -44,7 +44,7 @@ const SliderComp = ({data,children}) => {
   const navigationNextRef = React.useRef(currentPage);
 
     return (
-        <div className="md:mb-[112px] ">
+        <div className="md:mb-[112px] w-[344px] md:w-[1200px] mx-auto ">
             <div className="text-stone-900 text-[32px] leading-tight xl:text-[60px]/[80px] mb-12 text-center font-bold max-md:px-5">
                 {data?.Title}
             </div>
