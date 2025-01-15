@@ -1,26 +1,20 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import profilePic from '../../../Assets/Blogs/blogPlaceholder.png'; 
 import bannerImg from '../../../Assets/press-center/press.jpg'
 import BelowBanner from '../../../Components/Common/BelowBanner'
 import PaymentBar from '../../../Components/HomeComp/PaymentBar';
+import { useGetPressQuery} from "../../../store/apiSlice"
+
 
 const PressCentre = () => {
-    const articles = [
-        {
-            id: 1,
-            author: 'Siddhi Chokhani, Co-founder of The Language Network',
-            link: 'https://mumbaicensored.com/2024/07/24/the-power-list-top-24-indian-entrepreneurs-defining-the-future/',
-            imageUrl: profilePic // Replace with actual image URL if needed
-        },
-        {
-            id: 2,
-            author: 'Shubham Pille, COO & Co-founder of The Language Network',
-            link: 'https://mumbaicensored.com/2024/07/24/the-power-list-top-24-indian-entrepreneurs-defining-the-future/',
-            imageUrl: profilePic // Replace with actual image URL if needed
-        }
-    ];
-
+   
+      const { data:latestPressData } = useGetPressQuery({
+        isFeatured: true,
+        isLatest: true, 
+    });
+        
     return (
         <div className="bg-white">
             {/* Hero Section */}
@@ -40,16 +34,16 @@ const PressCentre = () => {
             <div className="px-4 py-8 sm:px-6 lg:px-12">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-teal-600"><span className="underline">Latest</span> features</h2>
                 <div className="mt-6 space-y-6">
-                    {articles.map((article) => (
+                    {latestPressData?.length>0 &&latestPressData?.map((article) => (
                         <div
-                            key={article.id}
+                            key={article._id}
                             className="flex flex-col sm:flex-row items-center gap-4 py-4 px-4 border border-primary-color rounded-lg shadow-sm"
                         >
                             {/* Profile Image */}
                             <div className="p-2 bg-[#EBF7F6] rounded-full">
                                 <Image
-                                    src={article.imageUrl}
-                                    alt={article.author}
+                                    src={article.image}
+                                    alt={"Author image"}
                                     width={50}
                                     height={50}
                                     className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover"
@@ -58,7 +52,7 @@ const PressCentre = () => {
                             
                             {/* Author and Link */}
                             <div className="text-center sm:text-left">
-                                <p className="font-semibold text-gray-800 text-sm sm:text-base md:text-lg">{article.author}</p>
+                                <p className="font-semibold text-gray-800 text-sm sm:text-base md:text-lg">{article.title}</p>
                                 <a
                                     href={article.link}
                                     target="_blank"

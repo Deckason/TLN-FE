@@ -3,6 +3,7 @@ import ResponsibilitiesModal from './ResponsibilitiesModal';
 import ApplyModal from './ApplyModal';
 import Image from 'next/image';
 import positionsimg from "../../../../Assets/career-screen/open_positions.svg";
+import { useGetPositionsQuery } from '../../../../store/apiSlice';
 
 const OpenPositions = () => {
   const [selectedPosition, setSelectedPosition] = useState(null);
@@ -10,8 +11,19 @@ const OpenPositions = () => {
   const [showResponsibilities, setShowResponsibilities] = useState(false);
   const [showApplyModal, setShowApplyModal] = useState(false);
 
-  const positions = ["Business Development", "Operations", "Graphic Designer", "Marketing"];
-  const morePositions = ["Business Analyst", "Designer"];
+  // const positions = ["Business Development", "Operations", "Graphic Designer", "Marketing", "Business Analyst", "Designer"];
+
+   const { data: positions, isLoading, isError } = useGetPositionsQuery();
+  
+    if (isLoading) {
+      return <div className="text-center">Loading Positions...</div>;
+    }
+  
+    if (isError) {
+      return <div className="text-center text-red-500">Failed to load positions. Please try again later.</div>;
+    }
+
+  const displayedPositions = showMorePositions ? positions : positions.slice(0, 4);
 
   const handlePositionSelect = (position) => {
     setSelectedPosition(position);
@@ -26,36 +38,24 @@ const OpenPositions = () => {
         
         <div className="flex flex-col p-4 md:w-1/2 space-y-4">
 
-          {positions.map((position) => (
+          {displayedPositions.map((position, index) => (
             <button
-              key={position}
+              key={index}
               onClick={() => handlePositionSelect(position)}
               className="w-full p-3 border rounded-md bg-gray-100 text-gray-700 text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-teal-500"
             >
-              {position}
-            </button>
+              <div
+                dangerouslySetInnerHTML={{ __html: position.title }}
+              />
+      </button>
           ))}
 
-          <button
+          {positions.length > 4 && <button
             onClick={() => setShowMorePositions(!showMorePositions)}
             className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 mt-4 w-1/2"
           >
             {showMorePositions ? "Less" : "More"}
-          </button>
-
-          {showMorePositions && (
-            <div className="space-y-4 mt-4 bg-white p-4 rounded-md shadow-md">
-              {morePositions.map((position) => (
-                <button
-                  key={position}
-                  onClick={() => handlePositionSelect(position)}
-                  className="w-full p-3 border rounded-md bg-gray-100 text-gray-700 text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-teal-500"
-                >
-                  {position}
-                </button>
-              ))}
-            </div>
-          )}
+          </button>}
         </div>
 
         <div className="md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0 md:ml-6">
@@ -70,7 +70,7 @@ const OpenPositions = () => {
       {/* Responsibilities Modal */}
       {showResponsibilities && selectedPosition && (
         <ResponsibilitiesModal
-          position={selectedPosition}
+          positions={selectedPosition}
           onApply={() => setShowApplyModal(true)}
           onClose={() => setShowResponsibilities(false)}
         />
