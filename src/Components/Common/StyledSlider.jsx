@@ -2,30 +2,16 @@ import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
-<<<<<<< HEAD
-import React, { useState } from 'react';
-=======
 import React, { useEffect, useState } from 'react';
->>>>>>> upstream/dev
 import { FaPlay } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 
-<<<<<<< HEAD
-const StyledSlider = ({children,slidesData})=>{
-=======
 const StyledSlider = ({children,slidesData=[]})=>{
->>>>>>> upstream/dev
     const [currentPage, setCurrentPage] = useState(0);
     const navigationPrevRef = React.useRef(currentPage);
     const navigationNextRef = React.useRef(currentPage);
 
-<<<<<<< HEAD
-    return (
-        <div className="flex flex-col items-center relative">
-                    <Swiper
-                        spaceBetween={20}
-=======
     useEffect(() => {
         console.log(currentPage,'currentPage')
 },[currentPage])
@@ -36,7 +22,6 @@ const StyledSlider = ({children,slidesData=[]})=>{
                         slidesPerView={1.1}
                         centeredSlides={true}
                         spaceBetween={10}
->>>>>>> upstream/dev
                         pagination={{
                             clickable: true,
                         }}
@@ -51,15 +36,11 @@ const StyledSlider = ({children,slidesData=[]})=>{
                             swiper.params.navigation.nextEl = navigationNextRef.current;
                         }}
                         onSlideChange={(swiper) => {
-<<<<<<< HEAD
-                            setCurrentPage(swiper.activeIndex);
-=======
                             if (swiper.activeIndex > currentPage && swiper.isEnd === false) {
                                 setCurrentPage(swiper.activeIndex);
                             } else if (swiper.activeIndex < currentPage && swiper.isBeginning === false) {
                                 setCurrentPage(swiper.activeIndex);
                             }
->>>>>>> upstream/dev
                         }}
                         // slidesPerView={4}
                         breakpoints={{
