@@ -11,7 +11,7 @@ const DynamicForm = ({
     children 
 }) => {
     return (
-        <div className="flex flex-col md:flex-row  p-2 md:p-10">
+        <div className="flex flex-col md:flex-row  p-2 md:p-10  px-0 md:px-[119px]">
             {/* Image Placeholder */}
             <div className="flex-1">
                 <Image src={imageSrc}/>
@@ -20,11 +20,11 @@ const DynamicForm = ({
 
             {/* Form Section */}
             <div className="flex-1">
-                <div className="max-w-lg mx-auto p-2 md:p-6 bg-white">
-                    <h2 className="text-xl font-semibold mb-4 text-gray-800">
+                <div className="max-w-lg mx-auto p-2 md:p-6 bg-white flex flex-col items-center">
+                    <h2 className="text-[20px] font-[400] leading-[28px] mb-4 text-gray-800 text-center md:text-start">
                         Fill out the form below to become part of our vibrant community.
                     </h2>
-                    <form className="space-y-4">
+                    <form className="space-y-4 px-[16px] md:px-0">
                         {/* Default Input Fields */}
                         {inputFields.map((field) => (
                             <input
