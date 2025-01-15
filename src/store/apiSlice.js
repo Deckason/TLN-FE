@@ -16,6 +16,8 @@ export const api = createApi({
     "Batches3",
     "Trainers",
     "Testimonials",
+    "Terms",
+    "Positions",
      "Alumni",
      "EduPartners",
      "CoFounders",
@@ -23,7 +25,6 @@ export const api = createApi({
      "Blogs",
      "Community",
      "Collaboration"
-
   ],
   endpoints: (builder) => ({
     // -----------------------------promo queries-------------------------------
@@ -126,6 +127,19 @@ export const api = createApi({
         `/api/openposition/get/${id}`
       
     }),
+
+    // get terms
+    getTerms: builder.query({
+      query: () => "/api/termsnconditions",
+      // providesTags: ["Terms"],
+    }),
+
+    // get Positions
+    getPositions: builder.query({
+      query: () => "/api/openposition/get-all",
+      // providesTags: ["Positions"],
+    }),
+
      // ---------------------- Alumni query -------------------------------
      getAllAlumni: builder.query({
       query: () => `/api/alumni`,
@@ -191,6 +205,8 @@ export const {
   useSubscribeNewsletterMutation,
   useGetAllOpenPositionQuery,
   useGetSpecificPositionQuery,
+  useGetTermsQuery,
+  useGetPositionsQuery,
   useGetAllAlumniQuery,
   useGetAllEduPartnersQuery,
   useGetAllCoFoundersQuery,

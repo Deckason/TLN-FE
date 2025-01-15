@@ -11,6 +11,10 @@ import SayBonjur from "./Components/SayBonjur";
 // import UpcomingBatches from "./Components/UpcomingBatches";
 import WhyShould from "../../Components/HomeComp/WhyShould";
 import UpcomingBatches from "../UpcomingBatches";
+<<<<<<< HEAD
+=======
+import EverythingYouNeedToKnowAboutLanguage from "../SharedMainLanguagePage/Components/EverythingYouNeedToKnowAboutLanguage/EverythingYouNeedToKnowAboutLanguage";
+>>>>>>> 71ab4cc7e738f252976fce57c3f468bcabe0f509
 
 const SharedAdultsPage = ({ Data, language, context }) => {
   let faqs = [];
