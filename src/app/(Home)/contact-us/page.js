@@ -62,7 +62,7 @@ const ContactSection = () => {
                         <div className="space-y-4">
                             {
                                 contactDetails.map((item ,i)=>(
-                                    <div className="flex items-center space-x-4" key={i}>
+                                    <div key={i} className="flex items-center space-x-4">
                                         <div className="p-2 rounded-full border-[1px] border-teal-500">
                                             {item.icon}
                                         </div>

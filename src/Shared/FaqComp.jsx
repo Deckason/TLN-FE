@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import FaqsCard from "./FaqsCard";
 
-const FaqComp = ({ FaqsData }) => {
+const FaqComp = ({ FaqsData=[] }) => {
   const [splicing, setSplicing] = useState(true);
   let newData = [...FaqsData];
   // useEffect(() => {
